@@ -1,12 +1,266 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
+import { CheckCircle, TrendingUp, Users, Calculator, BarChart3, Shield, Mail, ArrowRight } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 const Index = () => {
+  const [email, setEmail] = useState("");
+  const [isRequesting, setIsRequesting] = useState(false);
+  const { toast } = useToast();
+
+  const handleBetaRequest = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsRequesting(true);
+    
+    // Simulate API call
+    setTimeout(() => {
+      toast({
+        title: "Beta Access Requested",
+        description: "We'll review your request and get back to you within 24 hours.",
+      });
+      setEmail("");
+      setIsRequesting(false);
+    }, 1000);
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      {/* Header */}
+      <header className="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+        <div className="container mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                <TrendingUp className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <h1 className="text-xl font-bold text-slate-900">Financial Decision Models</h1>
+                <p className="text-sm text-slate-600">Expert Financial Consulting & Tools</p>
+              </div>
+            </div>
+            <Badge variant="secondary" className="bg-orange-100 text-orange-800 border-orange-200">
+              <Shield className="w-3 h-3 mr-1" />
+              Beta Access
+            </Badge>
+          </div>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section className="py-20 px-6">
+        <div className="container mx-auto max-w-4xl text-center">
+          <Badge className="mb-6 bg-blue-100 text-blue-800 border-blue-200" variant="outline">
+            Coming Soon - Beta Program
+          </Badge>
+          <h2 className="text-5xl font-bold text-slate-900 mb-6">
+            Empower Your <span className="text-blue-600">Financial Decisions</span>
+          </h2>
+          <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Make better business decisions with our intuitive, business-minded Financial Decision Model toolbox 
+            and expert consulting services. Transform complex financial choices into clear, actionable strategies.
+          </p>
+          
+          {/* Beta Access Form */}
+          <Card className="max-w-md mx-auto mb-12 shadow-lg border-slate-200">
+            <CardHeader className="text-center">
+              <CardTitle className="flex items-center justify-center space-x-2">
+                <Mail className="w-5 h-5 text-blue-600" />
+                <span>Request Beta Access</span>
+              </CardTitle>
+              <CardDescription>
+                Join our exclusive beta program for early access to our financial decision tools.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <form onSubmit={handleBetaRequest} className="space-y-4">
+                <Input
+                  type="email"
+                  placeholder="Enter your business email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  className="w-full"
+                />
+                <Button 
+                  type="submit" 
+                  className="w-full bg-blue-600 hover:bg-blue-700"
+                  disabled={isRequesting}
+                >
+                  {isRequesting ? "Requesting..." : "Request Access"}
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </form>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Purpose Section */}
+      <section className="py-16 px-6 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <Badge className="mb-4 bg-slate-100 text-slate-800" variant="outline">
+              Our Purpose
+            </Badge>
+            <h3 className="text-3xl font-bold text-slate-900 mb-6">
+              Transforming Complex Financial Decisions
+            </h3>
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+              We empower businesses facing complex financial choices to make better decisions with an intuitive, 
+              business-minded Financial Decision Model toolbox and expert consulting services.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-16 px-6 bg-slate-50">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <Badge className="mb-4 bg-blue-100 text-blue-800" variant="outline">
+              Our Services
+            </Badge>
+            <h3 className="text-3xl font-bold text-slate-900 mb-6">
+              Comprehensive Financial Solutions
+            </h3>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8">
+            {/* Phase One - Toolbox */}
+            <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <Calculator className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-xl">Financial Decision Model Toolbox</CardTitle>
+                    <Badge className="bg-green-100 text-green-800 border-green-200">Phase One</Badge>
+                  </div>
+                </div>
+                <CardDescription className="text-base">
+                  Comprehensive online toolbox for making informed financial decisions
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-slate-700">Guidance on selecting appropriate financial decision models for specific business needs</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-slate-700">Clear guidance on concepts, terminology, and best practices</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-slate-700">Support for developing sound assumptions and estimates</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-slate-700">User-friendly models with standardized structure, proper calculations, and built-in sensitivity analysis</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Phase Two - Consulting */}
+            <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center">
+                    <Users className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-xl">Expert Consulting Services</CardTitle>
+                    <Badge className="bg-blue-100 text-blue-800 border-blue-200">Phase Two</Badge>
+                  </div>
+                </div>
+                <CardDescription className="text-base">
+                  Personalized consulting for complex financial decision processes
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-slate-700">Customization of models for specific company requirements</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-slate-700">Challenging, evaluation and improvement of existing financial decision processes</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-slate-700">End-to-end financial and/or process lead or support for driving complex financial decisions</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div className="space-y-3">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
+                <BarChart3 className="w-8 h-8 text-blue-600" />
+              </div>
+              <h4 className="text-3xl font-bold text-slate-900">20+</h4>
+              <p className="text-slate-600">Financial Models</p>
+            </div>
+            <div className="space-y-3">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
+                <Users className="w-8 h-8 text-green-600" />
+              </div>
+              <h4 className="text-3xl font-bold text-slate-900">500+</h4>
+              <p className="text-slate-600">Business Decisions</p>
+            </div>
+            <div className="space-y-3">
+              <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto">
+                <TrendingUp className="w-8 h-8 text-indigo-600" />
+              </div>
+              <h4 className="text-3xl font-bold text-slate-900">98%</h4>
+              <p className="text-slate-600">Client Satisfaction</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-slate-900 text-white py-12 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center">
+            <div className="flex items-center justify-center space-x-3 mb-6">
+              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                <TrendingUp className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <h5 className="text-xl font-bold">Financial Decision Models</h5>
+                <p className="text-slate-400 text-sm">Expert Financial Consulting & Tools</p>
+              </div>
+            </div>
+            <Separator className="bg-slate-700 mb-6" />
+            <div className="flex flex-col md:flex-row items-center justify-between">
+              <p className="text-slate-400 mb-4 md:mb-0">
+                © 2024 Financial Decision Models. All rights reserved.
+              </p>
+              <div className="flex items-center space-x-6">
+                <Badge variant="outline" className="border-slate-600 text-slate-300">
+                  financialdecisionmodels.com
+                </Badge>
+                <Badge variant="outline" className="border-orange-600 text-orange-300">
+                  Beta Program Active
+                </Badge>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
