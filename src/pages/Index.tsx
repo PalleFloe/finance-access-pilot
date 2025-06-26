@@ -318,8 +318,8 @@ const Index = () => {
               Our Mission
             </h3>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto mb-12">
-              Empower businesses facing complex financial choices to make better decisions with an intuitive, 
-              business-minded Financial Decision Model toolbox and expert consulting services.
+              Empower businesses facing complex financial choices to make better decisions with a best-in-class, 
+              intuitive, business-minded Financial Decision Model toolbox and expert consulting services.
             </p>
           </div>
 
@@ -336,7 +336,7 @@ const Index = () => {
                   difference.
                 </p>
                 <p>
-                  <strong>With a strong financial toolbox, business acumen and curiosity,</strong> I connect and de-risk value 
+                  <strong>With a strong financial toolbox and business acumen,</strong> I connect and de-risk value 
                   drivers, identify opportunities, find solutions with a <strong>laser focus on value creation</strong>, and consistently 
                   champion a profitable growth mindset across organizations.
                 </p>
@@ -346,11 +346,11 @@ const Index = () => {
                 </p>
                 <p>
                   <strong>Now I'm building FinancialDecisionModels.com</strong> because after two decades of wrestling with 
-                  complex, unintuitive models that often gave precisely the wrong results, I know there's a better way.
+                  complex, unintuitive models that often gave precisely the wrong results, I know there's a better way…
                 </p>
                 <p>
                   <strong>The purpose is to empower businesses facing complex financial choices to make better 
-                  decisions</strong> with an intuitive, business-minded Financial Decision Model toolbox and expert consulting 
+                  decisions</strong> with a best-in-class, intuitive, business-minded Financial Decision Model toolbox and expert consulting 
                   services.
                 </p>
               </div>
