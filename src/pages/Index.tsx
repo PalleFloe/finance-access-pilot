@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -180,7 +181,6 @@ const Index = () => {
               Comprehensive Financial Decision Models
             </h3>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Access our extensive library of financial decision models, organized by business type and use case. 
               Each model includes step-by-step guidance on concepts and best practices, standardized structure with clear value driver logic, and built-in scenario & sensitivity analysis.
             </p>
           </div>
