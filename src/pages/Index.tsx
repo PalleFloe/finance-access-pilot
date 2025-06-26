@@ -212,7 +212,7 @@ const Index = () => {
                   <span>Mature Business</span>
                 </CardTitle>
                 <CardDescription>
-                  Established business valuation and strategic decision models
+                  Valuation, strategic planning and operational decision models for established businesses
                 </CardDescription>
               </CardHeader>
               <CardContent>
