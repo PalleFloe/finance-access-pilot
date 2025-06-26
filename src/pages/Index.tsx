@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { CheckCircle, TrendingUp, Users, Calculator, BarChart3, Shield, Mail, ArrowRight, Menu, X } from "lucide-react";
+import { CheckCircle, TrendingUp, Users, Calculator, BarChart3, Shield, Mail, ArrowRight, Menu, X, Check, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Index = () => {
@@ -187,7 +187,13 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Business Type Categories */}
-            <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow">
+            <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative">
+              <div className="absolute -top-3 -right-3 z-10">
+                <Badge className="bg-green-100 text-green-800 border-green-200 shadow-sm">
+                  <Check className="w-3 h-3 mr-1" />
+                  Available
+                </Badge>
+              </div>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
                   <Calculator className="w-5 h-5 text-blue-600" />
@@ -205,7 +211,13 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow">
+            <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative">
+              <div className="absolute -top-3 -right-3 z-10">
+                <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
+                  <Clock className="w-3 h-3 mr-1" />
+                  Coming Soon
+                </Badge>
+              </div>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
                   <BarChart3 className="w-5 h-5 text-green-600" />
@@ -223,7 +235,13 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow">
+            <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative">
+              <div className="absolute -top-3 -right-3 z-10">
+                <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
+                  <Clock className="w-3 h-3 mr-1" />
+                  Coming Soon
+                </Badge>
+              </div>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
                   <TrendingUp className="w-5 h-5 text-indigo-600" />
