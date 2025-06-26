@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -6,13 +5,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { CheckCircle, TrendingUp, Users, Calculator, BarChart3, Shield, Mail, ArrowRight, Menu, X, Check, Clock } from "lucide-react";
+import { CheckCircle, TrendingUp, Users, Calculator, BarChart3, Mail, ArrowRight, Check, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import Header from "@/components/Header";
 
 const Index = () => {
   const [email, setEmail] = useState("");
   const [isRequesting, setIsRequesting] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { toast } = useToast();
 
   const handleBetaRequest = async (e: React.FormEvent) => {
@@ -30,79 +29,9 @@ const Index = () => {
     }, 1000);
   };
 
-  const navigation = [
-    { name: "Toolbox", href: "#toolbox", current: false },
-    { name: "Consulting", href: "#consulting", current: false },
-    { name: "Blog", href: "#blog", current: false },
-    { name: "About", href: "#about", current: false },
-  ];
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      {/* Header with Navigation */}
-      <header className="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                <TrendingUp className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-slate-900">Financial Decision Models</h1>
-                <p className="text-sm text-slate-600">Expert Financial Consulting & Tools</p>
-              </div>
-            </div>
-            
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
-              {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
-                >
-                  {item.name}
-                </a>
-              ))}
-            </nav>
-
-            <div className="flex items-center space-x-4">
-              <Badge variant="secondary" className="bg-orange-100 text-orange-800 border-orange-200">
-                <Shield className="w-3 h-3 mr-1" />
-                Beta Access
-              </Badge>
-              
-              {/* Mobile menu button */}
-              <button
-                className="md:hidden p-2 text-slate-700 hover:text-blue-600"
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              >
-                {isMobileMenuOpen ? (
-                  <X className="w-6 h-6" />
-                ) : (
-                  <Menu className="w-6 h-6" />
-                )}
-              </button>
-            </div>
-          </div>
-
-          {/* Mobile Navigation */}
-          {isMobileMenuOpen && (
-            <div className="md:hidden mt-4 pb-4 space-y-2">
-              {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-md text-sm font-medium transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {item.name}
-                </a>
-              ))}
-            </div>
-          )}
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="py-20 px-6">
@@ -133,7 +62,7 @@ const Index = () => {
               <form onSubmit={handleBetaRequest} className="space-y-4">
                 <Input
                   type="email"
-                  placeholder="Enter your business email"
+                  placement="Enter your business email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -378,7 +307,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Section */}
+      {/* About Section - Updated */}
       <section id="about" className="py-16 px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
@@ -386,19 +315,46 @@ const Index = () => {
               About Us
             </Badge>
             <h3 className="text-3xl font-bold mb-6" style={{ color: 'rgb(50, 100, 150)' }}>
-              Our Mission & Expertise
+              Our Mission
             </h3>
-            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              We combine deep financial expertise with practical business experience to help 
-              organizations make better financial decisions through proven methodologies and tools.
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto mb-12">
+              Empower businesses facing complex financial choices to make better decisions with an intuitive, 
+              business-minded Financial Decision Model toolbox and expert consulting services.
             </p>
           </div>
 
-          <div className="text-center">
-            <p className="text-slate-600 mb-6">Learn more about our team and approach</p>
-            <Button variant="outline">
-              Our Story
-            </Button>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-slate-50 rounded-lg p-8">
+              <h4 className="text-xl font-semibold mb-6" style={{ color: 'rgb(50, 100, 150)' }}>
+                About Profile
+              </h4>
+              <div className="space-y-4 text-slate-700 leading-relaxed">
+                <p>
+                  <strong>I'm a finance leader, still curious and focused after all those years;</strong> Whether the challenges have 
+                  been creating performance management capabilities, business improvements and turnarounds, M&A 
+                  integrations and strategic initiatives - always with strong focus on what and how we can make a real 
+                  difference.
+                </p>
+                <p>
+                  <strong>With a strong financial toolbox, business acumen and curiosity,</strong> I connect and de-risk value 
+                  drivers, identify opportunities, find solutions with a <strong>laser focus on value creation</strong>, and consistently 
+                  champion a profitable growth mindset across organizations.
+                </p>
+                <p>
+                  <strong>I'm direct and open-minded, not afraid to challenge status quo constructively.</strong> I give people the 
+                  chance to shine rather than hide them in my shadow.
+                </p>
+                <p>
+                  <strong>Now I'm building FinancialDecisionModels.com</strong> because after two decades of wrestling with 
+                  complex, unintuitive models that often gave precisely the wrong results, I know there's a better way.
+                </p>
+                <p>
+                  <strong>The purpose is to empower businesses facing complex financial choices to make better 
+                  decisions</strong> with an intuitive, business-minded Financial Decision Model toolbox and expert consulting 
+                  services.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
