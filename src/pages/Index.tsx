@@ -110,7 +110,7 @@ const Index = () => {
             Coming Soon - Beta Program
           </Badge>
           <h2 className="text-5xl font-bold text-slate-900 mb-6">
-            Empower Your <span className="text-blue-600">Financial Decisions</span>
+            Empower Your <span style={{ color: 'rgb(50, 100, 150)' }}>Financial Decisions</span>
           </h2>
           <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
             Make better business decisions with our intuitive, business-minded Financial Decision Model toolbox 
@@ -121,7 +121,7 @@ const Index = () => {
           <Card className="max-w-md mx-auto mb-12 shadow-lg border-slate-200">
             <CardHeader className="text-center">
               <CardTitle className="flex items-center justify-center space-x-2">
-                <Mail className="w-5 h-5 text-blue-600" />
+                <Mail className="w-5 h-5" style={{ color: 'rgb(50, 100, 150)' }} />
                 <span>Request Beta Access</span>
               </CardTitle>
               <CardDescription>
@@ -159,7 +159,7 @@ const Index = () => {
             <Badge className="mb-4 bg-slate-100 text-slate-800" variant="outline">
               Our Purpose
             </Badge>
-            <h3 className="text-3xl font-bold text-slate-900 mb-6">
+            <h3 className="text-3xl font-bold text-slate-900 mb-6" style={{ color: 'rgb(50, 100, 150)' }}>
               Transforming Complex Financial Decisions
             </h3>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
@@ -170,14 +170,14 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Toolbox Section - NEW */}
+      {/* Toolbox Section */}
       <section id="toolbox" className="py-16 px-6 bg-slate-50">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-blue-100 text-blue-800" variant="outline">
               Financial Decision Toolbox
             </Badge>
-            <h3 className="text-3xl font-bold text-slate-900 mb-6">
+            <h3 className="text-3xl font-bold mb-6" style={{ color: 'rgb(50, 100, 150)' }}>
               Comprehensive Financial Decision Models
             </h3>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
@@ -196,7 +196,7 @@ const Index = () => {
               </div>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
-                  <Calculator className="w-5 h-5 text-blue-600" />
+                  <Calculator className="w-5 h-5" style={{ color: 'rgb(50, 100, 150)' }} />
                   <span>Start-up Valuations</span>
                 </CardTitle>
                 <CardDescription>
@@ -204,10 +204,12 @@ const Index = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="outline" className="w-full">
-                  Explore Models
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
+                <Link to="/toolbox/startup-valuations">
+                  <Button variant="outline" className="w-full">
+                    Explore Models
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
@@ -224,14 +226,16 @@ const Index = () => {
                   <span>Mature Business</span>
                 </CardTitle>
                 <CardDescription>
-                  Valuation, strategic planning and operational decision models for established businesses
+                  Advanced financial decision models for established businesses with stable operations
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="outline" className="w-full">
-                  Explore Models
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
+                <Link to="/toolbox/mature-business">
+                  <Button variant="outline" className="w-full">
+                    Explore Models
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
@@ -248,14 +252,16 @@ const Index = () => {
                   <span>Investment Analysis</span>
                 </CardTitle>
                 <CardDescription>
-                  Capital investment and project evaluation models
+                  Professional-grade investment analysis tools for capital allocation and project evaluation
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="outline" className="w-full">
-                  Explore Models
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
+                <Link to="/toolbox/investment-analysis">
+                  <Button variant="outline" className="w-full">
+                    Explore Models
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           </div>
@@ -269,7 +275,7 @@ const Index = () => {
             <Badge className="mb-4 bg-blue-100 text-blue-800" variant="outline">
               Our Services
             </Badge>
-            <h3 className="text-3xl font-bold text-slate-900 mb-6">
+            <h3 className="text-3xl font-bold mb-6" style={{ color: 'rgb(50, 100, 150)' }}>
               Comprehensive Financial Solutions
             </h3>
           </div>
@@ -346,14 +352,14 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Blog Section - NEW */}
+      {/* Blog Section */}
       <section id="blog" className="py-16 px-6 bg-slate-50">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-green-100 text-green-800" variant="outline">
               Insights & Resources
             </Badge>
-            <h3 className="text-3xl font-bold text-slate-900 mb-6">
+            <h3 className="text-3xl font-bold mb-6" style={{ color: 'rgb(50, 100, 150)' }}>
               Financial Decision Insights
             </h3>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
@@ -371,14 +377,14 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Section - NEW */}
+      {/* About Section */}
       <section id="about" className="py-16 px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-indigo-100 text-indigo-800" variant="outline">
               About Us
             </Badge>
-            <h3 className="text-3xl font-bold text-slate-900 mb-6">
+            <h3 className="text-3xl font-bold mb-6" style={{ color: 'rgb(50, 100, 150)' }}>
               Our Mission & Expertise
             </h3>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
