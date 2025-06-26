@@ -1,16 +1,16 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { CheckCircle, TrendingUp, Users, Calculator, BarChart3, Shield, Mail, ArrowRight } from "lucide-react";
+import { CheckCircle, TrendingUp, Users, Calculator, BarChart3, Shield, Mail, ArrowRight, Menu, X } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Index = () => {
   const [email, setEmail] = useState("");
   const [isRequesting, setIsRequesting] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { toast } = useToast();
 
   const handleBetaRequest = async (e: React.FormEvent) => {
@@ -28,9 +28,16 @@ const Index = () => {
     }, 1000);
   };
 
+  const navigation = [
+    { name: "Toolbox", href: "#toolbox", current: false },
+    { name: "Consulting", href: "#consulting", current: false },
+    { name: "Blog", href: "#blog", current: false },
+    { name: "About", href: "#about", current: false },
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      {/* Header */}
+      {/* Header with Navigation */}
       <header className="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
@@ -43,11 +50,55 @@ const Index = () => {
                 <p className="text-sm text-slate-600">Expert Financial Consulting & Tools</p>
               </div>
             </div>
-            <Badge variant="secondary" className="bg-orange-100 text-orange-800 border-orange-200">
-              <Shield className="w-3 h-3 mr-1" />
-              Beta Access
-            </Badge>
+            
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex items-center space-x-8">
+              {navigation.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+                >
+                  {item.name}
+                </a>
+              ))}
+            </nav>
+
+            <div className="flex items-center space-x-4">
+              <Badge variant="secondary" className="bg-orange-100 text-orange-800 border-orange-200">
+                <Shield className="w-3 h-3 mr-1" />
+                Beta Access
+              </Badge>
+              
+              {/* Mobile menu button */}
+              <button
+                className="md:hidden p-2 text-slate-700 hover:text-blue-600"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              >
+                {isMobileMenuOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <Menu className="w-6 h-6" />
+                )}
+              </button>
+            </div>
           </div>
+
+          {/* Mobile Navigation */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden mt-4 pb-4 space-y-2">
+              {navigation.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="block px-3 py-2 text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-md text-sm font-medium transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
+          )}
         </div>
       </header>
 
@@ -118,8 +169,83 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-16 px-6 bg-slate-50">
+      {/* Toolbox Section - NEW */}
+      <section id="toolbox" className="py-16 px-6 bg-slate-50">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <Badge className="mb-4 bg-blue-100 text-blue-800" variant="outline">
+              Financial Decision Toolbox
+            </Badge>
+            <h3 className="text-3xl font-bold text-slate-900 mb-6">
+              Comprehensive Financial Decision Models
+            </h3>
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+              Access our extensive library of financial decision models, organized by business type and use case. 
+              Each model comes with clear guidance and built-in sensitivity analysis.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Business Type Categories */}
+            <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center space-x-2">
+                  <Calculator className="w-5 h-5 text-blue-600" />
+                  <span>Start-up Valuations</span>
+                </CardTitle>
+                <CardDescription>
+                  Models for early-stage business valuation and investment decisions
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" className="w-full">
+                  Explore Models
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center space-x-2">
+                  <BarChart3 className="w-5 h-5 text-green-600" />
+                  <span>Mature Business</span>
+                </CardTitle>
+                <CardDescription>
+                  Established business valuation and strategic decision models
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" className="w-full">
+                  Explore Models
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center space-x-2">
+                  <TrendingUp className="w-5 h-5 text-indigo-600" />
+                  <span>Investment Analysis</span>
+                </CardTitle>
+                <CardDescription>
+                  Capital investment and project evaluation models
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" className="w-full">
+                  Explore Models
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section - Updated with Consulting focus */}
+      <section id="consulting" className="py-16 px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-blue-100 text-blue-800" variant="outline">
@@ -202,8 +328,58 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Blog Section - NEW */}
+      <section id="blog" className="py-16 px-6 bg-slate-50">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <Badge className="mb-4 bg-green-100 text-green-800" variant="outline">
+              Insights & Resources
+            </Badge>
+            <h3 className="text-3xl font-bold text-slate-900 mb-6">
+              Financial Decision Insights
+            </h3>
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+              Stay informed with the latest insights on financial decision-making, 
+              best practices, and industry trends.
+            </p>
+          </div>
+
+          <div className="text-center">
+            <p className="text-slate-600 mb-6">Coming soon - Expert insights and practical guides</p>
+            <Button variant="outline">
+              Subscribe for Updates
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section - NEW */}
+      <section id="about" className="py-16 px-6 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <Badge className="mb-4 bg-indigo-100 text-indigo-800" variant="outline">
+              About Us
+            </Badge>
+            <h3 className="text-3xl font-bold text-slate-900 mb-6">
+              Our Mission & Expertise
+            </h3>
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+              We combine deep financial expertise with practical business experience to help 
+              organizations make better financial decisions through proven methodologies and tools.
+            </p>
+          </div>
+
+          <div className="text-center">
+            <p className="text-slate-600 mb-6">Learn more about our team and approach</p>
+            <Button variant="outline">
+              Our Story
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Stats Section */}
-      <section className="py-16 px-6 bg-white">
+      <section className="py-16 px-6 bg-slate-50">
         <div className="container mx-auto max-w-4xl">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="space-y-3">
