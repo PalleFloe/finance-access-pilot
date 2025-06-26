@@ -62,7 +62,7 @@ const Index = () => {
               <form onSubmit={handleBetaRequest} className="space-y-4">
                 <Input
                   type="email"
-                  placement="Enter your business email"
+                  placeholder="Enter your business email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
