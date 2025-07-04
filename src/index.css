@@ -36,6 +36,8 @@
 
     --radius: 0.5rem;
 
+    --heading: 210 50% 39%;
+
     --sidebar-background: 0 0% 98%;
 
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -89,6 +91,7 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+    --heading: 210 50% 39%;
   }
 }
 
