@@ -8,28 +8,40 @@ import Header from "@/components/Header";
 const StartupValuations = () => {
   const models = [
     {
-      name: "Venture Capital Method",
-      description: "Estimate pre-money valuation based on required ROI",
+      name: "SaaS Unit Economics Model",
+      description: "From Customer Acquisition & Revenue to Business Model Validation & Valuation",
+      href: "#",
+      status: "available",
+    },
+    {
+      name: "Venture Capital Valuation Method",
+      description: "Bridging Multi-Round Financing, Exit Value, Founder's Ownership Share and Investor's Need for a Profitable Return",
       href: "/toolbox/startup-valuations/venture-capital-method",
       status: "available",
     },
     {
-      name: "Risk Factor Summation",
-      description: "Adjust valuation based on risk factors",
-      href: "/toolbox/startup-valuations/risk-factor-summation",
+      name: "Berkus Valuation Model",
+      description: "Pre-Revenue Valuation based on Assessment of Five Key Factors and Scenario Modelling",
+      href: "#",
       status: "available",
     },
     {
-      name: "Discounted Cash Flow",
-      description: "Project future cash flows and discount to present value",
+      name: "First Chicago Valuation Method",
+      description: "Simple Scenario Based DCF Model for Startup Valuation with Exit Value based on both EBITDA and Revenue",
       href: "#",
-      status: "coming soon",
+      status: "available",
     },
     {
-      name: "First Chicago Method",
-      description: "Combine multiple scenarios for a weighted valuation",
+      name: "Perpetuity & Exit Valuation Models",
+      description: "Quick & Flexible Approaches to Valuation with Scenario-Based Sensitivity and Value Driver Analysis",
       href: "#",
-      status: "coming soon",
+      status: "available",
+    },
+    {
+      name: "New Model?",
+      description: "Miss a General Standard Model or a Customized and Specific Model to Your Needs?",
+      href: "#",
+      status: "contact",
     },
   ];
 
@@ -38,18 +50,23 @@ const StartupValuations = () => {
       <Header />
       
       <div className="py-12 px-6">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-6xl">
           <Link to="/" className="inline-flex items-center text-slate-600 hover:text-blue-600 mb-6">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Toolbox
           </Link>
 
-          <h2 className="text-3xl font-bold text-slate-900 mb-8">Start-up Valuations</h2>
+          <h1 className="text-4xl font-bold text-slate-900 mb-4">
+            Professional Startup Financial Decision & Valuation Models
+          </h1>
+          <h2 className="text-2xl text-blue-600 mb-6">
+            Comprehensive Startup Valuation Suite: Proven Methods to Estimate, Understand and Explain the Value of Startups
+          </h2>
           <p className="text-lg text-slate-600 mb-8">
             Explore our start-up valuation models to make informed investment decisions.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {models.map((model) => (
               <Card key={model.name} className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative">
                 {model.status === "available" && (
@@ -68,6 +85,14 @@ const StartupValuations = () => {
                     </Badge>
                   </div>
                 )}
+                {model.status === "contact" && (
+                  <div className="absolute -top-3 -right-3 z-10">
+                    <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
+                      <Clock className="w-3 h-3 mr-1" />
+                      Coming Soon
+                    </Badge>
+                  </div>
+                )}
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
                     <Calculator className="w-5 h-5" style={{ color: 'rgb(50, 100, 150)' }} />
@@ -78,7 +103,7 @@ const StartupValuations = () => {
                 <CardContent>
                   <Link to={model.href}>
                     <Button variant="outline" className="w-full">
-                      Explore Model
+                      {model.status === "contact" ? "Contact Us" : "Explore Model"}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
