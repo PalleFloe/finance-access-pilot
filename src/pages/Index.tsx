@@ -10,33 +10,21 @@ import { useToast } from "@/hooks/use-toast";
 import Header from "@/components/Header";
 
 const Index = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    company: "",
-    position: "",
-    email: ""
-  });
-  const [isRequesting, setIsRequesting] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
   const handleBetaRequest = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsRequesting(true);
+    setIsSubmitting(true);
     
-    // Simulate API call
+    // Let Netlify handle the form submission
+    // Show success message after a brief delay
     setTimeout(() => {
       toast({
         title: "Beta Access Requested",
         description: "Thank you! You are on the list for early access to Financial Decision Models. We'll email you when beta opens.",
       });
-      setFormData({
-        name: "",
-        company: "",
-        position: "",
-        email: ""
-      });
-      setIsRequesting(false);
-    }, 1000);
+      setIsSubmitting(false);
+    }, 500);
   };
 
   return (
@@ -69,45 +57,48 @@ const Index = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleBetaRequest} className="space-y-4">
+              <form 
+                name="beta-access" 
+                method="POST" 
+                data-netlify="true" 
+                onSubmit={handleBetaRequest}
+                className="space-y-4"
+              >
+                <input type="hidden" name="form-name" value="beta-access" />
                 <Input
                   type="text"
+                  name="name"
                   placeholder="Full Name"
-                  value={formData.name}
-                  onChange={(e) => setFormData({...formData, name: e.target.value})}
                   required
                   className="w-full"
                 />
                 <Input
                   type="text"
+                  name="company"
                   placeholder="Company"
-                  value={formData.company}
-                  onChange={(e) => setFormData({...formData, company: e.target.value})}
                   required
                   className="w-full"
                 />
                 <Input
                   type="text"
+                  name="position"
                   placeholder="Position"
-                  value={formData.position}
-                  onChange={(e) => setFormData({...formData, position: e.target.value})}
                   required
                   className="w-full"
                 />
                 <Input
                   type="email"
+                  name="email"
                   placeholder="Business Email"
-                  value={formData.email}
-                  onChange={(e) => setFormData({...formData, email: e.target.value})}
                   required
                   className="w-full"
                 />
                 <Button 
                   type="submit" 
                   className="w-full bg-blue-600 hover:bg-blue-700"
-                  disabled={isRequesting}
+                  disabled={isSubmitting}
                 >
-                  {isRequesting ? "Requesting..." : "Request Access"}
+                  {isSubmitting ? "Submitting..." : "Request Access"}
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </form>
