@@ -10,7 +10,12 @@ import { useToast } from "@/hooks/use-toast";
 import Header from "@/components/Header";
 
 const Index = () => {
-  const [email, setEmail] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    company: "",
+    position: "",
+    email: ""
+  });
   const [isRequesting, setIsRequesting] = useState(false);
   const { toast } = useToast();
 
@@ -22,9 +27,14 @@ const Index = () => {
     setTimeout(() => {
       toast({
         title: "Beta Access Requested",
-        description: "We'll review your request and get back to you within 24 hours.",
+        description: "Thank you! You are on the list for early access to Financial Decision Models. We'll email you when beta opens.",
       });
-      setEmail("");
+      setFormData({
+        name: "",
+        company: "",
+        position: "",
+        email: ""
+      });
       setIsRequesting(false);
     }, 1000);
   };
@@ -55,16 +65,40 @@ const Index = () => {
                 <span>Request Beta Access</span>
               </CardTitle>
               <CardDescription>
-                Join our exclusive beta program for early access to our financial decision tools.
+                Get access to the beta version of the Financial Decision Model toolbox. Please give feedback. Thanks!
               </CardDescription>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleBetaRequest} className="space-y-4">
                 <Input
+                  type="text"
+                  placeholder="Full Name"
+                  value={formData.name}
+                  onChange={(e) => setFormData({...formData, name: e.target.value})}
+                  required
+                  className="w-full"
+                />
+                <Input
+                  type="text"
+                  placeholder="Company"
+                  value={formData.company}
+                  onChange={(e) => setFormData({...formData, company: e.target.value})}
+                  required
+                  className="w-full"
+                />
+                <Input
+                  type="text"
+                  placeholder="Position"
+                  value={formData.position}
+                  onChange={(e) => setFormData({...formData, position: e.target.value})}
+                  required
+                  className="w-full"
+                />
+                <Input
                   type="email"
-                  placeholder="Enter your business email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Business Email"
+                  value={formData.email}
+                  onChange={(e) => setFormData({...formData, email: e.target.value})}
                   required
                   className="w-full"
                 />
