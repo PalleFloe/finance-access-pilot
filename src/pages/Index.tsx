@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -6,70 +5,9 @@ import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { CheckCircle, TrendingUp, Users, Calculator, BarChart3, Mail, ArrowRight, Check, Clock } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
 import Header from "@/components/Header";
 
 const Index = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
-
-  const handleBetaRequest = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    const form = e.target as HTMLFormElement;
-    const formData = new FormData(form);
-    
-    // Convert to URLSearchParams for Netlify
-    const params = new URLSearchParams();
-    params.append('form-name', 'beta-access');
-    formData.forEach((value, key) => {
-      params.append(key, value.toString());
-    });
-
-    try {
-      // Use XMLHttpRequest instead of fetch to bypass service worker
-      const xhr = new XMLHttpRequest();
-      xhr.open('POST', '/', true);
-      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-      
-      xhr.onload = function() {
-        if (xhr.status === 200) {
-          toast({
-            title: "Beta Access Requested",
-            description: "Thank you! You are on the list for early access to Financial Decision Models. We'll email you when beta opens.",
-          });
-          form.reset();
-        } else {
-          toast({
-            title: "Submission Failed",
-            description: "There was an error submitting your request. Please try again.",
-            variant: "destructive"
-          });
-        }
-        setIsSubmitting(false);
-      };
-      
-      xhr.onerror = function() {
-        toast({
-          title: "Submission Failed",
-          description: "There was an error submitting your request. Please try again.",
-          variant: "destructive"
-        });
-        setIsSubmitting(false);
-      };
-      
-      xhr.send(params.toString());
-      
-    } catch (error) {
-      toast({
-        title: "Submission Failed",
-        description: "There was an error submitting your request. Please try again.",
-        variant: "destructive"
-      });
-      setIsSubmitting(false);
-    }
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
@@ -104,8 +42,8 @@ const Index = () => {
               <form 
                 name="beta-access" 
                 method="POST" 
-                data-netlify="true" 
-                onSubmit={handleBetaRequest}
+                data-netlify="true"
+                action="/thank-you"
                 className="space-y-4"
               >
                 <input type="hidden" name="form-name" value="beta-access" />
@@ -140,9 +78,8 @@ const Index = () => {
                 <Button 
                   type="submit" 
                   className="w-full bg-blue-600 hover:bg-blue-700"
-                  disabled={isSubmitting}
                 >
-                  {isSubmitting ? "Submitting..." : "Request Access"}
+                  Request Access
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </form>
