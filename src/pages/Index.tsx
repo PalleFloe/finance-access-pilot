@@ -40,7 +40,7 @@ const Index = () => {
             <CardContent>
               <form 
                 method="POST" 
-                action="https://formspree.io/f/YOUR_FORM_ID"
+                action="https://formspree.io/f/xldnkzgd"
                 className="space-y-4"
               >
                 <input type="hidden" name="form-name" value="beta-access" />
