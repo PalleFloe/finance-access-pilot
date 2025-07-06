@@ -1,12 +1,41 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { CheckCircle, TrendingUp, Users, Calculator, BarChart3, Mail, ArrowRight, Check, Clock } from "lucide-react";
 import Header from "@/components/Header";
+import emailjs from '@emailjs/browser';
 
 const Index = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      await emailjs.sendForm(
+        'YOUR_SERVICE_ID', // You'll need to replace this with your EmailJS service ID
+        'YOUR_TEMPLATE_ID', // You'll need to replace this with your EmailJS template ID
+        form,
+        'YOUR_PUBLIC_KEY' // You'll need to replace this with your EmailJS public key
+      );
+      setSubmitStatus('success');
+      form.reset();
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
@@ -39,10 +68,19 @@ const Index = () => {
             </CardHeader>
             <CardContent>
               <form 
-                method="POST" 
-                action="https://formspree.io/f/xldnkzgd"
+                onSubmit={handleSubmit}
                 className="space-y-4"
               >
+                {submitStatus === 'success' && (
+                  <div className="p-3 bg-green-100 border border-green-200 rounded-md text-green-800 text-sm">
+                    Thank you! Your request has been submitted successfully.
+                  </div>
+                )}
+                {submitStatus === 'error' && (
+                  <div className="p-3 bg-red-100 border border-red-200 rounded-md text-red-800 text-sm">
+                    Sorry, there was an error sending your request. Please try again.
+                  </div>
+                )}
                 <input type="hidden" name="form-name" value="beta-access" />
                 <input
                   type="text"
@@ -74,10 +112,11 @@ const Index = () => {
                 />
                 <button 
                   type="submit" 
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors flex items-center justify-center"
+                  disabled={isSubmitting}
+                  className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white px-4 py-2 rounded-md transition-colors flex items-center justify-center"
                 >
-                  Request Access
-                  <ArrowRight className="w-4 h-4 ml-2" />
+                  {isSubmitting ? 'Sending...' : 'Request Access'}
+                  {!isSubmitting && <ArrowRight className="w-4 h-4 ml-2" />}
                 </button>
               </form>
             </CardContent>
