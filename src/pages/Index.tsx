@@ -14,17 +14,44 @@ const Index = () => {
   const { toast } = useToast();
 
   const handleBetaRequest = async (e: React.FormEvent) => {
+    e.preventDefault();
     setIsSubmitting(true);
     
-    // Let Netlify handle the form submission
-    // Show success message after a brief delay
-    setTimeout(() => {
-      toast({
-        title: "Beta Access Requested",
-        description: "Thank you! You are on the list for early access to Financial Decision Models. We'll email you when beta opens.",
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    
+    // Convert to URLSearchParams for Netlify
+    const params = new URLSearchParams();
+    params.append('form-name', 'beta-access');
+    formData.forEach((value, key) => {
+      params.append(key, value.toString());
+    });
+
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: params.toString()
       });
+
+      if (response.ok) {
+        toast({
+          title: "Beta Access Requested",
+          description: "Thank you! You are on the list for early access to Financial Decision Models. We'll email you when beta opens.",
+        });
+        form.reset();
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      toast({
+        title: "Submission Failed",
+        description: "There was an error submitting your request. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 500);
+    }
   };
 
   return (
