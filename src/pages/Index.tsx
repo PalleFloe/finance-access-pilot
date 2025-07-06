@@ -43,7 +43,7 @@ const Index = () => {
                 name="beta-access" 
                 method="POST" 
                 data-netlify="true"
-                action="/thank-you"
+                action="/"
                 className="space-y-4"
               >
                 <input type="hidden" name="form-name" value="beta-access" />
