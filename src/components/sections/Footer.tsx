@@ -19,7 +19,7 @@ const Footer = () => {
           <Separator className="bg-slate-700 mb-6" />
           <div className="flex flex-col md:flex-row items-center justify-between">
             <p className="text-slate-400 mb-4 md:mb-0">
-              © 2024 Financial Decision Models. All rights reserved.
+              © 2025 Financial Decision Models. All rights reserved.
             </p>
             <div className="flex items-center space-x-6">
               <Badge variant="outline" className="border-slate-600 text-slate-300">
