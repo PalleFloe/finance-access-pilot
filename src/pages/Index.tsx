@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/sections/HeroSection";
+import ServicesSection from "@/components/sections/ServicesSection";
+import ToolboxSection from "@/components/sections/ToolboxSection";
+import PurposeSection from "@/components/sections/PurposeSection";
+import AboutSection from "@/components/sections/AboutSection";
+import BlogSection from "@/components/sections/BlogSection";
+import StatsSection from "@/components/sections/StatsSection";
+import Footer from "@/components/sections/Footer";
 import LoginForm from "@/components/LoginForm";
 
 const Index = () => {
@@ -34,6 +41,13 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <Header />
       <HeroSection />
+      <PurposeSection />
+      <ServicesSection />
+      <ToolboxSection />
+      <StatsSection />
+      <AboutSection />
+      <BlogSection />
+      <Footer />
     </div>
   );
 };

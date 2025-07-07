@@ -17,11 +17,20 @@ const Header = () => {
             </div>
           </Link>
           
-          <div className="flex items-center space-x-4">
-            <button className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
-              Login
-            </button>
-          </div>
+          <nav className="flex items-center space-x-6">
+            <a href="#toolbox" className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+              Toolbox
+            </a>
+            <a href="#consulting" className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+              Consulting
+            </a>
+            <a href="#blog" className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+              Blog
+            </a>
+            <a href="#about" className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+              About
+            </a>
+          </nav>
         </div>
       </div>
     </header>
