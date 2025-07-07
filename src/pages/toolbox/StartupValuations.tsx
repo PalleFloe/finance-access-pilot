@@ -55,7 +55,18 @@ const StartupValuations = () => {
       
       <div className="py-12 px-6">
         <div className="container mx-auto max-w-6xl">
-          <Link to="/#toolbox" className="inline-flex items-center text-slate-600 hover:text-blue-600 mb-6">
+          <Link 
+            to="/" 
+            onClick={() => {
+              setTimeout(() => {
+                const toolboxElement = document.getElementById("toolbox");
+                if (toolboxElement) {
+                  toolboxElement.scrollIntoView({ behavior: "smooth" });
+                }
+              }, 100);
+            }}
+            className="inline-flex items-center text-slate-600 hover:text-blue-600 mb-6"
+          >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Toolbox
           </Link>
