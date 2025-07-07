@@ -32,8 +32,25 @@ const LoginForm = ({ onLogin }: LoginFormProps) => {
       // Store login state
       localStorage.setItem("fdm_beta_access", "true");
       localStorage.setItem("fdm_user_email", email);
+      
+      // Track successful login
+      if (typeof (window as any).gtag !== 'undefined') {
+        (window as any).gtag('event', 'login', {
+          method: 'beta_access',
+          success: true
+        });
+      }
+      
       onLogin();
     } else {
+      // Track failed login attempt
+      if (typeof (window as any).gtag !== 'undefined') {
+        (window as any).gtag('event', 'login', {
+          method: 'beta_access',
+          success: false
+        });
+      }
+      
       setError("Invalid credentials");
     }
     
