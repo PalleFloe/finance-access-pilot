@@ -11,7 +11,7 @@ const HeroSection = () => {
           Beta Access Granted
         </Badge>
         <h2 className="text-5xl font-bold text-slate-900 mb-6">
-          Facing complex <span style={{ color: 'rgb(50, 100, 150)' }}>financial decisions?</span>
+          Facing Complex <span style={{ color: 'rgb(50, 100, 150)' }}>Financial Decisions?</span>
         </h2>
         <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
           Empower businesses facing complex financial choices to make better decisions with an intuitive, business-minded Financial Decision Model toolbox and expert consulting services.
