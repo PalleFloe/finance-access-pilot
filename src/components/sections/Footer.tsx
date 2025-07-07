@@ -1,6 +1,5 @@
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { TrendingUp } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -8,8 +7,12 @@ const Footer = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center">
           <div className="flex items-center justify-center space-x-3 mb-6">
-            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-              <TrendingUp className="w-6 h-6 text-white" />
+            <div className="w-10 h-10 rounded-lg overflow-hidden">
+              <img 
+                src="/lovable-uploads/676443da-8f1c-498f-b5b0-617c3b12a6c0.png" 
+                alt="Financial Decision Models Logo" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <h5 className="text-xl font-bold">Financial Decision Models</h5>
