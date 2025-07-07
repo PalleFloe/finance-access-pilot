@@ -31,9 +31,7 @@ const HeroSection = () => {
           </CardHeader>
           <CardContent>
             <a 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSerkEwymTLzZu9TLRfemrdk_kx3fx0Tq4KCUPBQMLFFEiC0XQ/viewform?usp=dialog"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:Palle@financialdecisionmodels.com?subject=Beta Access Request"
               className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors flex items-center justify-center"
             >
               <Mail className="w-4 h-4 mr-2" />

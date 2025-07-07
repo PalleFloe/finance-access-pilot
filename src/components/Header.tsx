@@ -42,10 +42,9 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Badge variant="secondary" className="bg-orange-100 text-orange-800 border-orange-200">
-              <Shield className="w-3 h-3 mr-1" />
-              Beta Access
-            </Badge>
+            <button className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+              Login
+            </button>
             
             {/* Mobile menu button */}
             <button
