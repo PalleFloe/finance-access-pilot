@@ -12,11 +12,11 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" onClick={handleLogoClick} className="flex items-center space-x-3">
-            <div className="w-12 h-12 rounded-lg overflow-hidden bg-white shadow-sm border border-gray-200">
+            <div className="w-12 h-12 rounded-lg overflow-hidden">
               <img 
                 src="/lovable-uploads/676443da-8f1c-498f-b5b0-617c3b12a6c0.png" 
                 alt="Financial Decision Models Logo" 
-                className="w-full h-full object-cover p-1"
+                className="w-full h-full object-cover"
               />
             </div>
             <div>
