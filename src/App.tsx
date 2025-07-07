@@ -12,6 +12,10 @@ import MatureBusiness from "./pages/toolbox/MatureBusiness";
 import InvestmentAnalysis from "./pages/toolbox/InvestmentAnalysis";
 import VentureCapitalMethod from "./pages/models/VentureCapitalMethod";
 import RiskFactorSummation from "./pages/models/RiskFactorSummation";
+import SaasUnitEconomics from "./pages/models/SaasUnitEconomics";
+import BerkusValuation from "./pages/models/BerkusValuation";
+import FirstChicagoValuation from "./pages/models/FirstChicagoValuation";
+import PerpetuityExitValuation from "./pages/models/PerpetuityExitValuation";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +33,10 @@ const App = () => (
           <Route path="/toolbox/investment-analysis" element={<InvestmentAnalysis />} />
           <Route path="/toolbox/startup-valuations/venture-capital-method" element={<VentureCapitalMethod />} />
           <Route path="/toolbox/startup-valuations/risk-factor-summation" element={<RiskFactorSummation />} />
+          <Route path="/toolbox/startup-valuations/saas-unit-economics" element={<SaasUnitEconomics />} />
+          <Route path="/toolbox/startup-valuations/berkus-valuation" element={<BerkusValuation />} />
+          <Route path="/toolbox/startup-valuations/first-chicago-method" element={<FirstChicagoValuation />} />
+          <Route path="/toolbox/startup-valuations/perpetuity-exit-models" element={<PerpetuityExitValuation />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

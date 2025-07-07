@@ -14,7 +14,7 @@ const StartupValuations = () => {
     {
       name: "SaaS Unit Economics Model",
       description: "From Customer Acquisition & Revenue to Business Model Validation & Valuation",
-      href: "#",
+      href: "/toolbox/startup-valuations/saas-unit-economics",
       status: "available",
     },
     {
@@ -26,19 +26,19 @@ const StartupValuations = () => {
     {
       name: "Berkus Valuation Model",
       description: "Pre-Revenue Valuation based on Assessment of Five Key Factors and Scenario Modelling",
-      href: "#",
+      href: "/toolbox/startup-valuations/berkus-valuation",
       status: "available",
     },
     {
       name: "First Chicago Valuation Method",
       description: "Simple Scenario Based DCF Model for Startup Valuation with Exit Value based on both EBITDA and Revenue",
-      href: "#",
+      href: "/toolbox/startup-valuations/first-chicago-method",
       status: "available",
     },
     {
       name: "Perpetuity & Exit Valuation Models",
       description: "Quick & Flexible Approaches to Valuation with Scenario-Based Sensitivity and Value Driver Analysis",
-      href: "#",
+      href: "/toolbox/startup-valuations/perpetuity-exit-models",
       status: "available",
     },
     {
@@ -118,7 +118,7 @@ const StartupValuations = () => {
                 <CardContent>
                   <Link to={model.href}>
                     <Button variant="outline" className="w-full">
-                      {model.status === "contact" ? "Contact Us" : "Explore Model"}
+                      {model.status === "contact" ? "Contact Us" : "Open Model"}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
