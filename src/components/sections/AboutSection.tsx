@@ -8,21 +8,29 @@ const AboutSection = () => {
           <Badge className="mb-4 bg-indigo-100 text-indigo-800" variant="outline">
             About Us
           </Badge>
-          <h3 className="text-3xl font-bold mb-6" style={{ color: 'rgb(50, 100, 150)' }}>
-            Our Mission
-          </h3>
-          <p className="text-lg text-slate-600 max-w-3xl mx-auto mb-12">
-            Empower businesses facing complex financial choices to make better decisions with a best-in-class, 
-            intuitive, business-minded Financial Decision Model toolbox and expert consulting services.
-          </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
           <div className="bg-slate-50 rounded-lg p-8">
-            <h4 className="text-xl font-semibold mb-6" style={{ color: 'rgb(50, 100, 150)' }}>
-              About Profile
-            </h4>
-            <div className="space-y-4 text-slate-700 leading-relaxed">
+            <div className="flex flex-col md:flex-row gap-8 items-start">
+              <div className="flex-shrink-0">
+                <img 
+                  src="/lovable-uploads/6d231596-883b-484b-86b3-0e8476eb7ccb.png" 
+                  alt="Palle Floe Nielsen" 
+                  className="w-48 h-48 rounded-lg object-cover"
+                />
+              </div>
+              <div className="flex-1">
+                <h4 className="text-xl font-semibold mb-6" style={{ color: 'rgb(50, 100, 150)' }}>
+                  About Profile
+                </h4>
+                <div className="space-y-4 text-slate-700 leading-relaxed">
+                  <p>
+                    My name is <strong>Palle Floe Nielsen</strong> and I'm based in Copenhagen, Denmark.
+                  </p>
+                  <p>
+                    Contact info: <a href="mailto:palle@financialdecisionmodels.com" className="text-blue-600 hover:text-blue-700">Palle@financialdecisionmodels.com</a>
+                  </p>
               <p>
                 <strong>I'm a finance leader, still curious and focused after all those years;</strong> Whether the challenges have 
                 been creating performance management capabilities, business improvements and turnarounds, M&A 
@@ -47,6 +55,8 @@ const AboutSection = () => {
                 decisions</strong> with a best-in-class, intuitive, business-minded Financial Decision Model toolbox and expert consulting 
                 services.
               </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
