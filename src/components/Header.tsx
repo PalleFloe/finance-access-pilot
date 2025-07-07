@@ -8,12 +8,15 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-              <TrendingUp className="w-6 h-6 text-white" />
+            <div className="w-10 h-10 rounded-lg overflow-hidden">
+              <img 
+                src="/lovable-uploads/50c4551d-af55-4e28-a327-3aeb92945cda.png" 
+                alt="Financial Decision Models Logo" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <h1 className="text-xl font-bold text-slate-900">Financial Decision Models</h1>
-              <p className="text-sm text-slate-600">Expert Financial Consulting & Tools</p>
             </div>
           </Link>
           
