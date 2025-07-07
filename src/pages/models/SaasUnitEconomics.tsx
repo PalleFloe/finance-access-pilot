@@ -5,11 +5,33 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { ArrowLeft, Calculator } from "lucide-react";
 import Header from "@/components/Header";
 import { useEffect } from "react";
+import { supabase } from "@/integrations/supabase/client";
 
 const SaasUnitEconomics = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const downloadModel = async (modelFileName: string) => {
+    try {
+      const { data } = supabase.storage
+        .from('excel-models')
+        .getPublicUrl(modelFileName)
+      
+      if (data?.publicUrl) {
+        const link = document.createElement('a')
+        link.href = data.publicUrl
+        link.download = modelFileName
+        link.target = '_blank'
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+      }
+    } catch (error) {
+      console.error('Download error:', error)
+      alert('Error downloading model. Please try again.')
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
@@ -47,7 +69,10 @@ const SaasUnitEconomics = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+              <Button 
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                onClick={() => downloadModel('SaaS Unit Economics Model 25.07.07')}
+              >
                 Open Model
               </Button>
             </CardContent>
