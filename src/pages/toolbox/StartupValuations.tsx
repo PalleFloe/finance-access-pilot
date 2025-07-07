@@ -4,8 +4,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, ArrowRight, Calculator, TrendingUp, Check, Clock } from "lucide-react";
 import Header from "@/components/Header";
+import { useEffect } from "react";
 
 const StartupValuations = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const models = [
     {
       name: "SaaS Unit Economics Model",
