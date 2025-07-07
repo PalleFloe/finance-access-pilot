@@ -71,7 +71,7 @@ const SaasUnitEconomics = () => {
             <CardContent>
               <Button 
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white"
-                onClick={() => downloadModel('SaaS Unit Economics Model 25.07.07')}
+                onClick={() => downloadModel('SaaS Unit Economics Model 25.07.07.xlsm')}
               >
                 Open Model
               </Button>

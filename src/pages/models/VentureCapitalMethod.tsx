@@ -71,7 +71,7 @@ const VentureCapitalMethod = () => {
             <CardContent>
               <Button 
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white"
-                onClick={() => downloadModel('Venture Capital Valuation Method 25.07.07')}
+                onClick={() => downloadModel('Venture Capital Valuation Method 25.07.07.xlsm')}
               >
                 Open Model
               </Button>

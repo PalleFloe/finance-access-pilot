@@ -70,10 +70,10 @@ const PerpetuityExitValuation = () => {
             </CardHeader>
             <CardContent>
               <Button 
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white"
-                onClick={() => downloadModel('Perpetuity and Exit models 25.07.07')}
+                className="w-full bg-slate-400 text-white cursor-not-allowed"
+                disabled
               >
-                Open Model
+                Coming Soon - Upload Required
               </Button>
             </CardContent>
           </Card>

@@ -71,7 +71,7 @@ const BerkusValuation = () => {
             <CardContent>
               <Button 
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white"
-                onClick={() => downloadModel('Berkus Valuation Models 25.07.07')}
+                onClick={() => downloadModel('Berkus Valuation Models 25.07.07.xlsm')}
               >
                 Open Model
               </Button>
