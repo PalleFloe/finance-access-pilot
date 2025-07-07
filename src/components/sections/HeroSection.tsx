@@ -7,8 +7,8 @@ const HeroSection = () => {
   return (
     <section className="py-20 px-6">
       <div className="container mx-auto max-w-4xl text-center">
-        <Badge className="mb-6 bg-blue-100 text-blue-800 border-blue-200" variant="outline">
-          Coming Soon - Beta Program
+        <Badge className="mb-6 bg-green-100 text-green-800 border-green-200" variant="outline">
+          Beta Access Granted
         </Badge>
         <h2 className="text-5xl font-bold text-slate-900 mb-6">
           Empower Your <span style={{ color: 'rgb(50, 100, 150)' }}>Financial Decisions</span>
@@ -18,26 +18,19 @@ const HeroSection = () => {
           and expert consulting services. Transform complex financial choices into clear, actionable strategies.
         </p>
         
-        {/* Beta Access Form */}
+        {/* Welcome Message */}
         <Card className="max-w-md mx-auto mb-12 shadow-lg border-slate-200">
-          <CardHeader className="text-center">
-            <CardTitle className="flex items-center justify-center space-x-2">
-              <Mail className="w-5 h-5" style={{ color: 'rgb(50, 100, 150)' }} />
-              <span>Request Beta Access</span>
-            </CardTitle>
-            <CardDescription>
-              Get access to the beta version of the Financial Decision Model toolbox. Click below to request access.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <a 
-              href="mailto:Palle@financialdecisionmodels.com?subject=Beta Access Request"
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors flex items-center justify-center"
-            >
-              <Mail className="w-4 h-4 mr-2" />
-              Request Beta Access
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </a>
+          <CardContent className="pt-6">
+            <div className="text-center space-y-3">
+              <div className="flex items-center justify-center">
+                <Mail className="w-5 h-5 text-blue-600 mr-2" />
+                <span className="font-medium text-slate-900">Welcome to Beta Access</span>
+              </div>
+              <p className="text-sm text-slate-600">
+                You now have access to the Financial Decision Model toolbox. 
+                Explore our tools and start making better financial decisions.
+              </p>
+            </div>
           </CardContent>
         </Card>
       </div>
