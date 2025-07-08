@@ -16,7 +16,6 @@ const Footer = () => {
             </div>
             <div>
               <h5 className="text-xl font-bold">Financial Decision Models</h5>
-              <p className="text-slate-400 text-sm">Expert Financial Consulting & Tools</p>
             </div>
           </div>
           <Separator className="bg-slate-700 mb-6" />
