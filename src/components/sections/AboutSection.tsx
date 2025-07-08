@@ -15,9 +15,9 @@ const AboutSection = () => {
             <div className="flex flex-col md:flex-row gap-8 items-start text-left">
               <div className="flex-shrink-0">
                 <img 
-                  src="/lovable-uploads/6d231596-883b-484b-86b3-0e8476eb7ccb.png" 
+                  src="/lovable-uploads/98787598-c310-4cf2-bca4-9f265a379e60.png" 
                   alt="Palle Floe Nielsen" 
-                  className="w-48 h-48 rounded-lg object-cover"
+                  className="w-32 h-48 rounded-lg object-cover"
                 />
               </div>
               <div className="flex-1">
