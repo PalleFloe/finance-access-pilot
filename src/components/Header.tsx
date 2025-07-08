@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
-import { TrendingUp, Phone } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { TrendingUp } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 const Header = () => {
   const handleLogoClick = () => {
@@ -41,12 +41,9 @@ const Header = () => {
             <Link to="/contact" className="text-slate-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
               Contact
             </Link>
-            <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
-              <Link to="/consulting" className="flex items-center space-x-2">
-                <Phone className="w-4 h-4" />
-                <span>Get Expert Help</span>
-              </Link>
-            </Button>
+            <Badge className="bg-green-100 text-green-800 border-green-200" variant="outline">
+              Beta Access Granted
+            </Badge>
           </nav>
         </div>
       </div>
