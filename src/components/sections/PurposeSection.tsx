@@ -8,7 +8,7 @@ const PurposeSection = () => {
           <Badge className="mb-4 bg-slate-100 text-slate-800" variant="outline">
             Our Purpose
           </Badge>
-          <h3 className="text-3xl font-bold text-slate-900 mb-6" style={{ color: 'rgb(50, 100, 150)' }}>
+          <h3 className="text-3xl font-bold text-slate-900 mb-6 text-primary">
             Transforming Complex Financial Decisions
           </h3>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">

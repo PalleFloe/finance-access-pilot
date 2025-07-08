@@ -65,7 +65,7 @@ const StartupValuations = () => {
                 }
               }, 100);
             }}
-            className="inline-flex items-center text-slate-600 hover:text-blue-600 mb-6"
+            className="inline-flex items-center text-slate-600 hover:text-primary mb-6"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Toolbox
@@ -110,7 +110,7 @@ const StartupValuations = () => {
                 )}
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
-                    <Calculator className="w-5 h-5" style={{ color: 'rgb(50, 100, 150)' }} />
+                    <Calculator className="w-5 h-5 text-primary" />
                     <span>{model.name}</span>
                   </CardTitle>
                   <CardDescription>{model.description}</CardDescription>

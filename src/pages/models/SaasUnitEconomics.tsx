@@ -41,7 +41,7 @@ const SaasUnitEconomics = () => {
         <div className="container mx-auto max-w-4xl">
           <Link 
             to="/toolbox/startup-valuations"
-            className="inline-flex items-center text-slate-600 hover:text-blue-600 mb-8"
+            className="inline-flex items-center text-slate-600 hover:text-primary mb-8"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Startup Valuations
@@ -61,7 +61,7 @@ const SaasUnitEconomics = () => {
           <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
             <CardHeader>
               <CardTitle className="flex items-center space-x-2">
-                <Calculator className="w-6 h-6" style={{ color: 'rgb(50, 100, 150)' }} />
+                <Calculator className="w-6 h-6 text-primary" />
                 <span>SaaS Unit Economics Model</span>
               </CardTitle>
               <CardDescription>
@@ -70,7 +70,7 @@ const SaasUnitEconomics = () => {
             </CardHeader>
             <CardContent>
               <Button 
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                 onClick={() => downloadModel('SaaS Unit Economics Model 25.07.07.xlsm')}
               >
                 Open Model

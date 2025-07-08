@@ -25,16 +25,16 @@ const Header = () => {
           </Link>
           
           <nav className="flex items-center space-x-6">
-            <Link to="/toolbox" className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+            <Link to="/toolbox" className="text-slate-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
               Toolbox
             </Link>
-            <Link to="/consulting" className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+            <Link to="/consulting" className="text-slate-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
               Consulting
             </Link>
-            <Link to="/blog" className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+            <Link to="/blog" className="text-slate-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
               Blog
             </Link>
-            <Link to="/about" className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+            <Link to="/about" className="text-slate-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
               About
             </Link>
           </nav>

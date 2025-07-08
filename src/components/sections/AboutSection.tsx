@@ -21,7 +21,7 @@ const AboutSection = () => {
                 />
               </div>
               <div className="flex-1">
-                <h4 className="text-xl font-semibold mb-6" style={{ color: 'rgb(50, 100, 150)' }}>
+                <h4 className="text-xl font-semibold mb-6 text-primary">
                   About Profile
                 </h4>
                 <div className="space-y-4 text-slate-700 leading-relaxed">
@@ -29,7 +29,7 @@ const AboutSection = () => {
                     My name is <strong>Palle Floe Nielsen</strong> and I'm based in Copenhagen, Denmark.
                   </p>
                   <p>
-                    Contact info: <a href="mailto:palle@financialdecisionmodels.com" className="text-blue-600 hover:text-blue-700">Palle@financialdecisionmodels.com</a>
+                    Contact info: <a href="mailto:palle@financialdecisionmodels.com" className="text-primary hover:text-primary/90">Palle@financialdecisionmodels.com</a>
                   </p>
               <p>
                 <strong>I'm a finance leader, still curious and focused after all those years;</strong> Whether the challenges have 

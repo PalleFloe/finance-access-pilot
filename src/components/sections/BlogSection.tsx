@@ -9,7 +9,7 @@ const BlogSection = () => {
           <Badge className="mb-4 bg-green-100 text-green-800" variant="outline">
             Insights & Resources
           </Badge>
-          <h3 className="text-3xl font-bold mb-6" style={{ color: 'rgb(50, 100, 150)' }}>
+          <h3 className="text-3xl font-bold mb-6 text-primary">
             Financial Decision Insights
           </h3>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">

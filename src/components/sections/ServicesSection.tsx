@@ -12,7 +12,7 @@ const ServicesSection = () => {
           <Badge className="mb-4 bg-blue-100 text-blue-800" variant="outline">
             Our Services
           </Badge>
-          <h3 className="text-3xl font-bold mb-6" style={{ color: 'rgb(50, 100, 150)' }}>
+          <h3 className="text-3xl font-bold mb-6 text-primary">
             Comprehensive Financial Solutions
           </h3>
         </div>
@@ -28,8 +28,8 @@ const ServicesSection = () => {
             </div>
             <CardHeader>
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <Calculator className="w-6 h-6 text-white" />
+                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                  <Calculator className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
                   <CardTitle className="text-xl">Financial Decision Model Toolbox</CardTitle>
@@ -59,7 +59,7 @@ const ServicesSection = () => {
                 </div>
               </div>
               <div className="pt-4 border-t border-slate-100 mt-6">
-                <Button asChild className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
                   <Link to="/toolbox">
                     Explore Free Tools
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -79,8 +79,8 @@ const ServicesSection = () => {
             </div>
             <CardHeader>
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center">
-                  <Users className="w-6 h-6 text-white" />
+                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                  <Users className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
                   <CardTitle className="text-xl">Expert Consulting Services</CardTitle>
@@ -106,7 +106,7 @@ const ServicesSection = () => {
                 </div>
               </div>
               <div className="pt-4 border-t border-slate-100 mt-6">
-                <Button asChild className="w-full bg-indigo-600 hover:bg-indigo-700 text-white">
+                <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
                   <Link to="/consulting">
                     Schedule Consultation
                     <ArrowRight className="w-4 h-4 ml-2" />

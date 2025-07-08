@@ -7,7 +7,7 @@ const StatsSection = () => {
         <div className="grid md:grid-cols-3 gap-8 text-center">
           <div className="space-y-3">
             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
-              <BarChart3 className="w-8 h-8 text-blue-600" />
+              <BarChart3 className="w-8 h-8 text-primary" />
             </div>
             <h4 className="text-3xl font-bold text-slate-900">20+</h4>
             <p className="text-slate-600">Financial Models</p>

@@ -62,8 +62,8 @@ const LoginForm = ({ onLogin }: LoginFormProps) => {
       <div className="container mx-auto max-w-md">
         <div className="text-center mb-8">
           <div className="flex items-center justify-center space-x-3 mb-4">
-            <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-              <Lock className="w-7 h-7 text-white" />
+            <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+              <Lock className="w-7 h-7 text-primary-foreground" />
             </div>
             <div>
               <h1 className="text-2xl font-bold text-slate-900">Financial Decision Models</h1>
@@ -75,7 +75,7 @@ const LoginForm = ({ onLogin }: LoginFormProps) => {
         <Card className="shadow-lg border-slate-200">
           <CardHeader className="text-center">
             <CardTitle className="flex items-center justify-center space-x-2">
-              <Mail className="w-5 h-5 text-blue-600" />
+              <Mail className="w-5 h-5 text-primary" />
               <span>Access Beta</span>
             </CardTitle>
             <CardDescription>
@@ -116,7 +116,7 @@ const LoginForm = ({ onLogin }: LoginFormProps) => {
 
               <Button 
                 type="submit" 
-                className="w-full bg-blue-600 hover:bg-blue-700"
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                 disabled={isLoading}
               >
                 {isLoading ? "Verifying..." : "Access Beta"}
@@ -129,7 +129,7 @@ const LoginForm = ({ onLogin }: LoginFormProps) => {
                 Need access? Email{" "}
                 <a 
                   href="mailto:palle@financialdecisionmodels.com" 
-                  className="text-blue-600 hover:text-blue-700"
+                  className="text-primary hover:text-primary/90"
                 >
                   palle@financialdecisionmodels.com
                 </a>

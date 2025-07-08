@@ -12,7 +12,7 @@ const InvestmentAnalysis = () => {
       
       {/* Back Button */}
       <div className="container mx-auto px-6 py-4">
-        <Link to="/" className="inline-flex items-center text-slate-700 hover:text-blue-600">
+        <Link to="/" className="inline-flex items-center text-slate-700 hover:text-primary">
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back to Toolbox
         </Link>
