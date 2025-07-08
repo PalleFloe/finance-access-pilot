@@ -25,18 +25,18 @@ const Header = () => {
           </Link>
           
           <nav className="flex items-center space-x-6">
-            <a href="#toolbox" className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+            <Link to="/toolbox" className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
               Toolbox
-            </a>
-            <a href="#consulting" className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+            </Link>
+            <Link to="/consulting" className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
               Consulting
-            </a>
-            <a href="#blog" className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+            </Link>
+            <Link to="/blog" className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
               Blog
-            </a>
-            <a href="#about" className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+            </Link>
+            <Link to="/about" className="text-slate-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
               About
-            </a>
+            </Link>
           </nav>
         </div>
       </div>

@@ -2,9 +2,6 @@ import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/sections/HeroSection";
 import ServicesSection from "@/components/sections/ServicesSection";
-import ToolboxSection from "@/components/sections/ToolboxSection";
-import AboutSection from "@/components/sections/AboutSection";
-import BlogSection from "@/components/sections/BlogSection";
 import Footer from "@/components/sections/Footer";
 import LoginForm from "@/components/LoginForm";
 
@@ -40,9 +37,6 @@ const Index = () => {
       <Header />
       <HeroSection />
       <ServicesSection />
-      <ToolboxSection />
-      <AboutSection />
-      <BlogSection />
       <Footer />
     </div>
   );
