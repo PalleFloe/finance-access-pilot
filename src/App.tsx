@@ -9,6 +9,7 @@ import Toolbox from "./pages/Toolbox";
 import About from "./pages/About";
 import Consulting from "./pages/Consulting";
 import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import ThankYou from "./pages/ThankYou";
 import StartupValuations from "./pages/toolbox/StartupValuations";
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/consulting" element={<Consulting />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/toolbox/startup-valuations" element={<StartupValuations />} />
           <Route path="/toolbox/mature-business" element={<MatureBusiness />} />
