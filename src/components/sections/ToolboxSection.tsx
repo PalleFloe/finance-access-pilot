@@ -16,7 +16,7 @@ const ToolboxSection = () => {
             Transform Complex Financial Choices Into Clear Insights and Decisions
           </h3>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-            The Complete Financial Decision Model Toolbox provides business leaders, entrepreneurs, and financial professionals with proven methodologies to navigate complex financial decisions with confidence. This comprehensive collection of professional Excel models transforms sophisticated financial analysis into practical, accessible tools for real-world application.
+            The toolbox provides business leaders, entrepreneurs, and financial professionals with proven methodologies to help navigate complex financial decisions. This comprehensive collection of professional models transforms sophisticated financial analysis into practical, accessible tools for real-world applications.
           </p>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto mt-4">
             Each model includes step-by-step guidance on concepts and best practices, standardized structure with clear value driver logic, and built-in scenario & sensitivity analysis.
