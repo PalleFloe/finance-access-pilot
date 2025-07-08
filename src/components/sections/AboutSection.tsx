@@ -12,7 +12,7 @@ const AboutSection = () => {
 
         <div className="max-w-4xl mx-auto">
           <div className="bg-slate-50 rounded-lg p-8">
-            <div className="flex flex-col md:flex-row gap-8 items-start">
+            <div className="flex flex-col md:flex-row gap-8 items-start text-left">
               <div className="flex-shrink-0">
                 <img 
                   src="/lovable-uploads/6d231596-883b-484b-86b3-0e8476eb7ccb.png" 
@@ -60,7 +60,7 @@ const AboutSection = () => {
           {/* Logo section */}
           <div className="max-w-4xl mx-auto mt-16">
             <div className="bg-slate-50 rounded-lg p-8">
-              <div className="flex flex-col md:flex-row gap-8 items-center">
+              <div className="flex flex-col md:flex-row gap-8 items-center text-left">
                 <div className="flex-shrink-0">
                   <img 
                     src="/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" 
