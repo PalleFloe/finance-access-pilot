@@ -14,7 +14,7 @@ const Header = () => {
           <Link to="/" onClick={handleLogoClick} className="flex items-center space-x-3">
             <div className="w-12 h-12 rounded-lg overflow-hidden">
               <img 
-                src="/lovable-uploads/676443da-8f1c-498f-b5b0-617c3b12a6c0.png" 
+                src="/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" 
                 alt="Financial Decision Models Logo" 
                 className="w-full h-full object-cover"
               />
