@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Users, Calculator } from "lucide-react";
+import { CheckCircle, Users, Calculator, Check, Phone } from "lucide-react";
 
 const ServicesSection = () => {
   return (
@@ -16,8 +16,14 @@ const ServicesSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
-          {/* Phase One - Toolbox */}
-          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow">
+          {/* Financial Decision Model Toolbox */}
+          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative">
+            <div className="absolute -top-3 -right-3 z-10">
+              <Badge className="bg-green-100 text-green-800 border-green-200 shadow-sm">
+                <Check className="w-3 h-3 mr-1" />
+                100% Free Toolbox
+              </Badge>
+            </div>
             <CardHeader>
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
@@ -25,7 +31,6 @@ const ServicesSection = () => {
                 </div>
                 <div>
                   <CardTitle className="text-xl">Financial Decision Model Toolbox</CardTitle>
-                  <Badge className="bg-green-100 text-green-800 border-green-200">Phase One</Badge>
                 </div>
               </div>
               <CardDescription className="text-base">
@@ -52,8 +57,14 @@ const ServicesSection = () => {
             </CardContent>
           </Card>
 
-          {/* Phase Two - Consulting */}
-          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow">
+          {/* Expert Consulting Services */}
+          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative">
+            <div className="absolute -top-3 -right-3 z-10">
+              <Badge className="bg-blue-100 text-blue-800 border-blue-200 shadow-sm">
+                <Phone className="w-3 h-3 mr-1" />
+                Get Expert Help
+              </Badge>
+            </div>
             <CardHeader>
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center">
@@ -61,11 +72,10 @@ const ServicesSection = () => {
                 </div>
                 <div>
                   <CardTitle className="text-xl">Expert Consulting Services</CardTitle>
-                  <Badge className="bg-blue-100 text-blue-800 border-blue-200">Phase Two</Badge>
                 </div>
               </div>
               <CardDescription className="text-base">
-                Personalized consulting for complex financial decision processes
+                Consulting solutions for complex decisions and processes
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
