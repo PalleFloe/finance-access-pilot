@@ -13,7 +13,7 @@ const ToolboxSection = () => {
             Financial Decision Toolbox
           </Badge>
           <h3 className="text-3xl font-bold mb-6 text-primary">
-            Comprehensive Financial Decision Models
+            Transform Complex Financial Choices Into Clear Insights and Decisions
           </h3>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
             Each model includes step-by-step guidance on concepts and best practices, standardized structure with clear value driver logic, and built-in scenario & sensitivity analysis.
