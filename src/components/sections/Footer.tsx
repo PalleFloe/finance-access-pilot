@@ -6,19 +6,6 @@ const Footer = () => {
     <footer className="bg-slate-900 text-white py-12 px-6">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center">
-          <div className="flex items-center justify-center space-x-3 mb-6">
-            <div className="w-8 h-12 rounded-lg overflow-hidden">
-              <img 
-                src="/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" 
-                alt="Financial Decision Models Logo" 
-                className="w-full h-full object-contain"
-              />
-            </div>
-            <div>
-              <h5 className="text-xl font-bold">Financial Decision Models</h5>
-            </div>
-          </div>
-          <Separator className="bg-slate-700 mb-6" />
           <div className="flex flex-col md:flex-row items-center justify-between">
             <p className="text-slate-400 mb-4 md:mb-0">
               © 2025 Financial Decision Models. All rights reserved.
