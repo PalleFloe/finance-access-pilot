@@ -19,7 +19,7 @@ const ServicesSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Financial Decision Model Toolbox */}
-          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-all duration-300 relative bg-white/80 backdrop-blur-sm">
+          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-all duration-300 relative bg-white/80 backdrop-blur-sm flex flex-col h-full">
             <div className="absolute -top-3 -right-3 z-10">
               <Badge className="bg-green-100 text-green-800 border-green-200 shadow-sm">
                 <Check className="w-3 h-3 mr-1" />
@@ -39,22 +39,24 @@ const ServicesSection = () => {
                 Comprehensive online toolbox for making informed financial decisions
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                <p className="text-slate-700">Guidance on selecting appropriate financial decision models for specific business needs</p>
-              </div>
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                <p className="text-slate-700">Clear guidance on concepts, terminology, and best practices</p>
-              </div>
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                <p className="text-slate-700">Support for developing sound assumptions and estimates</p>
-              </div>
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                <p className="text-slate-700">User-friendly models with standardized structure, proper calculations, and built-in sensitivity analysis</p>
+            <CardContent className="flex-1 flex flex-col">
+              <div className="space-y-4 flex-1">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-slate-700">Guidance on selecting appropriate financial decision models for specific business needs</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-slate-700">Clear guidance on concepts, terminology, and best practices</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-slate-700">Support for developing sound assumptions and estimates</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-slate-700">User-friendly models with standardized structure, proper calculations, and built-in sensitivity analysis</p>
+                </div>
               </div>
               <div className="pt-4 border-t border-slate-100 mt-6">
                 <Button asChild className="w-full bg-blue-600 hover:bg-blue-700 text-white">
@@ -68,7 +70,7 @@ const ServicesSection = () => {
           </Card>
 
           {/* Expert Consulting Services */}
-          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-all duration-300 relative bg-white/80 backdrop-blur-sm">
+          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-all duration-300 relative bg-white/80 backdrop-blur-sm flex flex-col h-full">
             <div className="absolute -top-3 -right-3 z-10">
               <Badge className="bg-blue-100 text-blue-800 border-blue-200 shadow-sm">
                 <Phone className="w-3 h-3 mr-1" />
@@ -88,18 +90,20 @@ const ServicesSection = () => {
                 Consulting solutions for complex decisions and processes
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
-                <p className="text-slate-700">Customization of models for specific company requirements</p>
-              </div>
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
-                <p className="text-slate-700">Challenging, evaluation and improvement of existing financial decision processes</p>
-              </div>
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
-                <p className="text-slate-700">End-to-end financial and/or process lead or support for driving complex financial decisions</p>
+            <CardContent className="flex-1 flex flex-col">
+              <div className="space-y-4 flex-1">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-slate-700">Customization of models for specific company requirements</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-slate-700">Challenging, evaluation and improvement of existing financial decision processes</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-slate-700">End-to-end financial and/or process lead or support for driving complex financial decisions</p>
+                </div>
               </div>
               <div className="pt-4 border-t border-slate-100 mt-6">
                 <Button asChild className="w-full bg-indigo-600 hover:bg-indigo-700 text-white">
