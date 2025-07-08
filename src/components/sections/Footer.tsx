@@ -7,9 +7,10 @@ const Footer = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center">
           <div className="flex flex-col md:flex-row items-center justify-between">
-            <p className="text-slate-600 mb-4 md:mb-0">
-              © 2025 Financial Decision Models. All rights reserved.
-            </p>
+            <div className="text-slate-600 mb-4 md:mb-0">
+              <p>© 2025 Financial Decision Models. All rights reserved.</p>
+              <p className="mt-1">Contact: <a href="mailto:Palle@financialdecisionmodels.com" className="text-primary hover:underline">Palle@financialdecisionmodels.com</a></p>
+            </div>
             <div className="flex items-center space-x-6">
               <Badge variant="outline" className="border-slate-300 text-slate-600">
                 financialdecisionmodels.com
