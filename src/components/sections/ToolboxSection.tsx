@@ -30,8 +30,7 @@ const ToolboxSection = () => {
               </Badge>
             </div>
             <CardHeader>
-              <CardTitle className="flex items-center space-x-2">
-                <Calculator className="w-5 h-5" style={{ color: 'rgb(50, 100, 150)' }} />
+              <CardTitle>
                 <span>Start-up Valuations</span>
               </CardTitle>
               <CardDescription>
@@ -56,8 +55,7 @@ const ToolboxSection = () => {
               </Badge>
             </div>
             <CardHeader>
-              <CardTitle className="flex items-center space-x-2">
-                <BarChart3 className="w-5 h-5 text-green-600" />
+              <CardTitle>
                 <span>Mature Business</span>
               </CardTitle>
               <CardDescription>
@@ -82,8 +80,7 @@ const ToolboxSection = () => {
               </Badge>
             </div>
             <CardHeader>
-              <CardTitle className="flex items-center space-x-2">
-                <TrendingUp className="w-5 h-5 text-indigo-600" />
+              <CardTitle>
                 <span>Investment Analysis</span>
               </CardTitle>
               <CardDescription>
