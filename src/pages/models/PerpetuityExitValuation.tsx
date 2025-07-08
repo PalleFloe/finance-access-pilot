@@ -121,7 +121,7 @@ const PerpetuityExitValuation = () => {
                     <div className="space-y-4">
                       <div>
                         <h4 className="font-semibold text-heading">Common Features Across All Models:</h4>
-                        <ul className="list-disc pl-6 mt-2 space-y-1 text-sm">
+                        <ul className="list-disc pl-6 mt-2 space-y-1 text-base">
                           <li>Flexible year selection (1-10 years) for analysis period</li>
                           <li>Investment integration with timing options (up to 2 investments)</li>
                           <li>Discount rate input for all NPV calculations</li>
@@ -131,22 +131,22 @@ const PerpetuityExitValuation = () => {
                       
                       <div>
                         <h4 className="font-semibold text-heading">NPV of Perpetuity</h4>
-                        <p className="text-sm">Simple perpetuity model with no growth assumption (Cash Flow ÷ Discount Rate), scenario-based cash flow sensitivity, and includes exit multiple assumption.</p>
+                        <p className="text-base">Simple perpetuity model with no growth assumption (Cash Flow ÷ Discount Rate), scenario-based cash flow sensitivity, and includes exit multiple assumption.</p>
                       </div>
                       
                       <div>
                         <h4 className="font-semibold text-heading">NPV of Growing Perpetuity</h4>
-                        <p className="text-sm">Gordon Growth perpetuity model with single growth rate assumption, demonstrates impact of consistent growth on perpetual value.</p>
+                        <p className="text-base">Gordon Growth perpetuity model with single growth rate assumption, demonstrates impact of consistent growth on perpetual value.</p>
                       </div>
                       
                       <div>
                         <h4 className="font-semibold text-heading">NPV of Two-Phase Growing Perpetuity</h4>
-                        <p className="text-sm">Sophisticated perpetuity model with distinct growth phases, models transition from high growth to mature growth rates.</p>
+                        <p className="text-base">Sophisticated perpetuity model with distinct growth phases, models transition from high growth to mature growth rates.</p>
                       </div>
                       
                       <div>
                         <h4 className="font-semibold text-heading">NPV of Exit Value</h4>
-                        <p className="text-sm">Simple exit-based valuation calculation, direct comparison alternative to perpetuity approaches.</p>
+                        <p className="text-base">Simple exit-based valuation calculation, direct comparison alternative to perpetuity approaches.</p>
                       </div>
                     </div>
                   </div>

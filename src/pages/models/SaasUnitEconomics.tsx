@@ -183,7 +183,7 @@ const SaasUnitEconomics = () => {
                         <h4 className="font-semibold text-heading">Mathematical Foundation</h4>
                         <div className="bg-slate-100 p-4 rounded-lg mt-2">
                           <h5 className="font-semibold mb-2">Core Unit Economics Calculations Framework</h5>
-                          <ul className="space-y-1 text-sm">
+                          <ul className="space-y-1 text-base">
                             <li>• Customer Lifetime Value (CLV) = (Revenue Per Customer × Customer Lifetime) - (Cost Per Customer × Customer Lifetime)</li>
                             <li>• Customer Lifetime = 1 ÷ Churn Rate</li>
                             <li>• Customer Acquisition Payback Period = Customer Acquisition Cost ÷ (Revenue Per Customer - Cost Per Customer)</li>

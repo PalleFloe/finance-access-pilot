@@ -77,7 +77,7 @@ const StartupValuations = () => {
           <h2 className="text-2xl text-heading mb-6">
             Comprehensive Startup Valuation Suite: Proven Methods to Estimate, Understand and Explain the Value of Startups
           </h2>
-          <p className="text-lg text-slate-600 mb-8">
+          <p className="text-xl text-slate-600 mb-8">
             Explore our start-up valuation models to make informed investment decisions.
           </p>
 
@@ -131,55 +131,55 @@ const StartupValuations = () => {
           <div className="max-w-4xl mx-auto space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-heading mb-4">Professional Startup Financial Decision & Valuation Models Introduction</h3>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-lg text-slate-600 leading-relaxed">
                 The Comprehensive Startup Valuation Suite provides entrepreneurs, investors, and financial advisors with proven methodologies to understand and confidently explain startup valuations. This collection of professional Excel models transforms complex valuation theory into practical, accessible tools for real-world application.
               </p>
             </div>
 
             <div>
               <h3 className="text-2xl font-bold text-heading mb-4">Core Challenge Addressed</h3>
-              <p className="text-slate-600 leading-relaxed mb-4">
+              <p className="text-lg text-slate-600 leading-relaxed mb-4">
                 Startup valuation is notoriously difficult to understand and even harder to explain convincingly. The models here help solve this fundamental problem by providing multiple proven methodologies that help users not only calculate credible valuations but also articulate the logic behind their conclusions to investors, partners, and stakeholders.
               </p>
-              <p className="text-slate-600 leading-relaxed italic">
+              <p className="text-lg text-slate-600 leading-relaxed italic">
                 As Marc Andreessen, co-founder of Andreessen Horowitz, emphasizes: "The best way to think about investments is in terms of a portfolio of calculated risks. You need sophisticated models to understand both the upside potential and downside risks."¹ This range of models provides exactly this analytical foundation.
               </p>
             </div>
 
             <div>
               <h3 className="text-2xl font-bold text-heading mb-4">Comprehensive Coverage of Startup Valuation Methods</h3>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-lg text-slate-600 leading-relaxed">
                 The five-model framework covers the complete valuation spectrum: understanding business fundamentals through Unit Economics analysis, establishing pre-revenue valuations via risk-based Berkus methodology, modelling investor perspectives through Venture Capital approaches, analyzing multiple outcomes via First Chicago scenario planning, and insight into long-term value through Perpetuity & Exit frameworks. Each model comes with comprehensive guidance explaining what it does, why it matters, when to use it, and how to implement it effectively.
               </p>
             </div>
 
             <div>
               <h3 className="text-2xl font-bold text-heading mb-4">Professional Credibility Through Rigorous Analysis</h3>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-lg text-slate-600 leading-relaxed">
                 Each model represents established methodologies used by professional investors and advisors worldwide. The sophisticated Excel implementation maintains mathematical rigor while remaining accessible to users at all experience levels. The emphasis on cross-model validation and scenario-based analysis with comprehensive scenario and sensitivity testing addresses startups' inherent uncertainty across diverse market conditions and business contexts.
               </p>
             </div>
 
             <div>
               <h3 className="text-2xl font-bold text-heading mb-4">Strategic Integration Benefits</h3>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-lg text-slate-600 leading-relaxed">
                 The power of this model suite lies not in individual tool excellence, but in the synergistic integration across different decision-making contexts. Unit Economics analysis validates business model sustainability, Venture Capital methodology plans multi-round financing, Berkus assessment establishes pre-revenue valuations, First Chicago analysis provides comprehensive scenario planning, and Perpetuity & Exit models optimize long-term value creation strategies.
               </p>
             </div>
 
             <div>
               <h3 className="text-2xl font-bold text-heading mb-4">Professional Excellence Standards</h3>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-lg text-slate-600 leading-relaxed">
                 Each model maintains institutional-quality analytical standards while preserving the accessibility necessary for entrepreneurial application. The emphasis on cross-model validation and scenario-based analysis with comprehensive sensitivity testing ensures robust decision-making support that satisfies both founder strategic needs and investor due diligence requirements.
               </p>
             </div>
 
             <div>
               <h3 className="text-2xl font-bold text-heading mb-4">Future-Ready Framework</h3>
-              <p className="text-slate-600 leading-relaxed mb-4">
+              <p className="text-lg text-slate-600 leading-relaxed mb-4">
                 As startup ecosystems continue evolving, these models provide the analytical foundation necessary to adapt to changing market conditions, regulatory environments, and competitive dynamics. The combination of sophisticated Excel implementation with clear methodological documentation enables continuous refinement and professional application across diverse industry contexts and geographic markets.
               </p>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-lg text-slate-600 leading-relaxed">
                 Whether preparing for initial fundraising, structuring growth investments, or planning strategic exits, this comprehensive model suite delivers the analytical excellence and strategic insight necessary for sustainable startup success in today's competitive investment landscape.
               </p>
             </div>

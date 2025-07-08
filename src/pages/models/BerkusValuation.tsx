@@ -121,23 +121,23 @@ const BerkusValuation = () => {
                     <div className="space-y-4">
                       <div>
                         <h4 className="font-semibold text-heading">1. Sound Idea (Business Risk Reduction)</h4>
-                        <p className="text-sm">Market opportunity validation, business model viability, competitive differentiation, and customer need verification.</p>
+                        <p className="text-base">Market opportunity validation, business model viability, competitive differentiation, and customer need verification.</p>
                       </div>
                       <div>
                         <h4 className="font-semibold text-heading">2. Working Prototype (Technology Risk Reduction)</h4>
-                        <p className="text-sm">Technical feasibility demonstration, intellectual property development, product development progress, and market reaction validation.</p>
+                        <p className="text-base">Technical feasibility demonstration, intellectual property development, product development progress, and market reaction validation.</p>
                       </div>
                       <div>
                         <h4 className="font-semibold text-heading">3. Quality Management Team (Execution Risk Reduction)</h4>
-                        <p className="text-sm">Leadership experience, team completeness, execution capability, and team dynamics.</p>
+                        <p className="text-base">Leadership experience, team completeness, execution capability, and team dynamics.</p>
                       </div>
                       <div>
                         <h4 className="font-semibold text-heading">4. Strategic Relationships (Market Risk Reduction)</h4>
-                        <p className="text-sm">Customer development progress, partnership establishment, market access capabilities, and industry recognition.</p>
+                        <p className="text-base">Customer development progress, partnership establishment, market access capabilities, and industry recognition.</p>
                       </div>
                       <div>
                         <h4 className="font-semibold text-heading">5. Product Rollout or Sales (Production Risk Reduction)</h4>
-                        <p className="text-sm">Go-to-market execution, early revenue generation, operational capability, and scaling readiness.</p>
+                        <p className="text-base">Go-to-market execution, early revenue generation, operational capability, and scaling readiness.</p>
                       </div>
                     </div>
                   </div>
@@ -173,8 +173,8 @@ const BerkusValuation = () => {
                         </p>
                         <div className="bg-slate-100 p-4 rounded-lg">
                           <p className="font-semibold mb-2">Calculation:</p>
-                          <p className="text-sm">Each factor's value = (Maximum Value) × (Performance Score ÷ 5)</p>
-                          <p className="text-sm">Total pre-money valuation = sum of all five factor values</p>
+                          <p className="text-base">Each factor's value = (Maximum Value) × (Performance Score ÷ 5)</p>
+                          <p className="text-base">Total pre-money valuation = sum of all five factor values</p>
                         </div>
                       </div>
                     </div>

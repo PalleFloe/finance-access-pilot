@@ -102,28 +102,28 @@ const ToolboxSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
           <div className="bg-white p-6 rounded-lg border border-slate-100 shadow-sm">
             <h4 className="text-lg font-semibold text-slate-900 mb-3">What We Provide</h4>
-            <p className="text-sm text-slate-600 leading-relaxed">
+            <p className="text-base text-slate-600 leading-relaxed">
               Professional-grade Excel models covering the complete spectrum of business financial decisions—from startup valuations and unit economics through mature business investment analysis and strategic planning. Each model includes comprehensive guidance, standardized structure with clear value driver logic, and built-in scenario and sensitivity analysis capabilities.
             </p>
           </div>
 
           <div className="bg-white p-6 rounded-lg border border-slate-100 shadow-sm">
             <h4 className="text-lg font-semibold text-slate-900 mb-3">Why It Matters</h4>
-            <p className="text-sm text-slate-600 leading-relaxed">
+            <p className="text-base text-slate-600 leading-relaxed">
               Financial decision-making often suffers from inconsistent methodologies, hidden assumptions, and inadequate risk assessment. Our models solve this by providing multiple proven frameworks that help users not only calculate credible results and test scenarios but also articulate the logic behind their conclusions to stakeholders, investors, and partners.
             </p>
           </div>
 
           <div className="bg-white p-6 rounded-lg border border-slate-100 shadow-sm">
             <h4 className="text-lg font-semibold text-slate-900 mb-3">Who Benefits</h4>
-            <p className="text-sm text-slate-600 leading-relaxed">
+            <p className="text-base text-slate-600 leading-relaxed">
               <span className="font-medium">Entrepreneurs and Investors</span> validating business models, making investments and funding decisions. <span className="font-medium">Business Leaders</span> optimizing business performance, complex internal & external decisions and strategic initiatives. <span className="font-medium">Financial Advisors</span> providing professional analysis and decision services.
             </p>
           </div>
 
           <div className="bg-white p-6 rounded-lg border border-slate-100 shadow-sm">
             <h4 className="text-lg font-semibold text-slate-900 mb-3">How It Works</h4>
-            <p className="text-sm text-slate-600 leading-relaxed">
+            <p className="text-base text-slate-600 leading-relaxed">
               Each model uses clear Excel structure with color-coded inputs for easy use. Built-in scenario testing helps address uncertainty, and the models provide the analytical depth needed for both analytical insight, decision making and professional presentations to stakeholders. The models can be used 100% free, but are protected for design changes.
             </p>
           </div>

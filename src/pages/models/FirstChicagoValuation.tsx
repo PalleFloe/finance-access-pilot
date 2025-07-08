@@ -125,15 +125,15 @@ const FirstChicagoValuation = () => {
                     <div className="space-y-3">
                       <div>
                         <h4 className="font-semibold text-heading">Success Scenario</h4>
-                        <p className="text-sm">Optimistic performance with management team expectations and favourable market conditions, revenue growth exceeding initial projections with premium exit valuations.</p>
+                        <p className="text-base">Optimistic performance with management team expectations and favourable market conditions, revenue growth exceeding initial projections with premium exit valuations.</p>
                       </div>
                       <div>
                         <h4 className="font-semibold text-heading">Base Case Scenario</h4>
-                        <p className="text-sm">Realistic performance representing the most likely outcome based on detailed due diligence, revenue and profitability meeting base case projections.</p>
+                        <p className="text-base">Realistic performance representing the most likely outcome based on detailed due diligence, revenue and profitability meeting base case projections.</p>
                       </div>
                       <div>
                         <h4 className="font-semibold text-heading">Downside Case Scenario</h4>
-                        <p className="text-sm">Conservative performance with challenges in execution or market conditions, below-projection performance with margin pressure and distressed exit scenarios.</p>
+                        <p className="text-base">Conservative performance with challenges in execution or market conditions, below-projection performance with margin pressure and distressed exit scenarios.</p>
                       </div>
                     </div>
                   </div>
@@ -170,7 +170,7 @@ const FirstChicagoValuation = () => {
                         <h4 className="font-semibold text-heading">Present Value Calculation and Probability Weighting</h4>
                         <div className="bg-slate-100 p-4 rounded-lg">
                           <h5 className="font-semibold mb-2">Calculation Process:</h5>
-                          <ol className="list-decimal pl-6 space-y-1 text-sm">
+                          <ol className="list-decimal pl-6 space-y-1 text-base">
                             <li>Calculate net present value (NPV) for each scenario: NPV of Forecast Period + NPV of Exit Value</li>
                             <li>Weighted net present value (NPV) of scenarios: Expected Value = Σ(Scenario Probability × Scenario Net Present Value)</li>
                           </ol>

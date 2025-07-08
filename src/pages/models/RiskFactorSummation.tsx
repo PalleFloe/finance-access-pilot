@@ -37,7 +37,7 @@ const RiskFactorSummation = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-slate-600">
+                    <p className="text-base text-slate-600">
                       The Risk Factor Summation method adjusts a base valuation by considering various risk factors
                       associated with the startup.
                     </p>
@@ -52,7 +52,7 @@ const RiskFactorSummation = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <ul className="list-disc list-inside text-sm text-slate-600">
+                    <ul className="list-disc list-inside text-base text-slate-600">
                       <li>Early-stage startups</li>
                       <li>Investors evaluating startup opportunities</li>
                       <li>Financial analysts</li>
@@ -70,7 +70,7 @@ const RiskFactorSummation = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <ul className="list-disc list-inside text-sm text-slate-600">
+                    <ul className="list-disc list-inside text-base text-slate-600">
                       <li>Identification of all relevant risk factors</li>
                       <li>Accurate assessment of the impact of each risk factor</li>
                       <li>Base valuation is reasonably accurate</li>
@@ -86,7 +86,7 @@ const RiskFactorSummation = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <ol className="list-decimal list-inside text-sm text-slate-600">
+                    <ol className="list-decimal list-inside text-base text-slate-600">
                       <li>Determine a base valuation using other methods.</li>
                       <li>Identify relevant risk factors.</li>
                       <li>Assign a percentage adjustment for each risk factor.</li>

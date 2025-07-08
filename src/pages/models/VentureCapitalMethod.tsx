@@ -80,19 +80,19 @@ const VentureCapitalMethod = () => {
 
           {/* Short Description */}
           <div className="prose prose-slate max-w-none mb-8">
-            <p className="text-lg text-slate-600 leading-relaxed mb-4">
+            <p className="text-xl text-slate-600 leading-relaxed mb-4">
               The Professional Venture Capital Valuation Method provides startup founders, investors, and advisors with the comprehensive analytical framework necessary for informed valuation decisions for startups with typically more than one investment round. By understanding both the investor return perspective and entrepreneur ownership implications, users can make better investment decisions, navigate negotiations successfully, and plan multi-round financing strategies with sophisticated scenario analysis capabilities.
             </p>
             
-            <p className="text-lg text-slate-600 leading-relaxed mb-4">
+            <p className="text-xl text-slate-600 leading-relaxed mb-4">
               <strong>Advanced Scenario Framework</strong>: The model builds on a base case with scenario modelling from very low through very high exit valuations, enabling stakeholders to understand return and ownership sensitivities. Users can combine exit scenarios with timing assumptions and investor requirements to conduct robust quantifiable sensitivity analysis, given the inherent high uncertainty in venture capital investing.
             </p>
             
-            <p className="text-lg text-slate-600 leading-relaxed mb-4">
+            <p className="text-xl text-slate-600 leading-relaxed mb-4">
               <strong>Strategic Purpose</strong>: Establish credible valuations based on market return requirements, understand the economic logic behind investor ownership demands, and model dilution scenarios to optimize founder retention through sophisticated dual-model analysis with advanced scenario planning that serves both investor and entrepreneur perspectives.
             </p>
             
-            <p className="text-lg text-slate-600 leading-relaxed">
+            <p className="text-xl text-slate-600 leading-relaxed">
               <strong>Target Users</strong>: Venture capital investors conducting systematic deal evaluation, growth-stage entrepreneurs preparing multi-scenario business cases, and financial advisors requiring professional early-stage valuation frameworks with explicit uncertainty acknowledgment for client advisory services.
             </p>
           </div>
@@ -107,13 +107,13 @@ const VentureCapitalMethod = () => {
                 <div className="space-y-6 text-slate-600">
                   <div>
                     <h3 className="text-xl font-bold text-heading mb-3">What Is the Professional Venture Capital Valuation Method?</h3>
-                    <p className="leading-relaxed mb-4">
+                    <p className="text-base leading-relaxed mb-4">
                       The Professional Venture Capital Valuation Method is a sophisticated dual-model framework that determines startup valuations by working backwards from projected exit values. Unlike traditional approaches that offer only one perspective, the system provides two complementary analytical models with advanced scenario capabilities:
                     </p>
-                    <p className="leading-relaxed mb-4">
+                    <p className="text-base leading-relaxed mb-4">
                       <strong>IRR-Driven Model</strong>: Works from required investor returns (e.g., "35% for $1M") to determine required ownership percentages and current valuations.
                     </p>
-                    <p className="leading-relaxed mb-4">
+                    <p className="text-base leading-relaxed mb-4">
                       <strong>Ownership-Driven Model</strong>: Works from proposed ownership share (e.g., "25% for $1M") to calculate the returns those ownership levels would generate under various scenarios.
                     </p>
                   </div>
