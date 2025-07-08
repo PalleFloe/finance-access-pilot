@@ -42,7 +42,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="text-base text-primary hover:underline"
                 >
-                  https://www.linkedin.com/in/palle-fl%C3%B8e-nielsen-97ab7211/
+                  LinkedIn Profile
                 </a>
               </div>
             </div>
