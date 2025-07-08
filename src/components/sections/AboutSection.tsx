@@ -74,7 +74,7 @@ const AboutSection = () => {
                   </h4>
                   <div className="text-slate-700 leading-relaxed text-left">
                     <p>
-                      Our logo draws inspiration from the Knud Rasmussen monument north of Copenhagen, where the explorer stands tall, gazing toward distant horizons. Just as Rasmussen charted unknown Arctic territories and bridged distant cultures, Financial Decision Models guides you through uncharted financial decisions, transforming complex and risky choices into clear pathways forward.
+                      The logo is inspired by the Knud Rasmussen statue north of Copenhagen, where the explorer stands tall, gazing toward distant horizons. Knud Rasmussen was a Greenlandic-Danish anthropologist who famously explored the Arctic and studied Inuit cultures. The statue is a monument to exploration, understanding, and bridge-building to unknown geographical and cultural territories.
                     </p>
                   </div>
                 </div>
