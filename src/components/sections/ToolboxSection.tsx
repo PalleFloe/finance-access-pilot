@@ -40,7 +40,7 @@ const ToolboxSection = () => {
             </CardHeader>
             <CardContent>
               <Link to="/toolbox/startup-valuations">
-                <Button variant="default" size="lg" className="w-full">
+                <Button variant="default" size="lg" className="w-full text-lg" style={{ backgroundColor: '#003820' }}>
                   Explore Models
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -66,7 +66,7 @@ const ToolboxSection = () => {
             </CardHeader>
             <CardContent>
               <Link to="/toolbox/mature-business">
-                <Button variant="outline" size="lg" className="w-full">
+                <Button variant="outline" size="lg" className="w-full text-lg text-white border-0 hover:text-white" style={{ backgroundColor: '#003820' }}>
                   Explore Models
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -92,7 +92,7 @@ const ToolboxSection = () => {
             </CardHeader>
             <CardContent>
               <Link to="/toolbox/investment-analysis">
-                <Button variant="outline" size="lg" className="w-full">
+                <Button variant="outline" size="lg" className="w-full text-lg text-white border-0 hover:text-white" style={{ backgroundColor: '#003820' }}>
                   Explore Models
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
