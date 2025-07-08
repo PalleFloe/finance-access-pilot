@@ -24,7 +24,7 @@ const AboutSection = () => {
                 <h4 className="text-xl font-semibold mb-6 text-primary">
                   About Profile
                 </h4>
-                <div className="space-y-4 text-slate-700 leading-relaxed">
+                <div className="space-y-4 text-slate-700 leading-relaxed text-left">
                   <p>
                     My name is <strong>Palle Floe Nielsen</strong> and I'm based in Copenhagen, Denmark.
                   </p>
@@ -72,7 +72,7 @@ const AboutSection = () => {
                   <h4 className="text-xl font-semibold mb-6 text-primary">
                     Our Logo Inspiration
                   </h4>
-                  <div className="text-slate-700 leading-relaxed">
+                  <div className="text-slate-700 leading-relaxed text-left">
                     <p>
                       Our logo draws inspiration from the Knud Rasmussen monument north of Copenhagen, where the explorer stands tall, gazing toward distant horizons. Just as Rasmussen charted unknown Arctic territories and bridged distant cultures, Financial Decision Models guides you through uncharted financial decisions, transforming complex and risky choices into clear pathways forward.
                     </p>
