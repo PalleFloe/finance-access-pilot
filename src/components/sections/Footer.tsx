@@ -15,9 +15,6 @@ const Footer = () => {
               <Badge variant="outline" className="border-slate-300 text-slate-600">
                 financialdecisionmodels.com
               </Badge>
-              <Badge variant="outline" className="border-orange-300 text-orange-600">
-                Beta Program Active
-              </Badge>
             </div>
           </div>
         </div>
