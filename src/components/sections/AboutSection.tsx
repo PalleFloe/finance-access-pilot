@@ -70,7 +70,7 @@ const AboutSection = () => {
                 </div>
                 <div className="flex-1">
                   <h4 className="text-xl font-semibold mb-6 text-primary">
-                    Our Logo Inspiration
+                    The Inspiration behind the Logo
                   </h4>
                   <div className="text-slate-700 leading-relaxed text-left">
                     <p>
