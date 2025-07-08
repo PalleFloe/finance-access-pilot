@@ -1,7 +1,7 @@
 const HeroSection = () => {
 
   return (
-    <section className="py-20 px-6">
+    <section className="pt-20 pb-16 px-6">
       <div className="container mx-auto max-w-4xl text-center">
         <h2 className="text-5xl font-bold text-slate-900 mb-6">
           Facing Complex <span className="text-primary">Financial Decisions?</span>
