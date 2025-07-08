@@ -1,6 +1,4 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Mail, ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
 
@@ -13,25 +11,9 @@ const HeroSection = () => {
         <h2 className="text-5xl font-bold text-slate-900 mb-6">
           Facing Complex <span style={{ color: 'rgb(50, 100, 150)' }}>Financial Decisions?</span>
         </h2>
-        <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-xl text-slate-600 mb-16 max-w-3xl mx-auto leading-relaxed">
           We empower businesses facing complex financial choices to make better decisions with an intuitive, business-minded Financial Decision Model toolbox and expert consulting services.
         </p>
-        
-        {/* Welcome Message */}
-        <Card className="max-w-md mx-auto mb-12 shadow-lg border-slate-200">
-          <CardContent className="pt-6">
-            <div className="text-center space-y-3">
-              <div className="flex items-center justify-center">
-                <Mail className="w-5 h-5 text-blue-600 mr-2" />
-                <span className="font-medium text-slate-900">Welcome to Beta Access</span>
-              </div>
-              <p className="text-sm text-slate-600">
-                You now have access to the Financial Decision Model toolbox. 
-                Explore our tools and start making better financial decisions.
-              </p>
-            </div>
-          </CardContent>
-        </Card>
       </div>
     </section>
   );

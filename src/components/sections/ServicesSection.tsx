@@ -1,10 +1,12 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Users, Calculator, Check, Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { CheckCircle, Users, Calculator, Check, Phone, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
   return (
-    <section id="consulting" className="py-16 px-6 bg-white">
+    <section id="consulting" className="py-20 px-6 bg-gradient-to-b from-slate-50/50 to-white border-t border-slate-100">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-blue-100 text-blue-800" variant="outline">
@@ -17,7 +19,7 @@ const ServicesSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Financial Decision Model Toolbox */}
-          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative">
+          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-all duration-300 relative bg-white/80 backdrop-blur-sm">
             <div className="absolute -top-3 -right-3 z-10">
               <Badge className="bg-green-100 text-green-800 border-green-200 shadow-sm">
                 <Check className="w-3 h-3 mr-1" />
@@ -54,11 +56,19 @@ const ServicesSection = () => {
                 <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                 <p className="text-slate-700">User-friendly models with standardized structure, proper calculations, and built-in sensitivity analysis</p>
               </div>
+              <div className="pt-4 border-t border-slate-100 mt-6">
+                <Button asChild className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                  <Link to="/toolbox">
+                    Explore Free Tools
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Link>
+                </Button>
+              </div>
             </CardContent>
           </Card>
 
           {/* Expert Consulting Services */}
-          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative">
+          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-all duration-300 relative bg-white/80 backdrop-blur-sm">
             <div className="absolute -top-3 -right-3 z-10">
               <Badge className="bg-blue-100 text-blue-800 border-blue-200 shadow-sm">
                 <Phone className="w-3 h-3 mr-1" />
@@ -90,6 +100,14 @@ const ServicesSection = () => {
               <div className="flex items-start space-x-3">
                 <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
                 <p className="text-slate-700">End-to-end financial and/or process lead or support for driving complex financial decisions</p>
+              </div>
+              <div className="pt-4 border-t border-slate-100 mt-6">
+                <Button asChild className="w-full bg-indigo-600 hover:bg-indigo-700 text-white">
+                  <Link to="/consulting">
+                    Schedule Consultation
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Link>
+                </Button>
               </div>
             </CardContent>
           </Card>
