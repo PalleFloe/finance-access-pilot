@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Users, Calculator, Check, Phone, ArrowRight } from "lucide-react";
+import { CheckCircle, Users, Calculator, Check, Mail, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
@@ -73,7 +73,7 @@ const ServicesSection = () => {
           <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-all duration-300 relative bg-white/80 backdrop-blur-sm flex flex-col h-full">
             <div className="absolute -top-3 -right-3 z-10">
               <Badge className="bg-blue-100 text-blue-800 border-blue-200 shadow-sm">
-                <Phone className="w-3 h-3 mr-1" />
+                <Mail className="w-3 h-3 mr-1" />
                 Get Expert Help
               </Badge>
             </div>
