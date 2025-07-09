@@ -26,7 +26,7 @@ const AboutSection = () => {
                 </h4>
                 <div className="space-y-4 text-slate-700 leading-relaxed text-left">
                   <p>
-                    My name is <strong>Palle Floe Nielsen</strong> and I'm based in Copenhagen, Denmark.
+                    My name is <strong>Palle Fløe Nielsen</strong> and I'm based in Copenhagen, Denmark.
                   </p>
                   <p>
                     <strong>I'm a finance leader, still curious and focused after all those years;</strong> Whether the challenges have 
