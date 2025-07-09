@@ -9,7 +9,7 @@ const BlogSection = () => {
           <Badge className="mb-4 bg-green-100 text-green-800" variant="outline">
             Insights & Resources
           </Badge>
-          <h3 className="text-3xl font-bold mb-6 text-primary">
+          <h3 className="text-3xl font-bold mb-6 text-brand-blue">
             Financial Decision Insights
           </h3>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
@@ -20,7 +20,7 @@ const BlogSection = () => {
 
         <div className="text-center">
           <p className="text-slate-600 mb-6">Coming soon - Expert insights and practical guides</p>
-          <Button variant="outline">
+          <Button variant="brand-green">
             Subscribe for Updates
           </Button>
         </div>

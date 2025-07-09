@@ -12,7 +12,7 @@ const ToolboxSection = () => {
           <Badge className="mb-4 bg-blue-100 text-blue-800" variant="outline">
             Financial Decision Toolbox
           </Badge>
-          <h3 className="text-3xl font-bold mb-6 text-primary">
+          <h3 className="text-3xl font-bold mb-6 text-brand-blue">
             Transform Complex Financial Choices Into Clear Insights and Decisions
           </h3>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
@@ -39,7 +39,7 @@ const ToolboxSection = () => {
             </CardHeader>
             <CardContent>
               <Link to="/toolbox/startup-valuations">
-                <Button variant="default" size="lg" className="w-full text-lg bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Button variant="brand-green" size="lg" className="w-full text-lg">
                   Explore Models
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -64,7 +64,7 @@ const ToolboxSection = () => {
             </CardHeader>
             <CardContent>
               <Link to="/toolbox/mature-business">
-                <Button variant="default" size="lg" className="w-full text-lg bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Button variant="brand-green" size="lg" className="w-full text-lg">
                   Explore Models
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -89,7 +89,7 @@ const ToolboxSection = () => {
             </CardHeader>
             <CardContent>
               <Link to="/toolbox/investment-analysis">
-                <Button variant="default" size="lg" className="w-full text-lg bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Button variant="brand-green" size="lg" className="w-full text-lg">
                   Explore Models
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>

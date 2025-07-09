@@ -12,7 +12,7 @@ const ServicesSection = () => {
           <Badge className="mb-4 bg-blue-100 text-blue-800" variant="outline">
             Our Services
           </Badge>
-          <h3 className="text-3xl font-bold mb-6 text-primary">
+          <h3 className="text-3xl font-bold mb-6 text-brand-blue">
             Comprehensive Financial Solutions
           </h3>
         </div>
@@ -59,7 +59,7 @@ const ServicesSection = () => {
                 </div>
               </div>
               <div className="pt-4 border-t border-slate-100 mt-6">
-                <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Button asChild variant="brand-green" className="w-full">
                   <Link to="/toolbox">
                     Explore Free Tools
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -106,7 +106,7 @@ const ServicesSection = () => {
                 </div>
               </div>
               <div className="pt-4 border-t border-slate-100 mt-6">
-                <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+                <Button asChild variant="brand-green" className="w-full">
                   <Link to="/consulting">
                     Schedule Consultation
                     <ArrowRight className="w-4 h-4 ml-2" />

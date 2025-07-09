@@ -28,7 +28,7 @@ const MatureBusiness = () => {
           <Badge className="mb-4 bg-orange-100 text-orange-800 border-orange-200">
             Coming Soon
           </Badge>
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">
+          <h2 className="text-4xl font-bold text-brand-blue mb-6">
             Mature Business Financial Models
           </h2>
           <p className="text-lg text-slate-600 mb-8">
