@@ -65,7 +65,7 @@ const AboutSection = () => {
                   <img 
                     src="/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" 
                     alt="Financial Decision Models Logo" 
-                    className="w-32 h-48 object-contain"
+                    className="w-32 h-48 rounded-lg object-contain"
                   />
                 </div>
                 <div className="flex-1">
