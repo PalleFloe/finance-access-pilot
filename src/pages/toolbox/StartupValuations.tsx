@@ -142,7 +142,7 @@ const StartupValuations = () => {
                 Startup valuation is notoriously difficult to understand and even harder to explain convincingly. The models here help solve this fundamental problem by providing multiple proven methodologies that help users not only calculate credible valuations but also articulate the logic behind their conclusions to investors, partners, and stakeholders.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed italic">
-                As Marc Andreessen, co-founder of Andreessen Horowitz, emphasizes: "The best way to think about investments is in terms of a portfolio of calculated risks. You need sophisticated models to understand both the upside potential and downside risks."¹ This range of models provides exactly this analytical foundation.
+                As Marc Andreessen, co-founder of Andreessen Horowitz, emphasizes: <em>"The best way to think about investments is in terms of a portfolio of calculated risks. You need sophisticated models to understand both the upside potential and downside risks."</em>¹ This range of models provides exactly this analytical foundation.
               </p>
             </div>
 
@@ -172,6 +172,40 @@ const StartupValuations = () => {
               <p className="text-lg text-slate-600 leading-relaxed">
                 Each model maintains institutional-quality analytical standards while preserving the accessibility necessary for entrepreneurial application. The emphasis on cross-model validation and scenario-based analysis with comprehensive sensitivity testing ensures robust decision-making support that satisfies both founder strategic needs and investor due diligence requirements.
               </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-brand-blue mb-4">Key Limitations & Best Practices</h3>
+              <p className="text-lg text-slate-600 leading-relaxed mb-4">
+                "Valuation is part art, part science" - All models have inherent limitations. Startup projections are notoriously unreliable, and cognitive biases systematically affect valuations. Use these tools to structure thinking and facilitate discussions, not to predict precise outcomes.
+              </p>
+              <p className="text-lg text-slate-600 leading-relaxed mb-4">
+                Valuation choice significantly impacts results - quantitative methods produce higher and more dispersed valuations than qualitative methods.
+              </p>
+              <p className="text-lg text-slate-600 leading-relaxed">
+                Human judgment dominates early-stage valuation decisions despite availability of analytical methods - be aware of systematic biases affecting outcomes
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-brand-blue mb-4">Always Required</h3>
+              <ul className="text-lg text-slate-600 leading-relaxed space-y-2">
+                <li>• Multi-method validation: Never rely on single approach</li>
+                <li>• Range presentation: Results as ranges, never point estimates</li>
+                <li>• Assumption documentation: Evidence for all key inputs</li>
+                <li>• Bias awareness: Independent review to counter optimism</li>
+                <li>• Regular updates: Up-to-date re-assessment as conditions change</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-brand-blue mb-4">Seek Professional Advice When</h3>
+              <ul className="text-lg text-slate-600 leading-relaxed space-y-2">
+                <li>• Complex capital structures or legal arrangements</li>
+                <li>• Institutional investment or acquisition processes</li>
+                <li>• Industry-specific factors requiring specialized knowledge</li>
+                <li>• Cross-border transactions with regulatory implications</li>
+              </ul>
             </div>
 
             <div>
