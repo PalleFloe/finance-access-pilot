@@ -141,7 +141,7 @@ const StartupValuations = () => {
               <p className="text-lg text-slate-600 leading-relaxed mb-4">
                 Startup valuation is notoriously difficult to understand and even harder to explain convincingly. The models here help solve this fundamental problem by providing multiple proven methodologies that help users not only calculate credible valuations but also articulate the logic behind their conclusions to investors, partners, and stakeholders.
               </p>
-              <p className="text-lg text-slate-600 leading-relaxed italic">
+              <p className="text-lg text-slate-600 leading-relaxed">
                 As Marc Andreessen, co-founder of Andreessen Horowitz, emphasizes: <em>"The best way to think about investments is in terms of a portfolio of calculated risks. You need sophisticated models to understand both the upside potential and downside risks."</em>¹ This range of models provides exactly this analytical foundation.
               </p>
             </div>
@@ -177,7 +177,7 @@ const StartupValuations = () => {
             <div>
               <h3 className="text-2xl font-bold text-brand-blue mb-4">Key Limitations & Best Practices</h3>
               <p className="text-lg text-slate-600 leading-relaxed mb-4">
-                "Valuation is part art, part science" - All models have inherent limitations. Startup projections are notoriously unreliable, and cognitive biases systematically affect valuations. Use these tools to structure thinking and facilitate discussions, not to predict precise outcomes.
+                <em>"Valuation is part art, part science"</em> - All models have inherent limitations. Startup projections are notoriously unreliable, and cognitive biases systematically affect valuations. Use these tools to structure thinking and facilitate discussions, not to predict precise outcomes.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed mb-4">
                 Valuation choice significantly impacts results - quantitative methods produce higher and more dispersed valuations than qualitative methods.
