@@ -18,6 +18,10 @@ const ToolboxSection = () => {
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
             The toolbox provides business leaders, entrepreneurs, and financial professionals with proven methodologies to help navigate complex financial decisions. This comprehensive collection of professional models transforms sophisticated financial analysis into practical, accessible tools for real-world applications.
           </p>
+          
+          <p className="text-lg text-slate-600 max-w-3xl mx-auto italic mt-4">
+            "All models have inherent limitations. Use these tools to structure thinking and facilitate discussions, not to predict precise outcomes"
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
