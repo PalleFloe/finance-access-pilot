@@ -83,7 +83,7 @@ const StartupValuations = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {models.map((model) => (
-              <Card key={model.name} className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative">
+              <Card key={model.name} className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full">
                 {model.status === "available" && (
                   <div className="absolute -top-3 -right-3 z-10">
                     <Badge className="bg-green-100 text-green-800 border-green-200 shadow-sm">
@@ -108,14 +108,14 @@ const StartupValuations = () => {
                     </Badge>
                   </div>
                 )}
-                <CardHeader>
+                <CardHeader className="flex-grow">
                   <CardTitle className="flex items-center space-x-2">
                     <Calculator className="w-5 h-5 text-primary" />
                     <span>{model.name}</span>
                   </CardTitle>
-                  <CardDescription>{model.description}</CardDescription>
+                  <CardDescription className="flex-grow">{model.description}</CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="pt-0">
                   <Link to={model.href}>
                     <Button variant="brand-green" className="w-full">
                       {model.status === "contact" ? "Contact Us" : "Open Model"}
