@@ -21,6 +21,7 @@ import SaasUnitEconomics from "./pages/models/SaasUnitEconomics";
 import BerkusValuation from "./pages/models/BerkusValuation";
 import FirstChicagoValuation from "./pages/models/FirstChicagoValuation";
 import PerpetuityExitValuation from "./pages/models/PerpetuityExitValuation";
+import DecisionAnalysis from "./pages/models/DecisionAnalysis";
 
 const queryClient = new QueryClient();
 
@@ -47,6 +48,7 @@ const App = () => (
           <Route path="/toolbox/startup-valuations/berkus-valuation" element={<BerkusValuation />} />
           <Route path="/toolbox/startup-valuations/first-chicago-method" element={<FirstChicagoValuation />} />
           <Route path="/toolbox/startup-valuations/perpetuity-exit-models" element={<PerpetuityExitValuation />} />
+          <Route path="/toolbox/startup-valuations/decision-analysis" element={<DecisionAnalysis />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
