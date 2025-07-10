@@ -149,7 +149,7 @@ const StartupValuations = () => {
             <div>
               <h3 className="text-2xl font-bold text-brand-blue mb-4">Comprehensive Coverage of Startup Valuation Methods</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                The five-model framework covers the complete valuation spectrum: understanding business fundamentals through Unit Economics analysis, establishing pre-revenue valuations via risk-based Berkus methodology, modelling investor perspectives through Venture Capital approaches, analyzing multiple outcomes via First Chicago scenario planning, and insight into long-term value through Perpetuity & Exit frameworks. Each model comes with comprehensive guidance explaining what it does, why it matters, when to use it, and how to implement it effectively.
+                The six-model framework covers the complete valuation spectrum: understanding business fundamentals through Unit Economics analysis, establishing pre-revenue valuations via risk-based Berkus methodology, modelling investor perspectives through Venture Capital approaches, analyzing multiple outcomes via First Chicago scenario planning, providing insight into long-term value through Perpetuity & Exit frameworks, and structuring investment decisions through systematic Decision Analysis for probability-weighted returns. Each model comes with comprehensive guidance explaining what it does, why it matters, when to use it, and how to implement it effectively.
               </p>
             </div>
 
@@ -163,7 +163,7 @@ const StartupValuations = () => {
             <div>
               <h3 className="text-2xl font-bold text-brand-blue mb-4">Strategic Integration Benefits</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                The power of this model suite lies not in individual tool excellence, but in the synergistic integration across different decision-making contexts. Unit Economics analysis validates business model sustainability, Venture Capital methodology plans multi-round financing, Berkus assessment establishes pre-revenue valuations, First Chicago analysis provides comprehensive scenario planning, and Perpetuity & Exit models optimize long-term value creation strategies.
+                The power of this model suite lies not in individual tool excellence, but in the synergistic integration across different decision-making contexts. Unit Economics analysis validates business model sustainability, Venture Capital methodology plans multi-round financing, Berkus assessment establishes pre-revenue valuations, First Chicago analysis provides comprehensive scenario planning, Perpetuity & Exit models optimize long-term value creation strategies, and Decision Analysis structures investment evaluation through systematic risk assessment and probability-weighted returns.
               </p>
             </div>
 
@@ -214,7 +214,7 @@ const StartupValuations = () => {
                 As startup ecosystems continue evolving, these models provide the analytical foundation necessary to adapt to changing market conditions, regulatory environments, and competitive dynamics. The combination of sophisticated Excel implementation with clear methodological documentation enables continuous refinement and professional application across diverse industry contexts and geographic markets.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed">
-                Whether preparing for initial fundraising, structuring growth investments, or planning strategic exits, this comprehensive model suite delivers the analytical excellence and strategic insight necessary for sustainable startup success in today's competitive investment landscape.
+                Whether preparing for initial fundraising, structuring growth investments, planning strategic exits, or making systematic investment decisions, this comprehensive model suite delivers the analytical excellence and strategic insight necessary for sustainable startup success in today's competitive investment landscape.
               </p>
             </div>
 
