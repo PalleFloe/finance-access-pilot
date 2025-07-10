@@ -42,10 +42,10 @@ const StartupValuations = () => {
       status: "available",
     },
     {
-      name: "New Model?",
-      description: "Miss a General Standard Model or a Customized and Specific Model to Your Needs?",
-      href: "#",
-      status: "contact",
+      name: "Decision Analysis for Venture Capital Investments",
+      description: "Systematic Decision Assessment of Startup Life Stages for Investment Decisions via Probability-Weighted Multiple on Investment (PWMOI)",
+      href: "/toolbox/startup-valuations/decision-analysis",
+      status: "available",
     },
   ];
 
