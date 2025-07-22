@@ -49,7 +49,7 @@ const VentureCapitalMethod = () => {
 
           {/* Main Headline */}
           <h1 className="text-4xl font-bold text-heading mb-4">
-            Professional Venture Capital Valuation Method
+            Venture Capital Valuation Model
           </h1>
 
           {/* Sub-headline */}
@@ -81,19 +81,19 @@ const VentureCapitalMethod = () => {
           {/* Short Description */}
           <div className="prose prose-slate max-w-none mb-8">
             <p className="text-xl text-slate-600 leading-relaxed mb-4">
-              The Professional Venture Capital Valuation Method provides startup founders, investors, and advisors with the comprehensive analytical framework necessary for informed valuation decisions for startups with typically more than one investment round. By understanding both the investor return perspective and entrepreneur ownership implications, users can make better investment decisions, navigate negotiations successfully, and plan multi-round financing strategies with sophisticated scenario analysis capabilities.
+              The Venture Capital Valuation Model provides startup founders, investors, and advisors with analytical framework for informed valuation decisions for startups with typically more than one investment round.¹ ² By understanding both the investor return perspective and entrepreneur ownership implications, users can make better investment decisions, navigate negotiations successfully, and plan multi-round financing strategies with scenario analysis capabilities.
             </p>
             
             <p className="text-xl text-slate-600 leading-relaxed mb-4">
-              <strong>Advanced Scenario Framework</strong>: The model builds on a base case with scenario modelling from very low through very high exit valuations, enabling stakeholders to understand return and ownership sensitivities. Users can combine exit scenarios with timing assumptions and investor requirements to conduct robust quantifiable sensitivity analysis, given the inherent high uncertainty in venture capital investing.
+              <strong>Scenario Framework</strong>: The model builds on a base case with scenario modelling from very low through very high exit valuations, enabling stakeholders to understand return and ownership sensitivities. Users can combine exit scenarios with timing assumptions and investor requirements to conduct robust quantifiable sensitivity analysis, given the inherent high uncertainty in venture capital investing.
             </p>
             
             <p className="text-xl text-slate-600 leading-relaxed mb-4">
-              <strong>Strategic Purpose</strong>: Establish credible valuations based on market return requirements, understand the economic logic behind investor ownership demands, and model dilution scenarios to optimize founder retention through sophisticated dual-model analysis with advanced scenario planning that serves both investor and entrepreneur perspectives.
+              <strong>Strategic Purpose</strong>: Establish credible valuations based on market return requirements, understand the economic logic behind investor ownership demands, and model dilution scenarios to optimise founder retention through dual-model analysis with scenario planning that serves both investor and entrepreneur perspectives.
             </p>
             
             <p className="text-xl text-slate-600 leading-relaxed">
-              <strong>Target Users</strong>: Venture capital investors conducting systematic deal evaluation, growth-stage entrepreneurs preparing multi-scenario business cases, and financial advisors requiring professional early-stage valuation frameworks with explicit uncertainty acknowledgment for client advisory services.
+              <strong>Target Users</strong>: Venture capital investors conducting systematic deal evaluation, growth-stage entrepreneurs preparing multi-scenario business cases, and financial advisors requiring early-stage valuation frameworks with explicit uncertainty acknowledgment for client advisory services.
             </p>
           </div>
 
@@ -106,78 +106,219 @@ const VentureCapitalMethod = () => {
               <AccordionContent className="prose prose-slate max-w-none">
                 <div className="space-y-6 text-slate-600">
                   <div>
-                    <h3 className="text-xl font-bold text-heading mb-3">What Is the Professional Venture Capital Valuation Method?</h3>
-                    <p className="text-base leading-relaxed mb-4">
-                      The Professional Venture Capital Valuation Method is a sophisticated dual-model framework that determines startup valuations by working backwards from projected exit values. Unlike traditional approaches that offer only one perspective, the system provides two complementary analytical models with advanced scenario capabilities:
+                    <h3 className="text-xl font-bold text-heading mb-3">Overview and Strategic Framework</h3>
+                    <p className="leading-relaxed mb-4">
+                      The Venture Capital Valuation Model provides startup founders, investors, and advisors with analytical framework for informed valuation decisions for startups with typically more than one investment round. By understanding both the investor return perspective and entrepreneur ownership implications, users can make better investment decisions, navigate negotiations successfully, and plan multi-round financing strategies with scenario analysis capabilities.
                     </p>
-                    <p className="text-base leading-relaxed mb-4">
-                      <strong>IRR-Driven Model</strong>: Works from required investor returns (e.g., "35% for $1M") to determine required ownership percentages and current valuations.
-                    </p>
-                    <p className="text-base leading-relaxed mb-4">
-                      <strong>Ownership-Driven Model</strong>: Works from proposed ownership share (e.g., "25% for $1M") to calculate the returns those ownership levels would generate under various scenarios.
+                    <p className="leading-relaxed mb-4">
+                      <strong>Scenario Framework</strong>: The model builds on a base case with scenario modelling from very low through very high exit valuations, enabling stakeholders to understand return and ownership sensitivities. Users can combine exit scenarios with timing assumptions and investor requirements to conduct robust quantifiable sensitivity analysis, given the inherent high uncertainty in venture capital investing.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-bold text-heading mb-3">Strategic Applications</h3>
-                    <div className="space-y-3">
-                      <p>
-                        <strong>Make Better Investment Decisions</strong>: Calculate investors' required ownership share based on their return requirements across multiple exit scenarios, calculate investors' expected returns based on their proposed ownership share across multiple exit scenarios, and model dilution scenarios to optimize founders' ownership retention with scenario-based sensitivity analysis.
-                      </p>
-                      <p>
-                        <strong>Navigate Negotiations Successfully</strong>: Switch analytical perspectives to address different stakeholder concerns with scenario support, find mutually acceptable terms through cross-validated analysis across market conditions, and support positions with professional-grade financial modelling and comprehensive scenario testing.
-                      </p>
-                      <p>
-                        <strong>Plan Multi-Round Financing</strong>: Determine and plan optimal investment amounts and timing across multiple funding stages, project ownership dilution effects across multiple funding rounds under various market scenarios, and pressure test the planned multi-round financing with scenario-based market analysis.
-                      </p>
-                    </div>
+                    <h3 className="text-xl font-bold text-heading mb-3">What Is the Venture Capital Valuation Model?</h3>
+                    <p className="leading-relaxed mb-4">
+                      The Venture Capital Valuation Model provides dual analytical perspectives for venture capital transactions. The framework addresses the fundamental challenge that traditional venture capital valuation methods serve either investors exclusively (focusing solely on return calculations) or entrepreneurs exclusively (emphasising only valuation maximisation), but successful venture capital transactions require both parties to understand the economics from multiple perspectives.
+                    </p>
+                    <p className="leading-relaxed mb-4">
+                      <strong>Core Analytical Framework</strong>: Both models employ identical exit assumptions and work backwards through multiple funding rounds to determine current valuations, using mathematical frameworks that ensure consistency between approaches whilst providing complementary analytical perspectives.
+                    </p>
+                    <p className="leading-relaxed mb-4">
+                      <strong>Reverse Valuation Logic</strong>: Starting from projected exit values and timing, the models calculate current valuations by working backwards through anticipated dilution effects across multiple investment rounds. This approach grounds valuations in realistic exit expectations rather than arbitrary multiples or subjective assessments.
+                    </p>
+                    <p className="leading-relaxed mb-4">
+                      <strong>Multi-Round Investment Analysis</strong>: The framework accommodates complex financing structures including pre-seed, seed, Series A, B, C rounds and beyond, with tracking of ownership dilution, investment amounts, and timing effects across all funding stages.
+                    </p>
                   </div>
 
                   <div>
                     <h3 className="text-xl font-bold text-heading mb-3">Why Was It Developed?</h3>
-                    <div className="space-y-3">
-                      <p>
-                        <strong>Single-Perspective Limitation</strong>: Some traditional VC methods focus only on investor returns without addressing ownership implications that entrepreneurs prioritize.
-                      </p>
-                      <p>
-                        <strong>The Negotiation Gap</strong>: Most valuation tools serve either investors or entrepreneurs exclusively, but successful deals require both parties to understand the economics from multiple perspectives.
-                      </p>
-                    </div>
+                    <p className="leading-relaxed mb-4">
+                      Traditional venture capital valuation methods suffer from perspective limitations that create negotiation gaps and suboptimal deal structures. Most existing frameworks serve either investors exclusively or entrepreneurs exclusively, but successful venture capital transactions require both parties to understand the economics from multiple analytical perspectives.
+                    </p>
+                    <p className="leading-relaxed mb-4">
+                      Venture capital negotiations often fail due to analytical misalignment where investors and entrepreneurs use different valuation frameworks, leading to extended negotiation cycles and frequently incompatible expectations. The dual-model approach addresses this communication problem by providing shared analytical infrastructure that both parties can understand and validate.
+                    </p>
                   </div>
 
                   <div>
                     <h3 className="text-xl font-bold text-heading mb-3">Who Benefits?</h3>
-                    <div className="space-y-3">
-                      <p><strong>Venture Capital Investors</strong>: Make investment decisions with return-justified valuations and optimize deal structures through ownership analysis across market scenarios.</p>
-                      <p><strong>Growth-Stage Entrepreneurs</strong>: Prepare investor presentations with professional valuations and model dilution scenarios to retain founder ownership under various conditions.</p>
-                      <p><strong>Financial Advisors</strong>: Provide transaction support using both perspectives, educate clients on VC economics, and deliver institutional-quality analysis with scenario planning.</p>
-                    </div>
-                  </div>
-
-                  <div>
-                    <h3 className="text-xl font-bold text-heading mb-3">How Does the Professional Venture Capital Valuation Method Work?</h3>
                     <div className="space-y-4">
                       <div>
-                        <h4 className="font-semibold text-heading">Core Framework</h4>
+                        <h4 className="font-semibold text-heading">Venture Capital Investors</h4>
                         <p className="leading-relaxed mb-2">
-                          Both models use identical exit assumptions and work backwards through multiple funding rounds with multi-round investment staging, comprehensive scenario analysis across five scenarios (Very Low through Very High exit valuations), and cross-model validation ensuring mathematical consistency between approaches.
+                          <strong>Investment Decision Making</strong>: Make systematic investment decisions with return-justified valuations based on explicit scenario analysis rather than intuitive assessments, and optimise deal structures through ownership analysis across diverse market conditions.
+                        </p>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Portfolio Construction</strong>: Evaluate investment opportunities consistently using standardised analytical frameworks that enable comparison across different stages, sectors, and risk profiles.
+                        </p>
+                        <p className="leading-relaxed">
+                          <strong>Due Diligence Enhancement</strong>: Conduct thorough risk-return analysis with explicit scenario testing that identifies critical assumptions requiring validation and provides investment committee presentations with analytical support.
                         </p>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-heading">Excel Implementation</h4>
+                        <h4 className="font-semibold text-heading">Growth-Stage Entrepreneurs</h4>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Fundraising Preparation</strong>: Prepare investor presentations with valuations backed by scenario analysis, and develop realistic expectations about investor ownership requirements based on market return standards rather than arbitrary preferences.
+                        </p>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Strategic Planning</strong>: Model dilution scenarios to optimise founder ownership retention across multiple funding rounds, understand the economic logic behind investor proposals, and develop funding strategies that balance growth capital needs with ownership preservation objectives.
+                        </p>
                         <p className="leading-relaxed">
-                          Both models use color-coded Excel inputs with real-time calculations and built-in scenario analysis including multi-round dilution tracking, professional IRR calculations, and integrated sensitivity analysis across all scenarios.
+                          <strong>Negotiation Strategy</strong>: Support fundraising negotiations with analytical credibility that demonstrates understanding of venture capital economics and enables constructive discussions about valuation and terms rather than positional bargaining.
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-heading">Financial Advisors</h4>
+                        <p className="leading-relaxed">
+                          <strong>Client Advisory Services</strong>: Provide transaction support using both analytical perspectives to serve diverse client needs, educate clients on venture capital economics, and deliver analysis with scenario planning capabilities.
                         </p>
                       </div>
                     </div>
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-bold text-heading mb-3">Limitations</h3>
-                    <div className="space-y-3">
-                      <p><strong>Model Assumptions</strong>: Excludes complex liquidation preference waterfalls and participation rights for modeling simplicity.</p>
-                      <p><strong>Market Dependencies</strong>: Valuation sensitivity to IPO and M&A market cycles, industry evolution, and regulatory environment shifts.</p>
+                    <h3 className="text-xl font-bold text-heading mb-3">How Does the Venture Capital Valuation Model Work?</h3>
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="font-semibold text-heading">Excel Implementation Architecture</h4>
+                        <p className="leading-relaxed mb-2">
+                          <strong>User Interface Standards</strong>: Both models use colour-coded Excel systems with yellow cells for user inputs, white cells for calculated values, and grey cells with bold text highlighting key results for decision-making purposes.
+                        </p>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Worksheet Protection</strong>: All cells are protected except yellow input cells and Your Notes worksheet, ensuring model integrity whilst allowing full customisation of assumptions and documentation.
+                        </p>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Real-Time Calculations</strong>: Dynamic calculation engines provide immediate updates as users modify assumptions, enabling rapid scenario testing and sensitivity analysis across multiple variables simultaneously.
+                        </p>
+                        <p className="leading-relaxed">
+                          <strong>Integrated Visualisation</strong>: Charts and sensitivity analyses display investment amounts, ownership percentages, and expected returns across scenarios, providing immediate visual feedback on the implications of different assumptions and deal structures.
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-heading">IRR-Driven Model Implementation</h4>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Input Requirements</strong>: Users specify required investor IRR percentages, investment amounts, expected exit timing, and exit value scenarios across the scenario framework (Very Low through Very High exit valuations).
+                        </p>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Calculation Process</strong>:
+                        </p>
+                        <ol className="list-decimal list-inside space-y-1 ml-4 mb-2">
+                          <li>Present value calculation of exit proceeds based on investor's required IRR</li>
+                          <li>Ownership percentage determination required to achieve target returns</li>
+                          <li>Pre-money and post-money valuation calculations</li>
+                          <li>Multi-round dilution analysis with employee option pool effects</li>
+                        </ol>
+                        <p className="leading-relaxed">
+                          <strong>Output Analysis</strong>: The model generates required ownership percentages, current valuation ranges, and sensitivity analysis showing how changes in exit assumptions affect required investor ownership stakes.
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-heading">Ownership-Driven Model Implementation</h4>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Input Requirements</strong>: Users specify proposed investor ownership percentages, investment amounts, expected exit timing, and exit value scenarios using the same scenario framework for consistency.
+                        </p>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Calculation Process</strong>:
+                        </p>
+                        <ol className="list-decimal list-inside space-y-1 ml-4 mb-2">
+                          <li>Exit proceeds calculation based on proposed ownership stakes</li>
+                          <li>IRR determination across all scenario outcomes</li>
+                          <li>Risk-adjusted return analysis with probability weighting options</li>
+                          <li>Comparative analysis against investor return requirements</li>
+                        </ol>
+                        <p className="leading-relaxed">
+                          <strong>Output Analysis</strong>: The model calculates expected investor returns across scenarios, identifies scenarios where returns meet or exceed requirements, and provides sensitivity analysis for negotiation support.
+                        </p>
+                      </div>
                     </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-heading mb-3">Scenario Analysis Capabilities</h3>
+                    <p className="leading-relaxed mb-4">
+                      <strong>Multi-Scenario Framework</strong>: Both models use identical scenario structures (Very Low through Very High) to ensure analytical consistency whilst enabling sensitivity testing across diverse outcome possibilities.
+                    </p>
+                    <p className="leading-relaxed mb-4">
+                      <strong>Cross-Scenario Validation</strong>: Scenario results enable stakeholders to identify critical assumptions, test sensitivity across wide assumption ranges, and understand the implications of different exit outcomes for both investor returns and founder ownership retention.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-heading mb-3">Mathematical Foundation</h3>
+                    <p className="leading-relaxed mb-4">
+                      <strong>IRR Calculations</strong>: Internal rate of return calculations account for complex cash flow timing, multiple investment rounds, and exit proceeds distribution across different ownership structures.
+                    </p>
+                    <p className="leading-relaxed mb-4">
+                      <strong>Dilution Modelling</strong>: Mathematical models track ownership percentage changes across multiple funding rounds, including employee stock option plan effects, advisor equity grants, and conversion preferences where applicable.
+                    </p>
+                    <p className="leading-relaxed mb-4">
+                      <strong>Present Value Analysis</strong>: All models incorporate appropriate discount rate applications for current valuation determination, enabling comparison with other valuation methodologies and cross-validation of analytical results.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-heading mb-3">Strategic Integration with Other Valuation Models</h3>
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="font-semibold text-heading">Complementary Framework Design</h4>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Exit Valuation Integration</strong>: The venture capital method focuses on ownership and return analysis whilst relying on other valuation models (such as SaaS Unit Economics, First Chicago, or Perpetuity models) to generate exit value estimates for scenario analysis.
+                        </p>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Cross-Model Validation</strong>: Results from venture capital analysis provide validation checks for other valuation approaches, highlighting cases where detailed financial projections may be inconsistent with market return requirements or ownership expectations.
+                        </p>
+                        <p className="leading-relaxed">
+                          <strong>Portfolio Context</strong>: The method integrates seamlessly with other models in the toolkit to provide valuation analysis that addresses multiple stakeholder perspectives and analytical requirements simultaneously.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-heading mb-3">Key Limitations & Best Practices</h3>
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="font-semibold text-heading">Key Limitations</h4>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Market Condition Assumptions</strong>: The models assume relatively stable market conditions and exit multiples over 5-7 year investment horizons, but venture capital markets experience significant volatility that can affect exit valuations substantially.
+                        </p>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Execution Risk Exclusion</strong>: Models focus on financial analysis rather than operational execution risks, competitive responses, or management team changes that significantly impact startup success probabilities over multi-year periods.
+                        </p>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Complex Capital Structure Limitations</strong>: The framework handles standard investment structures effectively but may require modification for complex liquidation preferences, participating preferred arrangements, or unusual governance structures that affect economic returns.
+                        </p>
+                        <p className="leading-relaxed">
+                          <strong>Financial Projection Reliability</strong>: Like all startup valuation methods, the approach depends on financial projections that typically miss targets by 40-60%, making scenario analysis essential but not eliminating fundamental uncertainty inherent in early-stage investing.
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-heading">Best Practices</h4>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Market Research Validation</strong>: Research recent exit multiples for specific industry sectors and stage-appropriate benchmarks to ground scenario assumptions in empirical evidence rather than arbitrary estimates or outdated comparables.
+                        </p>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Conservative Assumption Setting</strong>: Be realistic and conservative regarding funding needs, timing requirements, employee option pool growth, and advisor equity grants to maintain credibility with experienced investors and avoid optimistic bias.
+                        </p>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Range Presentation</strong>: Present results across multiple scenarios with explicit assumption documentation to demonstrate thorough analysis and acknowledge inherent uncertainty rather than false precision through single-point estimates.
+                        </p>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Regular Updates and Monitoring</strong>: Document assumptions with supporting market data and update parameters as market conditions evolve, comparable transactions become available, and company circumstances change materially.
+                        </p>
+                        <p className="leading-relaxed">
+                          <strong>Cross-Method Validation</strong>: Compare results with other valuation approaches in the toolkit to identify potential inconsistencies and ensure analytical robustness before making significant investment or strategic decisions.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-heading mb-3">References</h3>
+                    <p className="text-sm leading-relaxed">
+                      ¹ Sahlman, William A., and Daniel R. Scherlis, "A Method for Valuing High-Risk, Long-Term Investments: The 'Venture Capital Method,'" Harvard Business School Background Note 288-006 (Revised October 2009) ² Roig, Aleix, and Carlos Vicén, "Startup Valuation," HEC Paris Master Thesis (2020) ³ Tyebjee, Tyzoon T., and Albert V. Bruno, "A Model of Venture Capitalist Investment Activity," Management Science (1984) ⁴ MacMillan, Ian C., Robin Siegel, and P.N. Subba Narasimha, "Criteria Used by Venture Capitalists to Evaluate New Venture Proposals," Journal of Business Venturing (1985) ⁵ Cambridge Associates, "US Private Equity Index and Selected Benchmark Statistics" (2024) ⁶ National Venture Capital Association, "NVCA 2024 Yearbook" (2024)
+                    </p>
                   </div>
                 </div>
               </AccordionContent>
