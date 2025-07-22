@@ -117,7 +117,7 @@ const StartupValuations = () => {
                 <CardContent className="pt-0">
                   <Link to={model.href}>
                     <Button variant="brand-green" className="w-full">
-                      {model.status === "contact" ? "Contact Us" : "Open Model"}
+                      {model.status === "contact" ? "Contact Us" : "Go to Model"}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>

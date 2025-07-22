@@ -72,7 +72,7 @@ const VentureCapitalMethod = () => {
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                 onClick={() => downloadModel('Venture Capital Valuation Method 25.07.07.xlsm')}
               >
-                Open Model
+                Go to Model
               </Button>
             </CardContent>
           </Card>
