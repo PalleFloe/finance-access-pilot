@@ -61,7 +61,7 @@ const DecisionAnalysis = () => {
           <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
             <CardHeader>
               <CardTitle>
-                Decision Analysis for Venture Capital Investments
+                Decision Analysis Model for Venture Capital Investments
               </CardTitle>
               <CardDescription>
                 Systematic risk assessment with scenario analysis
