@@ -49,7 +49,7 @@ const BerkusValuation = () => {
 
           {/* Main Headline */}
           <h1 className="text-4xl font-bold text-heading mb-4">
-            Professional Berkus Valuation Model
+            Berkus Valuation Model
           </h1>
 
           {/* Sub-headline */}
@@ -79,24 +79,24 @@ const BerkusValuation = () => {
 
           {/* Short Description */}
           <div className="prose prose-slate max-w-none mb-8">
-            <p className="text-lg text-slate-600 leading-relaxed mb-4">
-              The Professional Berkus Valuation Model transforms Dave Berkus's risk-assessment approach into a scenario-based framework for pre-revenue startup valuation. By systematically evaluating five critical risk mitigation factors through multiple market scenarios, this model provides entrepreneurs and investors with credible valuations that address early-stage uncertainty and institutional investment requirements.
+            <p className="text-xl text-slate-600 leading-relaxed mb-4">
+              The Berkus Valuation Model transforms Dave Berkus's risk-assessment approach¹ into a scenario-based framework for pre-revenue startup valuation. By systematically evaluating five critical risk mitigation factors through multiple market scenarios, this model provides entrepreneurs and investors with credible valuations that address early-stage uncertainty.
             </p>
             
-            <p className="text-lg text-slate-600 leading-relaxed mb-4">
-              <strong>Risk-Centric Approach</strong>: Unlike traditional financial projection methods, the enhanced Berkus approach recognizes that pre-revenue startups lack reliable historical data for conventional analysis. Instead, the model focuses on systematic risk assessment across Sound Idea, Working Prototype, Quality Management Team, Strategic Relationships, and Product Rollout.
+            <p className="text-xl text-slate-600 leading-relaxed mb-4">
+              <strong>Risk-Centric Approach</strong>: Unlike traditional financial projection methods, the Berkus approach recognises that pre-revenue startups lack historical data or reliable estimates for conventional analysis.¹ ² Instead, the model focuses on systematic risk assessment across Sound Idea, Working Prototype, Quality Management Team, Strategic Relationships, and Product Rollout.
             </p>
             
-            <p className="text-lg text-slate-600 leading-relaxed mb-4">
-              <strong>Scenario Implementation</strong>: The framework varies both maximum risk factor values and performance scores across five scenarios (Very Low through Very High), enabling comprehensive sensitivity analysis that addresses diverse market conditions and execution capabilities.
+            <p className="text-xl text-slate-600 leading-relaxed mb-4">
+              <strong>Scenario Implementation</strong>: The model varies both maximum values and performance scores across the five risk factors into five valuation scenarios (Very Low through Very High), enabling sensitivity analysis of the high uncertainty inherent in early-stage valuation.
             </p>
             
-            <p className="text-lg text-slate-600 leading-relaxed mb-4">
-              <strong>Strategic Purpose</strong>: Establish credible pre-revenue valuations through systematic risk assessment, optimize resource allocation by identifying highest-impact risk mitigation activities, and support investor communications with professional scenario-based valuation ranges.
+            <p className="text-xl text-slate-600 leading-relaxed mb-4">
+              <strong>Strategic Purpose</strong>: Establish credible pre-revenue valuations through systematic risk assessment, optimise resource allocation by identifying highest-impact risk mitigation activities, and support investor dialogues with scenario-based valuation ranges.
             </p>
             
-            <p className="text-lg text-slate-600 leading-relaxed">
-              <strong>Target Users</strong>: Angel investors and early-stage VCs requiring systematic evaluation frameworks, pre-revenue entrepreneurs needing structured valuation justification, and financial advisors providing professional early-stage valuation services.
+            <p className="text-xl text-slate-600 leading-relaxed">
+              <strong>Target Users</strong>: Angel investors and early-stage VCs requiring systematic evaluation frameworks, pre-revenue entrepreneurs needing structured valuation justification, and financial advisors providing early-stage valuation services.
             </p>
           </div>
 
@@ -109,9 +109,22 @@ const BerkusValuation = () => {
               <AccordionContent className="prose prose-slate max-w-none">
                 <div className="space-y-6 text-slate-600">
                   <div>
-                    <h3 className="text-xl font-bold text-heading mb-3">What Is the Professional Berkus Valuation Model?</h3>
+                    <h3 className="text-xl font-bold text-heading mb-3">Overview and Strategic Framework</h3>
                     <p className="leading-relaxed mb-4">
-                      The Professional Berkus Valuation Model is an evolution of Dave Berkus's original risk-based valuation framework, designed for pre-revenue and early-stage startups where traditional financial metrics provide limited insight. The model operates on the principle that startup value creation occurs through systematic risk mitigation rather than financial performance optimization.
+                      The Berkus Valuation Model transforms Dave Berkus's risk-assessment approach into a scenario-based framework for pre-revenue startup valuation. By systematically evaluating five critical risk mitigation factors through multiple market scenarios, this model provides entrepreneurs and investors with credible valuations that address early-stage uncertainty.
+                    </p>
+                    <p className="leading-relaxed mb-4">
+                      <strong>Risk-Centric Approach</strong>: Unlike traditional financial projection methods, the Berkus approach recognises that pre-revenue startups lack historical data or reliable estimates for conventional analysis. Instead, the model focuses on systematic risk assessment across Sound Idea, Working Prototype, Quality Management Team, Strategic Relationships, and Product Rollout.
+                    </p>
+                    <p className="leading-relaxed mb-4">
+                      <strong>Scenario Implementation</strong>: The model varies both maximum values and performance scores across the five risk factors into five valuation scenarios (Very Low through Very High), enabling sensitivity analysis of the high uncertainty inherent in early-stage valuation.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-heading mb-3">What Is the Berkus Valuation Model?</h3>
+                    <p className="leading-relaxed mb-4">
+                      The Berkus Valuation Model suggests that startup value creation occurs through systematic evaluation of five risk mitigation factors rather than financial performance optimisation.
                     </p>
                   </div>
 
@@ -120,71 +133,128 @@ const BerkusValuation = () => {
                     <div className="space-y-4">
                       <div>
                         <h4 className="font-semibold text-heading">1. Sound Idea (Business Risk Reduction)</h4>
-                        <p className="text-base">Market opportunity validation, business model viability, competitive differentiation, and customer need verification.</p>
+                        <p className="leading-relaxed">Market opportunity validation, business model viability, competitive differentiation, and customer need verification.</p>
                       </div>
                       <div>
                         <h4 className="font-semibold text-heading">2. Working Prototype (Technology Risk Reduction)</h4>
-                        <p className="text-base">Technical feasibility demonstration, intellectual property development, product development progress, and market reaction validation.</p>
+                        <p className="leading-relaxed">Technical feasibility demonstration, intellectual property development, product development progress, and market reaction validation.</p>
                       </div>
                       <div>
                         <h4 className="font-semibold text-heading">3. Quality Management Team (Execution Risk Reduction)</h4>
-                        <p className="text-base">Leadership experience, team completeness, execution capability, and team dynamics.</p>
+                        <p className="leading-relaxed">Leadership experience, team completeness, execution capability, and team dynamics.</p>
                       </div>
                       <div>
                         <h4 className="font-semibold text-heading">4. Strategic Relationships (Market Risk Reduction)</h4>
-                        <p className="text-base">Customer development progress, partnership establishment, market access capabilities, and industry recognition.</p>
+                        <p className="leading-relaxed">Customer development progress, partnership establishment, market access capabilities, and industry recognition.</p>
                       </div>
                       <div>
                         <h4 className="font-semibold text-heading">5. Product Rollout or Sales (Production Risk Reduction)</h4>
-                        <p className="text-base">Go-to-market execution, early revenue generation, operational capability, and scaling readiness.</p>
+                        <p className="leading-relaxed">Go-to-market execution, early revenue generation, operational capability, and scaling readiness.</p>
                       </div>
                     </div>
                   </div>
 
                   <div>
                     <h3 className="text-xl font-bold text-heading mb-3">Why Was It Developed?</h3>
-                    <div className="space-y-3">
-                      <p>
-                        <strong>The Financial Projection Problem</strong>: Academic research demonstrates that startup financial projections show poor predictive accuracy, with most companies missing initial revenue targets by 40-60%. This unreliability undermines traditional DCF and comparable company valuation approaches for early-stage companies.
-                      </p>
-                      <p>
-                        <strong>Risk-Centric Solution</strong>: The Berkus approach addresses this by focusing on risk mitigation rather than financial forecasting. As companies systematically reduce operational risks through tangible achievements, their fundamental value increases in measurable ways.
-                      </p>
-                    </div>
+                    <p className="leading-relaxed mb-4">
+                      Academic research demonstrates that startup financial projections show poor predictive accuracy, with most companies missing initial revenue estimates by huge margins. Traditional financial valuation approaches are therefore unreliable for early-stage companies and require alternative valuation methods.
+                    </p>
+                    <p className="leading-relaxed mb-4">
+                      The Berkus approach addresses this by focusing on risk mitigation rather than financial forecasting. As companies systematically reduce operational risks through tangible achievements, their fundamental value increases in measurable ways.
+                    </p>
                   </div>
 
                   <div>
                     <h3 className="text-xl font-bold text-heading mb-3">Who Benefits?</h3>
-                    <div className="space-y-3">
-                      <p><strong>Angel Investors and Early-Stage VCs</strong>: Establish credible pre-money valuations, systematic evaluation frameworks, and consistent methodology for tracking value creation across investments.</p>
-                      <p><strong>Pre-Revenue Entrepreneurs</strong>: Structured valuation justification with scenario analysis, strategic priority setting, and understanding of valuation ranges across different execution levels.</p>
-                      <p><strong>Financial Advisors</strong>: Professional early-stage valuation framework for startup clients, business plan development, and transaction advisory support.</p>
-                    </div>
-                  </div>
-
-                  <div>
-                    <h3 className="text-xl font-bold text-heading mb-3">How Does the Professional Berkus Valuation Model Work?</h3>
                     <div className="space-y-4">
                       <div>
-                        <h4 className="font-semibold text-heading">Core Methodology</h4>
-                        <p className="leading-relaxed mb-2">
-                          The model requires two key inputs for each of the five risk factors: <strong>Maximum Values</strong> (user-defined maximum potential value for each risk factor) and <strong>Performance Scores</strong> (user rates company's current achievement on 1-5 scale based on actual progress).
-                        </p>
-                        <div className="bg-slate-100 p-4 rounded-lg">
-                          <p className="font-semibold mb-2">Calculation:</p>
-                          <p className="text-base">Each factor's value = (Maximum Value) × (Performance Score ÷ 5)</p>
-                          <p className="text-base">Total pre-money valuation = sum of all five factor values</p>
-                        </div>
+                        <h4 className="font-semibold text-heading">Angel Investors and Early-Stage VCs</h4>
+                        <ul className="list-disc list-inside space-y-1 ml-4">
+                          <li>Credible valuations: Establish systematic pre-money valuations with consistent methodology for tracking value creation across investments</li>
+                          <li>Evaluation frameworks: Assessment tools that provide analytical consistency across diverse early-stage opportunities</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-heading">Pre-Revenue Entrepreneurs</h4>
+                        <ul className="list-disc list-inside space-y-1 ml-4">
+                          <li>Valuation justification: Structured approach to defending valuation expectations with scenario-based analysis and strategic priority setting</li>
+                          <li>Resource allocation: Understanding of valuation ranges across different execution levels enables informed strategic decision-making</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-heading">Financial Advisors</h4>
+                        <ul className="list-disc list-inside space-y-1 ml-4">
+                          <li>Client frameworks: Early-stage valuation tools for startup clients with business plan development support and transaction advisory capabilities</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-bold text-heading mb-3">Limitations</h3>
-                    <div className="space-y-3">
-                      <p><strong>Inherent Subjectivity</strong>: Requires benchmark validation, peer review process, and systematic reassessment as conditions change.</p>
-                      <p><strong>Market Dependencies</strong>: Valuation variations based on economic conditions, industry cycles, and technology trends.</p>
+                    <h3 className="text-xl font-bold text-heading mb-3">How Does the Berkus Valuation Model Work?</h3>
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="font-semibold text-heading">Core Methodology</h4>
+                        <p className="leading-relaxed mb-4">
+                          The model requires two key inputs for each of the five risk factors: Maximum Values (user-defined maximum potential value for each risk factor) and Performance Scores (user rates company's current performance on a 1-5 scale).
+                        </p>
+                        <p className="leading-relaxed mb-4">
+                          <strong>Calculation</strong>: Each factor's value = (Maximum Value) × (Performance Score ÷ 5). Total pre-money valuation = sum of all five factor values.
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-heading">Excel Implementation</h4>
+                        <p className="leading-relaxed mb-2">
+                          <strong>User Interface Standards</strong>: Colour-coded Excel system with yellow cells for user inputs, white cells for calculated values, and grey cells with bold text for key results.
+                        </p>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Worksheet Protection</strong>: All cells are protected except yellow input cells and Your Notes worksheet, ensuring model integrity whilst allowing full customisation of assumptions and documentation.
+                        </p>
+                        <p className="leading-relaxed mb-4">
+                          <strong>Visualisation</strong>: Pre-money and post-money valuation ranges with ownership percentage calculations for investment scenarios.
+                        </p>
+                        <p className="leading-relaxed">
+                          <strong>Scenario Framework</strong>: Apart from the Base Case, each scenario is based on ranges of maximum risk factor values and performance scores. For the maximum value, the user sets a percentage range (for example ±50%), whilst performance score range (±1) is automatically applied.
+                        </p>
+                      </div>
                     </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-heading mb-3">Key Limitations & Best Practices</h3>
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="font-semibold text-heading">Key Limitations</h4>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Inherent Subjectivity</strong>: Performance scoring requires subjective assessment, making results sensitive to individual bias and market condition assumptions.
+                        </p>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Market Realities</strong>: Excludes financial performance data, industry-specific factors, and exceptional potential that may not fit generic risk categories.
+                        </p>
+                        <p className="leading-relaxed">
+                          <strong>Static Analysis</strong>: Assumes generic risk factors apply universally with current advantages remaining sustainable over time.
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-heading">Best Practices</h4>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Verification Requirements</strong>: Require specific evidence for each performance score to avoid arbitrary ratings and maintain analytical credibility.
+                        </p>
+                        <p className="leading-relaxed mb-2">
+                          <strong>Multiple Assessments</strong>: Use independent evaluations to reduce bias and benchmark maximum values against recent angel/seed transactions.
+                        </p>
+                        <p className="leading-relaxed">
+                          <strong>Range Presentation</strong>: Present results as valuation ranges with scenario context and transparent assumption documentation rather than point estimates.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-heading mb-3">References</h3>
+                    <p className="text-sm leading-relaxed">
+                      ¹ Berkus, Dave, "The Berkus Method: Valuing an Early Stage Investment," Berkonomics (2012) ² Berkus, Dave, "Extending the Berkus Method: Valuing Development Stage Companies," Angel Capital Association (2016) ³ Payne, Bill, "The Scorecard Valuation Method," Angel Capital Association (2011) ⁴ Venture Capital Journal, "Early Stage Valuation Methods: A Comparative Analysis" (2023) ⁵ National Angel Capital Organization, "Angel Investment Performance Study" (2024) ⁶ Halo Report, "Angel Investor Market Analysis" (2024)
+                    </p>
                   </div>
                 </div>
               </AccordionContent>
