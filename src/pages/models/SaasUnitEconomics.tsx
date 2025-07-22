@@ -101,11 +101,12 @@ const SaasUnitEconomics = () => {
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="complete-guide">
               <AccordionTrigger className="text-xl font-bold text-heading">
-                Overview and Strategic Framework
+                Complete SaaS Unit Economics Model Guide
               </AccordionTrigger>
               <AccordionContent className="prose prose-slate max-w-none">
                 <div className="space-y-6 text-slate-600">
                   <div>
+                    <h3 className="text-xl font-bold text-heading mb-3">Overview and Strategic Framework</h3>
                     <p className="leading-relaxed mb-4">
                       The SaaS Unit Economics Model values SaaS companies by analysing individual customer profitability and lifetime contribution to overall business value. By examining the fundamental relationship between customer acquisition, retention, and lifetime value, the model provides startups and growth companies with analytical frameworks for understanding and optimising core business model economics.
                     </p>
