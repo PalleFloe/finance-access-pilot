@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ArrowLeft, Calculator } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import Header from "@/components/Header";
 import { useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
@@ -60,9 +60,8 @@ const BerkusValuation = () => {
           {/* Model Card */}
           <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
             <CardHeader>
-              <CardTitle className="flex items-center space-x-2">
-                <Calculator className="w-6 h-6 text-primary" />
-                <span>Berkus Valuation Model</span>
+              <CardTitle>
+                Berkus Valuation Model
               </CardTitle>
               <CardDescription>
                 Pre-revenue valuation based on risk assessment
