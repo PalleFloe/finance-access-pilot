@@ -18,7 +18,7 @@ const StartupValuations = () => {
       status: "available",
     },
     {
-      name: "Venture Capital Valuation Method",
+      name: "Venture Capital Valuation Model",
       description: "Bridging Multi-Round Financing, Exit Value, Founder's Ownership Share and Investor's Need for a Profitable Return",
       href: "/toolbox/startup-valuations/venture-capital-method",
       status: "available",
@@ -30,7 +30,7 @@ const StartupValuations = () => {
       status: "available",
     },
     {
-      name: "First Chicago Valuation Method",
+      name: "First Chicago Valuation Model",
       description: "Simple Scenario Based DCF Model for Startup Valuation with Exit Value based on both EBITDA and Revenue",
       href: "/toolbox/startup-valuations/first-chicago-method",
       status: "available",
