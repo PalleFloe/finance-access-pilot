@@ -80,15 +80,15 @@ const PerpetuityExitValuation = () => {
           {/* Short Description */}
           <div className="prose prose-slate max-w-none mb-8">
             <p className="text-lg text-slate-600 leading-relaxed mb-4">
-              The Professional Perpetuity & Exit Valuation Models provide straightforward analysis that enables users to understand the impact of key value drivers on business valuation. Through three simple perpetuity models and a complementary exit value model, these tools deliver immediate insights into how cash flow, growth assumptions, exit timing, and investment decisions affect net present value across multiple scenarios.
+              The Perpetuity & Exit Valuation Models provide straightforward analysis that enables users to understand the impact of key value drivers on business valuation.¹ ² Through three simple perpetuity models and a complementary exit value model, these tools deliver immediate insights into how cash flow, growth assumptions, exit timing and multiples, and investment decisions affect net present value across multiple scenarios.
             </p>
             
             <p className="text-lg text-slate-600 leading-relaxed mb-4">
-              <strong>Value Driver Focus</strong>: Unlike complex valuation frameworks, these models emphasize practical sensitivity analysis that shows users exactly how changing growth rates, exit multiples, or investment timing impacts valuation. The three-scenario structure (Downside Case, Base Case, Success Case) enables quick assessment of valuation ranges under different assumptions.
+              <strong>Value Driver Focus</strong>: Unlike complex valuation frameworks, these models emphasise sensitivity analysis that shows users how changing growth rates, exit multiples, or investment timing impacts valuation.¹ ² The three-scenario structure (Downside Case, Base Case, Upside Case) enables quick assessment of valuation ranges under different assumptions.
             </p>
             
             <p className="text-lg text-slate-600 leading-relaxed mb-4">
-              <strong>Professional Simplicity</strong>: The models balance analytical rigor with practical usability, providing the Gordon Growth foundation essential for perpetuity analysis while maintaining the simplicity necessary for rapid scenario testing and strategic decision support.
+              <strong>Simplicity</strong>: The models balance analytical rigour with usability, providing the Gordon Growth foundation¹ ² essential for perpetuity analysis, whilst maintaining the simplicity necessary for rapid scenario testing and strategic decision support.
             </p>
             
             <p className="text-lg text-slate-600 leading-relaxed mb-4">
@@ -96,7 +96,7 @@ const PerpetuityExitValuation = () => {
             </p>
             
             <p className="text-lg text-slate-600 leading-relaxed">
-              <strong>Target Users</strong>: Entrepreneurs conducting business plan validation, investors requiring rapid perpetuity valuation assessment, and financial advisors needing flexible valuation tools for client advisory services.
+              <strong>Target Users</strong>: Entrepreneurs, investors and financial advisors for validation and sensitivity understanding of perpetuity valuation approaches.
             </p>
           </div>
 
@@ -109,9 +109,22 @@ const PerpetuityExitValuation = () => {
               <AccordionContent className="prose prose-slate max-w-none">
                 <div className="space-y-6 text-slate-600">
                   <div>
-                    <h3 className="text-xl font-bold text-heading mb-3">What Are the Professional Perpetuity & Exit Valuation Models?</h3>
+                    <h3 className="text-xl font-bold text-heading mb-3">Overview and Strategic Framework</h3>
                     <p className="leading-relaxed mb-4">
-                      The Professional Perpetuity & Exit Valuation Models are designed for practical valuation analysis with immediate value driver insights. The suite includes three perpetuity-based approaches and one exit-based approach, each using consistent three-scenario analysis (Downside Case, Base Case, Success Case) to demonstrate how key assumptions impact net present value.
+                      The Perpetuity & Exit Valuation Models provide straightforward analysis that enables users to understand the impact of key value drivers on business valuation. Through three simple perpetuity models and a complementary exit value model, these tools deliver immediate insights into how cash flow, growth assumptions, exit timing and multiples, and investment decisions affect net present value across multiple scenarios.
+                    </p>
+                    <p className="leading-relaxed mb-4">
+                      <strong>Value Driver Focus</strong>: Unlike complex valuation frameworks, these models emphasise sensitivity analysis that shows users exactly how changing growth rates, exit multiples, or investment timing impacts valuation. The three-scenario structure (Downside Case, Base Case, Upside Case) enables quick assessment of valuation ranges under different assumptions.
+                    </p>
+                    <p className="leading-relaxed mb-4">
+                      <strong>Simplicity</strong>: The models balance analytical rigour with usability, providing the Gordon Growth foundation¹ ² essential for perpetuity analysis, whilst maintaining the simplicity necessary for rapid scenario testing and strategic decision support.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-heading mb-3">What Are the Perpetuity & Exit Valuation Models?</h3>
+                    <p className="leading-relaxed mb-4">
+                      The Perpetuity & Exit Valuation Models are designed for simple valuation analysis with immediate value driver insights. The suite includes three perpetuity-based approaches and one exit-based approach, each using consistent three-scenario analysis (Downside Case, Base Case, Success Case) to demonstrate how key assumptions impact net present value.
                     </p>
                   </div>
 
@@ -121,82 +134,128 @@ const PerpetuityExitValuation = () => {
                       <div>
                         <h4 className="font-semibold text-heading">Common Features Across All Models:</h4>
                         <ul className="list-disc pl-6 mt-2 space-y-1 text-base">
-                          <li>Flexible year selection (1-10 years) for analysis period</li>
-                          <li>Investment integration with timing options (up to 2 investments)</li>
                           <li>Discount rate input for all NPV calculations</li>
                           <li>Three-scenario analysis (Downside Case, Base Case, Success Case)</li>
+                          <li>Flexible exit year selection (1-10 years) for analysis period</li>
+                          <li>Funding (Investment) with timing options</li>
                         </ul>
                       </div>
                       
                       <div>
-                        <h4 className="font-semibold text-heading">NPV of Perpetuity</h4>
-                        <p className="text-base">Simple perpetuity model with no growth assumption (Cash Flow ÷ Discount Rate), scenario-based cash flow sensitivity, and includes exit multiple assumption.</p>
-                      </div>
-                      
-                      <div>
-                        <h4 className="font-semibold text-heading">NPV of Growing Perpetuity</h4>
-                        <p className="text-base">Gordon Growth perpetuity model with single growth rate assumption, demonstrates impact of consistent growth on perpetual value.</p>
-                      </div>
-                      
-                      <div>
-                        <h4 className="font-semibold text-heading">NPV of Two-Phase Growing Perpetuity</h4>
-                        <p className="text-base">Sophisticated perpetuity model with distinct growth phases, models transition from high growth to mature growth rates.</p>
-                      </div>
-                      
-                      <div>
-                        <h4 className="font-semibold text-heading">NPV of Exit Value</h4>
-                        <p className="text-base">Simple exit-based valuation calculation, direct comparison alternative to perpetuity approaches.</p>
+                        <h4 className="font-semibold text-heading">Specific Features for Each Model:</h4>
+                        <div className="space-y-3 ml-4">
+                          <p><strong>NPV of Perpetuity</strong>: Simple perpetuity model with no growth assumption.</p>
+                          <p><strong>NPV of Growing Perpetuity</strong>: Gordon Growth perpetuity model with single growth rate assumption, demonstrates impact of consistent growth on perpetual value.</p>
+                          <p><strong>NPV of Two-Phase Growing Perpetuity</strong>: Perpetuity model with distinct growth phases, models transition from high growth to lower mature growth rate.</p>
+                          <p><strong>NPV of Exit Value</strong>: Simple exit-based valuation calculation, direct comparison alternative to perpetuity approaches.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
 
                   <div>
                     <h3 className="text-xl font-bold text-heading mb-3">Why Were These Models Developed?</h3>
-                    <div className="space-y-3">
-                      <p><strong>Valuation Assumption Transparency</strong>: Traditional and more complex valuation analysis often obscures the relationship between key assumptions and outcomes. These models address this by providing immediate visibility into how growth rates, exit values, and investment timing drive NPV results.</p>
-                      <p><strong>Value Driver Education</strong>: Users need to understand which assumptions most significantly impact valuations to make informed strategic decisions.</p>
-                      <p><strong>Practical Application Need</strong>: Complex valuation models often overwhelm users with detail while hiding fundamental value relationships.</p>
-                    </div>
+                    <p className="leading-relaxed mb-4">
+                      Traditional complex valuation analysis often obscures the relationship between key assumptions and outcomes. These models address this by providing immediate visibility into how growth rates, exit timing and multiples, and investment amounts and timing drive NPV results.
+                    </p>
+                    <p className="leading-relaxed mb-4">
+                      Users need to understand which assumptions most significantly impact valuations to make informed strategic decisions. The models provide immediate feedback on assumption sensitivity and value driver relationships.
+                    </p>
                   </div>
 
                   <div>
                     <h3 className="text-xl font-bold text-heading mb-3">Who Benefits?</h3>
                     <div className="space-y-3">
-                      <p><strong>Entrepreneurs and Startups</strong>: Business plan validation with perpetuity sensitivity testing, strategic planning through growth assumption analysis.</p>
-                      <p><strong>Investors and Advisors</strong>: Rapid perpetuity assessment for investment decisions, portfolio company valuation with consistent methodology.</p>
-                      <p><strong>Financial Professionals</strong>: Client advisory services with flexible valuation tools, transaction analysis with multiple perpetuity approaches.</p>
+                      <p><strong>Entrepreneurs and Startups</strong>: Business validation with sensitivity testing for business plan validation and strategic analysis of growth drivers, decision support with valuation impact of funding levels and timing.</p>
+                      <p><strong>Investors and Advisors</strong>: Rapid assessment with quick perpetuity valuation for investment analysis with consistent methodology.</p>
                     </div>
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-bold text-heading mb-3">How Do the Professional Perpetuity & Exit Models Work?</h3>
+                    <h3 className="text-xl font-bold text-heading mb-3">How Do the Perpetuity & Exit Models Work?</h3>
                     <div className="space-y-4">
                       <div>
-                        <h4 className="font-semibold text-heading">Core Calculation Methods</h4>
-                        <div className="bg-slate-100 p-4 rounded-lg space-y-2">
-                          <p><strong>NPV of Perpetuity Model</strong>: Simple Perpetuity Foundation: Value = Cash Flow ÷ Discount Rate</p>
-                          <p><strong>NPV of Growing Perpetuity Model</strong>: Gordon Growth Foundation: Value = Cash Flow ÷ (Discount Rate - Growth Rate)</p>
-                          <p><strong>NPV of Two-Phase Growing Perpetuity Model</strong>: Sophisticated Growth Modeling with initial high-growth phase transitioning to mature growth.</p>
-                          <p><strong>NPV of Exit Value Model</strong>: Direct Exit Approach using simple NPV calculation based on exit value assumptions.</p>
-                        </div>
+                        <h4 className="font-semibold text-heading">Excel Implementation Framework</h4>
+                        <p className="leading-relaxed mb-3">
+                          <strong>User Interface Standards</strong>: Colour-coded Excel system with yellow cells for user inputs, white cells for calculated values, and grey cells with bold text for key results across all four models.
+                        </p>
+                        <p className="leading-relaxed mb-3">
+                          <strong>Worksheet Protection</strong>: All cells are protected except yellow input cells and Your Notes worksheet, ensuring model integrity whilst allowing full customisation of assumptions and documentation.
+                        </p>
+                        <p className="leading-relaxed mb-3">
+                          <strong>Integrated Analysis</strong>: Consistent three-scenario framework across all models with investment timing and NPV impact calculations for analysis.
+                        </p>
+                        <p className="leading-relaxed">
+                          <strong>Real-Time Calculations</strong>: Dynamic updates as users modify assumptions, enabling immediate understanding of value driver sensitivity and scenario impact.
+                        </p>
                       </div>
                       
                       <div>
-                        <h4 className="font-semibold text-heading">Strategic Applications</h4>
-                        <div className="space-y-2">
-                          <p><strong>Business Plan Development</strong>: Valuation validation through multiple approaches, growth assumption testing with immediate impact visibility.</p>
-                          <p><strong>Investment Decision Support</strong>: Rapid NPV analysis across valuation scenarios, value driver sensitivity assessment for strategic planning.</p>
-                          <p><strong>Strategic Planning</strong>: Capital allocation decisions based on valuation impact, exit strategy evaluation through comparative analysis.</p>
+                        <h4 className="font-semibold text-heading">Core Calculation Methods</h4>
+                        <div className="bg-slate-100 p-4 rounded-lg space-y-2">
+                          <p><strong>NPV of Perpetuity Model</strong>: Simple Perpetuity Foundation using Value = Cash Flow ÷ Discount Rate with scenario-based sensitivity analysis.</p>
+                          <p><strong>NPV of Growing Perpetuity Model</strong>: Gordon Growth Foundation applying Value = Cash Flow ÷ (Discount Rate - Growth Rate) with growth rate sensitivity testing.</p>
+                          <p><strong>NPV of Two-Phase Growing Perpetuity Model</strong>: Growth modelling with initial high-growth phase transitioning to mature growth rates for realistic valuation analysis.</p>
+                          <p><strong>NPV of Exit Value Model</strong>: Direct exit approach using simple NPV calculation based on exit value assumptions with timing flexibility and Discount Rate.</p>
+                        </div>
+                      </div>
+
+                      <div>
+                        <h4 className="font-semibold text-heading">Mathematical Foundation</h4>
+                        <p className="leading-relaxed mb-3">
+                          <strong>Perpetuity Calculations</strong>: Perpetuity valuations incorporating Gordon Growth methodology¹ ² with appropriate mathematical foundations for reliable analysis.
+                        </p>
+                        <p className="leading-relaxed mb-3">
+                          <strong>NPV Integration</strong>: Net present value calculations that account for investment timing, cash flow patterns, and discount rate applications across different scenarios.
+                        </p>
+                        <p className="leading-relaxed">
+                          <strong>Sensitivity Analysis</strong>: Built-in sensitivity testing that shows immediate impact of assumption changes on valuation results across all four approaches.
+                        </p>
+                      </div>
+
+                      <div>
+                        <h4 className="font-semibold text-heading">Visualisation</h4>
+                        <p className="leading-relaxed mb-3">
+                          <strong>Valuation Range Charts</strong>: Visual presentation of NPV results across Downside, Base Case, and Success scenarios with clear value driver identification.
+                        </p>
+                        <p className="leading-relaxed">
+                          <strong>Comparative Analysis</strong>: Side-by-side comparison across different perpetuity approaches enabling cross-validation and assumption testing.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-bold text-heading mb-3">Key Limitations & Best Practices</h3>
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="font-semibold text-heading">Key Limitations</h4>
+                        <div className="space-y-3">
+                          <p><strong>Simplified Assumptions</strong>: Models use streamlined cash flow projections focusing on valuation analysis rather than detailed operational forecasting, requiring realistic assumption setting.</p>
+                          <p><strong>Scenario Dependency</strong>: Results depend heavily on realistic assumption setting across the three scenarios, making assumption quality critical for meaningful analysis.</p>
+                        </div>
+                      </div>
+
+                      <div>
+                        <h4 className="font-semibold text-heading">Best Practices</h4>
+                        <div className="space-y-3">
+                          <p><strong>Assumption Credibility</strong>: Use realistic growth rate assumptions to maintain credibility with stakeholders and avoid systematic optimism bias in projections.</p>
+                          <p><strong>Sensitivity Testing</strong>: Test sensitivity across wide assumption ranges to understand valuation impact and identify critical value drivers requiring attention.</p>
+                          <p><strong>Cross-Validation</strong>: Compare results across different perpetuity models to validate assumptions and ensure analytical consistency.</p>
+                          <p><strong>Documentation</strong>: Document scenario assumptions with supporting market research and present results as ranges rather than point estimates.</p>
+                          <p><strong>Strategic Integration</strong>: Use models as part of valuation analysis rather than standalone decision-making tools for optimal results.</p>
                         </div>
                       </div>
                     </div>
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-bold text-heading mb-3">Limitations</h3>
-                    <div className="space-y-3">
-                      <p><strong>Simplified Assumptions</strong>: Models use simplified cash flow projections focusing on valuation analysis rather than detailed operational forecasting.</p>
-                      <p><strong>Scenario Dependency</strong>: Results depend on realistic assumption setting across the three scenarios.</p>
+                    <h3 className="text-xl font-bold text-heading mb-3">References</h3>
+                    <div className="text-sm space-y-1">
+                      <p>¹ Gordon, Myron J., and Eli Shapiro, "Capital Equipment Analysis: The Required Rate of Profit," Management Science (1956)</p>
+                      <p>² Gordon, Myron J., "The Investment, Financing, and Valuation of the Corporation," Review of Economics and Statistics (1962)</p>
+                      <p>³ Damodaran, Aswath, "Investment Valuation: Tools and Techniques for Determining the Value of Any Asset," John Wiley & Sons (2012)</p>
+                      <p>⁴ McKinsey & Company, "Valuation: Measuring and Managing the Value of Companies," John Wiley & Sons (2020)</p>
                     </div>
                   </div>
                 </div>
