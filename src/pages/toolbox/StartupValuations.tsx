@@ -74,8 +74,8 @@ const StartupValuations = () => {
           <h1 className="text-4xl font-bold text-brand-blue mb-4">
             Professional Startup Financial Decision & Valuation Models
           </h1>
-          <h2 className="text-2xl text-brand-blue mb-6">
-            Comprehensive Startup Valuation Suite: Proven Methods to Estimate, Understand and Explain the Value of Startups
+            <h2 className="text-2xl text-brand-blue mb-6">
+            Comprehensive Startup Valuation toolbox: Proven Methods to Estimate, Understand and Explain the Value of Startups
           </h2>
           <p className="text-xl text-slate-600 mb-8">
             Explore our start-up valuation models to make informed investment decisions.
@@ -132,7 +132,7 @@ const StartupValuations = () => {
             <div>
               <h3 className="text-2xl font-bold text-brand-blue mb-4">Professional Startup Financial Decision & Valuation Models Introduction</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                The Comprehensive Startup Valuation Suite provides entrepreneurs, investors, and financial advisors with proven methodologies to understand and confidently explain startup valuations. This collection of professional Excel models transforms complex valuation theory into practical, accessible tools for real-world application.
+                The Comprehensive Startup Valuation toolbox provides entrepreneurs, investors, and financial advisors with proven methodologies to understand and confidently explain startup valuations. This collection of professional Excel models transforms complex valuation theory into practical, accessible tools for real-world application.
               </p>
             </div>
 
@@ -163,7 +163,7 @@ const StartupValuations = () => {
             <div>
               <h3 className="text-2xl font-bold text-brand-blue mb-4">Strategic Integration Benefits</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                The power of this model suite lies not in individual tool excellence, but in the synergistic integration across different decision-making contexts. Unit Economics analysis validates business model sustainability, Venture Capital methodology plans multi-round financing, Berkus assessment establishes pre-revenue valuations, First Chicago analysis provides comprehensive scenario planning, Perpetuity & Exit models optimize long-term value creation strategies, and Decision Analysis structures investment evaluation through systematic risk assessment and probability-weighted returns.
+                The power of this model toolbox lies not in individual tool excellence, but in the synergistic integration across different decision-making contexts. Unit Economics analysis validates business model sustainability, Venture Capital methodology plans multi-round financing, Berkus assessment establishes pre-revenue valuations, First Chicago analysis provides comprehensive scenario planning, Perpetuity & Exit models optimize long-term value creation strategies, and Decision Analysis structures investment evaluation through systematic risk assessment and probability-weighted returns.
               </p>
             </div>
 
@@ -214,7 +214,7 @@ const StartupValuations = () => {
                 As startup ecosystems continue evolving, these models provide the analytical foundation necessary to adapt to changing market conditions, regulatory environments, and competitive dynamics. The combination of sophisticated Excel implementation with clear methodological documentation enables continuous refinement and professional application across diverse industry contexts and geographic markets.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed">
-                Whether preparing for initial fundraising, structuring growth investments, planning strategic exits, or making systematic investment decisions, this comprehensive model suite delivers the analytical excellence and strategic insight necessary for sustainable startup success in today's competitive investment landscape.
+                Whether preparing for initial fundraising, structuring growth investments, planning strategic exits, or making systematic investment decisions, this comprehensive model toolbox delivers the analytical excellence and strategic insight necessary for sustainable startup success in today's competitive investment landscape.
               </p>
             </div>
 
