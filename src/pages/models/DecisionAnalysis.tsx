@@ -72,7 +72,7 @@ const DecisionAnalysis = () => {
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                 onClick={() => downloadModel('Startup Decision Analysis for MOI (Multiple On Investment) V5.xlsm')}
               >
-                Go to Model
+                Open Model
               </Button>
             </CardContent>
           </Card>

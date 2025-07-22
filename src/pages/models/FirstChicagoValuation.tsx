@@ -72,7 +72,7 @@ const FirstChicagoValuation = () => {
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                 onClick={() => downloadModel('First Chicago Method Model 25.07.07.xlsm')}
               >
-                Go to Model
+                Open Model
               </Button>
             </CardContent>
           </Card>

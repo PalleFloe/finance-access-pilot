@@ -72,7 +72,7 @@ const BerkusValuation = () => {
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                 onClick={() => downloadModel('Berkus Valuation Models 25.07.07.xlsm')}
               >
-                Go to Model
+                Open Model
               </Button>
             </CardContent>
           </Card>
