@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, ArrowRight, Calculator, TrendingUp, Check, Clock } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import { useEffect } from "react";
 
@@ -109,8 +109,7 @@ const StartupValuations = () => {
                   </div>
                 )}
                 <CardHeader className="flex-grow">
-                  <CardTitle className="flex items-center space-x-2">
-                    <Calculator className="w-5 h-5 text-primary" />
+                  <CardTitle>
                     <span>{model.name}</span>
                   </CardTitle>
                   <CardDescription className="flex-grow">{model.description}</CardDescription>
