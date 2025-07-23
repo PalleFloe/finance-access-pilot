@@ -54,7 +54,7 @@ const SaasUnitEconomics = () => {
 
           {/* Sub-headline */}
           <h2 className="text-2xl text-heading mb-8">
-            SaaS Unit Economics Analysis: From Customer Acquisition & Revenue to Business Model Validation & Valuation
+            Content: Model, Introduction and Complete Guidance
           </h2>
 
           {/* Model Card */}
@@ -64,7 +64,7 @@ const SaasUnitEconomics = () => {
                 SaaS Unit Economics Model
               </CardTitle>
               <CardDescription>
-                Professional unit economics analysis for SaaS businesses
+                From Customer Acquisition & Revenue to Business Model Validation & Valuation
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -76,6 +76,9 @@ const SaasUnitEconomics = () => {
               </Button>
             </CardContent>
           </Card>
+
+          {/* Introduction Headline */}
+          <h3 className="text-3xl font-bold text-heading mb-6">SaaS Unit Economics Model Introduction</h3>
 
           {/* Short Description */}
           <div className="prose prose-slate max-w-none mb-8">

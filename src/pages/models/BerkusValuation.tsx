@@ -54,7 +54,7 @@ const BerkusValuation = () => {
 
           {/* Sub-headline */}
           <h2 className="text-2xl text-heading mb-8">
-            Risk-Based Startup Valuation: Pre-Revenue Valuation based on Assessment of Five Key Factors and Scenario Modelling
+            Content: Model, Introduction and Complete Guidance
           </h2>
 
           {/* Model Card */}
@@ -64,7 +64,7 @@ const BerkusValuation = () => {
                 Berkus Valuation Model
               </CardTitle>
               <CardDescription>
-                Pre-revenue valuation based on risk assessment
+                Pre-Revenue Valuation based on Assessment of Five Key Factors and Scenario Modelling
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -76,6 +76,9 @@ const BerkusValuation = () => {
               </Button>
             </CardContent>
           </Card>
+
+          {/* Introduction Headline */}
+          <h3 className="text-3xl font-bold text-heading mb-6">Berkus Valuation Model Introduction</h3>
 
           {/* Short Description */}
           <div className="prose prose-slate max-w-none mb-8">

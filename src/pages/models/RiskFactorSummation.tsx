@@ -23,9 +23,9 @@ const RiskFactorSummation = () => {
           <Card className="shadow-lg border-slate-200">
             <CardHeader>
               <CardTitle className="text-2xl font-bold">Risk Factor Summation</CardTitle>
-              <CardDescription>
-                Adjust the base valuation based on the presence and impact of various risk factors.
-              </CardDescription>
+            <CardDescription>
+              Content: Model, Introduction and Complete Guidance
+            </CardDescription>
             </CardHeader>
             <CardContent className="grid gap-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

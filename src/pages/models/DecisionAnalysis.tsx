@@ -54,7 +54,7 @@ const DecisionAnalysis = () => {
 
           {/* Sub-headline */}
           <h2 className="text-2xl text-heading mb-8">
-            Systematic Decision Assessment of Startup Life Stages for Investment Decisions via Probability-Weighted Multiple on Investment (PWMOI)
+            Content: Model, Introduction and Complete Guidance
           </h2>
 
           {/* Model Card */}
@@ -64,7 +64,7 @@ const DecisionAnalysis = () => {
                 Decision Analysis Model for Venture Capital Investments
               </CardTitle>
               <CardDescription>
-                Systematic risk assessment with scenario analysis
+                Systematic Decision Assessment of Startup Life Stages for Investment Decisions via Probability-Weighted Multiple on Investment (PWMOI)
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -76,6 +76,9 @@ const DecisionAnalysis = () => {
               </Button>
             </CardContent>
           </Card>
+
+          {/* Introduction Headline */}
+          <h3 className="text-3xl font-bold text-heading mb-6">Decision Analysis Model for Venture Capital Investments Introduction</h3>
 
           {/* Short Description */}
           <div className="prose prose-slate max-w-none mb-8">

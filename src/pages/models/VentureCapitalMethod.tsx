@@ -54,7 +54,7 @@ const VentureCapitalMethod = () => {
 
           {/* Sub-headline */}
           <h2 className="text-2xl text-heading mb-8">
-            Venture Capital Valuation Method: Bridging Multi-Round Financing, Exit Value, Founder's Ownership Share and Investor's Need for a Profitable Return
+            Content: Model, Introduction and Complete Guidance
           </h2>
 
           {/* Model Card */}
@@ -64,7 +64,7 @@ const VentureCapitalMethod = () => {
                 Venture Capital Valuation Model
               </CardTitle>
               <CardDescription>
-                Multi-round financing and exit value analysis
+                Bridging Multi-Round Financing, Exit Value, Founder's Ownership Share and Investor's Need for a Profitable Return
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -76,6 +76,9 @@ const VentureCapitalMethod = () => {
               </Button>
             </CardContent>
           </Card>
+
+          {/* Introduction Headline */}
+          <h3 className="text-3xl font-bold text-heading mb-6">Venture Capital Valuation Model Introduction</h3>
 
           {/* Short Description */}
           <div className="prose prose-slate max-w-none mb-8">
