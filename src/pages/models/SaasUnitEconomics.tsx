@@ -78,7 +78,7 @@ const SaasUnitEconomics = () => {
           </Card>
 
           {/* Introduction Headline */}
-          <h3 className="text-3xl font-bold text-heading mb-6">SaaS Unit Economics Model Introduction</h3>
+          <h3 className="text-xl font-bold text-heading mb-6">SaaS Unit Economics Model Introduction</h3>
 
           {/* Short Description */}
           <div className="prose prose-slate max-w-none mb-8">
