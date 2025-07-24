@@ -55,13 +55,16 @@ const BerkusValuation = () => {
                 Pre-Revenue Valuation based on Assessment of Five Key Factors and Scenario Modelling
               </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="space-y-2">
               <Button 
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                 onClick={downloadModel}
               >
                 Open Model
               </Button>
+              <p className="text-xs text-slate-500 text-center">
+                ✨ Free access • No registration • Use immediately in your browser
+              </p>
             </CardContent>
           </Card>
 

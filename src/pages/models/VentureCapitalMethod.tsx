@@ -55,13 +55,16 @@ const VentureCapitalMethod = () => {
                 Bridging Multi-Round Financing, Exit Value, Founder's Ownership Share and Investor's Need for a Profitable Return
               </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="space-y-2">
               <Button 
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                 onClick={downloadModel}
               >
                 Open Model
               </Button>
+              <p className="text-xs text-slate-500 text-center">
+                ✨ Free access • No registration • Use immediately in your browser
+              </p>
             </CardContent>
           </Card>
 

@@ -97,11 +97,24 @@ const RiskFactorSummation = () => {
                 </Card>
               </div>
 
-              <div>
-                <Button variant="secondary" className="w-full">
-                  Open Risk Factor Summation Model
+              <div className="space-y-2">
+                <Button 
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                  onClick={() => {
+                    const link = document.createElement('a')
+                    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsHub/EcqLMvzq3AJOscmUT8SIC38ByR-4fKgBeOB2Ta4Tm9nX4g?e=jL0hxL'
+                    link.target = '_blank'
+                    document.body.appendChild(link)
+                    link.click()
+                    document.body.removeChild(link)
+                  }}
+                >
+                  Open Model
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
+                <p className="text-xs text-slate-500 text-center">
+                  ✨ Free access • No registration • Use immediately in your browser
+                </p>
               </div>
             </CardContent>
           </Card>

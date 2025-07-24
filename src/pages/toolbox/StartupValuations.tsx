@@ -15,7 +15,7 @@ const StartupValuations = () => {
       name: "SaaS Unit Economics Model",
       description: "From Customer Acquisition & Revenue to Business Model Validation & Valuation",
       href: "/toolbox/startup-valuations/saas-unit-economics",
-      status: "available",
+      status: "coming soon",
     },
     {
       name: "Venture Capital Valuation Model",
@@ -115,12 +115,29 @@ const StartupValuations = () => {
                   <CardDescription className="flex-grow">{model.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <Link to={model.href}>
-                    <Button variant="brand-green" className="w-full">
-                      {model.status === "contact" ? "Contact Us" : "Go to Model"}
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </Link>
+                  {model.status === "coming soon" && model.name === "SaaS Unit Economics Model" ? (
+                    <div className="space-y-2">
+                      <Button variant="secondary" className="w-full opacity-50 cursor-not-allowed" disabled>
+                        Open Model
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </Button>
+                      <p className="text-xs text-slate-500 text-center">
+                        ✨ Free access • No registration • Use immediately in your browser
+                      </p>
+                    </div>
+                  ) : (
+                    <div className="space-y-2">
+                      <Link to={model.href}>
+                        <Button variant="brand-green" className="w-full">
+                          {model.status === "contact" ? "Contact Us" : "Go to Model"}
+                          <ArrowRight className="w-4 h-4 ml-2" />
+                        </Button>
+                      </Link>
+                      <p className="text-xs text-slate-500 text-center">
+                        ✨ Free access • No registration • Use immediately in your browser
+                      </p>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             ))}

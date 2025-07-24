@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ArrowLeft } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { ArrowLeft, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import { useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
@@ -46,7 +47,13 @@ const SaasUnitEconomics = () => {
           </h2>
 
           {/* Model Card */}
-          <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
+          <Card className="shadow-lg border-slate-200 mb-8 max-w-md relative">
+            <div className="absolute -top-3 -right-3 z-10">
+              <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
+                <Clock className="w-3 h-3 mr-1" />
+                Coming Soon
+              </Badge>
+            </div>
             <CardHeader>
               <CardTitle>
                 SaaS Unit Economics Model
@@ -55,13 +62,17 @@ const SaasUnitEconomics = () => {
                 From Customer Acquisition & Revenue to Business Model Validation & Valuation
               </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="space-y-2">
               <Button 
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                onClick={downloadModel}
+                className="w-full opacity-50 cursor-not-allowed"
+                disabled
+                variant="secondary"
               >
                 Open Model
               </Button>
+              <p className="text-xs text-slate-500 text-center">
+                ✨ Free access • No registration • Use immediately in your browser
+              </p>
             </CardContent>
           </Card>
 
