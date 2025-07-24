@@ -12,25 +12,13 @@ const PerpetuityExitValuation = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const downloadModel = async (modelFileName: string) => {
-    try {
-      const { data } = supabase.storage
-        .from('excel-models')
-        .getPublicUrl(modelFileName)
-      
-      if (data?.publicUrl) {
-        const link = document.createElement('a')
-        link.href = data.publicUrl
-        link.download = modelFileName
-        link.target = '_blank'
-        document.body.appendChild(link)
-        link.click()
-        document.body.removeChild(link)
-      }
-    } catch (error) {
-      console.error('Download error:', error)
-      alert('Error downloading model. Please try again.')
-    }
+  const downloadModel = () => {
+    const link = document.createElement('a')
+    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsHub/EQWuvTM9yhZOrF3sXuyFbsoBVlizR8Fy7iq24yFSAOS8Xw?e=2hvBqi'
+    link.target = '_blank'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
   };
 
   return (
@@ -54,7 +42,7 @@ const PerpetuityExitValuation = () => {
 
           {/* Sub-headline */}
           <h2 className="text-2xl text-heading mb-8">
-            Simple Perpetuity Models: Quick & Flexible Approaches to Valuation with Scenario-Based Sensitivity and Value Driver Analysis
+            Content: Model, Introduction and Complete Guidance
           </h2>
 
           {/* Model Card */}
@@ -64,18 +52,21 @@ const PerpetuityExitValuation = () => {
                 Perpetuity & Exit Valuation Models
               </CardTitle>
               <CardDescription>
-                Quick perpetuity approaches with scenario analysis
+                Simple Perpetuity Models: Quick & Flexible Approaches to Valuation with Scenario-Based Sensitivity and Value Driver Analysis
               </CardDescription>
             </CardHeader>
             <CardContent>
               <Button 
-                className="w-full bg-slate-400 text-white cursor-not-allowed"
-                disabled
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                onClick={downloadModel}
               >
-                Coming Soon - Upload Required
+                Open Model
               </Button>
             </CardContent>
           </Card>
+
+          {/* Introduction Headline */}
+          <h3 className="text-xl font-bold text-heading mb-6">Professional Perpetuity & Exit Valuation Models Introduction</h3>
 
           {/* Short Description */}
           <div className="prose prose-slate max-w-none mb-8">

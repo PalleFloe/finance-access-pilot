@@ -12,25 +12,13 @@ const BerkusValuation = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const downloadModel = async (modelFileName: string) => {
-    try {
-      const { data } = supabase.storage
-        .from('excel-models')
-        .getPublicUrl(modelFileName)
-      
-      if (data?.publicUrl) {
-        const link = document.createElement('a')
-        link.href = data.publicUrl
-        link.download = modelFileName
-        link.target = '_blank'
-        document.body.appendChild(link)
-        link.click()
-        document.body.removeChild(link)
-      }
-    } catch (error) {
-      console.error('Download error:', error)
-      alert('Error downloading model. Please try again.')
-    }
+  const downloadModel = () => {
+    const link = document.createElement('a')
+    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsHub/EX3EOIwAVVVIpDdWyngaweABMUFduFRu773zwzDcl64uiA?e=XcqbUf'
+    link.target = '_blank'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
   };
 
   return (
@@ -70,7 +58,7 @@ const BerkusValuation = () => {
             <CardContent>
               <Button 
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                onClick={() => downloadModel('Berkus Valuation Models 25.07.07.xlsm')}
+                onClick={downloadModel}
               >
                 Open Model
               </Button>
