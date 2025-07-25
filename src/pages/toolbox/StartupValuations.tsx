@@ -109,7 +109,7 @@ const StartupValuations = () => {
                   </div>
                 )}
                 <CardHeader className="flex-grow">
-                  <CardTitle>
+                  <CardTitle className="text-2xl font-semibold">
                     <span>{model.name}</span>
                   </CardTitle>
                   <CardDescription className="flex-grow text-lg">{model.description}</CardDescription>
@@ -129,14 +129,14 @@ const StartupValuations = () => {
           {/* Comprehensive Content Section */}
           <div className="max-w-4xl mx-auto space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-brand-blue mb-4">Professional Startup Financial Decision & Valuation Models</h3>
+              <h3 className="text-3xl font-semibold text-brand-blue mb-4">Professional Startup Financial Decision & Valuation Models</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
                 The Comprehensive Startup Valuation toolbox provides entrepreneurs, investors, and financial advisors with proven methodologies to better understand, negotiate and make informed startup valuation decisions. This collection of professional models transforms valuation theory into a practical and accessible toolbox for real-world application.
               </p>
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-brand-blue mb-4">Core Challenge Addressed: The startup valuation black-box</h3>
+              <h3 className="text-3xl font-semibold text-brand-blue mb-4">Core Challenge Addressed: The startup valuation black-box</h3>
               <p className="text-lg text-slate-600 leading-relaxed mb-4">
                 Startup valuation is notoriously difficult to understand and even harder to explain convincingly. The models here help solve this fundamental problem by providing multiple proven methodologies that help users not only calculate credible valuations but also articulate the logic behind their conclusions to investors, partners, and stakeholders.
               </p>
@@ -146,28 +146,28 @@ const StartupValuations = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-brand-blue mb-4">Comprehensive Coverage of Startup Valuation Methods</h3>
+              <h3 className="text-3xl font-semibold text-brand-blue mb-4">Comprehensive Coverage of Startup Valuation Methods</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
                 The six-model toolbox covers the complete valuation spectrum: understanding business model through SaaS Unit Economics analysis, establishing pre-revenue valuations via risk-based Berkus methodology, modelling investor ownership and returns through Venture Capital Valuation method, estimating probability-weighted valuation through First Chicago scenario estimates, providing insight into long-term value through Perpetuity & Exit Value models, and structuring probability-weighted returns on investment through the systematic Decision Analysis for Venture Capital method. Each model comes with comprehensive guidance explaining what it does, why it matters, when to use it, and how to implement it effectively. The potential use of various valuation models gives distinct, complementary and even synergistic methods across different insights, business- and valuation decision-making contexts.
               </p>
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-brand-blue mb-4">Professional Credibility Through Rigorous Analysis</h3>
+              <h3 className="text-3xl font-semibold text-brand-blue mb-4">Professional Credibility Through Rigorous Analysis</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
                 Each model represents established methodologies used by acclaimed academia, professional investors and advisors. The models maintain mathematical rigour whilst featuring user-friendly logic and design to make them accessible to users at all experience levels. The emphasis on both cross-model valuation methods, and on models with scenario-based analysis and sensitivity testing addresses startups' inherent valuation uncertainty.
               </p>
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-brand-blue mb-4">Professional Excellence Standards</h3>
+              <h3 className="text-3xl font-semibold text-brand-blue mb-4">Professional Excellence Standards</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
                 Each model maintains institutional-quality analytical standards whilst preserving the accessibility necessary for entrepreneurial application. The emphasis on cross-model validation and scenario-based analysis with comprehensive sensitivity testing ensures robust decision-making support that satisfies both founder strategic needs and investor due diligence requirements.
               </p>
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-brand-blue mb-4">Key Limitations & Best Practices</h3>
+              <h3 className="text-3xl font-semibold text-brand-blue mb-4">Key Limitations & Best Practices</h3>
               <p className="text-lg text-slate-600 leading-relaxed mb-4">
                 <em>Valuation is part art, part science</em> - All models have inherent limitations. Startup projections are notoriously unreliable, and cognitive biases systematically affect valuations. Use these tools to structure thinking and facilitate discussions, not to predict precise outcomes.
               </p>
@@ -180,7 +180,7 @@ const StartupValuations = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-brand-blue mb-4">Always Required</h3>
+              <h3 className="text-3xl font-semibold text-brand-blue mb-4">Always Required</h3>
               <ul className="text-base text-slate-600 leading-relaxed space-y-2">
                 <li>• Multi-method validation: Never rely on single approach</li>
                 <li>• Range presentation: Results as ranges, never point estimates</li>
@@ -191,7 +191,7 @@ const StartupValuations = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-brand-blue mb-4">Seek Professional Advice When</h3>
+              <h3 className="text-3xl font-semibold text-brand-blue mb-4">Seek Professional Advice When</h3>
               <ul className="text-base text-slate-600 leading-relaxed space-y-2">
                 <li>• Complex capital or legal structures or arrangements</li>
                 <li>• Institutional investment or acquisition processes</li>
@@ -200,14 +200,14 @@ const StartupValuations = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-brand-blue mb-4">The startup valuation toolbox</h3>
+              <h3 className="text-3xl font-semibold text-brand-blue mb-4">The startup valuation toolbox</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
                 Whether preparing for initial fundraising, structuring growth investments, planning strategic exits, or seeking insights to improve business performance and valuation - this comprehensive toolbox delivers the analytical excellence necessary for startup success.
               </p>
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-brand-blue mb-4">References</h3>
+              <h3 className="text-3xl font-semibold text-brand-blue mb-4">References</h3>
               <div className="text-sm text-slate-500 space-y-1">
                 <p>¹ Andreessen, Marc, "The Only Thing That Matters," Andreessen Horowitz Blog (2007)</p>
                 <p>² Gurley, Bill, "All Revenue is Not Created Equal: The Keys to the 10X Revenue Club," Above the Crowd (2011)</p>

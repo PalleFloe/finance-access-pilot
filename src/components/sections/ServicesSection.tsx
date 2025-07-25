@@ -12,7 +12,7 @@ const ServicesSection = () => {
           <Badge className="mb-4 bg-blue-100 text-blue-800" variant="outline">
             Our Services
           </Badge>
-          <h3 className="text-3xl font-bold mb-6 text-brand-blue">
+          <h3 className="text-4xl font-semibold mb-6 text-brand-blue">
             Comprehensive Financial Solutions
           </h3>
         </div>
@@ -26,7 +26,7 @@ const ServicesSection = () => {
                   <Calculator className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <CardTitle className="text-xl">Financial Decision Model Toolbox</CardTitle>
+                  <CardTitle className="text-2xl font-semibold">Financial Decision Model Toolbox</CardTitle>
                 </div>
               </div>
               <CardDescription className="text-lg">
@@ -71,7 +71,7 @@ const ServicesSection = () => {
                   <Users className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <CardTitle className="text-xl">Expert Consulting Services</CardTitle>
+                  <CardTitle className="text-2xl font-semibold">Expert Consulting Services</CardTitle>
                 </div>
               </div>
               <CardDescription className="text-lg">

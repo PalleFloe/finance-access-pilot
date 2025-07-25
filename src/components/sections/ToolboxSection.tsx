@@ -34,7 +34,7 @@ const ToolboxSection = () => {
               </Badge>
             </div>
             <CardHeader className="flex-grow">
-              <CardTitle>
+              <CardTitle className="text-2xl font-semibold">
                 <span>Start-up Valuations</span>
               </CardTitle>
               <CardDescription className="text-lg">
@@ -59,7 +59,7 @@ const ToolboxSection = () => {
               </Badge>
             </div>
             <CardHeader className="flex-grow">
-              <CardTitle>
+              <CardTitle className="text-2xl font-semibold">
                 <span>Mature Business</span>
               </CardTitle>
               <CardDescription className="text-lg">
@@ -84,7 +84,7 @@ const ToolboxSection = () => {
               </Badge>
             </div>
             <CardHeader className="flex-grow">
-              <CardTitle>
+              <CardTitle className="text-2xl font-semibold">
                 <span>Investment Analysis</span>
               </CardTitle>
               <CardDescription className="text-lg">
