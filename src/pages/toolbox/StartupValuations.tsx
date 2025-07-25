@@ -71,13 +71,13 @@ const StartupValuations = () => {
             Back to Toolbox
           </Link>
 
-          <h1 className="text-4xl font-bold text-brand-blue mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
             Professional Startup Financial Decision & Valuation Models
           </h1>
-            <h2 className="text-2xl text-brand-blue mb-6">
+            <h2 className="text-2xl md:text-3xl text-brand-blue mb-6">
             Comprehensive Startup Valuation toolbox: Proven Methods to Estimate, Understand and Explain the Value of Startups
           </h2>
-          <p className="text-xl text-slate-600 mb-8">
+          <p className="text-lg text-slate-600 mb-8 leading-relaxed">
             Explore our start-up valuation models to make informed investment decisions.
           </p>
 
@@ -112,7 +112,7 @@ const StartupValuations = () => {
                   <CardTitle>
                     <span>{model.name}</span>
                   </CardTitle>
-                  <CardDescription className="flex-grow">{model.description}</CardDescription>
+                  <CardDescription className="flex-grow text-lg">{model.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="pt-0">
                   <Link to={model.href}>
@@ -181,7 +181,7 @@ const StartupValuations = () => {
 
             <div>
               <h3 className="text-2xl font-bold text-brand-blue mb-4">Always Required</h3>
-              <ul className="text-lg text-slate-600 leading-relaxed space-y-2">
+              <ul className="text-base text-slate-600 leading-relaxed space-y-2">
                 <li>• Multi-method validation: Never rely on single approach</li>
                 <li>• Range presentation: Results as ranges, never point estimates</li>
                 <li>• Assumption documentation: Evidence for all key inputs</li>
@@ -192,7 +192,7 @@ const StartupValuations = () => {
 
             <div>
               <h3 className="text-2xl font-bold text-brand-blue mb-4">Seek Professional Advice When</h3>
-              <ul className="text-lg text-slate-600 leading-relaxed space-y-2">
+              <ul className="text-base text-slate-600 leading-relaxed space-y-2">
                 <li>• Complex capital or legal structures or arrangements</li>
                 <li>• Institutional investment or acquisition processes</li>
                 <li>• Cross-border transactions with regulatory implications</li>

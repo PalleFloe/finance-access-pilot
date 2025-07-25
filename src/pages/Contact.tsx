@@ -12,7 +12,7 @@ const Contact = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
               Contact
             </h1>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
               Get in touch to discuss your financial decision modeling needs and how we can help your business make better decisions.
             </p>
           </div>
@@ -21,14 +21,14 @@ const Contact = () => {
             <div className="space-y-6">
               <div>
                 <h2 className="text-lg font-semibold text-slate-900 mb-2">Founder:</h2>
-                <p className="text-base text-slate-700">Palle Fløe Nielsen</p>
+                <p className="text-lg text-slate-700">Palle Fløe Nielsen</p>
               </div>
 
               <div>
                 <h2 className="text-lg font-semibold text-slate-900 mb-2">E-mail:</h2>
                 <a 
                   href="mailto:Palle@financialdecisionmodels.com" 
-                  className="text-base text-primary hover:underline"
+                  className="text-lg text-primary hover:underline"
                 >
                   Palle@financialdecisionmodels.com
                 </a>
@@ -40,7 +40,7 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/palle-fl%C3%B8e-nielsen-97ab7211/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-base text-primary hover:underline"
+                  className="text-lg text-primary hover:underline"
                 >
                   LinkedIn Profile
                 </a>

@@ -37,19 +37,19 @@ const ServicesSection = () => {
               <div className="space-y-4 flex-1">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-base text-slate-700">Guidance on selecting appropriate financial decision models for specific business needs</p>
+                  <p className="text-lg text-slate-700 leading-relaxed">Guidance on selecting appropriate financial decision models for specific business needs</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-base text-slate-700">Clear guidance on concepts, terminology, and best practices</p>
+                  <p className="text-lg text-slate-700 leading-relaxed">Clear guidance on concepts, terminology, and best practices</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-base text-slate-700">Support for developing sound assumptions and estimates</p>
+                  <p className="text-lg text-slate-700 leading-relaxed">Support for developing sound assumptions and estimates</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-base text-slate-700">User-friendly models with standardized structure, proper calculations, and built-in sensitivity analysis</p>
+                  <p className="text-lg text-slate-700 leading-relaxed">User-friendly models with standardized structure, proper calculations, and built-in sensitivity analysis</p>
                 </div>
               </div>
               <div className="pt-4 border-t border-slate-100 mt-6">
@@ -82,15 +82,15 @@ const ServicesSection = () => {
               <div className="space-y-4 flex-1">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-base text-slate-700">Customization of models for specific company requirements</p>
+                  <p className="text-lg text-slate-700 leading-relaxed">Customization of models for specific company requirements</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-base text-slate-700">Challenging, evaluation and improvement of existing financial decision processes</p>
+                  <p className="text-lg text-slate-700 leading-relaxed">Challenging, evaluation and improvement of existing financial decision processes</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-base text-slate-700">End-to-end financial and/or process lead or support for driving complex financial decisions</p>
+                  <p className="text-lg text-slate-700 leading-relaxed">End-to-end financial and/or process lead or support for driving complex financial decisions</p>
                 </div>
               </div>
               <div className="pt-4 border-t border-slate-100 mt-6">
