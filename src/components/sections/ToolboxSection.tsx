@@ -26,14 +26,14 @@ const ToolboxSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Business Type Categories */}
-          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative">
+          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full">
             <div className="absolute -top-3 -right-3 z-10">
               <Badge className="bg-green-100 text-green-800 border-green-200 shadow-sm">
                 <Check className="w-3 h-3 mr-1" />
                 Available
               </Badge>
             </div>
-            <CardHeader>
+            <CardHeader className="flex-grow">
               <CardTitle>
                 <span>Start-up Valuations</span>
               </CardTitle>
@@ -41,7 +41,7 @@ const ToolboxSection = () => {
                 Models for early-stage business valuation and investment decisions
               </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="mt-auto">
               <Link to="/toolbox/startup-valuations">
                 <Button variant="brand-green" size="lg" className="w-full text-lg">
                   Explore Models
@@ -51,14 +51,14 @@ const ToolboxSection = () => {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative">
+          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full">
             <div className="absolute -top-3 -right-3 z-10">
               <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
                 <Clock className="w-3 h-3 mr-1" />
                 Coming Soon
               </Badge>
             </div>
-            <CardHeader>
+            <CardHeader className="flex-grow">
               <CardTitle>
                 <span>Mature Business</span>
               </CardTitle>
@@ -66,7 +66,7 @@ const ToolboxSection = () => {
                 Advanced financial decision models for established businesses with stable operations
               </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="mt-auto">
               <Link to="/toolbox/mature-business">
                 <Button variant="brand-green" size="lg" className="w-full text-lg">
                   Explore Models
@@ -76,14 +76,14 @@ const ToolboxSection = () => {
             </CardContent>
           </Card>
 
-          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative">
+          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full">
             <div className="absolute -top-3 -right-3 z-10">
               <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
                 <Clock className="w-3 h-3 mr-1" />
                 Coming Soon
               </Badge>
             </div>
-            <CardHeader>
+            <CardHeader className="flex-grow">
               <CardTitle>
                 <span>Investment Analysis</span>
               </CardTitle>
@@ -91,7 +91,7 @@ const ToolboxSection = () => {
                 Professional-grade investment analysis tools for capital allocation and project evaluation
               </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="mt-auto">
               <Link to="/toolbox/investment-analysis">
                 <Button variant="brand-green" size="lg" className="w-full text-lg">
                   Explore Models
