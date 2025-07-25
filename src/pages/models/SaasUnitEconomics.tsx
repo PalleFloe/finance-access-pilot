@@ -15,7 +15,7 @@ const SaasUnitEconomics = () => {
 
   const downloadModel = () => {
     const link = document.createElement('a')
-    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsHub/EZJ0o5zv8CJClPlkWH7e1nEBpTHuXqycVnO623xp0Ki-KQ?e=I89fZC'
+    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsHub/EVx583CW81xArOINnP_PlS8BO10wVp77a0US_hcCiSebJA?e=hN4iZI'
     link.target = '_blank'
     document.body.appendChild(link)
     link.click()
@@ -48,12 +48,6 @@ const SaasUnitEconomics = () => {
 
           {/* Model Card */}
           <Card className="shadow-lg border-slate-200 mb-8 max-w-md relative">
-            <div className="absolute -top-3 -right-3 z-10">
-              <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
-                <Clock className="w-3 h-3 mr-1" />
-                Coming Soon
-              </Badge>
-            </div>
             <CardHeader>
               <CardTitle>
                 SaaS Unit Economics Model
@@ -64,9 +58,9 @@ const SaasUnitEconomics = () => {
             </CardHeader>
             <CardContent className="space-y-2">
               <Button 
-                className="w-full opacity-50 cursor-not-allowed"
-                disabled
-                variant="secondary"
+                onClick={downloadModel}
+                className="w-full"
+                variant="brand-green"
               >
                 Open Model
               </Button>

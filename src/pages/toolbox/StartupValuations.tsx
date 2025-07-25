@@ -15,7 +15,7 @@ const StartupValuations = () => {
       name: "SaaS Unit Economics Model",
       description: "From Customer Acquisition & Revenue to Business Model Validation & Valuation",
       href: "/toolbox/startup-valuations/saas-unit-economics",
-      status: "coming soon",
+      status: "available",
     },
     {
       name: "Venture Capital Valuation Model",
