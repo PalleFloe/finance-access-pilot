@@ -7,7 +7,7 @@ const HeroSection = () => {
           Facing Complex <span className="text-brand-green">Financial Decisions?</span>
         </h2>
         <p className="text-lg text-slate-600 mb-16 max-w-3xl mx-auto leading-relaxed">
-          We empower businesses to make better decisions with an intuitive, business-minded Financial Decision Model toolbox and expert consulting services.
+          We help businesses transform complex financial choices into structured insights and better decisions.
         </p>
       </div>
     </section>

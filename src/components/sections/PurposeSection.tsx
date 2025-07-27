@@ -12,8 +12,7 @@ const PurposeSection = () => {
             Transforming Complex Financial Decisions
           </h3>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-            We empower businesses facing complex financial choices to make better decisions with an intuitive, 
-            business-minded Financial Decision Model toolbox and expert consulting services.
+            We help businesses transform complex financial choices into structured insights and better decisions.
           </p>
         </div>
       </div>
