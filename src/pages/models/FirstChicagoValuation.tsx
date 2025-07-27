@@ -14,7 +14,7 @@ const FirstChicagoValuation = () => {
 
   const downloadModel = () => {
     const link = document.createElement('a')
-    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsHub/EbQ8Zz1QRndAux95PIXvzjoB_GZOStaAl_PjfdCODwpFNQ?e=2qU4zV'
+    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsHub/EbQ8Zz1QRndAux95PIXvzjoB_Wr0IwDv3BpkV632pXWfmQ?e=RBDXmY'
     link.target = '_blank'
     document.body.appendChild(link)
     link.click()

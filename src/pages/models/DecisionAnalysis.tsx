@@ -14,7 +14,7 @@ const DecisionAnalysis = () => {
 
   const downloadModel = () => {
     const link = document.createElement('a')
-    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsHub/EcqLMvzq3AJOscmUT8SIC38ByR-4fKgBeOB2Ta4Tm9nX4g?e=jL0hxL'
+    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsHub/EcqLMvzq3AJOscmUT8SIC38BFT2E5y0uuENqFjJXB5uolQ?e=pWjwCj'
     link.target = '_blank'
     document.body.appendChild(link)
     link.click()

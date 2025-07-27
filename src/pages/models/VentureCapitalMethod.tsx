@@ -14,7 +14,7 @@ const VentureCapitalMethod = () => {
 
   const downloadModel = () => {
     const link = document.createElement('a')
-    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsHub/ER_vBHyt-EFEguhiljY4AsUBsYgwQaej2qDByu7jREkhsA?e=Xo9SpU'
+    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsHub/ER_vBHyt-EFEguhiljY4AsUBEnT7m4YZAh2g32v77lwLew?e=9McxHH'
     link.target = '_blank'
     document.body.appendChild(link)
     link.click()
