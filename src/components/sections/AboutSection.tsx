@@ -48,7 +48,7 @@ const AboutSection = () => {
                     complex, unintuitive models that often gave precisely the wrong results, I know there's a better way…
                   </p>
                   <p>
-                    <strong>The purpose is to empower businesses facing complex financial choices to make better 
+                    <strong>The mission is to help businesses transform complex financial choices into structured insights and better 
                     decisions</strong> with a best-in-class, intuitive, business-minded Financial Decision Model toolbox and expert consulting 
                     services.
                   </p>
