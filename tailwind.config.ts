@@ -75,7 +75,8 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				heading: 'hsl(var(--heading))'
+				heading: 'hsl(var(--heading))',
+				'blog-heading': 'hsl(var(--blog-heading))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
