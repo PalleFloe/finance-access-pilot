@@ -6,8 +6,8 @@ const HeroSection = () => {
         <h2 className="text-5xl md:text-6xl font-bold text-brand-blue mb-6">
           Facing Complex Financial Decisions?
         </h2>
-        <p className="text-lg text-slate-600 mb-16 max-w-3xl mx-auto leading-relaxed">
-          We help businesses transform complex financial choices into structured insights and better decisions.
+        <p className="text-xl text-slate-600 mb-16 max-w-3xl mx-auto leading-relaxed">
+          We turn complex financial choices into structured insights and better decisions.
         </p>
       </div>
     </section>
