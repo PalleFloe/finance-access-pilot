@@ -42,7 +42,7 @@ const Header = () => {
               Contact
             </Link>
             <Badge className="bg-green-100 text-green-800 border-green-200" variant="outline">
-              Beta Access Granted
+              Beta Website
             </Badge>
           </nav>
         </div>
