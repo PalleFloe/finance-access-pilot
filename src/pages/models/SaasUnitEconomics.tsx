@@ -6,7 +6,6 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import { useEffect } from "react";
-import { supabase } from "@/integrations/supabase/client";
 
 const SaasUnitEconomics = () => {
   useEffect(() => {

@@ -5,7 +5,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { ArrowLeft } from "lucide-react";
 import Header from "@/components/Header";
 import { useEffect } from "react";
-import { supabase } from "@/integrations/supabase/client";
 
 const VentureCapitalMethod = () => {
   useEffect(() => {
