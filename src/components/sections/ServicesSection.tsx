@@ -15,7 +15,7 @@ const ServicesSection = () => {
         isOpen={isConsultationFormOpen} 
         onClose={() => setIsConsultationFormOpen(false)} 
       />
-    <section id="consulting" className="pt-20 pb-20 px-6 bg-gradient-to-b from-slate-50/50 to-white border-t border-slate-100" style={{marginTop: '60px'}}>
+    <section id="consulting" className="pt-20 pb-20 px-6 bg-gradient-to-b from-slate-50/50 to-white border-t border-slate-100" style={{marginTop: '30px'}}>
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-blue-100 text-blue-800 text-[13pt] px-4 py-2" variant="outline">
