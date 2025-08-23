@@ -15,7 +15,7 @@ const ServicesSection = () => {
         isOpen={isConsultationFormOpen} 
         onClose={() => setIsConsultationFormOpen(false)} 
       />
-    <section id="consulting" className="pt-20 pb-20 px-6 bg-gradient-to-b from-slate-50/50 to-white border-t border-slate-100" style={{marginTop: '80px'}}>
+    <section id="consulting" className="pt-20 pb-20 px-6 bg-gradient-to-b from-slate-50/50 to-white border-t border-slate-100" style={{marginTop: '60px'}}>
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-blue-100 text-blue-800" variant="outline">
@@ -71,8 +71,8 @@ const ServicesSection = () => {
 
           {/* Expert Consulting Services */}
           <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-all duration-300 relative bg-white/80 backdrop-blur-sm flex flex-col h-full">
-            <Badge className="absolute top-4 right-4 bg-[#FFA500] text-white text-[10pt] px-2.5 py-1 border-none">
-              Coming Soon
+            <Badge className="absolute top-4 right-4 bg-[#FFF3CD] text-[#856404] border border-[#FFE8A1] text-[10pt] px-2 py-1 rounded">
+              🕐 Coming Soon
             </Badge>
             <CardHeader>
               <div className="flex items-center space-x-3 mb-4">
