@@ -14,9 +14,6 @@ const HeroSection = () => {
         <h3 className="font-garamond text-[36pt] font-bold text-[#326496] mb-[40px] max-w-3xl mx-auto">
           We help turn complex financial choices into structured insights and better decisions.
         </h3>
-        <Button asChild variant="default" size="lg">
-          <Link to="/toolbox">Our Services</Link>
-        </Button>
       </div>
     </section>
   );
