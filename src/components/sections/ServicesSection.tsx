@@ -1,11 +1,20 @@
+import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Users, Calculator, Check, Mail, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import ConsultationForm from "@/components/ConsultationForm";
 
 const ServicesSection = () => {
+  const [isConsultationFormOpen, setIsConsultationFormOpen] = useState(false);
+
   return (
+    <>
+      <ConsultationForm 
+        isOpen={isConsultationFormOpen} 
+        onClose={() => setIsConsultationFormOpen(false)} 
+      />
     <section id="consulting" className="py-20 px-6 bg-gradient-to-b from-slate-50/50 to-white border-t border-slate-100">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
@@ -65,6 +74,9 @@ const ServicesSection = () => {
 
           {/* Expert Consulting Services */}
           <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-all duration-300 relative bg-white/80 backdrop-blur-sm flex flex-col h-full">
+            <Badge className="absolute top-4 right-4 bg-[#FFA500] text-white text-[10pt] px-2.5 py-1 border-none">
+              Coming Soon
+            </Badge>
             <CardHeader>
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
@@ -94,11 +106,13 @@ const ServicesSection = () => {
                 </div>
               </div>
               <div className="pt-4 border-t border-slate-100 mt-6">
-                <Button asChild variant="brand-green" className="w-full">
-                  <Link to="/consulting">
-                    Schedule Consultation
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Link>
+                <Button 
+                  variant="brand-green" 
+                  className="w-full"
+                  onClick={() => setIsConsultationFormOpen(true)}
+                >
+                  Schedule Consultation
+                  <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </div>
             </CardContent>
@@ -106,6 +120,7 @@ const ServicesSection = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
