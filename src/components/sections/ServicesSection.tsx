@@ -21,9 +21,6 @@ const ServicesSection = () => {
           <Badge className="mb-4 bg-blue-100 text-blue-800" variant="outline">
             Our Services
           </Badge>
-          <h3 className="text-4xl font-semibold mb-6 text-brand-blue">
-            Comprehensive Financial Solutions
-          </h3>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">

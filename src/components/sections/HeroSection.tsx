@@ -1,17 +1,22 @@
-const HeroSection = () => {
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
+const HeroSection = () => {
   return (
     <section className="pt-20 pb-16 px-6">
       <div className="container mx-auto max-w-4xl text-center">
-        <h1 className="font-garamond text-[20pt] font-bold text-brand-blue mb-8">
+        <h1 className="font-garamond text-[36pt] font-bold text-[#326496] mb-[30px]">
           Facing Complex Financial Decisions
         </h1>
-        <h2 className="font-garamond text-[14pt] font-normal text-[#555555] mb-8 max-w-3xl mx-auto leading-relaxed">
+        <h2 className="font-garamond text-[18pt] font-normal text-[#555555] mb-[30px] max-w-3xl mx-auto leading-[1.5]">
           And struggling with time-consuming, inflexible, overly complex and unreliable financial models that don't give you the clarity to make the right decisions?
         </h2>
-        <h3 className="font-garamond text-[16pt] font-bold text-brand-blue mb-16 max-w-3xl mx-auto">
+        <h3 className="font-garamond text-[36pt] font-bold text-[#326496] mb-[40px] max-w-3xl mx-auto">
           We help turn complex financial choices into structured insights and better decisions.
         </h3>
+        <Button asChild variant="default" size="lg">
+          <Link to="/toolbox">Our Services</Link>
+        </Button>
       </div>
     </section>
   );
