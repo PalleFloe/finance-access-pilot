@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Users, Calculator, Check, Mail, ArrowRight } from "lucide-react";
+import { CheckCircle, Users, Calculator, Check, Mail, ArrowRight, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import ConsultationForm from "@/components/ConsultationForm";
 
@@ -71,8 +71,9 @@ const ServicesSection = () => {
 
           {/* Expert Consulting Services */}
           <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-all duration-300 relative bg-white/80 backdrop-blur-sm flex flex-col h-full">
-            <Badge className="absolute top-4 right-4 bg-[#FFF3CD] text-[#856404] border border-[#FFE8A1] text-[10pt] px-2 py-1 rounded">
-              🕐 Coming Soon
+            <Badge className="absolute top-4 right-4 bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
+              <Clock className="w-3 h-3 mr-1" />
+              Coming Soon
             </Badge>
             <CardHeader>
               <div className="flex items-center space-x-3 mb-4">
