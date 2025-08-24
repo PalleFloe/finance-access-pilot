@@ -71,10 +71,12 @@ const ServicesSection = () => {
 
           {/* Expert Consulting Services */}
           <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-all duration-300 relative bg-white/80 backdrop-blur-sm flex flex-col h-full">
-            <Badge className="absolute top-4 right-4 bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
-              <Clock className="w-3 h-3 mr-1" />
-              Coming Soon
-            </Badge>
+            <div className="absolute -top-3 -right-3 z-10">
+              <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
+                <Clock className="w-3 h-3 mr-1" />
+                Coming Soon
+              </Badge>
+            </div>
             <CardHeader>
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
