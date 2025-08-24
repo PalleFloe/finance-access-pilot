@@ -189,9 +189,10 @@ const HowItWorks = () => {
         size="lg"
         className={`w-full text-base font-semibold ${
           tier.disabled 
-            ? 'bg-slate-200 text-slate-500 cursor-not-allowed hover:bg-slate-200' 
+            ? 'cursor-not-allowed hover:bg-[#808080]' 
             : ''
         }`}
+        style={tier.disabled ? { backgroundColor: '#808080', color: 'white' } : {}}
       >
         {tier.disabled ? (
           <span>{tier.buttonText}</span>
@@ -210,7 +211,7 @@ const HowItWorks = () => {
       
       <main className="container mx-auto max-w-6xl px-6 py-16">
         {/* Page Header Section */}
-        <div className="rounded-lg shadow-sm p-10 mb-16 text-center">
+        <div className="rounded-lg shadow-sm p-10 mb-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
             How to Access Financial Decision Models
           </h1>
