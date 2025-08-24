@@ -1,5 +1,7 @@
+import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/sections/Footer";
+import ConsultationForm from "@/components/ConsultationForm";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -7,6 +9,8 @@ import { Clock, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const HowItWorks = () => {
+  const [isConsultationOpen, setIsConsultationOpen] = useState(false);
+
   const tiers = {
     selfServiceFree: [
       {
@@ -22,7 +26,8 @@ const HowItWorks = () => {
         ],
         buttonText: "Go to Toolbox",
         buttonLink: "/toolbox",
-        disabled: false
+        disabled: false,
+        isConsultation: false
       },
       {
         label: "TIER 2", 
@@ -37,7 +42,8 @@ const HowItWorks = () => {
         ],
         buttonText: "Go to Toolbox",
         buttonLink: "/toolbox",
-        disabled: false
+        disabled: false,
+        isConsultation: false
       }
     ],
     selfServicePaid: [
@@ -54,7 +60,8 @@ const HowItWorks = () => {
         ],
         buttonText: "Coming Soon",
         buttonLink: "#",
-        disabled: true
+        disabled: true,
+        isConsultation: false
       },
       {
         label: "TIER 4",
@@ -69,13 +76,13 @@ const HowItWorks = () => {
         ],
         buttonText: "Coming Soon", 
         buttonLink: "#",
-        disabled: true
+        disabled: true,
+        isConsultation: false
       }
     ],
     consulting: [
       {
         label: "TIER 5",
-        badge: { text: "Coming Soon", status: "coming-soon" },
         title: "Model Customization",
         bullets: [
           "Tailored model modifications",
@@ -86,11 +93,11 @@ const HowItWorks = () => {
         ],
         buttonText: "Schedule Consultation",
         buttonLink: "/contact",
-        disabled: false
+        disabled: false,
+        isConsultation: true
       },
       {
         label: "TIER 6",
-        badge: { text: "Coming Soon", status: "coming-soon" },
         title: "Support Services", 
         bullets: [
           "Model training & workshops",
@@ -101,11 +108,11 @@ const HowItWorks = () => {
         ],
         buttonText: "Schedule Consultation",
         buttonLink: "/contact",
-        disabled: false
+        disabled: false,
+        isConsultation: true
       },
       {
         label: "TIER 7",
-        badge: { text: "Coming Soon", status: "coming-soon" },
         title: "E2E Project Leadership",
         bullets: [
           "Complete project management",
@@ -116,29 +123,43 @@ const HowItWorks = () => {
         ],
         buttonText: "Schedule Consultation",
         buttonLink: "/contact", 
-        disabled: false
+        disabled: false,
+        isConsultation: true
       }
     ]
   };
 
-  const TierBox = ({ tier }: { tier: typeof tiers.selfServiceFree[0] }) => (
+  type TierType = {
+    label: string;
+    badge?: { text: string; status: string; };
+    title: string;
+    bullets: string[];
+    buttonText: string;
+    buttonLink: string;
+    disabled: boolean;
+    isConsultation: boolean;
+  };
+
+  const TierBox = ({ tier }: { tier: TierType }) => (
     <div className="bg-white border border-slate-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow p-8 flex flex-col relative">
-      <div className="absolute -top-3 -right-3 z-10">
-        <Badge 
-          className={`${
-            tier.badge.status === 'available' 
-              ? 'bg-green-100 text-green-800 border-green-200' 
-              : 'bg-orange-100 text-orange-800 border-orange-200'
-          } shadow-sm`}
-        >
-          {tier.badge.status === 'available' ? (
-            <CheckCircle className="w-3 h-3 mr-1" />
-          ) : (
-            <Clock className="w-3 h-3 mr-1" />
-          )}
-          {tier.badge.text}
-        </Badge>
-      </div>
+      {tier.badge && (
+        <div className="absolute -top-3 -right-3 z-10">
+          <Badge 
+            className={`${
+              tier.badge.status === 'available' 
+                ? 'bg-green-100 text-green-800 border-green-200' 
+                : 'bg-orange-100 text-orange-800 border-orange-200'
+            } shadow-sm`}
+          >
+            {tier.badge.status === 'available' ? (
+              <CheckCircle className="w-3 h-3 mr-1" />
+            ) : (
+              <Clock className="w-3 h-3 mr-1" />
+            )}
+            {tier.badge.text}
+          </Badge>
+        </div>
+      )}
       
       <h3 
         className="text-xl font-bold mb-5" 
@@ -161,7 +182,8 @@ const HowItWorks = () => {
       </ul>
       
       <Button
-        asChild={!tier.disabled}
+        onClick={tier.isConsultation ? () => setIsConsultationOpen(true) : undefined}
+        asChild={!tier.disabled && !tier.isConsultation}
         disabled={tier.disabled}
         variant={tier.disabled ? undefined : "brand-green"}
         size="lg"
@@ -173,6 +195,8 @@ const HowItWorks = () => {
       >
         {tier.disabled ? (
           <span>{tier.buttonText}</span>
+        ) : tier.isConsultation ? (
+          <span>{tier.buttonText}</span>
         ) : (
           <Link to={tier.buttonLink}>{tier.buttonText}</Link>
         )}
@@ -181,30 +205,21 @@ const HowItWorks = () => {
   );
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <Header />
       
       <main className="container mx-auto max-w-6xl px-6 py-16">
         {/* Page Header Section */}
         <div className="bg-white rounded-lg shadow-sm p-10 mb-16 text-center">
-          <h1 
-            className="text-4xl font-bold mb-5" 
-            style={{ fontFamily: 'Garamond, serif', color: '#326496' }}
-          >
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
             How to Access Financial Decision Models
           </h1>
           
-          <p 
-            className="text-xl mb-8" 
-            style={{ fontFamily: 'Garamond, serif', color: '#555555' }}
-          >
+          <p className="text-lg text-slate-600 mb-8">
             Choose your path to better financial decisions
           </p>
           
-          <p 
-            className="text-base max-w-4xl mx-auto leading-relaxed mb-10" 
-            style={{ fontFamily: 'Garamond, serif', color: '#666666' }}
-          >
+          <p className="text-lg text-slate-600 max-w-4xl mx-auto leading-relaxed mb-10">
             We offer multiple ways to access our financial models, from free online exploration to professional ownership. 
             Start with our free tiers to explore and learn, then upgrade when you need advanced features and commercial rights.
           </p>
@@ -213,16 +228,10 @@ const HowItWorks = () => {
         {/* Section 1: Self-Service & Free Access */}
         <div className="bg-white rounded-lg shadow-sm p-10 mb-16">
           <div className="mb-8">
-            <h2 
-              className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200" 
-              style={{ fontFamily: 'Garamond, serif', color: '#326496' }}
-            >
+            <h2 className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200 text-brand-blue">
               Self-Service & Free Access
             </h2>
-            <p 
-              className="text-base mb-8" 
-              style={{ fontFamily: 'Garamond, serif', color: '#666666' }}
-            >
+            <p className="text-lg text-slate-600 mb-8">
               Perfect for exploration, learning, and understanding our models before committing
             </p>
           </div>
@@ -237,16 +246,10 @@ const HowItWorks = () => {
         {/* Section 2: Self-Service & Paid Access */}
         <div className="bg-white rounded-lg shadow-sm p-10 mb-16">
           <div className="mb-8">
-            <h2 
-              className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200" 
-              style={{ fontFamily: 'Garamond, serif', color: '#326496' }}
-            >
+            <h2 className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200 text-brand-blue">
               Self-Service & Paid Access
             </h2>
-            <p 
-              className="text-base mb-8" 
-              style={{ fontFamily: 'Garamond, serif', color: '#666666' }}
-            >
+            <p className="text-lg text-slate-600 mb-8">
               Professional models with commercial use rights and advanced features
             </p>
           </div>
@@ -261,16 +264,10 @@ const HowItWorks = () => {
         {/* Section 3: Consulting & Customization Services */}
         <div className="bg-white rounded-lg shadow-sm p-10 mb-16">
           <div className="mb-8">
-            <h2 
-              className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200" 
-              style={{ fontFamily: 'Garamond, serif', color: '#326496' }}
-            >
+            <h2 className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200 text-brand-blue">
               Consulting & Customization Services
             </h2>
-            <p 
-              className="text-base mb-8" 
-              style={{ fontFamily: 'Garamond, serif', color: '#666666' }}
-            >
+            <p className="text-lg text-slate-600 mb-8">
               Tailored solutions and expert guidance for your specific needs
             </p>
           </div>
@@ -283,6 +280,10 @@ const HowItWorks = () => {
         </div>
       </main>
 
+      <ConsultationForm 
+        isOpen={isConsultationOpen} 
+        onClose={() => setIsConsultationOpen(false)} 
+      />
       <Footer />
     </div>
   );
