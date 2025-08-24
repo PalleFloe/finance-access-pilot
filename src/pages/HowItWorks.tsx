@@ -210,7 +210,7 @@ const HowItWorks = () => {
       
       <main className="container mx-auto max-w-6xl px-6 py-16">
         {/* Page Header Section */}
-        <div className="bg-white rounded-lg shadow-sm p-10 mb-16 text-center">
+        <div className="rounded-lg shadow-sm p-10 mb-16 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
             How to Access Financial Decision Models
           </h1>
