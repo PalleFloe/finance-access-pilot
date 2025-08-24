@@ -24,7 +24,7 @@ const ToolboxSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Business Type Categories */}
           <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full">
             <div className="absolute -top-3 -right-3 z-10">
@@ -35,7 +35,7 @@ const ToolboxSection = () => {
             </div>
             <CardHeader className="flex-grow">
               <CardTitle className="text-2xl font-semibold">
-                <span>Start-up Valuations</span>
+                <span>Startup Valuations</span>
               </CardTitle>
               <CardDescription className="text-lg">
                 Models for early-stage business valuation and investment decisions
@@ -60,14 +60,14 @@ const ToolboxSection = () => {
             </div>
             <CardHeader className="flex-grow">
               <CardTitle className="text-2xl font-semibold">
-                <span>Mature Business</span>
+                <span>Business Strategy</span>
               </CardTitle>
               <CardDescription className="text-lg">
-                Advanced financial decision models for established businesses with stable operations
+                Financial models for long-term planning, decision-making and scenario analysis
               </CardDescription>
             </CardHeader>
             <CardContent className="mt-auto">
-              <Link to="/toolbox/mature-business">
+              <Link to="/toolbox/business-strategy">
                 <Button variant="brand-green" size="lg" className="w-full text-lg">
                   Explore Models
                   <ArrowRight className="w-4 h-4 ml-2" />
@@ -88,11 +88,36 @@ const ToolboxSection = () => {
                 <span>Investment Analysis</span>
               </CardTitle>
               <CardDescription className="text-lg">
-                Professional-grade investment analysis tools for capital allocation and project evaluation
+                Professional models for investment analysis, valuations and decisions
               </CardDescription>
             </CardHeader>
             <CardContent className="mt-auto">
               <Link to="/toolbox/investment-analysis">
+                <Button variant="brand-green" size="lg" className="w-full text-lg">
+                  Explore Models
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
+
+          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full">
+            <div className="absolute -top-3 -right-3 z-10">
+              <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
+                <Clock className="w-3 h-3 mr-1" />
+                Coming Soon
+              </Badge>
+            </div>
+            <CardHeader className="flex-grow">
+              <CardTitle className="text-2xl font-semibold">
+                <span>Financial Fundamentals</span>
+              </CardTitle>
+              <CardDescription className="text-lg">
+                Academic and general models for educational and inspirational purposes
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="mt-auto">
+              <Link to="/toolbox/financial-fundamentals">
                 <Button variant="brand-green" size="lg" className="w-full text-lg">
                   Explore Models
                   <ArrowRight className="w-4 h-4 ml-2" />
