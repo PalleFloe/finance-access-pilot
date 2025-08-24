@@ -29,8 +29,8 @@ const Header = () => {
             <Link to="/toolbox" className="text-slate-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
               Toolbox
             </Link>
-            <Link to="/consulting" className="text-slate-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
-              Consulting
+            <Link to="/how-it-works" className="text-slate-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
+              How It Works
             </Link>
             <Link to="/blog" className="text-slate-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">
               Blog
