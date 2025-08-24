@@ -117,7 +117,7 @@ const ToolboxSection = () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="mt-auto">
-              <Link to="/toolbox/financial-fundamentals">
+              <Link to="/financial-fundamentals">
                 <Button variant="brand-green" size="lg" className="w-full text-lg">
                   Explore Models
                   <ArrowRight className="w-4 h-4 ml-2" />

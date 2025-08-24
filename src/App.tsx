@@ -13,6 +13,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import ThankYou from "./pages/ThankYou";
 import StartupValuations from "./pages/toolbox/StartupValuations";
+import FinancialFundamentals from "./pages/toolbox/FinancialFundamentals";
 import MatureBusiness from "./pages/toolbox/MatureBusiness";
 import InvestmentAnalysis from "./pages/toolbox/InvestmentAnalysis";
 import VentureCapitalMethod from "./pages/models/VentureCapitalMethod";
@@ -40,6 +41,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/toolbox/startup-valuations" element={<StartupValuations />} />
+          <Route path="/financial-fundamentals" element={<FinancialFundamentals />} />
           <Route path="/toolbox/mature-business" element={<MatureBusiness />} />
           <Route path="/toolbox/investment-analysis" element={<InvestmentAnalysis />} />
           <Route path="/toolbox/startup-valuations/venture-capital-method" element={<VentureCapitalMethod />} />
