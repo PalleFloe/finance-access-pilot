@@ -141,7 +141,7 @@ const HowItWorks = () => {
   };
 
   const TierBox = ({ tier }: { tier: TierType }) => (
-    <div className="bg-white border border-slate-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow p-8 flex flex-col relative">
+    <div className="bg-white border border-slate-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow p-5 flex flex-col relative">
       {tier.badge && (
         <div className="absolute -top-3 -right-3 z-10">
           <Badge 
@@ -162,13 +162,13 @@ const HowItWorks = () => {
       )}
       
       <h3 
-        className="text-xl font-bold mb-5" 
+        className="text-xl font-bold mb-3" 
         style={{ fontFamily: 'Garamond, serif', color: '#2c3e50' }}
       >
         {tier.label}: {tier.title}
       </h3>
       
-      <ul className="flex-grow mb-6 space-y-2">
+      <ul className="flex-grow mb-4 space-y-1">
         {tier.bullets.map((bullet, index) => (
           <li 
             key={index} 
@@ -227,12 +227,12 @@ const HowItWorks = () => {
         </div>
 
         {/* Section 1: Self-Service & Free Access */}
-        <div className="bg-white rounded-lg shadow-sm p-10 mb-16">
-          <div className="mb-8">
+        <div className="bg-white rounded-lg shadow-sm p-6 mb-16">
+          <div className="mb-5">
             <h2 className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200 text-brand-blue">
               Self-Service & Free Access
             </h2>
-            <p className="text-lg text-slate-600 mb-8">
+            <p className="text-lg text-slate-600 mb-5">
               Perfect for exploration, learning, and understanding our models before committing
             </p>
           </div>
@@ -245,12 +245,12 @@ const HowItWorks = () => {
         </div>
 
         {/* Section 2: Self-Service & Paid Access */}
-        <div className="bg-white rounded-lg shadow-sm p-10 mb-16">
-          <div className="mb-8">
+        <div className="bg-white rounded-lg shadow-sm p-6 mb-16">
+          <div className="mb-5">
             <h2 className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200 text-brand-blue">
               Self-Service & Paid Access
             </h2>
-            <p className="text-lg text-slate-600 mb-8">
+            <p className="text-lg text-slate-600 mb-5">
               Professional models with commercial use rights and advanced features
             </p>
           </div>
@@ -263,12 +263,12 @@ const HowItWorks = () => {
         </div>
 
         {/* Section 3: Consulting & Customization Services */}
-        <div className="bg-white rounded-lg shadow-sm p-10 mb-16">
-          <div className="mb-8">
+        <div className="bg-white rounded-lg shadow-sm p-6 mb-16">
+          <div className="mb-5">
             <h2 className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200 text-brand-blue">
               Consulting & Customization Services
             </h2>
-            <p className="text-lg text-slate-600 mb-8">
+            <p className="text-lg text-slate-600 mb-5">
               Tailored solutions and expert guidance for your specific needs
             </p>
           </div>
