@@ -122,13 +122,13 @@ const HowItWorks = () => {
   };
 
   const TierBox = ({ tier }: { tier: typeof tiers.selfServiceFree[0] }) => (
-    <div className="bg-white border border-gray-200 rounded-md shadow-sm p-6 min-h-[380px] flex flex-col relative">
+    <div className="bg-white border border-slate-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow p-8 flex flex-col relative">
       <div className="absolute -top-3 -right-3 z-10">
         <Badge 
           className={`${
             tier.badge.status === 'available' 
               ? 'bg-green-100 text-green-800 border-green-200' 
-              : 'bg-amber-100 text-amber-600 border-amber-200'
+              : 'bg-orange-100 text-orange-800 border-orange-200'
           } shadow-sm`}
         >
           {tier.badge.status === 'available' ? (
@@ -140,20 +140,21 @@ const HowItWorks = () => {
         </Badge>
       </div>
       
-      <div className="mb-3">
-        <span className="text-xs font-bold uppercase text-black tracking-wide">
-          {tier.label}
-        </span>
-      </div>
-      
-      <h3 className="text-lg font-semibold text-slate-900 mb-4" style={{ fontFamily: 'Garamond, serif' }}>
-        {tier.title}
+      <h3 
+        className="text-xl font-bold mb-5" 
+        style={{ fontFamily: 'Garamond, serif', color: '#2c3e50' }}
+      >
+        {tier.label}: {tier.title}
       </h3>
       
-      <ul className="space-y-2 flex-grow mb-6">
+      <ul className="flex-grow mb-6 space-y-2">
         {tier.bullets.map((bullet, index) => (
-          <li key={index} className="text-sm text-slate-600 flex items-start">
-            <span className="text-slate-400 mr-2">•</span>
+          <li 
+            key={index} 
+            className="text-base leading-relaxed flex items-start"
+            style={{ fontFamily: 'Garamond, serif', color: '#666666' }}
+          >
+            <span className="text-slate-400 mr-2 mt-1">•</span>
             {bullet}
           </li>
         ))}
@@ -162,10 +163,12 @@ const HowItWorks = () => {
       <Button
         asChild={!tier.disabled}
         disabled={tier.disabled}
-        className={`w-full ${
+        variant={tier.disabled ? undefined : "brand-green"}
+        size="lg"
+        className={`w-full text-base font-semibold ${
           tier.disabled 
-            ? 'bg-slate-400 text-white cursor-not-allowed' 
-            : 'bg-green-800 hover:bg-green-900 text-white'
+            ? 'bg-slate-200 text-slate-500 cursor-not-allowed hover:bg-slate-200' 
+            : ''
         }`}
       >
         {tier.disabled ? (
@@ -178,12 +181,12 @@ const HowItWorks = () => {
   );
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#f8f9fa' }}>
+    <div className="min-h-screen bg-slate-50">
       <Header />
       
-      <main className="container mx-auto px-6 py-12">
+      <main className="container mx-auto max-w-6xl px-6 py-16">
         {/* Page Header Section */}
-        <div className="bg-white rounded-lg p-10 mb-16 text-center">
+        <div className="bg-white rounded-lg shadow-sm p-10 mb-16 text-center">
           <h1 
             className="text-4xl font-bold mb-5" 
             style={{ fontFamily: 'Garamond, serif', color: '#326496' }}
@@ -192,14 +195,14 @@ const HowItWorks = () => {
           </h1>
           
           <p 
-            className="text-lg mb-8" 
+            className="text-xl mb-8" 
             style={{ fontFamily: 'Garamond, serif', color: '#555555' }}
           >
             Choose your path to better financial decisions
           </p>
           
           <p 
-            className="text-sm max-w-4xl mx-auto leading-relaxed" 
+            className="text-base max-w-4xl mx-auto leading-relaxed mb-10" 
             style={{ fontFamily: 'Garamond, serif', color: '#666666' }}
           >
             We offer multiple ways to access our financial models, from free online exploration to professional ownership. 
@@ -208,23 +211,23 @@ const HowItWorks = () => {
         </div>
 
         {/* Section 1: Self-Service & Free Access */}
-        <div className="bg-white rounded-lg p-10 mb-16">
+        <div className="bg-white rounded-lg shadow-sm p-10 mb-16">
           <div className="mb-8">
             <h2 
-              className="text-3xl font-bold mb-4 pb-2 border-b-2 border-gray-200" 
+              className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200" 
               style={{ fontFamily: 'Garamond, serif', color: '#326496' }}
             >
               Self-Service & Free Access
             </h2>
             <p 
-              className="text-sm" 
+              className="text-base mb-8" 
               style={{ fontFamily: 'Garamond, serif', color: '#666666' }}
             >
               Perfect for exploration, learning, and understanding our models before committing
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6">
             {tiers.selfServiceFree.map((tier, index) => (
               <TierBox key={index} tier={tier} />
             ))}
@@ -232,23 +235,23 @@ const HowItWorks = () => {
         </div>
 
         {/* Section 2: Self-Service & Paid Access */}
-        <div className="bg-white rounded-lg p-10 mb-16">
+        <div className="bg-white rounded-lg shadow-sm p-10 mb-16">
           <div className="mb-8">
             <h2 
-              className="text-3xl font-bold mb-4 pb-2 border-b-2 border-gray-200" 
+              className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200" 
               style={{ fontFamily: 'Garamond, serif', color: '#326496' }}
             >
               Self-Service & Paid Access
             </h2>
             <p 
-              className="text-sm" 
+              className="text-base mb-8" 
               style={{ fontFamily: 'Garamond, serif', color: '#666666' }}
             >
               Professional models with commercial use rights and advanced features
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6">
             {tiers.selfServicePaid.map((tier, index) => (
               <TierBox key={index} tier={tier} />
             ))}
@@ -256,23 +259,23 @@ const HowItWorks = () => {
         </div>
 
         {/* Section 3: Consulting & Customization Services */}
-        <div className="bg-white rounded-lg p-10 mb-16">
+        <div className="bg-white rounded-lg shadow-sm p-10 mb-16">
           <div className="mb-8">
             <h2 
-              className="text-3xl font-bold mb-4 pb-2 border-b-2 border-gray-200" 
+              className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200" 
               style={{ fontFamily: 'Garamond, serif', color: '#326496' }}
             >
               Consulting & Customization Services
             </h2>
             <p 
-              className="text-sm" 
+              className="text-base mb-8" 
               style={{ fontFamily: 'Garamond, serif', color: '#666666' }}
             >
               Tailored solutions and expert guidance for your specific needs
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {tiers.consulting.map((tier, index) => (
               <TierBox key={index} tier={tier} />
             ))}
