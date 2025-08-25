@@ -82,12 +82,16 @@ const ConsultationForm = ({ isOpen, onClose }: ConsultationFormProps) => {
     setSubmitStatus(null);
     
     try {
+      // Call the Edge Function with proper headers
       const { data, error } = await supabase.functions.invoke('send-consultation-email', {
         body: {
           name: formData.name,
           email: formData.email,
-          company: formData.company,
+          company: formData.company || '',
           message: formData.message
+        },
+        headers: {
+          'Content-Type': 'application/json',
         }
       });
 
@@ -96,13 +100,12 @@ const ConsultationForm = ({ isOpen, onClose }: ConsultationFormProps) => {
       setSubmitStatus('success');
       setFormData({ name: '', email: '', company: '', message: '' });
       
-      // Close modal after 2 seconds
       setTimeout(() => {
         onClose();
       }, 2000);
       
     } catch (error) {
-      console.error('Error:', error);
+      console.error('Detailed error:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
