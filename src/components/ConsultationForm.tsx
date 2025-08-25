@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { X, Loader2 } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 interface ConsultationFormProps {
   isOpen: boolean;
@@ -19,6 +20,7 @@ const ConsultationForm = ({ isOpen, onClose }: ConsultationFormProps) => {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<string | null>(null);
   const { toast } = useToast();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -76,48 +78,32 @@ const ConsultationForm = ({ isOpen, onClose }: ConsultationFormProps) => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    if (!validateForm()) {
-      return;
-    }
-
     setIsSubmitting(true);
-
+    setSubmitStatus(null);
+    
     try {
-      // Send email using EmailJS
-      const emailData = {
-        from_name: formData.name,
-        from_email: formData.email,
-        company: formData.company,
-        message: formData.message,
-        to_email: "palle@financialdecisionmodels.com",
-        subject: `New Consultation Request from ${formData.name}`,
-      };
-
-      // For now, just simulate the email sending
-      // You'll need to configure EmailJS with your service ID, template ID, and public key
-      console.log("Email would be sent with data:", emailData);
-      await new Promise(resolve => setTimeout(resolve, 1500)); // Simulate API call
-      
-      toast({
-        title: "Success!",
-        description: "Thank you! We'll be in touch within 24 hours.",
+      const { data, error } = await supabase.functions.invoke('send-consultation-email', {
+        body: {
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          message: formData.message
+        }
       });
 
-      setFormData({
-        name: "",
-        email: "",
-        company: "",
-        message: "",
-      });
+      if (error) throw error;
+
+      setSubmitStatus('success');
+      setFormData({ name: '', email: '', company: '', message: '' });
       
-      onClose();
+      // Close modal after 2 seconds
+      setTimeout(() => {
+        onClose();
+      }, 2000);
+      
     } catch (error) {
-      toast({
-        title: "Error",
-        description: "There was an error sending your message. Please try again.",
-        variant: "destructive",
-      });
+      console.error('Error:', error);
+      setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
     }
@@ -207,6 +193,22 @@ const ConsultationForm = ({ isOpen, onClose }: ConsultationFormProps) => {
                 className="mt-1"
               />
             </div>
+
+            {submitStatus === 'success' && (
+              <div className="p-3 bg-green-50 border border-green-200 rounded-md">
+                <p className="text-green-800 text-sm">
+                  Thank you! Your consultation request has been sent successfully.
+                </p>
+              </div>
+            )}
+
+            {submitStatus === 'error' && (
+              <div className="p-3 bg-red-50 border border-red-200 rounded-md">
+                <p className="text-red-800 text-sm">
+                  There was an error. Please email us directly at palle@financialdecisionmodels.com
+                </p>
+              </div>
+            )}
 
             <div className="flex gap-3 pt-4">
               <Button
