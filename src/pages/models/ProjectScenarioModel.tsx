@@ -12,7 +12,7 @@ const ProjectScenarioModel = () => {
 
   const downloadModel = () => {
     const link = document.createElement('a')
-    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EV_koGzKINFLhkWrMJBNojcBeERiR1uufLXYGAuK1pU?e=NmO2ag'
+    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EV_koGzK1NFLhkWrMJBNojcBeEfklR1uufLXYGAuK1pUtg?e=NmO2ag'
     link.target = '_blank'
     document.body.appendChild(link)
     link.click()

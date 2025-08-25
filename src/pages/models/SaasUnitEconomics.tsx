@@ -14,7 +14,7 @@ const SaasUnitEconomics = () => {
 
   const downloadModel = () => {
     const link = document.createElement('a')
-    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsHub/EVx583CW81xArOINnP_PlS8Bf5qEnvZNIXn2pCMG-XsxSg?e=Ehy1qs'
+    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ef_PV4daMRZEsO6v159fxzQBzrK8WRvLN2dqbHRnvYcVpw?e=bxsosB'
     link.target = '_blank'
     document.body.appendChild(link)
     link.click()

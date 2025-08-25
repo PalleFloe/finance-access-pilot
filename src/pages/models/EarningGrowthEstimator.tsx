@@ -12,7 +12,7 @@ const EarningGrowthEstimator = () => {
 
   const downloadModel = () => {
     const link = document.createElement('a')
-    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EVW1RCNEEANCzNu-BaPXoxMEpZmPAnXD0_e9g_dcF3GZQ?e=ElH6L1'
+    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EVW1RCNEEANCsNn-BuPXoxMBpZimPAuND0_e9g_doF3GZQ?e=EhH6Ll'
     link.target = '_blank'
     document.body.appendChild(link)
     link.click()

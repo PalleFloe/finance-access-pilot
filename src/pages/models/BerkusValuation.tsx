@@ -13,7 +13,7 @@ const BerkusValuation = () => {
 
   const downloadModel = () => {
     const link = document.createElement('a')
-    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsHub/EX3EOIwAVVVIpDdWyngaweAByyK-2-XLWx82RB7PwDV8tQ?e=fRSIYy'
+    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EXrpjbarrL5BmekYiVgKN5kBA8Bh72smjSxLZfTtLjtScA?e=pLjJcZ'
     link.target = '_blank'
     document.body.appendChild(link)
     link.click()

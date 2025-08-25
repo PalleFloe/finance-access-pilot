@@ -12,7 +12,7 @@ const CostOfCapitalCalculator = () => {
 
   const downloadModel = () => {
     const link = document.createElement('a')
-    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EWjT36c3pDknSGPz3UgoB7WDPnM6ofLXuqeo1zft6w?e=Yfg7mn'
+    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EWjfT36ci3pDlynSGPz3UgoB7WDPisM6ofLXnqeo1zft6w?e=Yyg7mn'
     link.target = '_blank'
     document.body.appendChild(link)
     link.click()

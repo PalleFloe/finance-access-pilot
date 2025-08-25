@@ -12,7 +12,7 @@ const PresentValueCalculator = () => {
 
   const downloadModel = () => {
     const link = document.createElement('a')
-    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EWabU89XYJIan1uWvAXrBoBMfBDoO3GmtWYBW1KkWvKdA?e=5tFjSZ'
+    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EWabU89XYiJIiu1uiWqXvBoBMfBDoO3GmrWYBWsKkWsKdA?e=5tFjSZ'
     link.target = '_blank'
     document.body.appendChild(link)
     link.click()

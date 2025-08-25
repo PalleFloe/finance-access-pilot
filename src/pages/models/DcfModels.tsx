@@ -12,7 +12,7 @@ const DcfModels = () => {
 
   const downloadModel = () => {
     const link = document.createElement('a')
-    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaIMASZwJQ5AeOqqrcV5HyIBqHab3BRsSq2BRrbT9Ymqdw?e=6pJ5DL'
+    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaIMASZwJQ5AoDqzvcVSHyIBqHab38Bx8q2BRybT9Ymqdw?e=6pJ5DL'
     link.target = '_blank'
     document.body.appendChild(link)
     link.click()

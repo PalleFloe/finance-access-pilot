@@ -12,7 +12,7 @@ const FinancialRatioCalculator = () => {
 
   const downloadModel = () => {
     const link = document.createElement('a')
-    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETKwDX_YmGBKm-7NEurSpSUBCqGh8GJ8r7k-89tYTggJg?e=CzW7QE'
+    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETKwDX_YmGBKm-7NEuvSpSUBCqGh8GI8z7k-89fYTzgeJg?e=CzW7QE'
     link.target = '_blank'
     document.body.appendChild(link)
     link.click()

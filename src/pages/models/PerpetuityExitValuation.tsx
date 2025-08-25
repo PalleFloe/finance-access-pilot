@@ -13,7 +13,7 @@ const PerpetuityExitValuation = () => {
 
   const downloadModel = () => {
     const link = document.createElement('a')
-    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsHub/EQWuvTM9yhZOrF3sXuyFbsoBpM3x2-tkU0CyCdbT0Q1QYQ?e=CNBuDm'
+    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EbGQVo0p99xDlBjGuFCzpZsB1yJAT5T_cZrY2XSVtniT-A?e=gR611H'
     link.target = '_blank'
     document.body.appendChild(link)
     link.click()
