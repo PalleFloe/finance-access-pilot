@@ -23,6 +23,12 @@ import BerkusValuation from "./pages/models/BerkusValuation";
 import FirstChicagoValuation from "./pages/models/FirstChicagoValuation";
 import PerpetuityExitValuation from "./pages/models/PerpetuityExitValuation";
 import DecisionAnalysis from "./pages/models/DecisionAnalysis";
+import PresentValueCalculator from "./pages/models/PresentValueCalculator";
+import CostOfCapitalCalculator from "./pages/models/CostOfCapitalCalculator";
+import DcfModels from "./pages/models/DcfModels";
+import FinancialRatioCalculator from "./pages/models/FinancialRatioCalculator";
+import EarningGrowthEstimator from "./pages/models/EarningGrowthEstimator";
+import ProjectScenarioModel from "./pages/models/ProjectScenarioModel";
 
 const queryClient = new QueryClient();
 
@@ -51,6 +57,12 @@ const App = () => (
           <Route path="/toolbox/startup-valuations/first-chicago-method" element={<FirstChicagoValuation />} />
           <Route path="/toolbox/startup-valuations/perpetuity-exit-models" element={<PerpetuityExitValuation />} />
           <Route path="/toolbox/startup-valuations/decision-analysis" element={<DecisionAnalysis />} />
+          <Route path="/toolbox/financial-fundamentals/present-value-calculator" element={<PresentValueCalculator />} />
+          <Route path="/toolbox/financial-fundamentals/cost-of-capital-calculator" element={<CostOfCapitalCalculator />} />
+          <Route path="/toolbox/financial-fundamentals/dcf-models" element={<DcfModels />} />
+          <Route path="/toolbox/financial-fundamentals/financial-ratio-calculator" element={<FinancialRatioCalculator />} />
+          <Route path="/toolbox/financial-fundamentals/earning-growth-estimator" element={<EarningGrowthEstimator />} />
+          <Route path="/toolbox/financial-fundamentals/project-scenario-model" element={<ProjectScenarioModel />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

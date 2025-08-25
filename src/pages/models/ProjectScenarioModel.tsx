@@ -1,0 +1,133 @@
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { ArrowLeft } from "lucide-react";
+import Header from "@/components/Header";
+import { useEffect } from "react";
+
+const ProjectScenarioModel = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const downloadModel = () => {
+    const link = document.createElement('a')
+    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EV_koGzKINFLhkWrMJBNojcBeERiR1uufLXYGAuK1pU?e=NmO2ag'
+    link.target = '_blank'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+      <Header />
+      
+      <div className="py-12 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <Link 
+            to="/financial-fundamentals"
+            className="inline-flex items-center text-slate-600 hover:text-primary mb-8"
+          >
+            <ArrowLeft className="w-4 h-4 mr-2" />
+            Back to Financial Fundamentals
+          </Link>
+
+          <h1 className="text-4xl font-bold text-heading mb-4">
+            Simple Project Scenario Model
+          </h1>
+
+          <h2 className="text-2xl text-heading mb-8">
+            Comprehensive Project Analysis: Multi-Scenario Capital Budgeting with NPV and IRR Sensitivity Analysis
+          </h2>
+
+          <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
+            <CardHeader>
+              <CardTitle>
+                Simple Project Scenario Model
+              </CardTitle>
+              <CardDescription>
+                Comprehensive Project Analysis: Multi-Scenario Capital Budgeting with NPV and IRR Sensitivity Analysis
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-2">
+              <Button 
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                onClick={downloadModel}
+              >
+                Open Model
+              </Button>
+              <p className="text-xs text-slate-500 text-center">
+                ✨ Free access • No registration • Use immediately in your browser
+              </p>
+            </CardContent>
+          </Card>
+
+          <div className="prose prose-slate max-w-none">
+            <h3 className="text-xl font-semibold mb-4">What Is the Simple Project Scenario Model?</h3>
+            <p className="leading-relaxed mb-4">
+              The Simple Project Scenario Model is a comprehensive capital budgeting tool that evaluates investment projects under multiple scenarios. This model performs detailed NPV and IRR analysis across optimistic, base case, and pessimistic scenarios, while providing sensitivity analysis to identify key value drivers and risk factors.
+            </p>
+
+            <h3 className="text-xl font-semibold mb-4">Why Use the Simple Project Scenario Model?</h3>
+            <p className="leading-relaxed mb-4">
+              Scenario-based project analysis is essential for robust capital allocation decisions:
+            </p>
+            <ul className="list-disc pl-6 mb-4 space-y-2">
+              <li><strong>Risk assessment:</strong> Understand the range of potential outcomes and associated probabilities</li>
+              <li><strong>Decision support:</strong> Provide comprehensive analysis for investment committee decisions</li>
+              <li><strong>Sensitivity analysis:</strong> Identify which variables have the greatest impact on project value</li>
+              <li><strong>Risk management:</strong> Develop contingency plans for different scenario outcomes</li>
+              <li><strong>Portfolio optimization:</strong> Compare projects with different risk-return profiles</li>
+              <li><strong>Performance monitoring:</strong> Establish benchmarks for tracking actual performance</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold mb-4">How Does the Simple Project Scenario Model Work?</h3>
+            <p className="leading-relaxed mb-4">
+              The model employs a structured approach to scenario analysis:
+            </p>
+
+            <h4 className="text-lg font-medium mb-3">Three-Scenario Framework</h4>
+            <ul className="list-disc pl-6 mb-4 space-y-1">
+              <li><strong>Optimistic Scenario:</strong> Best-case assumptions with favorable market conditions</li>
+              <li><strong>Base Case Scenario:</strong> Most likely outcome based on realistic expectations</li>
+              <li><strong>Pessimistic Scenario:</strong> Worst-case assumptions with challenging conditions</li>
+            </ul>
+
+            <h4 className="text-lg font-medium mb-3">Financial Metrics Analysis</h4>
+            <ul className="list-disc pl-6 mb-4 space-y-1">
+              <li>Net Present Value (NPV) calculation for each scenario</li>
+              <li>Internal Rate of Return (IRR) determination</li>
+              <li>Payback period analysis</li>
+              <li>Profitability index computation</li>
+            </ul>
+
+            <h4 className="text-lg font-medium mb-3">Sensitivity Analysis</h4>
+            <ul className="list-disc pl-6 mb-4 space-y-1">
+              <li>Variable impact assessment on project NPV</li>
+              <li>Break-even analysis for key assumptions</li>
+              <li>Tornado diagrams for visual sensitivity representation</li>
+              <li>Monte Carlo simulation capabilities for advanced analysis</li>
+            </ul>
+
+            <h4 className="text-lg font-medium mb-3">Risk Assessment</h4>
+            <p className="leading-relaxed mb-4">
+              The model provides probability-weighted expected values and risk-adjusted returns, enabling decision-makers to understand both the expected value and the uncertainty associated with the investment.
+            </p>
+
+            <h3 className="text-xl font-semibold mb-4">Key Applications and Limitations</h3>
+            <p className="leading-relaxed mb-4">
+              This tool is fundamental for corporate finance teams, project managers, and investment professionals evaluating capital projects. While the model provides comprehensive analysis, users should recognize that scenario probabilities are subjective estimates and actual outcomes may differ significantly from projected scenarios. Regular model updates with actual performance data enhance accuracy over time.
+            </p>
+
+            <p className="text-sm text-slate-500 mt-8">
+              <strong>References:</strong> Brealey, R. A., Myers, S. C., & Allen, F. (2020). Principles of Corporate Finance. McGraw-Hill Education. • Copeland, T., Koller, T., & Murrin, J. (2000). Valuation: Measuring and Managing the Value of Companies. McKinsey & Company.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProjectScenarioModel;
