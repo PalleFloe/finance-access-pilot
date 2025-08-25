@@ -88,16 +88,13 @@ const ConsultationForm = ({ isOpen, onClose }: ConsultationFormProps) => {
     setSubmitStatus(null);
     
     try {
-      // Call the Edge Function with proper headers
+      // Call the Edge Function - no headers needed as supabase client handles them
       const { data, error } = await supabase.functions.invoke('send-consultation-email', {
         body: {
           name: formData.name,
           email: formData.email,
           company: formData.company || '',
           message: formData.message
-        },
-        headers: {
-          'Content-Type': 'application/json',
         }
       });
 
