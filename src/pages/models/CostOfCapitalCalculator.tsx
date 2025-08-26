@@ -26,18 +26,18 @@ const CostOfCapitalCalculator = () => {
       <div className="py-12 px-6">
         <div className="container mx-auto max-w-4xl">
           <Link 
-            to="/financial-fundamentals"
+            to="/toolbox/financial-fundamentals"
             className="inline-flex items-center text-slate-600 hover:text-primary mb-8"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Financial Fundamentals
           </Link>
 
-          <h1 className="text-4xl font-bold text-heading mb-4">
+          <h1 className="mb-4">
             Simple Cost of Capital Calculator
           </h1>
 
-          <h2 className="text-2xl text-heading mb-8">
+          <h2 className="mb-8">
             WACC Analysis: Cost of Equity, Cost of Debt, and Weighted Average Cost of Capital Calculation
           </h2>
 
@@ -64,12 +64,12 @@ const CostOfCapitalCalculator = () => {
           </Card>
 
           <div className="prose prose-slate max-w-none">
-            <h3 className="text-xl font-semibold mb-4">What Is the Simple Cost of Capital Calculator?</h3>
+            <h3 className="mb-4">What Is the Simple Cost of Capital Calculator?</h3>
             <p className="leading-relaxed mb-4">
               The Simple Cost of Capital Calculator is a fundamental financial tool that determines a company's Weighted Average Cost of Capital (WACC). This model calculates the cost of equity, cost of debt, and combines them based on the company's capital structure to provide the overall cost of capital, which is essential for investment evaluation and corporate valuation.
             </p>
 
-            <h3 className="text-xl font-semibold mb-4">Why Use the Simple Cost of Capital Calculator?</h3>
+            <h3 className="mb-4">Why Use the Simple Cost of Capital Calculator?</h3>
             <p className="leading-relaxed mb-4">
               The cost of capital serves as a critical benchmark for financial decision-making:
             </p>
@@ -81,7 +81,7 @@ const CostOfCapitalCalculator = () => {
               <li><strong>Strategic planning:</strong> Supports long-term financial planning and capital allocation decisions</li>
             </ul>
 
-            <h3 className="text-xl font-semibold mb-4">How Does the Simple Cost of Capital Calculator Work?</h3>
+            <h3 className="mb-4">How Does the Simple Cost of Capital Calculator Work?</h3>
             <p className="leading-relaxed mb-4">
               The calculator employs the standard WACC formula, incorporating three key components:
             </p>
@@ -94,7 +94,7 @@ const CostOfCapitalCalculator = () => {
               The model accounts for the tax deductibility of interest payments, providing an after-tax cost of debt that reflects the actual economic cost to the company.
             </p>
 
-            <h3 className="text-xl font-semibold mb-4">Key Applications and Limitations</h3>
+            <h3 className="mb-4">Key Applications and Limitations</h3>
             <p className="leading-relaxed mb-4">
               This tool is essential for corporate finance professionals, investment analysts, and business valuators. However, users should recognize that WACC calculations require several assumptions about market conditions, beta estimates, and risk premiums that may vary over time. The model is most effective when used with current market data and regularly updated inputs.
             </p>

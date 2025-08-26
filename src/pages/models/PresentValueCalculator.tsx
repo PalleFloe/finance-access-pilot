@@ -26,18 +26,18 @@ const PresentValueCalculator = () => {
       <div className="py-12 px-6">
         <div className="container mx-auto max-w-4xl">
           <Link 
-            to="/financial-fundamentals"
+            to="/toolbox/financial-fundamentals"
             className="inline-flex items-center text-slate-600 hover:text-primary mb-8"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Financial Fundamentals
           </Link>
 
-          <h1 className="text-4xl font-bold text-heading mb-4">
+          <h1 className="mb-4">
             Simple Present Value Calculator
           </h1>
 
-          <h2 className="text-2xl text-heading mb-8">
+          <h2 className="mb-8">
             Present Value Analysis: One-time, Annuity, Growing Annuity, Perpetuity, and Growing Perpetuity Calculations
           </h2>
 
@@ -64,12 +64,12 @@ const PresentValueCalculator = () => {
           </Card>
 
           <div className="prose prose-slate max-w-none">
-            <h3 className="text-xl font-semibold mb-4">What Is the Simple Present Value Calculator?</h3>
+            <h3 className="mb-4">What Is the Simple Present Value Calculator?</h3>
             <p className="leading-relaxed mb-4">
               The Simple Present Value Calculator is a comprehensive financial tool designed to calculate the present value of various types of cash flows. This model supports five different calculation methods: one-time payments, annuities, growing annuities, perpetuities, and growing perpetuities, making it an essential tool for financial analysis and investment decision-making.
             </p>
 
-            <h3 className="text-xl font-semibold mb-4">Why Use the Simple Present Value Calculator?</h3>
+            <h3 className="mb-4">Why Use the Simple Present Value Calculator?</h3>
             <p className="leading-relaxed mb-4">
               Present value calculations are fundamental to finance, allowing investors and analysts to:
             </p>
@@ -81,7 +81,7 @@ const PresentValueCalculator = () => {
               <li><strong>Account for growth in cash flows</strong> when analyzing investments with escalating returns</li>
             </ul>
 
-            <h3 className="text-xl font-semibold mb-4">How Does the Simple Present Value Calculator Work?</h3>
+            <h3 className="mb-4">How Does the Simple Present Value Calculator Work?</h3>
             <p className="leading-relaxed mb-4">
               The calculator employs time value of money principles to discount future cash flows back to their present value equivalent. Each calculation type serves specific scenarios:
             </p>
@@ -93,7 +93,7 @@ const PresentValueCalculator = () => {
               <li><strong>Growing Perpetuity:</strong> Values an infinite series of payments growing at a constant rate</li>
             </ul>
 
-            <h3 className="text-xl font-semibold mb-4">Key Applications and Limitations</h3>
+            <h3 className="mb-4">Key Applications and Limitations</h3>
             <p className="leading-relaxed mb-4">
               This tool is particularly valuable for bond valuation, pension calculations, real estate analysis, and investment appraisal. However, users should be aware that the model assumes constant discount rates and, where applicable, constant growth rates, which may not reflect real-world variability.
             </p>

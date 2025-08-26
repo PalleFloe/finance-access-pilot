@@ -26,18 +26,18 @@ const EarningGrowthEstimator = () => {
       <div className="py-12 px-6">
         <div className="container mx-auto max-w-4xl">
           <Link 
-            to="/financial-fundamentals"
+            to="/toolbox/financial-fundamentals"
             className="inline-flex items-center text-slate-600 hover:text-primary mb-8"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Financial Fundamentals
           </Link>
 
-          <h1 className="text-4xl font-bold text-heading mb-4">
+          <h1 className="mb-4">
             Simple Earning Growth Estimator
           </h1>
 
-          <h2 className="text-2xl text-heading mb-8">
+          <h2 className="mb-8">
             Systematic Growth Analysis: ROC-Based Earning Growth Estimation for Existing and New Investments
           </h2>
 
@@ -64,12 +64,12 @@ const EarningGrowthEstimator = () => {
           </Card>
 
           <div className="prose prose-slate max-w-none">
-            <h3 className="text-xl font-semibold mb-4">What Is the Simple Earning Growth Estimator?</h3>
+            <h3 className="mb-4">What Is the Simple Earning Growth Estimator?</h3>
             <p className="leading-relaxed mb-4">
               The Simple Earning Growth Estimator is a systematic analytical tool that projects future earnings growth based on Return on Capital (ROC) and reinvestment patterns. This model distinguishes between growth from existing investments and growth from new investments, providing a comprehensive framework for understanding the drivers of sustainable earnings growth.
             </p>
 
-            <h3 className="text-xl font-semibold mb-4">Why Use the Simple Earning Growth Estimator?</h3>
+            <h3 className="mb-4">Why Use the Simple Earning Growth Estimator?</h3>
             <p className="leading-relaxed mb-4">
               Understanding the sources and sustainability of earnings growth is crucial for:
             </p>
@@ -82,26 +82,26 @@ const EarningGrowthEstimator = () => {
               <li><strong>Competitive advantage analysis:</strong> Assess the durability of superior returns</li>
             </ul>
 
-            <h3 className="text-xl font-semibold mb-4">How Does the Simple Earning Growth Estimator Work?</h3>
+            <h3 className="mb-4">How Does the Simple Earning Growth Estimator Work?</h3>
             <p className="leading-relaxed mb-4">
               The model employs a systematic approach to decompose earnings growth into its fundamental components:
             </p>
 
-            <h4 className="text-lg font-medium mb-3">Existing Investment Analysis</h4>
+            <h4 className="mb-3">Existing Investment Analysis</h4>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>Evaluates returns on current invested capital</li>
               <li>Assesses the sustainability of existing competitive advantages</li>
               <li>Considers the natural decline of returns over time</li>
             </ul>
 
-            <h4 className="text-lg font-medium mb-3">New Investment Analysis</h4>
+            <h4 className="mb-3">New Investment Analysis</h4>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>Projects returns on incremental capital investments</li>
               <li>Analyzes reinvestment rates and capital allocation efficiency</li>
               <li>Considers market opportunities and competitive dynamics</li>
             </ul>
 
-            <h4 className="text-lg font-medium mb-3">Growth Calculation Framework</h4>
+            <h4 className="mb-3">Growth Calculation Framework</h4>
             <p className="leading-relaxed mb-4">
               The model calculates growth using the fundamental relationship: <strong>Growth = Return on Capital × Reinvestment Rate</strong>. This approach provides insights into both the quality and quantity of growth, enabling more accurate long-term projections.
             </p>

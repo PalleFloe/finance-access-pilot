@@ -26,18 +26,18 @@ const FinancialRatioCalculator = () => {
       <div className="py-12 px-6">
         <div className="container mx-auto max-w-4xl">
           <Link 
-            to="/financial-fundamentals"
+            to="/toolbox/financial-fundamentals"
             className="inline-flex items-center text-slate-600 hover:text-primary mb-8"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Financial Fundamentals
           </Link>
 
-          <h1 className="text-4xl font-bold text-heading mb-4">
+          <h1 className="mb-4">
             Financial Ratio Calculator
           </h1>
 
-          <h2 className="text-2xl text-heading mb-8">
+          <h2 className="mb-8">
             Comprehensive Financial Analysis: Investment Returns, Profitability, Efficiency, and Market Valuation Ratios
           </h2>
 
@@ -64,12 +64,12 @@ const FinancialRatioCalculator = () => {
           </Card>
 
           <div className="prose prose-slate max-w-none">
-            <h3 className="text-xl font-semibold mb-4">What Is the Financial Ratio Calculator?</h3>
+            <h3 className="mb-4">What Is the Financial Ratio Calculator?</h3>
             <p className="leading-relaxed mb-4">
               The Financial Ratio Calculator is a comprehensive analytical tool that computes key financial ratios across four critical categories: Investment Returns, Profitability, Efficiency, and Market Valuation. This model provides instant calculation and interpretation of over 20 essential financial ratios used in business analysis and investment decision-making.
             </p>
 
-            <h3 className="text-xl font-semibold mb-4">Why Use the Financial Ratio Calculator?</h3>
+            <h3 className="mb-4">Why Use the Financial Ratio Calculator?</h3>
             <p className="leading-relaxed mb-4">
               Financial ratio analysis is fundamental to understanding business performance:
             </p>
@@ -82,19 +82,19 @@ const FinancialRatioCalculator = () => {
               <li><strong>Management assessment:</strong> Identify areas for operational improvement</li>
             </ul>
 
-            <h3 className="text-xl font-semibold mb-4">How Does the Financial Ratio Calculator Work?</h3>
+            <h3 className="mb-4">How Does the Financial Ratio Calculator Work?</h3>
             <p className="leading-relaxed mb-4">
               The calculator is organized into four comprehensive categories:
             </p>
 
-            <h4 className="text-lg font-medium mb-3">Investment Returns Ratios</h4>
+            <h4 className="mb-3">Investment Returns Ratios</h4>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>Return on Assets (ROA) - measures asset utilization efficiency</li>
               <li>Return on Equity (ROE) - evaluates returns to shareholders</li>
               <li>Return on Invested Capital (ROIC) - assesses capital allocation effectiveness</li>
             </ul>
 
-            <h4 className="text-lg font-medium mb-3">Profitability Ratios</h4>
+            <h4 className="mb-3">Profitability Ratios</h4>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>Gross Profit Margin - measures production efficiency</li>
               <li>Operating Margin - evaluates operational profitability</li>
@@ -102,7 +102,7 @@ const FinancialRatioCalculator = () => {
               <li>EBITDA Margin - analyzes operating performance</li>
             </ul>
 
-            <h4 className="text-lg font-medium mb-3">Efficiency Ratios</h4>
+            <h4 className="mb-3">Efficiency Ratios</h4>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>Asset Turnover - measures asset utilization</li>
               <li>Inventory Turnover - evaluates inventory management</li>
@@ -110,7 +110,7 @@ const FinancialRatioCalculator = () => {
               <li>Working Capital Efficiency - analyzes short-term asset management</li>
             </ul>
 
-            <h4 className="text-lg font-medium mb-3">Market Valuation Ratios</h4>
+            <h4 className="mb-3">Market Valuation Ratios</h4>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>Price-to-Earnings (P/E) - compares market price to earnings</li>
               <li>Price-to-Book (P/B) - relates market value to book value</li>

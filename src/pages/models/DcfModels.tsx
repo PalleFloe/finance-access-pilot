@@ -26,18 +26,18 @@ const DcfModels = () => {
       <div className="py-12 px-6">
         <div className="container mx-auto max-w-4xl">
           <Link 
-            to="/financial-fundamentals"
+            to="/toolbox/financial-fundamentals"
             className="inline-flex items-center text-slate-600 hover:text-primary mb-8"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Financial Fundamentals
           </Link>
 
-          <h1 className="text-4xl font-bold text-heading mb-4">
+          <h1 className="mb-4">
             Standard Types of DCF Models
           </h1>
 
-          <h2 className="text-2xl text-heading mb-8">
+          <h2 className="mb-8">
             Three DCF Approaches: Flexible DCF, Three Stages DCF, and Stable Growth Models
           </h2>
 
@@ -64,12 +64,12 @@ const DcfModels = () => {
           </Card>
 
           <div className="prose prose-slate max-w-none">
-            <h3 className="text-xl font-semibold mb-4">What Are the Standard Types of DCF Models?</h3>
+            <h3 className="mb-4">What Are the Standard Types of DCF Models?</h3>
             <p className="leading-relaxed mb-4">
               The Standard Types of DCF Models provides three comprehensive approaches to discounted cash flow valuation. This model includes a Flexible DCF model for custom projections, a Three Stages DCF model for companies with distinct growth phases, and a Stable Growth Model for mature businesses with consistent growth patterns.
             </p>
 
-            <h3 className="text-xl font-semibold mb-4">Why Use Different DCF Model Types?</h3>
+            <h3 className="mb-4">Why Use Different DCF Model Types?</h3>
             <p className="leading-relaxed mb-4">
               Different business situations require different DCF approaches:
             </p>
@@ -81,26 +81,26 @@ const DcfModels = () => {
               <li><strong>Scenario planning:</strong> Supports multiple growth assumptions and sensitivity analysis</li>
             </ul>
 
-            <h3 className="text-xl font-semibold mb-4">How Do These DCF Models Work?</h3>
+            <h3 className="mb-4">How Do These DCF Models Work?</h3>
             <p className="leading-relaxed mb-4">
               Each model type employs specific methodologies tailored to different business contexts:
             </p>
 
-            <h4 className="text-lg font-medium mb-3">Flexible DCF Model</h4>
+            <h4 className="mb-3">Flexible DCF Model</h4>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>Allows custom cash flow projections for each forecast period</li>
               <li>Accommodates varying growth rates, margins, and capital requirements</li>
               <li>Includes detailed working capital and capital expenditure modeling</li>
             </ul>
 
-            <h4 className="text-lg font-medium mb-3">Three Stages DCF Model</h4>
+            <h4 className="mb-3">Three Stages DCF Model</h4>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li><strong>Stage 1:</strong> High growth phase with elevated growth rates</li>
               <li><strong>Stage 2:</strong> Transitional phase with declining growth rates</li>
               <li><strong>Stage 3:</strong> Stable growth phase with perpetual growth assumptions</li>
             </ul>
 
-            <h4 className="text-lg font-medium mb-3">Stable Growth Model</h4>
+            <h4 className="mb-3">Stable Growth Model</h4>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>Simple perpetual growth model for mature businesses</li>
               <li>Focuses on sustainable long-term growth rates</li>

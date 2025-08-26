@@ -26,18 +26,18 @@ const ProjectScenarioModel = () => {
       <div className="py-12 px-6">
         <div className="container mx-auto max-w-4xl">
           <Link 
-            to="/financial-fundamentals"
+            to="/toolbox/financial-fundamentals"
             className="inline-flex items-center text-slate-600 hover:text-primary mb-8"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Financial Fundamentals
           </Link>
 
-          <h1 className="text-4xl font-bold text-heading mb-4">
+          <h1 className="mb-4">
             Simple Project Scenario Model
           </h1>
 
-          <h2 className="text-2xl text-heading mb-8">
+          <h2 className="mb-8">
             Comprehensive Project Analysis: Multi-Scenario Capital Budgeting with NPV and IRR Sensitivity Analysis
           </h2>
 
@@ -64,12 +64,12 @@ const ProjectScenarioModel = () => {
           </Card>
 
           <div className="prose prose-slate max-w-none">
-            <h3 className="text-xl font-semibold mb-4">What Is the Simple Project Scenario Model?</h3>
+            <h3 className="mb-4">What Is the Simple Project Scenario Model?</h3>
             <p className="leading-relaxed mb-4">
               The Simple Project Scenario Model is a comprehensive capital budgeting tool that evaluates investment projects under multiple scenarios. This model performs detailed NPV and IRR analysis across optimistic, base case, and pessimistic scenarios, while providing sensitivity analysis to identify key value drivers and risk factors.
             </p>
 
-            <h3 className="text-xl font-semibold mb-4">Why Use the Simple Project Scenario Model?</h3>
+            <h3 className="mb-4">Why Use the Simple Project Scenario Model?</h3>
             <p className="leading-relaxed mb-4">
               Scenario-based project analysis is essential for robust capital allocation decisions:
             </p>
@@ -82,19 +82,19 @@ const ProjectScenarioModel = () => {
               <li><strong>Performance monitoring:</strong> Establish benchmarks for tracking actual performance</li>
             </ul>
 
-            <h3 className="text-xl font-semibold mb-4">How Does the Simple Project Scenario Model Work?</h3>
+            <h3 className="mb-4">How Does the Simple Project Scenario Model Work?</h3>
             <p className="leading-relaxed mb-4">
               The model employs a structured approach to scenario analysis:
             </p>
 
-            <h4 className="text-lg font-medium mb-3">Three-Scenario Framework</h4>
+            <h4 className="mb-3">Three-Scenario Framework</h4>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li><strong>Optimistic Scenario:</strong> Best-case assumptions with favorable market conditions</li>
               <li><strong>Base Case Scenario:</strong> Most likely outcome based on realistic expectations</li>
               <li><strong>Pessimistic Scenario:</strong> Worst-case assumptions with challenging conditions</li>
             </ul>
 
-            <h4 className="text-lg font-medium mb-3">Financial Metrics Analysis</h4>
+            <h4 className="mb-3">Financial Metrics Analysis</h4>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>Net Present Value (NPV) calculation for each scenario</li>
               <li>Internal Rate of Return (IRR) determination</li>
@@ -102,7 +102,7 @@ const ProjectScenarioModel = () => {
               <li>Profitability index computation</li>
             </ul>
 
-            <h4 className="text-lg font-medium mb-3">Sensitivity Analysis</h4>
+            <h4 className="mb-3">Sensitivity Analysis</h4>
             <ul className="list-disc pl-6 mb-4 space-y-1">
               <li>Variable impact assessment on project NPV</li>
               <li>Break-even analysis for key assumptions</li>
@@ -110,7 +110,7 @@ const ProjectScenarioModel = () => {
               <li>Monte Carlo simulation capabilities for advanced analysis</li>
             </ul>
 
-            <h4 className="text-lg font-medium mb-3">Risk Assessment</h4>
+            <h4 className="mb-3">Risk Assessment</h4>
             <p className="leading-relaxed mb-4">
               The model provides probability-weighted expected values and risk-adjusted returns, enabling decision-makers to understand both the expected value and the uncertainty associated with the investment.
             </p>

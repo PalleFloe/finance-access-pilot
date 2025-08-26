@@ -20,13 +20,13 @@ const RiskFactorSummation = () => {
             </Link>
           </div>
 
-          <Card className="shadow-lg border-slate-200">
-            <CardHeader>
-              <CardTitle className="text-2xl font-bold">Risk Factor Summation</CardTitle>
-            <CardDescription>
-              Content: Model, Introduction and Complete Guidance
-            </CardDescription>
-            </CardHeader>
+            <Card className="shadow-lg border-slate-200">
+              <CardHeader>
+                <CardTitle className="text-xl font-bold">Risk Factor Summation</CardTitle>
+              <CardDescription>
+                Content: Model, Introduction and Complete Guidance
+              </CardDescription>
+              </CardHeader>
             <CardContent className="grid gap-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Card className="border-slate-200">

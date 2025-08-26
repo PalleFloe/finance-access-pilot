@@ -35,12 +35,12 @@ const FirstChicagoValuation = () => {
           </Link>
 
           {/* Main Headline */}
-          <h1 className="text-4xl font-bold text-heading mb-4">
+          <h1 className="mb-4">
             First Chicago Valuation Model
           </h1>
 
           {/* Sub-headline */}
-          <h2 className="text-2xl text-heading mb-8">
+          <h2 className="mb-8">
             Content: Model, Introduction and Complete Guidance
           </h2>
 
@@ -68,7 +68,7 @@ const FirstChicagoValuation = () => {
           </Card>
 
           {/* Introduction Headline */}
-          <h3 className="text-xl font-bold text-heading mb-6">First Chicago Valuation Model Introduction</h3>
+          <h3 className="mb-6">First Chicago Valuation Model Introduction</h3>
 
           {/* Short Description */}
           <div className="prose prose-slate max-w-none mb-8">
@@ -96,7 +96,7 @@ const FirstChicagoValuation = () => {
           {/* Expandable Section */}
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="complete-guide">
-              <AccordionTrigger className="text-xl font-bold text-heading">
+              <AccordionTrigger className="mb-3">
                 Complete First Chicago Valuation Model Guide
               </AccordionTrigger>
               <AccordionContent className="prose prose-slate max-w-none">
