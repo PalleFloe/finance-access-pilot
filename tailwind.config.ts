@@ -20,8 +20,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'sans': ['EB Garamond', 'serif'],
-				'garamond': ['EB Garamond', 'serif'],
+				'sans': ['Garamond', 'Times New Roman', 'serif'],
+				'garamond': ['Garamond', 'Times New Roman', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -76,7 +76,8 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				heading: 'hsl(var(--heading))',
-				'blog-heading': 'hsl(var(--blog-heading))'
+				'blog-heading': 'hsl(var(--blog-heading))',
+				'brand-heading': 'hsl(var(--brand-heading))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

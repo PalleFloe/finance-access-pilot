@@ -44,6 +44,7 @@
 
     --heading: 210 50% 39%;
     --blog-heading: 208 49% 31%;
+    --brand-heading: 209 49% 39%;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +101,7 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
     --heading: 210 50% 39%;
     --blog-heading: 208 49% 31%;
+    --brand-heading: 209 49% 39%;
   }
 }
 
@@ -109,6 +111,43 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground text-[11px];
+    font-family: 'Garamond', 'Times New Roman', serif;
+  }
+
+  /* Heading Hierarchy */
+  h1 {
+    @apply text-[20px] font-bold;
+    color: #326496;
+    font-family: 'Garamond', 'Times New Roman', serif;
+  }
+
+  h2 {
+    @apply text-[18px] font-bold;
+    color: #326496;
+    font-family: 'Garamond', 'Times New Roman', serif;
+  }
+
+  h3 {
+    @apply text-[16px] font-bold;
+    color: #326496;
+    font-family: 'Garamond', 'Times New Roman', serif;
+  }
+
+  h4 {
+    @apply text-[14px] font-bold;
+    color: #326496;
+    font-family: 'Garamond', 'Times New Roman', serif;
+  }
+
+  h5 {
+    @apply text-[12px] font-bold;
+    color: #326496;
+    font-family: 'Garamond', 'Times New Roman', serif;
+  }
+
+  /* Body text */
+  p, div, span, li, td, th {
+    font-family: 'Garamond', 'Times New Roman', serif;
   }
 }
