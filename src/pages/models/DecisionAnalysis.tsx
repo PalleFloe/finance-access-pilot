@@ -11,13 +11,8 @@ const DecisionAnalysis = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const downloadModel = () => {
-    const link = document.createElement('a')
-    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EdvWmL24E4dMkZvJHo4l3CkBE8VvSU5qgHJMeHGtrrfUJQ?e=xX7ulp'
-    link.target = '_blank'
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
+  const openModel = (sharePointUrl: string) => {
+    window.open(sharePointUrl, '_blank', 'width=1200,height=800');
   };
 
   return (
@@ -55,12 +50,15 @@ const DecisionAnalysis = () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-2">
-              <Button 
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                onClick={downloadModel}
-              >
-                Open Model
-              </Button>
+              <div className="tier-buttons-stacked">
+                <button className="tier-btn tier-1-btn" onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EdvWmL24E4dMkZvJHo4l3CkBE8VvSU5qgHJMeHGtrrfUJQ?e=xX7ulp')}>
+                  Online & Free
+                </button>
+                <button className="tier-btn tier-3-btn" disabled>
+                  Download & Subscription
+                  <span className="coming-soon-badge">Coming Soon</span>
+                </button>
+              </div>
               <p className="text-xs text-slate-500 text-center">
                 ✨ Free access • No registration • Use immediately in your browser
               </p>

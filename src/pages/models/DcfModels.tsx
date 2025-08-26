@@ -10,13 +10,12 @@ const DcfModels = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const downloadModel = () => {
-    const link = document.createElement('a')
-    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaIMASZwJQ5AoDqzvcVSHyIBqHab38Bx8q2BRybT9Ymqdw?e=6pJ5DL'
-    link.target = '_blank'
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
+  const openModel = (sharePointUrl: string) => {
+    window.open(sharePointUrl, '_blank', 'width=1200,height=800');
+  };
+
+  const openTier2Registration = (modelName: string) => {
+    alert('Registration for free download coming soon!\n\nModel: ' + modelName);
   };
 
   return (
@@ -51,12 +50,14 @@ const DcfModels = () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-2">
-              <Button 
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                onClick={downloadModel}
-              >
-                Open Model
-              </Button>
+              <div className="tier-buttons-stacked">
+                <button className="tier-btn tier-1-btn" onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaIMASZwJQ5AoDqzvcVSHyIBqHab38Bx8q2BRybT9Ymqdw?e=6pJ5DL')}>
+                  Online & Free
+                </button>
+                <button className="tier-btn tier-2-btn" onClick={() => openTier2Registration('Standard Types of DCF Models')}>
+                  Download & Free
+                </button>
+              </div>
               <p className="text-xs text-slate-500 text-center">
                 ✨ Free access • No registration • Use immediately in your browser
               </p>

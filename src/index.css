@@ -150,4 +150,65 @@
   p, div, span, li, td, th {
     font-family: 'Garamond', 'Times New Roman', serif;
   }
+
+  /* Tier Button Styles */
+  .tier-buttons-stacked {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .tier-btn {
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: Garamond, 'Times New Roman', serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Tier 1: Online & Free - Green */
+  .tier-1-btn {
+    background: #1e5a3c;
+    color: white;
+    border: 2px solid #1e5a3c;
+  }
+
+  .tier-1-btn:hover {
+    background: #2a7550;
+    border-color: #2a7550;
+  }
+
+  /* Tier 2: Download & Free - White/Green */
+  .tier-2-btn {
+    background: white;
+    color: #1e5a3c;
+    border: 2px solid #1e5a3c;
+  }
+
+  .tier-2-btn:hover {
+    background: #f0f7f4;
+  }
+
+  /* Tier 3: Coming Soon - Gray */
+  .tier-3-btn {
+    background: #f5f5f5;
+    color: #999;
+    border: 2px solid #ddd;
+    cursor: not-allowed;
+  }
+
+  .coming-soon-badge {
+    display: inline-block;
+    background: #fff;
+    color: #999;
+    padding: 2px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 11px;
+    margin-left: 8px;
+  }
 }
