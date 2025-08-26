@@ -60,9 +60,6 @@ const SaasUnitEconomics = () => {
                   <span className="coming-soon-badge">Coming Soon</span>
                 </button>
               </div>
-              <p className="text-xs text-slate-500 text-center">
-                ✨ Free access • No registration • Use immediately in your browser
-              </p>
             </CardContent>
           </Card>
 
