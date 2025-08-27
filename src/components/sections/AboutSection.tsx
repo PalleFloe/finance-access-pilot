@@ -3,15 +3,9 @@ import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-16 px-6 bg-white">
+    <section id="about" className="py-8 px-6 bg-white">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
-          <Badge className="mb-4 bg-indigo-100 text-indigo-800" variant="outline">
-            About Us
-          </Badge>
-        </div>
-
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="bg-slate-50 rounded-lg p-8">
             <div className="flex flex-col md:flex-row gap-8 items-start text-left">
               <div className="flex-shrink-0">
@@ -68,7 +62,7 @@ const AboutSection = () => {
           </div>
 
           {/* Logo section */}
-          <div className="max-w-4xl mx-auto mt-16">
+          <div className="mt-10">
             <div className="bg-slate-50 rounded-lg p-8">
               <div className="flex flex-col md:flex-row gap-8 items-center text-left">
                 <div className="flex-shrink-0">
