@@ -26,19 +26,19 @@ const Header = () => {
           </Link>
           
           <nav className="flex items-center space-x-6">
-            <Link to="/toolbox" className="text-slate-700 hover:text-primary px-3 py-2 text-xs font-medium transition-colors">
+            <Link to="/toolbox" className="text-slate-700 hover:text-primary px-3 py-2 text-sm font-normal hover:font-medium font-garamond transition-all">
               Toolbox
             </Link>
-            <Link to="/how-it-works" className="text-slate-700 hover:text-primary px-3 py-2 text-xs font-medium transition-colors">
+            <Link to="/how-it-works" className="text-slate-700 hover:text-primary px-3 py-2 text-sm font-normal hover:font-medium font-garamond transition-all">
               How It Works
             </Link>
-            <Link to="/blog" className="text-slate-700 hover:text-primary px-3 py-2 text-xs font-medium transition-colors">
+            <Link to="/blog" className="text-slate-700 hover:text-primary px-3 py-2 text-sm font-normal hover:font-medium font-garamond transition-all">
               Blog
             </Link>
-            <Link to="/about" className="text-slate-700 hover:text-primary px-3 py-2 text-xs font-medium transition-colors">
+            <Link to="/about" className="text-slate-700 hover:text-primary px-3 py-2 text-sm font-normal hover:font-medium font-garamond transition-all">
               About
             </Link>
-            <Link to="/contact" className="text-slate-700 hover:text-primary px-3 py-2 text-xs font-medium transition-colors">
+            <Link to="/contact" className="text-slate-700 hover:text-primary px-3 py-2 text-sm font-normal hover:font-medium font-garamond transition-all">
               Contact
             </Link>
             <Badge className="bg-green-100 text-green-800 border-green-200" variant="outline">
