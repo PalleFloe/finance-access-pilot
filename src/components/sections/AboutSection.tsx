@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
@@ -43,14 +44,23 @@ const AboutSection = () => {
                     <strong>I'm direct and open-minded, not afraid to challenge status quo constructively.</strong> I give people the 
                     chance to shine rather than hide them in my shadow.
                   </p>
-                  <p>
-                    <strong>Now I'm building FinancialDecisionModels.com</strong> because after two decades of wrestling with 
-                    complex, unintuitive models that often gave precisely the wrong results, I know there's a better way…
+                  <h2 className="text-lg font-bold text-primary mb-4 font-garamond">
+                    Why I Built FinancialDecisionModels.com
+                  </h2>
+                  <p className="font-garamond">
+                    After two decades of wrestling with complex, unintuitive models that often gave precisely the wrong results, I knew there had to be a better way.
                   </p>
-                  <p>
-                    <strong>We turn complex financial choices into structured insights and better 
-                    decisions</strong> with a best-in-class, intuitive, business-minded Financial Decision Model toolbox and expert consulting 
-                    services.
+                  <p className="font-garamond">
+                    <strong>The problem was clear:</strong> Most financial models are either oversimplified templates or overly complex black boxes that obscure rather than illuminate decision-making. Business leaders need tools that are sophisticated enough to be credible, yet intuitive enough to actually use.
+                  </p>
+                  <p className="font-garamond">
+                    <strong>My solution:</strong> Create a best-in-class, business-minded Financial Decision Model toolbox that turns complex financial choices into structured insights and better decisions.
+                  </p>
+                  <p className="font-garamond">
+                    <strong>But it's not just about the tools.</strong> I also want to inspire and help you make better financial models yourself. That's why I've made the models widely available - some freely viewable in your browser, others available as downloads.
+                  </p>
+                  <p className="font-garamond">
+                    <strong>The balance of access and protection</strong> is something I continue to refine. For now, check out the <Link to="/how-it-works" className="text-primary hover:underline font-medium">"How It Works"</Link> page to see the current approach.
                   </p>
                 </div>
               </div>
