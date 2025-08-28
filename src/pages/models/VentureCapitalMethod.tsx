@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ArrowLeft } from "lucide-react";
 import Header from "@/components/Header";
+import DownloadButton from "@/components/DownloadButton";
 import { useEffect } from "react";
 
 const VentureCapitalMethod = () => {
@@ -54,10 +55,11 @@ const VentureCapitalMethod = () => {
                 <button className="tier-btn tier-1-btn" onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Eac_T6Y1ahJNtUyUQScS5a0B7iI6bDoT0H8Kd4gJTDPenw?e=KQxjAZ')}>
                   Online & Free
                 </button>
-                <button className="tier-btn tier-3-btn" disabled>
-                  Download & Subscription
-                  <span className="coming-soon-badge">Coming Soon</span>
-                </button>
+                <DownloadButton 
+                  sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Eac_T6Y1ahJNtUyUQScS5a0B7iI6bDoT0H8Kd4gJTDPenw?e=KQxjAZ"
+                  modelName="Venture Capital Valuation Model"
+                  className="tier-btn tier-2-btn w-full"
+                />
               </div>
             </CardContent>
           </Card>

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import Header from "@/components/Header";
+import DownloadButton from "@/components/DownloadButton";
 import { useEffect } from "react";
 
 const DcfModels = () => {
@@ -54,9 +55,11 @@ const DcfModels = () => {
                 <button className="tier-btn tier-1-btn" onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaIMASZwJQ5AoDqzvcVSHyIBqHab38Bx8q2BRybT9Ymqdw?e=6pJ5DL')}>
                   Online & Free
                 </button>
-                <button className="tier-btn tier-2-btn" onClick={() => openTier2Registration('Standard Types of DCF Models')}>
-                  Download & Free
-                </button>
+                <DownloadButton 
+                  sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaIMASZwJQ5AoDqzvcVSHyIBqHab38Bx8q2BRybT9Ymqdw?e=6pJ5DL"
+                  modelName="Standard Types of DCF Models"
+                  className="tier-btn tier-2-btn w-full"
+                />
               </div>
             </CardContent>
           </Card>
