@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
+import DownloadButton from "@/components/DownloadButton";
 import { useEffect } from "react";
 
 const EarningGrowthEstimator = () => {
@@ -14,9 +15,6 @@ const EarningGrowthEstimator = () => {
     window.open(sharePointUrl, '_blank', 'width=1200,height=800');
   };
 
-  const openTier2Registration = (modelName: string) => {
-    alert('Registration for free download coming soon!\n\nModel: ' + modelName);
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
@@ -49,15 +47,20 @@ const EarningGrowthEstimator = () => {
                 Systematic Growth Analysis: ROC-Based Earning Growth Estimation for Existing and New Investments
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-2">
-              <div className="tier-buttons-stacked">
-                <button className="tier-btn tier-1-btn" onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EVW1RCNEEANCsNn-BuPXoxMBpZimPAuND0_e9g_doF3GZQ?e=EhH6Ll')}>
-                  Online & Free
-                </button>
-                <button className="tier-btn tier-2-btn" onClick={() => openTier2Registration('Simple Earning Growth Estimator')}>
-                  Download & Free
-                </button>
-              </div>
+            <CardContent className="space-y-3">
+              <Button 
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EVW1RCNEEANCsNn-BuPXoxMBpZimPAuND0_e9g_doF3GZQ?e=EhH6Ll')}
+                variant="brand-green"
+                className="w-full"
+              >
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Online & Free
+              </Button>
+              <DownloadButton 
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EVW1RCNEEANCsNn-BuPXoxMBpZimPAuND0_e9g_doF3GZQ?e=EhH6Ll"
+                modelName="Simple Earning Growth Estimator"
+                className="w-full"
+              />
             </CardContent>
           </Card>
 

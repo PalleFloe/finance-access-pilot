@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
+import DownloadButton from "@/components/DownloadButton";
 import { useEffect } from "react";
 
 const PerpetuityExitValuation = () => {
@@ -15,9 +16,6 @@ const PerpetuityExitValuation = () => {
     window.open(sharePointUrl, '_blank', 'width=1200,height=800');
   };
 
-  const openTier2Registration = (modelName: string) => {
-    alert('Registration for free download coming soon!\n\nModel: ' + modelName);
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
@@ -53,15 +51,20 @@ const PerpetuityExitValuation = () => {
                 Simple Perpetuity Models: Quick & Flexible Approaches to Valuation with Scenario-Based Sensitivity and Value Driver Analysis
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-2">
-              <div className="tier-buttons-stacked">
-                <button className="tier-btn tier-1-btn" onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EbGQVo0p99xDlBjGuFCzpZsB1yJAT5T_cZrY2XSVtniT-A?e=gR611H')}>
-                  Online & Free
-                </button>
-                <button className="tier-btn tier-2-btn" onClick={() => openTier2Registration('Perpetuity and Exit Models')}>
-                  Download & Free
-                </button>
-              </div>
+            <CardContent className="space-y-3">
+              <Button 
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EbGQVo0p99xDlBjGuFCzpZsB1yJAT5T_cZrY2XSVtniT-A?e=gR611H')}
+                variant="brand-green"
+                className="w-full"
+              >
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Online & Free
+              </Button>
+              <DownloadButton 
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EbGQVo0p99xDlBjGuFCzpZsB1yJAT5T_cZrY2XSVtniT-A?e=gR611H"
+                modelName="Perpetuity and Exit Models"
+                className="w-full"
+              />
             </CardContent>
           </Card>
 

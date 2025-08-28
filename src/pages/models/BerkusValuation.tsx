@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
+import DownloadButton from "@/components/DownloadButton";
 import { useEffect } from "react";
 
 const BerkusValuation = () => {
@@ -15,9 +16,6 @@ const BerkusValuation = () => {
     window.open(sharePointUrl, '_blank', 'width=1200,height=800');
   };
 
-  const openTier2Registration = (modelName: string) => {
-    alert('Registration for free download coming soon!\n\nModel: ' + modelName);
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
@@ -53,15 +51,20 @@ const BerkusValuation = () => {
                 Pre-Revenue Valuation based on Assessment of Five Key Factors and Scenario Modelling
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-2">
-              <div className="tier-buttons-stacked">
-                <button className="tier-btn tier-1-btn" onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EXrpjbarrL5BmekYiVgKN5kBA8Bh72smjSxLZfTtLjtScA?e=pLjJcZ')}>
-                  Online & Free
-                </button>
-                <button className="tier-btn tier-2-btn" onClick={() => openTier2Registration('Berkus Valuation Model')}>
-                  Download & Free
-                </button>
-              </div>
+            <CardContent className="space-y-3">
+              <Button 
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EXrpjbarrL5BmekYiVgKN5kBA8Bh72smjSxLZfTtLjtScA?e=pLjJcZ')}
+                variant="brand-green"
+                className="w-full"
+              >
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Online & Free
+              </Button>
+              <DownloadButton 
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EXrpjbarrL5BmekYiVgKN5kBA8Bh72smjSxLZfTtLjtScA?e=pLjJcZ"
+                modelName="Berkus Valuation Model"
+                className="w-full"
+              />
             </CardContent>
           </Card>
 

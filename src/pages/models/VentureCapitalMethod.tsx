@@ -2,9 +2,8 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
-import DownloadButton from "@/components/DownloadButton";
 import { useEffect } from "react";
 
 const VentureCapitalMethod = () => {
@@ -50,17 +49,23 @@ const VentureCapitalMethod = () => {
                 Bridging Multi-Round Financing, Exit Value, Founder's Ownership Share and Investor's Need for a Profitable Return
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-2">
-              <div className="tier-buttons-stacked">
-                <button className="tier-btn tier-1-btn" onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Eac_T6Y1ahJNtUyUQScS5a0B7iI6bDoT0H8Kd4gJTDPenw?e=KQxjAZ')}>
-                  Online & Free
-                </button>
-                <DownloadButton 
-                  sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Eac_T6Y1ahJNtUyUQScS5a0B7iI6bDoT0H8Kd4gJTDPenw?e=KQxjAZ"
-                  modelName="Venture Capital Valuation Model"
-                  className="tier-btn tier-2-btn w-full"
-                />
-              </div>
+            <CardContent className="space-y-3">
+              <Button 
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EfLYujZK2B1FjqoaOiECrI4BxqnelPGJnLqFji97vjs88g?e=MZNm0C')}
+                variant="brand-green"
+                className="w-full"
+              >
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Online & Free
+              </Button>
+              <Button 
+                variant="outline"
+                disabled
+                className="w-full bg-slate-100 text-slate-400 border-slate-300"
+              >
+                Download & Subscription
+                <span className="ml-2 text-xs bg-slate-200 text-slate-500 px-2 py-1 rounded">Coming Soon</span>
+              </Button>
             </CardContent>
           </Card>
 

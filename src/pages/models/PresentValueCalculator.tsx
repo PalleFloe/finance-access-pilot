@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
+import DownloadButton from "@/components/DownloadButton";
 import { useEffect } from "react";
 
 const PresentValueCalculator = () => {
@@ -14,9 +15,6 @@ const PresentValueCalculator = () => {
     window.open(sharePointUrl, '_blank', 'width=1200,height=800');
   };
 
-  const openTier2Registration = (modelName: string) => {
-    alert('Registration for free download coming soon!\n\nModel: ' + modelName);
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
@@ -49,15 +47,20 @@ const PresentValueCalculator = () => {
                 Present Value Analysis: One-time, Annuity, Growing Annuity, Perpetuity, and Growing Perpetuity Calculations
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-2">
-              <div className="tier-buttons-stacked">
-                <button className="tier-btn tier-1-btn" onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EWabU89XYiJIiu1uiWqXvBoBMfBDoO3GmrWYBWsKkWsKdA?e=5tFjSZ')}>
-                  Online & Free
-                </button>
-                <button className="tier-btn tier-2-btn" onClick={() => openTier2Registration('Simple Present Value Calculator')}>
-                  Download & Free
-                </button>
-              </div>
+            <CardContent className="space-y-3">
+              <Button 
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EWabU89XYiJIiu1uiWqXvBoBMfBDoO3GmrWYBWsKkWsKdA?e=5tFjSZ')}
+                variant="brand-green"
+                className="w-full"
+              >
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Online & Free
+              </Button>
+              <DownloadButton 
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EWabU89XYiJIiu1uiWqXvBoBMfBDoO3GmrWYBWsKkWsKdA?e=5tFjSZ"
+                modelName="Simple Present Value Calculator"
+                className="w-full"
+              />
             </CardContent>
           </Card>
 
