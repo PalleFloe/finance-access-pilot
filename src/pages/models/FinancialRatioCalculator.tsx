@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
+import DownloadButton from "@/components/DownloadButton";
 import { useEffect } from "react";
 
 const FinancialRatioCalculator = () => {
@@ -12,10 +13,6 @@ const FinancialRatioCalculator = () => {
 
   const openModel = (sharePointUrl: string) => {
     window.open(sharePointUrl, '_blank', 'width=1200,height=800');
-  };
-
-  const openTier2Registration = (modelName: string) => {
-    alert('Registration for free download coming soon!\n\nModel: ' + modelName);
   };
 
   return (
@@ -49,15 +46,20 @@ const FinancialRatioCalculator = () => {
                 Comprehensive Financial Analysis: Investment Returns, Profitability, Efficiency, and Market Valuation Ratios
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-2">
-              <div className="tier-buttons-stacked">
-                <button className="tier-btn tier-1-btn" onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETKwDX_YmGBKm-7NEuvSpSUBCqGh8GI8z7k-89fYTzgeJg?e=CzW7QE')}>
-                  Online & Free
-                </button>
-                <button className="tier-btn tier-2-btn" onClick={() => openTier2Registration('Financial Ratio Calculator')}>
-                  Download & Free
-                </button>
-              </div>
+            <CardContent className="space-y-3">
+              <Button 
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETKwDX_YmGBKm-7NEuvSpSUBCqGh8GI8z7k-89fYTzgeJg?e=CzW7QE')}
+                variant="outline"
+                className="w-full"
+              >
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Online & Free
+              </Button>
+              <DownloadButton 
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETKwDX_YmGBKm-7NEuvSpSUBCqGh8GI8z7k-89fYTzgeJg?e=CzW7QE"
+                modelName="Financial Ratio Calculator"
+                className="w-full"
+              />
             </CardContent>
           </Card>
 
