@@ -44,6 +44,60 @@ export type Database = {
         }
         Relationships: []
       }
+      model_downloads: {
+        Row: {
+          downloaded_at: string
+          id: string
+          model_name: string
+          user_id: string
+        }
+        Insert: {
+          downloaded_at?: string
+          id?: string
+          model_name: string
+          user_id: string
+        }
+        Update: {
+          downloaded_at?: string
+          id?: string
+          model_name?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          company: string | null
+          created_at: string
+          email: string
+          first_name: string
+          id: string
+          last_name: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          company?: string | null
+          created_at?: string
+          email: string
+          first_name: string
+          id?: string
+          last_name: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          company?: string | null
+          created_at?: string
+          email?: string
+          first_name?: string
+          id?: string
+          last_name?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       user_roles: {
         Row: {
           id: string
