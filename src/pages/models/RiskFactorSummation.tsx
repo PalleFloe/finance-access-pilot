@@ -102,7 +102,7 @@ const RiskFactorSummation = () => {
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                   onClick={() => {
                     const link = document.createElement('a')
-                    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsHub/EcqLMvzq3AJOscmUT8SIC38ByR-4fKgBeOB2Ta4Tm9nX4g?e=jL0hxL'
+                    link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EcqLMvzq3AJOscmUT8SIC38ByR-4fKgBeOB2Ta4Tm9nX4g?e=jL0hxL'
                     link.target = '_blank'
                     document.body.appendChild(link)
                     link.click()

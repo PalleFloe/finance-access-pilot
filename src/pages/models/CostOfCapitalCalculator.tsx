@@ -49,7 +49,7 @@ const CostOfCapitalCalculator = () => {
             </CardHeader>
             <CardContent className="space-y-3">
               <Button 
-                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EWjfT36ci3pDlynSGPz3UgoB7WDPisM6ofLXnqeo1zft6w?e=Yyg7mn')}
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EcWcGmRDSN1GkVKn3oKngrUB9443xZcsP-KXQdXnq-D3Ug')}
                 variant="brand-green"
                 className="w-full"
               >
@@ -57,7 +57,7 @@ const CostOfCapitalCalculator = () => {
                 Online & Free
               </Button>
               <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EWjfT36ci3pDlynSGPz3UgoB7WDPisM6ofLXnqeo1zft6w?e=Yyg7mn"
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EU1QF1oJvD5Cpg8MhAVRnRwBRrIjYmhwC0j5xp1VFz3bXQ?e=c62qhD"
                 modelName="Simple Cost of Capital Calculator"
                 className="w-full"
               />

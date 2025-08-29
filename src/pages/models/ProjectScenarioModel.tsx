@@ -49,7 +49,7 @@ const ProjectScenarioModel = () => {
             </CardHeader>
             <CardContent className="space-y-3">
               <Button 
-                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EV_koGzK1NFLhkWrMJBNojcBeEfklR1uufLXYGAuK1pUtg?e=NmO2ag')}
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EZP6yf1yp4NHuMKXuE7iJA8BzoNe2JhuTSTfQwUUs8tyTw')}
                 variant="brand-green"
                 className="w-full"
               >
@@ -57,7 +57,7 @@ const ProjectScenarioModel = () => {
                 Online & Free
               </Button>
               <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EV_koGzK1NFLhkWrMJBNojcBeEfklR1uufLXYGAuK1pUtg?e=NmO2ag"
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EfthFhFV8XtCtvImEjtw1XIB4oM2I_pDioHBv5sJtL83Jg?e=qtO0Ho"
                 modelName="Simple Project Scenario Model"
                 className="w-full"
               />

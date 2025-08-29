@@ -53,7 +53,7 @@ const PerpetuityExitValuation = () => {
             </CardHeader>
             <CardContent className="space-y-3">
               <Button 
-                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EbGQVo0p99xDlBjGuFCzpZsB1yJAT5T_cZrY2XSVtniT-A?e=gR611H')}
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaMtk3zo6hVAqea-OC4rf08BqpbHIPDgdYItlFOhNSTZMQ')}
                 variant="brand-green"
                 className="w-full"
               >
@@ -61,7 +61,7 @@ const PerpetuityExitValuation = () => {
                 Online & Free
               </Button>
               <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EbGQVo0p99xDlBjGuFCzpZsB1yJAT5T_cZrY2XSVtniT-A?e=gR611H"
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EbXsTOAT9XRCtVNs_ZZVHIUBP5avPj6TvfPFwXMVwQFXYw?e=h0HIgq"
                 modelName="Perpetuity and Exit Models"
                 className="w-full"
               />

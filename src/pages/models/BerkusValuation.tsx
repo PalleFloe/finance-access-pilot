@@ -53,7 +53,7 @@ const BerkusValuation = () => {
             </CardHeader>
             <CardContent className="space-y-3">
               <Button 
-                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EXrpjbarrL5BmekYiVgKN5kBA8Bh72smjSxLZfTtLjtScA?e=pLjJcZ')}
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ER7BObBFTKtJhglZtgmnA-QBVJWVkxc6MB_cPY_b-yNqRA')}
                 variant="brand-green"
                 className="w-full"
               >
@@ -61,7 +61,7 @@ const BerkusValuation = () => {
                 Online & Free
               </Button>
               <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EXrpjbarrL5BmekYiVgKN5kBA8Bh72smjSxLZfTtLjtScA?e=pLjJcZ"
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaG59B1j_dZCrXVdXTuyvQcBsxxCsvi1cTVJvbQzj7IJ7g?e=TbyaxJ"
                 modelName="Berkus Valuation Model"
                 className="w-full"
               />

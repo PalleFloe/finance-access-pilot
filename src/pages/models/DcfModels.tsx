@@ -52,11 +52,11 @@ const DcfModels = () => {
             </CardHeader>
             <CardContent className="space-y-2">
               <div className="tier-buttons-stacked">
-                <button className="tier-btn tier-1-btn" onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaIMASZwJQ5AoDqzvcVSHyIBqHab38Bx8q2BRybT9Ymqdw?e=6pJ5DL')}>
+                <button className="tier-btn tier-1-btn" onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EUKdPviFyahDmS3aH1RN0RsBgS_G6sXGCccik-b2Vry8Qg')}>
                   Online & Free
                 </button>
                 <DownloadButton 
-                  sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaIMASZwJQ5AoDqzvcVSHyIBqHab38Bx8q2BRybT9Ymqdw?e=6pJ5DL"
+                  sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ESuQTjH5GIBKrdyX8PxAcNMBUCbYEuq0qbd5IvHuE4GUpA?e=DbTIP7"
                   modelName="Standard Types of DCF Models"
                   className="tier-btn tier-2-btn w-full"
                 />
