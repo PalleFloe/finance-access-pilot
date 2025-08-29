@@ -26,7 +26,7 @@ const handler = async (req: Request): Promise<Response> => {
     const { email, firstName, lastName, company }: WelcomeEmailRequest = await req.json();
 
     const emailResponse = await resend.emails.send({
-      from: "Financial Decision Models <onboarding@resend.dev>",
+      from: "Financial Decision Models <noreply@financialdecisionmodels.com>",
       to: [email],
       subject: "Welcome to Financial Decision Models!",
       html: `
