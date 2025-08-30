@@ -68,12 +68,10 @@ const PerpetuityExitValuation = () => {
             </CardContent>
           </Card>
 
-          <div className="bg-slate-50 p-4 border-l-4 border-blue-600 my-5 text-sm">
-            <strong>💡 Quick Access Guide:</strong>
-            <ul className="mt-2 ml-5 space-y-1">
-              <li>Click "Online & Free" for instant online preview (no registration)</li>
-              <li>Click "Download & Free" for browser embedded Excel with download capability (registration required)</li>
-            </ul>
+          <div style={{background: '#f8fafc', padding: '12px 16px', borderRadius: '6px', margin: '20px 0', fontSize: '14px', color: '#64748b'}}>
+            <strong style={{color: '#326496'}}>Quick Access Guide:</strong><br />
+            <span>Click "Online & Free" for instant online preview (no registration)</span>
+            <br /><span>Click "Download & Free" for browser embedded Excel with download capability (registration required)</span>
           </div>
 
           {/* Introduction Headline */}
