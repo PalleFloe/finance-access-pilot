@@ -65,7 +65,7 @@ const FirstChicagoValuation = () => {
             </CardContent>
           </Card>
 
-          <div className="bg-background p-4 rounded-lg mb-4 text-sm text-muted-foreground">
+          <div className="bg-muted p-4 rounded-lg mb-4 text-sm text-muted-foreground">
             <strong className="text-primary">Quick Access Guide:</strong><br />
             <span>Click "Online & Free" for instant online preview (no registration)</span>
           </div>
