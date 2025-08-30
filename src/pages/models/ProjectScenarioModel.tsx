@@ -49,7 +49,7 @@ const ProjectScenarioModel = () => {
             </CardHeader>
             <CardContent className="space-y-3">
               <Button 
-                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EZP6yf1yp4NHuMKXuE7iJA8BzoNe2JhuTSTfQwUUs8tyTw')}
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EZP6yf1yp4NHuMKXuE7iJA8BzoNe2JhuTSTfQwUUs8tyTw&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                 variant="brand-green"
                 className="w-full"
               >

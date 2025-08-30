@@ -51,7 +51,7 @@ const FirstChicagoValuation = () => {
             </CardHeader>
             <CardContent className="space-y-2">
               <div className="tier-buttons-stacked">
-                <button className="tier-btn tier-1-btn" onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYD8J82OTqNErjVgb7FLT7wBHd1p0R53hQjs4gZWZQBiJg')}>
+                <button className="tier-btn tier-1-btn" onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYD8J82OTqNErjVgb7FLT7wBHd1p0R53hQjs4gZWZQBiJg&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}>
                   Online & Free
                 </button>
                 <button className="tier-btn tier-3-btn" disabled>
