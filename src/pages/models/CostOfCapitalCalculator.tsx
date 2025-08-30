@@ -23,7 +23,7 @@ const CostOfCapitalCalculator = () => {
       <div className="py-12 px-6">
         <div className="container mx-auto max-w-4xl">
           <Link 
-            to="/financial-fundamentals"
+            to="/toolbox/financial-fundamentals"
             className="inline-flex items-center text-slate-600 hover:text-primary mb-8"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />

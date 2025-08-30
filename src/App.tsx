@@ -51,7 +51,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/toolbox/startup-valuations" element={<StartupValuations />} />
-          <Route path="/financial-fundamentals" element={<FinancialFundamentals />} />
+          <Route path="/toolbox/financial-fundamentals" element={<FinancialFundamentals />} />
           <Route path="/toolbox/mature-business" element={<MatureBusiness />} />
           <Route path="/toolbox/investment-analysis" element={<InvestmentAnalysis />} />
           <Route path="/toolbox/startup-valuations/venture-capital-method" element={<VentureCapitalMethod />} />
