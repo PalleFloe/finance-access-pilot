@@ -29,14 +29,12 @@ const VentureCapitalMethod = () => {
             Back to Startup Valuations
           </Link>
 
-          {/* Main Headline */}
-          <h1 className="mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
             Venture Capital Valuation Model
           </h1>
 
-          {/* Sub-headline */}
           <h2 className="mb-8">
-            Content: Model, Introduction and Complete Guidance
+            Bridging Multi-Round Financing, Exit Value, Founder's Ownership Share and Investor's Need for a Profitable Return
           </h2>
 
           {/* Model Card */}
@@ -45,9 +43,6 @@ const VentureCapitalMethod = () => {
               <CardTitle>
                 Venture Capital Valuation Model
               </CardTitle>
-              <CardDescription>
-                Bridging Multi-Round Financing, Exit Value, Founder's Ownership Share and Investor's Need for a Profitable Return
-              </CardDescription>
             </CardHeader>
             <CardContent className="space-y-3">
               <Button 

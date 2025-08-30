@@ -35,7 +35,7 @@ const DcfModels = () => {
             Back to Financial Fundamentals
           </Link>
 
-          <h1 className="mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
             Standard Types of DCF Models
           </h1>
 
@@ -48,9 +48,6 @@ const DcfModels = () => {
               <CardTitle>
                 Standard Types of DCF Models
               </CardTitle>
-              <CardDescription>
-                Three DCF Approaches: Flexible DCF, Three Stages DCF, and Stable Growth Models
-              </CardDescription>
             </CardHeader>
             <CardContent className="space-y-2">
               <Button 

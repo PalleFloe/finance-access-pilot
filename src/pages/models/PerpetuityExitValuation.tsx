@@ -31,14 +31,12 @@ const PerpetuityExitValuation = () => {
             Back to Startup Valuations
           </Link>
 
-          {/* Main Headline */}
-          <h1 className="mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
             Professional Perpetuity & Exit Valuation Models
           </h1>
 
-          {/* Sub-headline */}
           <h2 className="mb-8">
-            Content: Model, Introduction and Complete Guidance
+            Simple Perpetuity Models: Quick & Flexible Approaches to Valuation with Scenario-Based Sensitivity and Value Driver Analysis
           </h2>
 
           {/* Model Card */}
@@ -47,9 +45,6 @@ const PerpetuityExitValuation = () => {
               <CardTitle>
                 Perpetuity & Exit Valuation Models
               </CardTitle>
-              <CardDescription>
-                Simple Perpetuity Models: Quick & Flexible Approaches to Valuation with Scenario-Based Sensitivity and Value Driver Analysis
-              </CardDescription>
             </CardHeader>
             <CardContent className="space-y-3">
               <Button 

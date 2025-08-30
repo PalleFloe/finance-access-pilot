@@ -30,14 +30,12 @@ const FirstChicagoValuation = () => {
             Back to Startup Valuations
           </Link>
 
-          {/* Main Headline */}
-          <h1 className="mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
             First Chicago Valuation Model
           </h1>
 
-          {/* Sub-headline */}
           <h2 className="mb-8">
-            Content: Model, Introduction and Complete Guidance
+            Simple Scenario Based DCF Model for Startup Valuation with Exit Value based on both EBITDA and Revenue
           </h2>
 
           {/* Model Card */}
@@ -46,9 +44,6 @@ const FirstChicagoValuation = () => {
               <CardTitle>
                 First Chicago Valuation Model
               </CardTitle>
-              <CardDescription>
-                Simple Scenario Based DCF Model for Startup Valuation with Exit Value based on both EBITDA and Revenue
-              </CardDescription>
             </CardHeader>
             <CardContent className="space-y-2">
               <Button 

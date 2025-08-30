@@ -32,7 +32,7 @@ const ProjectScenarioModel = () => {
             Back to Financial Fundamentals
           </Link>
 
-          <h1 className="mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
             Simple Project Scenario Model
           </h1>
 
@@ -45,9 +45,6 @@ const ProjectScenarioModel = () => {
               <CardTitle>
                 Simple Project Scenario Model
               </CardTitle>
-              <CardDescription>
-                Comprehensive Project Analysis: Multi-Scenario Capital Budgeting with NPV and IRR Sensitivity Analysis
-              </CardDescription>
             </CardHeader>
             <CardContent className="space-y-3">
               <Button 
@@ -73,12 +70,12 @@ const ProjectScenarioModel = () => {
 
           <div className="prose prose-slate max-w-none">
             <h3 className="mb-4">What Is the Simple Project Scenario Model?</h3>
-            <p className="leading-relaxed mb-4">
+            <p className="text-lg leading-relaxed mb-4">
               The Simple Project Scenario Model is a comprehensive capital budgeting tool that evaluates investment projects under multiple scenarios. This model performs detailed NPV and IRR analysis across optimistic, base case, and pessimistic scenarios, while providing sensitivity analysis to identify key value drivers and risk factors.
             </p>
 
             <h3 className="mb-4">Why Use the Simple Project Scenario Model?</h3>
-            <p className="leading-relaxed mb-4">
+            <p className="text-lg leading-relaxed mb-4">
               Scenario-based project analysis is essential for robust capital allocation decisions:
             </p>
             <ul className="list-disc pl-6 mb-4 space-y-2">
@@ -91,7 +88,7 @@ const ProjectScenarioModel = () => {
             </ul>
 
             <h3 className="mb-4">How Does the Simple Project Scenario Model Work?</h3>
-            <p className="leading-relaxed mb-4">
+            <p className="text-lg leading-relaxed mb-4">
               The model employs a structured approach to scenario analysis:
             </p>
 
@@ -119,12 +116,12 @@ const ProjectScenarioModel = () => {
             </ul>
 
             <h4 className="mb-3">Risk Assessment</h4>
-            <p className="leading-relaxed mb-4">
+            <p className="text-lg leading-relaxed mb-4">
               The model provides probability-weighted expected values and risk-adjusted returns, enabling decision-makers to understand both the expected value and the uncertainty associated with the investment.
             </p>
 
             <h3 className="text-xl font-semibold mb-4">Key Applications and Limitations</h3>
-            <p className="leading-relaxed mb-4">
+            <p className="text-lg leading-relaxed mb-4">
               This tool is fundamental for corporate finance teams, project managers, and investment professionals evaluating capital projects. While the model provides comprehensive analysis, users should recognize that scenario probabilities are subjective estimates and actual outcomes may differ significantly from projected scenarios. Regular model updates with actual performance data enhance accuracy over time.
             </p>
 

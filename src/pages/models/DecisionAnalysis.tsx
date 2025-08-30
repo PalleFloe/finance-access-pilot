@@ -30,14 +30,12 @@ const DecisionAnalysis = () => {
             Back to Startup Valuations
           </Link>
 
-          {/* Main Headline */}
-          <h1 className="mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
             Decision Analysis Model for Venture Capital Investments
           </h1>
 
-          {/* Sub-headline */}
           <h2 className="mb-8">
-            Content: Model, Introduction and Complete Guidance
+            Systematic Decision Assessment of Startup Life Stages for Investment Decisions via Probability-Weighted Multiple on Investment (PWMOI)
           </h2>
 
           {/* Model Card */}
@@ -46,9 +44,6 @@ const DecisionAnalysis = () => {
               <CardTitle>
                 Decision Analysis Model for Venture Capital Investments
               </CardTitle>
-              <CardDescription>
-                Systematic Decision Assessment of Startup Life Stages for Investment Decisions via Probability-Weighted Multiple on Investment (PWMOI)
-              </CardDescription>
             </CardHeader>
             <CardContent className="space-y-2">
               <Button 

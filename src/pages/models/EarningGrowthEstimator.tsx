@@ -32,7 +32,7 @@ const EarningGrowthEstimator = () => {
             Back to Financial Fundamentals
           </Link>
 
-          <h1 className="mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
             Simple Earning Growth Estimator
           </h1>
 
@@ -45,9 +45,6 @@ const EarningGrowthEstimator = () => {
               <CardTitle>
                 Simple Earning Growth Estimator
               </CardTitle>
-              <CardDescription>
-                Systematic Growth Analysis: ROC-Based Earning Growth Estimation for Existing and New Investments
-              </CardDescription>
             </CardHeader>
             <CardContent className="space-y-3">
               <Button 
@@ -73,12 +70,12 @@ const EarningGrowthEstimator = () => {
 
           <div className="prose prose-slate max-w-none">
             <h3 className="mb-4">What Is the Simple Earning Growth Estimator?</h3>
-            <p className="leading-relaxed mb-4">
+            <p className="text-lg leading-relaxed mb-4">
               The Simple Earning Growth Estimator is a systematic analytical tool that projects future earnings growth based on Return on Capital (ROC) and reinvestment patterns. This model distinguishes between growth from existing investments and growth from new investments, providing a comprehensive framework for understanding the drivers of sustainable earnings growth.
             </p>
 
             <h3 className="mb-4">Why Use the Simple Earning Growth Estimator?</h3>
-            <p className="leading-relaxed mb-4">
+            <p className="text-lg leading-relaxed mb-4">
               Understanding the sources and sustainability of earnings growth is crucial for:
             </p>
             <ul className="list-disc pl-6 mb-4 space-y-2">
@@ -91,7 +88,7 @@ const EarningGrowthEstimator = () => {
             </ul>
 
             <h3 className="mb-4">How Does the Simple Earning Growth Estimator Work?</h3>
-            <p className="leading-relaxed mb-4">
+            <p className="text-lg leading-relaxed mb-4">
               The model employs a systematic approach to decompose earnings growth into its fundamental components:
             </p>
 
@@ -110,12 +107,12 @@ const EarningGrowthEstimator = () => {
             </ul>
 
             <h4 className="mb-3">Growth Calculation Framework</h4>
-            <p className="leading-relaxed mb-4">
+            <p className="text-lg leading-relaxed mb-4">
               The model calculates growth using the fundamental relationship: <strong>Growth = Return on Capital × Reinvestment Rate</strong>. This approach provides insights into both the quality and quantity of growth, enabling more accurate long-term projections.
             </p>
 
             <h3 className="text-xl font-semibold mb-4">Key Applications and Limitations</h3>
-            <p className="leading-relaxed mb-4">
+            <p className="text-lg leading-relaxed mb-4">
               This tool is particularly valuable for equity analysts, corporate strategists, and long-term investors focused on sustainable growth companies. However, the model's effectiveness depends on the quality of input assumptions about future returns on capital and competitive dynamics. Users should consider industry life cycles, competitive positioning, and macroeconomic factors when applying the results.
             </p>
 

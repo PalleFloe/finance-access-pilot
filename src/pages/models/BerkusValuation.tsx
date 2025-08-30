@@ -31,14 +31,12 @@ const BerkusValuation = () => {
             Back to Startup Valuations
           </Link>
 
-          {/* Main Headline */}
-          <h1 className="mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
             Berkus Valuation Model
           </h1>
 
-          {/* Sub-headline */}
           <h2 className="mb-8">
-            Content: Model, Introduction and Complete Guidance
+            Pre-Revenue Valuation based on Assessment of Five Key Factors and Scenario Modelling
           </h2>
 
           {/* Model Card */}
@@ -47,9 +45,6 @@ const BerkusValuation = () => {
               <CardTitle>
                 Berkus Valuation Model
               </CardTitle>
-              <CardDescription>
-                Pre-Revenue Valuation based on Assessment of Five Key Factors and Scenario Modelling
-              </CardDescription>
             </CardHeader>
             <CardContent className="space-y-3">
               <Button 

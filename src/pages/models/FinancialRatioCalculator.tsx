@@ -31,7 +31,7 @@ const FinancialRatioCalculator = () => {
             Back to Financial Fundamentals
           </Link>
 
-          <h1 className="mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
             Financial Ratio Calculator
           </h1>
 
@@ -44,9 +44,6 @@ const FinancialRatioCalculator = () => {
               <CardTitle>
                 Financial Ratio Calculator
               </CardTitle>
-              <CardDescription>
-                Comprehensive Financial Analysis: Investment Returns, Profitability, Efficiency, and Market Valuation Ratios
-              </CardDescription>
             </CardHeader>
             <CardContent className="space-y-3">
               <Button 
@@ -72,12 +69,12 @@ const FinancialRatioCalculator = () => {
 
           <div className="prose prose-slate max-w-none">
             <h3 className="mb-4">What Is the Financial Ratio Calculator?</h3>
-            <p className="leading-relaxed mb-4">
+            <p className="text-lg leading-relaxed mb-4">
               The Financial Ratio Calculator is a comprehensive analytical tool that computes key financial ratios across four critical categories: Investment Returns, Profitability, Efficiency, and Market Valuation. This model provides instant calculation and interpretation of over 20 essential financial ratios used in business analysis and investment decision-making.
             </p>
 
             <h3 className="mb-4">Why Use the Financial Ratio Calculator?</h3>
-            <p className="leading-relaxed mb-4">
+            <p className="text-lg leading-relaxed mb-4">
               Financial ratio analysis is fundamental to understanding business performance:
             </p>
             <ul className="list-disc pl-6 mb-4 space-y-2">
@@ -90,7 +87,7 @@ const FinancialRatioCalculator = () => {
             </ul>
 
             <h3 className="mb-4">How Does the Financial Ratio Calculator Work?</h3>
-            <p className="leading-relaxed mb-4">
+            <p className="text-lg leading-relaxed mb-4">
               The calculator is organized into four comprehensive categories:
             </p>
 
@@ -126,7 +123,7 @@ const FinancialRatioCalculator = () => {
             </ul>
 
             <h3 className="text-xl font-semibold mb-4">Key Applications and Limitations</h3>
-            <p className="leading-relaxed mb-4">
+            <p className="text-lg leading-relaxed mb-4">
               This tool is essential for financial analysts, investors, lenders, and business managers. However, users should remember that ratios are most meaningful when compared to industry benchmarks and historical trends. Single-period ratios may not capture cyclical variations or one-time events that could distort analysis.
             </p>
 
