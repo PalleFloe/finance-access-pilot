@@ -67,17 +67,17 @@ const FinancialRatioCalculator = () => {
             </CardContent>
           </Card>
 
-          <div className="prose prose-slate max-w-none">
-            <h3 className="mb-4">What Is the Financial Ratio Calculator?</h3>
+          <div className="max-w-none">
+            <h3 className="text-xl font-semibold mb-4">What Is the Financial Ratio Calculator?</h3>
             <p className="text-lg leading-relaxed mb-4">
               The Financial Ratio Calculator is a comprehensive analytical tool that computes key financial ratios across four critical categories: Investment Returns, Profitability, Efficiency, and Market Valuation. This model provides instant calculation and interpretation of over 20 essential financial ratios used in business analysis and investment decision-making.
             </p>
 
-            <h3 className="mb-4">Why Use the Financial Ratio Calculator?</h3>
+            <h3 className="text-xl font-semibold mb-4">Why Use the Financial Ratio Calculator?</h3>
             <p className="text-lg leading-relaxed mb-4">
               Financial ratio analysis is fundamental to understanding business performance:
             </p>
-            <ul className="list-disc pl-6 mb-4 space-y-2">
+            <ul className="list-disc pl-6 mb-4 space-y-2 text-lg">
               <li><strong>Performance evaluation:</strong> Assess company performance across multiple dimensions</li>
               <li><strong>Comparative analysis:</strong> Compare companies within the same industry or against benchmarks</li>
               <li><strong>Trend analysis:</strong> Track performance changes over time</li>
@@ -86,36 +86,36 @@ const FinancialRatioCalculator = () => {
               <li><strong>Management assessment:</strong> Identify areas for operational improvement</li>
             </ul>
 
-            <h3 className="mb-4">How Does the Financial Ratio Calculator Work?</h3>
+            <h3 className="text-xl font-semibold mb-4">How Does the Financial Ratio Calculator Work?</h3>
             <p className="text-lg leading-relaxed mb-4">
               The calculator is organized into four comprehensive categories:
             </p>
 
-            <h4 className="mb-3">Investment Returns Ratios</h4>
-            <ul className="list-disc pl-6 mb-4 space-y-1">
+            <h4 className="text-lg font-semibold mb-3">Investment Returns Ratios</h4>
+            <ul className="list-disc pl-6 mb-4 space-y-1 text-lg">
               <li>Return on Assets (ROA) - measures asset utilization efficiency</li>
               <li>Return on Equity (ROE) - evaluates returns to shareholders</li>
               <li>Return on Invested Capital (ROIC) - assesses capital allocation effectiveness</li>
             </ul>
 
-            <h4 className="mb-3">Profitability Ratios</h4>
-            <ul className="list-disc pl-6 mb-4 space-y-1">
+            <h4 className="text-lg font-semibold mb-3">Profitability Ratios</h4>
+            <ul className="list-disc pl-6 mb-4 space-y-1 text-lg">
               <li>Gross Profit Margin - measures production efficiency</li>
               <li>Operating Margin - evaluates operational profitability</li>
               <li>Net Profit Margin - assesses overall profitability</li>
               <li>EBITDA Margin - analyzes operating performance</li>
             </ul>
 
-            <h4 className="mb-3">Efficiency Ratios</h4>
-            <ul className="list-disc pl-6 mb-4 space-y-1">
+            <h4 className="text-lg font-semibold mb-3">Efficiency Ratios</h4>
+            <ul className="list-disc pl-6 mb-4 space-y-1 text-lg">
               <li>Asset Turnover - measures asset utilization</li>
               <li>Inventory Turnover - evaluates inventory management</li>
               <li>Receivables Turnover - assesses collection efficiency</li>
               <li>Working Capital Efficiency - analyzes short-term asset management</li>
             </ul>
 
-            <h4 className="mb-3">Market Valuation Ratios</h4>
-            <ul className="list-disc pl-6 mb-4 space-y-1">
+            <h4 className="text-lg font-semibold mb-3">Market Valuation Ratios</h4>
+            <ul className="list-disc pl-6 mb-4 space-y-1 text-lg">
               <li>Price-to-Earnings (P/E) - compares market price to earnings</li>
               <li>Price-to-Book (P/B) - relates market value to book value</li>
               <li>Enterprise Value ratios - comprehensive valuation metrics</li>
