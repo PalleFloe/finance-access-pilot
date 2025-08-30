@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import { useEffect } from "react";
@@ -53,16 +53,19 @@ const DcfModels = () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-2">
-              <div className="tier-buttons-stacked">
-                <button className="tier-btn tier-1-btn" onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EUKdPviFyahDmS3aH1RN0RsBgS_G6sXGCccik-b2Vry8Qg?action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}>
-                  Online & Free
-                </button>
-                <DownloadButton 
-                  sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ESuQTjH5GIBKrdyX8PxAcNMBUCbYEuq0qbd5IvHuE4GUpA?e=DbTIP7"
-                  modelName="Standard Types of DCF Models"
-                  className="tier-btn tier-2-btn w-full"
-                />
-              </div>
+              <Button 
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EUKdPviFyahDmS3aH1RN0RsBgS_G6sXGCccik-b2Vry8Qg?action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                variant="brand-green"
+                className="w-full"
+              >
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Online & Free
+              </Button>
+              <DownloadButton 
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ESuQTjH5GIBKrdyX8PxAcNMBUCbYEuq0qbd5IvHuE4GUpA?e=DbTIP7"
+                modelName="Standard Types of DCF Models"
+                className="tier-btn tier-2-btn w-full"
+              />
             </CardContent>
           </Card>
 

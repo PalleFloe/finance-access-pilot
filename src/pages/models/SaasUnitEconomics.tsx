@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, Clock } from "lucide-react";
+import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
 import { useEffect } from "react";
 
@@ -51,15 +51,18 @@ const SaasUnitEconomics = () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-2">
-              <div className="tier-buttons-stacked">
-                <button className="tier-btn tier-1-btn" onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EfOt-LHdyddGnCOekB15-A8BSHdSheJlSRR408SobOhe7g?action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}>
-                  Online & Free
-                </button>
-                <button className="tier-btn tier-3-btn" disabled>
-                  Download & Subscription
-                  <span className="coming-soon-badge">Coming Soon</span>
-                </button>
-              </div>
+              <Button 
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EfOt-LHdyddGnCOekB15-A8BSHdSheJlSRR408SobOhe7g?action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                variant="brand-green"
+                className="w-full"
+              >
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Online & Free
+              </Button>
+              <button className="tier-btn tier-3-btn" disabled>
+                Download & Subscription
+                <span className="coming-soon-badge">Coming Soon</span>
+              </button>
             </CardContent>
           </Card>
 
