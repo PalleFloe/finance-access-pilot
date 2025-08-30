@@ -49,7 +49,7 @@ const FinancialRatioCalculator = () => {
             <CardContent className="space-y-3">
               <Button 
                 onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaXBgE9jmTRFtoU6i4W-ooMBp58WK4ES7wxCiUIb5ZtxjA?action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-                variant="outline"
+                variant="brand-green"
                 className="w-full"
               >
                 <ExternalLink className="w-4 h-4 mr-2" />
