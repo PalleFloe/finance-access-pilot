@@ -10,7 +10,7 @@ const ToolboxSection = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h3 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
-            Financial Decision Toolbox
+            Toolbox of Financial Decision Models
           </h3>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
             The toolbox provides professionals and students with proven methodologies designed to help structure and make complex financial decisions. If you want to make better financial models on your own, hopefully the toolbox can also inspire and help you.
