@@ -12,7 +12,9 @@ const CostOfCapitalCalculator = () => {
   }, []);
 
   const openModel = (sharePointUrl: string) => {
-    window.open(sharePointUrl, '_blank', 'width=1200,height=800');
+    console.log('openModel: CostOfCapitalCalculator ->', sharePointUrl);
+    const win = window.open(sharePointUrl, '_blank', 'width=1200,height=800,scrollbars=yes,resizable=yes');
+    if (!win) console.warn('window.open was blocked by the browser');
   };
 
 
