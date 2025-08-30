@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
 import { useEffect } from "react";
 
@@ -58,14 +59,13 @@ const DecisionAnalysis = () => {
                 <ExternalLink className="w-4 h-4 mr-2" />
                 Online & Free
               </Button>
-              <Button
-                variant="outline"
-                className="w-full"
-                disabled
-              >
-                Download & Subscription
-                <span className="coming-soon-badge">Coming Soon</span>
-              </Button>
+              <button className="tier-btn tier-3-btn w-full flex items-center justify-between" disabled>
+                <span>Download & Subscription</span>
+                <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
+                  <Clock className="w-3 h-3 mr-1" />
+                  Coming Soon
+                </Badge>
+              </button>
               <div className="mt-1 pt-1 text-xs text-muted-foreground">
                 <strong className="text-primary">Quick Access Guide:</strong><br />
                 <span>Click "Online & Free" for instant online preview (no registration)</span>
