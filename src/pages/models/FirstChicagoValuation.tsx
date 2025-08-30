@@ -58,10 +58,14 @@ const FirstChicagoValuation = () => {
                 <ExternalLink className="w-4 h-4 mr-2" />
                 Online & Free
               </Button>
-              <button className="tier-btn tier-3-btn" disabled>
+              <Button
+                variant="outline"
+                className="w-full"
+                disabled
+              >
                 Download & Subscription
                 <span className="coming-soon-badge">Coming Soon</span>
-              </button>
+              </Button>
               <div className="mt-1 pt-1 text-xs text-muted-foreground">
                 <strong className="text-primary">Quick Access Guide:</strong><br />
                 <span>Click "Online & Free" for instant online preview (no registration)</span>
