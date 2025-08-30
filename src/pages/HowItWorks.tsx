@@ -98,7 +98,7 @@ const HowItWorks = () => {
       },
       {
         label: "TIER 6",
-        title: "Support Services", 
+        title: "Consulting Services", 
         bullets: [
           "Challenge, evaluate and improve a project or process",
           "Support modelling to be structured into insights to make better decisions",
@@ -262,7 +262,7 @@ const HowItWorks = () => {
         <div className="bg-white rounded-lg shadow-sm p-6 mb-16">
           <div className="mb-5">
             <h2 className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200 text-brand-blue">
-              Consulting & Customization Services
+              Customization & Consulting Services
             </h2>
             <p className="text-lg text-slate-600 mb-5">
               Tailored solutions and expert guidance for your specific needs
