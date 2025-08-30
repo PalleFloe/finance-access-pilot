@@ -115,14 +115,13 @@ const RiskFactorSummation = () => {
                 <p className="text-xs text-slate-500 text-center">
                   ✨ Free access • No registration • Use immediately in your browser
                 </p>
+                <div className="mt-4 pt-4 border-t text-xs text-muted-foreground">
+                  <strong className="text-primary">Quick Access Guide:</strong><br />
+                  <span>Click "Online & Free" for instant online preview (no registration)</span>
+                </div>
               </div>
             </CardContent>
           </Card>
-
-          <div className="bg-muted p-4 rounded-lg mb-4 text-sm text-muted-foreground">
-            <strong className="text-primary">Quick Access Guide:</strong><br />
-            <span>Click "Online & Free" for instant online preview (no registration)</span>
-          </div>
         </div>
       </section>
     </div>

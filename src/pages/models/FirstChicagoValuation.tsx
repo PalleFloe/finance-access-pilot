@@ -40,7 +40,7 @@ const FirstChicagoValuation = () => {
           </h2>
 
           {/* Model Card */}
-          <Card className="shadow-lg border-slate-200 mb-3 max-w-md">
+          <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
             <CardHeader>
               <CardTitle>
                 First Chicago Valuation Model
@@ -62,13 +62,12 @@ const FirstChicagoValuation = () => {
                 Download & Subscription
                 <span className="coming-soon-badge">Coming Soon</span>
               </button>
+              <div className="mt-4 pt-4 border-t text-xs text-muted-foreground">
+                <strong className="text-primary">Quick Access Guide:</strong><br />
+                <span>Click "Online & Free" for instant online preview (no registration)</span>
+              </div>
             </CardContent>
           </Card>
-
-          <div className="bg-muted p-4 rounded-lg mb-4 text-sm text-muted-foreground">
-            <strong className="text-primary">Quick Access Guide:</strong><br />
-            <span>Click "Online & Free" for instant online preview (no registration)</span>
-          </div>
 
           {/* Introduction Headline */}
           <h3 className="mb-6">First Chicago Valuation Model Introduction</h3>

@@ -40,7 +40,7 @@ const VentureCapitalMethod = () => {
           </h2>
 
           {/* Model Card */}
-          <Card className="shadow-lg border-slate-200 mb-3 max-w-md">
+          <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
             <CardHeader>
               <CardTitle>
                 Venture Capital Valuation Model
@@ -66,13 +66,12 @@ const VentureCapitalMethod = () => {
                 Download & Subscription
                 <span className="ml-2 text-xs bg-slate-200 text-slate-500 px-2 py-1 rounded">Coming Soon</span>
               </Button>
+              <div className="mt-4 pt-4 border-t text-xs text-muted-foreground">
+                <strong className="text-primary">Quick Access Guide:</strong><br />
+                <span>Click "Online & Free" for instant online preview (no registration)</span>
+              </div>
             </CardContent>
           </Card>
-
-          <div className="bg-muted p-4 rounded-lg mb-4 text-sm text-muted-foreground">
-            <strong className="text-primary">Quick Access Guide:</strong><br />
-            <span>Click "Online & Free" for instant online preview (no registration)</span>
-          </div>
 
           {/* Introduction Headline */}
           <h3 className="mb-6">Venture Capital Valuation Model Introduction</h3>

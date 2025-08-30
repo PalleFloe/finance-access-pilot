@@ -42,7 +42,7 @@ const PerpetuityExitValuation = () => {
           </h2>
 
           {/* Model Card */}
-          <Card className="shadow-lg border-slate-200 mb-3 max-w-md">
+          <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
             <CardHeader>
               <CardTitle>
                 Perpetuity & Exit Valuation Models
@@ -65,14 +65,13 @@ const PerpetuityExitValuation = () => {
                 modelName="Perpetuity and Exit Models"
                 className="w-full"
               />
+              <div className="mt-4 pt-4 border-t text-xs text-muted-foreground">
+                <strong className="text-primary">Quick Access Guide:</strong><br />
+                <span>Click "Online & Free" for instant online preview (no registration)</span>
+                <br /><span>Click "Download & Free" for browser embedded Excel with download capability (registration required)</span>
+              </div>
             </CardContent>
           </Card>
-
-          <div className="bg-muted p-4 rounded-lg mb-4 text-sm text-muted-foreground">
-            <strong className="text-primary">Quick Access Guide:</strong><br />
-            <span>Click "Online & Free" for instant online preview (no registration)</span>
-            <br /><span>Click "Download & Free" for browser embedded Excel with download capability (registration required)</span>
-          </div>
 
           {/* Introduction Headline */}
           <h3 className="mb-6">Professional Perpetuity & Exit Valuation Models Introduction</h3>
