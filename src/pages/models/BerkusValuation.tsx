@@ -68,8 +68,8 @@ const BerkusValuation = () => {
             </CardContent>
           </Card>
 
-          <div style={{background: '#f8fafc', padding: '12px 16px', borderRadius: '6px', margin: '20px 0', fontSize: '14px', color: '#64748b'}}>
-            <strong style={{color: '#326496'}}>Quick Access Guide:</strong><br />
+          <div className="bg-slate-50 p-4 rounded-lg mb-8 text-sm text-slate-600">
+            <strong className="text-primary">Quick Access Guide:</strong><br />
             <span>Click "Online & Free" for instant online preview (no registration)</span>
             <br /><span>Click "Download & Free" for browser embedded Excel with download capability (registration required)</span>
           </div>
