@@ -18,9 +18,9 @@ const HowItWorks = () => {
         badge: { text: "Available", status: "available" },
         title: "Try It Free!",
         bullets: [
-          "Online Excel embedded",
+          "Browser embedded Excel",
           "All standard models available", 
-          "View and interact in browser",
+          "View only in browser",
           "No registration required",
           "Unlimited time, no download"
         ],
@@ -34,11 +34,11 @@ const HowItWorks = () => {
         badge: { text: "Available", status: "available" },
         title: "Free Models & Download",
         bullets: [
-          "Download Excel models",
+          "Browser embedded Excel with download capability",
           "Simple/academic models available",
-          "Protected Excel files", 
+          "Interactive Excel files", 
           "Email registration required",
-          "Unlimited time, inspirational/educational use"
+          "Unlimited time, Excel protected files"
         ],
         buttonText: "Go to Toolbox",
         buttonLink: "/toolbox",
@@ -52,11 +52,11 @@ const HowItWorks = () => {
         badge: { text: "Coming Soon", status: "coming-soon" },
         title: "Model Download & Subscription",
         bullets: [
-          "Full model access & download",
-          "Commercial use rights included",
-          "Monthly/annual subscription options",
-          "Premium model library access",
-          "Email support included"
+          "Online Excel embedded with download capability",
+          "All models available",
+          "Annual subscription fee",
+          "Email registration and pay via Stripe",
+          "Unlimited time, Excel protected files"
         ],
         buttonText: "Coming Soon",
         buttonLink: "#",
@@ -68,11 +68,11 @@ const HowItWorks = () => {
         badge: { text: "Coming Soon", status: "coming-soon" },
         title: "Model Download & Own",
         bullets: [
-          "Perpetual license ownership",
-          "Full commercial use rights",
+          "Online Excel embedded with download capability",
+          "All models available",
           "One-time purchase per model",
-          "Lifetime access to purchased models",
-          "Priority email support"
+          "Email registration and pay via Stripe",
+          "Unlimited time, Excel unprotected files"
         ],
         buttonText: "Coming Soon", 
         buttonLink: "#",
@@ -85,11 +85,11 @@ const HowItWorks = () => {
         label: "TIER 5",
         title: "Model Customization",
         bullets: [
-          "Tailored model modifications",
-          "Industry-specific adaptations",
-          "Custom branding & styling",
-          "Integration consulting",
-          "Dedicated project manager"
+          "Custom model development",
+          "Based on standard models or other models",
+          "Based on your requirements, dialogue and feedback loops",
+          "Full ownership of custom model",
+          "Hourly consulting rate"
         ],
         buttonText: "Schedule Consultation",
         buttonLink: "/contact",
@@ -100,11 +100,11 @@ const HowItWorks = () => {
         label: "TIER 6",
         title: "Support Services", 
         bullets: [
-          "Model training & workshops",
-          "Implementation guidance",
-          "Best practices consulting",
-          "Ongoing support packages",
-          "Expert advisory sessions"
+          "Challenge, evaluate and improve a project or process",
+          "Support modelling to be structured into insights to make better decisions",
+          "Help to make proper scenarios to better manage risk and bias",
+          "Process or project evaluation and guidance",
+          "Service can be for a period or for specific sessions / tasks"
         ],
         buttonText: "Schedule Consultation",
         buttonLink: "/contact",
@@ -115,11 +115,7 @@ const HowItWorks = () => {
         label: "TIER 7",
         title: "E2E Project Leadership",
         bullets: [
-          "Complete project management",
-          "End-to-end solution delivery",
-          "Cross-functional team coordination",
-          "Strategic planning & execution",
-          "Executive reporting & insights"
+          "Role, responsibilities and time to be defined with customer"
         ],
         buttonText: "Schedule Consultation",
         buttonLink: "/contact", 
@@ -233,7 +229,7 @@ const HowItWorks = () => {
               Self-Service & Free Access
             </h2>
             <p className="text-lg text-slate-600 mb-5">
-              Perfect for exploration, learning, and understanding our models before committing
+              Perfect for learning, inspiration and understanding the models
             </p>
           </div>
           
@@ -251,7 +247,7 @@ const HowItWorks = () => {
               Self-Service & Paid Access
             </h2>
             <p className="text-lg text-slate-600 mb-5">
-              Professional models with commercial use rights and advanced features
+              Professional models with commercial use rights
             </p>
           </div>
           
