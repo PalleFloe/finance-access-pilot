@@ -9,14 +9,11 @@ const ToolboxSection = () => {
     <section id="toolbox" className="py-16 px-6 bg-slate-50">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-blue-100 text-blue-800" variant="outline">
-            Financial Decision Toolbox
-          </Badge>
           <h3 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
-            Transform Complex Financial Choices Into Clear Insights and Decisions
+            Financial Decision Toolbox
           </h3>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            The toolbox provides business leaders, entrepreneurs, and financial professionals with proven methodologies to help navigate complex financial decisions. This comprehensive collection of professional models transforms sophisticated financial analysis into practical, accessible tools for real-world applications.
+            The toolbox provides professionals and students with proven methodologies designed to help structure and make complex financial decisions. If you want to make better financial models on your own, hopefully the toolbox can also inspire and help you.
           </p>
           
           <p className="text-lg text-slate-600 max-w-3xl mx-auto italic mt-4 leading-relaxed">
