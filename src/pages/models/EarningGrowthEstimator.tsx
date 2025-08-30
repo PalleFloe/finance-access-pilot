@@ -66,6 +66,14 @@ const EarningGrowthEstimator = () => {
             </CardContent>
           </Card>
 
+          <div className="bg-slate-50 p-4 border-l-4 border-blue-600 my-5 text-sm">
+            <strong>💡 Quick Access Guide:</strong>
+            <ul className="mt-2 ml-5 space-y-1">
+              <li>Click "Online & Free" for instant online preview (no registration)</li>
+              <li>Click "Download & Free" for browser embedded Excel with download capability (registration required)</li>
+            </ul>
+          </div>
+
           <div className="prose prose-slate max-w-none">
             <h3 className="mb-4">What Is the Simple Earning Growth Estimator?</h3>
             <p className="leading-relaxed mb-4">
