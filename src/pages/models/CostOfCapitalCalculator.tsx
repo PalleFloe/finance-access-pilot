@@ -63,7 +63,7 @@ const CostOfCapitalCalculator = () => {
                 modelName="Simple Cost of Capital Calculator"
                 className="w-full"
               />
-              <div className="mt-4 pt-4 border-t text-xs text-muted-foreground">
+              <div className="mt-1 pt-1 text-xs text-muted-foreground">
                 <strong className="text-primary">Quick Access Guide:</strong><br />
                 <span>Click "Online & Free" for instant online preview (no registration)</span>
                 <br /><span>Click "Download & Free" for browser embedded Excel with download capability (registration required)</span>

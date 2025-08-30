@@ -66,7 +66,7 @@ const VentureCapitalMethod = () => {
                 Download & Subscription
                 <span className="ml-2 text-xs bg-slate-200 text-slate-500 px-2 py-1 rounded">Coming Soon</span>
               </Button>
-              <div className="mt-4 pt-4 border-t text-xs text-muted-foreground">
+              <div className="mt-1 pt-1 text-xs text-muted-foreground">
                 <strong className="text-primary">Quick Access Guide:</strong><br />
                 <span>Click "Online & Free" for instant online preview (no registration)</span>
               </div>
