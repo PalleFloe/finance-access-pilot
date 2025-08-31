@@ -1,9 +1,6 @@
-import React, { useState } from "react";
-import { Button } from "@/components/ui/button";
+import React from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Input } from "@/components/ui/input";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 
 interface BlogPost {
@@ -75,11 +72,7 @@ const blogPosts: BlogPost[] = [
   }
 ];
 
-const categories = ["All Posts", "Strategic Finance", "Excel Modeling", "Case Studies", "Model Spotlights"];
-
 const BlogSection = () => {
-  const [email, setEmail] = useState("");
-
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     return date.toLocaleDateString('en-US', { 
@@ -87,18 +80,6 @@ const BlogSection = () => {
       month: 'long', 
       day: 'numeric' 
     });
-  };
-
-  const filterPosts = (category: string) => {
-    if (category === "All Posts") return blogPosts;
-    return blogPosts.filter(post => post.category === category);
-  };
-
-  const handleNewsletterSignup = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle newsletter signup logic here
-    console.log("Newsletter signup:", email);
-    setEmail("");
   };
 
   return (
@@ -110,118 +91,64 @@ const BlogSection = () => {
             Insights & Resources
           </Badge>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-blog-heading">
-            Financial Decision Insights
+            The Blog
           </h1>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Stay informed with expert insights on financial decision-making, 
-            best practices, and industry trends to drive your business forward.
+            Sharing insights, reflections and updates for Financial Decision Models and how it can help you making better financial decisions.
           </p>
         </div>
 
-        {/* Category Filters */}
-        <Tabs defaultValue="All Posts" className="mb-16">
-          <TabsList className="grid grid-cols-2 md:grid-cols-5 w-full max-w-4xl mx-auto mb-12">
-            {categories.map((category) => (
-              <TabsTrigger 
-                key={category} 
-                value={category}
-                className="text-sm font-medium"
-              >
-                {category}
-              </TabsTrigger>
-            ))}
-          </TabsList>
-
-          {categories.map((category) => (
-            <TabsContent key={category} value={category}>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {filterPosts(category).map((post) => (
-                  <Card 
-                    key={post.id} 
-                    className={`group hover:shadow-lg transition-all duration-300 cursor-pointer ${
-                      post.featured ? 'ring-2 ring-brand-green/20' : ''
-                    }`}
-                  >
-                    <div className="aspect-video overflow-hidden rounded-t-lg">
-                      <img 
-                        src={post.image} 
-                        alt={post.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                    <CardHeader className="pb-3">
-                      <div className="flex items-center justify-between mb-3">
-                        <Badge variant="outline" className="text-xs">
-                          {post.category}
-                        </Badge>
-                        {post.featured && (
-                          <Badge className="bg-brand-green text-white text-xs">
-                            Featured
-                          </Badge>
-                        )}
-                      </div>
-                      <CardTitle className="text-xl font-bold text-blog-heading leading-tight group-hover:text-brand-green transition-colors">
-                        {post.title}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <CardDescription className="text-slate-600 mb-4 leading-relaxed">
-                        {post.excerpt}
-                      </CardDescription>
-                      <div className="flex items-center justify-between text-sm text-slate-500">
-                        <div className="flex items-center gap-4">
-                          <div className="flex items-center gap-1">
-                            <Calendar className="w-4 h-4" />
-                            <span>{formatDate(post.date)}</span>
-                          </div>
-                          <div className="flex items-center gap-1">
-                            <Clock className="w-4 h-4" />
-                            <span>{post.readTime}</span>
-                          </div>
-                        </div>
-                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </TabsContent>
-          ))}
-        </Tabs>
-
-        {/* Newsletter Signup Section */}
-        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg max-w-4xl mx-auto">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-blog-heading mb-4">
-              Stay Ahead with Expert Insights
-            </h2>
-            <p className="text-lg text-slate-600 leading-relaxed">
-              Get the latest financial decision-making insights, model updates, and industry best practices 
-              delivered directly to your inbox. Join over 2,500 finance professionals.
-            </p>
-          </div>
-          
-          <form onSubmit={handleNewsletterSignup} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-            <Input
-              type="email"
-              placeholder="Enter your email address"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              className="flex-1"
-            />
-            <Button 
-              type="submit" 
-              variant="brand-green"
-              className="sm:w-auto"
+        {/* Blog Posts Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {blogPosts.map((post) => (
+            <Card 
+              key={post.id} 
+              className={`group hover:shadow-lg transition-all duration-300 cursor-pointer ${
+                post.featured ? 'ring-2 ring-brand-green/20' : ''
+              }`}
             >
-              Subscribe
-            </Button>
-          </form>
-          
-          <p className="text-sm text-slate-500 text-center mt-4">
-            No spam. Unsubscribe anytime. We respect your privacy.
-          </p>
+              <div className="aspect-video overflow-hidden rounded-t-lg">
+                <img 
+                  src={post.image} 
+                  alt={post.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardHeader className="pb-3">
+                <div className="flex items-center justify-between mb-3">
+                  <Badge variant="outline" className="text-xs">
+                    {post.category}
+                  </Badge>
+                  {post.featured && (
+                    <Badge className="bg-brand-green text-white text-xs">
+                      Featured
+                    </Badge>
+                  )}
+                </div>
+                <CardTitle className="text-xl font-bold text-blog-heading leading-tight group-hover:text-brand-green transition-colors">
+                  {post.title}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-slate-600 mb-4 leading-relaxed">
+                  {post.excerpt}
+                </CardDescription>
+                <div className="flex items-center justify-between text-sm text-slate-500">
+                  <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-1">
+                      <Calendar className="w-4 h-4" />
+                      <span>{formatDate(post.date)}</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Clock className="w-4 h-4" />
+                      <span>{post.readTime}</span>
+                    </div>
+                  </div>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
