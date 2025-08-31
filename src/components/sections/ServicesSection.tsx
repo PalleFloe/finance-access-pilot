@@ -25,11 +25,11 @@ const ServicesSection = () => {
 
         <div className="space-y-8">
           {/* Financial Decision Model Toolbox - Primary */}
-          <Card className="shadow-xl border-slate-300 hover:shadow-2xl transition-all duration-300 bg-white backdrop-blur-sm p-2">
-            <CardHeader className="pb-4">
-              <div className="flex items-center space-x-4 mb-6">
-                <div className="w-14 h-14 bg-primary rounded-lg flex items-center justify-center">
-                  <Calculator className="w-7 h-7 text-primary-foreground" />
+          <Card className="shadow-xl border-slate-300 hover:shadow-2xl transition-all duration-300 bg-white backdrop-blur-sm p-4">
+            <CardHeader className="pb-6">
+              <div className="flex items-center space-x-4 mb-8">
+                <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center">
+                  <Calculator className="w-8 h-8 text-primary-foreground" />
                 </div>
                 <div>
                   <CardTitle className="text-[20px] font-semibold text-slate-800">Financial Decision Model Toolbox</CardTitle>
@@ -39,7 +39,7 @@ const ServicesSection = () => {
                 Comprehensive online toolbox for making informed financial decisions
               </CardDescription>
             </CardHeader>
-            <CardContent className="pt-0">
+            <CardContent className="pt-0 px-8 pb-8">
               <div className="space-y-5">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
@@ -88,15 +88,15 @@ const ServicesSection = () => {
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-xs text-slate-700 leading-relaxed">Customization of models for specific company requirements</p>
+                  <p className="text-[14px] text-slate-700 leading-relaxed">Customization of models for specific company requirements</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-xs text-slate-700 leading-relaxed">Challenging, evaluation and improvement of existing financial decision processes</p>
+                  <p className="text-[14px] text-slate-700 leading-relaxed">Challenging, evaluation and improvement of existing financial decision processes</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-xs text-slate-700 leading-relaxed">End-to-end financial and/or process lead or support for driving complex financial decisions</p>
+                  <p className="text-[14px] text-slate-700 leading-relaxed">End-to-end financial and/or process lead or support for driving complex financial decisions</p>
                 </div>
               </div>
               <div className="pt-4 border-t border-slate-100 mt-6">
