@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, ExternalLink } from "lucide-react";
@@ -20,6 +21,10 @@ const CostOfCapitalCalculator = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+      <Helmet>
+        <title>Cost of Capital Calculator - WACC & CAPM Analysis | Financial Decision Models</title>
+        <meta name="description" content="WACC and cost of capital calculator using CAPM methodology. Excel model calculates cost of equity, debt, and weighted average cost of capital. Academic tool, try free online or download." />
+      </Helmet>
       <Header />
       
       <div className="py-12 px-6">

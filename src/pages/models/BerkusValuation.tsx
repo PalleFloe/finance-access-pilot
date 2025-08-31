@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -19,6 +20,10 @@ const BerkusValuation = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+      <Helmet>
+        <title>Berkus Valuation Method - Pre-Revenue Startup Model | Financial Decision Models</title>
+        <meta name="description" content="Berkus Method startup valuation model for pre-revenue companies. Risk-based Excel tool evaluates idea, prototype, team, relationships, and rollout. Try free online, download interactive version." />
+      </Helmet>
       <Header />
       
       <div className="py-12 px-6">

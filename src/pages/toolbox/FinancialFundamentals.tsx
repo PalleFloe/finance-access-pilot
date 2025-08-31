@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -51,6 +52,10 @@ const FinancialFundamentals = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+      <Helmet>
+        <title>Financial Fundamentals - Academic Models | Financial Decision Models</title>
+        <meta name="description" content="Essential financial modeling tools: DCF models, cost of capital calculator, financial ratios, scenario analysis. Academic-quality Excel models for learning and business analysis. Free online access available." />
+      </Helmet>
       <Header />
       
       <div className="py-12 px-6">

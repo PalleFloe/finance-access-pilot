@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import HeroSection from "@/components/sections/HeroSection";
 import ServicesSection from "@/components/sections/ServicesSection";
@@ -6,6 +7,10 @@ import Footer from "@/components/sections/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      <Helmet>
+        <title>Financial Decision Models - Professional Financial Tools</title>
+        <meta name="description" content="Professional financial decision models and startup valuation tools. Free Excel models in browser plus premium downloads. DCF, venture capital method, and business valuation models for entrepreneurs and investors." />
+      </Helmet>
       <Header />
       <HeroSection />
       <ServicesSection />

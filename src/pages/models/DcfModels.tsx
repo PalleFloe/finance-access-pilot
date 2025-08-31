@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, ExternalLink } from "lucide-react";
@@ -23,6 +24,10 @@ const DcfModels = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+      <Helmet>
+        <title>DCF Models - Professional Discounted Cash Flow Analysis | Financial Decision Models</title>
+        <meta name="description" content="Three professional DCF valuation models: Flexible, Three-Stage, and Stable Growth approaches. Excel-based discounted cash flow analysis for business valuation. Try free online, download full versions." />
+      </Helmet>
       <Header />
       
       <div className="py-12 px-6">

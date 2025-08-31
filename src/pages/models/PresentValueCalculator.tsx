@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, ExternalLink } from "lucide-react";
@@ -20,6 +21,10 @@ const PresentValueCalculator = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+      <Helmet>
+        <title>Present Value Calculator - Time Value of Money Analysis | Financial Decision Models</title>
+        <meta name="description" content="Simple present value calculator for time value of money analysis. Excel model covers one-time payments, annuities, growing annuities, and perpetuities. Educational tool, try free online or download." />
+      </Helmet>
       <Header />
       
       <div className="py-12 px-6">

@@ -1,9 +1,14 @@
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/sections/Footer";
 
 const Contact = () => {
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Contact - Get Expert Financial Guidance | Financial Decision Models</title>
+        <meta name="description" content="Contact Palle Floe Nielsen for custom financial modeling, business consulting, and strategic advisory services. Based at BloxHub innovation center in Copenhagen, Denmark. Expert financial guidance." />
+      </Helmet>
       <Header />
       
       <main className="pt-20 pb-16">

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -18,6 +19,10 @@ const DecisionAnalysis = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+      <Helmet>
+        <title>Decision Analysis for Venture Capital - Systematic Investment Model | Financial Decision Models</title>
+        <meta name="description" content="Systematic decision analysis model for venture capital investments. Excel tool evaluates startup risks across life stages with probability-weighted returns. Professional VC methodology. Try free online." />
+      </Helmet>
       <Header />
       
       <div className="py-12 px-6">

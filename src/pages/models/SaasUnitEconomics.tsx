@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -18,6 +19,10 @@ const SaasUnitEconomics = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+      <Helmet>
+        <title>SaaS Unit Economics Model - Professional Valuation Tool | Financial Decision Models</title>
+        <meta name="description" content="Professional SaaS unit economics model analyzing customer lifetime value, acquisition costs, and churn. Excel tool for subscription business valuation. Try free online, download interactive version." />
+      </Helmet>
       <Header />
       
       <div className="py-12 px-6">

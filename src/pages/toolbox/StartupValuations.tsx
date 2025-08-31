@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -51,6 +52,10 @@ const StartupValuations = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+      <Helmet>
+        <title>Startup Valuations - Professional Models | Financial Decision Models</title>
+        <meta name="description" content="Professional startup valuation models: Venture Capital Method, First Chicago, SaaS Unit Economics, Berkus Method. Excel-based tools for entrepreneurs and investors. Try free online, download interactive versions." />
+      </Helmet>
       <Header />
       
       <div className="py-12 px-6">

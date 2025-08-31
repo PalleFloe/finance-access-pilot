@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -9,6 +10,10 @@ import Header from "@/components/Header";
 const RiskFactorSummation = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      <Helmet>
+        <title>Risk Factor Summation - Startup Risk Assessment | Financial Decision Models</title>
+        <meta name="description" content="Risk factor summation model for comprehensive startup risk assessment. Excel tool evaluates multiple risk factors with weighted scoring methodology. Professional risk analysis for investment decisions." />
+      </Helmet>
       <Header />
       
       <section className="py-12 px-6">

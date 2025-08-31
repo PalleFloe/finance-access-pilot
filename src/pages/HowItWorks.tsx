@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/sections/Footer";
 import ConsultationForm from "@/components/ConsultationForm";
@@ -203,6 +204,10 @@ const HowItWorks = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      <Helmet>
+        <title>How It Works - Access Financial Models | Financial Decision Models</title>
+        <meta name="description" content="Access financial models through 4 tiers: Free online preview, free downloads with registration, premium subscriptions, and full ownership. Excel models designed for entrepreneurs, investors, and advisors." />
+      </Helmet>
       <Header />
       
       <main className="container mx-auto max-w-6xl px-6 py-16">

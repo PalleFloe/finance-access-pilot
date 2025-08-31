@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -18,6 +19,10 @@ const FirstChicagoValuation = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+      <Helmet>
+        <title>First Chicago Method - Scenario-Based Startup Valuation | Financial Decision Models</title>
+        <meta name="description" content="First Chicago startup valuation model with scenario-based DCF analysis. Excel tool models downside, base, and upside cases with probability weighting. Try free online, download full version." />
+      </Helmet>
       <Header />
       
       <div className="py-12 px-6">
