@@ -68,8 +68,6 @@ I've also done the 1st or 7th beta version of financialdecisionmodels.com. At le
 
 **Pictures:** 1st picture is me arriving last week with a smile and my IT equipment. 2nd picture is the view from my seat. Both Langebro and Lille Langebro bridges are up to give a pass through for someone who probably have been successful making financial choices.
 
-![Palle arriving at BloxHub](/lovable-uploads/d2201eed-63ea-4d50-85fd-ddc012795f68.png)
-
 ![Harbor view from BloxHub](/lovable-uploads/8e3d29a3-8a98-41d8-abfb-9a4289a78abc.png)`,
     date: "2025-09-01",
     readTime: "1 min read",
