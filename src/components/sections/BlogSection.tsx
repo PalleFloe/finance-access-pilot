@@ -78,9 +78,6 @@ const BlogSection = () => {
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-green-100 text-green-800" variant="outline">
-            Insights & Resources
-          </Badge>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-blog-heading">
             The Blog
           </h1>
