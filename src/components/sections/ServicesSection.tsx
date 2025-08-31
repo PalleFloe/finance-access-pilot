@@ -32,10 +32,10 @@ const ServicesSection = () => {
                   <Calculator className="w-7 h-7 text-primary-foreground" />
                 </div>
                 <div>
-                  <CardTitle className="text-xl font-semibold text-slate-800">Financial Decision Model Toolbox</CardTitle>
+                  <CardTitle className="text-[20px] font-semibold text-slate-800">Financial Decision Model Toolbox</CardTitle>
                 </div>
               </div>
-              <CardDescription className="text-base text-slate-600">
+              <CardDescription className="text-[16px] text-slate-600">
                 Comprehensive online toolbox for making informed financial decisions
               </CardDescription>
             </CardHeader>
@@ -43,23 +43,23 @@ const ServicesSection = () => {
               <div className="space-y-5">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-sm text-slate-700 leading-relaxed">Guidance on selecting appropriate financial decision models for specific business needs</p>
+                  <p className="text-[14px] text-slate-700 leading-relaxed">Guidance on selecting appropriate financial decision models for specific business needs</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-sm text-slate-700 leading-relaxed">Clear guidance on concepts, terminology, and best practices</p>
+                  <p className="text-[14px] text-slate-700 leading-relaxed">Clear guidance on concepts, terminology, and best practices</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-sm text-slate-700 leading-relaxed">Support for developing sound assumptions and estimates</p>
+                  <p className="text-[14px] text-slate-700 leading-relaxed">Support for developing sound assumptions and estimates</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-sm text-slate-700 leading-relaxed">User-friendly models with standardized structure, proper calculations, and built-in sensitivity analysis</p>
+                  <p className="text-[14px] text-slate-700 leading-relaxed">User-friendly models with standardized structure, proper calculations, and built-in sensitivity analysis</p>
                 </div>
               </div>
               <div className="pt-6 border-t border-slate-100 mt-8">
-                <Button asChild variant="brand-green" className="text-left justify-start px-0 bg-transparent hover:bg-transparent text-brand-green hover:text-brand-green/80">
+                <Button asChild variant="brand-green" className="text-left justify-start px-4">
                   <Link to="/toolbox">
                     Explore Free Tools
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -70,17 +70,17 @@ const ServicesSection = () => {
           </Card>
 
           {/* Expert Consulting Services - Secondary */}
-          <Card className="shadow-md border-slate-200 hover:shadow-lg transition-all duration-300 bg-slate-50 backdrop-blur-sm">
+          <Card className="shadow-md border-slate-200 hover:shadow-lg transition-all duration-300 bg-white backdrop-blur-sm">
             <CardHeader className="pb-3">
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
                   <Users className="w-5 h-5 text-primary-foreground" />
                 </div>
                 <div>
-                  <CardTitle className="text-lg font-semibold text-slate-800">Expert Consulting Services</CardTitle>
+                  <CardTitle className="text-[18px] font-semibold text-slate-800">Expert Consulting Services</CardTitle>
                 </div>
               </div>
-              <CardDescription className="text-sm text-slate-600">
+              <CardDescription className="text-[14px] text-slate-600">
                 Consulting solutions for complex decisions and processes
               </CardDescription>
             </CardHeader>
@@ -102,7 +102,7 @@ const ServicesSection = () => {
               <div className="pt-4 border-t border-slate-100 mt-6">
                 <Button 
                   variant="brand-green" 
-                  className="text-left justify-start px-0 bg-transparent hover:bg-transparent text-brand-green hover:text-brand-green/80"
+                  className="text-left justify-start px-4"
                   onClick={() => setIsConsultationFormOpen(true)}
                 >
                   Schedule Consultation
