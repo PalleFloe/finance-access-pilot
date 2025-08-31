@@ -15,7 +15,7 @@ const ServicesSection = () => {
         isOpen={isConsultationFormOpen} 
         onClose={() => setIsConsultationFormOpen(false)} 
       />
-    <section id="consulting" className="pt-4 pb-20 px-6 bg-gradient-to-b from-slate-50/50 to-white border-t border-slate-100">
+    <section id="consulting" className="pt-2 pb-20 px-6 bg-gradient-to-b from-slate-50/50 to-white border-t border-slate-100">
       <div className="container mx-auto max-w-6xl">
         <div className="text-left mb-4">
           <Badge className="mb-2 bg-blue-100 text-blue-800 text-[13pt] px-4 py-2" variant="outline">
@@ -87,7 +87,7 @@ const ServicesSection = () => {
                 </div>
               </div>
               <div className="pt-3 border-t border-slate-100 mt-4">
-                <Button asChild variant="brand-green" className="text-left justify-start px-4">
+                <Button asChild variant="brand-green" className="text-left justify-start px-4 w-96">
                   <Link to="/toolbox">
                     Explore Free Tools
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -153,7 +153,7 @@ const ServicesSection = () => {
               <div className="pt-3 border-t border-slate-100 mt-4">
                 <Button 
                   variant="brand-green" 
-                  className="text-left justify-start px-4"
+                  className="text-left justify-start px-4 w-96"
                   onClick={() => setIsConsultationFormOpen(true)}
                 >
                   Schedule Consultation
