@@ -66,10 +66,14 @@ Questions about implementing these approaches in your specific situation? Ideas 
 
 I've also done the 1st or 7th beta version of financialdecisionmodels.com. At least enough 'beta' that it is not completely embarrassing (I hope) to share it with others.
 
-**Pictures:** 1st picture is me arriving last week with a smile and my IT equipment. 2nd picture is the view from my seat. Both Langebro and Lille Langebro bridges are up to give a pass through for someone who probably have been successful making financial choices.`,
+**Pictures:** 1st picture is me arriving last week with a smile and my IT equipment. 2nd picture is the view from my seat. Both Langebro and Lille Langebro bridges are up to give a pass through for someone who probably have been successful making financial choices.
+
+![Palle arriving at BloxHub](/lovable-uploads/d2201eed-63ea-4d50-85fd-ddc012795f68.png)
+
+![Harbor view from BloxHub](/lovable-uploads/8e3d29a3-8a98-41d8-abfb-9a4289a78abc.png)`,
     date: "2025-09-01",
     readTime: "1 min read",
-    image: "/lovable-uploads/7eaac891-c129-4f96-9a8c-da5889bd2d1f.png",
+    image: "/lovable-uploads/d2201eed-63ea-4d50-85fd-ddc012795f68.png",
     featured: false
   }
 ];
@@ -105,6 +109,22 @@ const BlogSection = () => {
             {paragraph.slice(2, -2)}
           </h3>
         );
+      }
+      // Handle markdown images
+      if (paragraph.startsWith('![') && paragraph.includes('](')) {
+        const match = paragraph.match(/!\[(.*?)\]\((.*?)\)/);
+        if (match) {
+          const [, altText, src] = match;
+          return (
+            <div key={index} className="my-6">
+              <img 
+                src={src} 
+                alt={altText}
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
+          );
+        }
       }
       return (
         <p key={index} className="text-lg text-slate-600 mb-4 leading-relaxed font-garamond">
