@@ -7,10 +7,9 @@ interface BlogPost {
   id: string;
   title: string;
   excerpt: string;
-  category: string;
   date: string;
   readTime: string;
-  image: string;
+  image?: string;
   featured?: boolean;
 }
 
@@ -19,7 +18,6 @@ const blogPosts: BlogPost[] = [
     id: "1",
     title: "Strategic Finance Best Practices for Growing Companies",
     excerpt: "Learn how to build robust financial frameworks that scale with your business growth and support strategic decision-making.",
-    category: "Strategic Finance",
     date: "2024-01-15",
     readTime: "8 min read",
     image: "/lovable-uploads/50c4551d-af55-4e28-a327-3aeb92945cda.png",
@@ -29,7 +27,6 @@ const blogPosts: BlogPost[] = [
     id: "2",
     title: "Excel Modeling Fundamentals: Building Dynamic Financial Models",
     excerpt: "Master the art of creating flexible, scalable Excel models that adapt to changing business scenarios and requirements.",
-    category: "Excel Modeling",
     date: "2024-01-12",
     readTime: "12 min read",
     image: "/lovable-uploads/676443da-8f1c-498f-b5b0-617c3b12a6c0.png"
@@ -38,7 +35,6 @@ const blogPosts: BlogPost[] = [
     id: "3",
     title: "Case Study: SaaS Startup Valuation Using Multiple Methods",
     excerpt: "A comprehensive analysis of how different valuation methodologies were applied to determine fair value for a Series A SaaS company.",
-    category: "Case Studies",
     date: "2024-01-10",
     readTime: "15 min read",
     image: "/lovable-uploads/6d231596-883b-484b-86b3-0e8476eb7ccb.png"
@@ -47,16 +43,13 @@ const blogPosts: BlogPost[] = [
     id: "4",
     title: "Model Spotlight: The Power of Scenario Analysis",
     excerpt: "Deep dive into how scenario modeling can transform your financial planning and risk assessment capabilities.",
-    category: "Model Spotlights",
     date: "2024-01-08",
-    readTime: "10 min read",
-    image: "/lovable-uploads/98787598-c310-4cf2-bca4-9f265a379e60.png"
+    readTime: "10 min read"
   },
   {
     id: "5",
     title: "Advanced DCF Modeling Techniques for Complex Businesses",
     excerpt: "Explore sophisticated approaches to discounted cash flow modeling for multi-segment and emerging market companies.",
-    category: "Excel Modeling",
     date: "2024-01-05",
     readTime: "14 min read",
     image: "/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png"
@@ -65,10 +58,8 @@ const blogPosts: BlogPost[] = [
     id: "6",
     title: "Building Financial Decision Frameworks for Executive Teams",
     excerpt: "How to create structured approaches that help leadership teams make better, faster financial decisions.",
-    category: "Strategic Finance",
     date: "2024-01-03",
-    readTime: "11 min read",
-    image: "/lovable-uploads/50c4551d-af55-4e28-a327-3aeb92945cda.png"
+    readTime: "11 min read"
   }
 ];
 
@@ -99,7 +90,7 @@ const BlogSection = () => {
         </div>
 
         {/* Blog Posts Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {blogPosts.map((post) => (
             <Card 
               key={post.id} 
@@ -107,30 +98,27 @@ const BlogSection = () => {
                 post.featured ? 'ring-2 ring-brand-green/20' : ''
               }`}
             >
-              <div className="aspect-video overflow-hidden rounded-t-lg">
-                <img 
-                  src={post.image} 
-                  alt={post.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <CardHeader className="pb-3">
-                <div className="flex items-center justify-between mb-3">
-                  <Badge variant="outline" className="text-xs">
-                    {post.category}
-                  </Badge>
-                  {post.featured && (
-                    <Badge className="bg-brand-green text-white text-xs">
-                      Featured
-                    </Badge>
-                  )}
+              {post.image && (
+                <div className="aspect-video overflow-hidden rounded-t-lg">
+                  <img 
+                    src={post.image} 
+                    alt={post.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
-                <CardTitle className="text-xl font-bold text-blog-heading leading-tight group-hover:text-brand-green transition-colors">
+              )}
+              <CardHeader className={post.image ? "pb-3" : "pb-3 pt-8"}>
+                {post.featured && (
+                  <Badge className="bg-brand-green text-white text-xs mb-3 w-fit">
+                    Featured
+                  </Badge>
+                )}
+                <CardTitle className="text-2xl font-bold text-[#326496] leading-tight group-hover:text-brand-green transition-colors">
                   {post.title}
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-slate-600 mb-4 leading-relaxed">
+                <CardDescription className="text-lg text-slate-600 mb-6 leading-relaxed font-garamond">
                   {post.excerpt}
                 </CardDescription>
                 <div className="flex items-center justify-between text-sm text-slate-500">
