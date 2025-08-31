@@ -45,7 +45,7 @@ const AboutSection = () => {
                     After two decades of wrestling with complex, unintuitive models that often gave precisely the wrong results, I knew there had to be a better way.
                   </p>
                   <p className="font-garamond">
-                    <strong>The problem was clear:</strong> Most financial models are either oversimplified templates or overly complex black boxes that obscure rather than illuminate decision-making. Business leaders need tools that are sophisticated enough to be credible, yet intuitive enough to actually use.
+                    <strong>The problem was clear:</strong> Most financial models are either oversimplified templates or overly complex black boxes that obscure rather than enable decision-making. Business leaders need tools that are sophisticated enough to be credible, yet intuitive enough to actually use.
                   </p>
                   <p className="font-garamond">
                     <strong>My solution:</strong> Create a best-in-class, business-minded Financial Decision Model toolbox that turns complex financial choices into structured insights and better decisions.
