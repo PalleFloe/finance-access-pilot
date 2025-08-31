@@ -23,49 +23,43 @@ const ServicesSection = () => {
           </Badge>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
-          {/* Financial Decision Model Toolbox */}
-          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-all duration-300 relative bg-white/80 backdrop-blur-sm flex flex-col h-full">
-            <div className="absolute -top-3 -right-3 z-10">
-              <Badge className="bg-green-100 text-green-800 border-green-200 shadow-sm">
-                <Check className="w-3 h-3 mr-1" />
-                Available
-              </Badge>
-            </div>
-            <CardHeader>
-              <div className="flex items-center space-x-3 mb-4">
-                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                  <Calculator className="w-6 h-6 text-primary-foreground" />
+        <div className="space-y-8">
+          {/* Financial Decision Model Toolbox - Primary */}
+          <Card className="shadow-xl border-slate-300 hover:shadow-2xl transition-all duration-300 bg-white backdrop-blur-sm p-2">
+            <CardHeader className="pb-4">
+              <div className="flex items-center space-x-4 mb-6">
+                <div className="w-14 h-14 bg-primary rounded-lg flex items-center justify-center">
+                  <Calculator className="w-7 h-7 text-primary-foreground" />
                 </div>
                 <div>
-                  <CardTitle className="text-2xl font-semibold">Financial Decision Model Toolbox</CardTitle>
+                  <CardTitle className="text-xl font-semibold text-slate-800">Financial Decision Model Toolbox</CardTitle>
                 </div>
               </div>
-              <CardDescription className="text-lg">
+              <CardDescription className="text-base text-slate-600">
                 Comprehensive online toolbox for making informed financial decisions
               </CardDescription>
             </CardHeader>
-            <CardContent className="flex-1 flex flex-col">
-              <div className="space-y-4 flex-1">
+            <CardContent className="pt-0">
+              <div className="space-y-5">
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-lg text-slate-700 leading-relaxed">Guidance on selecting appropriate financial decision models for specific business needs</p>
+                  <p className="text-sm text-slate-700 leading-relaxed">Guidance on selecting appropriate financial decision models for specific business needs</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-lg text-slate-700 leading-relaxed">Clear guidance on concepts, terminology, and best practices</p>
+                  <p className="text-sm text-slate-700 leading-relaxed">Clear guidance on concepts, terminology, and best practices</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-lg text-slate-700 leading-relaxed">Support for developing sound assumptions and estimates</p>
+                  <p className="text-sm text-slate-700 leading-relaxed">Support for developing sound assumptions and estimates</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-lg text-slate-700 leading-relaxed">User-friendly models with standardized structure, proper calculations, and built-in sensitivity analysis</p>
+                  <p className="text-sm text-slate-700 leading-relaxed">User-friendly models with standardized structure, proper calculations, and built-in sensitivity analysis</p>
                 </div>
               </div>
-              <div className="pt-4 border-t border-slate-100 mt-6">
-                <Button asChild variant="brand-green" className="w-full">
+              <div className="pt-6 border-t border-slate-100 mt-8">
+                <Button asChild variant="brand-green" className="text-left justify-start px-0 bg-transparent hover:bg-transparent text-brand-green hover:text-brand-green/80">
                   <Link to="/toolbox">
                     Explore Free Tools
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -75,46 +69,40 @@ const ServicesSection = () => {
             </CardContent>
           </Card>
 
-          {/* Expert Consulting Services */}
-          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-all duration-300 relative bg-white/80 backdrop-blur-sm flex flex-col h-full">
-            <div className="absolute -top-3 -right-3 z-10">
-              <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
-                <Clock className="w-3 h-3 mr-1" />
-                Coming Soon
-              </Badge>
-            </div>
-            <CardHeader>
+          {/* Expert Consulting Services - Secondary */}
+          <Card className="shadow-md border-slate-200 hover:shadow-lg transition-all duration-300 bg-slate-50 backdrop-blur-sm">
+            <CardHeader className="pb-3">
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                  <Users className="w-6 h-6 text-primary-foreground" />
+                <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                  <Users className="w-5 h-5 text-primary-foreground" />
                 </div>
                 <div>
-                  <CardTitle className="text-2xl font-semibold">Expert Consulting Services</CardTitle>
+                  <CardTitle className="text-lg font-semibold text-slate-800">Expert Consulting Services</CardTitle>
                 </div>
               </div>
-              <CardDescription className="text-lg">
+              <CardDescription className="text-sm text-slate-600">
                 Consulting solutions for complex decisions and processes
               </CardDescription>
             </CardHeader>
-            <CardContent className="flex-1 flex flex-col">
-              <div className="space-y-4 flex-1">
+            <CardContent className="pt-0">
+              <div className="space-y-3">
                 <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-lg text-slate-700 leading-relaxed">Customization of models for specific company requirements</p>
+                  <CheckCircle className="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-xs text-slate-700 leading-relaxed">Customization of models for specific company requirements</p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-lg text-slate-700 leading-relaxed">Challenging, evaluation and improvement of existing financial decision processes</p>
+                  <CheckCircle className="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-xs text-slate-700 leading-relaxed">Challenging, evaluation and improvement of existing financial decision processes</p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
-                  <p className="text-lg text-slate-700 leading-relaxed">End-to-end financial and/or process lead or support for driving complex financial decisions</p>
+                  <CheckCircle className="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0" />
+                  <p className="text-xs text-slate-700 leading-relaxed">End-to-end financial and/or process lead or support for driving complex financial decisions</p>
                 </div>
               </div>
               <div className="pt-4 border-t border-slate-100 mt-6">
                 <Button 
                   variant="brand-green" 
-                  className="w-full"
+                  className="text-left justify-start px-0 bg-transparent hover:bg-transparent text-brand-green hover:text-brand-green/80"
                   onClick={() => setIsConsultationFormOpen(true)}
                 >
                   Schedule Consultation
