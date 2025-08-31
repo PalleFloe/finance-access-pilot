@@ -183,7 +183,7 @@ const HowItWorks = () => {
         disabled={tier.disabled}
         variant={tier.disabled ? undefined : "brand-green"}
         size="lg"
-        className={`w-full text-base font-semibold ${
+        className={`w-full text-lg font-semibold ${
           tier.disabled 
             ? 'cursor-not-allowed hover:bg-[#808080]' 
             : ''

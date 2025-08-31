@@ -87,7 +87,7 @@ const ServicesSection = () => {
                 </div>
               </div>
               <div className="pt-3 border-t border-slate-100 mt-4">
-                <Button asChild variant="brand-green" className="justify-center px-4 w-96">
+                <Button asChild variant="brand-green" size="lg" className="justify-center px-4 w-96 text-lg">
                   <Link to="/toolbox">
                     Explore Free Tools
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -153,7 +153,8 @@ const ServicesSection = () => {
               <div className="pt-3 border-t border-slate-100 mt-4">
                 <Button 
                   variant="brand-green" 
-                  className="justify-center px-4 w-96"
+                  size="lg"
+                  className="justify-center px-4 w-96 text-lg"
                   onClick={() => setIsConsultationFormOpen(true)}
                 >
                   Schedule Consultation
