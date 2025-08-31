@@ -33,8 +33,8 @@ const ServicesSection = () => {
                 </div>
                 <div className="flex-1">
                   <CardTitle 
-                    className="text-[20px] font-semibold text-slate-800 text-left"
-                    style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
+                    className="text-[20px] font-semibold text-left"
+                    style={{ fontFamily: 'Garamond, Times New Roman, serif', color: '#326496' }}
                   >
                     Financial Decision Model Toolbox
                   </CardTitle>
@@ -106,8 +106,8 @@ const ServicesSection = () => {
                 </div>
                 <div className="flex-1">
                   <CardTitle 
-                    className="text-[20px] font-semibold text-slate-800 text-left"
-                    style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
+                    className="text-[20px] font-semibold text-left"
+                    style={{ fontFamily: 'Garamond, Times New Roman, serif', color: '#326496' }}
                   >
                     Expert Consulting Services
                   </CardTitle>

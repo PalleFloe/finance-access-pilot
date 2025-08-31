@@ -159,7 +159,7 @@ const HowItWorks = () => {
       
       <h3 
         className="text-xl font-bold mb-3" 
-        style={{ fontFamily: 'Garamond, serif', color: '#2c3e50' }}
+        style={{ fontFamily: 'Garamond, serif', color: '#326496' }}
       >
         {tier.label}: {tier.title}
       </h3>
