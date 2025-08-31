@@ -57,6 +57,20 @@ Questions about implementing these approaches in your specific situation? Ideas 
     date: "2025-08-31",
     readTime: "5 min read",
     featured: true
+  },
+  {
+    id: "2",
+    title: "Moved to BloxHub",
+    excerpt: "From 1st of September, I'm moving in at BloxHub down by the harbour in Copenhagen. Awesome atmosphere, free ice-cold bubble water and a splendid view.",
+    content: `From 1st of September, I'm moving in at BloxHub down by the harbour in Copenhagen. Unofficially, I'm already moved in. Awesome atmosphere, free ice-cold bubble water and a splendid view from my corner seat.
+
+I've also done the 1st or 7th beta version of financialdecisionmodels.com. At least enough 'beta' that it is not completely embarrassing (I hope) to share it with others.
+
+**Pictures:** 1st picture is me arriving last week with a smile and my IT equipment. 2nd picture is the view from my seat. Both Langebro and Lille Langebro bridges are up to give a pass through for someone who probably have been successful making financial choices.`,
+    date: "2025-09-01",
+    readTime: "1 min read",
+    image: "/lovable-uploads/7eaac891-c129-4f96-9a8c-da5889bd2d1f.png",
+    featured: false
   }
 ];
 
