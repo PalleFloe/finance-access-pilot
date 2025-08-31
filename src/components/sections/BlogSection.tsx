@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Calendar, Clock, ArrowRight } from "lucide-react";
+import { Calendar, Clock, ArrowRight, ChevronDown, ChevronUp } from "lucide-react";
 
 interface BlogPost {
   id: string;
   title: string;
   excerpt: string;
+  content: string;
   date: string;
   readTime: string;
   image?: string;
@@ -18,6 +19,41 @@ const blogPosts: BlogPost[] = [
     id: "1",
     title: "Why I'm building Financial Decision Models",
     excerpt: "I want to help turn complex financial choices into structured insights and better decisions.",
+    content: `A bit about myself: I'm a finance leader, who is still curious and focused after all those years. Whether the challenges have been creating performance management capabilities, business improvements and turnarounds, M&A integrations and strategic initiatives - always with strong focus on what and how we can make a real difference. With a strong financial toolbox and business acumen, I connect and de-risk value drivers, identify opportunities, find solutions with a laser focus on value creation, and consistently champion a profitable growth mindset across organizations. I'm direct and open-minded, not afraid to challenge status quo constructively. I give people the chance to shine rather than hide them in my shadow.
+
+In the year up until I stopped at Novonesis before the summer this year, I was considering how to challenge myself outside a large corporate organization. I wanted to build something for two motives; To create valuable for others and to prove to myself that I can.
+
+I have had so many brilliant and amazing ideas in my dreams, but I often didn't have a clue or experience with the business area or technology domain. So instead, I choose to start with something I'm very good at, have a lot of experience in doing and that I also think is a lot of fun. Lastly, it is also important to help turn complex financial choices into structured insights and better decisions.
+
+Therefore, I'm building Financial Decision Models after two decades of wrestling with complex, unintuitive models that often gave precisely the wrong results, I know there's a better way.
+
+**So why are we struggling with financial decision models that often not even help making decisions?**
+
+It shouldn't be rocket science, but there are quite a few challenges.
+
+The models often lack user-friendly and consistent design, no intuitive logic, have high complexity and are time consuming to use or even understand.
+
+We keep trying to forecast the future with precision based on a set of defined assumptions. Such financial models don't exist. The complexity and lack of logic, then make scenario and sensitivity analysis cumbersome to do and neither really give the insights to make better decisions.
+
+We can't only blame the models. Forecast bias and systematic optimism affect most business projections, whether we're being overly optimistic, too risk-averse, or unconsciously aligning with management expectations.
+
+**Part of the Solution is: Well structured, intuitive and user-friendly models**
+
+Financial Decision Models provides a comprehensive toolbox with the same design DNA across. Clear separation between assumptions and results, clear and logical flows that you can follow, built-in sensitivity analysis, and with a 'enough is better than too many data points' mindset.
+
+Decision takers need credible quality tools, which are intuitive enough to actually be used and understood.
+
+**The toolbox is expanding...**
+
+Currently, there are six Startup Valuations models, which are mainly for early-stage business valuation and investment decisions. There are also six Financial Fundamentals models, which are academic and general models mostly for educational and inspirational purposes.
+
+**How does it work?**
+
+Via the website, you are offered multiple ways to access the financial decision models. That is from self-service and free access for all models in browser embedded Excel to paid access and download of models
+
+Explore more at www.financialdecisionmodels.com
+
+Questions about implementing these approaches in your specific situation? Ideas for models that would help your decisions? Drop me a line at palle@financialdecisionmodels.com`,
     date: "2025-08-31",
     readTime: "5 min read",
     featured: true
@@ -25,12 +61,42 @@ const blogPosts: BlogPost[] = [
 ];
 
 const BlogSection = () => {
+  const [expandedPosts, setExpandedPosts] = useState<Set<string>>(new Set());
+  
+  const togglePost = (postId: string) => {
+    const newExpandedPosts = new Set(expandedPosts);
+    if (newExpandedPosts.has(postId)) {
+      newExpandedPosts.delete(postId);
+    } else {
+      newExpandedPosts.add(postId);
+    }
+    setExpandedPosts(newExpandedPosts);
+  };
+
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     return date.toLocaleDateString('en-US', { 
       year: 'numeric', 
       month: 'long', 
       day: 'numeric' 
+    });
+  };
+
+  const formatContent = (content: string) => {
+    return content.split('\n\n').map((paragraph, index) => {
+      if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
+        // Handle bold headers
+        return (
+          <h3 key={index} className="text-xl font-bold text-[#326496] mb-4 mt-6">
+            {paragraph.slice(2, -2)}
+          </h3>
+        );
+      }
+      return (
+        <p key={index} className="text-lg text-slate-600 mb-4 leading-relaxed font-garamond">
+          {paragraph}
+        </p>
+      );
     });
   };
 
@@ -49,52 +115,76 @@ const BlogSection = () => {
 
         {/* Blog Posts Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {blogPosts.map((post) => (
-            <Card 
-              key={post.id} 
-              className={`group hover:shadow-lg transition-all duration-300 cursor-pointer ${
-                post.featured ? 'ring-2 ring-brand-green/20' : ''
-              }`}
-            >
-              {post.image && (
-                <div className="aspect-video overflow-hidden rounded-t-lg">
-                  <img 
-                    src={post.image} 
-                    alt={post.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              )}
-              <CardHeader className={post.image ? "pb-3" : "pb-3 pt-8"}>
-                {post.featured && (
-                  <Badge className="bg-brand-green text-white text-xs mb-3 w-fit">
-                    Featured
-                  </Badge>
+          {blogPosts.map((post) => {
+            const isExpanded = expandedPosts.has(post.id);
+            
+            return (
+              <Card 
+                key={post.id} 
+                onClick={() => togglePost(post.id)}
+                className={`group hover:shadow-lg transition-all duration-300 cursor-pointer ${
+                  post.featured ? 'ring-2 ring-brand-green/20' : ''
+                } ${isExpanded ? 'md:col-span-2' : ''}`}
+              >
+                {post.image && (
+                  <div className="aspect-video overflow-hidden rounded-t-lg">
+                    <img 
+                      src={post.image} 
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
                 )}
-                <CardTitle className="text-2xl font-bold text-[#326496] leading-tight group-hover:text-brand-green transition-colors">
-                  {post.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-lg text-slate-600 mb-6 leading-relaxed font-garamond">
-                  {post.excerpt}
-                </CardDescription>
-                <div className="flex items-center justify-between text-sm text-slate-500">
-                  <div className="flex items-center gap-4">
-                    <div className="flex items-center gap-1">
-                      <Calendar className="w-4 h-4" />
-                      <span>{formatDate(post.date)}</span>
+                <CardHeader className={post.image ? "pb-3" : "pb-3 pt-8"}>
+                  {post.featured && (
+                    <Badge className="bg-brand-green text-white text-xs mb-3 w-fit">
+                      Featured
+                    </Badge>
+                  )}
+                  <CardTitle className="text-2xl font-bold text-[#326496] leading-tight group-hover:text-brand-green transition-colors">
+                    {post.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-lg text-slate-600 mb-6 leading-relaxed font-garamond">
+                    {post.excerpt}
+                  </CardDescription>
+                  
+                  {/* Expanded Content */}
+                  {isExpanded && (
+                    <div className="mt-6 pt-6 border-t border-slate-200">
+                      <div className="prose prose-lg max-w-none">
+                        {formatContent(post.content)}
+                      </div>
                     </div>
-                    <div className="flex items-center gap-1">
-                      <Clock className="w-4 h-4" />
-                      <span>{post.readTime}</span>
+                  )}
+                  
+                  <div className="flex items-center justify-between text-sm text-slate-500">
+                    <div className="flex items-center gap-4">
+                      <div className="flex items-center gap-1">
+                        <Calendar className="w-4 h-4" />
+                        <span>{formatDate(post.date)}</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <Clock className="w-4 h-4" />
+                        <span>{post.readTime}</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2 text-brand-green">
+                      <span className="text-sm font-medium">
+                        {isExpanded ? 'Collapse' : 'Read More'}
+                      </span>
+                      {isExpanded ? (
+                        <ChevronUp className="w-4 h-4 group-hover:-translate-y-1 transition-transform" />
+                      ) : (
+                        <ChevronDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
+                      )}
                     </div>
                   </div>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>
