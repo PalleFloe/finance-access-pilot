@@ -16,50 +16,11 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: "1",
-    title: "Strategic Finance Best Practices for Growing Companies",
-    excerpt: "Learn how to build robust financial frameworks that scale with your business growth and support strategic decision-making.",
-    date: "2024-01-15",
-    readTime: "8 min read",
-    image: "/lovable-uploads/50c4551d-af55-4e28-a327-3aeb92945cda.png",
+    title: "Why I'm building Financial Decision Models",
+    excerpt: "I want to help turn complex financial choices into structured insights and better decisions.",
+    date: "2025-08-31",
+    readTime: "5 min read",
     featured: true
-  },
-  {
-    id: "2",
-    title: "Excel Modeling Fundamentals: Building Dynamic Financial Models",
-    excerpt: "Master the art of creating flexible, scalable Excel models that adapt to changing business scenarios and requirements.",
-    date: "2024-01-12",
-    readTime: "12 min read",
-    image: "/lovable-uploads/676443da-8f1c-498f-b5b0-617c3b12a6c0.png"
-  },
-  {
-    id: "3",
-    title: "Case Study: SaaS Startup Valuation Using Multiple Methods",
-    excerpt: "A comprehensive analysis of how different valuation methodologies were applied to determine fair value for a Series A SaaS company.",
-    date: "2024-01-10",
-    readTime: "15 min read",
-    image: "/lovable-uploads/6d231596-883b-484b-86b3-0e8476eb7ccb.png"
-  },
-  {
-    id: "4",
-    title: "Model Spotlight: The Power of Scenario Analysis",
-    excerpt: "Deep dive into how scenario modeling can transform your financial planning and risk assessment capabilities.",
-    date: "2024-01-08",
-    readTime: "10 min read"
-  },
-  {
-    id: "5",
-    title: "Advanced DCF Modeling Techniques for Complex Businesses",
-    excerpt: "Explore sophisticated approaches to discounted cash flow modeling for multi-segment and emerging market companies.",
-    date: "2024-01-05",
-    readTime: "14 min read",
-    image: "/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png"
-  },
-  {
-    id: "6",
-    title: "Building Financial Decision Frameworks for Executive Teams",
-    excerpt: "How to create structured approaches that help leadership teams make better, faster financial decisions.",
-    date: "2024-01-03",
-    readTime: "11 min read"
   }
 ];
 
