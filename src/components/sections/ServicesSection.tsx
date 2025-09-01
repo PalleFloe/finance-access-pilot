@@ -27,13 +27,13 @@ const ServicesSection = () => {
           {/* Financial Decision Model Toolbox - Primary */}
           <Card className="shadow-xl border-slate-300 hover:shadow-2xl transition-all duration-300 bg-white backdrop-blur-sm">
             <CardHeader className="pb-3 px-6 pt-6">
-              <div className="flex items-start space-x-4 mb-4">
+              <div className="flex items-center space-x-4 mb-4">
                 <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
                   <Calculator className="w-8 h-8 text-primary-foreground" />
                 </div>
                 <div className="flex-1">
                   <CardTitle 
-                    className="text-[20px] font-semibold text-left"
+                    className="text-[30px] font-semibold text-left"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif', color: '#326496' }}
                   >
                     Financial Decision Model Toolbox
