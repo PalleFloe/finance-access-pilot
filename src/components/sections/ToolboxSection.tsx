@@ -143,7 +143,7 @@ const ToolboxSection = () => {
           <div className="bg-white p-6 rounded-lg border border-slate-100 shadow-sm">
             <h4 className="text-lg font-semibold text-slate-900 mb-3">Who Benefits</h4>
             <p className="text-lg text-slate-600 leading-relaxed">
-              <span className="font-medium">Entrepreneurs and Investors</span> validating business models, making investments and funding decisions. <span className="font-medium">Business Leaders</span> optimizing business performance, complex internal & external decisions and strategic initiatives. <span className="font-medium">Financial Advisors</span> providing professional analysis and decision services.
+              <span className="font-medium">Entrepreneurs and Investors</span> validating business models, making investments and funding decisions. <span className="font-medium">Business Leaders</span> optimizing business performance, complex internal & external decisions and strategic initiatives. <span className="font-medium">Financial Advisors</span> providing professional analysis and decision support and services. <span className="font-medium">Students</span> for finance coursework and analysis.
             </p>
           </div>
 
