@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <section className="pt-20 pb-6 px-6">
+    <section className="pt-16 pb-6 px-6">
       <div className="container mx-auto max-w-7xl text-center">
         <h1 className="font-garamond text-[36pt] font-bold text-[#326496] mb-[30px]">
           Facing Complex Financial Decisions?
