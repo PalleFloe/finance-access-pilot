@@ -15,7 +15,7 @@ const ServicesSection = () => {
         isOpen={isConsultationFormOpen} 
         onClose={() => setIsConsultationFormOpen(false)} 
       />
-    <section id="consulting" className="pt-4 pb-20 px-6 bg-gradient-to-b from-slate-50/50 to-white border-t border-slate-100">
+    <section id="consulting" className="pt-3 pb-20 px-6 bg-gradient-to-b from-slate-50/50 to-white border-t border-slate-100">
       <div className="container mx-auto max-w-6xl">
         <div className="space-y-4">
           {/* Financial Decision Model Toolbox - Primary */}
