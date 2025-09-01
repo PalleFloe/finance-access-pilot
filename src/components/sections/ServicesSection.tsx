@@ -38,7 +38,7 @@ const ServicesSection = () => {
                 className="text-[20px] text-slate-600 text-left"
                 style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
               >
-                Comprehensive online toolbox for making informed financial decisions
+                Comprehensive toolbox of professional financial models for online preview and download to use
               </CardDescription>
             </CardHeader>
             <CardContent className="pt-0 px-6 pb-6">
@@ -76,7 +76,7 @@ const ServicesSection = () => {
                     className="text-[18px] text-slate-700 leading-relaxed text-left"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
                   >
-                    User-friendly models with standardized structure, proper calculations, and built-in sensitivity analysis
+                    Professional, user-friendly Excel models with standardized structure and built-in sensitivity analysis
                   </p>
                 </div>
               </div>
