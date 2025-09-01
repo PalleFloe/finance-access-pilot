@@ -214,7 +214,7 @@ const HowItWorks = () => {
         {/* Page Header Section */}
         <div className="rounded-lg shadow-sm p-10 mb-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
-            How to Access Financial Decision Models
+            Financial Decision Models offerings
           </h1>
           
           <p className="text-lg text-slate-600 mb-8">
@@ -222,8 +222,8 @@ const HowItWorks = () => {
           </p>
           
           <p className="text-lg text-slate-600 max-w-4xl mx-auto leading-relaxed mb-10">
-            We offer multiple ways to access our financial models, from free online exploration to professional ownership. 
-            Start with our free tiers to explore and learn, then upgrade when you need advanced features and commercial rights.
+            We offer multiple ways to access and use our financial models, from free online viewing to full ownership. 
+            Start with our free tiers to explore, learn and get inspired. If that is not enough for you, then you can always upgrade.
           </p>
         </div>
 
