@@ -12,7 +12,7 @@ const HeroSection = () => {
           And struggling with time-consuming, inflexible, overly complex and unreliable financial models that don't give you the clarity to make the right decisions?
         </h2>
         <h3 className="font-garamond text-[36pt] font-bold text-[#326496] mb-[40px] max-w-5xl mx-auto">
-          We help turn complex financial choices into structured insights and better decisions.
+          We help turn complex financial choices into structured insights and better business decisions.
         </h3>
       </div>
     </section>
