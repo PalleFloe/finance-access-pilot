@@ -61,8 +61,8 @@ Questions about implementing these approaches in your specific situation? Ideas 
   {
     id: "2",
     title: "Moved to BloxHub",
-    excerpt: "From 1st of September, I'm moving in at BloxHub down by the harbour in Copenhagen. Awesome atmosphere, free ice-cold bubble water and a splendid view.",
-    content: `From 1st of September, I'm moving in at BloxHub down by the harbour in Copenhagen. Unofficially, I'm already moved in. Awesome atmosphere, free ice-cold bubble water and a splendid view from my corner seat.
+    excerpt: "Unofficially moved in to my new workspace with an exciting beta version of financialdecisionmodels.com to share.",
+    content: `Unofficially, I'm already moved in.
 
 I've also done the 1st or 7th beta version of financialdecisionmodels.com. At least enough 'beta' that it is not completely embarrassing (I hope) to share it with others.
 
