@@ -41,39 +41,39 @@ const ServicesSection = () => {
                 Comprehensive toolbox of professional financial models for online preview and download to use
               </CardDescription>
             </CardHeader>
-            <CardContent className="pt-0 px-6 pb-6">
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
+            <CardContent className="pt-0 px-6 pb-6 sm:px-6">
+              <div className="space-y-4 pr-2 sm:pr-4">
+                <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                   <p 
-                    className="text-[18px] text-slate-700 leading-relaxed text-left"
+                    className="text-[18px] text-slate-700 leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
                   >
                     Guidance on selecting appropriate financial decision models for specific business needs
                   </p>
                 </div>
-                <div className="flex items-start space-x-3">
+                <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                   <p 
-                    className="text-[18px] text-slate-700 leading-relaxed text-left"
+                    className="text-[18px] text-slate-700 leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
                   >
                     Clear guidance on concepts, terminology, and best practices
                   </p>
                 </div>
-                <div className="flex items-start space-x-3">
+                <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                   <p 
-                    className="text-[18px] text-slate-700 leading-relaxed text-left"
+                    className="text-[18px] text-slate-700 leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
                   >
                     Support for developing sound assumptions and estimates
                   </p>
                 </div>
-                <div className="flex items-start space-x-3">
+                <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                   <p 
-                    className="text-[18px] text-slate-700 leading-relaxed text-left"
+                    className="text-[18px] text-slate-700 leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
                   >
                     Professional, user-friendly Excel models with standardized structure and built-in sensitivity analysis
@@ -114,30 +114,30 @@ const ServicesSection = () => {
                 Consulting solutions for complex decisions and processes
               </CardDescription>
             </CardHeader>
-            <CardContent className="pt-0 px-6 pb-6">
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
+            <CardContent className="pt-0 px-6 pb-6 sm:px-6">
+              <div className="space-y-4 pr-2 sm:pr-4">
+                <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
                   <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
                   <p 
-                    className="text-[18px] text-slate-700 leading-relaxed text-left"
+                    className="text-[18px] text-slate-700 leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
                   >
                     Customization of models for specific company requirements
                   </p>
                 </div>
-                <div className="flex items-start space-x-3">
+                <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
                   <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
                   <p 
-                    className="text-[18px] text-slate-700 leading-relaxed text-left"
+                    className="text-[18px] text-slate-700 leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
                   >
                     Challenging, evaluation and improvement of existing financial decision processes
                   </p>
                 </div>
-                <div className="flex items-start space-x-3">
+                <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
                   <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
                   <p 
-                    className="text-[18px] text-slate-700 leading-relaxed text-left"
+                    className="text-[18px] text-slate-700 leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
                   >
                     End-to-end financial and/or process lead or support for driving complex financial decisions
