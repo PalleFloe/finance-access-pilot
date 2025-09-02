@@ -111,8 +111,15 @@
   }
 
   body {
-    @apply bg-background text-foreground text-[11px];
+    @apply bg-background text-foreground text-[12px] sm:text-[11px];
     font-family: 'Garamond', 'Times New Roman', serif;
+  }
+
+  /* Mobile-specific typography improvements */
+  @media (max-width: 640px) {
+    .model-description { 
+      font-size: 13px; 
+    }
   }
 
   /* Heading Hierarchy */
@@ -160,7 +167,7 @@
   }
 
   .tier-btn {
-    padding: 12px 24px;
+    padding: 16px 28px;
     border-radius: 6px;
     font-size: 14px;
     font-family: Garamond, 'Times New Roman', serif;
@@ -168,6 +175,20 @@
     transition: all 0.3s ease;
     text-align: center;
     width: 100%;
+    min-height: 48px; /* Touch-friendly minimum height */
+  }
+
+  /* Larger touch targets on mobile */
+  @media (max-width: 640px) {
+    .tier-btn {
+      padding: 18px 32px;
+      font-size: 15px;
+      min-height: 52px;
+    }
+    
+    .tier-buttons-stacked {
+      gap: 14px;
+    }
   }
 
   /* Tier 1: Online & Free - Green */

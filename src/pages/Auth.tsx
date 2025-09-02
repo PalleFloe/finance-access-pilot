@@ -77,14 +77,15 @@ const Auth = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSignUp} className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4">
+                <form onSubmit={handleSignUp} className="space-y-5 sm:space-y-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="firstName">First Name</Label>
                       <Input 
                         id="firstName" 
                         name="firstName" 
-                        type="text" 
+                        type="text"
+                        inputMode="text"
                         required 
                         placeholder="John"
                       />
@@ -94,7 +95,8 @@ const Auth = () => {
                       <Input 
                         id="lastName" 
                         name="lastName" 
-                        type="text" 
+                        type="text"
+                        inputMode="text"
                         required 
                         placeholder="Doe"
                       />
@@ -106,7 +108,8 @@ const Auth = () => {
                     <Input 
                       id="email" 
                       name="email" 
-                      type="email" 
+                      type="email"
+                      inputMode="email"
                       required 
                       placeholder="john@example.com"
                     />
@@ -117,7 +120,8 @@ const Auth = () => {
                     <Input 
                       id="company" 
                       name="company" 
-                      type="text" 
+                      type="text"
+                      inputMode="text"
                       placeholder="Your Company"
                     />
                   </div>
@@ -145,7 +149,7 @@ const Auth = () => {
                   
                   <Button 
                     type="submit" 
-                    className="w-full" 
+                    className="w-full h-12 sm:h-10 text-base sm:text-sm" 
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? 'Creating Account...' : 'Create Account'}
@@ -164,13 +168,14 @@ const Auth = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSignIn} className="space-y-4">
+                <form onSubmit={handleSignIn} className="space-y-5 sm:space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="loginEmail">Email</Label>
                     <Input 
                       id="loginEmail" 
                       name="email" 
-                      type="email" 
+                      type="email"
+                      inputMode="email"
                       required 
                       placeholder="john@example.com"
                     />
@@ -184,21 +189,21 @@ const Auth = () => {
                         name="password" 
                         type={showLoginPassword ? "text" : "password"}
                         required 
-                        className="pr-10"
+                        className="pr-12 sm:pr-10"
                       />
                       <button
                         type="button"
                         onClick={() => setShowLoginPassword(!showLoginPassword)}
-                        className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
+                        className="absolute right-4 sm:right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground p-1"
                       >
-                        {showLoginPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                        {showLoginPassword ? <EyeOff className="h-5 w-5 sm:h-4 sm:w-4" /> : <Eye className="h-5 w-5 sm:h-4 sm:w-4" />}
                       </button>
                     </div>
                   </div>
                   
                   <Button 
                     type="submit" 
-                    className="w-full" 
+                    className="w-full h-12 sm:h-10 text-base sm:text-sm" 
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? 'Signing In...' : 'Sign In'}
