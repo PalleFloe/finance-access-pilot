@@ -148,7 +148,7 @@ const ToolboxSection = () => {
           </div>
 
           <div className="bg-white p-6 rounded-lg border border-slate-100 shadow-sm">
-            <h4 className="text-lg font-semibold text-slate-900 mb-3">How It Works</h4>
+            <h4 className="text-lg font-semibold text-slate-900 mb-3">How Models works</h4>
             <p className="text-lg text-slate-600 leading-relaxed">
               Each model uses clear Excel structure with color-coded inputs for easy use. Built-in scenario testing helps address uncertainty, and the models provide the analytical depth needed for both analytical insight, decision making and professional presentations to stakeholders. The models can be used 100% free, but are protected for design changes.
             </p>
