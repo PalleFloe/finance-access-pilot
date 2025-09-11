@@ -27,7 +27,7 @@ const ServicesSection = () => {
                 </div>
                 <div className="flex-1">
                   <CardTitle 
-                    className="text-2xl font-bold text-left mb-2"
+                    className="text-3xl font-bold text-left mb-2"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif', color: '#326496' }}
                   >
                     Financial Decision Model Toolbox
@@ -35,7 +35,7 @@ const ServicesSection = () => {
                 </div>
               </div>
               <CardDescription 
-                className="text-base text-slate-600 text-left mb-4"
+                className="text-lg text-slate-600 text-left mb-4"
                 style={{ fontFamily: 'Garamond, Times New Roman, serif', lineHeight: '1.6' }}
               >
                 Comprehensive toolbox of professional financial models for online preview and download to use
@@ -46,7 +46,7 @@ const ServicesSection = () => {
                 <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                    <p 
-                    className="text-base leading-relaxed text-left flex-1 break-words"
+                    className="text-lg leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif', lineHeight: '1.6' }}
                   >
                     Guidance on selecting appropriate financial decision models for specific business needs
@@ -55,7 +55,7 @@ const ServicesSection = () => {
                 <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                    <p 
-                    className="text-base leading-relaxed text-left flex-1 break-words"
+                    className="text-lg leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif', lineHeight: '1.6' }}
                   >
                     Clear guidance on concepts, terminology, and best practices
@@ -64,7 +64,7 @@ const ServicesSection = () => {
                 <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                    <p 
-                    className="text-base leading-relaxed text-left flex-1 break-words"
+                    className="text-lg leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif', lineHeight: '1.6' }}
                   >
                     Support for developing sound assumptions and estimates
@@ -73,7 +73,7 @@ const ServicesSection = () => {
                 <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                    <p 
-                    className="text-base leading-relaxed text-left flex-1 break-words"
+                    className="text-lg leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif', lineHeight: '1.6' }}
                   >
                     Professional, user-friendly Excel models with standardized structure and built-in sensitivity analysis
@@ -85,7 +85,7 @@ const ServicesSection = () => {
                   asChild 
                   variant="brand-green" 
                   size="lg"
-                  className="justify-center w-full sm:w-auto text-base"
+                  className="justify-center w-full sm:w-auto px-12 text-3xl font-semibold"
                 >
                   <Link to="/toolbox">
                     Explore Free Tools
@@ -105,7 +105,7 @@ const ServicesSection = () => {
                 </div>
                 <div className="flex-1">
                   <CardTitle 
-                    className="text-lg font-semibold text-left"
+                    className="text-2xl font-semibold text-left"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif', color: '#326496' }}
                   >
                     Expert Consulting Services
@@ -113,7 +113,7 @@ const ServicesSection = () => {
                 </div>
               </div>
               <CardDescription 
-                className="text-sm text-slate-600 text-left"
+                className="text-base text-slate-600 text-left"
                 style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
               >
                 Consulting solutions for complex decisions and processes
@@ -124,7 +124,7 @@ const ServicesSection = () => {
                 <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
                   <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
                    <p 
-                    className="text-sm text-slate-700 leading-relaxed text-left flex-1 break-words"
+                    className="text-base text-slate-700 leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
                   >
                     Customization of models for specific company requirements
@@ -133,7 +133,7 @@ const ServicesSection = () => {
                 <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
                   <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
                    <p 
-                    className="text-sm text-slate-700 leading-relaxed text-left flex-1 break-words"
+                    className="text-base text-slate-700 leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
                   >
                     Challenging, evaluation and improvement of existing financial decision processes
@@ -142,7 +142,7 @@ const ServicesSection = () => {
                 <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
                   <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
                    <p 
-                    className="text-sm text-slate-700 leading-relaxed text-left flex-1 break-words"
+                    className="text-base text-slate-700 leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
                   >
                     End-to-end financial and/or process lead or support for driving complex financial decisions
@@ -153,7 +153,7 @@ const ServicesSection = () => {
                 <Button 
                   variant="brand-green" 
                   size="lg"
-                  className="justify-center px-4 w-full sm:w-auto text-sm"
+                  className="justify-center px-12 w-full sm:w-auto text-2xl font-semibold"
                   onClick={() => setIsConsultationFormOpen(true)}
                 >
                   Schedule Consultation
