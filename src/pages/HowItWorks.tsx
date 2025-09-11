@@ -28,7 +28,8 @@ const HowItWorks = () => {
         buttonText: "Go to Toolbox",
         buttonLink: "/toolbox",
         disabled: false,
-        isConsultation: false
+        isConsultation: false,
+        isModelTier: true
       },
       {
         label: "TIER 2", 
@@ -44,7 +45,8 @@ const HowItWorks = () => {
         buttonText: "Go to Toolbox",
         buttonLink: "/toolbox",
         disabled: false,
-        isConsultation: false
+        isConsultation: false,
+        isModelTier: true
       },
       {
         label: "TIER 3",
@@ -60,13 +62,14 @@ const HowItWorks = () => {
         buttonText: "Coming Soon",
         buttonLink: "#",
         disabled: true,
-        isConsultation: false
+        isConsultation: false,
+        isModelTier: true
       }
     ],
     row2: [
       {
         label: "TIER 4",
-        title: "Model Customization",
+        title: "Customized Models",
         bullets: [
           "Custom model development",
           "Based on standard models or other models",
@@ -77,11 +80,12 @@ const HowItWorks = () => {
         buttonText: "Schedule Consultation",
         buttonLink: "/contact",
         disabled: false,
-        isConsultation: true
+        isConsultation: true,
+        isModelTier: false
       },
       {
         label: "TIER 5",
-        title: "Consulting Services", 
+        title: "Consulting Services",
         bullets: [
           "Lead or Support to Project or Initiative",
           "Challenge, evaluate and improve projects or processes",
@@ -92,7 +96,8 @@ const HowItWorks = () => {
         buttonText: "Schedule Consultation",
         buttonLink: "/contact",
         disabled: false,
-        isConsultation: true
+        isConsultation: true,
+        isModelTier: false
       }
     ]
   };
@@ -106,6 +111,7 @@ const HowItWorks = () => {
     buttonLink: string;
     disabled: boolean;
     isConsultation: boolean;
+    isModelTier?: boolean;
   };
 
   const TierBox = ({ tier }: { tier: TierType }) => (
@@ -130,17 +136,17 @@ const HowItWorks = () => {
       )}
       
       <h3 
-        className="text-xl font-bold mb-3" 
+        className={`${tier.isModelTier ? 'text-3xl font-bold' : 'text-2xl font-semibold'} mb-3`}
         style={{ fontFamily: 'Garamond, serif', color: '#326496' }}
       >
-        {tier.label}: {tier.title}
+        {tier.isModelTier ? `${tier.label}: ${tier.title}` : tier.title}
       </h3>
       
       <ul className="flex-grow mb-4 space-y-1">
         {tier.bullets.map((bullet, index) => (
           <li 
             key={index} 
-            className="text-base leading-relaxed flex items-start"
+            className={`${tier.isModelTier ? 'text-xl' : 'text-lg'} leading-relaxed flex items-start`}
             style={{ fontFamily: 'Garamond, serif', color: '#666666' }}
           >
             <span className="text-slate-400 mr-2 mt-1">•</span>
@@ -155,7 +161,7 @@ const HowItWorks = () => {
         disabled={tier.disabled}
         variant={tier.disabled ? undefined : "brand-green"}
         size="lg"
-        className={`w-full text-lg font-semibold ${
+        className={`w-full ${tier.isModelTier ? 'text-3xl font-semibold' : 'text-2xl font-semibold'} ${
           tier.disabled 
             ? 'cursor-not-allowed hover:bg-[#808080]' 
             : ''
@@ -202,7 +208,7 @@ const HowItWorks = () => {
         <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
           <div className="mb-5">
             <h2 className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200 text-brand-blue">
-              Self-Service & Free Access
+              Financial Decision Models
             </h2>
             <p className="text-lg text-slate-600 mb-5">
               Perfect for learning, inspiration and understanding the models
@@ -228,7 +234,7 @@ const HowItWorks = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6">
             {tiers.row2.map((tier, index) => (
               <TierBox key={index} tier={tier} />
             ))}
