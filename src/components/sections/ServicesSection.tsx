@@ -20,14 +20,14 @@ const ServicesSection = () => {
         <div className="space-y-4">
           {/* Financial Decision Model Toolbox - Primary */}
           <Card className="shadow-xl border-slate-300 hover:shadow-2xl transition-all duration-300 bg-white backdrop-blur-sm">
-            <CardHeader className="pb-3 px-6 pt-6">
+            <CardHeader className="pb-4 px-8 pt-8">
               <div className="flex items-center space-x-4 mb-4">
                 <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
                   <Calculator className="w-8 h-8 text-primary-foreground" />
                 </div>
                 <div className="flex-1">
                   <CardTitle 
-                    className="text-[30px] font-semibold text-left"
+                    className="text-[24px] font-bold text-left mb-4"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif', color: '#326496' }}
                   >
                     Financial Decision Model Toolbox
@@ -35,19 +35,19 @@ const ServicesSection = () => {
                 </div>
               </div>
               <CardDescription 
-                className="text-[20px] text-slate-600 text-left"
-                style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
+                className="text-[14px] text-black text-left mb-5"
+                style={{ fontFamily: 'Garamond, Times New Roman, serif', lineHeight: '1.6' }}
               >
                 Comprehensive toolbox of professional financial models for online preview and download to use
               </CardDescription>
             </CardHeader>
-            <CardContent className="pt-0 px-6 pb-6 sm:px-6">
-              <div className="space-y-4 pr-2 sm:pr-4">
+            <CardContent className="pt-0 px-8 pb-8 sm:px-8">
+              <div className="space-y-4 pr-2 sm:pr-4 mb-6">
                 <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                   <p 
-                    className="text-[18px] text-slate-700 leading-relaxed text-left flex-1 break-words"
-                    style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
+                    className="text-[13px] text-black leading-relaxed text-left flex-1 break-words"
+                    style={{ fontFamily: 'Garamond, Times New Roman, serif', lineHeight: '1.8' }}
                   >
                     Guidance on selecting appropriate financial decision models for specific business needs
                   </p>
@@ -55,8 +55,8 @@ const ServicesSection = () => {
                 <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                   <p 
-                    className="text-[18px] text-slate-700 leading-relaxed text-left flex-1 break-words"
-                    style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
+                    className="text-[13px] text-black leading-relaxed text-left flex-1 break-words"
+                    style={{ fontFamily: 'Garamond, Times New Roman, serif', lineHeight: '1.8' }}
                   >
                     Clear guidance on concepts, terminology, and best practices
                   </p>
@@ -64,8 +64,8 @@ const ServicesSection = () => {
                 <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                   <p 
-                    className="text-[18px] text-slate-700 leading-relaxed text-left flex-1 break-words"
-                    style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
+                    className="text-[13px] text-black leading-relaxed text-left flex-1 break-words"
+                    style={{ fontFamily: 'Garamond, Times New Roman, serif', lineHeight: '1.8' }}
                   >
                     Support for developing sound assumptions and estimates
                   </p>
@@ -73,15 +73,19 @@ const ServicesSection = () => {
                 <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
                   <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                   <p 
-                    className="text-[18px] text-slate-700 leading-relaxed text-left flex-1 break-words"
-                    style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
+                    className="text-[13px] text-black leading-relaxed text-left flex-1 break-words"
+                    style={{ fontFamily: 'Garamond, Times New Roman, serif', lineHeight: '1.8' }}
                   >
                     Professional, user-friendly Excel models with standardized structure and built-in sensitivity analysis
                   </p>
                 </div>
               </div>
-              <div className="pt-3 border-t border-slate-100 mt-4">
-                <Button asChild variant="brand-green" size="lg" className="justify-center px-4 w-full sm:w-96 text-lg">
+              <div className="pt-6 border-t border-slate-100">
+                <Button 
+                  asChild 
+                  variant="brand-green" 
+                  className="justify-center w-full sm:w-96 text-[14px] min-h-[48px] py-[14px] px-[24px]"
+                >
                   <Link to="/toolbox">
                     Explore Free Tools
                     <ArrowRight className="w-4 h-4 ml-2" />
