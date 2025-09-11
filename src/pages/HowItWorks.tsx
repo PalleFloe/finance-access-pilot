@@ -13,11 +13,11 @@ const HowItWorks = () => {
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
 
   const tiers = {
-    selfServiceFree: [
+    row1: [
       {
         label: "TIER 1",
         badge: { text: "Available", status: "available" },
-        title: "Try It Free!",
+        title: "Just Take a Look! & Free",
         bullets: [
           "Browser embedded Excel",
           "All standard models available", 
@@ -35,55 +35,37 @@ const HowItWorks = () => {
         badge: { text: "Available", status: "available" },
         title: "Free Models & Download",
         bullets: [
-          "Browser embedded Excel with download capability",
+          "Download protected Excel models",
           "Simple/academic models available",
-          "Interactive Excel files", 
+          "Standard protected models", 
           "Email registration required",
-          "Unlimited time, Excel protected files"
+          "Unlimited time, free access"
         ],
         buttonText: "Go to Toolbox",
         buttonLink: "/toolbox",
         disabled: false,
         isConsultation: false
-      }
-    ],
-    selfServicePaid: [
+      },
       {
         label: "TIER 3",
         badge: { text: "Coming Soon", status: "coming-soon" },
-        title: "Model Download & Subscription",
+        title: "Model Download & Own",
         bullets: [
-          "Online Excel embedded with download capability",
+          "Download unprotected Excel models",
           "All models available",
-          "Annual subscription fee",
-          "Email registration and pay via Stripe",
-          "Unlimited time, Excel protected files"
+          "One-time purchase per model",
+          "Full ownership rights",
+          "Unlimited time, Excel unprotected files"
         ],
         buttonText: "Coming Soon",
         buttonLink: "#",
         disabled: true,
         isConsultation: false
-      },
-      {
-        label: "TIER 4",
-        badge: { text: "Coming Soon", status: "coming-soon" },
-        title: "Model Download & Own",
-        bullets: [
-          "Online Excel embedded with download capability",
-          "All models available",
-          "One-time purchase per model",
-          "Email registration and pay via Stripe",
-          "Unlimited time, Excel unprotected files"
-        ],
-        buttonText: "Coming Soon", 
-        buttonLink: "#",
-        disabled: true,
-        isConsultation: false
       }
     ],
-    consulting: [
+    row2: [
       {
-        label: "TIER 5",
+        label: "TIER 4",
         title: "Model Customization",
         bullets: [
           "Custom model development",
@@ -98,28 +80,17 @@ const HowItWorks = () => {
         isConsultation: true
       },
       {
-        label: "TIER 6",
+        label: "TIER 5",
         title: "Consulting Services", 
         bullets: [
-          "Challenge, evaluate and improve a project or process",
-          "Support modelling to be structured into insights to make better decisions",
-          "Help to make proper scenarios to better manage risk and bias",
-          "Process or project evaluation and guidance",
-          "Service can be for a period or for specific sessions / tasks"
+          "Lead or Support to Project or Initiative",
+          "Challenge, evaluate and improve projects or processes",
+          "Support modelling to be structured into insights",
+          "Help create proper scenarios to manage risk and bias",
+          "Service can be for a period or for specific sessions/tasks"
         ],
         buttonText: "Schedule Consultation",
         buttonLink: "/contact",
-        disabled: false,
-        isConsultation: true
-      },
-      {
-        label: "TIER 7",
-        title: "E2E Project Leadership",
-        bullets: [
-          "Role, responsibilities and time to be defined with customer"
-        ],
-        buttonText: "Schedule Consultation",
-        buttonLink: "/contact", 
         disabled: false,
         isConsultation: true
       }
@@ -227,8 +198,8 @@ const HowItWorks = () => {
           </p>
         </div>
 
-        {/* Section 1: Self-Service & Free Access */}
-        <div className="bg-white rounded-lg shadow-sm p-6 mb-16">
+        {/* Row 1: Self-Service Tiers (3 cards) */}
+        <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
           <div className="mb-5">
             <h2 className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200 text-brand-blue">
               Self-Service & Free Access
@@ -238,14 +209,13 @@ const HowItWorks = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-6">
-            {tiers.selfServiceFree.map((tier, index) => (
+          <div className="grid md:grid-cols-3 gap-6">
+            {tiers.row1.map((tier, index) => (
               <TierBox key={index} tier={tier} />
             ))}
           </div>
         </div>
 
-        {/* Section 2: Self-Service & Paid Access */}
         <div className="bg-white rounded-lg shadow-sm p-6 mb-16">
           <div className="mb-5">
             <h2 className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200 text-brand-blue">
@@ -255,15 +225,9 @@ const HowItWorks = () => {
               Professional models with commercial use rights
             </p>
           </div>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            {tiers.selfServicePaid.map((tier, index) => (
-              <TierBox key={index} tier={tier} />
-            ))}
-          </div>
         </div>
 
-        {/* Section 3: Consulting & Customization Services */}
+        {/* Row 2: Consulting Tiers (2 cards) */}
         <div className="bg-white rounded-lg shadow-sm p-6 mb-16">
           <div className="mb-5">
             <h2 className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200 text-brand-blue">
@@ -274,8 +238,8 @@ const HowItWorks = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {tiers.consulting.map((tier, index) => (
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {tiers.row2.map((tier, index) => (
               <TierBox key={index} tier={tier} />
             ))}
           </div>
