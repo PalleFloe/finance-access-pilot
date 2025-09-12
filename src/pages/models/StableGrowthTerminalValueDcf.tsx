@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ArrowLeft, ExternalLink, Download } from "lucide-react";
 import Header from "@/components/Header";
 import { useEffect } from "react";
@@ -37,21 +38,17 @@ const StableGrowthTerminalValueDcf = () => {
       
       <div className="py-12 px-6">
         <div className="container mx-auto max-w-4xl">
-          <Link 
-            to="/toolbox/investment-analysis"
-            className="inline-flex items-center text-slate-600 hover:text-primary mb-8"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Investment Analysis
-          </Link>
+          <div className="text-[12px] mb-4">
+            Home &gt; Toolbox &gt; Investment Analysis &gt; Stable Growth - Terminal Value DCF Model
+          </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
+          <h1 className="text-[20px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
             Stable Growth - Terminal Value DCF Model
           </h1>
 
-          <h2 className="mb-8">
+          <p className="text-lg mb-8">
             Stable Growth DCF Analysis: Perpetual Value Asset Evaluation with Terminal Value Focus and Growth Rate Sensitivity
-          </h2>
+          </p>
 
           {/* Model Card */}
           <div className="bg-white rounded-lg border shadow-lg p-6 max-w-md mx-auto mb-12">
@@ -90,112 +87,109 @@ const StableGrowthTerminalValueDcf = () => {
             </div>
           </div>
 
-          {/* Content Structure */}
-          <div className="prose max-w-4xl mx-auto px-6">
-            <h2 className="text-[18px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-              What Is the Stable Growth - Terminal Value DCF Model?
-            </h2>
-            <p className="text-lg text-slate-600 leading-relaxed mb-6">
-              The Stable Growth - Terminal Value DCF Model provides comprehensive analysis for assets and businesses with predictable long-term growth patterns and significant terminal value components. This model focuses on mature businesses, infrastructure assets, and investments where the majority of value derives from stable, perpetual cash flows beyond the explicit projection period.
-            </p>
-            <p className="text-lg text-slate-600 leading-relaxed mb-8">
-              Unlike finite-life models, this implementation emphasizes terminal value calculation through perpetual growth assumptions, making it ideal for established businesses, utility investments, and assets with sustainable competitive advantages that generate continuing value beyond detailed forecast periods.
-            </p>
-
-            <h2 className="text-[18px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-              Why Was It Developed?
-            </h2>
-            <p className="text-lg text-slate-600 leading-relaxed mb-6">
-              Many valuable assets generate the majority of their worth through long-term, stable cash flows that extend well beyond reasonable explicit forecasting periods. Traditional finite-life models inadequately capture this terminal value, while simple perpetuity formulas lack the sensitivity analysis necessary for robust investment decision-making.
-            </p>
-            <p className="text-lg text-slate-600 leading-relaxed mb-8">
-              This model addresses the critical need for sophisticated terminal value analysis that properly reflects long-term business economics, growth sustainability, and competitive position whilst providing comprehensive sensitivity testing across key terminal assumptions.
-            </p>
-
-            <h2 className="text-[18px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-              Who Benefits?
-            </h2>
-            <div className="space-y-4 mb-8">
-              <p className="text-lg text-slate-600 leading-relaxed">
-                <strong>Equity Investors:</strong> Fund managers and analysts evaluating mature businesses, utility companies, and established enterprises where terminal value represents the majority of total valuation.
+          {/* Introduction Section */}
+          <div className="max-w-6xl mx-auto px-6 py-16">
+            <h3 className="mb-6">Stable Growth - Terminal Value DCF Model Introduction</h3>
+            
+            <div className="prose prose-slate max-w-none mb-8">
+              <p className="text-xl text-slate-600 leading-relaxed mb-4">
+                The Stable Growth Terminal Value DCF Model values ongoing business investments expected to operate indefinitely. By combining explicit forecast periods with Gordon Growth terminal values, this framework captures both near-term visibility and long-term value creation for established operations with predictable growth patterns.
               </p>
-              <p className="text-lg text-slate-600 leading-relaxed">
-                <strong>Infrastructure Investment Teams:</strong> Asset managers focused on long-term infrastructure investments, regulated utilities, and assets with stable, predictable cash flow characteristics.
-              </p>
-              <p className="text-lg text-slate-600 leading-relaxed">
-                <strong>Corporate Development Professionals:</strong> M&A specialists and strategic planning teams evaluating acquisition targets and strategic investments requiring sophisticated terminal value analysis.
-              </p>
-            </div>
-
-            <h2 className="text-[18px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-              How Does the Stable Growth - Terminal Value DCF Model Work?
-            </h2>
-            <div className="space-y-6 mb-8">
-              <div>
-                <h4 className="text-[16px] font-semibold mb-3" style={{color: 'hsl(209, 49%, 39%)'}}>
-                  Excel Implementation Framework
-                </h4>
-                <p className="text-lg text-slate-600 leading-relaxed mb-3">
-                  <strong>Perpetual Growth System:</strong> Stable growth projection with sophisticated terminal value calculations and comprehensive sensitivity analysis across growth rate assumptions.
-                </p>
-                <p className="text-lg text-slate-600 leading-relaxed mb-3">
-                  <strong>Terminal Value Focus:</strong> Detailed analysis of perpetual cash flows with multiple terminal value methodologies and growth rate sustainability assessment.
-                </p>
-                <p className="text-lg text-slate-600 leading-relaxed">
-                  <strong>Sensitivity Integration:</strong> Comprehensive scenario testing across terminal growth rates, discount rates, and margin assumptions to understand valuation drivers.
-                </p>
-              </div>
               
-              <div>
-                <h4 className="text-[16px] font-semibold mb-3" style={{color: 'hsl(209, 49%, 39%)'}}>
-                  Financial Projection Structure
-                </h4>
-                <p className="text-lg text-slate-600 leading-relaxed mb-3">
-                  <strong>Stable Cash Flow Modeling:</strong> Consistent growth assumptions appropriate for mature businesses with established market positions and predictable operational patterns.
-                </p>
-                <p className="text-lg text-slate-600 leading-relaxed">
-                  <strong>Terminal Period Analysis:</strong> Detailed examination of long-term growth sustainability, competitive position maintenance, and operational efficiency assumptions.
-                </p>
-              </div>
-
-              <div>
-                <h4 className="text-[16px] font-semibold mb-3" style={{color: 'hsl(209, 49%, 39())'}}>
-                  Growth Rate Sensitivity Analysis
-                </h4>
-                <p className="text-lg text-slate-600 leading-relaxed">
-                  Comprehensive testing of terminal growth rate assumptions with economic growth constraints, industry maturity considerations, and competitive sustainability analysis across multiple scenarios.
-                </p>
-              </div>
+              <p className="text-xl text-slate-600 leading-relaxed mb-4">
+                <strong>Perpetual Operations Framework</strong>: Designed for investments without natural end dates - production facilities, infrastructure, ongoing services. The model properly handles ongoing capital requirements through calculated maintenance capex rates whilst avoiding the common error of recovering working capital for continuing operations.
+              </p>
+              
+              <p className="text-xl text-slate-600 leading-relaxed mb-4">
+                <strong>Terminal Value Sophistication</strong>: Includes calculated maintenance capex that reduces terminal cash flows, addressing the frequent oversight of ongoing capital needs in perpetuity calculations. The "Lifecycle CAPEX %" automatically calibrates based on initial investment and forecast period requirements.
+              </p>
+              
+              <p className="text-xl text-slate-600 leading-relaxed mb-4">
+                <strong>Strategic Purpose</strong>: Value investments in perpetual operations, assess facilities and infrastructure projects, and analyse long-term business improvements.
+              </p>
+              
+              <p className="text-xl text-slate-600 leading-relaxed">
+                <strong>Target Users</strong>: Business leaders evaluating long-term investments, project managers overseeing perpetual operations, and finance teams analysing ongoing business initiatives.
+              </p>
             </div>
 
-            <h2 className="text-[18px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-              Key Limitations & Best Practices
-            </h2>
-            <div className="space-y-4">
-              <div>
-                <h4 className="text-[16px] font-semibold mb-3" style={{color: 'hsl(209, 49%, 39%)'}}>
-                  Key Limitations
-                </h4>
-                <p className="text-lg text-slate-600 leading-relaxed mb-3">
-                  <strong>Terminal Growth Assumptions:</strong> Long-term growth rate estimates highly uncertain and significantly impact valuation, requiring extensive sensitivity analysis and conservative assumptions.
-                </p>
-                <p className="text-lg text-slate-600 leading-relaxed">
-                  <strong>Competitive Position Sustainability:</strong> Assumes maintenance of competitive advantages and market position over extended periods, which may not reflect market dynamics and technological change.
-                </p>
-              </div>
+            {/* Collapsible Section */}
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="complete-guide">
+                <AccordionTrigger className="text-xl font-bold text-heading">
+                  Complete Stable Growth - Terminal Value DCF Model Guide
+                </AccordionTrigger>
+                <AccordionContent className="prose prose-slate max-w-none">
+                  <div className="space-y-6 text-slate-600">
+                    <div>
+                      <h3 className="text-xl font-bold text-heading mb-3">What Is the Stable Growth - Terminal Value DCF Model?</h3>
+                      <p className="leading-relaxed mb-4">
+                        This model values investments that will continue operating beyond any reasonable forecast horizon. Unlike finite-life investments, these require perpetual reinvestment to maintain operations, making proper terminal value calculation critical.
+                      </p>
+                      <div>
+                        <h4 className="font-semibold text-heading mb-2">Distinguishing Features:</h4>
+                        <ul className="list-disc list-inside space-y-1 ml-4">
+                          <li>No working capital recovery (operations continue indefinitely)</li>
+                          <li>Calculated maintenance capex for realistic terminal values</li>
+                          <li>Salvage value represents equipment replacement, not termination</li>
+                          <li>Terminal value often represents 60-80% of total value</li>
+                        </ul>
+                      </div>
+                    </div>
 
-              <div>
-                <h4 className="text-[16px] font-semibold mb-3" style={{color: 'hsl(209, 49%, 39%)'}}>
-                  Best Practices
-                </h4>
-                <p className="text-lg text-slate-600 leading-relaxed mb-3">
-                  <strong>Conservative Growth Rates:</strong> Use terminal growth rates that do not exceed long-term economic growth expectations and are supported by industry analysis and competitive position assessment.
-                </p>
-                <p className="text-lg text-slate-600 leading-relaxed">
-                  <strong>Multiple Validation Methods:</strong> Cross-validate terminal value calculations using exit multiple approaches and comparable company analysis to ensure reasonable valuation outcomes.
-                </p>
-              </div>
-            </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-heading mb-3">Why Was It Developed?</h3>
+                      <p className="leading-relaxed mb-4">
+                        Standard DCF models often overstate terminal values by ignoring ongoing capital requirements. This model addresses this by explicitly calculating maintenance capex needs based on the business's demonstrated capital intensity during the initial investment period.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-bold text-heading mb-3">Who Benefits?</h3>
+                      <div className="space-y-4">
+                        <div>
+                          <h4 className="font-semibold text-heading">Business Leaders</h4>
+                          <p className="leading-relaxed">Long-term planning to evaluate investments in perpetual operations, strategic decisions to assess facilities and infrastructure investments.</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-heading">Project Leaders / Investment Managers</h4>
+                          <p className="leading-relaxed">Operational planning to model investments transitioning to steady-state, performance benchmarking to establish long-term value creation targets.</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-heading">Finance Teams</h4>
+                          <p className="leading-relaxed">Valuation analysis with proper treatment of perpetual operations, capital planning to understand ongoing investment requirements.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-bold text-heading mb-3">Key Limitations & Best Practices</h3>
+                      <div className="space-y-4">
+                        <div>
+                          <h4 className="font-semibold text-heading">Key Limitations:</h4>
+                          <ul className="list-disc list-inside space-y-1 ml-4">
+                            <li>Internal investments only: Not for M&A or structure-changing transactions</li>
+                            <li>Terminal value dominance: Small changes in assumptions create large value swings</li>
+                            <li>Perpetuity assumption: May not suit all businesses (disruption risk)</li>
+                            <li>Single growth rate: Oversimplifies long-term dynamics</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-heading">Best Practices:</h4>
+                          <ul className="list-disc list-inside space-y-1 ml-4">
+                            <li>Benchmark maintenance capex against internal standards</li>
+                            <li>Use conservative terminal growth rates</li>
+                            <li>Test break-even terminal growth rate</li>
+                            <li>Compare results with similar internal investments</li>
+                            <li>Document perpetuity assumptions thoroughly</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </div>

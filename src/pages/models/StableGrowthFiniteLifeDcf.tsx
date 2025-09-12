@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ArrowLeft, ExternalLink, Download } from "lucide-react";
 import Header from "@/components/Header";
 import { useEffect } from "react";
@@ -37,21 +38,17 @@ const StableGrowthFiniteLifeDcf = () => {
       
       <div className="py-12 px-6">
         <div className="container mx-auto max-w-4xl">
-          <Link 
-            to="/toolbox/investment-analysis"
-            className="inline-flex items-center text-slate-600 hover:text-primary mb-8"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Investment Analysis
-          </Link>
+          <div className="text-[12px] mb-4">
+            Home &gt; Toolbox &gt; Investment Analysis &gt; Stable Growth - Finite-Life DCF Model
+          </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
+          <h1 className="text-[20px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
             Stable Growth - Finite-Life DCF Model
           </h1>
 
-          <h2 className="mb-8">
-            Stable Growth DCF Analysis: Finite-Life Asset Valuation with Predictable Revenue and Terminal Value Calculation
-          </h2>
+          <p className="text-lg mb-8">
+            Stable Growth DCF Analysis: Finite-life Asset Valuation with Predictable Revenue and Terminal Value Calculation
+          </p>
 
           {/* Model Card */}
           <div className="bg-white rounded-lg border shadow-lg p-6 max-w-md mx-auto mb-12">
@@ -90,112 +87,111 @@ const StableGrowthFiniteLifeDcf = () => {
             </div>
           </div>
 
-          {/* Content Structure */}
-          <div className="prose max-w-4xl mx-auto px-6">
-            <h2 className="text-[18px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-              What Is the Stable Growth - Finite-Life DCF Model?
-            </h2>
-            <p className="text-lg text-slate-600 leading-relaxed mb-6">
-              The Stable Growth - Finite-Life DCF Model provides comprehensive analysis for assets and projects with predictable growth patterns and defined operational lifespans. This model is specifically designed for investments with stable revenue trajectories and known termination dates, such as infrastructure projects, equipment investments, and finite-resource assets.
-            </p>
-            <p className="text-lg text-slate-600 leading-relaxed mb-8">
-              Unlike perpetual growth models, this implementation focuses on assets with explicit end dates and residual values, making it ideal for project finance, equipment leasing, and investment analysis where terminal value represents asset liquidation rather than ongoing business operations.
-            </p>
-
-            <h2 className="text-[18px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-              Why Was It Developed?
-            </h2>
-            <p className="text-lg text-slate-600 leading-relaxed mb-6">
-              Many investment opportunities involve assets with predictable cash flows but finite operational lives. Traditional perpetual growth DCF models inappropriately apply to these situations, leading to valuation errors and misguided investment decisions. Projects require specialized analysis that accounts for depreciation, asset life cycles, and terminal liquidation values.
-            </p>
-            <p className="text-lg text-slate-600 leading-relaxed mb-8">
-              This model addresses the need for rigorous finite-life analysis that properly reflects asset economics, maintenance requirements, and residual value estimation whilst providing comprehensive sensitivity analysis for informed capital allocation decisions.
-            </p>
-
-            <h2 className="text-[18px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-              Who Benefits?
-            </h2>
-            <div className="space-y-4 mb-8">
-              <p className="text-lg text-slate-600 leading-relaxed">
-                <strong>Project Finance Professionals:</strong> Infrastructure investors and project managers evaluating capital-intensive investments with defined operational periods and predictable cash flow patterns.
+          {/* Introduction Section */}
+          <div className="max-w-6xl mx-auto px-6 py-16">
+            <h3 className="mb-6">Stable Growth - Finite-Life DCF Model Introduction</h3>
+            
+            <div className="prose prose-slate max-w-none mb-8">
+              <p className="text-xl text-slate-600 leading-relaxed mb-4">
+                The Stable Growth Finite-Life DCF Model values investments with defined operational periods, such as equipment purchases, fixed-term contracts, or projects with natural endpoints. By explicitly modelling project termination with salvage value recovery and working capital release, this framework provides accurate valuation for finite-duration investments.
               </p>
-              <p className="text-lg text-slate-600 leading-relaxed">
-                <strong>Corporate Investment Teams:</strong> Capital allocation specialists assessing equipment purchases, facility investments, and operational projects requiring finite-life valuation frameworks.
-              </p>
-              <p className="text-lg text-slate-600 leading-relaxed">
-                <strong>Asset Management Firms:</strong> Investment professionals evaluating real estate, infrastructure, and industrial assets with stable cash flows and defined investment horizons.
-              </p>
-            </div>
-
-            <h2 className="text-[18px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-              How Does the Stable Growth - Finite-Life DCF Model Work?
-            </h2>
-            <div className="space-y-6 mb-8">
-              <div>
-                <h4 className="text-[16px] font-semibold mb-3" style={{color: 'hsl(209, 49%, 39%)'}}>
-                  Excel Implementation Framework
-                </h4>
-                <p className="text-lg text-slate-600 leading-relaxed mb-3">
-                  <strong>Finite-Life Projection System:</strong> Cash flow modeling over defined asset life with stable growth assumptions and integrated residual value calculations.
-                </p>
-                <p className="text-lg text-slate-600 leading-relaxed mb-3">
-                  <strong>Asset Life Management:</strong> Comprehensive depreciation modeling, maintenance cost projections, and performance degradation analysis over the asset's operational lifespan.
-                </p>
-                <p className="text-lg text-slate-600 leading-relaxed">
-                  <strong>Terminal Value Analysis:</strong> Residual value estimation based on asset condition, market conditions, and liquidation assumptions at project termination.
-                </p>
-              </div>
               
-              <div>
-                <h4 className="text-[16px] font-semibold mb-3" style={{color: 'hsl(209, 49%, 39%)'}}>
-                  Financial Projection Structure
-                </h4>
-                <p className="text-lg text-slate-600 leading-relaxed mb-3">
-                  <strong>Stable Revenue Modeling:</strong> Predictable cash flow projections with consistent growth rates appropriate for mature assets and established operational patterns.
-                </p>
-                <p className="text-lg text-slate-600 leading-relaxed">
-                  <strong>Operating Cost Analysis:</strong> Detailed maintenance and operational expense modeling with inflation adjustments and performance-based cost variations over the asset lifecycle.
-                </p>
-              </div>
-
-              <div>
-                <h4 className="text-[16px] font-semibold mb-3" style={{color: 'hsl(209, 49%, 39())'}}>
-                  Residual Value Calculation
-                </h4>
-                <p className="text-lg text-slate-600 leading-relaxed">
-                  Multiple approaches to terminal value including market-based residual values, book value calculations, and salvage value estimates with comprehensive sensitivity analysis across key assumptions.
-                </p>
-              </div>
+              <p className="text-xl text-slate-600 leading-relaxed mb-4">
+                <strong>Finite-Life Framework</strong>: Unlike perpetual business models, this approach recognises that many investments have natural end points - equipment replacement cycles, contract expiration, or project completion. The model properly handles final-year cash flows including asset disposal and working capital recovery.
+              </p>
+              
+              <p className="text-xl text-slate-600 leading-relaxed mb-4">
+                <strong>Comprehensive Sensitivity Analysis</strong>: Visual sensitivity charts show how each assumption impacts NPV and IRR, enabling users to identify critical value drivers and risk factors. The three-scenario framework tests investment viability across different market conditions.
+              </p>
+              
+              <p className="text-xl text-slate-600 leading-relaxed mb-4">
+                <strong>Strategic Purpose</strong>: Value finite-life projects with proper end-period treatment, assess equipment investments with replacement cycles, and evaluate fixed-term contracts or operational improvements.
+              </p>
+              
+              <p className="text-xl text-slate-600 leading-relaxed">
+                <strong>Target Users</strong>: Business leaders assessing capital projects, project managers planning finite-duration initiatives, and finance teams evaluating time-limited investments.
+              </p>
             </div>
 
-            <h2 className="text-[18px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-              Key Limitations & Best Practices
-            </h2>
-            <div className="space-y-4">
-              <div>
-                <h4 className="text-[16px] font-semibold mb-3" style={{color: 'hsl(209, 49%, 39%)'}}>
-                  Key Limitations
-                </h4>
-                <p className="text-lg text-slate-600 leading-relaxed mb-3">
-                  <strong>Residual Value Uncertainty:</strong> Terminal asset values subject to market volatility, technological obsolescence, and condition deterioration making sensitivity analysis essential.
-                </p>
-                <p className="text-lg text-slate-600 leading-relaxed">
-                  <strong>Maintenance Cost Escalation:</strong> Operating expenses may increase non-linearly over asset life due to performance degradation and component replacement requirements.
-                </p>
-              </div>
+            {/* Collapsible Section */}
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="complete-guide">
+                <AccordionTrigger className="text-xl font-bold text-heading">
+                  Complete Stable Growth - Finite-Life DCF Model Guide
+                </AccordionTrigger>
+                <AccordionContent className="prose prose-slate max-w-none">
+                  <div className="space-y-6 text-slate-600">
+                    <div>
+                      <h3 className="text-xl font-bold text-heading mb-3">What Is the Stable Growth - Finite-Life DCF Model?</h3>
+                      <p className="leading-relaxed mb-4">
+                        The model addresses investments that generate cash flows for specific periods before terminating. This includes equipment that requires replacement, contractual arrangements with defined terms, or operational projects with clear endpoints.
+                      </p>
+                      <div>
+                        <h4 className="font-semibold text-heading mb-2">Core Components:</h4>
+                        <ul className="list-disc list-inside space-y-1 ml-4">
+                          <li>Initial investment and working capital requirements</li>
+                          <li>Revenue projections with stable growth rates</li>
+                          <li>Cost structure (variable and operational expenses)</li>
+                          <li>Depreciation over asset lifetime</li>
+                          <li>Salvage value or disposal costs at project end</li>
+                          <li>Working capital recovery in final year</li>
+                        </ul>
+                      </div>
+                    </div>
 
-              <div>
-                <h4 className="text-[16px] font-semibold mb-3" style={{color: 'hsl(209, 49%, 39%)'}}>
-                  Best Practices
-                </h4>
-                <p className="text-lg text-slate-600 leading-relaxed mb-3">
-                  <strong>Conservative Residual Values:</strong> Use conservative terminal value estimates supported by comparable asset analysis and market research to avoid overvaluation.
-                </p>
-                <p className="text-lg text-slate-600 leading-relaxed">
-                  <strong>Comprehensive Maintenance Modeling:</strong> Include detailed maintenance cost projections based on manufacturer recommendations and operational experience to ensure accurate cash flow analysis.
-                </p>
-              </div>
-            </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-heading mb-3">Why Was It Developed?</h3>
+                      <p className="leading-relaxed mb-4">
+                        Many internal investments don't continue indefinitely. Equipment becomes obsolete, contracts expire, and improvement projects reach completion. Standard perpetuity-based DCF models overvalue these investments by assuming infinite cash flows. This model provides accurate valuation by properly handling project termination.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-bold text-heading mb-3">Who Benefits?</h3>
+                      <div className="space-y-4">
+                        <div>
+                          <h4 className="font-semibold text-heading">Business Leaders</h4>
+                          <p className="leading-relaxed">Capital allocation to evaluate equipment replacement decisions, strategic planning to assess fixed-term initiatives and improvements.</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-heading">Project Leaders / Investment Managers</h4>
+                          <p className="leading-relaxed">Project evaluation to value extraction projects with defined timelines, implementation planning to model complete project lifecycles.</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-heading">Finance Teams</h4>
+                          <p className="leading-relaxed">Investment analysis to properly value time-limited opportunities, risk assessment to understand sensitivity to project lifetime assumptions.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-bold text-heading mb-3">Key Limitations & Best Practices</h3>
+                      <div className="space-y-4">
+                        <div>
+                          <h4 className="font-semibold text-heading">Key Limitations:</h4>
+                          <ul className="list-disc list-inside space-y-1 ml-4">
+                            <li>Internal focus: Designed for projects within existing operations</li>
+                            <li>Assumes stable operations: May not capture operational volatility</li>
+                            <li>Fixed lifetime: Doesn't model lifetime uncertainty or extension options</li>
+                            <li>Simplified structure: Single tax rate, no changes to WACC</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-heading">Best Practices:</h4>
+                          <ul className="list-disc list-inside space-y-1 ml-4">
+                            <li>Test sensitivity to lifetime assumptions</li>
+                            <li>Consider disposal cost scenarios (negative salvage)</li>
+                            <li>Model working capital recovery conservatively</li>
+                            <li>Validate against similar completed projects</li>
+                            <li>Document salvage value assumptions carefully</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </div>

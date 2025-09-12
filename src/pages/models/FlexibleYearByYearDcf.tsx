@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ArrowLeft, ExternalLink, Download } from "lucide-react";
 import Header from "@/components/Header";
 import { useEffect } from "react";
@@ -37,21 +38,17 @@ const FlexibleYearByYearDcf = () => {
       
       <div className="py-12 px-6">
         <div className="container mx-auto max-w-4xl">
-          <Link 
-            to="/toolbox/investment-analysis"
-            className="inline-flex items-center text-slate-600 hover:text-primary mb-8"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Investment Analysis
-          </Link>
+          <div className="text-[12px] mb-4">
+            Home &gt; Toolbox &gt; Investment Analysis &gt; Flexible Year by Year DCF Model
+          </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
+          <h1 className="text-[20px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
             Flexible Year by Year DCF Model
           </h1>
 
-          <h2 className="mb-8">
+          <p className="text-lg mb-8">
             Flexible DCF Analysis: Dynamic Year-by-Year Projections with Variable Growth Rates and Terminal Value Options
-          </h2>
+          </p>
 
           {/* Model Card */}
           <div className="bg-white rounded-lg border shadow-lg p-6 max-w-md mx-auto mb-12">
@@ -90,112 +87,109 @@ const FlexibleYearByYearDcf = () => {
             </div>
           </div>
 
-          {/* Content Structure */}
-          <div className="prose max-w-4xl mx-auto px-6">
-            <h2 className="text-[18px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-              What Is the Flexible Year by Year DCF Model?
-            </h2>
-            <p className="text-lg text-slate-600 leading-relaxed mb-6">
-              The Flexible Year by Year DCF Model provides comprehensive discounted cash flow analysis with dynamic year-by-year projections and variable growth rate capabilities. This model accommodates businesses with changing growth patterns, seasonal variations, and complex revenue trajectories that require flexible forecasting frameworks rather than steady-state assumptions.
-            </p>
-            <p className="text-lg text-slate-600 leading-relaxed mb-8">
-              Unlike traditional DCF models that assume constant growth rates, this implementation allows users to specify different growth rates, margins, and operational metrics for each projection year, making it ideal for businesses experiencing transition phases, market evolution, or strategic pivots that affect financial performance over time.
-            </p>
-
-            <h2 className="text-[18px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-              Why Was It Developed?
-            </h2>
-            <p className="text-lg text-slate-600 leading-relaxed mb-6">
-              Traditional DCF models often oversimplify business dynamics by assuming constant growth rates and stable margins throughout the projection period. Real businesses experience variable performance due to market cycles, competitive dynamics, operational improvements, and strategic initiatives that affect financial performance differently across time periods.
-            </p>
-            <p className="text-lg text-slate-600 leading-relaxed mb-8">
-              This model addresses the need for more nuanced financial analysis that reflects actual business complexity whilst maintaining analytical rigor and providing comprehensive sensitivity analysis capabilities for informed investment decision-making.
-            </p>
-
-            <h2 className="text-[18px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-              Who Benefits?
-            </h2>
-            <div className="space-y-4 mb-8">
-              <p className="text-lg text-slate-600 leading-relaxed">
-                <strong>Investment Professionals:</strong> Portfolio managers and analysts evaluating companies with complex growth trajectories, seasonal businesses, or firms undergoing strategic transitions requiring detailed year-by-year analysis.
+          {/* Introduction Section */}
+          <div className="max-w-6xl mx-auto px-6 py-16">
+            <h3 className="mb-6">Flexible Year by Year DCF Model Introduction</h3>
+            
+            <div className="prose prose-slate max-w-none mb-8">
+              <p className="text-xl text-slate-600 leading-relaxed mb-4">
+                The Flexible Year by Year DCF Model provides comprehensive investment analysis through customisable annual projections. Unlike simplified constant-growth models, this framework allows different growth rates, margins, and cost structures for each year of the forecast period, reflecting real-world business dynamics.
               </p>
-              <p className="text-lg text-slate-600 leading-relaxed">
-                <strong>Corporate Finance Teams:</strong> Business development and strategic planning professionals assessing capital allocation decisions, acquisition opportunities, and internal project valuations requiring flexible forecasting capabilities.
-              </p>
-              <p className="text-lg text-slate-600 leading-relaxed">
-                <strong>Financial Advisors:</strong> Investment advisors and consultants providing sophisticated valuation analysis for clients requiring detailed financial modeling with explicit assumption documentation and sensitivity testing.
-              </p>
-            </div>
-
-            <h2 className="text-[18px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-              How Does the Flexible Year by Year DCF Model Work?
-            </h2>
-            <div className="space-y-6 mb-8">
-              <div>
-                <h4 className="text-[16px] font-semibold mb-3" style={{color: 'hsl(209, 49%, 39%)'}}>
-                  Excel Implementation Framework
-                </h4>
-                <p className="text-lg text-slate-600 leading-relaxed mb-3">
-                  <strong>Year-by-Year Projection System:</strong> Independent growth rates, margins, and operational metrics for each projection year with integrated terminal value calculation options.
-                </p>
-                <p className="text-lg text-slate-600 leading-relaxed mb-3">
-                  <strong>User Interface Standards:</strong> Color-coded Excel inputs with yellow cells for user assumptions, white cells for calculated values, and grey cells with bold text for key results and sensitivity analysis.
-                </p>
-                <p className="text-lg text-slate-600 leading-relaxed">
-                  <strong>Real-Time Analysis:</strong> Immediate updates as users modify assumptions, enabling comprehensive scenario testing and sensitivity analysis across multiple variables simultaneously.
-                </p>
-              </div>
               
-              <div>
-                <h4 className="text-[16px] font-semibold mb-3" style={{color: 'hsl(209, 49%, 39%)'}}>
-                  Financial Projection Structure
-                </h4>
-                <p className="text-lg text-slate-600 leading-relaxed mb-3">
-                  <strong>Revenue and Growth Modeling:</strong> Flexible revenue projections with year-specific growth rates, seasonal adjustments, and market evolution assumptions tailored to business dynamics.
-                </p>
-                <p className="text-lg text-slate-600 leading-relaxed">
-                  <strong>Operating Analysis:</strong> Detailed cost structure modeling with variable margin assumptions, operating leverage effects, and efficiency improvement trajectories over the projection period.
-                </p>
-              </div>
-
-              <div>
-                <h4 className="text-[16px] font-semibold mb-3" style={{color: 'hsl(209, 49%, 39())'}}>
-                  Terminal Value Options
-                </h4>
-                <p className="text-lg text-slate-600 leading-relaxed">
-                  Multiple terminal value methodologies including perpetual growth models, exit multiple approaches, and finite-life calculations with comprehensive sensitivity analysis across terminal assumptions.
-                </p>
-              </div>
+              <p className="text-xl text-slate-600 leading-relaxed mb-4">
+                <strong>Dynamic Flexibility</strong>: Users can adjust revenue growth rates, variable cost percentages, and operational expenses independently for each forecast year. This granular control enables realistic modelling of business cycles, market maturation, and operational improvements over time.
+              </p>
+              
+              <p className="text-xl text-slate-600 leading-relaxed mb-4">
+                <strong>Terminal Value Integration</strong>: The model includes Gordon Growth terminal value calculations for businesses continuing beyond the explicit forecast period, with clear presentation of terminal value's contribution to total firm value.
+              </p>
+              
+              <p className="text-xl text-slate-600 leading-relaxed mb-4">
+                <strong>Strategic Purpose</strong>: Enable detailed investment analysis with year-by-year flexibility, support strategic planning with realistic growth trajectories, and provide comprehensive valuation with terminal value options.
+              </p>
+              
+              <p className="text-xl text-slate-600 leading-relaxed">
+                <strong>Target Users</strong>: Business leaders evaluating strategic investments, project managers planning complex initiatives, and finance teams requiring detailed projection capabilities.
+              </p>
             </div>
 
-            <h2 className="text-[18px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-              Key Limitations & Best Practices
-            </h2>
-            <div className="space-y-4">
-              <div>
-                <h4 className="text-[16px] font-semibold mb-3" style={{color: 'hsl(209, 49%, 39%)'}}>
-                  Key Limitations
-                </h4>
-                <p className="text-lg text-slate-600 leading-relaxed mb-3">
-                  <strong>Projection Accuracy:</strong> Year-by-year forecasts become increasingly unreliable over extended periods, making sensitivity analysis essential for meaningful insights.
-                </p>
-                <p className="text-lg text-slate-600 leading-relaxed">
-                  <strong>Assumption Dependencies:</strong> Results highly sensitive to growth rate assumptions, terminal value estimates, and discount rate selections requiring comprehensive documentation and validation.
-                </p>
-              </div>
+            {/* Collapsible Section */}
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="complete-guide">
+                <AccordionTrigger className="text-xl font-bold text-heading">
+                  Complete Flexible Year by Year DCF Model Guide
+                </AccordionTrigger>
+                <AccordionContent className="prose prose-slate max-w-none">
+                  <div className="space-y-6 text-slate-600">
+                    <div>
+                      <h3 className="text-xl font-bold text-heading mb-3">What Is the Flexible Year by Year DCF Model?</h3>
+                      <p className="leading-relaxed mb-4">
+                        The Flexible Year by Year DCF Model enables detailed cash flow projections with complete control over annual assumptions. This approach recognises that businesses rarely maintain constant growth rates or margins, instead experiencing varying performance across different periods.
+                      </p>
+                      <div>
+                        <h4 className="font-semibold text-heading mb-2">Core Analytical Framework:</h4>
+                        <ul className="list-disc list-inside space-y-1 ml-4">
+                          <li>Year-by-year revenue growth estimates (rather than single growth rate)</li>
+                          <li>Variable cost percentages estimated annually</li>
+                          <li>Year-by-year operational expense growth estimates</li>
+                          <li>Investment, depreciation and working capital estimated annually</li>
+                          <li>Terminal value calculation using Gordon Growth methodology</li>
+                        </ul>
+                      </div>
+                    </div>
 
-              <div>
-                <h4 className="text-[16px] font-semibold mb-3" style={{color: 'hsl(209, 49%, 39%)'}}>
-                  Best Practices
-                </h4>
-                <p className="text-lg text-slate-600 leading-relaxed mb-3">
-                  <strong>Conservative Assumptions:</strong> Use realistic growth rate assumptions supported by market analysis and historical performance data to maintain analytical credibility.
-                </p>
-                <p className="text-lg text-slate-600 leading-relaxed">
-                  <strong>Comprehensive Sensitivity Testing:</strong> Test sensitivity across key variables including growth rates, terminal assumptions, and discount rates to understand valuation drivers and critical dependencies.
-                </p>
-              </div>
-            </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-heading mb-3">Why Was It Developed?</h3>
+                      <p className="leading-relaxed mb-4">
+                        Traditional DCF models often oversimplify by assuming constant growth rates and margins. Real businesses experience fluctuating performance - rapid early growth followed by maturation, margin improvements from scale efficiencies, or temporary setbacks requiring recovery periods.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-bold text-heading mb-3">Who Benefits?</h3>
+                      <div className="space-y-4">
+                        <div>
+                          <h4 className="font-semibold text-heading">Business Leaders</h4>
+                          <p className="leading-relaxed">Strategic decisions to evaluate major capital investments with varying return profiles, resource allocation to compare projects with different cash flow patterns.</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-heading">Project Leaders / Investment Managers</h4>
+                          <p className="leading-relaxed">Detailed planning to model specific operational scenarios with annual granularity, performance tracking to establish benchmarks for investment monitoring.</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-heading">Finance Teams</h4>
+                          <p className="leading-relaxed">Investment analysis to provide detailed valuations for complex opportunities, business partnering to support decision-makers with flexible modelling.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-bold text-heading mb-3">Key Limitations & Best Practices</h3>
+                      <div className="space-y-4">
+                        <div>
+                          <h4 className="font-semibold text-heading">Key Limitations:</h4>
+                          <ul className="list-disc list-inside space-y-1 ml-4">
+                            <li>Internal investments focus: Designed for projects within existing corporate structure</li>
+                            <li>Forecast reliability: Projections beyond 3-5 years become increasingly uncertain</li>
+                            <li>Terminal value sensitivity: Often represents 50-75% of total value</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-heading">Best Practices:</h4>
+                          <ul className="list-disc list-inside space-y-1 ml-4">
+                            <li>Use conservative terminal growth rates</li>
+                            <li>Test sensitivity to key assumptions</li>
+                            <li>Focus detail on near-term years where visibility is higher</li>
+                            <li>Document assumption rationale</li>
+                            <li>Validate against comparable internal projects</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </div>
