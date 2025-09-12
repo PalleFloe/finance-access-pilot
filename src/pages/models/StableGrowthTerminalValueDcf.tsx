@@ -24,7 +24,7 @@ const StableGrowthTerminalValueDcf = () => {
       navigate('/auth');
       return;
     }
-    openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EUeSxYZEREdOs1R2_0A3aCMBk_w4aOC8xnxwZUWDIx8VKg?e=eTe0Vp');
+    openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EUeSxYZEREdOs1R2_0A3aCMBk_w4aOC8xnxwZUWDIx8VKg?e=eTe0Vp&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False');
   };
 
   return (

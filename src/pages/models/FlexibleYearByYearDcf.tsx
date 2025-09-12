@@ -24,7 +24,7 @@ const FlexibleYearByYearDcf = () => {
       navigate('/auth');
       return;
     }
-    openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ESPxX1oplpdOqJHTXTOyqMwBzUKjyDHCll44KCQmivCPuw?e=u5p871');
+    openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ESPxX1oplpdOqJHTXTOyqMwBzUKjyDHCll44KCQmivCPuw?e=u5p871&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False');
   };
 
   return (

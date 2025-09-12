@@ -24,7 +24,7 @@ const StableGrowthFiniteLifeDcf = () => {
       navigate('/auth');
       return;
     }
-    openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EVOzm603_HJIgv8iYaF3gEwBp2fEhSIDNCNhFb6wdeJTgA?e=MeeyO9');
+    openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EVOzm603_HJIgv8iYaF3gEwBp2fEhSIDNCNhFb6wdeJTgA?e=MeeyO9&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False');
   };
 
   return (

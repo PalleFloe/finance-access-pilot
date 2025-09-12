@@ -63,7 +63,7 @@ const VentureCapitalMethod = () => {
                 </Button>
                 
                 <Button 
-                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ERSbyfSH8p9PsrkquqrI3h8BNaZU4juQRiM8eCbI0_RsSg?e=G9FJbp')}
+                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ERSbyfSH8p9PsrkquqrI3h8BNaZU4juQRiM8eCbI0_RsSg?e=G9FJbp&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                   className="w-full h-11 rounded-md px-8"
                   variant="outline"
                   size="lg"

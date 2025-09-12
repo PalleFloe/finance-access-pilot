@@ -63,7 +63,7 @@ const DecisionAnalysis = () => {
                 </Button>
                 
                 <Button 
-                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaNfhyv_u11Ai_MHOUOklzIBGD-AkeKDPHhP-qqltbyH6Q?e=M0aDnE')}
+                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaNfhyv_u11Ai_MHOUOklzIBGD-AkeKDPHhP-qqltbyH6Q?e=M0aDnE&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                   className="w-full h-11 rounded-md px-8"
                   variant="outline"
                   size="lg"

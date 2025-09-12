@@ -63,7 +63,7 @@ const FirstChicagoValuation = () => {
                 </Button>
                 
                 <Button 
-                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYlsAZtZS69LoWk_ONge0A4BV2efHA30RY3YINOML4cdKA?e=IL6HZM')}
+                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYlsAZtZS69LoWk_ONge0A4BV2efHA30RY3YINOML4cdKA?e=IL6HZM&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                   className="w-full h-11 rounded-md px-8"
                   variant="outline"
                   size="lg"

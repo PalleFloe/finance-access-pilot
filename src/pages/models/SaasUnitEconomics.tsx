@@ -63,7 +63,7 @@ const SaasUnitEconomics = () => {
                 </Button>
                 
                 <Button 
-                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETQMIDNWvYxOo93LJ53bgK0BcIxrgOuyZ3EY0Z_Cf8fnSA?e=sm06A9')}
+                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETQMIDNWvYxOo93LJ53bgK0BcIxrgOuyZ3EY0Z_Cf8fnSA?e=sm06A9&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                   className="w-full h-11 rounded-md px-8"
                   variant="outline"
                   size="lg"
