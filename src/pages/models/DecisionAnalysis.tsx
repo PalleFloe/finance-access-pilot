@@ -6,6 +6,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
+import DownloadButton from "@/components/DownloadButton";
 import { useEffect } from "react";
 
 const DecisionAnalysis = () => {
@@ -25,76 +26,61 @@ const DecisionAnalysis = () => {
       </Helmet>
       <Header />
       
-      <div className="py-12 px-6">
-        <div className="container mx-auto max-w-4xl">
+      <div className="max-w-6xl mx-auto px-6 py-16">
+        <div className="mb-4">
           <Link 
             to="/toolbox/startup-valuations"
-            className="inline-flex items-center text-slate-600 hover:text-primary mb-8"
+            className="text-[12px]"
           >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Startup Valuations
+            ← Back to Startup Valuations
           </Link>
+        </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
+        <h1 className="text-[20px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
+          Decision Analysis Model for Venture Capital Investments
+        </h1>
+
+        <p className="text-lg mb-8">
+          Systematic Decision Assessment of Startup Life Stages for Investment Decisions via Probability-Weighted Multiple on Investment (PWMOI)
+        </p>
+      </div>
+
+      <div className="max-w-md mx-auto mb-12">
+        <div className="bg-white rounded-lg border shadow-lg p-6">
+          <h3 className="text-xl font-semibold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
             Decision Analysis Model for Venture Capital Investments
-          </h1>
+          </h3>
+          
+          <div className="space-y-3">
+            <Button 
+              onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETKCTHtbjLJPkQx0LGrLFmcBlrYcFw2FQgLpt0RnkWMACg?action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+              className="w-full"
+              variant="brand-green"
+              size="lg"
+            >
+              <ExternalLink className="mr-2 h-4 w-4" />
+              Online & Free
+            </Button>
+            
+            <DownloadButton 
+              sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaNfhyv_u11Ai_MHOUOklzIBGD-AkeKDPHhP-qqltbyH6Q?e=M0aDnE"
+              modelName="Decision Analysis Model for Venture Capital Investments"
+              className="w-full"
+            />
+          </div>
+          
+          <div className="mt-6 text-sm text-gray-600">
+            <h4 className="font-semibold mb-2">Quick Access Guide</h4>
+            <ul className="space-y-1 text-xs">
+              <li><strong>Online & Free:</strong> Click to preview this model instantly in your browser</li>
+              <li><strong>Register to Download:</strong> Free registration gives you download access to all models</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-          <h2 className="mb-8">
-            Systematic Decision Assessment of Startup Life Stages for Investment Decisions via Probability-Weighted Multiple on Investment (PWMOI)
-          </h2>
-
-          {/* Model Card */}
-          <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
-            <CardHeader>
-              <CardTitle>
-                Decision Analysis Model for Venture Capital Investments
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-2">
-              <div className="tier-actions max-w-md mx-auto space-y-3 mb-12">
-                <Button 
-                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETKCTHtbjLJPkQx0LGrLFmcBlrYcFw2FQgLpt0RnkWMACg?action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-                  className="w-full h-11 rounded-md px-8"
-                  variant="brand-green"
-                  size="lg"
-                >
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Online & Free
-                </Button>
-                
-                <Button 
-                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaNfhyv_u11Ai_MHOUOklzIBGD-AkeKDPHhP-qqltbyH6Q?e=M0aDnE&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-                  className="w-full h-11 rounded-md px-8"
-                  variant="outline"
-                  size="lg"
-                >
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Register to Download
-                </Button>
-                
-                <Button 
-                  className="w-full h-11 rounded-md px-8 bg-[#f5f5f5] text-[#999] border-[#ddd] cursor-not-allowed"
-                  disabled
-                  size="lg"
-                >
-                  Coming Soon - Full Ownership
-                </Button>
-              </div>
-              
-              <div className="bg-slate-50 p-6 rounded-lg mb-8">
-                <h4 className="text-[14px] font-bold mb-3" style={{color: 'hsl(209, 49%, 39%)'}}>
-                  Quick Access Guide
-                </h4>
-                <ul className="text-[12px] space-y-2">
-                  <li><strong>Online & Free:</strong> Click to preview this model instantly in your browser</li>
-                  <li><strong>Register to Download:</strong> Free registration gives you download access to all models</li>
-                  <li><strong>Full Ownership:</strong> Coming soon - purchase unprotected versions with commercial rights</li>
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Introduction Headline */}
+      <div className="max-w-6xl mx-auto px-6">
+        {/* Introduction Headline */}
           <h3 className="mb-6">Decision Analysis Model for Venture Capital Investments Introduction</h3>
 
           {/* Short Description */}
