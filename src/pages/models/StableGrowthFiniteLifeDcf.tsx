@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ArrowLeft, ExternalLink, Download } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
+import DownloadButton from "@/components/DownloadButton";
 import { useEffect } from "react";
-import { useAuth } from "@/hooks/useAuth";
-import { useNavigate } from "react-router-dom";
 
 const StableGrowthFiniteLifeDcf = () => {
-  const { user } = useAuth();
-  const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -110,9 +108,8 @@ const StableGrowthFiniteLifeDcf = () => {
         </div>
       </div>
 
-      {/* Introduction Section */}
-      <div className="max-w-6xl mx-auto px-6 py-16">
-        <h3 className="mb-6">Stable Growth - Finite-Life DCF Model Introduction</h3>
+          {/* Introduction Headline */}
+          <h3 className="mb-6">Stable Growth - Finite-Life DCF Model Introduction</h3>
         
         <div className="prose prose-slate max-w-none mb-8">
           <p className="text-xl text-slate-600 leading-relaxed mb-4">
@@ -215,6 +212,7 @@ const StableGrowthFiniteLifeDcf = () => {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
+        </div>
       </div>
     </div>
   );
