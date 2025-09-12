@@ -54,7 +54,7 @@ const StableGrowthTerminalValueDcf = () => {
             </CardHeader>
             <CardContent className="space-y-3">
               <Button 
-                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EeRY_3bf6h9AiY1VNFHDg10BFUZVbK8McsBzLEGvezaCaQ?e=R1iM3z&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EQheIJ2rfolBolvkGbfyaroBPUl7UNNc5VeEgga4eevhWQ?e=tTNQwY&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                 variant="brand-green"
                 size="lg"
                 className="w-full text-lg"
@@ -63,7 +63,7 @@ const StableGrowthTerminalValueDcf = () => {
                 Online & Free
               </Button>
               <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EUeSxYZEREdOs1R2_0A3aCMBk_w4aOC8xnxwZUWDIx8VKg?e=eTe0Vp&action=embedview&wdHideGridlines=True&wdHideHeaders=True"
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EdPavAGbP-FDpSboRTbcKQ4BpC33RBzW7y_NEXH_0XKzqw?e=J44k1K"
                 modelName="Stable Growth - Terminal Value DCF Model"
                 className="w-full"
               />

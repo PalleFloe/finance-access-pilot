@@ -61,7 +61,7 @@ const PresentValueCalculator = () => {
                 Online & Free
               </Button>
               <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ESJnYrDNBTZEntOslldNqecBF1aaGKcmP0_Hexzaxmle1w?e=c3ZGq6&action=embedview&wdHideGridlines=True&wdHideHeaders=True"
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ESJnYrDNBTZEntOslldNqecBF1aaGKcmP0_Hexzaxmle1w?e=c3ZGq6"
                 modelName="Simple Present Value Calculator"
                 className="w-full"
               />

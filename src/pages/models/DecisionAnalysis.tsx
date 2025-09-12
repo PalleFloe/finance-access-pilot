@@ -62,9 +62,9 @@ const DecisionAnalysis = () => {
               Online & Free
             </Button>
             
-            <DownloadButton 
-              sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaNfhyv_u11Ai_MHOUOklzIBGD-AkeKDPHhP-qqltbyH6Q?e=M0aDnE&action=embedview&wdHideGridlines=True&wdHideHeaders=True"
-              modelName="Decision Analysis for Venture Capital Investments"
+              <DownloadButton 
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaNfhyv_u11Ai_MHOUOklzIBGD-AkeKDPHhP-qqltbyH6Q?e=M0aDnE"
+                modelName="Decision Analysis for Venture Capital Investments"
               className="w-full text-lg"
             />
           </div>

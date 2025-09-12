@@ -62,9 +62,9 @@ const SaasUnitEconomics = () => {
               Online & Free
             </Button>
             
-            <DownloadButton 
-              sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETQMIDNWvYxOo93LJ53bgK0BcIxrgOuyZ3EY0Z_Cf8fnSA?e=sm06A9&action=embedview&wdHideGridlines=True&wdHideHeaders=True"
-              modelName="SaaS Unit Economics Model"
+              <DownloadButton 
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETQMIDNWvYxOo93LJ53bgK0BcIxrgOuyZ3EY0Z_Cf8fnSA?e=sm06A9"
+                modelName="SaaS Unit Economics Model"
               className="w-full"
             />
           </div>

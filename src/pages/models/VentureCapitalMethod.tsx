@@ -62,9 +62,9 @@ const VentureCapitalMethod = () => {
               Online & Free
             </Button>
             
-            <DownloadButton 
-              sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ERSbyfSH8p9PsrkquqrI3h8BNaZU4juQRiM8eCbI0_RsSg?e=G9FJbp&action=embedview&wdHideGridlines=True&wdHideHeaders=True"
-              modelName="Venture Capital Valuation Model"
+              <DownloadButton 
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ERSbyfSH8p9PsrkquqrI3h8BNaZU4juQRiM8eCbI0_RsSg?e=G9FJbp"
+                modelName="Venture Capital Valuation Model"
               className="w-full"
             />
           </div>

@@ -62,9 +62,9 @@ const FirstChicagoValuation = () => {
               Online & Free
             </Button>
             
-            <DownloadButton 
-              sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYlsAZtZS69LoWk_ONge0A4BV2efHA30RY3YINOML4cdKA?e=XU6enn&action=embedview&wdHideGridlines=True&wdHideHeaders=True"
-              modelName="First Chicago Method Model"
+              <DownloadButton 
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYlsAZtZS69LoWk_ONge0A4BV2efHA30RY3YINOML4cdKA?e=XU6enn"
+                modelName="First Chicago Method Model"
               className="w-full text-lg"
             />
           </div>
