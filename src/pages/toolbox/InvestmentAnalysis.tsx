@@ -81,7 +81,7 @@ const InvestmentAnalysis = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {models.map((model) => (
-              <Card key={model.name} className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full">
+              <Card key={model.name} className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full min-h-[320px]">
                 {model.status === "available" && (
                   <div className="absolute -top-3 -right-3 z-10">
                     <Badge className="bg-green-100 text-green-800 border-green-200 shadow-sm">
@@ -98,13 +98,15 @@ const InvestmentAnalysis = () => {
                     </Badge>
                   </div>
                 )}
-                <CardHeader className="flex-grow">
-                  <CardTitle className="text-2xl font-semibold">
-                    <span>{model.name}</span>
+                <CardHeader className="flex-1 flex flex-col">
+                  <CardTitle className="text-2xl font-semibold mb-3">
+                    {model.name}
                   </CardTitle>
-                  <CardDescription className="flex-grow text-lg">{model.description}</CardDescription>
+                  <CardDescription className="text-lg flex-1 min-h-[72px] flex items-start">
+                    {model.description || " "}
+                  </CardDescription>
                 </CardHeader>
-                <CardContent className="pt-0">
+                <CardContent className="pt-0 mt-auto">
                   <Link to={model.href}>
                     <Button variant="brand-green" size="lg" className="w-full text-lg">
                       {model.status === "coming soon" ? "Learn More" : "Go to Model"}
