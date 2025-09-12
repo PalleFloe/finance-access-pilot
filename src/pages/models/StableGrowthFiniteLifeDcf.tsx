@@ -36,12 +36,7 @@ const StableGrowthFiniteLifeDcf = () => {
       <Header />
       
       <div className="py-12 px-6">
-        <div className="max-w-6xl mx-auto px-6 py-16">
-          {/* Breadcrumb */}
-          <div className="text-[12px] mb-4">
-            Home &gt; Toolbox &gt; Investment Analysis &gt; Stable Growth - Finite-Life DCF Model
-          </div>
-
+        <div className="container mx-auto max-w-4xl">
           <Link 
             to="/toolbox/investment-analysis"
             className="inline-flex items-center text-slate-600 hover:text-primary mb-8"
@@ -50,48 +45,49 @@ const StableGrowthFiniteLifeDcf = () => {
             Back to Investment Analysis
           </Link>
 
-          {/* Page Title */}
-          <h1 className="text-[20px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
             Stable Growth - Finite-Life DCF Model
           </h1>
-          
-          {/* Strategic Purpose Paragraph */}
-          <p className="text-lg mb-8">
+
+          <h2 className="mb-8">
             Stable Growth DCF Analysis: Finite-Life Asset Valuation with Predictable Revenue and Terminal Value Calculation
-          </p>
+          </h2>
 
-          {/* Three Tier Buttons */}
-          <div className="tier-actions max-w-md mx-auto space-y-3 mb-12">
-            <Button 
-              onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EV98tOl_vhtMoIQk169Mr8QBoCkyy5BE8uHpxd1wuRbT8A?e=8dVhs3&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-              className="w-full h-11 rounded-md px-8" 
-              variant="brand-green" 
-              size="lg"
-            >
-              <ExternalLink className="mr-2 h-4 w-4" />
-              Online & Free
-            </Button>
+          {/* Model Card */}
+          <div className="bg-white rounded-lg border shadow-lg p-6 max-w-md mx-auto mb-12">
+            <h3 className="text-xl font-semibold mb-4 text-center" style={{color: 'hsl(209, 49%, 39%)'}}>
+              Stable Growth - Finite-Life DCF Model
+            </h3>
             
-            <Button 
-              onClick={handleDownload}
-              className="w-full h-11 rounded-md px-8" 
-              variant="outline" 
-              size="lg"
-            >
-              <Download className="mr-2 h-4 w-4" />
-              Register to Download
-            </Button>
-          </div>
-
-          {/* Quick Access Guide */}
-          <div className="bg-slate-50 p-6 rounded-lg mb-8">
-            <h4 className="text-[14px] font-bold mb-3" style={{color: 'hsl(209, 49%, 39%)'}}>
-              Quick Access Guide
-            </h4>
-            <ul className="text-[12px] space-y-2">
-              <li><strong>Online & Free:</strong> Click to preview this model instantly in your browser</li>
-              <li><strong>Register to Download:</strong> Free registration gives you download access to all models</li>
-            </ul>
+            <div className="space-y-3">
+              <Button 
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EV98tOl_vhtMoIQk169Mr8QBoCkyy5BE8uHpxd1wuRbT8A?e=8dVhs3&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                variant="brand-green"
+                size="lg"
+                className="w-full"
+              >
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Online & Free
+              </Button>
+              
+              <Button 
+                onClick={handleDownload}
+                variant="outline"
+                size="lg"
+                className="w-full"
+              >
+                <Download className="w-4 h-4 mr-2" />
+                Register to Download
+              </Button>
+            </div>
+            
+            <div className="mt-6 text-sm text-gray-600">
+              <h4 className="font-semibold mb-2">Quick Access Guide</h4>
+              <ul className="space-y-1 text-xs">
+                <li><strong>Online & Free:</strong> Click to preview this model instantly in your browser</li>
+                <li><strong>Register to Download:</strong> Free registration gives you download access to all models</li>
+              </ul>
+            </div>
           </div>
 
           {/* Content Structure */}

@@ -98,7 +98,7 @@ const InvestmentAnalysis = () => {
                     </Badge>
                   </div>
                 )}
-                <CardHeader className="flex-1 flex flex-col">
+                <CardHeader className="flex-1 flex flex-col p-6">
                   <CardTitle className="text-2xl font-semibold mb-3">
                     {model.name}
                   </CardTitle>
@@ -106,7 +106,7 @@ const InvestmentAnalysis = () => {
                     {model.description || " "}
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="pt-0 mt-auto">
+                <CardContent className="p-6 pt-4 mt-auto">
                   <Link to={model.href}>
                     <Button variant="brand-green" size="lg" className="w-full text-lg">
                       {model.status === "coming soon" ? "Learn More" : "Go to Model"}
