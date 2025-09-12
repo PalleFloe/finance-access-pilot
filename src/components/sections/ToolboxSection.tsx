@@ -107,7 +107,7 @@ const ToolboxSection = () => {
             </div>
             <CardHeader className="flex-grow">
               <CardTitle className="text-2xl font-semibold">
-                <span>Fundaments</span>
+                <span>Fundamentals</span>
               </CardTitle>
               <CardDescription className="text-lg">
                 Academic and general models for educational and inspirational purposes
