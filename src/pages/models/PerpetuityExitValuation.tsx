@@ -61,7 +61,7 @@ const PerpetuityExitValuation = () => {
                 Online & Free
               </Button>
               <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EbXsTOAT9XRCtVNs_ZZVHIUBP5avPj6TvfPFwXMVwQFXYw?e=h0HIgq"
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EZQHvBjf0N5In8W4XVJQXfMBp4Rp2nxTq_M5CrxZE8fJyg?e=9Th4Km"
                 modelName="Perpetuity and Exit Models"
                 className="w-full"
               />

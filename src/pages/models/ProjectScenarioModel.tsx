@@ -61,7 +61,7 @@ const ProjectScenarioModel = () => {
                 Online & Free
               </Button>
               <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EfthFhFV8XtCtvImEjtw1XIB4oM2I_pDioHBv5sJtL83Jg?e=qtO0Ho"
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EqTkN8p0RxVNsG1vbe_ItE7DaZxS6bYuQrN0Pw5HzNiYki?e=4Qq6an"
                 modelName="Simple Project Scenario Model"
                 className="w-full"
               />

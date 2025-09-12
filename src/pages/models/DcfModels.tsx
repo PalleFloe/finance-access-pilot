@@ -64,7 +64,7 @@ const DcfModels = () => {
                 Online & Free
               </Button>
               <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ESuQTjH5GIBKrdyX8PxAcNMBUCbYEuq0qbd5IvHuE4GUpA?e=DbTIP7"
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EhTgL3n6MvRPjK8sYc_FqB4ByXuQ5zWrNpJ7Mt2EwKfVhg?e=7Lm3Xk"
                 modelName="Standard Types of DCF Models"
                 className="w-full"
               />

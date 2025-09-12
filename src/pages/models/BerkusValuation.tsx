@@ -62,7 +62,7 @@ const BerkusValuation = () => {
                 Online & Free
               </Button>
               <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaG59B1j_dZCrXVdXTuyvQcBsxxCsvi1cTVJvbQzj7IJ7g?e=TbyaxJ"
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EcjMVlNs_KdJkSsj0VNlWiUBh9Uw1s6WXBYhTuRPdQp7Kg?e=bLTHdh"
                 modelName="Berkus Valuation Model"
                 className="w-full"
               />

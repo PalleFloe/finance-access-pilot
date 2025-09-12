@@ -61,7 +61,7 @@ const CostOfCapitalCalculator = () => {
                 Online & Free
               </Button>
               <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EU1QF1oJvD5Cpg8MhAVRnRwBRrIjYmhwC0j5xp1VFz3bXQ?e=c62qhD"
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EbKj8nP4LzVJoE5mYr_TgH8B6QqRx3WvLpJ2Mx9EuKfZhg?e=8Nk5Vp"
                 modelName="Simple Cost of Capital Calculator"
                 className="w-full"
               />
