@@ -69,7 +69,7 @@ const FinancialFundamentals = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
-            Simple and Foundational Financial Models
+            Financial Fundamental Models
           </h1>
             <h2 className="text-2xl md:text-3xl text-brand-blue mb-6">
             Simple Academic Financial Analysis Tools: Essential Models for Learning Core Valuation and Decision-Making Principles
