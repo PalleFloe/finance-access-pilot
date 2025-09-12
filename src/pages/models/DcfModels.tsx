@@ -56,7 +56,7 @@ const DcfModels = () => {
             </CardHeader>
             <CardContent className="space-y-2">
               <Button 
-                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EUKdPviFyahDmS3aH1RN0RsBgS_G6sXGCccik-b2Vry8Qg?action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ESuQTjH5GIBKrdyX8PxAcNMBUCbYEuq0qbd5IvHuE4GUpA?e=DbTIP7&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                 variant="brand-green"
                 className="w-full"
               >
