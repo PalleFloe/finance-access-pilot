@@ -61,11 +61,6 @@ const InvestmentAnalysis = () => {
       
       <div className="py-12 px-6">
         <div className="container mx-auto max-w-6xl">
-          {/* Breadcrumb */}
-          <div className="text-[12px] mb-4">
-            Home &gt; Toolbox &gt; Investment Analysis
-          </div>
-
           <Link 
             to="/toolbox" 
             className="inline-flex items-center text-slate-600 hover:text-brand-blue mb-6"
@@ -74,68 +69,49 @@ const InvestmentAnalysis = () => {
             Back to Toolbox
           </Link>
 
-          <h1 className="text-[20px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-            Professional-Grade Investment Analysis Tools
+          <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
+            Professional Investment Analysis Models
           </h1>
-          
-          <p className="text-lg mb-8 leading-relaxed">
-            Evaluate capital allocation and project investments with our advanced analysis tools.
+            <h2 className="text-2xl md:text-3xl text-brand-blue mb-6">
+            Comprehensive Investment Analysis Toolbox: Proven DCF Methods for Capital Allocation and Project Evaluation
+          </h2>
+          <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+            Explore our investment analysis models to make informed capital allocation decisions.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {models.map((model) => (
-              <Card key={model.name} className="rounded-lg border bg-card text-card-foreground shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative h-full flex flex-col">
+              <Card key={model.name} className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full">
                 {model.status === "available" && (
-                  <Badge className="absolute top-4 right-4 bg-green-100 text-green-800 border-green-200 shadow-sm">
-                    <Check className="w-3 h-3 mr-1" />
-                    Available
-                  </Badge>
+                  <div className="absolute -top-3 -right-3 z-10">
+                    <Badge className="bg-green-100 text-green-800 border-green-200 shadow-sm">
+                      <Check className="w-3 h-3 mr-1" />
+                      Available
+                    </Badge>
+                  </div>
                 )}
                 {model.status === "coming soon" && (
-                  <Badge className="absolute top-4 right-4 bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
-                    <Clock className="w-3 h-3 mr-1" />
-                    Coming Soon
-                  </Badge>
+                  <div className="absolute -top-3 -right-3 z-10">
+                    <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
+                      <Clock className="w-3 h-3 mr-1" />
+                      Coming Soon
+                    </Badge>
+                  </div>
                 )}
-                <CardHeader className="flex flex-col space-y-1.5 p-6 flex-grow">
-                  <CardTitle className="text-2xl font-semibold leading-none tracking-tight" style={{color: 'hsl(209, 49%, 39%)'}}>
-                    {model.name}
+                <CardHeader className="flex-grow">
+                  <CardTitle className="text-2xl font-semibold">
+                    <span>{model.name}</span>
                   </CardTitle>
-                  {model.description && (
-                    <CardDescription className="text-lg text-muted-foreground flex-grow">
-                      {model.description}
-                    </CardDescription>
-                  )}
+                  <CardDescription className="flex-grow text-lg">{model.description}</CardDescription>
                 </CardHeader>
-                {model.status === "available" && (
-                  <CardContent className="p-6 pt-0">
-                    <div className="tier-actions space-y-2">
-                      <Link to={model.href}>
-                        <Button className="w-full tier-1-btn" variant="brand-green" size="default">
-                          Online & Free
-                        </Button>
-                      </Link>
-                      <Link to={model.href}>
-                        <Button className="w-full tier-2-btn" variant="outline" size="default">
-                          Register to Download
-                        </Button>
-                      </Link>
-                      <Button className="w-full tier-3-btn" disabled size="default">
-                        Coming Soon - Full Ownership
-                      </Button>
-                    </div>
-                  </CardContent>
-                )}
-                {model.status === "coming soon" && (
-                  <CardContent className="p-6 pt-0">
-                    <Link to={model.href}>
-                      <Button variant="outline" size="lg" className="w-full text-lg">
-                        Learn More
-                        <ArrowRight className="w-4 h-4 ml-2" />
-                      </Button>
-                    </Link>
-                  </CardContent>
-                )}
+                <CardContent className="pt-0">
+                  <Link to={model.href}>
+                    <Button variant="brand-green" size="lg" className="w-full text-lg">
+                      {model.status === "coming soon" ? "Learn More" : "Go to Model"}
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </Link>
+                </CardContent>
               </Card>
             ))}
           </div>

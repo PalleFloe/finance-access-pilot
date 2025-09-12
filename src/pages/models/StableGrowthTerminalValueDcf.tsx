@@ -81,14 +81,6 @@ const StableGrowthTerminalValueDcf = () => {
               <Download className="mr-2 h-4 w-4" />
               Register to Download
             </Button>
-            
-            <Button 
-              className="w-full h-11 rounded-md px-8 bg-[#f5f5f5] text-[#999] border-[#ddd] cursor-not-allowed" 
-              disabled 
-              size="lg"
-            >
-              Coming Soon - Full Ownership
-            </Button>
           </div>
 
           {/* Quick Access Guide */}
@@ -99,7 +91,6 @@ const StableGrowthTerminalValueDcf = () => {
             <ul className="text-[12px] space-y-2">
               <li><strong>Online & Free:</strong> Click to preview this model instantly in your browser</li>
               <li><strong>Register to Download:</strong> Free registration gives you download access to all models</li>
-              <li><strong>Full Ownership:</strong> Coming soon - purchase unprotected versions with commercial rights</li>
             </ul>
           </div>
 
