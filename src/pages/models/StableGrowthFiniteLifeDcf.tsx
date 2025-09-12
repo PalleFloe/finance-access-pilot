@@ -18,13 +18,6 @@ const StableGrowthFiniteLifeDcf = () => {
     window.open(sharePointUrl, '_blank', 'width=1200,height=800');
   };
 
-  const handleDownload = () => {
-    if (!user) {
-      navigate('/auth');
-      return;
-    }
-    openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EVOzm603_HJIgv8iYaF3gEwBp2fEhSIDNCNhFb6wdeJTgA?e=MeeyO9&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False');
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
@@ -34,79 +27,53 @@ const StableGrowthFiniteLifeDcf = () => {
       </Helmet>
       <Header />
       
-      <div className="max-w-6xl mx-auto px-6 py-16">
-        {/* Breadcrumb */}
-        <div className="text-[12px] mb-4">
-          <Link to="/">Home</Link> &gt; <Link to="/toolbox">Toolbox</Link> &gt; <Link to="/toolbox/investment-analysis">Investment Analysis</Link> &gt; Stable Growth - Finite-Life DCF Model
-        </div>
-        
-        {/* Back Link */}
-        <div className="mb-4">
-          <Link to="/toolbox/investment-analysis" className="text-[12px]">
-            ← Back to Investment Analysis
+      <div className="py-12 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <Link 
+            to="/toolbox/investment-analysis"
+            className="inline-flex items-center text-slate-600 hover:text-primary mb-8"
+          >
+            <ArrowLeft className="w-4 h-4 mr-2" />
+            Back to Investment Analysis
           </Link>
-        </div>
-        
-        {/* Main Title */}
-        <h1 className="text-[20px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-          Stable Growth - Finite-Life DCF Model
-        </h1>
-        
-        {/* Subtitle */}
-        <p className="text-lg mb-8">
-          Stable Growth DCF Analysis: Finite-Duration Project Valuation with Salvage Value Recovery and Working Capital Release
-        </p>
-      </div>
 
-      {/* Centered Model Card */}
-      <div className="max-w-md mx-auto mb-12">
-        <div className="bg-white rounded-lg border shadow-lg p-6">
-          <h3 className="text-xl font-semibold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
             Stable Growth - Finite-Life DCF Model
-          </h3>
-          
-          <div className="space-y-3">
-            <Button 
-              onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EV98tOl_vhtMoIQk169Mr8QBoCkyy5BE8uHpxd1wuRbT8A?e=8dVhs3&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-              variant="brand-green"
-              size="lg"
-              className="w-full"
-            >
-              <ExternalLink className="w-4 h-4 mr-2" />
-              Online & Free
-            </Button>
-            
-            {user ? (
+          </h1>
+
+          <h2 className="mb-8">
+            Stable Growth DCF Analysis: Finite-Life Asset Evaluation with Proper End-Period Treatment and Comprehensive Sensitivity Analysis
+          </h2>
+
+          {/* Model Card */}
+          <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
+            <CardHeader>
+              <CardTitle>
+                Stable Growth - Finite-Life DCF Model
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
               <Button 
-                onClick={handleDownload}
-                className="w-full bg-brand-green text-white"
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EV98tOl_vhtMoIQk169Mr8QBoCkyy5BE8uHpxd1wuRbT8A?e=8dVhs3&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                variant="brand-green"
                 size="lg"
+                className="w-full text-lg"
               >
-                <Download className="w-4 h-4 mr-2" />
-                Download & Free
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Online & Free
               </Button>
-            ) : (
-              <Button 
-                onClick={handleDownload}
-                variant="outline"
-                size="lg"
+              <DownloadButton 
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EVOzm603_HJIgv8iYaF3gEwBp2fEhSIDNCNhFb6wdeJTgA?e=MeeyO9"
+                modelName="Stable Growth - Finite-Life DCF Model"
                 className="w-full"
-              >
-                <Download className="w-4 h-4 mr-2" />
-                Register to Download
-              </Button>
-            )}
-          </div>
-          
-          <div className="mt-6 text-sm text-gray-600">
-            <h4 className="font-semibold mb-2">Quick Access Guide</h4>
-            <ul className="space-y-1 text-xs">
-              <li><strong>Online & Free:</strong> Click to preview this model instantly in your browser</li>
-              <li><strong>Register to Download:</strong> Free registration gives you download access to all models</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+              />
+              <div className="mt-1 pt-1 text-xs text-muted-foreground">
+                <strong className="text-primary">Quick Access Guide:</strong><br />
+                <span>Click "Online & Free" for instant online preview (no registration)</span>
+                <br /><span>Click "Download & Free" for browser embedded Excel with download capability (registration required)</span>
+              </div>
+            </CardContent>
+          </Card>
 
           {/* Introduction Headline */}
           <h3 className="mb-6">Stable Growth - Finite-Life DCF Model Introduction</h3>
@@ -211,7 +178,7 @@ const StableGrowthFiniteLifeDcf = () => {
               </div>
             </AccordionContent>
           </AccordionItem>
-        </Accordion>
+          </Accordion>
         </div>
       </div>
     </div>
