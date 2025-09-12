@@ -51,24 +51,45 @@ const DecisionAnalysis = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-2">
-              <Button 
-                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETKCTHtbjLJPkQx0LGrLFmcBlrYcFw2FQgLpt0RnkWMACg?action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-                variant="brand-green"
-                className="w-full"
-              >
-                <ExternalLink className="w-4 h-4 mr-2" />
-                Online & Free
-              </Button>
-              <button className="tier-btn tier-3-btn w-full flex items-center justify-between" disabled>
-                <span>Download & Subscription</span>
-                <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
-                  <Clock className="w-3 h-3 mr-1" />
-                  Coming Soon
-                </Badge>
-              </button>
-              <div className="mt-1 pt-1 text-xs text-muted-foreground">
-                <strong className="text-primary">Quick Access Guide:</strong><br />
-                <span>Click "Online & Free" for instant online preview (no registration)</span>
+              <div className="tier-actions max-w-md mx-auto space-y-3 mb-12">
+                <Button 
+                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETKCTHtbjLJPkQx0LGrLFmcBlrYcFw2FQgLpt0RnkWMACg?action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                  className="w-full h-11 rounded-md px-8"
+                  variant="brand-green"
+                  size="lg"
+                >
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  Online & Free
+                </Button>
+                
+                <Button 
+                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaNfhyv_u11Ai_MHOUOklzIBGD-AkeKDPHhP-qqltbyH6Q?e=M0aDnE')}
+                  className="w-full h-11 rounded-md px-8"
+                  variant="outline"
+                  size="lg"
+                >
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  Register to Download
+                </Button>
+                
+                <Button 
+                  className="w-full h-11 rounded-md px-8 bg-[#f5f5f5] text-[#999] border-[#ddd] cursor-not-allowed"
+                  disabled
+                  size="lg"
+                >
+                  Coming Soon - Full Ownership
+                </Button>
+              </div>
+              
+              <div className="bg-slate-50 p-6 rounded-lg mb-8">
+                <h4 className="text-[14px] font-bold mb-3" style={{color: 'hsl(209, 49%, 39%)'}}>
+                  Quick Access Guide
+                </h4>
+                <ul className="text-[12px] space-y-2">
+                  <li><strong>Online & Free:</strong> Click to preview this model instantly in your browser</li>
+                  <li><strong>Register to Download:</strong> Free registration gives you download access to all models</li>
+                  <li><strong>Full Ownership:</strong> Coming soon - purchase unprotected versions with commercial rights</li>
+                </ul>
               </div>
             </CardContent>
           </Card>

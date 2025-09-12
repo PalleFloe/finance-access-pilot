@@ -75,9 +75,9 @@ const ToolboxSection = () => {
 
           <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full">
             <div className="absolute -top-3 -right-3 z-10">
-              <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
-                <Clock className="w-3 h-3 mr-1" />
-                Coming Soon
+              <Badge className="bg-green-100 text-green-800 border-green-200 shadow-sm">
+                <Check className="w-3 h-3 mr-1" />
+                Available
               </Badge>
             </div>
             <CardHeader className="flex-grow">
