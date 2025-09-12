@@ -53,7 +53,7 @@ const BerkusValuation = () => {
             </CardHeader>
             <CardContent className="space-y-3">
               <Button 
-                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ER7BObBFTKtJhglZtgmnA-QBVJWVkxc6MB_cPY_b-yNqRA?e=&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ER7BObBFTKtJhglZtgmnA-QBRnr-Jd_A9JTdudvqlvczMQ?e=xs1NMY&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                 variant="brand-green"
                 size="lg"
                 className="w-full text-lg"
@@ -62,9 +62,9 @@ const BerkusValuation = () => {
                 Online & Free
               </Button>
               <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EcjMVlNs_KdJkSsj0VNlWiUBh9Uw1s6WXBYhTuRPdQp7Kg?e=bLTHdh"
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaG59B1j_dZCrXVdXTuyvQcBsxxCsvi1cTVJvbQzj7IJ7g?e=NkZLDr&action=embedview&wdHideGridlines=True&wdHideHeaders=True"
                 modelName="Berkus Valuation Model"
-                className="w-full"
+                className="w-full text-lg"
               />
               <div className="mt-1 pt-1 text-xs text-muted-foreground">
                 <strong className="text-primary">Quick Access Guide:</strong><br />

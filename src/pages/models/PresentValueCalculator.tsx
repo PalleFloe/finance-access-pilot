@@ -53,7 +53,7 @@ const PresentValueCalculator = () => {
             </CardHeader>
             <CardContent className="space-y-3">
               <Button 
-                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYdscwj4bARIoHlRjWhB2iQBlXKfmzKEewtfuPNvIkqgNA?e=Mz9dfi&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYSzLdwB9BxGjSHtWZqg8NgB1IdmJsc-Md-PQQBs7vuxHA?e=IowFyc&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                 variant="brand-green"
                 className="w-full"
               >
@@ -61,7 +61,7 @@ const PresentValueCalculator = () => {
                 Online & Free
               </Button>
               <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ef7KvWx8YG5BqYZE8h_JrUgBx2R9mPk3LsNqXt5Uw7VzAg?e=4Hp2Xk"
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ESJnYrDNBTZEntOslldNqecBF1aaGKcmP0_Hexzaxmle1w?e=c3ZGq6&action=embedview&wdHideGridlines=True&wdHideHeaders=True"
                 modelName="Simple Present Value Calculator"
                 className="w-full"
               />

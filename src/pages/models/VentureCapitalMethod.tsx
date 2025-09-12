@@ -53,7 +53,7 @@ const VentureCapitalMethod = () => {
           
           <div className="space-y-3">
             <Button 
-              onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYYO2e6eVcRJrUq7utm970cBCS_qxirVCB46ZOt50wJZ_w?action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+              onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYYO2e6eVcRJrUq7utm970cBafMKUt7r8oVfdVFGYwqzhQ?e=iWF4sf&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
               className="w-full"
               variant="brand-green"
               size="lg"
@@ -63,7 +63,7 @@ const VentureCapitalMethod = () => {
             </Button>
             
             <DownloadButton 
-              sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ERSbyfSH8p9PsrkquqrI3h8BNaZU4juQRiM8eCbI0_RsSg?e=G9FJbp"
+              sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ERSbyfSH8p9PsrkquqrI3h8BNaZU4juQRiM8eCbI0_RsSg?e=G9FJbp&action=embedview&wdHideGridlines=True&wdHideHeaders=True"
               modelName="Venture Capital Valuation Model"
               className="w-full"
             />

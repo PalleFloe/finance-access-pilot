@@ -53,7 +53,7 @@ const PerpetuityExitValuation = () => {
             </CardHeader>
             <CardContent className="space-y-3">
               <Button 
-                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaMtk3zo6hVAqea-OC4rf08BqpbHIPDgdYItlFOhNSTZMQ?e=&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaMtk3zo6hVAqea-OC4rf08B52Or6Xp7pIDf5mxKhItf9g?e=Dqmkcp&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                 variant="brand-green"
                 className="w-full"
               >
@@ -61,8 +61,8 @@ const PerpetuityExitValuation = () => {
                 Online & Free
               </Button>
               <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EZQHvBjf0N5In8W4XVJQXfMBp4Rp2nxTq_M5CrxZE8fJyg?e=9Th4Km"
-                modelName="Perpetuity and Exit Models"
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EbXsTOAT9XRCtVNs_ZZVHIUBP5avPj6TvfPFwXMVwQFXYw?e=h0HIgq&action=embedview&wdHideGridlines=True&wdHideHeaders=True"
+                modelName="Perpetuity & Exit Valuation Models"
                 className="w-full"
               />
               <div className="mt-1 pt-1 text-xs text-muted-foreground">

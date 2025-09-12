@@ -56,7 +56,7 @@ const DcfModels = () => {
             </CardHeader>
             <CardContent className="space-y-2">
               <Button 
-                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ESuQTjH5GIBKrdyX8PxAcNMBUCbYEuq0qbd5IvHuE4GUpA?e=DbTIP7&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EZDwnda3bKVNpEIPTHKJeSYBBdETLKSkiT4QIgTyJ02XxA?e=UYozDl&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                 variant="brand-green"
                 className="w-full"
               >
@@ -64,7 +64,7 @@ const DcfModels = () => {
                 Online & Free
               </Button>
               <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EhTgL3n6MvRPjK8sYc_FqB4ByXuQ5zWrNpJ7Mt2EwKfVhg?e=7Lm3Xk"
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EY9GPPDe1CJAg7Odk75iyvMBULDBwtfChINbwgs7rk5f_w?e=NcehyR&action=embedview&wdHideGridlines=True&wdHideHeaders=True"
                 modelName="Standard Types of DCF Models"
                 className="w-full"
               />

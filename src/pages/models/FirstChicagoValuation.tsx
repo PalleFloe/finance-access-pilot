@@ -53,7 +53,7 @@ const FirstChicagoValuation = () => {
           
           <div className="space-y-3">
             <Button 
-              onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYD8J82OTqNErjVgb7FLT7wBHd1p0R53hQjs4gZWZQBiJg?e=&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+              onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYD8J82OTqNErjVgb7FLT7wBUKdxcqGV5CGWfXMeuzXa1Q?e=nglIBE&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
               className="w-full"
               variant="brand-green"
               size="lg"
@@ -63,9 +63,9 @@ const FirstChicagoValuation = () => {
             </Button>
             
             <DownloadButton 
-              sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYlsAZtZS69LoWk_ONge0A4BV2efHA30RY3YINOML4cdKA?e=IL6HZM"
-              modelName="First Chicago Valuation Model"
-              className="w-full"
+              sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYlsAZtZS69LoWk_ONge0A4BV2efHA30RY3YINOML4cdKA?e=XU6enn&action=embedview&wdHideGridlines=True&wdHideHeaders=True"
+              modelName="First Chicago Method Model"
+              className="w-full text-lg"
             />
           </div>
           
