@@ -30,6 +30,12 @@ import DcfModels from "./pages/models/DcfModels";
 import FinancialRatioCalculator from "./pages/models/FinancialRatioCalculator";
 import EarningGrowthEstimator from "./pages/models/EarningGrowthEstimator";
 import ProjectScenarioModel from "./pages/models/ProjectScenarioModel";
+import FlexibleYearByYearDcf from "./pages/models/FlexibleYearByYearDcf";
+import StableGrowthFiniteLifeDcf from "./pages/models/StableGrowthFiniteLifeDcf";
+import StableGrowthTerminalValueDcf from "./pages/models/StableGrowthTerminalValueDcf";
+import TwoThreeStagesDcf from "./pages/models/TwoThreeStagesDcf";
+import CostReductionDcf from "./pages/models/CostReductionDcf";
+import BreakEvenAnalysis from "./pages/models/BreakEvenAnalysis";
 
 const App = () => (
   <TooltipProvider>
@@ -63,6 +69,12 @@ const App = () => (
           <Route path="/toolbox/financial-fundamentals/financial-ratio-calculator" element={<FinancialRatioCalculator />} />
           <Route path="/toolbox/financial-fundamentals/earning-growth-estimator" element={<EarningGrowthEstimator />} />
           <Route path="/toolbox/financial-fundamentals/project-scenario-model" element={<ProjectScenarioModel />} />
+          <Route path="/toolbox/investment-analysis/flexible-year-by-year-dcf-model" element={<FlexibleYearByYearDcf />} />
+          <Route path="/toolbox/investment-analysis/stable-growth-finite-life-dcf-model" element={<StableGrowthFiniteLifeDcf />} />
+          <Route path="/toolbox/investment-analysis/stable-growth-terminal-value-dcf-model" element={<StableGrowthTerminalValueDcf />} />
+          <Route path="/toolbox/investment-analysis/two-and-three-stages-dcf-models" element={<TwoThreeStagesDcf />} />
+          <Route path="/toolbox/investment-analysis/cost-reduction-dcf-model" element={<CostReductionDcf />} />
+          <Route path="/toolbox/investment-analysis/break-even-analysis-model" element={<BreakEvenAnalysis />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
         </Routes>
