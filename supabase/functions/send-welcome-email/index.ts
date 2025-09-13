@@ -54,10 +54,10 @@ const handler = async (req: Request): Promise<Response> => {
           </ul>
 
           <p style="margin-bottom: 20px;">
-            Keep exploring: <a href="https://www.financialdecisionmodels.com" style="color: #326496; text-decoration: none;">https://www.financialdecisionmodels.com</a>
+            Keep exploring: <a href="https://www.financialdecisionmodels.com" style="color: #326496; text-decoration: none; font-size: 18px; font-weight: 500;">https://www.financialdecisionmodels.com</a>
           </p>
 
-          <p style="font-style: italic; font-size: 14px; margin-bottom: 20px; color: #666666;">
+          <p style="font-size: 16px; margin-bottom: 20px; color: #666666;">
             For inquiries about customisation, consulting services, or questions, please contact palle@financialdecisionmodels.com.
           </p>
 
