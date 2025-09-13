@@ -85,7 +85,7 @@ const ServicesSection = () => {
                   asChild 
                   variant="brand-green" 
                   size="lg"
-                  className="justify-center w-full sm:w-auto px-12 text-3xl font-semibold"
+                  className="justify-center w-full sm:w-auto px-12 text-xl font-semibold"
                 >
                   <Link to="/toolbox">
                     Explore Free Tools
@@ -153,7 +153,7 @@ const ServicesSection = () => {
                 <Button 
                   variant="brand-green" 
                   size="lg"
-                  className="justify-center px-12 w-full sm:w-auto text-2xl font-semibold"
+                  className="justify-center px-12 w-full sm:w-auto text-xl font-semibold"
                   onClick={() => setIsConsultationFormOpen(true)}
                 >
                   Schedule Consultation
