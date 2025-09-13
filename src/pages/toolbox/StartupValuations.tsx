@@ -124,7 +124,7 @@ const StartupValuations = () => {
           </div>
 
           {/* Comprehensive Content Section */}
-          <div className="max-w-4xl mx-auto space-y-8">
+          <div className="max-w-4xl space-y-8">
             <div>
               <h3 className="text-3xl font-semibold text-brand-blue mb-4">Professional Startup Financial Decision & Valuation Models</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
