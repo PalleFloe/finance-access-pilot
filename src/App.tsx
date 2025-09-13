@@ -17,6 +17,7 @@ import StartupValuations from "./pages/toolbox/StartupValuations";
 import FinancialFundamentals from "./pages/toolbox/FinancialFundamentals";
 import MatureBusiness from "./pages/toolbox/MatureBusiness";
 import InvestmentAnalysis from "./pages/toolbox/InvestmentAnalysis";
+import BusinessStrategy from "./pages/toolbox/BusinessStrategy";
 import VentureCapitalMethod from "./pages/models/VentureCapitalMethod";
 import RiskFactorSummation from "./pages/models/RiskFactorSummation";
 import SaasUnitEconomics from "./pages/models/SaasUnitEconomics";
@@ -56,6 +57,7 @@ const App = () => (
           <Route path="/toolbox/financial-fundamentals" element={<FinancialFundamentals />} />
           <Route path="/toolbox/mature-business" element={<MatureBusiness />} />
           <Route path="/toolbox/investment-analysis" element={<InvestmentAnalysis />} />
+          <Route path="/toolbox/business-strategy" element={<BusinessStrategy />} />
           <Route path="/toolbox/startup-valuations/venture-capital-method" element={<VentureCapitalMethod />} />
           <Route path="/toolbox/startup-valuations/risk-factor-summation" element={<RiskFactorSummation />} />
           <Route path="/toolbox/startup-valuations/saas-unit-economics" element={<SaasUnitEconomics />} />
