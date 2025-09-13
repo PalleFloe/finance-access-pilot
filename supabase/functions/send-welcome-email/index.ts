@@ -30,40 +30,46 @@ const handler = async (req: Request): Promise<Response> => {
       to: [email],
       subject: "Welcome to Financial Decision Models!",
       html: `
-        <div style="max-width: 600px; margin: 0 auto; font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
-          <div style="background: linear-gradient(135deg, #326496, #4f81c4); padding: 40px 20px; text-align: center;">
-            <h1 style="color: white; margin: 0; font-size: 28px;">Welcome to Financial Decision Models</h1>
-            <p style="color: #e8f4ff; margin: 10px 0 0 0; font-size: 16px;">Your gateway to professional financial modeling</p>
-          </div>
-          
-          <div style="padding: 40px 20px; background: white;">
-            <h2 style="color: #326496; margin-bottom: 20px;">Hello ${firstName}!</h2>
-            
-            <p>Thank you for joining Financial Decision Models! Your account has been successfully created and you now have access to download our premium Excel financial models.</p>
-            
-            <div style="background: #f8fafc; padding: 20px; border-radius: 8px; margin: 20px 0;">
-              <h3 style="color: #326496; margin-top: 0;">What's Next?</h3>
-              <ul style="margin: 0; padding-left: 20px;">
-                <li><strong>Browse Models:</strong> Explore our collection of 12+ professional financial models</li>
-                <li><strong>Download Instantly:</strong> Click any "Download & Free" button to get Excel files</li>
-                <li><strong>Expert Consulting:</strong> Need custom solutions? Contact us for personalized help</li>
-              </ul>
-            </div>
-            
-            <div style="text-align: center; margin: 30px 0;">
-              <a href="${Deno.env.get("SUPABASE_URL")?.replace('https://', 'https://').replace('.supabase.co', '.lovable.app') || 'https://financialdecisionmodels.com'}" 
-                 style="background: #326496; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">
-                Start Exploring Models
-              </a>
-            </div>
-            
-            ${company ? `<p><strong>Company:</strong> ${company}</p>` : ''}
-            
-            <div style="border-top: 1px solid #e2e8f0; padding-top: 20px; margin-top: 30px; color: #64748b; font-size: 14px;">
-              <p>Need help? Reply to this email or visit our website for support.</p>
-              <p>Best regards,<br>The Financial Decision Models Team</p>
-            </div>
-          </div>
+        <div style="font-family: 'Garamond', 'Times New Roman', serif; font-size: 16px; line-height: 1.6; color: #222222; max-width: 600px; margin: 0 auto; padding: 20px;">
+
+          <h2 style="font-family: 'Garamond', 'Times New Roman', serif; font-size: 24px; font-weight: bold; color: #326496; margin-bottom: 20px;">
+            Hello ${firstName},
+          </h2>
+
+          <p style="margin-bottom: 16px;">
+            Thank you for registering at Financial Decision Models. Your account has been successfully created, and you now have access to download our Excel financial decision models.
+          </p>
+
+          <p style="margin-bottom: 20px;">
+            Our models are Excel-protected to ensure quality and consistency, with input cells available for your analysis. Unprotected versions will be available later.
+          </p>
+
+          <h3 style="font-family: 'Garamond', 'Times New Roman', serif; font-size: 20px; font-weight: bold; color: #326496; margin-bottom: 12px;">
+            What's Next?
+          </h3>
+
+          <ul style="margin-bottom: 20px; padding-left: 20px;">
+            <li style="margin-bottom: 8px;"><strong>Browse models:</strong> Click "Online & Free" to preview models in your browser</li>
+            <li style="margin-bottom: 8px;"><strong>Download models:</strong> Click "Download & Free" to download Excel files directly</li>
+          </ul>
+
+          <p style="margin-bottom: 20px;">
+            Keep exploring: <a href="https://www.financialdecisionmodels.com" style="color: #326496; text-decoration: none;">https://www.financialdecisionmodels.com</a>
+          </p>
+
+          <p style="font-style: italic; font-size: 14px; margin-bottom: 20px; color: #666666;">
+            For inquiries about customisation, consulting services, or questions, please contact palle@financialdecisionmodels.com.
+          </p>
+
+          <p style="margin-bottom: 8px;">
+            Welcome aboard,
+          </p>
+
+          <p style="margin-bottom: 0;">
+            <strong>Palle Fløe Nielsen</strong><br>
+            Financial Decision Models
+          </p>
+
         </div>
       `,
     });
