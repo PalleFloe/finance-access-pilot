@@ -16,7 +16,7 @@ const AboutSection = () => {
                 />
               </div>
               <div className="flex-1">
-                <h4 className="text-xl font-semibold mb-6 text-primary">
+                <h4 className="text-2xl md:text-3xl font-semibold mb-6 text-brand-blue">
                   About Profile
                 </h4>
                 <div className="space-y-4 text-lg text-slate-700 leading-relaxed text-left">
@@ -73,7 +73,7 @@ const AboutSection = () => {
                   />
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-xl font-semibold mb-6 text-primary">
+                  <h4 className="text-2xl md:text-3xl font-semibold mb-6 text-brand-blue">
                     The Inspiration behind the Logo
                   </h4>
                   <div className="text-lg text-slate-700 leading-relaxed text-left">
