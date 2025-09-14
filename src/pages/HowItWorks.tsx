@@ -196,10 +196,10 @@ const HowItWorks = () => {
         <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
           <div className="mb-5">
             <h2 className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200 text-brand-blue">
-              Financial Decision Models
+              Online available Financial Decision Models
             </h2>
             <p className="text-lg text-slate-600 mb-5">
-              Perfect for learning, inspiration and understanding the models
+              Best-in-class models for using or finding inspiration to build or improve your own models
             </p>
           </div>
           
