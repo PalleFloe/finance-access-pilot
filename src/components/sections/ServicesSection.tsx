@@ -44,7 +44,7 @@ const ServicesSection = () => {
             <CardContent className="pt-0 px-6 pb-6 sm:px-6">
               <div className="space-y-4 pr-2 sm:pr-4 mb-6">
                 <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
-                  <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-rich-emerald mt-0.5 flex-shrink-0" />
                     <p 
                     className="text-xl leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif', lineHeight: '1.6' }}
@@ -53,7 +53,7 @@ const ServicesSection = () => {
                   </p>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
-                  <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-rich-emerald mt-0.5 flex-shrink-0" />
                    <p 
                     className="text-xl leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif', lineHeight: '1.6' }}
@@ -62,7 +62,7 @@ const ServicesSection = () => {
                   </p>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
-                  <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-rich-emerald mt-0.5 flex-shrink-0" />
                    <p 
                     className="text-xl leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif', lineHeight: '1.6' }}
@@ -71,7 +71,7 @@ const ServicesSection = () => {
                   </p>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
-                  <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-rich-emerald mt-0.5 flex-shrink-0" />
                    <p 
                     className="text-xl leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif', lineHeight: '1.6' }}
@@ -122,7 +122,7 @@ const ServicesSection = () => {
             <CardContent className="pt-0 px-6 pb-6 sm:px-6">
               <div className="space-y-4 pr-2 sm:pr-4">
                 <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
-                  <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-rich-emerald mt-0.5 flex-shrink-0" />
                    <p 
                     className="text-lg text-slate-700 leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
@@ -131,7 +131,7 @@ const ServicesSection = () => {
                   </p>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
-                  <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-rich-emerald mt-0.5 flex-shrink-0" />
                    <p 
                     className="text-lg text-slate-700 leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
@@ -140,7 +140,7 @@ const ServicesSection = () => {
                   </p>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3 pr-2 sm:pr-0">
-                  <CheckCircle className="w-5 h-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-rich-emerald mt-0.5 flex-shrink-0" />
                    <p 
                     className="text-lg text-slate-700 leading-relaxed text-left flex-1 break-words"
                     style={{ fontFamily: 'Garamond, Times New Roman, serif' }}
