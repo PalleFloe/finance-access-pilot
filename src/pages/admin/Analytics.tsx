@@ -26,7 +26,7 @@ const Analytics = () => {
   const [analytics, setAnalytics] = useState<AnalyticsData[]>([]);
   const [dailyStats, setDailyStats] = useState<DailyStats[]>([]);
   const [loading, setLoading] = useState(true);
-  const [dateRange, setDateRange] = useState('7'); // days
+  const [dateRange, setDateRange] = useState('7d'); // 60m = 60 minutes, 24h = 24 hours, 7d = 7 days
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -52,14 +52,26 @@ const Analytics = () => {
         return;
       }
 
-      const daysAgo = new Date();
-      daysAgo.setDate(daysAgo.getDate() - parseInt(dateRange));
+      const timeAgo = new Date();
+      if (dateRange.endsWith('m')) {
+        // Minutes
+        const minutes = parseInt(dateRange);
+        timeAgo.setMinutes(timeAgo.getMinutes() - minutes);
+      } else if (dateRange.endsWith('h')) {
+        // Hours
+        const hours = parseInt(dateRange);
+        timeAgo.setHours(timeAgo.getHours() - hours);
+      } else {
+        // Days (default)
+        const days = parseInt(dateRange);
+        timeAgo.setDate(timeAgo.getDate() - days);
+      }
 
       // Fetch model analytics aggregated by model name
       const { data: modelData } = await supabase
         .from('model_analytics')
         .select('model_name, action_type')
-        .gte('created_at', daysAgo.toISOString());
+        .gte('created_at', timeAgo.toISOString());
 
       if (modelData) {
         const aggregated: { [key: string]: AnalyticsData } = {};
@@ -95,7 +107,7 @@ const Analytics = () => {
       const { data: dailyData } = await supabase
         .from('model_analytics')
         .select('created_at')
-        .gte('created_at', daysAgo.toISOString())
+        .gte('created_at', timeAgo.toISOString())
         .order('created_at', { ascending: true });
 
       if (dailyData) {
@@ -154,22 +166,34 @@ const Analytics = () => {
           </p>
         </div>
 
-        <div className="flex gap-4 mb-6">
+        <div className="flex flex-wrap gap-4 mb-6">
           <Button 
-            variant={dateRange === '7' ? 'default' : 'outline'}
-            onClick={() => setDateRange('7')}
+            variant={dateRange === '60m' ? 'default' : 'outline'}
+            onClick={() => setDateRange('60m')}
+          >
+            Last 60 Min
+          </Button>
+          <Button 
+            variant={dateRange === '24h' ? 'default' : 'outline'}
+            onClick={() => setDateRange('24h')}
+          >
+            Last 24 Hours
+          </Button>
+          <Button 
+            variant={dateRange === '7d' ? 'default' : 'outline'}
+            onClick={() => setDateRange('7d')}
           >
             Last 7 Days
           </Button>
           <Button 
-            variant={dateRange === '30' ? 'default' : 'outline'}
-            onClick={() => setDateRange('30')}
+            variant={dateRange === '30d' ? 'default' : 'outline'}
+            onClick={() => setDateRange('30d')}
           >
             Last 30 Days
           </Button>
           <Button 
-            variant={dateRange === '90' ? 'default' : 'outline'}
-            onClick={() => setDateRange('90')}
+            variant={dateRange === '90d' ? 'default' : 'outline'}
+            onClick={() => setDateRange('90d')}
           >
             Last 90 Days
           </Button>
