@@ -3,8 +3,8 @@ import { Separator } from "@/components/ui/separator";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-50 border-t border-slate-200 py-6 px-6">
-      <div className="container mx-auto px-6">
+    <footer className="bg-slate-50 border-t border-slate-200 py-6">
+      <div className="container mx-auto">
           <div className="text-center">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="text-slate-600 mb-4 md:mb-0">

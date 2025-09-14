@@ -133,8 +133,8 @@ const BlogSection = () => {
   };
 
   return (
-    <section className="py-16 px-6 bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
-      <div className="container mx-auto px-6">
+    <section className="py-16 bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+      <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-blog-heading">

@@ -175,7 +175,7 @@ const HowItWorks = () => {
       </Helmet>
       <Header />
       
-      <main className="container mx-auto max-w-6xl px-6 py-16">
+      <main className="container mx-auto py-16">
         {/* Page Header Section */}
         <div className="rounded-lg shadow-sm p-10 mb-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">

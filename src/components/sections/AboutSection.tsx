@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-8 px-6 bg-white">
-      <div className="container mx-auto px-6">
+    <section id="about" className="py-8 bg-white">
+      <div className="container mx-auto">
         <div>
           <div className="bg-slate-50 rounded-lg p-8">
             <div className="flex flex-col md:flex-row gap-8 items-start text-left">

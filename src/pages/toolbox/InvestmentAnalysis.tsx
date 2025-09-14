@@ -59,8 +59,8 @@ const InvestmentAnalysis = () => {
       </Helmet>
       <Header />
       
-      <div className="py-12 px-6">
-        <div className="container mx-auto px-6">
+      <div className="py-12">
+        <div className="container mx-auto">
           <Link 
             to="/toolbox" 
             className="inline-flex items-center text-slate-600 hover:text-brand-blue mb-6"

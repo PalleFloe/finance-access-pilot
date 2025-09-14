@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <header className="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto py-4">
         <div className="flex items-center justify-between">
           <Link to="/" onClick={handleLogoClick} className="flex items-center space-x-3">
             <div className="w-8 h-12 rounded-lg overflow-hidden">

@@ -6,8 +6,8 @@ import { Calculator, BarChart3, TrendingUp, ArrowRight, Check, Clock } from "luc
 
 const ToolboxSection = () => {
   return (
-    <section id="toolbox" className="py-16 px-6 bg-slate-50">
-      <div className="container mx-auto max-w-7xl">
+    <section id="toolbox" className="py-16 bg-slate-50">
+      <div className="container mx-auto">
         <div className="text-center mb-16">
           <h3 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
             Toolbox of Financial Decision Models
