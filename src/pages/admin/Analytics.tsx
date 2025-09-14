@@ -13,6 +13,7 @@ interface AnalyticsData {
   page_visits: number;
   online_opens: number;
   downloads: number;
+  unique_visitors: number;
   total_interactions: number;
 }
 
@@ -27,13 +28,14 @@ const Analytics = () => {
   const [dailyStats, setDailyStats] = useState<DailyStats[]>([]);
   const [loading, setLoading] = useState(true);
   const [dateRange, setDateRange] = useState('7d'); // 60m = 60 minutes, 24h = 24 hours, 7d = 7 days
+  const [visitorType, setVisitorType] = useState<'unique' | 'total'>('total');
 
   useEffect(() => {
     window.scrollTo(0, 0);
     if (user) {
       fetchAnalytics();
     }
-  }, [user, dateRange]);
+  }, [user, dateRange, visitorType]);
 
   const fetchAnalytics = async () => {
     try {
@@ -70,11 +72,11 @@ const Analytics = () => {
       // Fetch model analytics aggregated by model name
       const { data: modelData } = await supabase
         .from('model_analytics')
-        .select('model_name, action_type')
+        .select('model_name, action_type, user_id, ip_hash')
         .gte('created_at', timeAgo.toISOString());
 
       if (modelData) {
-        const aggregated: { [key: string]: AnalyticsData } = {};
+        const aggregated: { [key: string]: AnalyticsData & { visitors: Set<string> } } = {};
         
         modelData.forEach((item) => {
           if (!aggregated[item.model_name]) {
@@ -83,8 +85,16 @@ const Analytics = () => {
               page_visits: 0,
               online_opens: 0,
               downloads: 0,
+              unique_visitors: 0,
               total_interactions: 0,
+              visitors: new Set<string>(),
             };
+          }
+          
+          // Track unique visitors (user_id for logged in users, ip_hash for anonymous)
+          const visitorId = item.user_id || item.ip_hash;
+          if (visitorId) {
+            aggregated[item.model_name].visitors.add(visitorId);
           }
           
           if (item.action_type === 'page_visit') {
@@ -97,7 +107,16 @@ const Analytics = () => {
           aggregated[item.model_name].total_interactions += 1;
         });
 
-        const sortedData = Object.values(aggregated).sort((a, b) => 
+        const processedData = Object.values(aggregated).map(item => ({
+          model_name: item.model_name,
+          page_visits: item.page_visits,
+          online_opens: item.online_opens,
+          downloads: item.downloads,
+          unique_visitors: item.visitors.size,
+          total_interactions: item.total_interactions,
+        }));
+
+        const sortedData = processedData.sort((a, b) => 
           b.total_interactions - a.total_interactions
         );
         setAnalytics(sortedData);
@@ -166,37 +185,56 @@ const Analytics = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-4 mb-6">
-          <Button 
-            variant={dateRange === '60m' ? 'default' : 'outline'}
-            onClick={() => setDateRange('60m')}
-          >
-            Last 60 Min
-          </Button>
-          <Button 
-            variant={dateRange === '24h' ? 'default' : 'outline'}
-            onClick={() => setDateRange('24h')}
-          >
-            Last 24 Hours
-          </Button>
-          <Button 
-            variant={dateRange === '7d' ? 'default' : 'outline'}
-            onClick={() => setDateRange('7d')}
-          >
-            Last 7 Days
-          </Button>
-          <Button 
-            variant={dateRange === '30d' ? 'default' : 'outline'}
-            onClick={() => setDateRange('30d')}
-          >
-            Last 30 Days
-          </Button>
-          <Button 
-            variant={dateRange === '90d' ? 'default' : 'outline'}
-            onClick={() => setDateRange('90d')}
-          >
-            Last 90 Days
-          </Button>
+        <div className="flex flex-wrap items-center gap-4 mb-6">
+          <div className="flex flex-wrap gap-2">
+            <Button 
+              variant={dateRange === '60m' ? 'default' : 'outline'}
+              onClick={() => setDateRange('60m')}
+            >
+              Last 60 Min
+            </Button>
+            <Button 
+              variant={dateRange === '24h' ? 'default' : 'outline'}
+              onClick={() => setDateRange('24h')}
+            >
+              Last 24 Hours
+            </Button>
+            <Button 
+              variant={dateRange === '7d' ? 'default' : 'outline'}
+              onClick={() => setDateRange('7d')}
+            >
+              Last 7 Days
+            </Button>
+            <Button 
+              variant={dateRange === '30d' ? 'default' : 'outline'}
+              onClick={() => setDateRange('30d')}
+            >
+              Last 30 Days
+            </Button>
+            <Button 
+              variant={dateRange === '90d' ? 'default' : 'outline'}
+              onClick={() => setDateRange('90d')}
+            >
+              Last 90 Days
+            </Button>
+          </div>
+          
+          <div className="flex gap-2 ml-auto">
+            <Button 
+              variant={visitorType === 'total' ? 'default' : 'outline'}
+              onClick={() => setVisitorType('total')}
+              size="sm"
+            >
+              Total Visitors
+            </Button>
+            <Button 
+              variant={visitorType === 'unique' ? 'default' : 'outline'}
+              onClick={() => setVisitorType('unique')}
+              size="sm"
+            >
+              Unique Visitors
+            </Button>
+          </div>
         </div>
 
         {loading ? (
@@ -219,9 +257,14 @@ const Analytics = () => {
               <Card className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-sm text-muted-foreground">Total Page Visits</p>
+                    <p className="text-sm text-muted-foreground">
+                      {visitorType === 'unique' ? 'Unique Visitors' : 'Total Page Visits'}
+                    </p>
                     <p className="text-2xl font-bold">
-                      {analytics.reduce((sum, item) => sum + item.page_visits, 0)}
+                      {visitorType === 'unique' 
+                        ? analytics.reduce((sum, item) => sum + item.unique_visitors, 0)
+                        : analytics.reduce((sum, item) => sum + item.page_visits, 0)
+                      }
                     </p>
                   </div>
                   <Users className="w-8 h-8 text-blue-600" />
@@ -259,7 +302,9 @@ const Analytics = () => {
                   <thead>
                     <tr className="border-b">
                       <th className="text-left py-3 px-2">Model Name</th>
-                      <th className="text-center py-3 px-2">Page Visits</th>
+                      <th className="text-center py-3 px-2">
+                        {visitorType === 'unique' ? 'Unique Visitors' : 'Page Visits'}
+                      </th>
                       <th className="text-center py-3 px-2">Online Opens</th>
                       <th className="text-center py-3 px-2">Downloads</th>
                       <th className="text-center py-3 px-2">Total</th>
@@ -269,7 +314,9 @@ const Analytics = () => {
                     {analytics.map((item) => (
                       <tr key={item.model_name} className="border-b hover:bg-muted/50">
                         <td className="py-3 px-2 font-medium">{item.model_name}</td>
-                        <td className="py-3 px-2 text-center">{item.page_visits}</td>
+                        <td className="py-3 px-2 text-center">
+                          {visitorType === 'unique' ? item.unique_visitors : item.page_visits}
+                        </td>
                         <td className="py-3 px-2 text-center">{item.online_opens}</td>
                         <td className="py-3 px-2 text-center">{item.downloads}</td>
                         <td className="py-3 px-2 text-center font-semibold">
