@@ -31,7 +31,7 @@ const HowItWorks = () => {
       },
       {
         label: "TIER 2", 
-        title: "Download and Use",
+        title: "Download & Use",
         bullets: [
           "Download protected Excel models",
           "All standard models available",
