@@ -6,6 +6,7 @@ import suggestion2 from "@/assets/suggestion2-progressive.jpg";
 import suggestion3 from "@/assets/suggestion3-results.jpg";
 import homepageRedesign from "@/assets/homepage-redesign-mockup.jpg";
 import homepageMinimal from "@/assets/homepage-redesign-minimal.jpg";
+import homepageExact from "@/assets/homepage-exact-design.jpg";
 
 const DesignSuggestions = () => {
   return (
@@ -26,33 +27,33 @@ const DesignSuggestions = () => {
         </div>
 
         <div className="space-y-12">
-          {/* Homepage Redesign Mockup - Staying Close to Design DNA */}
-          <Card className="shadow-lg border-2 border-brand-blue">
+          {/* Homepage Redesign - Exact Current Design DNA */}
+          <Card className="shadow-lg border-2 border-rich-emerald">
             <CardHeader>
               <CardTitle className="text-3xl text-brand-blue">
-                ✅ Refined Homepage Redesign (Staying Close to Design DNA)
+                ✅ Homepage Redesign - Using Your Exact Current Design
               </CardTitle>
               <CardDescription className="text-lg">
-                Clean minimal redesign maintaining your existing aesthetic with 3 focused sections
+                3 sections using identical styling to your current ServicesSection cards
               </CardDescription>
             </CardHeader>
             <CardContent>
               <img 
-                src={homepageMinimal} 
-                alt="Minimal homepage redesign staying close to existing design DNA with clean white background and simple typography" 
+                src={homepageExact} 
+                alt="Homepage redesign using exact current website design DNA - white cards, blue headings, emerald buttons" 
                 className="w-full rounded-lg shadow-md"
               />
               <div className="mt-6 space-y-3">
-                <h4 className="font-semibold text-brand-blue">Design DNA Preserved:</h4>
+                <h4 className="font-semibold text-brand-blue">Exact Design DNA Match:</h4>
                 <ul className="text-slate-600 space-y-2">
-                  <li>• <strong>Same Colors:</strong> Blue #326496 headings, gray #555555 text, green buttons</li>
-                  <li>• <strong>Same Typography:</strong> Garamond font family, clean minimal style</li>
-                  <li>• <strong>Same Aesthetic:</strong> White background, lots of whitespace, simple layout</li>
-                  <li>• <strong>Content Reduction:</strong> 3 focused sections instead of text-heavy bullets</li>
-                  <li>• <strong>CTA Structure:</strong> Left-aligned prompt text, right-aligned buttons</li>
+                  <li>• <strong>Same Cards:</strong> White background, shadows, borders exactly like ServicesSection</li>
+                  <li>• <strong>Same Colors:</strong> Blue #326496 headings, slate-600 text, rich-emerald buttons</li>
+                  <li>• <strong>Same Typography:</strong> Garamond font, text-4xl/text-2xl headings, text-lg descriptions</li>
+                  <li>• <strong>Same Icons:</strong> Circular blue icons on left, same as current sections</li>
+                  <li>• <strong>Same Layout:</strong> Left-aligned text, structured CTA rows with ArrowRight icons</li>
                 </ul>
                 <p className="text-sm text-slate-500 mt-4 italic">
-                  This stays true to your existing design while reducing text complexity.
+                  This perfectly matches your existing ServicesSection design system.
                 </p>
               </div>
             </CardContent>
