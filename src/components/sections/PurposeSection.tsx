@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 const PurposeSection = () => {
   return (
     <section className="py-16 px-6 bg-white">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-slate-100 text-slate-800" variant="outline">
             Our Purpose

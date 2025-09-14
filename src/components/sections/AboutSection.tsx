@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const AboutSection = () => {
   return (
     <section id="about" className="py-8 px-6 bg-white">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-7xl">
         <div className="max-w-5xl mx-auto">
           <div className="bg-slate-50 rounded-lg p-8">
             <div className="flex flex-col md:flex-row gap-8 items-start text-left">

@@ -3,7 +3,7 @@ import { BarChart3, Users, TrendingUp } from "lucide-react";
 const StatsSection = () => {
   return (
     <section className="py-16 px-6 bg-slate-50">
-      <div className="container mx-auto max-w-4xl">
+      <div className="container mx-auto max-w-7xl">
         <div className="grid md:grid-cols-3 gap-8 text-center">
           <div className="space-y-3">
             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
