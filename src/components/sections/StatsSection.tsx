@@ -13,8 +13,8 @@ const StatsSection = () => {
             <p className="text-slate-600">Financial Models</p>
           </div>
           <div className="space-y-3">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
-              <Users className="w-8 h-8 text-green-600" />
+            <div className="w-16 h-16 bg-rich-emerald/10 rounded-full flex items-center justify-center mx-auto">
+              <Users className="w-8 h-8 text-rich-emerald" />
             </div>
             <h4 className="text-3xl font-bold text-slate-900">500+</h4>
             <p className="text-slate-600">Business Decisions</p>

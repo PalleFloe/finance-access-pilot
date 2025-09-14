@@ -24,12 +24,6 @@ const ToolboxSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Business Type Categories */}
           <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full">
-            <div className="absolute -top-3 -right-3 z-10">
-              <Badge className="bg-green-100 text-green-800 border-green-200 shadow-sm">
-                <Check className="w-3 h-3 mr-1" />
-                Available
-              </Badge>
-            </div>
             <CardHeader className="flex-grow">
               <CardTitle className="text-2xl font-semibold">
                 <span>Startup Valuations</span>
@@ -40,7 +34,7 @@ const ToolboxSection = () => {
             </CardHeader>
             <CardContent className="mt-auto">
               <Link to="/toolbox/startup-valuations">
-                <Button variant="brand-green" size="lg" className="w-full text-lg">
+                <Button variant="rich-emerald" size="lg" className="w-full text-lg">
                   Explore Models
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -65,7 +59,7 @@ const ToolboxSection = () => {
             </CardHeader>
             <CardContent className="mt-auto">
               <Link to="/toolbox/business-strategy">
-                <Button variant="brand-green" size="lg" className="w-full text-lg">
+                <Button variant="rich-emerald" size="lg" className="w-full text-lg">
                   Explore Models
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -74,12 +68,6 @@ const ToolboxSection = () => {
           </Card>
 
           <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full">
-            <div className="absolute -top-3 -right-3 z-10">
-              <Badge className="bg-green-100 text-green-800 border-green-200 shadow-sm">
-                <Check className="w-3 h-3 mr-1" />
-                Available
-              </Badge>
-            </div>
             <CardHeader className="flex-grow">
               <CardTitle className="text-2xl font-semibold">
                 <span>Investment Analysis</span>
@@ -90,7 +78,7 @@ const ToolboxSection = () => {
             </CardHeader>
             <CardContent className="mt-auto">
               <Link to="/toolbox/investment-analysis">
-                <Button variant="brand-green" size="lg" className="w-full text-lg">
+                <Button variant="rich-emerald" size="lg" className="w-full text-lg">
                   Explore Models
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -99,23 +87,17 @@ const ToolboxSection = () => {
           </Card>
 
           <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full">
-            <div className="absolute -top-3 -right-3 z-10">
-              <Badge className="bg-green-100 text-green-800 border-green-200 shadow-sm">
-                <Check className="w-3 h-3 mr-1" />
-                Available
-              </Badge>
-            </div>
             <CardHeader className="flex-grow">
               <CardTitle className="text-2xl font-semibold">
                 <span>Fundamentals</span>
               </CardTitle>
               <CardDescription className="text-lg">
-                Academic and general models for educational and inspirational purposes
+                Academic and general models for educational and inspirational purposes  
               </CardDescription>
             </CardHeader>
             <CardContent className="mt-auto">
               <Link to="/toolbox/financial-fundamentals">
-                <Button variant="brand-green" size="lg" className="w-full text-lg">
+                <Button variant="rich-emerald" size="lg" className="w-full text-lg">
                   Explore Models
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>

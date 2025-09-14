@@ -24,6 +24,18 @@
     --brand-blue: 209 49% 39%;
     --brand-blue-foreground: 0 0% 100%;
 
+    /* NEW: Rich Emerald for primary actions */
+    --rich-emerald: 153 100% 18%;
+    --rich-emerald-foreground: 0 0% 100%;
+
+    /* NEW: Deep Blue for emphasis */
+    --deep-blue: 210 65% 22%;
+    --deep-blue-foreground: 0 0% 100%;
+
+    /* ACTION PRIMARY: Point to rich-emerald */
+    --action-primary: 153 100% 18%;
+    --action-primary-foreground: 0 0% 100%;
+
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
@@ -191,27 +203,28 @@
     }
   }
 
-  /* Tier 1: Online & Free - Green */
+  /* Tier 1: Online & Free - Rich Emerald */
   .tier-1-btn {
-    background: #1e5a3c;
-    color: white;
-    border: 2px solid #1e5a3c;
+    background: hsl(var(--rich-emerald));
+    color: hsl(var(--rich-emerald-foreground));
+    border: 2px solid hsl(var(--rich-emerald));
   }
 
   .tier-1-btn:hover {
-    background: #2a7550;
-    border-color: #2a7550;
+    background: hsl(var(--deep-blue));
+    border-color: hsl(var(--deep-blue));
   }
 
-  /* Tier 2: Download & Free - White/Green */
+  /* Tier 2: Download & Free - White/Rich Emerald */
   .tier-2-btn {
     background: white;
-    color: #1e5a3c;
-    border: 2px solid #1e5a3c;
+    color: hsl(var(--rich-emerald));
+    border: 2px solid hsl(var(--rich-emerald));
   }
 
   .tier-2-btn:hover {
-    background: #f0f7f4;
+    background: hsl(var(--rich-emerald));
+    color: hsl(var(--rich-emerald-foreground));
   }
 
   /* Tier 3: Coming Soon - Gray */

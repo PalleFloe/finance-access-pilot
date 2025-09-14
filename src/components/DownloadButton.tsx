@@ -30,12 +30,8 @@ const DownloadButton = ({ sharePointUrl, modelName, className }: DownloadButtonP
   return (
     <Button
       onClick={handleDownload}
-      variant={user ? "default" : "outline"}
-      className={`${className} ${
-        user 
-          ? 'bg-green-600 hover:bg-green-700 text-white' 
-          : 'bg-white hover:bg-gray-50 text-gray-700 border-gray-300'
-      }`}
+      variant={user ? "rich-emerald" : "outline"}
+      className={className}
     >
       {user ? (
         <>

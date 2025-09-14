@@ -83,7 +83,7 @@ const ServicesSection = () => {
               <div className="pt-6 border-t border-slate-100">
                 <Button 
                   asChild 
-                  variant="brand-green" 
+                  variant="rich-emerald" 
                   size="lg"
                   className="justify-center w-full sm:w-auto px-12 text-3xl font-semibold"
                 >
@@ -151,7 +151,7 @@ const ServicesSection = () => {
               </div>
               <div className="pt-3 border-t border-slate-100 mt-4">
                 <Button 
-                  variant="brand-green" 
+                  variant="rich-emerald" 
                   size="lg"
                   className="justify-center px-12 w-full sm:w-auto text-2xl font-semibold"
                   onClick={() => setIsConsultationFormOpen(true)}

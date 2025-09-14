@@ -16,7 +16,6 @@ const HowItWorks = () => {
     row1: [
       {
         label: "TIER 1",
-        badge: { text: "Available", status: "available" },
         title: "Just Take a Look! & Free",
         bullets: [
           "Browser embedded Excel",
@@ -33,7 +32,6 @@ const HowItWorks = () => {
       },
       {
         label: "TIER 2", 
-        badge: { text: "Available", status: "available" },
         title: "Free Models & Download",
         bullets: [
           "Download protected Excel models",
@@ -118,18 +116,8 @@ const HowItWorks = () => {
     <div className="bg-white border border-slate-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow p-5 flex flex-col relative">
       {tier.badge && (
         <div className="absolute -top-3 -right-3 z-10">
-          <Badge 
-            className={`${
-              tier.badge.status === 'available' 
-                ? 'bg-green-100 text-green-800 border-green-200' 
-                : 'bg-orange-100 text-orange-800 border-orange-200'
-            } shadow-sm`}
-          >
-            {tier.badge.status === 'available' ? (
-              <CheckCircle className="w-3 h-3 mr-1" />
-            ) : (
-              <Clock className="w-3 h-3 mr-1" />
-            )}
+          <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
+            <Clock className="w-3 h-3 mr-1" />
             {tier.badge.text}
           </Badge>
         </div>
@@ -159,7 +147,7 @@ const HowItWorks = () => {
         onClick={tier.isConsultation ? () => setIsConsultationOpen(true) : undefined}
         asChild={!tier.disabled && !tier.isConsultation}
         disabled={tier.disabled}
-        variant={tier.disabled ? undefined : "brand-green"}
+        variant={tier.disabled ? undefined : "rich-emerald"}
         size="lg"
         className={`w-full ${tier.isModelTier ? 'text-3xl font-semibold' : 'text-2xl font-semibold'} ${
           tier.disabled 

@@ -45,7 +45,7 @@ const MatureBusiness = () => {
             <Card className="shadow-lg border-slate-200">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
-                  <BarChart3 className="w-5 h-5 text-green-600" />
+                  <BarChart3 className="w-5 h-5 text-rich-emerald" />
                   <span>Advanced Forecasting Model</span>
                 </CardTitle>
                 <CardDescription>
@@ -64,7 +64,7 @@ const MatureBusiness = () => {
             <Card className="shadow-lg border-slate-200">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
-                  <BarChart3 className="w-5 h-5 text-green-600" />
+                  <BarChart3 className="w-5 h-5 text-rich-emerald" />
                   <span>Capital Budgeting Analysis</span>
                 </CardTitle>
                 <CardDescription>
@@ -83,7 +83,7 @@ const MatureBusiness = () => {
             <Card className="shadow-lg border-slate-200">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
-                  <BarChart3 className="w-5 h-5 text-green-600" />
+                  <BarChart3 className="w-5 h-5 text-rich-emerald" />
                   <span>Working Capital Management</span>
                 </CardTitle>
                 <CardDescription>

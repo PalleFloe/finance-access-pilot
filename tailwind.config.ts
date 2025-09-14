@@ -41,6 +41,18 @@ export default {
 					DEFAULT: 'hsl(var(--brand-blue))',
 					foreground: 'hsl(var(--brand-blue-foreground))'
 				},
+				'rich-emerald': {
+					DEFAULT: 'hsl(var(--rich-emerald))',
+					foreground: 'hsl(var(--rich-emerald-foreground))'
+				},
+				'deep-blue': {
+					DEFAULT: 'hsl(var(--deep-blue))',
+					foreground: 'hsl(var(--deep-blue-foreground))'
+				},
+				'action-primary': {
+					DEFAULT: 'hsl(var(--action-primary))',
+					foreground: 'hsl(var(--action-primary-foreground))'
+				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
