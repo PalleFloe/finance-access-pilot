@@ -4,7 +4,7 @@ import Footer from "@/components/sections/Footer";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <Helmet>
         <title>Contact - Get Expert Financial Guidance | Financial Decision Models</title>
         <meta name="description" content="Contact Palle Floe Nielsen for custom financial modeling, business consulting, and strategic advisory services. Based at BloxHub innovation center in Copenhagen, Denmark. Expert financial guidance." />
@@ -22,7 +22,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="bg-slate-50 rounded-xl p-8 md:p-12 max-w-2xl mx-auto">
+          <div className="bg-white p-6 rounded-lg border border-slate-100 shadow-sm max-w-2xl mx-auto">
             <div className="space-y-6">
               <div>
                 <h2 className="text-lg font-semibold text-brand-blue mb-2">Founder:</h2>
