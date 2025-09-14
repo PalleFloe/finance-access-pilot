@@ -13,11 +13,11 @@ const Contact = () => {
       
       <main className="pt-20 pb-16">
         <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+          <div className="mb-12 max-w-2xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-6">
               Contact
             </h1>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-slate-600 leading-relaxed">
               Get in touch to discuss your financial decision modeling needs and how we can help your business make better decisions.
             </p>
           </div>
@@ -25,12 +25,12 @@ const Contact = () => {
           <div className="bg-slate-50 rounded-xl p-8 md:p-12 max-w-2xl mx-auto">
             <div className="space-y-6">
               <div>
-                <h2 className="text-lg font-semibold text-slate-900 mb-2">Founder:</h2>
+                <h2 className="text-lg font-semibold text-brand-blue mb-2">Founder:</h2>
                 <p className="text-lg text-slate-700">Palle Fløe Nielsen</p>
               </div>
 
               <div>
-                <h2 className="text-lg font-semibold text-slate-900 mb-2">E-mail:</h2>
+                <h2 className="text-lg font-semibold text-brand-blue mb-2">E-mail:</h2>
                 <a 
                   href="mailto:Palle@financialdecisionmodels.com" 
                   className="text-lg text-primary hover:underline"
@@ -40,7 +40,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <h2 className="text-lg font-semibold text-slate-900 mb-2">LinkedIn:</h2>
+                <h2 className="text-lg font-semibold text-brand-blue mb-2">LinkedIn:</h2>
                 <a 
                   href="https://www.linkedin.com/in/palle-fl%C3%B8e-nielsen-97ab7211/" 
                   target="_blank" 
