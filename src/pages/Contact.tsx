@@ -12,7 +12,7 @@ const Contact = () => {
       <Header />
       
       <main className="pt-20 pb-16">
-        <div className="container mx-auto px-6 max-w-4xl">
+        <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
               Contact

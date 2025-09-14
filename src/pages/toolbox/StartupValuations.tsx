@@ -59,7 +59,7 @@ const StartupValuations = () => {
       <Header />
       
       <div className="py-12 px-6">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto px-6">
           <Link 
             to="/toolbox" 
             className="inline-flex items-center text-slate-600 hover:text-brand-blue mb-6"
