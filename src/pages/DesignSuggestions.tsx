@@ -7,6 +7,7 @@ import suggestion3 from "@/assets/suggestion3-results.jpg";
 import homepageRedesign from "@/assets/homepage-redesign-mockup.jpg";
 import homepageMinimal from "@/assets/homepage-redesign-minimal.jpg";
 import homepageExact from "@/assets/homepage-exact-design.jpg";
+import homepageContentDraft from "@/assets/homepage-content-update-draft.jpg";
 
 const DesignSuggestions = () => {
   return (
@@ -27,6 +28,38 @@ const DesignSuggestions = () => {
         </div>
 
         <div className="space-y-12">
+          {/* Homepage Content Update Draft */}
+          <Card className="shadow-lg border-2 border-brand-blue">
+            <CardHeader>
+              <CardTitle className="text-3xl text-brand-blue">
+                📝 DRAFT: Homepage Content Update (Existing Design)
+              </CardTitle>
+              <CardDescription className="text-lg">
+                Content changes within your exact current design structure - no design modifications
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <img 
+                src={homepageContentDraft} 
+                alt="Homepage content update draft using exact existing design - same white cards, same styling, only content updated" 
+                className="w-full rounded-lg shadow-md"
+              />
+              <div className="mt-6 space-y-3">
+                <h4 className="font-semibold text-brand-blue">Content Updates Only:</h4>
+                <ul className="text-slate-600 space-y-2">
+                  <li>• <strong>Section 1:</strong> "Comprehensive Range" + 4 checkmark categories + "Go to Toolbox"</li>
+                  <li>• <strong>Section 2:</strong> "Expert Guidance" + simplified text + "Schedule Consultation"</li>
+                  <li>• <strong>Section 3:</strong> New "Offerings" section + "Offerings – How It Works" button</li>
+                  <li>• <strong>Same Design:</strong> Exact white cards, blue icons, green buttons, typography</li>
+                  <li>• <strong>Same Layout:</strong> Left text prompts, right-aligned CTA buttons</li>
+                </ul>
+                <p className="text-sm text-slate-500 mt-4 italic">
+                  Ready for review before implementation - maintains identical design DNA.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
           {/* Homepage Redesign - Exact Current Design DNA */}
           <Card className="shadow-lg border-2 border-rich-emerald">
             <CardHeader>
