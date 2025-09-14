@@ -140,7 +140,7 @@ const BlogSection = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-blog-heading">
             The Blog
           </h1>
-          <p className="text-lg text-slate-600 max-w-5xl mx-auto leading-relaxed">
+          <p className="text-lg text-slate-600 max-w-6xl mx-auto leading-relaxed">
             Sharing insights, reflections and updates for Financial Decision Models and how it can help you making better financial decisions.
           </p>
         </div>
