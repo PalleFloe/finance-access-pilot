@@ -19,8 +19,8 @@ const TwoThreeStagesDcf = () => {
       </Helmet>
       <Header />
       
-      <div className="py-12 px-6">
-        <div className="max-w-6xl mx-auto px-6 py-16 text-center">
+      <div className="py-12">
+        <div className="container py-16 text-center">
           <Link 
             to="/toolbox/investment-analysis"
             className="inline-flex items-center text-slate-600 hover:text-primary mb-8"

@@ -9,7 +9,7 @@ const ThankYou = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <Header />
       
-      <section className="py-20 px-6">
+      <section className="py-20">
         <div className="container mx-auto max-w-2xl text-center">
           <Card className="shadow-lg border-slate-200">
             <CardHeader className="text-center pb-8">

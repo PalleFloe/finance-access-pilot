@@ -125,6 +125,8 @@
   body {
     @apply bg-background text-foreground text-[12px] sm:text-[11px];
     font-family: 'Garamond', 'Times New Roman', serif;
+    scrollbar-gutter: stable;
+    overflow-y: scroll;
   }
 
   /* Mobile-specific typography improvements */
