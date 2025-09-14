@@ -54,7 +54,7 @@ const FinancialRatioCalculator = () => {
               <Button 
                 onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETASV3O1WchLhP8hFzc8ucYBQ-w7vL7UOC4IbqzyT5AsWw?e=iaaez7&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                 variant="brand-green"
-                className="w-full"
+                className="w-full text-lg"
               >
                 <ExternalLink className="w-4 h-4 mr-2" />
                 Online & Free

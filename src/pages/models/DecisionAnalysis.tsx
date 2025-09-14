@@ -54,7 +54,7 @@ const DecisionAnalysis = () => {
           <div className="space-y-3">
             <Button 
               onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETKCTHtbjLJPkQx0LGrLFmcBKO07Nw78MrXhcRcco2z0yg?e=1QCQiS&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-              className="w-full"
+              className="w-full text-lg"
               variant="brand-green"
               size="lg"
             >

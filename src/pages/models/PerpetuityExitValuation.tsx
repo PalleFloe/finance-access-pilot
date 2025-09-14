@@ -55,7 +55,7 @@ const PerpetuityExitValuation = () => {
               <Button 
                 onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaMtk3zo6hVAqea-OC4rf08B52Or6Xp7pIDf5mxKhItf9g?e=Dqmkcp&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                 variant="brand-green"
-                className="w-full"
+                className="w-full text-lg"
               >
                 <ExternalLink className="w-4 h-4 mr-2" />
                 Online & Free

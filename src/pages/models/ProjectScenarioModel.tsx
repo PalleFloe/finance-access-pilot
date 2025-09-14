@@ -55,7 +55,7 @@ const ProjectScenarioModel = () => {
               <Button 
                 onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EVjyi5TByNVNjsOCjrxOuFkBfX3L4Z6jpli9xqdgNxvN2g?e=YQlZLq&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                 variant="brand-green"
-                className="w-full"
+                className="w-full text-lg"
               >
                 <ExternalLink className="w-4 h-4 mr-2" />
                 Online & Free

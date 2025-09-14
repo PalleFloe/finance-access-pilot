@@ -54,7 +54,7 @@ const SaasUnitEconomics = () => {
           <div className="space-y-3">
             <Button 
               onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EfOt-LHdyddGnCOekB15-A8BbobEAwXR_UcZpsfCslmTiw?e=KTTQa3&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-              className="w-full"
+              className="w-full text-lg"
               variant="brand-green"
               size="lg"
             >

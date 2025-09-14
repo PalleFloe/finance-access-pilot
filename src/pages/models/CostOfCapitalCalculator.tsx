@@ -55,7 +55,7 @@ const CostOfCapitalCalculator = () => {
               <Button 
                 onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ERu0HmuKBFNHptyvmTdgJt8Bii1B3ugEGH0fmrgaZixlrA?e=cfz5A0&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                 variant="brand-green"
-                className="w-full"
+                className="w-full text-lg"
               >
                 <ExternalLink className="w-4 h-4 mr-2" />
                 Online & Free

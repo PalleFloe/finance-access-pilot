@@ -54,7 +54,7 @@ const VentureCapitalMethod = () => {
           <div className="space-y-3">
             <Button 
               onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYYO2e6eVcRJrUq7utm970cBafMKUt7r8oVfdVFGYwqzhQ?e=iWF4sf&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-              className="w-full"
+              className="w-full text-lg"
               variant="brand-green"
               size="lg"
             >

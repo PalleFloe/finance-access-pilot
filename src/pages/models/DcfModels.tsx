@@ -58,7 +58,7 @@ const DcfModels = () => {
               <Button 
                 onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EZDwnda3bKVNpEIPTHKJeSYBBdETLKSkiT4QIgTyJ02XxA?e=UYozDl&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                 variant="brand-green"
-                className="w-full"
+                className="w-full text-lg"
               >
                 <ExternalLink className="w-4 h-4 mr-2" />
                 Online & Free

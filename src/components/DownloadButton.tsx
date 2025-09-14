@@ -31,7 +31,7 @@ const DownloadButton = ({ sharePointUrl, modelName, className }: DownloadButtonP
     <Button
       onClick={handleDownload}
       variant={user ? "rich-emerald" : "outline"}
-      className={className}
+      className={`text-lg ${className || ""}`}
     >
       {user ? (
         <>

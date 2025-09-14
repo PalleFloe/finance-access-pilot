@@ -55,7 +55,7 @@ const PresentValueCalculator = () => {
               <Button 
                 onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYSzLdwB9BxGjSHtWZqg8NgB1IdmJsc-Md-PQQBs7vuxHA?e=IowFyc&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                 variant="brand-green"
-                className="w-full"
+                className="w-full text-lg"
               >
                 <ExternalLink className="w-4 h-4 mr-2" />
                 Online & Free

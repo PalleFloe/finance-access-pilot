@@ -104,7 +104,7 @@ const RiskFactorSummation = () => {
 
               <div className="space-y-2">
                 <Button 
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                  className="w-full text-lg bg-primary hover:bg-primary/90 text-primary-foreground"
                   onClick={() => {
                     const link = document.createElement('a')
                     link.href = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EcqLMvzq3AJOscmUT8SIC38ByR-4fKgBeOB2Ta4Tm9nX4g?e=jL0hxL'

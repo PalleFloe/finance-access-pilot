@@ -55,7 +55,7 @@ const EarningGrowthEstimator = () => {
               <Button 
                 onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETcL-cKFbRFJoWLgiYI-K_EBrdjXbxv2Y2yj6UqYjxAQeA?e=5QwUvA&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                 variant="brand-green"
-                className="w-full"
+                className="w-full text-lg"
               >
                 <ExternalLink className="w-4 h-4 mr-2" />
                 Online & Free
