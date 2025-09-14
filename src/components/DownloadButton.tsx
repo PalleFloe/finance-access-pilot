@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { useAuth } from '@/hooks/useAuth';
 import { useNavigate } from 'react-router-dom';
 import { Download, Lock } from 'lucide-react';
+import { useAnalytics } from '@/hooks/useAnalytics';
 
 interface DownloadButtonProps {
   sharePointUrl: string;
@@ -11,6 +12,7 @@ interface DownloadButtonProps {
 
 const DownloadButton = ({ sharePointUrl, modelName, className }: DownloadButtonProps) => {
   const { user, trackDownload } = useAuth();
+  const { trackDownload: trackAnalyticsDownload } = useAnalytics();
   const navigate = useNavigate();
 
   const handleDownload = async () => {
@@ -20,8 +22,9 @@ const DownloadButton = ({ sharePointUrl, modelName, className }: DownloadButtonP
       return;
     }
 
-    // Track the download
+    // Track the download in both systems
     await trackDownload(modelName);
+    await trackAnalyticsDownload(modelName);
     
     // Open SharePoint file in new window
     window.open(sharePointUrl, '_blank', 'width=1200,height=800,scrollbars=yes,resizable=yes');
