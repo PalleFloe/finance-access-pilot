@@ -38,6 +38,7 @@ import TwoThreeStagesDcf from "./pages/models/TwoThreeStagesDcf";
 import CostReductionDcf from "./pages/models/CostReductionDcf";
 import BreakEvenAnalysis from "./pages/models/BreakEvenAnalysis";
 import AdminAnalytics from "./pages/admin/Analytics";
+import DesignSuggestions from "./pages/DesignSuggestions";
 
 const App = () => (
   <TooltipProvider>
@@ -80,6 +81,7 @@ const App = () => (
           <Route path="/toolbox/investment-analysis/break-even-analysis-model" element={<BreakEvenAnalysis />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="/admin/analytics" element={<AdminAnalytics />} />
+          <Route path="/design-suggestions" element={<DesignSuggestions />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
       </AuthProvider>
