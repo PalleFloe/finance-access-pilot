@@ -5,8 +5,12 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft } from "lucide-react";
 import Header from "@/components/Header";
 import { useEffect } from "react";
+import { usePageVisitTracking } from '@/hooks/useAnalytics';
 
 const TwoThreeStagesDcf = () => {
+  // Track page visit automatically
+  usePageVisitTracking('Two and Three Stages DCF Models');
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

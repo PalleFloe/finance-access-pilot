@@ -6,13 +6,20 @@ import { ArrowLeft, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import { useEffect } from "react";
+import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 
 const EarningGrowthEstimator = () => {
+  const { trackOnlineOpen } = useAnalytics();
+  
+  // Track page visit automatically
+  usePageVisitTracking('Earning Growth Estimator');
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const openModel = (sharePointUrl: string) => {
+    trackOnlineOpen('Earning Growth Estimator');
     console.log('openModel: EarningGrowthEstimator ->', sharePointUrl);
     const win = window.open(sharePointUrl, '_blank', 'width=1200,height=800,scrollbars=yes,resizable=yes');
     if (!win) console.warn('window.open was blocked by the browser');

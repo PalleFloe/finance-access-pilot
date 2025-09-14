@@ -7,13 +7,20 @@ import { ArrowLeft, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import { useEffect } from "react";
+import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 
 const BerkusValuation = () => {
+  const { trackOnlineOpen } = useAnalytics();
+  
+  // Track page visit automatically
+  usePageVisitTracking('Berkus Valuation Model');
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const openModel = (sharePointUrl: string) => {
+    trackOnlineOpen('Berkus Valuation Model');
     window.open(sharePointUrl, '_blank', 'width=1200,height=800');
   };
 

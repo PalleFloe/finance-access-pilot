@@ -5,8 +5,12 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft } from "lucide-react";
 import Header from "@/components/Header";
 import { useEffect } from "react";
+import { usePageVisitTracking } from '@/hooks/useAnalytics';
 
 const BreakEvenAnalysis = () => {
+  // Track page visit automatically
+  usePageVisitTracking('Break-Even Analysis Model');
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

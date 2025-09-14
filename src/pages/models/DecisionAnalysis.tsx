@@ -8,13 +8,20 @@ import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import { useEffect } from "react";
+import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 
 const DecisionAnalysis = () => {
+  const { trackOnlineOpen } = useAnalytics();
+  
+  // Track page visit automatically
+  usePageVisitTracking('Decision Analysis Model');
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const openModel = (sharePointUrl: string) => {
+    trackOnlineOpen('Decision Analysis Model');
     window.open(sharePointUrl, '_blank', 'width=1200,height=800,scrollbars=yes,resizable=yes');
   };
 

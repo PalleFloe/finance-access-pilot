@@ -6,8 +6,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, ArrowRight, BarChart3, FileText, Users, HelpCircle, Wrench } from "lucide-react";
 import Header from "@/components/Header";
+import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 
 const RiskFactorSummation = () => {
+  // Track page visit automatically
+  usePageVisitTracking('Risk Factor Summation Model');
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <Helmet>

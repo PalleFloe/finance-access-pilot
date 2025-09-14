@@ -7,14 +7,20 @@ import { ArrowLeft, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import { useEffect } from "react";
+import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 
 const FlexibleYearByYearDcf = () => {
+  const { trackOnlineOpen } = useAnalytics();
+  
+  // Track page visit automatically
+  usePageVisitTracking('Flexible Year by Year DCF Model');
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const openModel = (sharePointUrl: string) => {
+    trackOnlineOpen('Flexible Year by Year DCF Model');
     window.open(sharePointUrl, '_blank', 'width=1200,height=800');
   };
 
