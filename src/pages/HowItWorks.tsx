@@ -16,13 +16,12 @@ const HowItWorks = () => {
     row1: [
       {
         label: "TIER 1",
-        title: "Just Take a Look! & Free",
+        title: "Online & View",
         bullets: [
-          "Browser embedded Excel",
-          "All standard models available", 
-          "View only in browser",
+          "View models in browser",
+          "All standard models available",
           "No registration required",
-          "Unlimited time, no download"
+          "Unlimited time, free access"
         ],
         buttonText: "Go to Toolbox",
         buttonLink: "/toolbox",
@@ -32,11 +31,10 @@ const HowItWorks = () => {
       },
       {
         label: "TIER 2", 
-        title: "Free Models & Download",
+        title: "Download and Use",
         bullets: [
           "Download protected Excel models",
-          "Simple/academic models available",
-          "Standard protected models", 
+          "All standard models available",
           "Email registration required",
           "Unlimited time, free access"
         ],
@@ -49,13 +47,12 @@ const HowItWorks = () => {
       {
         label: "TIER 3",
         badge: { text: "Coming Soon", status: "coming-soon" },
-        title: "Model Download & Own",
+        title: "Download & Own",
         bullets: [
           "Download unprotected Excel models",
           "All models available",
-          "One-time purchase per model",
-          "Full ownership rights",
-          "Unlimited time, Excel unprotected files"
+          "Email registration required",
+          "Unlimited time, purchase"
         ],
         buttonText: "Coming Soon",
         buttonLink: "#",
@@ -69,10 +66,9 @@ const HowItWorks = () => {
         label: "TIER 4",
         title: "Customized Models",
         bullets: [
-          "Custom model development",
-          "Based on standard models or other models",
+          "Models on website, your existing ones or from scratch",
+          "Development, supporting or challenger role",
           "Based on your requirements, dialogue and feedback loops",
-          "Full ownership of custom model",
           "Hourly consulting rate"
         ],
         buttonText: "Schedule Consultation",
@@ -85,11 +81,10 @@ const HowItWorks = () => {
         label: "TIER 5",
         title: "Consulting Services",
         bullets: [
-          "Lead or Support to Project or Initiative",
-          "Challenge, evaluate and improve projects or processes",
-          "Support modelling to be structured into insights",
-          "Help create proper scenarios to manage risk and bias",
-          "Service can be for a period or for specific sessions/tasks"
+          "Lead or support your project or initiative",
+          "'Connecting the dots', expert, inspirator or challenger role",
+          "Fulltime / fractional for a period, or agreed sessions / tasks",
+          "After agreement"
         ],
         buttonText: "Schedule Consultation",
         buttonLink: "/contact",
