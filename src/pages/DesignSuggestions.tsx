@@ -8,6 +8,7 @@ import homepageRedesign from "@/assets/homepage-redesign-mockup.jpg";
 import homepageMinimal from "@/assets/homepage-redesign-minimal.jpg";
 import homepageExact from "@/assets/homepage-exact-design.jpg";
 import homepageContentDraft from "@/assets/homepage-content-update-draft.jpg";
+import homepageExactStyling from "@/assets/homepage-exact-styling-draft.jpg";
 
 const DesignSuggestions = () => {
   return (
@@ -40,8 +41,8 @@ const DesignSuggestions = () => {
             </CardHeader>
             <CardContent>
               <img 
-                src={homepageContentDraft} 
-                alt="Homepage content update draft using exact existing design - same white cards, same styling, only content updated" 
+                src={homepageExactStyling} 
+                alt="Homepage content update using exact ServicesSection styling - identical cards, shadows, icons, fonts, layout" 
                 className="w-full rounded-lg shadow-md"
               />
               <div className="mt-6 space-y-3">
