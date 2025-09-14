@@ -16,7 +16,7 @@ const ServicesSection = () => {
         onClose={() => setIsConsultationFormOpen(false)} 
       />
     <section id="consulting" className="pt-3 pb-20 px-6 bg-gradient-to-b from-slate-50/50 to-white border-t border-slate-100">
-      <div className="container mx-auto max-w-7xl">
+      <div className="container mx-auto px-6">
         <div className="space-y-4">
           {/* Financial Decision Model Toolbox - Primary */}
           <Card className="shadow-xl border-slate-300 hover:shadow-2xl transition-all duration-300 bg-white backdrop-blur-sm">
