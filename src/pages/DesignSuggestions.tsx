@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import suggestion1 from "@/assets/suggestion1-icon-driven.jpg";
 import suggestion2 from "@/assets/suggestion2-progressive.jpg";
 import suggestion3 from "@/assets/suggestion3-results.jpg";
+import homepageRedesign from "@/assets/homepage-redesign-mockup.jpg";
 
 const DesignSuggestions = () => {
   return (
@@ -24,7 +25,39 @@ const DesignSuggestions = () => {
         </div>
 
         <div className="space-y-12">
-          {/* Suggestion 1 */}
+          {/* Homepage Redesign Mockup */}
+          <Card className="shadow-lg border-2 border-brand-blue">
+            <CardHeader>
+              <CardTitle className="text-3xl text-brand-blue">
+                🎯 Complete Homepage Redesign Draft
+              </CardTitle>
+              <CardDescription className="text-lg">
+                Comprehensive redesign with 3 clear sections, scaled typography, and structured CTA layout
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <img 
+                src={homepageRedesign} 
+                alt="Complete homepage redesign mockup with 3 sections: Model Categories, Consulting Services, and Offerings" 
+                className="w-full rounded-lg shadow-md"
+              />
+              <div className="mt-6 space-y-3">
+                <h4 className="font-semibold text-brand-blue">Key Features:</h4>
+                <ul className="text-slate-600 space-y-2">
+                  <li>• <strong>Section 1:</strong> Model Categories with 4 bordered category boxes and left/right CTA alignment</li>
+                  <li>• <strong>Section 2:</strong> Consulting Services with streamlined messaging</li>
+                  <li>• <strong>Section 3:</strong> Offerings overview with clear navigation</li>
+                  <li>• <strong>Typography:</strong> Scaled up fonts (28-32px headings, 20-24px subheadings)</li>
+                  <li>• <strong>Layout:</strong> Clean sections with proper spacing and CTA structure</li>
+                </ul>
+                <p className="text-sm text-slate-500 mt-4 italic">
+                  This draft addresses your complete requirements. Please review before implementation.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Previous Suggestions */}
           <Card className="shadow-lg">
             <CardHeader>
               <CardTitle className="text-2xl text-brand-blue">
