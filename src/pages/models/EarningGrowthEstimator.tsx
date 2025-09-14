@@ -27,8 +27,8 @@ const EarningGrowthEstimator = () => {
       </Helmet>
       <Header />
       
-      <div className="py-12 px-6">
-        <div className="container mx-auto max-w-4xl">
+      <div className="py-12">
+        <div className="container mx-auto">
           <Link 
             to="/toolbox/financial-fundamentals"
             className="inline-flex items-center text-slate-600 hover:text-primary mb-8"

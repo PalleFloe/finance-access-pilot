@@ -11,8 +11,8 @@ const MatureBusiness = () => {
       <Header />
 
       {/* Back Button */}
-      <section className="py-6 px-6 bg-white border-b border-slate-200">
-        <div className="container mx-auto max-w-6xl">
+      <section className="py-6 bg-white border-b border-slate-200">
+        <div className="container mx-auto">
           <Link to="/toolbox">
             <Button variant="ghost">
               <ArrowLeft className="w-4 h-4 mr-2" />
@@ -23,8 +23,8 @@ const MatureBusiness = () => {
       </section>
       
       {/* Hero Section */}
-      <section className="py-12 px-6">
-        <div className="container mx-auto max-w-3xl text-center">
+      <section className="py-12">
+        <div className="container mx-auto text-center">
           <Badge className="mb-4 bg-orange-100 text-orange-800 border-orange-200">
             Coming Soon
           </Badge>
@@ -38,8 +38,8 @@ const MatureBusiness = () => {
       </section>
 
       {/* Model List Section */}
-      <section className="py-12 px-6 bg-slate-50">
-        <div className="container mx-auto max-w-6xl">
+      <section className="py-12 bg-slate-50">
+        <div className="container mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Placeholder Card - Coming Soon */}
             <Card className="shadow-lg border-slate-200">

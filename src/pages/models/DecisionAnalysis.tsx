@@ -26,7 +26,7 @@ const DecisionAnalysis = () => {
       </Helmet>
       <Header />
       
-      <div className="max-w-6xl mx-auto px-6 py-16">
+      <div className="container mx-auto py-16">
         <div className="mb-4">
           <Link 
             to="/toolbox/startup-valuations"
@@ -45,7 +45,7 @@ const DecisionAnalysis = () => {
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 mb-12">
+      <div className="container mx-auto mb-12">
         <div className="max-w-md bg-white rounded-lg border shadow-lg p-6">
           <h3 className="text-xl font-semibold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
             Decision Analysis Model for Venture Capital Investments
@@ -79,7 +79,7 @@ const DecisionAnalysis = () => {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="container mx-auto">
         {/* Introduction Headline */}
         <h3 className="mb-6">Decision Analysis Model for Venture Capital Investments Introduction</h3>
 
