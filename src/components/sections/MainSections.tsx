@@ -18,7 +18,7 @@ const MainSections = () => {
   return (
     <div className="space-y-0">
       {/* Section 1: Model Categories */}
-      <section className="py-8">
+      <section className="py-6">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
@@ -70,7 +70,7 @@ const MainSections = () => {
       </section>
 
       {/* Section 2: Consulting Services */}
-      <section className="py-8">
+      <section className="py-6">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
@@ -109,7 +109,7 @@ const MainSections = () => {
       </section>
 
       {/* Section 3: Offerings */}
-      <section className="py-8">
+      <section className="py-6">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
