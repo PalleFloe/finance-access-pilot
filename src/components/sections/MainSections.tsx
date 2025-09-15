@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Calculator, Users, ClipboardList, ArrowRight } from "lucide-react";
+import { Calculator, Users, HelpCircle, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import ConsultationForm from "@/components/ConsultationForm";
 
@@ -116,7 +116,7 @@ const MainSections = () => {
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                    <ClipboardList className="h-6 w-6 text-brand-blue" />
+                    <HelpCircle className="h-6 w-6 text-brand-blue" />
                   </div>
                   <h2 className="font-garamond text-[36px] font-bold text-brand-blue">
                     Financial Decision Models Offerings
