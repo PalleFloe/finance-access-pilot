@@ -51,7 +51,7 @@ const DcfModels = () => {
             Standard Types of DCF Models
           </h1>
 
-          <h2 className="mb-8">
+          <h2 className="text-lg text-slate-600 leading-relaxed mb-8">
             Three DCF Approaches: Flexible DCF, Three Stages DCF, and Stable Growth Models
           </h2>
 

@@ -47,7 +47,7 @@ const BerkusValuation = () => {
             Berkus Valuation Model
           </h1>
 
-          <h2 className="mb-8">
+          <h2 className="text-lg text-slate-600 leading-relaxed mb-8">
             Pre-Revenue Valuation based on Assessment of Five Key Factors and Scenario Modelling
           </h2>
 

@@ -48,7 +48,7 @@ const PresentValueCalculator = () => {
             Simple Present Value Calculator
           </h1>
 
-          <h2 className="mb-8">
+          <h2 className="text-lg text-slate-600 leading-relaxed mb-8">
             Present Value Analysis: One-time, Annuity, Growing Annuity, Perpetuity, and Growing Perpetuity Calculations
           </h2>
 

@@ -47,7 +47,7 @@ const FlexibleYearByYearDcf = () => {
             Flexible Year by Year DCF Model
           </h1>
 
-          <h2 className="mb-8">
+          <h2 className="text-lg text-slate-600 leading-relaxed mb-8">
             Flexible DCF Analysis: Dynamic Year-by-Year Projections with Variable Growth Rates and Terminal Value Options
           </h2>
 

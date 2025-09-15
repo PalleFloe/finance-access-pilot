@@ -47,7 +47,7 @@ const PerpetuityExitValuation = () => {
             Perpetuity & Exit Valuation Models
           </h1>
 
-          <h2 className="mb-8">
+          <h2 className="text-lg text-slate-600 leading-relaxed mb-8">
             Simple Perpetuity Models: Quick & Flexible Approaches to Valuation with Scenario-Based Sensitivity and Value Driver Analysis
           </h2>
 

@@ -47,7 +47,7 @@ const StableGrowthTerminalValueDcf = () => {
             Stable Growth - Terminal Value DCF Model
           </h1>
 
-          <h2 className="mb-8">
+          <h2 className="text-lg text-slate-600 leading-relaxed mb-8">
             Stable Growth DCF Analysis: Perpetual Value Asset Evaluation with Terminal Value Focus and Growth Rate Sensitivity
           </h2>
 

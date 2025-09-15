@@ -47,7 +47,7 @@ const FirstChicagoValuation = () => {
           First Chicago Valuation Model
         </h1>
 
-        <p className="text-lg mb-8">
+        <p className="text-lg text-slate-600 leading-relaxed mb-8">
           Simple Scenario Based DCF Model for Startup Valuation with Exit Value based on both EBITDA and Revenue
         </p>
       </div>

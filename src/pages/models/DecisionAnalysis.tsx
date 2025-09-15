@@ -47,7 +47,7 @@ const DecisionAnalysis = () => {
           Decision Analysis Model for Venture Capital Investments
         </h1>
 
-        <p className="text-lg mb-8">
+        <p className="text-lg text-slate-600 leading-relaxed mb-8">
           Structured decision framework using explicit probability assignments for risk and success assessment
         </p>
       </div>
