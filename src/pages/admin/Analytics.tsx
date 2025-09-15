@@ -15,6 +15,7 @@ interface AnalyticsData {
   downloads: number;
   unique_visitors: number;
   total_interactions: number;
+  page_type?: 'model' | 'general';
 }
 
 interface DailyStats {
@@ -22,20 +23,29 @@ interface DailyStats {
   total_events: number;
 }
 
+interface GeneralPageData {
+  page_path: string;
+  page_visits: number;
+  unique_visitors: number;
+  total_interactions: number;
+}
+
 const Analytics = () => {
   const { user } = useAuth();
   const [analytics, setAnalytics] = useState<AnalyticsData[]>([]);
+  const [generalPages, setGeneralPages] = useState<GeneralPageData[]>([]);
   const [dailyStats, setDailyStats] = useState<DailyStats[]>([]);
   const [loading, setLoading] = useState(true);
   const [dateRange, setDateRange] = useState('7d'); // 60m = 60 minutes, 24h = 24 hours, 7d = 7 days
   const [visitorType, setVisitorType] = useState<'unique' | 'total'>('total');
+  const [pageType, setPageType] = useState<'all' | 'models'>('all');
 
   useEffect(() => {
     window.scrollTo(0, 0);
     if (user) {
       fetchAnalytics();
     }
-  }, [user, dateRange, visitorType]);
+  }, [user, dateRange, visitorType, pageType]);
 
   const fetchAnalytics = async () => {
     try {
@@ -69,57 +79,108 @@ const Analytics = () => {
         timeAgo.setDate(timeAgo.getDate() - days);
       }
 
-      // Fetch model analytics aggregated by model name
-      const { data: modelData } = await supabase
+      // Fetch all analytics data
+      const { data: allData } = await supabase
         .from('model_analytics')
         .select('model_name, action_type, user_id, ip_hash')
         .gte('created_at', timeAgo.toISOString());
 
-      if (modelData) {
-        const aggregated: { [key: string]: AnalyticsData & { visitors: Set<string> } } = {};
+      if (allData) {
+        // Separate model pages from general pages
+        const modelData = allData.filter(item => 
+          !item.model_name.startsWith('/') && 
+          !item.model_name.includes('page:')
+        );
+        
+        const generalData = allData.filter(item => 
+          item.model_name.startsWith('/') || 
+          item.model_name.includes('page:')
+        );
+
+        // Process model analytics
+        const modelAggregated: { [key: string]: AnalyticsData & { visitors: Set<string> } } = {};
         
         modelData.forEach((item) => {
-          if (!aggregated[item.model_name]) {
-            aggregated[item.model_name] = {
+          if (!modelAggregated[item.model_name]) {
+            modelAggregated[item.model_name] = {
               model_name: item.model_name,
               page_visits: 0,
               online_opens: 0,
               downloads: 0,
               unique_visitors: 0,
               total_interactions: 0,
+              page_type: 'model',
               visitors: new Set<string>(),
             };
           }
           
-          // Track unique visitors (user_id for logged in users, ip_hash for anonymous)
           const visitorId = item.user_id || item.ip_hash;
           if (visitorId) {
-            aggregated[item.model_name].visitors.add(visitorId);
+            modelAggregated[item.model_name].visitors.add(visitorId);
           }
           
           if (item.action_type === 'page_visit') {
-            aggregated[item.model_name].page_visits += 1;
+            modelAggregated[item.model_name].page_visits += 1;
           } else if (item.action_type === 'online_open') {
-            aggregated[item.model_name].online_opens += 1;
+            modelAggregated[item.model_name].online_opens += 1;
           } else if (item.action_type === 'download') {
-            aggregated[item.model_name].downloads += 1;
+            modelAggregated[item.model_name].downloads += 1;
           }
-          aggregated[item.model_name].total_interactions += 1;
+          modelAggregated[item.model_name].total_interactions += 1;
         });
 
-        const processedData = Object.values(aggregated).map(item => ({
+        // Process general page analytics
+        const generalAggregated: { [key: string]: GeneralPageData & { visitors: Set<string> } } = {};
+        
+        generalData.forEach((item) => {
+          const pagePath = item.model_name.replace('page:', '');
+          if (!generalAggregated[pagePath]) {
+            generalAggregated[pagePath] = {
+              page_path: pagePath,
+              page_visits: 0,
+              unique_visitors: 0,
+              total_interactions: 0,
+              visitors: new Set<string>(),
+            };
+          }
+          
+          const visitorId = item.user_id || item.ip_hash;
+          if (visitorId) {
+            generalAggregated[pagePath].visitors.add(visitorId);
+          }
+          
+          if (item.action_type === 'page_visit') {
+            generalAggregated[pagePath].page_visits += 1;
+          }
+          generalAggregated[pagePath].total_interactions += 1;
+        });
+
+        const processedModelData = Object.values(modelAggregated).map(item => ({
           model_name: item.model_name,
           page_visits: item.page_visits,
           online_opens: item.online_opens,
           downloads: item.downloads,
           unique_visitors: item.visitors.size,
           total_interactions: item.total_interactions,
+          page_type: 'model' as const,
         }));
 
-        const sortedData = processedData.sort((a, b) => 
+        const processedGeneralData = Object.values(generalAggregated).map(item => ({
+          page_path: item.page_path,
+          page_visits: item.page_visits,
+          unique_visitors: item.visitors.size,
+          total_interactions: item.total_interactions,
+        }));
+
+        const sortedModelData = processedModelData.sort((a, b) => 
           b.total_interactions - a.total_interactions
         );
-        setAnalytics(sortedData);
+        const sortedGeneralData = processedGeneralData.sort((a, b) => 
+          b.total_interactions - a.total_interactions
+        );
+
+        setAnalytics(sortedModelData);
+        setGeneralPages(sortedGeneralData);
       }
 
       // Fetch daily stats
@@ -186,6 +247,25 @@ const Analytics = () => {
         </div>
 
         <div className="flex flex-wrap items-center gap-4 mb-6">
+          {/* Page Type Filter */}
+          <div className="flex gap-2">
+            <Button 
+              variant={pageType === 'all' ? 'default' : 'outline'}
+              onClick={() => setPageType('all')}
+              size="sm"
+            >
+              All Pages
+            </Button>
+            <Button 
+              variant={pageType === 'models' ? 'default' : 'outline'}
+              onClick={() => setPageType('models')}
+              size="sm"
+            >
+              Model Pages
+            </Button>
+          </div>
+
+          {/* Date Range Filter */}
           <div className="flex flex-wrap gap-2">
             <Button 
               variant={dateRange === '60m' ? 'default' : 'outline'}
@@ -219,6 +299,7 @@ const Analytics = () => {
             </Button>
           </div>
           
+          {/* Visitor Type Filter */}
           <div className="flex gap-2 ml-auto">
             <Button 
               variant={visitorType === 'total' ? 'default' : 'outline'}
@@ -248,8 +329,12 @@ const Analytics = () => {
               <Card className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-sm text-muted-foreground">Total Models</p>
-                    <p className="text-2xl font-bold">{analytics.length}</p>
+                    <p className="text-sm text-muted-foreground">
+                      {pageType === 'all' ? 'Total Pages' : 'Total Models'}
+                    </p>
+                    <p className="text-2xl font-bold">
+                      {pageType === 'all' ? analytics.length + generalPages.length : analytics.length}
+                    </p>
                   </div>
                   <BarChart3 className="w-8 h-8 text-primary" />
                 </div>
@@ -261,9 +346,15 @@ const Analytics = () => {
                       {visitorType === 'unique' ? 'Unique Visitors' : 'Total Page Visits'}
                     </p>
                     <p className="text-2xl font-bold">
-                      {visitorType === 'unique' 
-                        ? analytics.reduce((sum, item) => sum + item.unique_visitors, 0)
-                        : analytics.reduce((sum, item) => sum + item.page_visits, 0)
+                      {pageType === 'all' 
+                        ? (visitorType === 'unique' 
+                          ? analytics.reduce((sum, item) => sum + item.unique_visitors, 0) + 
+                            generalPages.reduce((sum, item) => sum + item.unique_visitors, 0)
+                          : analytics.reduce((sum, item) => sum + item.page_visits, 0) + 
+                            generalPages.reduce((sum, item) => sum + item.page_visits, 0))
+                        : (visitorType === 'unique' 
+                          ? analytics.reduce((sum, item) => sum + item.unique_visitors, 0)
+                          : analytics.reduce((sum, item) => sum + item.page_visits, 0))
                       }
                     </p>
                   </div>
@@ -294,36 +385,74 @@ const Analytics = () => {
               </Card>
             </div>
 
-            {/* Model Analytics Table */}
+            {/* Analytics Table */}
             <Card className="p-6">
-              <h2 className="text-xl font-semibold mb-4">Model Performance</h2>
+              <h2 className="text-xl font-semibold mb-4">
+                {pageType === 'all' ? 'Page Performance' : 'Model Performance'}
+              </h2>
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead>
                     <tr className="border-b">
-                      <th className="text-left py-3 px-2">Model Name</th>
+                      <th className="text-left py-3 px-2">
+                        {pageType === 'all' ? 'Page/Model Name' : 'Model Name'}
+                      </th>
                       <th className="text-center py-3 px-2">
                         {visitorType === 'unique' ? 'Unique Visitors' : 'Page Visits'}
                       </th>
-                      <th className="text-center py-3 px-2">Online Opens</th>
-                      <th className="text-center py-3 px-2">Downloads</th>
+                      {(pageType === 'models' || pageType === 'all') && (
+                        <>
+                          <th className="text-center py-3 px-2">Online Opens</th>
+                          <th className="text-center py-3 px-2">Downloads</th>
+                        </>
+                      )}
                       <th className="text-center py-3 px-2">Total</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {analytics.map((item) => (
-                      <tr key={item.model_name} className="border-b hover:bg-muted/50">
-                        <td className="py-3 px-2 font-medium">{item.model_name}</td>
-                        <td className="py-3 px-2 text-center">
-                          {visitorType === 'unique' ? item.unique_visitors : item.page_visits}
-                        </td>
-                        <td className="py-3 px-2 text-center">{item.online_opens}</td>
-                        <td className="py-3 px-2 text-center">{item.downloads}</td>
-                        <td className="py-3 px-2 text-center font-semibold">
-                          {item.total_interactions}
-                        </td>
-                      </tr>
-                    ))}
+                    {/* Model Pages */}
+                    {(pageType === 'all' || pageType === 'models') && 
+                      analytics.map((item) => (
+                        <tr key={`model-${item.model_name}`} className="border-b hover:bg-muted/50">
+                          <td className="py-3 px-2 font-medium">
+                            <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mr-2">
+                              MODEL
+                            </span>
+                            {item.model_name}
+                          </td>
+                          <td className="py-3 px-2 text-center">
+                            {visitorType === 'unique' ? item.unique_visitors : item.page_visits}
+                          </td>
+                          <td className="py-3 px-2 text-center">{item.online_opens}</td>
+                          <td className="py-3 px-2 text-center">{item.downloads}</td>
+                          <td className="py-3 px-2 text-center font-semibold">
+                            {item.total_interactions}
+                          </td>
+                        </tr>
+                      ))
+                    }
+                    
+                    {/* General Pages */}
+                    {pageType === 'all' && 
+                      generalPages.map((item) => (
+                        <tr key={`page-${item.page_path}`} className="border-b hover:bg-muted/50">
+                          <td className="py-3 px-2 font-medium">
+                            <span className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded mr-2">
+                              PAGE
+                            </span>
+                            {item.page_path}
+                          </td>
+                          <td className="py-3 px-2 text-center">
+                            {visitorType === 'unique' ? item.unique_visitors : item.page_visits}
+                          </td>
+                          <td className="py-3 px-2 text-center text-muted-foreground">-</td>
+                          <td className="py-3 px-2 text-center text-muted-foreground">-</td>
+                          <td className="py-3 px-2 text-center font-semibold">
+                            {item.total_interactions}
+                          </td>
+                        </tr>
+                      ))
+                    }
                   </tbody>
                 </table>
               </div>
