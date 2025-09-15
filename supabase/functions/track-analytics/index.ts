@@ -28,7 +28,15 @@ Deno.serve(async (req) => {
       Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? ''
     );
 
-    const { modelName, actionType, userId } = await req.json();
+    const { 
+      modelName, 
+      actionType, 
+      eventSubtype, 
+      durationSeconds, 
+      sessionId, 
+      pageUrl, 
+      userId 
+    } = await req.json();
 
     // Validate required fields
     if (!modelName || !actionType) {
@@ -62,7 +70,7 @@ Deno.serve(async (req) => {
     // Get user agent
     const userAgent = req.headers.get('user-agent')?.substring(0, 200) || 'unknown';
 
-    console.log(`Tracking analytics: ${actionType} for ${modelName} by user ${userId || 'anonymous'}`);
+    console.log(`Tracking analytics: ${actionType} for ${modelName} by user ${userId || 'anonymous'} - ${eventSubtype || 'basic'} ${durationSeconds ? `(${durationSeconds}s)` : ''}`);
 
     // Insert analytics record using service role privileges
     const { error } = await supabaseAdmin
@@ -70,6 +78,10 @@ Deno.serve(async (req) => {
       .insert({
         model_name: modelName,
         action_type: actionType,
+        event_subtype: eventSubtype || null,
+        duration_seconds: durationSeconds || null,
+        session_id: sessionId || null,
+        page_url: pageUrl || null,
         user_id: userId || null,
         ip_hash: ipHash,
         user_agent: userAgent,

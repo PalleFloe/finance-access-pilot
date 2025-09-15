@@ -15,12 +15,15 @@ interface AnalyticsData {
   downloads: number;
   unique_visitors: number;
   total_interactions: number;
+  average_time_seconds: number;
+  total_time_seconds: number;
   page_type?: 'model' | 'general';
 }
 
 interface DailyStats {
   date: string;
   total_events: number;
+  total_time_seconds: number;
 }
 
 interface GeneralPageData {
@@ -28,6 +31,8 @@ interface GeneralPageData {
   page_visits: number;
   unique_visitors: number;
   total_interactions: number;
+  average_time_seconds: number;
+  total_time_seconds: number;
 }
 
 const Analytics = () => {
@@ -82,7 +87,7 @@ const Analytics = () => {
       // Fetch all analytics data
       const { data: allData } = await supabase
         .from('model_analytics')
-        .select('model_name, action_type, user_id, ip_hash')
+        .select('model_name, action_type, user_id, ip_hash, event_subtype, duration_seconds')
         .gte('created_at', timeAgo.toISOString());
 
       if (allData) {
@@ -98,7 +103,12 @@ const Analytics = () => {
         );
 
         // Process model analytics
-        const modelAggregated: { [key: string]: AnalyticsData & { visitors: Set<string> } } = {};
+        const modelAggregated: { 
+          [key: string]: AnalyticsData & { 
+            visitors: Set<string>, 
+            durations: number[] 
+          } 
+        } = {};
         
         modelData.forEach((item) => {
           if (!modelAggregated[item.model_name]) {
@@ -109,8 +119,11 @@ const Analytics = () => {
               downloads: 0,
               unique_visitors: 0,
               total_interactions: 0,
+              average_time_seconds: 0,
+              total_time_seconds: 0,
               page_type: 'model',
               visitors: new Set<string>(),
+              durations: [],
             };
           }
           
@@ -119,7 +132,12 @@ const Analytics = () => {
             modelAggregated[item.model_name].visitors.add(visitorId);
           }
           
-          if (item.action_type === 'page_visit') {
+          // Track time spent from exit events
+          if (item.event_subtype === 'exit' && item.duration_seconds) {
+            modelAggregated[item.model_name].durations.push(item.duration_seconds);
+          }
+          
+          if (item.action_type === 'page_visit' && (item.event_subtype === 'visit' || item.event_subtype === 'enter')) {
             modelAggregated[item.model_name].page_visits += 1;
           } else if (item.action_type === 'online_open') {
             modelAggregated[item.model_name].online_opens += 1;
@@ -130,7 +148,12 @@ const Analytics = () => {
         });
 
         // Process general page analytics
-        const generalAggregated: { [key: string]: GeneralPageData & { visitors: Set<string> } } = {};
+        const generalAggregated: { 
+          [key: string]: GeneralPageData & { 
+            visitors: Set<string>, 
+            durations: number[] 
+          } 
+        } = {};
         
         generalData.forEach((item) => {
           const pagePath = item.model_name.replace('page:', '');
@@ -140,7 +163,10 @@ const Analytics = () => {
               page_visits: 0,
               unique_visitors: 0,
               total_interactions: 0,
+              average_time_seconds: 0,
+              total_time_seconds: 0,
               visitors: new Set<string>(),
+              durations: [],
             };
           }
           
@@ -149,28 +175,47 @@ const Analytics = () => {
             generalAggregated[pagePath].visitors.add(visitorId);
           }
           
-          if (item.action_type === 'page_visit') {
+          // Track time spent from exit events
+          if (item.event_subtype === 'exit' && item.duration_seconds) {
+            generalAggregated[pagePath].durations.push(item.duration_seconds);
+          }
+          
+          if (item.action_type === 'page_visit' && (item.event_subtype === 'visit' || item.event_subtype === 'enter')) {
             generalAggregated[pagePath].page_visits += 1;
           }
           generalAggregated[pagePath].total_interactions += 1;
         });
 
-        const processedModelData = Object.values(modelAggregated).map(item => ({
-          model_name: item.model_name,
-          page_visits: item.page_visits,
-          online_opens: item.online_opens,
-          downloads: item.downloads,
-          unique_visitors: item.visitors.size,
-          total_interactions: item.total_interactions,
-          page_type: 'model' as const,
-        }));
+        const processedModelData = Object.values(modelAggregated).map(item => {
+          const totalTime = item.durations.reduce((sum, duration) => sum + duration, 0);
+          const avgTime = item.durations.length > 0 ? totalTime / item.durations.length : 0;
+          
+          return {
+            model_name: item.model_name,
+            page_visits: item.page_visits,
+            online_opens: item.online_opens,
+            downloads: item.downloads,
+            unique_visitors: item.visitors.size,
+            total_interactions: item.total_interactions,
+            average_time_seconds: Math.round(avgTime),
+            total_time_seconds: totalTime,
+            page_type: 'model' as const,
+          };
+        });
 
-        const processedGeneralData = Object.values(generalAggregated).map(item => ({
-          page_path: item.page_path,
-          page_visits: item.page_visits,
-          unique_visitors: item.visitors.size,
-          total_interactions: item.total_interactions,
-        }));
+        const processedGeneralData = Object.values(generalAggregated).map(item => {
+          const totalTime = item.durations.reduce((sum, duration) => sum + duration, 0);
+          const avgTime = item.durations.length > 0 ? totalTime / item.durations.length : 0;
+          
+          return {
+            page_path: item.page_path,
+            page_visits: item.page_visits,
+            unique_visitors: item.visitors.size,
+            total_interactions: item.total_interactions,
+            average_time_seconds: Math.round(avgTime),
+            total_time_seconds: totalTime,
+          };
+        });
 
         const sortedModelData = processedModelData.sort((a, b) => 
           b.total_interactions - a.total_interactions
@@ -186,20 +231,27 @@ const Analytics = () => {
       // Fetch daily stats
       const { data: dailyData } = await supabase
         .from('model_analytics')
-        .select('created_at')
+        .select('created_at, duration_seconds')
         .gte('created_at', timeAgo.toISOString())
         .order('created_at', { ascending: true });
 
       if (dailyData) {
-        const dailyGroups: { [key: string]: number } = {};
+        const dailyGroups: { [key: string]: { count: number, totalTime: number } } = {};
         dailyData.forEach((item) => {
           const date = new Date(item.created_at).toISOString().split('T')[0];
-          dailyGroups[date] = (dailyGroups[date] || 0) + 1;
+          if (!dailyGroups[date]) {
+            dailyGroups[date] = { count: 0, totalTime: 0 };
+          }
+          dailyGroups[date].count += 1;
+          if (item.duration_seconds) {
+            dailyGroups[date].totalTime += item.duration_seconds;
+          }
         });
 
-        const dailyStatsArray = Object.entries(dailyGroups).map(([date, count]) => ({
+        const dailyStatsArray = Object.entries(dailyGroups).map(([date, stats]) => ({
           date,
-          total_events: count,
+          total_events: stats.count,
+          total_time_seconds: stats.totalTime,
         }));
         setDailyStats(dailyStatsArray);
       }
@@ -325,7 +377,7 @@ const Analytics = () => {
         ) : (
           <>
             {/* Summary Stats */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8">
               <Card className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
@@ -383,6 +435,23 @@ const Analytics = () => {
                   <Download className="w-8 h-8 text-purple-600" />
                 </div>
               </Card>
+              <Card className="p-6">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-sm text-muted-foreground">Avg Time (mins)</p>
+                    <p className="text-2xl font-bold">
+                      {(() => {
+                        const allPages = pageType === 'all' ? [...analytics, ...generalPages] : analytics;
+                        const totalTime = allPages.reduce((sum, item) => sum + item.total_time_seconds, 0);
+                        const totalVisits = allPages.reduce((sum, item) => sum + item.page_visits, 0);
+                        const avgSeconds = totalVisits > 0 ? totalTime / totalVisits : 0;
+                        return Math.round(avgSeconds / 60 * 10) / 10;
+                      })()}
+                    </p>
+                  </div>
+                  <TrendingUp className="w-8 h-8 text-orange-600" />
+                </div>
+              </Card>
             </div>
 
             {/* Analytics Table */}
@@ -400,11 +469,15 @@ const Analytics = () => {
                       <th className="text-center py-3 px-2">
                         {visitorType === 'unique' ? 'Unique Visitors' : 'Page Visits'}
                       </th>
-                      {(pageType === 'models' || pageType === 'all') && (
+                      {(pageType === 'all' || pageType === 'models') && 
                         <>
                           <th className="text-center py-3 px-2">Online Opens</th>
                           <th className="text-center py-3 px-2">Downloads</th>
+                          <th className="text-center py-3 px-2">Avg Time</th>
                         </>
+                      }
+                      {pageType === 'all' && (
+                        <th className="text-center py-3 px-2">Avg Time</th>
                       )}
                       <th className="text-center py-3 px-2">Total</th>
                     </tr>
@@ -425,6 +498,9 @@ const Analytics = () => {
                           </td>
                           <td className="py-3 px-2 text-center">{item.online_opens}</td>
                           <td className="py-3 px-2 text-center">{item.downloads}</td>
+                          <td className="py-3 px-2 text-center">
+                            {item.average_time_seconds > 0 ? `${Math.round(item.average_time_seconds / 60 * 10) / 10}m` : '-'}
+                          </td>
                           <td className="py-3 px-2 text-center font-semibold">
                             {item.total_interactions}
                           </td>
@@ -447,6 +523,9 @@ const Analytics = () => {
                           </td>
                           <td className="py-3 px-2 text-center text-muted-foreground">-</td>
                           <td className="py-3 px-2 text-center text-muted-foreground">-</td>
+                          <td className="py-3 px-2 text-center">
+                            {item.average_time_seconds > 0 ? `${Math.round(item.average_time_seconds / 60 * 10) / 10}m` : '-'}
+                          </td>
                           <td className="py-3 px-2 text-center font-semibold">
                             {item.total_interactions}
                           </td>

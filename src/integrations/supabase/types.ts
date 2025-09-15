@@ -48,27 +48,39 @@ export type Database = {
         Row: {
           action_type: string
           created_at: string
+          duration_seconds: number | null
+          event_subtype: string | null
           id: string
           ip_hash: string | null
           model_name: string
+          page_url: string | null
+          session_id: string | null
           user_agent: string | null
           user_id: string | null
         }
         Insert: {
           action_type: string
           created_at?: string
+          duration_seconds?: number | null
+          event_subtype?: string | null
           id?: string
           ip_hash?: string | null
           model_name: string
+          page_url?: string | null
+          session_id?: string | null
           user_agent?: string | null
           user_id?: string | null
         }
         Update: {
           action_type?: string
           created_at?: string
+          duration_seconds?: number | null
+          event_subtype?: string | null
           id?: string
           ip_hash?: string | null
           model_name?: string
+          page_url?: string | null
+          session_id?: string | null
           user_agent?: string | null
           user_id?: string | null
         }
