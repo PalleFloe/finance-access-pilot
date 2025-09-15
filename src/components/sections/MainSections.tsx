@@ -44,7 +44,7 @@ const MainSections = () => {
                       key={index}
                       className="border border-slate-300 rounded-md py-5 px-4 text-center bg-slate-50 hover:border-brand-blue hover:shadow-md hover:bg-blue-50 transition-all duration-200 cursor-pointer"
                     >
-                      <span className="font-garamond text-[28px] font-semibold text-slate-700">
+                      <span className="font-garamond text-[28px] font-semibold">
                         {category}
                       </span>
                     </div>

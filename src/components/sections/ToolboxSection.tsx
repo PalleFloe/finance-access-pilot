@@ -25,7 +25,7 @@ const ToolboxSection = () => {
           {/* Business Type Categories */}
           <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full">
             <CardHeader className="flex-grow">
-              <CardTitle className="text-2xl font-semibold">
+              <CardTitle className="text-[28px] font-semibold">
                 <span>Startup Valuations</span>
               </CardTitle>
               <CardDescription className="text-lg">
@@ -50,7 +50,7 @@ const ToolboxSection = () => {
               </Badge>
             </div>
             <CardHeader className="flex-grow">
-              <CardTitle className="text-2xl font-semibold">
+              <CardTitle className="text-[28px] font-semibold">
                 <span>Business Strategy</span>
               </CardTitle>
               <CardDescription className="text-lg">
@@ -69,7 +69,7 @@ const ToolboxSection = () => {
 
           <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full">
             <CardHeader className="flex-grow">
-              <CardTitle className="text-2xl font-semibold">
+              <CardTitle className="text-[28px] font-semibold">
                 <span>Investment Analysis</span>
               </CardTitle>
               <CardDescription className="text-lg">
@@ -88,7 +88,7 @@ const ToolboxSection = () => {
 
           <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full">
             <CardHeader className="flex-grow">
-              <CardTitle className="text-2xl font-semibold">
+              <CardTitle className="text-[28px] font-semibold">
                 <span>Fundamentals</span>
               </CardTitle>
               <CardDescription className="text-lg">
