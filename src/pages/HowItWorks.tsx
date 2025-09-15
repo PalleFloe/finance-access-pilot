@@ -8,9 +8,11 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Clock, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
+import { usePageVisitTracking } from '@/hooks/useAnalytics';
 
 const HowItWorks = () => {
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
+  usePageVisitTracking('page:/how-it-works');
 
   const tiers = {
     row1: [

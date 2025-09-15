@@ -2,8 +2,11 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import ToolboxSection from "@/components/sections/ToolboxSection";
 import Footer from "@/components/sections/Footer";
+import { usePageVisitTracking } from '@/hooks/useAnalytics';
 
 const Toolbox = () => {
+  usePageVisitTracking('page:/toolbox');
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <Helmet>

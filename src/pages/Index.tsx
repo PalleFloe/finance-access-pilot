@@ -3,8 +3,11 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/sections/HeroSection";
 import MainSections from "@/components/sections/MainSections";
 import Footer from "@/components/sections/Footer";
+import { usePageVisitTracking } from '@/hooks/useAnalytics';
 
 const Index = () => {
+  usePageVisitTracking('page:Homepage');
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <Helmet>

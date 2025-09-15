@@ -4,8 +4,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, BarChart3, Clock } from "lucide-react";
 import Header from "@/components/Header";
+import { usePageVisitTracking } from '@/hooks/useAnalytics';
 
 const MatureBusiness = () => {
+  usePageVisitTracking('page:/toolbox/mature-business');
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <Header />
