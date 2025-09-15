@@ -32,9 +32,11 @@ const MainSections = () => {
                   </h2>
                 </div>
                 
-                <p className="font-garamond text-[20px] text-slate-600 mb-8 max-w-4xl">
-                  Professional Excel models with intuitive and structured design, and with clear guidance on What, Why, Who and How to use
-                </p>
+                <div className="ml-16">
+                  <p className="font-garamond text-[32px] text-slate-600 mb-8">
+                    Professional Excel models with intuitive and structured design, and with clear guidance on What, Why, Who and How to use
+                  </p>
+                </div>
                 
                 <div className="grid grid-cols-2 gap-4 mb-8 max-w-2xl mx-auto">
                   {categoryBoxes.map((category, index) => (
@@ -61,11 +63,11 @@ const MainSections = () => {
                     </Link>
                   </Button>
                 </div>
-               </CardContent>
-             </Card>
-           </div>
-         </div>
-       </section>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
 
       {/* Section 2: Consulting Services */}
       <section className="py-12 bg-slate-50">
@@ -82,9 +84,11 @@ const MainSections = () => {
                   </h2>
                 </div>
                 
-                <p className="font-garamond text-[20px] text-slate-600 mb-8">
-                  From model customization to consulting services
-                </p>
+                <div className="ml-16">
+                  <p className="font-garamond text-[32px] text-slate-600 mb-8">
+                    From model customization to consulting services
+                  </p>
+                </div>
                 
                 <div className="flex items-center justify-center gap-4">
                   <span className="font-garamond text-[28px] text-slate-700">Reach out to me:</span>
@@ -119,9 +123,11 @@ const MainSections = () => {
                   </h2>
                 </div>
                 
-                <p className="font-garamond text-[20px] text-slate-600 mb-8">
-                  Choose your path to better financial decisions
-                </p>
+                <div className="ml-16">
+                  <p className="font-garamond text-[32px] text-slate-600 mb-8">
+                    Choose your path to better financial decisions
+                  </p>
+                </div>
                 
                 <div className="flex items-center justify-center gap-4">
                   <span className="font-garamond text-[28px] text-slate-700">Check out the paths:</span>
