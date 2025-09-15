@@ -24,9 +24,49 @@ const MainSections = () => {
           <div className="max-w-5xl mx-auto">
             <Card className="shadow-lg border border-slate-200 bg-white relative" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
               <div className="absolute top-0 right-0 transform -translate-y-1/2 translate-x-1/2 z-10">
-                <Badge className="bg-rich-emerald text-white border-rich-emerald shadow-lg text-lg font-medium px-4 py-2">
-                  100% Free to View & Use all Models!
-                </Badge>
+                {/* Wild Badge Design Options - Choose your favorite! */}
+                
+                {/* Option 1: Electric Gradient with Pulse Animation */}
+                <div className="bg-gradient-to-r from-rich-emerald via-deep-blue to-rich-emerald text-white shadow-2xl text-lg font-black px-6 py-3 rounded-2xl border-2 border-white animate-pulse transform rotate-2">
+                  <div className="text-center">
+                    <div className="text-sm font-bold">100% Free to View & Use</div>
+                    <div className="text-xl font-black tracking-wide">Explore the Models!</div>
+                  </div>
+                </div>
+
+                {/* Option 2: Neon Glow Effect */}
+                {/* <div className="bg-black text-rich-emerald shadow-2xl text-lg font-black px-6 py-4 rounded-full border-2 border-rich-emerald" style={{ boxShadow: '0 0 20px hsl(var(--rich-emerald)), inset 0 0 20px rgba(0,255,100,0.1)' }}>
+                  <div className="text-center font-mono">
+                    <div className="text-sm">100% FREE TO VIEW & USE</div>
+                    <div className="text-xl font-black">EXPLORE THE MODELS!</div>
+                  </div>
+                </div> */}
+
+                {/* Option 3: Bold Geometric with Sharp Angles */}
+                {/* <div className="bg-deep-blue text-white shadow-xl text-lg font-black px-8 py-4 transform -skew-x-12 border-l-4 border-rich-emerald">
+                  <div className="transform skew-x-12 text-center">
+                    <div className="text-sm font-semibold uppercase tracking-widest">100% Free Access</div>
+                    <div className="text-xl font-black">EXPLORE THE MODELS!</div>
+                  </div>
+                </div> */}
+
+                {/* Option 4: Vintage Stamp Style */}
+                {/* <div className="bg-white text-deep-blue shadow-lg text-lg font-black px-6 py-3 rounded-lg border-4 border-dashed border-deep-blue transform rotate-3">
+                  <div className="text-center font-garamond">
+                    <div className="text-xs uppercase tracking-wider font-bold">✦ COMPLETELY FREE ✦</div>
+                    <div className="text-lg font-black">VIEW & EXPLORE</div>
+                    <div className="text-lg font-black">THE MODELS!</div>
+                  </div>
+                </div> */}
+
+                {/* Option 5: Modern Minimalist with Hover Effect */}
+                {/* <div className="bg-rich-emerald/90 backdrop-blur-sm text-white shadow-lg text-lg font-bold px-6 py-3 rounded-xl border border-white/20 hover:scale-105 transition-transform duration-300">
+                  <div className="text-center">
+                    <div className="text-sm opacity-90">100% Free to View & Use</div>
+                    <div className="text-xl font-black">Explore the Models!</div>
+                  </div>
+                </div> */}
+
               </div>
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
