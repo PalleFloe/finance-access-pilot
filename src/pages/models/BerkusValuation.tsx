@@ -43,7 +43,7 @@ const BerkusValuation = () => {
             Back to Startup Valuations
           </Link>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Berkus Valuation Model
           </h1>
 

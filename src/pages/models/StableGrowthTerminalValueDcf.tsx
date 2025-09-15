@@ -43,7 +43,7 @@ const StableGrowthTerminalValueDcf = () => {
             Back to Investment Analysis
           </Link>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Stable Growth - Terminal Value DCF Model
           </h1>
 

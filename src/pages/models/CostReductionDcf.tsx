@@ -33,7 +33,7 @@ const CostReductionDcf = () => {
             Back to Investment Analysis
           </Link>
 
-          <h1 className="text-[20px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Cost Reduction DCF Model
           </h1>
           

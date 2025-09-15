@@ -43,7 +43,7 @@ const PerpetuityExitValuation = () => {
             Back to Startup Valuations
           </Link>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Perpetuity & Exit Valuation Models
           </h1>
 

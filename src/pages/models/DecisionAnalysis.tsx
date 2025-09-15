@@ -43,7 +43,7 @@ const DecisionAnalysis = () => {
           </Link>
         </div>
 
-        <h1 className="text-[20px] font-bold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
+        <h1 className="text-4xl md:text-5xl font-bold mb-6">
           Decision Analysis Model for Venture Capital Investments
         </h1>
 
