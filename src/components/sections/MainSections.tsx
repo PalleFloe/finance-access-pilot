@@ -55,7 +55,7 @@ const MainSections = () => {
                   <span className="font-garamond text-[28px] text-slate-700">Check them out:</span>
                   <Button
                     asChild
-                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] min-w-[280px]"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] min-w-[320px]"
                   >
                     <Link to="/toolbox" className="flex items-center gap-2">
                       Go to Toolbox
@@ -94,7 +94,7 @@ const MainSections = () => {
                   <span className="font-garamond text-[28px] text-slate-700">Reach out to me:</span>
                   <Button
                     onClick={() => setIsConsultationFormOpen(true)}
-                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] min-w-[280px]"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] min-w-[320px]"
                   >
                     <span className="flex items-center gap-2">
                       Schedule Consultation
@@ -133,7 +133,7 @@ const MainSections = () => {
                   <span className="font-garamond text-[28px] text-slate-700">Check out the paths:</span>
                   <Button
                     asChild
-                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] min-w-[280px]"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] min-w-[320px]"
                   >
                     <Link to="/how-it-works" className="flex items-center gap-2">
                       Offerings – How It Works
