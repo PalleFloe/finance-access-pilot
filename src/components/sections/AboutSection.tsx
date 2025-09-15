@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-16">
+    <section id="about" className="py-12">
       <div className="container mx-auto">
         <div>
           <div className="bg-white p-6 rounded-lg border border-slate-100 shadow-sm">
