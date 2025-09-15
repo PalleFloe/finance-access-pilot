@@ -89,13 +89,13 @@ const MainSections = () => {
                   </p>
                 </div>
                 
-                <div className="grid grid-cols-2 gap-4 mb-8 max-w-2xl mx-auto">
+                <div className="grid grid-cols-4 gap-3 mb-8 max-w-4xl mx-auto">
                   {categoryBoxes.map((category, index) => (
                     <div 
                       key={index}
-                      className="border border-slate-300 rounded-md py-5 px-4 text-center bg-slate-50 hover:border-brand-blue hover:shadow-md hover:bg-blue-50 transition-all duration-200 cursor-pointer"
+                      className="border border-slate-300 rounded-md py-4 px-3 text-center bg-slate-50 hover:border-brand-blue hover:shadow-md hover:bg-blue-50 transition-all duration-200 cursor-pointer"
                     >
-                      <span className="font-garamond text-[28px] font-semibold text-brand-blue">
+                      <span className="font-garamond text-[22px] font-semibold text-brand-blue">
                         {category}
                       </span>
                     </div>
