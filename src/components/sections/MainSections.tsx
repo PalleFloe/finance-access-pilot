@@ -93,9 +93,9 @@ const MainSections = () => {
                   {categoryBoxes.map((category, index) => (
                     <div 
                       key={index}
-                      className="border border-slate-300 rounded-md py-4 px-3 text-center bg-slate-50 hover:border-brand-blue hover:shadow-md hover:bg-blue-50 transition-all duration-200 cursor-pointer"
+                      className="border border-slate-300 rounded-md py-4 px-3 bg-slate-50 hover:border-brand-blue hover:shadow-md hover:bg-blue-50 transition-all duration-200 cursor-pointer flex items-center justify-center"
                     >
-                      <span className="font-garamond text-[22px] font-semibold text-brand-blue">
+                      <span className="font-garamond text-[22px] font-semibold text-brand-blue text-center">
                         {category}
                       </span>
                     </div>
