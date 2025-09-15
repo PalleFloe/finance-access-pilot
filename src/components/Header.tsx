@@ -31,7 +31,7 @@ const Header = () => {
               />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-slate-900">Financial Decision Models</h1>
+              <h1 className="text-2xl font-bold text-brand-blue">Financial Decision Models</h1>
             </div>
           </Link>
           
