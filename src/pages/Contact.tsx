@@ -17,7 +17,7 @@ const Contact = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-6">
               Contact
             </h1>
-            <p className="text-lg text-slate-600 leading-relaxed">
+            <p className="text-[32px] text-slate-600 leading-relaxed">
               Get in touch to discuss your financial decision modeling needs and how we can help your business make better decisions.
             </p>
           </div>

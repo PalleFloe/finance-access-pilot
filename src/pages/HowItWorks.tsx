@@ -177,11 +177,11 @@ const HowItWorks = () => {
             Financial Decision Models offerings
           </h1>
           
-          <p className="text-lg text-slate-600 mb-8">
+          <p className="text-[32px] text-slate-600 mb-8">
             Choose your path to better financial decisions
           </p>
           
-          <p className="text-[18pt] text-slate-600 max-w-4xl mx-auto leading-relaxed mb-10">
+          <p className="text-[32px] text-slate-600 max-w-4xl mx-auto leading-relaxed mb-10">
             We offer multiple ways to access and use our financial models, from free online viewing to full ownership. 
             Start with our free tiers to explore, learn and get inspired. If that is not enough for you, then you can always upgrade.
           </p>
