@@ -60,7 +60,7 @@ const DecisionAnalysis = () => {
           
           <div className="space-y-3">
             <Button 
-              onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETKCTHtbjLJPkQx0LGrLFmcBKO07Nw78MrXhcRcco2z0yg?e=1QCQiS&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+              onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ec0xs4OOqUxMg0hLspLD-2IBuoWf79XYTff0ensV5KfEpA?e=WCqUCw&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
               className="w-full text-lg"
               variant="brand-green"
               size="lg"
@@ -70,7 +70,7 @@ const DecisionAnalysis = () => {
             </Button>
             
               <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaNfhyv_u11Ai_MHOUOklzIBGD-AkeKDPHhP-qqltbyH6Q?e=M0aDnE"
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EXocIkZrChpKrbEuRIRzN4ABBy9eqNxPQYdvl4f7yuiHDA?e=3ZGPZm"
                 modelName="Decision Analysis for Venture Capital Investments"
               className="w-full text-lg"
             />
