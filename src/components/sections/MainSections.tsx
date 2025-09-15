@@ -44,9 +44,9 @@ const MainSections = () => {
 
                 {/* Option 3: Bold Geometric with Sharp Angles */}
                 <div className="bg-deep-blue text-white shadow-xl text-lg font-black px-8 py-4 transform -skew-x-12 border-l-4 border-rich-emerald">
-                  <div className="transform skew-x-12 text-center">
-                    <div className="text-sm font-semibold uppercase tracking-widest">100% Free Access</div>
-                    <div className="text-xl font-black">EXPLORE THE MODELS!</div>
+                  <div className="transform skew-x-12 text-center font-garamond">
+                    <div className="text-sm font-semibold">100% Free to View & Use,</div>
+                    <div className="text-xl font-black">Explore the Models!</div>
                   </div>
                 </div>
 
