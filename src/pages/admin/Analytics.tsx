@@ -473,13 +473,10 @@ const Analytics = () => {
                         <>
                           <th className="text-center py-3 px-2">Online Opens</th>
                           <th className="text-center py-3 px-2">Downloads</th>
-                          <th className="text-center py-3 px-2">Avg Time</th>
                         </>
                       }
-                      {pageType === 'all' && (
-                        <th className="text-center py-3 px-2">Avg Time</th>
-                      )}
                       <th className="text-center py-3 px-2">Total</th>
+                      <th className="text-center py-3 px-2">Avg Time</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -498,11 +495,11 @@ const Analytics = () => {
                           </td>
                           <td className="py-3 px-2 text-center">{item.online_opens}</td>
                           <td className="py-3 px-2 text-center">{item.downloads}</td>
-                          <td className="py-3 px-2 text-center">
-                            {item.average_time_seconds > 0 ? `${Math.round(item.average_time_seconds / 60 * 10) / 10}m` : '-'}
-                          </td>
                           <td className="py-3 px-2 text-center font-semibold">
                             {item.total_interactions}
+                          </td>
+                          <td className="py-3 px-2 text-center">
+                            {item.average_time_seconds > 0 ? `${Math.round(item.average_time_seconds / 60 * 10) / 10}m` : '-'}
                           </td>
                         </tr>
                       ))
@@ -523,11 +520,11 @@ const Analytics = () => {
                           </td>
                           <td className="py-3 px-2 text-center text-muted-foreground">-</td>
                           <td className="py-3 px-2 text-center text-muted-foreground">-</td>
-                          <td className="py-3 px-2 text-center">
-                            {item.average_time_seconds > 0 ? `${Math.round(item.average_time_seconds / 60 * 10) / 10}m` : '-'}
-                          </td>
                           <td className="py-3 px-2 text-center font-semibold">
                             {item.total_interactions}
+                          </td>
+                          <td className="py-3 px-2 text-center">
+                            {item.average_time_seconds > 0 ? `${Math.round(item.average_time_seconds / 60 * 10) / 10}m` : '-'}
                           </td>
                         </tr>
                       ))
