@@ -27,20 +27,20 @@ const MainSections = () => {
                 {/* Wild Badge Design Options - Choose your favorite! */}
                 
                 {/* Option 1: Electric Gradient with Pulse Animation */}
-                <div className="bg-gradient-to-r from-rich-emerald via-deep-blue to-rich-emerald text-white shadow-2xl text-lg font-black px-6 py-3 rounded-2xl border-2 border-white animate-pulse transform rotate-2">
+                {/* <div className="bg-gradient-to-r from-rich-emerald via-deep-blue to-rich-emerald text-white shadow-2xl text-lg font-black px-6 py-3 rounded-2xl border-2 border-white animate-pulse transform rotate-2">
                   <div className="text-center">
                     <div className="text-sm font-bold">100% Free to View & Use</div>
                     <div className="text-xl font-black tracking-wide">Explore the Models!</div>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Option 2: Neon Glow Effect */}
-                {/* <div className="bg-black text-rich-emerald shadow-2xl text-lg font-black px-6 py-4 rounded-full border-2 border-rich-emerald" style={{ boxShadow: '0 0 20px hsl(var(--rich-emerald)), inset 0 0 20px rgba(0,255,100,0.1)' }}>
+                <div className="bg-black text-rich-emerald shadow-2xl text-lg font-black px-6 py-4 rounded-full border-2 border-rich-emerald" style={{ boxShadow: '0 0 20px hsl(var(--rich-emerald)), inset 0 0 20px rgba(0,255,100,0.1)' }}>
                   <div className="text-center font-mono">
                     <div className="text-sm">100% FREE TO VIEW & USE</div>
                     <div className="text-xl font-black">EXPLORE THE MODELS!</div>
                   </div>
-                </div> */}
+                </div>
 
                 {/* Option 3: Bold Geometric with Sharp Angles */}
                 {/* <div className="bg-deep-blue text-white shadow-xl text-lg font-black px-8 py-4 transform -skew-x-12 border-l-4 border-rich-emerald">
