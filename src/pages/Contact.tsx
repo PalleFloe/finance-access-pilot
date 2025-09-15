@@ -11,7 +11,7 @@ const Contact = () => {
       </Helmet>
       <Header />
       
-      <main className="pt-20 pb-16">
+      <main className="py-16">
         <div className="container mx-auto">
           <div className="mb-12 max-w-2xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-6">
