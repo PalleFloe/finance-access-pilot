@@ -19,7 +19,7 @@ const AboutSection = () => {
                 <h4 className="text-2xl md:text-3xl font-semibold mb-6 text-brand-blue">
                   About Profile
                 </h4>
-                <div className="space-y-4 text-lg text-slate-700 leading-relaxed text-left">
+                <div className="space-y-4 text-xl text-slate-700 leading-relaxed text-left">
                   <p>
                     My name is <strong>Palle Fløe Nielsen</strong> and I'm based in Copenhagen, Denmark.
                   </p>
@@ -76,7 +76,7 @@ const AboutSection = () => {
                   <h4 className="text-2xl md:text-3xl font-semibold mb-6 text-brand-blue">
                     The Inspiration behind the Logo
                   </h4>
-                  <div className="text-lg text-slate-700 leading-relaxed text-left">
+                  <div className="text-xl text-slate-700 leading-relaxed text-left">
                     <p>
                       The logo is inspired by the Knud Rasmussen statue north of Copenhagen, where the explorer stands tall, gazing toward distant horizons. Knud Rasmussen was a Greenlandic-Danish anthropologist who famously explored the Arctic and studied Inuit cultures. The statue is a monument to exploration, understanding, and bridge-building to unknown geographical and cultural territories.
                     </p>
