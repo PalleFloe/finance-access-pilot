@@ -116,7 +116,7 @@ const MainSections = () => {
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                    <HelpCircle className="h-6 w-6 text-brand-blue" />
+                    <HelpCircle className="h-8 w-8 text-brand-blue" />
                   </div>
                   <h2 className="font-garamond text-[36px] font-bold text-brand-blue">
                     Financial Decision Models Offerings
