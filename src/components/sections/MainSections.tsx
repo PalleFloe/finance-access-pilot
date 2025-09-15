@@ -13,7 +13,7 @@ const MainSections = () => {
     "Startup Valuations",
     "Business Strategy", 
     "Investment Analysis",
-    "Finance Fundamentals"
+    "Fundamentals"
   ];
 
   return (
