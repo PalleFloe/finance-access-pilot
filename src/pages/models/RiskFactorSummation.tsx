@@ -126,7 +126,7 @@ const RiskFactorSummation = () => {
                 </p>
                 <div className="mt-1 pt-1 text-xs text-muted-foreground">
                   <strong className="text-primary">Quick Access Guide:</strong><br />
-                  <span>Click "Online & Free" for instant online preview (no registration)</span>
+                  <span>Online & View - Instant online preview (without registration)</span>
                 </div>
               </div>
             </CardContent>

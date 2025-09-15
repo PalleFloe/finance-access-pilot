@@ -39,7 +39,7 @@ const DownloadButton = ({ sharePointUrl, modelName, className }: DownloadButtonP
       {user ? (
         <>
           <Download className="w-4 h-4 mr-2" />
-          Download & Free
+          Download & Use
         </>
       ) : (
         <>

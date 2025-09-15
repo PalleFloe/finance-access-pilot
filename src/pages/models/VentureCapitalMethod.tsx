@@ -66,7 +66,7 @@ const VentureCapitalMethod = () => {
               size="lg"
             >
               <ExternalLink className="mr-2 h-4 w-4" />
-              Online & Free
+              Online & View
             </Button>
             
               <DownloadButton 
@@ -79,7 +79,7 @@ const VentureCapitalMethod = () => {
           <div className="mt-6 text-sm text-gray-600">
             <h4 className="font-semibold mb-2">Quick Access Guide</h4>
             <ul className="space-y-1 text-xs">
-              <li><strong>Online & Free:</strong> Click to preview this model instantly in your browser</li>
+              <li><strong>Online & View:</strong> Instant online preview (without registration)</li>
               <li><strong>Register to Download:</strong> Free registration gives you download access to all models</li>
             </ul>
           </div>

@@ -66,7 +66,7 @@ const FlexibleYearByYearDcf = () => {
                 className="w-full text-lg"
               >
                 <ExternalLink className="w-4 h-4 mr-2" />
-                Online & Free
+                Online & View
               </Button>
               <DownloadButton 
                 sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EQW5tk8sVvhIlgRdtWwa_m0BhQeUapJlUol4dyoG9N5WkA?e=2YBW1H"
@@ -75,8 +75,8 @@ const FlexibleYearByYearDcf = () => {
               />
               <div className="mt-1 pt-1 text-xs text-muted-foreground">
                 <strong className="text-primary">Quick Access Guide:</strong><br />
-                <span>Click "Online & Free" for instant online preview (no registration)</span>
-                <br /><span>Click "Download & Free" for browser embedded Excel with download capability (registration required)</span>
+                <span>Online & View - Instant online preview (without registration)</span>
+                <br /><span>Download & Use - Browser embedded Excel with download capability (required registration)</span>
               </div>
             </CardContent>
           </Card>
