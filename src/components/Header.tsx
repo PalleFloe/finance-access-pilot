@@ -55,7 +55,7 @@ const Header = () => {
             {user ? (
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" size="sm" className="flex items-center gap-2 font-garamond">
+                  <Button variant="ghost" className="flex items-center gap-2 font-garamond text-xl font-normal hover:font-medium">
                     <User className="w-4 h-4" />
                     Account
                   </Button>
@@ -69,7 +69,7 @@ const Header = () => {
               </DropdownMenu>
             ) : (
               <Link to="/auth">
-                <Button variant="outline" size="sm" className="font-garamond">
+                <Button variant="outline" className="font-garamond text-xl font-normal hover:font-medium">
                   Sign In
                 </Button>
               </Link>
