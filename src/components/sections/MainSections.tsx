@@ -21,28 +21,28 @@ const MainSections = () => {
       <section className="py-12 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <Card className="shadow-lg border border-slate-200 bg-white">
+            <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
               <CardContent className="p-8">
-                <div className="flex justify-center mb-6">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
                     <Calculator className="h-6 w-6 text-brand-blue" />
                   </div>
+                  <h2 className="font-garamond text-[32px] font-bold text-brand-blue">
+                    A Comprehensive Range of Financial Decision Models
+                  </h2>
                 </div>
                 
-                <h2 className="font-garamond text-[30px] font-bold text-brand-blue text-center mb-4">
-                  A Comprehensive Range of Financial Decision Models
-                </h2>
-                <p className="font-garamond text-[16px] text-slate-600 text-center mb-8 max-w-4xl mx-auto">
+                <p className="font-garamond text-[18px] text-slate-600 mb-8 max-w-4xl">
                   Professional Excel models with intuitive and structured design, and with clear guidance on What, Why, Who and How to use
                 </p>
                 
-                <div className="grid grid-cols-2 gap-4 mb-8 max-w-2xl mx-auto">
+                <div className="grid grid-cols-2 gap-4 mb-8 max-w-2xl">
                   {categoryBoxes.map((category, index) => (
                     <div 
                       key={index}
-                      className="border border-slate-300 rounded-md py-3 px-4 text-center bg-slate-50 hover:border-brand-blue hover:shadow-md hover:bg-blue-50 transition-all duration-200 cursor-pointer"
+                      className="border border-slate-300 rounded-md py-5 px-4 text-center bg-slate-50 hover:border-brand-blue hover:shadow-md hover:bg-blue-50 transition-all duration-200 cursor-pointer"
                     >
-                      <span className="font-garamond text-[16px] font-semibold text-slate-700">
+                      <span className="font-garamond text-[20px] font-semibold text-slate-700">
                         {category}
                       </span>
                     </div>
@@ -50,10 +50,10 @@ const MainSections = () => {
                 </div>
                 
                 <div className="flex items-center justify-between">
-                  <span className="font-garamond text-[16px] text-slate-700">Check them out:</span>
+                  <span className="font-garamond text-[18px] text-slate-700">Check them out:</span>
                   <Button
                     asChild
-                    className="bg-rich-emerald hover:opacity-90 text-white font-semibold py-2.5 px-6 rounded-md transition-all duration-200"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[18px]"
                   >
                     <Link to="/toolbox" className="flex items-center gap-2">
                       Go to Toolbox
@@ -71,26 +71,26 @@ const MainSections = () => {
       <section className="py-12 bg-slate-50">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <Card className="shadow-lg border border-slate-200 bg-white">
+            <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
               <CardContent className="p-8">
-                <div className="flex justify-center mb-6">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
                     <Users className="h-6 w-6 text-brand-blue" />
                   </div>
+                  <h2 className="font-garamond text-[32px] font-bold text-brand-blue">
+                    Expert Guidance for Your Specific Needs
+                  </h2>
                 </div>
                 
-                <h2 className="font-garamond text-[30px] font-bold text-brand-blue text-center mb-4">
-                  Expert Guidance for Your Specific Needs
-                </h2>
-                <p className="font-garamond text-[16px] text-slate-600 text-center mb-8">
+                <p className="font-garamond text-[18px] text-slate-600 mb-8">
                   From model customization to consulting services
                 </p>
                 
                 <div className="flex items-center justify-between">
-                  <span className="font-garamond text-[16px] text-slate-700">Reach out to me:</span>
+                  <span className="font-garamond text-[18px] text-slate-700">Reach out to me:</span>
                   <Button
                     onClick={() => setIsConsultationFormOpen(true)}
-                    className="bg-rich-emerald hover:opacity-90 text-white font-semibold py-2.5 px-6 rounded-md transition-all duration-200"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[18px]"
                   >
                     <span className="flex items-center gap-2">
                       Schedule Consultation
@@ -108,26 +108,26 @@ const MainSections = () => {
       <section className="py-12 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <Card className="shadow-lg border border-slate-200 bg-white">
+            <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
               <CardContent className="p-8">
-                <div className="flex justify-center mb-6">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
                     <ClipboardList className="h-6 w-6 text-brand-blue" />
                   </div>
+                  <h2 className="font-garamond text-[32px] font-bold text-brand-blue">
+                    Financial Decision Models Offerings
+                  </h2>
                 </div>
                 
-                <h2 className="font-garamond text-[30px] font-bold text-brand-blue text-center mb-4">
-                  Financial Decision Models Offerings
-                </h2>
-                <p className="font-garamond text-[16px] text-slate-600 text-center mb-8">
+                <p className="font-garamond text-[18px] text-slate-600 mb-8">
                   Choose your path to better financial decisions
                 </p>
                 
                 <div className="flex items-center justify-between">
-                  <span className="font-garamond text-[16px] text-slate-700">Check out the paths:</span>
+                  <span className="font-garamond text-[18px] text-slate-700">Check out the paths:</span>
                   <Button
                     asChild
-                    className="bg-rich-emerald hover:opacity-90 text-white font-semibold py-2.5 px-6 rounded-md transition-all duration-200"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[18px]"
                   >
                     <Link to="/how-it-works" className="flex items-center gap-2">
                       Offerings – How It Works
