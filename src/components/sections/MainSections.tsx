@@ -52,7 +52,7 @@ const MainSections = () => {
                 </div>
                 
                 <div className="flex items-center justify-center gap-4">
-                  <span className="font-garamond text-[28px] text-slate-700">Check them out:</span>
+                  <span className="font-garamond text-[28px] text-slate-700 text-right">Check them out:</span>
                   <Button
                     asChild
                     className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] w-[360px]"
@@ -91,7 +91,7 @@ const MainSections = () => {
                 </div>
                 
                 <div className="flex items-center justify-center gap-4">
-                  <span className="font-garamond text-[28px] text-slate-700">Reach out to me:</span>
+                  <span className="font-garamond text-[28px] text-slate-700 text-right">Reach out to me:</span>
                   <Button
                     onClick={() => setIsConsultationFormOpen(true)}
                     className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] w-[360px]"
@@ -130,7 +130,7 @@ const MainSections = () => {
                 </div>
                 
                 <div className="flex items-center justify-center gap-4">
-                  <span className="font-garamond text-[28px] text-slate-700">Check out the paths:</span>
+                  <span className="font-garamond text-[28px] text-slate-700 text-right">Check out the paths:</span>
                   <Button
                     asChild
                     className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] w-[360px]"
