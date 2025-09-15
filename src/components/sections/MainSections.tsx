@@ -50,17 +50,17 @@ const MainSections = () => {
                 </div>
                 
                 <div className="flex items-center justify-center gap-4">
-                  <span className="font-garamond text-[20px] text-slate-700">Check them out:</span>
+                  <span className="font-garamond text-[28px] text-slate-700">Check them out:</span>
                   <Button
                     asChild
-                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[18px]"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] min-w-[280px]"
                   >
                     <Link to="/toolbox" className="flex items-center gap-2">
                       Go to Toolbox
                       <ArrowRight className="h-4 w-4" />
                     </Link>
-                   </Button>
-                 </div>
+                  </Button>
+                </div>
                </CardContent>
              </Card>
            </div>
@@ -87,10 +87,10 @@ const MainSections = () => {
                 </p>
                 
                 <div className="flex items-center justify-center gap-4">
-                  <span className="font-garamond text-[20px] text-slate-700">Reach out to me:</span>
+                  <span className="font-garamond text-[28px] text-slate-700">Reach out to me:</span>
                   <Button
                     onClick={() => setIsConsultationFormOpen(true)}
-                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[18px]"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] min-w-[280px]"
                   >
                     <span className="flex items-center gap-2">
                       Schedule Consultation
@@ -124,10 +124,10 @@ const MainSections = () => {
                 </p>
                 
                 <div className="flex items-center justify-center gap-4">
-                  <span className="font-garamond text-[20px] text-slate-700">Check out the paths:</span>
+                  <span className="font-garamond text-[28px] text-slate-700">Check out the paths:</span>
                   <Button
                     asChild
-                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[18px]"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] min-w-[280px]"
                   >
                     <Link to="/how-it-works" className="flex items-center gap-2">
                       Offerings – How It Works
