@@ -20,7 +20,6 @@ const MainSections = () => {
       {/* Section 1: Model Categories */}
       <section className="py-12 bg-white">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
             <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
@@ -63,14 +62,12 @@ const MainSections = () => {
                 </div>
               </CardContent>
             </Card>
-          </div>
         </div>
       </section>
 
       {/* Section 2: Consulting Services */}
       <section className="py-12 bg-slate-50">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
             <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
@@ -100,14 +97,12 @@ const MainSections = () => {
                 </div>
               </CardContent>
             </Card>
-          </div>
         </div>
       </section>
 
       {/* Section 3: Offerings */}
       <section className="py-12 bg-white">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
             <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
@@ -137,7 +132,6 @@ const MainSections = () => {
                 </div>
               </CardContent>
             </Card>
-          </div>
         </div>
       </section>
 
