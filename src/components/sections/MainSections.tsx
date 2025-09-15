@@ -78,15 +78,12 @@ const MainSections = () => {
               </div>
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                    <Calculator className="h-6 w-6 text-brand-blue" />
-                  </div>
                   <h2 className="font-garamond text-[36px] font-bold text-brand-blue">
                     A Comprehensive Range of Financial Decision Models
                   </h2>
                 </div>
                 
-                <div className="ml-16">
+                <div>
                   <p className="font-garamond text-[32px] text-slate-600 mb-8">
                     Professional Excel models with intuitive and structured design, and with clear guidance on What, Why, Who and How to use
                   </p>
@@ -130,15 +127,12 @@ const MainSections = () => {
             <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                    <Users className="h-6 w-6 text-brand-blue" />
-                  </div>
                   <h2 className="font-garamond text-[36px] font-bold text-brand-blue">
                     Expert Guidance for Your Specific Needs
                   </h2>
                 </div>
                 
-                <div className="ml-16">
+                <div>
                   <p className="font-garamond text-[32px] text-slate-600 mb-8">
                     From model customization to consulting services
                   </p>
@@ -169,15 +163,12 @@ const MainSections = () => {
             <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                    <HelpCircle className="h-8 w-8 text-brand-blue" />
-                  </div>
                   <h2 className="font-garamond text-[36px] font-bold text-brand-blue">
                     Financial Decision Models Offerings
                   </h2>
                 </div>
                 
-                <div className="ml-16">
+                <div>
                   <p className="font-garamond text-[32px] text-slate-600 mb-8">
                     Choose your path to better financial decisions
                   </p>
