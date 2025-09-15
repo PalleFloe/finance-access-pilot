@@ -49,7 +49,7 @@ const MainSections = () => {
                   ))}
                 </div>
                 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-center gap-4">
                   <span className="font-garamond text-[18px] text-slate-700">Check them out:</span>
                   <Button
                     asChild
@@ -86,7 +86,7 @@ const MainSections = () => {
                   From model customization to consulting services
                 </p>
                 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-center gap-4">
                   <span className="font-garamond text-[18px] text-slate-700">Reach out to me:</span>
                   <Button
                     onClick={() => setIsConsultationFormOpen(true)}
@@ -123,7 +123,7 @@ const MainSections = () => {
                   Choose your path to better financial decisions
                 </p>
                 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-center gap-4">
                   <span className="font-garamond text-[18px] text-slate-700">Check out the paths:</span>
                   <Button
                     asChild
