@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Calculator, Users, HelpCircle, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import ConsultationForm from "@/components/ConsultationForm";
@@ -21,7 +22,12 @@ const MainSections = () => {
       <section className="py-4">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
-            <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
+            <Card className="shadow-lg border border-slate-200 bg-white relative" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
+              <div className="absolute -top-3 -right-3 z-10">
+                <Badge className="bg-rich-emerald text-white border-rich-emerald shadow-lg text-sm font-medium px-3 py-1">
+                  100% Free to View & Use all Models!
+                </Badge>
+              </div>
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
