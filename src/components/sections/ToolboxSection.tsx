@@ -108,7 +108,7 @@ const ToolboxSection = () => {
 
         {/* Information Boxes */}
         <div className="bg-white p-6 rounded-lg border border-slate-100 shadow-sm mt-12">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
             <div>
               <h4 className="text-lg font-semibold text-slate-900 mb-3">What We Provide</h4>
               <p className="text-lg text-slate-600 leading-relaxed">
