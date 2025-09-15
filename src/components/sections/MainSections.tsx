@@ -36,13 +36,13 @@ const MainSections = () => {
                   Professional Excel models with intuitive and structured design, and with clear guidance on What, Why, Who and How to use
                 </p>
                 
-                <div className="grid grid-cols-2 gap-4 mb-8 max-w-2xl">
+                <div className="grid grid-cols-2 gap-4 mb-8 max-w-2xl mx-auto">
                   {categoryBoxes.map((category, index) => (
                     <div 
                       key={index}
                       className="border border-slate-300 rounded-md py-5 px-4 text-center bg-slate-50 hover:border-brand-blue hover:shadow-md hover:bg-blue-50 transition-all duration-200 cursor-pointer"
                     >
-                      <span className="font-garamond text-[20px] font-semibold text-slate-700">
+                      <span className="font-garamond text-[24px] font-semibold text-slate-700">
                         {category}
                       </span>
                     </div>
