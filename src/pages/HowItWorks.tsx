@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/sections/Footer";
@@ -13,6 +13,11 @@ import { usePageVisitTracking } from '@/hooks/useAnalytics';
 const HowItWorks = () => {
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
   usePageVisitTracking('page:/how-it-works');
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const tiers = {
     row1: [
