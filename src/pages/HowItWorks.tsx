@@ -172,7 +172,7 @@ const HowItWorks = () => {
       
       <main className="container mx-auto py-12">
         {/* Page Header Section */}
-        <div className="rounded-lg shadow-sm p-10 mb-8 text-center">
+        <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
             Financial Decision Models offerings
           </h1>
