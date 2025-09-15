@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <section className="pt-16 pb-6">
+    <section className="pt-8 pb-4">
       <div className="container mx-auto text-center">
-        <h1 className="font-garamond text-[36pt] font-bold text-[#326496] mb-[30px]">
+        <h1 className="font-garamond text-[32px] font-bold text-brand-blue mb-4">
           Facing Complex Financial Decisions?
         </h1>
-        <h2 className="font-garamond text-[18pt] font-normal text-[#555555] mb-[30px] max-w-6xl mx-auto leading-[1.5]">
+        <p className="font-garamond text-[16px] font-normal text-slate-600 mb-6 max-w-4xl mx-auto leading-[1.4]">
           And struggling with time-consuming, inflexible, overly complex and unreliable financial models that don't give you the clarity to make the right decisions?
-        </h2>
-        <h3 className="font-garamond text-[36pt] font-bold text-[#326496] mb-[40px] max-w-5xl mx-auto">
+        </p>
+        <h2 className="font-garamond text-[28px] font-bold text-brand-blue mb-8 max-w-4xl mx-auto leading-[1.3]">
           We help turn complex financial choices into structured insights and better business decisions.
-        </h3>
+        </h2>
       </div>
     </section>
   );
