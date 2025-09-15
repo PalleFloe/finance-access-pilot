@@ -18,12 +18,12 @@ const MainSections = () => {
   return (
     <div className="space-y-0">
       {/* Section 1: Model Categories */}
-      <section className="py-12 bg-white">
+      <section className="py-8 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
               <CardContent className="p-8">
-                <div className="flex items-center mb-6">
+                <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
                     <Calculator className="h-6 w-6 text-brand-blue" />
                   </div>
@@ -70,12 +70,12 @@ const MainSections = () => {
       </section>
 
       {/* Section 2: Consulting Services */}
-      <section className="py-12 bg-slate-50">
+      <section className="py-8 bg-slate-50">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
               <CardContent className="p-8">
-                <div className="flex items-center mb-6">
+                <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
                     <Users className="h-6 w-6 text-brand-blue" />
                   </div>
@@ -109,12 +109,12 @@ const MainSections = () => {
       </section>
 
       {/* Section 3: Offerings */}
-      <section className="py-12 bg-white">
+      <section className="py-8 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
               <CardContent className="p-8">
-                <div className="flex items-center mb-6">
+                <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
                     <ClipboardList className="h-6 w-6 text-brand-blue" />
                   </div>
