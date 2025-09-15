@@ -60,7 +60,7 @@ const FlexibleYearByYearDcf = () => {
             </CardHeader>
             <CardContent className="space-y-3">
               <Button 
-                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EfX-UMizqcFDm_K7yMM0xkABh3jW0Z6qi5dZgxcl2uLnwQ?e=aGEQAC&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ecq0m1X9nINIg9TND1p9eBIBpA0RpNaGRK-u2ucSeOMSVg?e=aGEQAC&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                 variant="brand-green"
                 size="lg"
                 className="w-full text-lg"
