@@ -24,7 +24,7 @@ const MainSections = () => {
           <div className="max-w-5xl mx-auto">
             <Card className="shadow-lg border border-slate-200 bg-white relative" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
               <div className="absolute -top-3 -right-3 z-10">
-                <Badge className="bg-rich-emerald text-white border-rich-emerald shadow-lg text-sm font-medium px-3 py-1">
+                <Badge className="bg-rich-emerald text-white border-rich-emerald shadow-lg text-lg font-medium px-4 py-2">
                   100% Free to View & Use all Models!
                 </Badge>
               </div>
