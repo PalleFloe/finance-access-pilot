@@ -28,6 +28,8 @@ Deno.serve(async (req) => {
       Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? ''
     );
 
+    const requestBody = await req.json().catch(() => ({}));
+    
     const { 
       modelName, 
       actionType, 
@@ -36,12 +38,13 @@ Deno.serve(async (req) => {
       sessionId, 
       pageUrl, 
       userId 
-    } = await req.json();
+    } = requestBody;
 
-    // Validate required fields
+    // Enhanced input validation
     if (!modelName || !actionType) {
+      console.log('Analytics validation failed: Missing required fields');
       return new Response(
-        JSON.stringify({ error: 'Missing required fields: modelName, actionType' }),
+        JSON.stringify({ error: 'Missing required fields' }),
         { 
           status: 400, 
           headers: { ...corsHeaders, 'Content-Type': 'application/json' }
@@ -52,8 +55,33 @@ Deno.serve(async (req) => {
     // Validate action type
     const validActions = ['page_visit', 'online_open', 'download'];
     if (!validActions.includes(actionType)) {
+      console.log('Analytics validation failed: Invalid action type');
       return new Response(
-        JSON.stringify({ error: 'Invalid actionType. Must be: page_visit, online_open, or download' }),
+        JSON.stringify({ error: 'Invalid action type' }),
+        { 
+          status: 400, 
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' }
+        }
+      );
+    }
+
+    // Additional security validations
+    if (modelName.length > 100 || (pageUrl && pageUrl.length > 500)) {
+      console.log('Analytics validation failed: Input too long');
+      return new Response(
+        JSON.stringify({ error: 'Input validation failed' }),
+        { 
+          status: 400, 
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' }
+        }
+      );
+    }
+
+    // Validate duration is reasonable (max 24 hours)
+    if (durationSeconds && (durationSeconds < 0 || durationSeconds > 86400)) {
+      console.log('Analytics validation failed: Invalid duration');
+      return new Response(
+        JSON.stringify({ error: 'Invalid duration' }),
         { 
           status: 400, 
           headers: { ...corsHeaders, 'Content-Type': 'application/json' }
