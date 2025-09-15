@@ -55,9 +55,9 @@ const MainSections = () => {
                   <span className="font-garamond text-[28px] text-slate-700">Check them out:</span>
                   <Button
                     asChild
-                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] min-w-[320px]"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] w-[360px]"
                   >
-                    <Link to="/toolbox" className="flex items-center gap-2">
+                    <Link to="/toolbox" className="flex items-center gap-2 justify-center">
                       Go to Toolbox
                       <ArrowRight className="h-4 w-4" />
                     </Link>
@@ -94,9 +94,9 @@ const MainSections = () => {
                   <span className="font-garamond text-[28px] text-slate-700">Reach out to me:</span>
                   <Button
                     onClick={() => setIsConsultationFormOpen(true)}
-                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] min-w-[320px]"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] w-[360px]"
                   >
-                    <span className="flex items-center gap-2">
+                    <span className="flex items-center gap-2 justify-center">
                       Schedule Consultation
                       <ArrowRight className="h-4 w-4" />
                     </span>
@@ -133,9 +133,9 @@ const MainSections = () => {
                   <span className="font-garamond text-[28px] text-slate-700">Check out the paths:</span>
                   <Button
                     asChild
-                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] min-w-[320px]"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] w-[360px]"
                   >
-                    <Link to="/how-it-works" className="flex items-center gap-2">
+                    <Link to="/how-it-works" className="flex items-center gap-2 justify-center">
                       Offerings – How It Works
                       <ArrowRight className="h-4 w-4" />
                     </Link>
