@@ -110,7 +110,7 @@ const HowItWorks = () => {
   };
 
   const TierBox = ({ tier }: { tier: TierType }) => (
-    <div className="bg-white border border-slate-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow p-5 flex flex-col relative">
+    <div className="bg-white border border-slate-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-5 flex flex-col relative" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
       {tier.badge && (
         <div className="absolute -top-3 -right-3 z-10">
           <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
