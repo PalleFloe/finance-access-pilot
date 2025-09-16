@@ -78,35 +78,35 @@ const MainSections = () => {
               </div>
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
-                  <h2 className="font-garamond text-[36px] font-bold text-brand-blue">
+                  <h2 className="font-garamond text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-blue">
                     A Comprehensive Range of Financial Decision Models
                   </h2>
                 </div>
                 
                 <div>
-                  <p className="font-garamond text-[32px] text-slate-600 mb-8">
+                  <p className="font-garamond text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-600 mb-8">
                     Professional Excel models with intuitive and structured design, and with clear guidance on What, Why, Who and How to use
                   </p>
                 </div>
                 
-                <div className="grid grid-cols-4 gap-3 mb-8 max-w-4xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-8 max-w-4xl mx-auto">
                   {categoryBoxes.map((category, index) => (
                     <div 
                       key={index}
-                      className="border border-slate-300 rounded-md py-4 px-3 bg-slate-50 hover:border-brand-blue hover:shadow-md hover:bg-blue-50 transition-all duration-200 cursor-pointer flex items-center justify-center"
+                      className="border border-slate-300 rounded-md py-4 px-3 bg-slate-50 hover:border-brand-blue hover:shadow-md hover:bg-blue-50 transition-all duration-200 cursor-pointer flex items-center justify-center min-h-[80px]"
                     >
-                      <span className="font-garamond text-[22px] font-semibold text-brand-blue text-center">
+                      <span className="font-garamond text-base sm:text-lg md:text-xl font-semibold text-brand-blue text-center">
                         {category}
                       </span>
                     </div>
                   ))}
                 </div>
                 
-                <div className="flex items-center gap-4">
-                  <span className="font-garamond text-[28px] text-slate-700 w-[280px]">Check them out:</span>
+                <div className="flex flex-col sm:flex-row items-center gap-4">
+                  <span className="font-garamond text-lg sm:text-xl md:text-2xl text-slate-700 text-center sm:text-left sm:w-auto">Check them out:</span>
                   <Button
                     asChild
-                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] w-[360px]"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-6 sm:px-10 rounded-md transition-all duration-200 text-lg sm:text-xl md:text-2xl w-full sm:w-auto"
                   >
                     <Link to="/toolbox" className="flex items-center gap-2 justify-center">
                       Go to Toolbox
@@ -127,22 +127,22 @@ const MainSections = () => {
             <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
-                  <h2 className="font-garamond text-[36px] font-bold text-brand-blue">
+                  <h2 className="font-garamond text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-blue">
                     Expert Guidance for Your Specific Needs
                   </h2>
                 </div>
                 
                 <div>
-                  <p className="font-garamond text-[32px] text-slate-600 mb-8">
+                  <p className="font-garamond text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-600 mb-8">
                     From model customization to consulting services
                   </p>
                 </div>
                 
-                <div className="flex items-center gap-4">
-                  <span className="font-garamond text-[28px] text-slate-700 w-[280px]">Reach out to me:</span>
+                <div className="flex flex-col sm:flex-row items-center gap-4">
+                  <span className="font-garamond text-lg sm:text-xl md:text-2xl text-slate-700 text-center sm:text-left sm:w-auto">Reach out to me:</span>
                   <Button
                     onClick={() => setIsConsultationFormOpen(true)}
-                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] w-[360px]"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-6 sm:px-10 rounded-md transition-all duration-200 text-lg sm:text-xl md:text-2xl w-full sm:w-auto"
                   >
                     <span className="flex items-center gap-2 justify-center">
                       Schedule Consultation
@@ -163,22 +163,22 @@ const MainSections = () => {
             <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
-                  <h2 className="font-garamond text-[36px] font-bold text-brand-blue">
+                  <h2 className="font-garamond text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-blue">
                     Financial Decision Models Offerings
                   </h2>
                 </div>
                 
                 <div>
-                  <p className="font-garamond text-[32px] text-slate-600 mb-8">
+                  <p className="font-garamond text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-600 mb-8">
                     Choose your path to better financial decisions
                   </p>
                 </div>
                 
-                <div className="flex items-center gap-4">
-                  <span className="font-garamond text-[28px] text-slate-700 w-[280px]">Check out the paths:</span>
+                <div className="flex flex-col sm:flex-row items-center gap-4">
+                  <span className="font-garamond text-lg sm:text-xl md:text-2xl text-slate-700 text-center sm:text-left sm:w-auto">Check out the paths:</span>
                   <Button
                     asChild
-                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-10 rounded-md transition-all duration-200 text-[28px] w-[360px]"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-6 sm:px-10 rounded-md transition-all duration-200 text-lg sm:text-xl md:text-2xl w-full sm:w-auto"
                   >
                     <Link to="/how-it-works" className="flex items-center gap-2 justify-center">
                       Offerings – How It Works
