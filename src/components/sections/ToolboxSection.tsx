@@ -112,7 +112,7 @@ const ToolboxSection = () => {
             <div>
               <h4 className="text-base md:text-lg font-semibold text-brand-blue mb-3">What We Provide</h4>
               <p className="text-sm md:text-base lg:text-lg text-slate-600 leading-relaxed">
-                Professional-grade Excel models covering the complete spectrum of business financial decisions—from startup valuations and unit economics through mature business investment analysis and strategic planning. Each model includes comprehensive guidance, standardized structure with clear value driver logic, and built-in scenario and sensitivity analysis capabilities.
+                Professional-grade Excel models covering the complete spectrum of complex business financial decisions—from startup valuations and unit economics through mature business investment analysis and strategic planning. Each model includes comprehensive guidance, standardized structure with clear value driver logic, and built-in scenario and sensitivity analysis capabilities.
               </p>
             </div>
 
