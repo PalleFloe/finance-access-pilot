@@ -126,7 +126,7 @@ const HowItWorks = () => {
       )}
       
       <h3 
-        className={`${tier.isModelTier ? 'text-xl sm:text-2xl md:text-3xl font-bold' : 'text-lg sm:text-xl md:text-2xl font-semibold'} mb-3`}
+        className={`${tier.isModelTier ? 'text-xl sm:text-2xl md:text-3xl font-bold' : 'text-base sm:text-xl md:text-2xl font-semibold'} mb-3`}
         style={{ fontFamily: 'Garamond, serif', color: '#326496' }}
       >
         {tier.isModelTier ? `${tier.label}: ${tier.title}` : tier.title}
