@@ -23,7 +23,7 @@ const MainSections = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <Card className="shadow-lg border border-slate-200 bg-white relative" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
-              <div className="absolute top-0 right-0 transform -translate-y-1/2 translate-x-1/2 z-10">
+              <div className="absolute top-0 right-0 transform -translate-y-1/2 sm:translate-x-1/2 z-10 max-w-[90vw] sm:max-w-none overflow-hidden">
                 {/* Wild Badge Design Options - Choose your favorite! */}
                 
                 {/* Option 1: Electric Gradient with Pulse Animation */}
@@ -43,10 +43,10 @@ const MainSections = () => {
                 </div> */}
 
                 {/* Enhanced CTA Button */}
-                <div className="bg-deep-blue text-white shadow-lg hover:shadow-xl text-sm sm:text-base md:text-lg lg:text-xl font-black px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-5 lg:px-10 lg:py-5 transform -skew-x-12 border-l-4 border-rich-emerald transition-all duration-300 hover:scale-105 cursor-pointer">
+                <div className="bg-deep-blue text-white shadow-lg hover:shadow-xl text-xs sm:text-base md:text-lg lg:text-xl font-black px-2 py-2 sm:px-6 sm:py-4 md:px-8 md:py-5 lg:px-10 lg:py-5 transform -skew-x-12 border-l-4 border-rich-emerald transition-all duration-300 hover:scale-105 cursor-pointer">
                   <div className="transform skew-x-12 text-center font-garamond">
                     <div className="text-xs sm:text-sm md:text-base font-semibold">100% Free to View & Use</div>
-                    <div className="text-sm sm:text-base md:text-lg lg:text-2xl font-black">Explore the Models!</div>
+                    <div className="text-xs sm:text-base md:text-lg lg:text-2xl font-black">Explore the Models!</div>
                   </div>
                 </div>
 
