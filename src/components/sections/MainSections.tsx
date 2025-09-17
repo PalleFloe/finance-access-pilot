@@ -45,7 +45,7 @@ const MainSections = () => {
                 {/* Enhanced CTA Button */}
                 <div className="bg-deep-blue text-white shadow-lg hover:shadow-xl text-sm sm:text-base md:text-lg lg:text-xl font-black px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-5 lg:px-10 lg:py-5 transform -skew-x-12 border-l-4 border-rich-emerald transition-all duration-300 hover:scale-105 cursor-pointer">
                   <div className="transform skew-x-12 text-center font-garamond">
-                    <div className="text-xs sm:text-sm md:text-base font-semibold">100% Free to View & Use,</div>
+                    <div className="text-xs sm:text-sm md:text-base font-semibold">100% Free to View & Use</div>
                     <div className="text-sm sm:text-base md:text-lg lg:text-2xl font-black">Explore the Models!</div>
                   </div>
                 </div>
