@@ -115,7 +115,7 @@ const HowItWorks = () => {
   };
 
   const TierBox = ({ tier }: { tier: TierType }) => (
-    <div className="bg-white border border-slate-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-5 flex flex-col relative" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
+    <div className="bg-white border border-slate-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-5 flex flex-col relative w-full max-w-full overflow-hidden" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
       {tier.badge && (
         <div className="absolute -top-3 -right-3 z-10">
           <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
@@ -126,7 +126,7 @@ const HowItWorks = () => {
       )}
       
       <h3 
-        className={`${tier.isModelTier ? 'text-xl sm:text-2xl md:text-3xl font-bold' : 'text-xl sm:text-2xl md:text-3xl font-bold'} mb-3`}
+        className={`${tier.isModelTier ? 'text-xl sm:text-2xl md:text-3xl font-bold' : 'text-xl sm:text-2xl md:text-3xl font-bold'} leading-tight break-words mb-3`}
         style={{ fontFamily: 'Garamond, serif', color: '#326496' }}
       >
         {tier.isModelTier ? `${tier.label}: ${tier.title}` : tier.title}
@@ -139,8 +139,8 @@ const HowItWorks = () => {
             className={`${tier.isModelTier ? 'text-xl' : 'text-lg'} leading-relaxed flex items-start`}
             style={{ fontFamily: 'Garamond, serif', color: '#666666' }}
           >
-            <span className="text-slate-400 mr-2 mt-1">•</span>
-            {bullet}
+            <span className="text-slate-400 mr-2 mt-1 flex-none">•</span>
+            <span className="flex-1 min-w-0 break-words">{bullet}</span>
           </li>
         ))}
       </ul>
@@ -170,7 +170,7 @@ const HowItWorks = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 overflow-x-hidden">
       <Helmet>
         <title>How It Works - Access Financial Models | Financial Decision Models</title>
         <meta name="description" content="Access financial models through 4 tiers: Free online preview, free downloads with registration, premium subscriptions, and full ownership. Excel models designed for entrepreneurs, investors, and advisors." />
@@ -214,7 +214,7 @@ const HowItWorks = () => {
 
 
         {/* Row 2: Consulting Tiers (2 cards) */}
-        <div className="bg-white rounded-lg shadow-sm p-6 mb-16">
+        <div className="bg-white rounded-lg shadow-sm p-6 mb-16 overflow-hidden">
           <div className="mb-5">
             <h2 className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200 text-brand-blue">
               Customization & Consulting Services
