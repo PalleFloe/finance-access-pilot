@@ -28,8 +28,8 @@ const FinancialFundamentals = () => {
       status: "available",
     },
     {
-      name: "Simple Types of DCF Models",
-      description: "Three DCF Approaches: Flexible DCF, Three Stages DCF, and Stable Growth Models",
+      name: "Key Types of DCF Models",
+      description: "Three Approaches: Fully Flexible, Staged and Stable Assumptions. Designed to value a firm",
       href: "/toolbox/financial-fundamentals/dcf-models",
       status: "available",
     },

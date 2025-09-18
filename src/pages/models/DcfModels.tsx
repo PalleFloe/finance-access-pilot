@@ -48,17 +48,17 @@ const DcfModels = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Standard Types of DCF Models
+            Key Types of DCF Models
           </h1>
 
           <h2 className="text-lg text-slate-600 leading-relaxed mb-8">
-            Three DCF Approaches: Flexible DCF, Three Stages DCF, and Stable Growth Models
+            Three Approaches: Fully Flexible, Staged and Stable Assumptions. Designed to value a firm
           </h2>
 
           <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
             <CardHeader>
               <CardTitle>
-                Standard Types of DCF Models
+                Key Types of DCF Models
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-2">
