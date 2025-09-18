@@ -52,7 +52,7 @@ const DcfModels = () => {
           </h1>
 
           <h2 className="text-lg text-slate-600 leading-relaxed mb-8">
-            Three Approaches: Fully Flexible, Staged and Stable Assumptions. Designed to value a firm
+            Three Approaches: Fully Flexible, Staged or Stable Assumptions. Designed to value a firm
           </h2>
 
           <Card className="shadow-lg border-slate-200 mb-8 max-w-md">

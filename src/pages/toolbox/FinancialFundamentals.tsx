@@ -29,7 +29,7 @@ const FinancialFundamentals = () => {
     },
     {
       name: "Key Types of DCF Models",
-      description: "Three Approaches: Fully Flexible, Staged and Stable Assumptions. Designed to value a firm",
+      description: "Three Approaches: Fully Flexible, Staged or Stable Assumptions. Designed to value a firm",
       href: "/toolbox/financial-fundamentals/dcf-models",
       status: "available",
     },
