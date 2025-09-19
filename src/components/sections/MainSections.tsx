@@ -107,7 +107,7 @@ const MainSections = () => {
                   <div className="flex justify-center sm:justify-end">
                     <Button
                       asChild
-                      className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-6 sm:px-5 rounded-md transition-all duration-200 text-lg sm:text-xl md:text-2xl w-full sm:w-[160px]"
+                      className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-6 sm:px-5 rounded-md transition-all duration-200 text-lg sm:text-xl md:text-2xl w-full sm:w-[320px]"
                     >
                       <Link to="/toolbox" className="flex items-center gap-2 justify-center">
                         Go to Toolbox
@@ -145,7 +145,7 @@ const MainSections = () => {
                   <div className="flex justify-center sm:justify-end">
                     <Button
                       onClick={() => setIsConsultationFormOpen(true)}
-                      className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-6 sm:px-5 rounded-md transition-all duration-200 text-lg sm:text-xl md:text-2xl w-full sm:w-[160px]"
+                      className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-6 sm:px-5 rounded-md transition-all duration-200 text-lg sm:text-xl md:text-2xl w-full sm:w-[320px]"
                     >
                       <span className="flex items-center gap-2 justify-center">
                         Schedule Consultation
@@ -183,7 +183,7 @@ const MainSections = () => {
                   <div className="flex justify-center sm:justify-end">
                     <Button
                       asChild
-                      className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-6 sm:px-5 rounded-md transition-all duration-200 text-lg sm:text-xl md:text-2xl w-full sm:w-[160px]"
+                      className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-6 sm:px-5 rounded-md transition-all duration-200 text-lg sm:text-xl md:text-2xl w-full sm:w-[320px]"
                     >
                       <Link to="/how-it-works" className="flex items-center gap-2 justify-center">
                         Offerings – How It Works
