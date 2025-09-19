@@ -11,6 +11,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import logoSmall from '@/assets/logo-small.webp';
 
 const Header = () => {
   const { user, signOut } = useAuth();
@@ -31,11 +32,17 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <Link to="/" onClick={handleLogoClick} className="flex items-center space-x-2 md:space-x-3">
             <div className="w-6 h-8 md:w-8 md:h-12 rounded-lg overflow-hidden">
-              <img 
-                src="/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" 
-                alt="Financial Decision Models Logo" 
-                className="w-full h-full object-contain"
-              />
+              <picture>
+                <source srcSet={logoSmall} type="image/webp" />
+                <img 
+                  src="/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" 
+                  alt="Financial Decision Models Logo" 
+                  className="w-full h-full object-contain"
+                  width="32"
+                  height="48"
+                  loading="eager"
+                />
+              </picture>
             </div>
             <div>
               <h1 className="text-lg md:text-2xl font-bold text-brand-blue">Financial Decision Models</h1>

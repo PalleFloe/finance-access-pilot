@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
+import logoLarge from '@/assets/logo-large.webp';
 
 const AboutSection = () => {
   return (
@@ -66,11 +67,17 @@ const AboutSection = () => {
             <div className="bg-white p-6 rounded-lg border border-slate-100 shadow-sm">
               <div className="flex flex-col md:flex-row gap-8 items-center text-left">
                 <div className="flex-shrink-0">
-                  <img 
-                    src="/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" 
-                    alt="Financial Decision Models Logo" 
-                    className="w-32 h-48 rounded-lg object-contain"
-                  />
+                  <picture>
+                    <source srcSet={logoLarge} type="image/webp" />
+                    <img 
+                      src="/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" 
+                      alt="Financial Decision Models Logo" 
+                      className="w-32 h-48 rounded-lg object-contain"
+                      width="128"
+                      height="192"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div className="flex-1">
                   <h4 className="text-2xl md:text-3xl font-semibold mb-6 text-brand-blue">
