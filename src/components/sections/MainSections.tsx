@@ -102,9 +102,9 @@ const MainSections = () => {
                   ))}
                 </div>
                 
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div className="relative flex flex-col sm:flex-row sm:items-center gap-4">
                   <span className="font-garamond text-lg sm:text-xl md:text-2xl text-slate-700">Check them out:</span>
-                  <div className="flex justify-center sm:justify-end sm:-ml-80">
+                  <div className="flex justify-center sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2">
                     <Button
                       asChild
                       className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-6 sm:px-5 rounded-md transition-all duration-200 text-lg sm:text-xl md:text-2xl w-full sm:w-[320px]"
@@ -140,9 +140,9 @@ const MainSections = () => {
                   </p>
                 </div>
                 
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div className="relative flex flex-col sm:flex-row sm:items-center gap-4">
                   <span className="font-garamond text-lg sm:text-xl md:text-2xl text-slate-700">Reach out to me:</span>
-                  <div className="flex justify-center sm:justify-end sm:-ml-80">
+                  <div className="flex justify-center sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2">
                     <Button
                       onClick={() => setIsConsultationFormOpen(true)}
                       className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-6 sm:px-5 rounded-md transition-all duration-200 text-lg sm:text-xl md:text-2xl w-full sm:w-[320px]"
@@ -178,9 +178,9 @@ const MainSections = () => {
                   </p>
                 </div>
                 
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div className="relative flex flex-col sm:flex-row sm:items-center gap-4">
                   <span className="font-garamond text-lg sm:text-xl md:text-2xl text-slate-700">Check out the paths:</span>
-                  <div className="flex justify-center sm:justify-end sm:-ml-80">
+                  <div className="flex justify-center sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2">
                     <Button
                       asChild
                       className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-6 sm:px-5 rounded-md transition-all duration-200 text-lg sm:text-xl md:text-2xl w-full sm:w-[320px]"
