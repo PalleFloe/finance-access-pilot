@@ -102,11 +102,11 @@ const MainSections = () => {
                   ))}
                 </div>
                 
-                <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                  <span className="font-garamond text-lg sm:text-xl md:text-2xl text-slate-700 text-left sm:w-auto">Check them out:</span>
+                <div className="flex flex-col gap-4">
+                  <span className="font-garamond text-lg sm:text-xl md:text-2xl text-slate-700">Check them out:</span>
                   <Button
                     asChild
-                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-6 sm:px-10 rounded-md transition-all duration-200 text-lg sm:text-xl md:text-2xl w-full sm:w-[320px]"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-6 sm:px-10 rounded-md transition-all duration-200 text-lg sm:text-xl md:text-2xl w-full sm:w-[320px] sm:self-start"
                   >
                     <Link to="/toolbox" className="flex items-center gap-2 justify-center">
                       Go to Toolbox
@@ -138,11 +138,11 @@ const MainSections = () => {
                   </p>
                 </div>
                 
-                <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                  <span className="font-garamond text-lg sm:text-xl md:text-2xl text-slate-700 text-left sm:w-auto">Reach out to me:</span>
+                <div className="flex flex-col gap-4">
+                  <span className="font-garamond text-lg sm:text-xl md:text-2xl text-slate-700">Reach out to me:</span>
                   <Button
                     onClick={() => setIsConsultationFormOpen(true)}
-                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-6 sm:px-10 rounded-md transition-all duration-200 text-lg sm:text-xl md:text-2xl w-full sm:w-[320px]"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-6 sm:px-10 rounded-md transition-all duration-200 text-lg sm:text-xl md:text-2xl w-full sm:w-[320px] sm:self-start"
                   >
                     <span className="flex items-center gap-2 justify-center">
                       Schedule Consultation
@@ -174,11 +174,11 @@ const MainSections = () => {
                   </p>
                 </div>
                 
-                <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                  <span className="font-garamond text-lg sm:text-xl md:text-2xl text-slate-700 text-left sm:w-auto">Check out the paths:</span>
+                <div className="flex flex-col gap-4">
+                  <span className="font-garamond text-lg sm:text-xl md:text-2xl text-slate-700">Check out the paths:</span>
                   <Button
                     asChild
-                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-6 sm:px-10 rounded-md transition-all duration-200 text-lg sm:text-xl md:text-2xl w-full sm:w-[320px]"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-6 sm:px-10 rounded-md transition-all duration-200 text-lg sm:text-xl md:text-2xl w-full sm:w-[320px] sm:self-start"
                   >
                     <Link to="/how-it-works" className="flex items-center gap-2 justify-center">
                       Offerings – How It Works
