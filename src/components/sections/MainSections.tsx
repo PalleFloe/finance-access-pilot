@@ -4,14 +4,6 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const MainSections = () => {
-
-  const categoryBoxes = [
-    "Startup Valuations",
-    "Business Strategy", 
-    "Investment Analysis",
-    "Fundamentals"
-  ];
-
   return (
     <div className="space-y-0">
       {/* Section 1: Model Categories */}
@@ -32,35 +24,68 @@ const MainSections = () => {
                   </p>
                 </div>
                 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-8 max-w-4xl mx-auto">
-                  {categoryBoxes.map((category, index) => (
-                    <div 
-                      key={index}
-                      className="border border-slate-300 rounded-md py-4 px-3 bg-slate-50 hover:border-brand-blue hover:shadow-md hover:bg-blue-50 transition-all duration-200 cursor-pointer flex items-center justify-center min-h-[80px]"
-                    >
-                      <span className="font-garamond text-base sm:text-lg md:text-xl font-semibold text-brand-blue text-center">
-                        {category}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-                
-                <div className="relative flex flex-col sm:flex-row sm:items-center gap-4">
-                  <span className="font-garamond text-lg sm:text-xl md:text-2xl text-slate-700">Check them out:</span>
-                  <div className="flex justify-center sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2">
-                    <Button
-                      asChild
-                      className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-3 px-6 sm:px-5 rounded-md transition-all duration-200 text-lg sm:text-xl md:text-2xl w-full sm:w-[320px]"
-                    >
-                      <Link to="/toolbox" className="flex items-center gap-2 justify-center">
-                        Go to Toolbox
-                        <ArrowRight className="h-4 w-4" />
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Full-Width Category Strip */}
+      <section className="py-0">
+        <div className="w-full">
+          <div className="bg-white border border-slate-200 shadow-sm">
+            <div className="container mx-auto px-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 py-8">
+                <div className="text-center">
+                  <h3 className="font-garamond text-xl font-bold text-brand-blue mb-2">
+                    Startup Valuations
+                  </h3>
+                  <p className="font-garamond text-base text-slate-600">
+                    Models for early-stage business valuation and investment decisions
+                  </p>
+                </div>
+                
+                <div className="text-center">
+                  <h3 className="font-garamond text-xl font-bold text-brand-blue mb-2">
+                    Business Strategy
+                  </h3>
+                  <p className="font-garamond text-base text-slate-600">
+                    Models for strategic planning, decision-making and scenario analysis
+                  </p>
+                </div>
+                
+                <div className="text-center">
+                  <h3 className="font-garamond text-xl font-bold text-brand-blue mb-2">
+                    Investment Analysis
+                  </h3>
+                  <p className="font-garamond text-base text-slate-600">
+                    DCF Models for investment analysis and decisions
+                  </p>
+                </div>
+                
+                <div className="text-center">
+                  <h3 className="font-garamond text-xl font-bold text-brand-blue mb-2">
+                    Fundamentals
+                  </h3>
+                  <p className="font-garamond text-base text-slate-600">
+                    Models for mainly educational and inspirational purposes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Full-Width CTA Button */}
+          <div className="w-full">
+            <Button
+              asChild
+              className="w-full bg-rich-emerald hover:opacity-80 text-white font-semibold py-6 rounded-none transition-all duration-200 text-xl md:text-2xl"
+            >
+              <Link to="/toolbox" className="flex items-center gap-3 justify-center">
+                Go to Toolbox
+                <ArrowRight className="h-5 w-5" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
