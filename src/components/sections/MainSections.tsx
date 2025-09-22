@@ -32,7 +32,7 @@ const MainSections = () => {
                       <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold text-brand-blue mb-2">
                         Startup Valuations
                       </h3>
-                      <p className="font-garamond text-base text-slate-600">
+                      <p className="font-garamond text-lg md:text-xl text-slate-600">
                         Models for early-stage business valuation and investment decisions
                       </p>
                     </div>
@@ -41,7 +41,7 @@ const MainSections = () => {
                       <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold text-brand-blue mb-2">
                         Business Strategy
                       </h3>
-                      <p className="font-garamond text-base text-slate-600">
+                      <p className="font-garamond text-lg md:text-xl text-slate-600">
                         Models for strategic planning, decision-making and scenario analysis
                       </p>
                     </div>
@@ -50,7 +50,7 @@ const MainSections = () => {
                       <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold text-brand-blue mb-2">
                         Investment Analysis
                       </h3>
-                      <p className="font-garamond text-base text-slate-600">
+                      <p className="font-garamond text-lg md:text-xl text-slate-600">
                         DCF Models for investment analysis and decisions
                       </p>
                     </div>
@@ -59,7 +59,7 @@ const MainSections = () => {
                       <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold text-brand-blue mb-2">
                         Fundamentals
                       </h3>
-                      <p className="font-garamond text-base text-slate-600">
+                      <p className="font-garamond text-lg md:text-xl text-slate-600">
                         Models for mainly educational and inspirational purposes
                       </p>
                     </div>
@@ -70,7 +70,7 @@ const MainSections = () => {
                 <div className="flex justify-center">
                   <Button
                     asChild
-                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-4 px-12 rounded-md transition-all duration-200 text-xl md:text-2xl"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-8 px-24 rounded-md transition-all duration-200 text-xl md:text-2xl"
                   >
                     <Link to="/toolbox" className="flex items-center gap-3 justify-center">
                       Go to Toolbox
