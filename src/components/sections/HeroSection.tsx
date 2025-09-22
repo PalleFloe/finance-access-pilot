@@ -14,7 +14,7 @@ const HeroSection = () => {
         <h2 className="font-garamond text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-brand-blue mb-4 mx-auto leading-[1.3] max-w-5xl">
           Tired of poorly designed and overly complex financial models?
         </h2>
-        <div className="font-garamond text-base sm:text-lg md:text-xl font-normal text-rich-emerald mb-6">
+        <div className="font-garamond text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-rich-emerald mb-6">
           ✓ Professional & Proven ✓ Wide Range ✓ Models are free-to-use
         </div>
       </div>
