@@ -77,7 +77,7 @@ const MainSections = () => {
                 <div className="flex justify-center">
                   <Button
                     asChild
-                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-8 px-32 rounded-md transition-all duration-200 text-2xl md:text-3xl lg:text-4xl"
+                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-8 px-48 rounded-md transition-all duration-200 text-2xl md:text-3xl lg:text-4xl"
                   >
                     <Link to="/toolbox" className="flex items-center gap-3 justify-center">
                       Go to Toolbox
