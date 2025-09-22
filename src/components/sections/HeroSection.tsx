@@ -6,16 +6,17 @@ const HeroSection = () => {
     <section className="py-8 md:py-16">
       <div className="container mx-auto text-center px-6">
         <h1 className="font-garamond text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-brand-blue mb-4">
-          Facing Complex Business Decisions?
+          Professional Financial Decision Models.
         </h1>
         <p className="font-garamond text-xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-slate-600 mb-6 mx-auto leading-[1.4] max-w-4xl">
-          And struggling with time-consuming, inflexible, complex and unreliable<br />
-          financial models that don't give you the clarity to make the right decisions?
+          Turn Complex Choices into Better Business Decisions.
         </p>
         <h2 className="font-garamond text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-brand-blue mb-4 mx-auto leading-[1.3] max-w-5xl">
-          We help turn complex financial choices into<br />
-          structured insights and better business decisions.
+          Tired of poorly designed and overly complex financial models?
         </h2>
+        <div className="font-garamond text-base sm:text-lg md:text-xl font-normal text-rich-emerald mb-6">
+          ✓ Professional & Proven ✓ Wide Range ✓ Models are free-to-use
+        </div>
       </div>
     </section>
   );
