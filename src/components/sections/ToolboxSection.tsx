@@ -54,7 +54,7 @@ const ToolboxSection = () => {
                 <span>Business Strategy</span>
               </CardTitle>
               <CardDescription className="text-base md:text-lg">
-                Financial models for long-term planning, decision-making and scenario analysis
+                Models for strategic planning, decision-making and scenario analysis
               </CardDescription>
             </CardHeader>
             <CardContent className="mt-auto">
@@ -73,7 +73,7 @@ const ToolboxSection = () => {
                 <span>Investment Analysis</span>
               </CardTitle>
               <CardDescription className="text-base md:text-lg">
-                Professional models for investment analysis, valuations and decisions
+                DCF Models for investment analysis and decisions
               </CardDescription>
             </CardHeader>
             <CardContent className="mt-auto">
@@ -92,7 +92,7 @@ const ToolboxSection = () => {
                 <span>Fundamentals</span>
               </CardTitle>
               <CardDescription className="text-base md:text-lg">
-                Academic and general models for educational and inspirational purposes  
+                Models for mainly educational and inspirational purposes  
               </CardDescription>
             </CardHeader>
             <CardContent className="mt-auto">
