@@ -29,7 +29,7 @@ const MainSections = () => {
                 <div className="bg-slate-50 border border-slate-200 rounded-lg mt-6 mb-8">
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
                     <div className="text-center">
-                      <h3 className="font-garamond text-xl font-bold text-brand-blue mb-2">
+                      <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold text-brand-blue mb-2">
                         Startup Valuations
                       </h3>
                       <p className="font-garamond text-base text-slate-600">
@@ -38,7 +38,7 @@ const MainSections = () => {
                     </div>
                     
                     <div className="text-center">
-                      <h3 className="font-garamond text-xl font-bold text-brand-blue mb-2">
+                      <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold text-brand-blue mb-2">
                         Business Strategy
                       </h3>
                       <p className="font-garamond text-base text-slate-600">
@@ -47,7 +47,7 @@ const MainSections = () => {
                     </div>
                     
                     <div className="text-center">
-                      <h3 className="font-garamond text-xl font-bold text-brand-blue mb-2">
+                      <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold text-brand-blue mb-2">
                         Investment Analysis
                       </h3>
                       <p className="font-garamond text-base text-slate-600">
@@ -56,7 +56,7 @@ const MainSections = () => {
                     </div>
                     
                     <div className="text-center">
-                      <h3 className="font-garamond text-xl font-bold text-brand-blue mb-2">
+                      <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold text-brand-blue mb-2">
                         Fundamentals
                       </h3>
                       <p className="font-garamond text-base text-slate-600">
