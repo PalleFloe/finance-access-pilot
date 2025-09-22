@@ -60,7 +60,7 @@ const EarningGrowthEstimator = () => {
             </CardHeader>
             <CardContent className="space-y-3">
               <Button 
-                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETcL-cKFbRFJoWLgiYI-K_EBrdjXbxv2Y2yj6UqYjxAQeA?e=5QwUvA&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ebc312DVugxGoVALT0bkzGABlI7_-V4eCC9hGSIQDeWQMw?e=WNQRZd&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                 variant="brand-green"
                 className="w-full text-lg"
               >
@@ -68,7 +68,7 @@ const EarningGrowthEstimator = () => {
                 Online & View
               </Button>
               <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EZuITJFyW-hLvc2QW2wx68QB9XQHwqnn1HcIKOiQgnjrLQ?e=luGxrg"
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETWdlbxuHsJBgkCKEc7eEWIB_OGNhlT1LP-zssKoa47bxA?e=SYhAKZ"
                 modelName="Simple Earning Growth Estimator"
                 className="w-full"
               />
