@@ -78,7 +78,7 @@ const MainSections = () => {
               </div>
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
-                  <h2 className="font-garamond text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-blue">
+                  <h2 className="font-garamond text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-blue">
                     A Comprehensive Range of Financial Decision Models
                   </h2>
                 </div>
@@ -129,7 +129,7 @@ const MainSections = () => {
             <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
-                  <h2 className="font-garamond text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-blue">
+                  <h2 className="font-garamond text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-blue">
                     Expert Guidance for Your Specific Needs
                   </h2>
                 </div>
@@ -167,7 +167,7 @@ const MainSections = () => {
             <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
-                  <h2 className="font-garamond text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-blue">
+                  <h2 className="font-garamond text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-blue">
                     Financial Decision Models Offerings
                   </h2>
                 </div>
