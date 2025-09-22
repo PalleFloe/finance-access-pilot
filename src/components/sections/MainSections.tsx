@@ -17,12 +17,12 @@ const MainSections = () => {
       {/* Section 1: Model Categories */}
       <section className="py-4">
         <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
                   <h2 className="font-garamond text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-brand-blue">
-                    A Comprehensive Range of Financial Decision Models
+                    Comprehensive Range of Financial Decision Models
                   </h2>
                 </div>
                 
