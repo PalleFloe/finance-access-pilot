@@ -54,7 +54,7 @@ const StartupValuations = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>Startup Valuations - Professional Models | Financial Decision Models</title>
         <meta name="description" content="Professional startup valuation models: Venture Capital Method, First Chicago, SaaS Unit Economics, Berkus Method. Excel-based tools for entrepreneurs and investors. Try free online, download interactive versions." />

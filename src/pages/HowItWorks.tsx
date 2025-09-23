@@ -174,7 +174,7 @@ const HowItWorks = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 overflow-x-hidden">
+    <div className="min-h-screen bg-gray-50 overflow-x-hidden">
       <Helmet>
         <title>How It Works - Access Financial Models | Financial Decision Models</title>
         <meta name="description" content="Access financial models through 4 tiers: Free online preview, free downloads with registration, premium subscriptions, and full ownership. Excel models designed for entrepreneurs, investors, and advisors." />

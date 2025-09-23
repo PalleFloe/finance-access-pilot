@@ -13,7 +13,7 @@ const RiskFactorSummation = () => {
   usePageVisitTracking('Risk Factor Summation Model');
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gray-50">
       <Helmet>
         <title>Risk Factor Summation - Startup Risk Assessment | Financial Decision Models</title>
         <meta name="description" content="Risk factor summation model for comprehensive startup risk assessment. Excel tool evaluates multiple risk factors with weighted scoring methodology. Professional risk analysis for investment decisions." />

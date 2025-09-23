@@ -30,7 +30,7 @@ const DcfModels = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>DCF Models - Professional Discounted Cash Flow Analysis | Financial Decision Models</title>
         <meta name="description" content="Three professional DCF valuation models: Flexible, Three-Stage, and Stable Growth approaches. Excel-based discounted cash flow analysis for business valuation. Try free online, download full versions." />

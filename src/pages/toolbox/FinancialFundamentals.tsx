@@ -54,7 +54,7 @@ const FinancialFundamentals = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>Financial Fundamentals - Academic Models | Financial Decision Models</title>
         <meta name="description" content="Essential financial modeling tools: DCF models, cost of capital calculator, financial ratios, scenario analysis. Academic-quality Excel models for learning and business analysis. Free online access available." />

@@ -27,7 +27,7 @@ const CostOfCapitalCalculator = () => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>Cost of Capital Calculator - WACC & CAPM Analysis | Financial Decision Models</title>
         <meta name="description" content="WACC and cost of capital calculator using CAPM methodology. Excel model calculates cost of equity, debt, and weighted average cost of capital. Academic tool, try free online or download." />

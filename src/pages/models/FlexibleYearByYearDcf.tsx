@@ -26,7 +26,7 @@ const FlexibleYearByYearDcf = () => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>Flexible Year by Year DCF Model - Investment Analysis | Financial Decision Models</title>
         <meta name="description" content="Dynamic DCF analysis with year-by-year projections and terminal value options. Flexible growth rates and comprehensive sensitivity analysis. Try free online, download full version." />

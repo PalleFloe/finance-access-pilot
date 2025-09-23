@@ -16,7 +16,7 @@ const BreakEvenAnalysis = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>Break-Even Analysis Model - Coming Soon | Financial Decision Models</title>
         <meta name="description" content="Break-Even Analysis Model for threshold decision-making and profitability analysis. Coming soon to the Investment Analysis toolkit." />

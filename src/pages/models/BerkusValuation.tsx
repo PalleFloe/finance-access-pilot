@@ -26,7 +26,7 @@ const BerkusValuation = () => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>Berkus Valuation Method - Pre-Revenue Startup Model | Financial Decision Models</title>
         <meta name="description" content="Berkus Method startup valuation model for pre-revenue companies. Risk-based Excel tool evaluates idea, prototype, team, relationships, and rollout. Try free online, download interactive version." />

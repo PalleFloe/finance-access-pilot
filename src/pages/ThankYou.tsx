@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 
 const ThankYou = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gray-50">
       <Header />
       
       <section className="py-20">

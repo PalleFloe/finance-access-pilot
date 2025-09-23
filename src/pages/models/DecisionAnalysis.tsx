@@ -26,7 +26,7 @@ const DecisionAnalysis = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>Decision Analysis for Venture Capital - Systematic Investment Framework | Financial Decision Models</title>
         <meta name="description" content="Venture capital decision analysis model with systematic risk assessment and probability-weighted returns. Excel tool for VC investment evaluation. Try free online, download full version." />

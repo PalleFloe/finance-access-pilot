@@ -16,7 +16,7 @@ const TwoThreeStagesDcf = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>Two and Three Stages DCF Models - Coming Soon | Financial Decision Models</title>
         <meta name="description" content="Two and Three Stages DCF Models for multi-phase business analysis. Coming soon to the Investment Analysis toolkit." />

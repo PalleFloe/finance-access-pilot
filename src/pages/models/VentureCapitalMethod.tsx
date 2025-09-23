@@ -26,7 +26,7 @@ const VentureCapitalMethod = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>Venture Capital Method - Professional Startup Valuation | Financial Decision Models</title>
         <meta name="description" content="Venture Capital Method startup valuation model with multi-round funding analysis. Excel tool for VC valuations with exit scenarios. Try free online, download full version." />

@@ -55,7 +55,7 @@ const InvestmentAnalysis = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>Investment Analysis - Professional Models | Financial Decision Models</title>
         <meta name="description" content="Professional investment analysis tools for capital allocation and project evaluation. DCF models, growth analysis, and break-even calculations. Try free online, download interactive versions." />

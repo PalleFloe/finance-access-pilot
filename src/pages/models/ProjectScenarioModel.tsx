@@ -27,7 +27,7 @@ const ProjectScenarioModel = () => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>Project Scenario Model - Multi-Scenario Capital Budgeting | Financial Decision Models</title>
         <meta name="description" content="Multi-scenario capital budgeting model with NPV and IRR analysis. Excel tool evaluates investment projects across downside, base case, and upside scenarios. Try free online or download." />

@@ -26,7 +26,7 @@ const PerpetuityExitValuation = () => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>Perpetuity & Exit Valuation Models - Quick Startup Analysis | Financial Decision Models</title>
         <meta name="description" content="Perpetuity and exit valuation models for quick startup analysis. Four Excel approaches: simple perpetuity, growing perpetuity, two-phase growth, and exit value. Try free online or download." />

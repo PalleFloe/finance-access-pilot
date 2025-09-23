@@ -27,7 +27,7 @@ const EarningGrowthEstimator = () => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>Earning Growth Estimator - ROC-Based Growth Analysis | Financial Decision Models</title>
         <meta name="description" content="Earning growth estimator based on return on capital and reinvestment analysis. Excel model calculates sustainable growth rates for existing and new investments. Try free online or download." />

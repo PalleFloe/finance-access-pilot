@@ -26,7 +26,7 @@ const StableGrowthFiniteLifeDcf = () => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>Stable Growth - Finite-Life DCF Model - Investment Analysis | Financial Decision Models</title>
         <meta name="description" content="Stable Growth DCF analysis for finite-life assets with predictable revenue and terminal value calculation. Excel tool for project valuation and investment analysis." />

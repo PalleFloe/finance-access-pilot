@@ -15,7 +15,7 @@ const BusinessStrategy = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>Business Strategy Models - Coming Soon | Financial Decision Models</title>
         <meta name="description" content="Business Strategy financial models for long-term planning, decision-making and scenario analysis. Coming soon to the Financial Decision Models toolkit." />

@@ -16,7 +16,7 @@ const CostReductionDcf = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>Cost Reduction DCF Model - Coming Soon | Financial Decision Models</title>
         <meta name="description" content="Cost Reduction DCF Model for efficiency analysis and savings evaluation. Coming soon to the Investment Analysis toolkit." />

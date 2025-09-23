@@ -12,7 +12,7 @@ import homepageExactStyling from "@/assets/homepage-exact-styling-draft.jpg";
 
 const DesignSuggestions = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gray-50">
       <Helmet>
         <title>Design Suggestions | Financial Decision Models</title>
       </Helmet>

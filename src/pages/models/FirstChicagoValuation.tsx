@@ -26,7 +26,7 @@ const FirstChicagoValuation = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>First Chicago Method - Scenario-Based Startup Valuation | Financial Decision Models</title>
         <meta name="description" content="First Chicago startup valuation model with scenario-based DCF analysis. Excel tool models downside, base, and upside cases with probability weighting. Try free online, download full version." />

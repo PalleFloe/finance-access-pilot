@@ -26,7 +26,7 @@ const StableGrowthTerminalValueDcf = () => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>Stable Growth - Terminal Value DCF Model - Investment Analysis | Financial Decision Models</title>
         <meta name="description" content="Stable Growth DCF analysis with terminal value focus for perpetual asset evaluation. Growth rate sensitivity and comprehensive valuation analysis. Excel tool for long-term investments." />

@@ -9,7 +9,7 @@ const Index = () => {
   usePageVisitTracking('page:Homepage');
   
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gray-50">
       <Helmet>
         <title>Financial Decision Models - Professional Financial Tools</title>
         <meta name="description" content="Professional financial decision models and startup valuation tools. Free Excel models in browser plus premium downloads. DCF, venture capital method, and business valuation models for entrepreneurs and investors." />

@@ -26,7 +26,7 @@ const FinancialRatioCalculator = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>Financial Ratio Calculator - Comprehensive Financial Analysis | Financial Decision Models</title>
         <meta name="description" content="Comprehensive financial ratio calculator with 30+ ratios across profitability, efficiency, leverage, and market valuation. Excel model for financial statement analysis. Try free online or download." />

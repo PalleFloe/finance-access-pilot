@@ -7,7 +7,7 @@ const Contact = () => {
   usePageVisitTracking('page:/contact');
   
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gray-50">
       <Helmet>
         <title>Contact - Get Expert Financial Guidance | Financial Decision Models</title>
         <meta name="description" content="Contact Palle Floe Nielsen for custom financial modeling, business consulting, and strategic advisory services. Based at BloxHub innovation center in Copenhagen, Denmark. Expert financial guidance." />

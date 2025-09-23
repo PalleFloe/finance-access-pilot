@@ -264,7 +264,7 @@ const Analytics = () => {
 
   if (!user) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      <div className="min-h-screen bg-gray-50">
         <Header />
         <div className="flex items-center justify-center h-96">
           <p className="text-lg text-muted-foreground">Please log in to view analytics.</p>
@@ -274,7 +274,7 @@ const Analytics = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gray-50">
       <Helmet>
         <title>Analytics Dashboard - Financial Models</title>
         <meta name="description" content="View usage analytics for financial models and tools." />

@@ -133,7 +133,7 @@ const BlogSection = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-slate-50 to-blue-50 font-garamond">
+    <section className="py-16 bg-gray-50 font-garamond">
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
