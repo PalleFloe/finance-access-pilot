@@ -94,13 +94,19 @@ const InvestmentAnalysis = () => {
                       </Badge>
                     </div>
                   )}
+                  {model.status === "contact" && (
+                    <div className="absolute -top-3 -right-3 z-10">
+                      <Badge className="bg-orange-500 text-white border-orange-400 shadow-sm">
+                        <Clock className="w-3 h-3 mr-1" />
+                        Coming Soon
+                      </Badge>
+                    </div>
+                  )}
                   <CardHeader className="flex-grow p-6">
                     <CardTitle className="text-2xl font-semibold" style={{ color: '#FFB445' }}>
-                      {model.name}
+                      <span>{model.name}</span>
                     </CardTitle>
-                    <CardDescription className="flex-grow text-lg" style={{ color: '#FFB445' }}>
-                      {model.description || " "}
-                    </CardDescription>
+                    <CardDescription className="flex-grow text-lg" style={{ color: '#FFB445' }}>{model.description}</CardDescription>
                   </CardHeader>
                 </Card>
               </Link>
