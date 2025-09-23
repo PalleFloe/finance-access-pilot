@@ -101,18 +101,12 @@ const FinancialFundamentals = () => {
                       </Badge>
                     </div>
                   )}
-                  <CardHeader className="flex-grow">
+                  <CardHeader className="flex-grow p-6">
                     <CardTitle className="text-2xl font-semibold" style={{ color: '#FFB445' }}>
                       <span>{model.name}</span>
                     </CardTitle>
                     <CardDescription className="flex-grow text-lg" style={{ color: '#FFB445' }}>{model.description}</CardDescription>
                   </CardHeader>
-                  <CardContent className="pt-0">
-                    <Button variant="rich-emerald" size="lg" className="w-full text-lg">
-                      {model.status === "contact" ? "Contact Us" : "Go to Model"}
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </CardContent>
                 </Card>
               </Link>
             ))}

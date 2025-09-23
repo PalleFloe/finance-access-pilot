@@ -102,12 +102,6 @@ const InvestmentAnalysis = () => {
                       {model.description || " "}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="p-6 pt-4 mt-auto">
-                    <Button variant="rich-emerald" size="lg" className="w-full text-lg">
-                      {model.status === "coming soon" ? "Learn More" : "Go to Model"}
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </CardContent>
                 </Card>
               </Link>
             ))}
