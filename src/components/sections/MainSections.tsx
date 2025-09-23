@@ -27,7 +27,7 @@ const MainSections = () => {
                 
                 {/* Category Strip */}
                 <div className="mt-6 mb-8">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-6">
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <Link to="/toolbox/startup-valuations" className="block">
                       <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col h-full cursor-pointer" style={{backgroundColor: '#08305C'}}>
                         <CardHeader className="flex-grow">
@@ -40,7 +40,7 @@ const MainSections = () => {
                         </CardHeader>
                       </Card>
                     </Link>
-                    
+
                     <Link to="/toolbox/business-strategy" className="block">
                       <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col h-full cursor-pointer" style={{backgroundColor: '#08305C'}}>
                         <CardHeader className="flex-grow">
@@ -53,7 +53,7 @@ const MainSections = () => {
                         </CardHeader>
                       </Card>
                     </Link>
-                    
+
                     <Link to="/toolbox/investment-analysis" className="block">
                       <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col h-full cursor-pointer" style={{backgroundColor: '#08305C'}}>
                         <CardHeader className="flex-grow">
@@ -66,7 +66,7 @@ const MainSections = () => {
                         </CardHeader>
                       </Card>
                     </Link>
-                    
+
                     <Link to="/toolbox/financial-fundamentals" className="block">
                       <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col h-full cursor-pointer" style={{backgroundColor: '#08305C'}}>
                         <CardHeader className="flex-grow">
