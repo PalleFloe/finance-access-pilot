@@ -88,19 +88,6 @@ const MainSections = () => {
                     ✓ Professional & Proven ✓ Wide Range ✓ Models are free-to-use
                   </div>
                 </div>
-
-                {/* CTA Button */}
-                <div className="flex justify-center">
-                  <Button
-                    asChild
-                    className="bg-rich-emerald hover:opacity-80 text-white font-semibold py-8 px-8 md:px-24 lg:px-48 rounded-md transition-all duration-200 text-2xl md:text-3xl lg:text-4xl"
-                  >
-                    <Link to="/toolbox" className="flex items-center gap-3 justify-center">
-                      Go to Toolbox
-                      <ArrowRight className="h-5 w-5" />
-                    </Link>
-                  </Button>
-                </div>
               </CardContent>
             </Card>
           </div>
