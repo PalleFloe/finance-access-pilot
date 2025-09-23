@@ -84,7 +84,7 @@ const FinancialFundamentals = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {models.map((model) => (
               <Link key={model.name} to={model.href} className="group">
-                <Card className="shadow-lg border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col h-full min-h-[280px] cursor-pointer" style={{ backgroundColor: '#08305C' }}>
+                <Card className="shadow-lg border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col h-full min-h-[240px] cursor-pointer" style={{ backgroundColor: '#08305C' }}>
                   {model.status === "coming soon" && (
                     <div className="absolute -top-3 -right-3 z-10">
                       <Badge className="bg-orange-500 text-white border-orange-400 shadow-sm">
