@@ -26,43 +26,51 @@ const MainSections = () => {
                 
                 
                 {/* Category Strip */}
-                <div className="bg-slate-50 border border-slate-200 rounded-lg mt-6 mb-8">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
-                    <div className="text-center">
-                      <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold text-brand-blue mb-2">
-                        Startup Valuations
-                      </h3>
-                      <p className="font-garamond text-lg md:text-xl text-slate-600">
-                        Models for early-stage business valuation and investment decisions
-                      </p>
-                    </div>
+                <div className="mt-6 mb-8">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-6">
+                    <Link to="/toolbox/startup-valuations" className="block">
+                      <div className="text-center p-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer" style={{backgroundColor: '#08305C'}}>
+                        <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold mb-2" style={{color: '#FFB445'}}>
+                          Startup Valuations
+                        </h3>
+                        <p className="font-garamond text-lg md:text-xl" style={{color: '#FFB445'}}>
+                          Models for early-stage business valuation and investment decisions
+                        </p>
+                      </div>
+                    </Link>
                     
-                    <div className="text-center">
-                      <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold text-brand-blue mb-2">
-                        Business Strategy
-                      </h3>
-                      <p className="font-garamond text-lg md:text-xl text-slate-600">
-                        Models for strategic planning, decision-making and scenario analysis
-                      </p>
-                    </div>
+                    <Link to="/toolbox/business-strategy" className="block">
+                      <div className="text-center p-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer" style={{backgroundColor: '#08305C'}}>
+                        <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold mb-2" style={{color: '#FFB445'}}>
+                          Business Strategy
+                        </h3>
+                        <p className="font-garamond text-lg md:text-xl" style={{color: '#FFB445'}}>
+                          Models for strategic planning, decision-making and scenario analysis
+                        </p>
+                      </div>
+                    </Link>
                     
-                    <div className="text-center">
-                      <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold text-brand-blue mb-2">
-                        Investment Analysis
-                      </h3>
-                      <p className="font-garamond text-lg md:text-xl text-slate-600">
-                        DCF Models for investment analysis and decisions
-                      </p>
-                    </div>
+                    <Link to="/toolbox/investment-analysis" className="block">
+                      <div className="text-center p-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer" style={{backgroundColor: '#08305C'}}>
+                        <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold mb-2" style={{color: '#FFB445'}}>
+                          Investment Analysis
+                        </h3>
+                        <p className="font-garamond text-lg md:text-xl" style={{color: '#FFB445'}}>
+                          DCF Models for investment analysis and decisions
+                        </p>
+                      </div>
+                    </Link>
                     
-                    <div className="text-center">
-                      <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold text-brand-blue mb-2">
-                        Fundamentals
-                      </h3>
-                      <p className="font-garamond text-lg md:text-xl text-slate-600">
-                        Models for mainly educational and inspirational purposes
-                      </p>
-                    </div>
+                    <Link to="/toolbox/financial-fundamentals" className="block">
+                      <div className="text-center p-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer" style={{backgroundColor: '#08305C'}}>
+                        <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold mb-2" style={{color: '#FFB445'}}>
+                          Fundamentals
+                        </h3>
+                        <p className="font-garamond text-lg md:text-xl" style={{color: '#FFB445'}}>
+                          Models for mainly educational and inspirational purposes
+                        </p>
+                      </div>
+                    </Link>
                   </div>
                 </div>
 
