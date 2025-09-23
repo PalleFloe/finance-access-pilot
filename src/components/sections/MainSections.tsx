@@ -29,44 +29,44 @@ const MainSections = () => {
                 <div className="mt-6 mb-8">
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-6">
                     <Link to="/toolbox/startup-valuations" className="block">
-                      <div className="text-center px-8 py-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer" style={{backgroundColor: '#08305C'}}>
-                        <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold mb-2" style={{color: '#FFB445'}}>
+                      <div className="text-center px-6 py-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-40 flex flex-col justify-center" style={{backgroundColor: '#08305C'}}>
+                        <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold mb-2 leading-tight" style={{color: '#FFB445'}}>
                           Startup Valuations
                         </h3>
-                        <p className="font-garamond text-lg md:text-xl" style={{color: '#FFB445'}}>
+                        <p className="font-garamond text-lg md:text-xl leading-tight" style={{color: '#FFB445'}}>
                           Models for early-stage business valuation and investment decisions
                         </p>
                       </div>
                     </Link>
                     
                     <Link to="/toolbox/business-strategy" className="block">
-                      <div className="text-center px-8 py-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer" style={{backgroundColor: '#08305C'}}>
-                        <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold mb-2" style={{color: '#FFB445'}}>
+                      <div className="text-center px-6 py-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-40 flex flex-col justify-center" style={{backgroundColor: '#08305C'}}>
+                        <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold mb-2 leading-tight" style={{color: '#FFB445'}}>
                           Business Strategy
                         </h3>
-                        <p className="font-garamond text-lg md:text-xl" style={{color: '#FFB445'}}>
+                        <p className="font-garamond text-lg md:text-xl leading-tight" style={{color: '#FFB445'}}>
                           Models for strategic planning, decision-making and scenario analysis
                         </p>
                       </div>
                     </Link>
                     
                     <Link to="/toolbox/investment-analysis" className="block">
-                      <div className="text-center px-8 py-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer" style={{backgroundColor: '#08305C'}}>
-                        <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold mb-2" style={{color: '#FFB445'}}>
+                      <div className="text-center px-6 py-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-40 flex flex-col justify-center" style={{backgroundColor: '#08305C'}}>
+                        <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold mb-2 leading-tight" style={{color: '#FFB445'}}>
                           Investment Analysis
                         </h3>
-                        <p className="font-garamond text-lg md:text-xl" style={{color: '#FFB445'}}>
+                        <p className="font-garamond text-lg md:text-xl leading-tight" style={{color: '#FFB445'}}>
                           DCF Models for investment analysis and decisions
                         </p>
                       </div>
                     </Link>
                     
                     <Link to="/toolbox/financial-fundamentals" className="block">
-                      <div className="text-center px-8 py-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer" style={{backgroundColor: '#08305C'}}>
-                        <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold mb-2" style={{color: '#FFB445'}}>
+                      <div className="text-center px-6 py-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-40 flex flex-col justify-center" style={{backgroundColor: '#08305C'}}>
+                        <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold mb-2 leading-tight" style={{color: '#FFB445'}}>
                           Fundamentals
                         </h3>
-                        <p className="font-garamond text-lg md:text-xl" style={{color: '#FFB445'}}>
+                        <p className="font-garamond text-lg md:text-xl leading-tight" style={{color: '#FFB445'}}>
                           Models for mainly educational and inspirational purposes
                         </p>
                       </div>
