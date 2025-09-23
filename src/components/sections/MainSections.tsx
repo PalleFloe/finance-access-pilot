@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -29,47 +29,55 @@ const MainSections = () => {
                 <div className="mt-6 mb-8">
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-6">
                     <Link to="/toolbox/startup-valuations" className="block">
-                      <div className="text-center px-6 py-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-40 flex flex-col justify-center" style={{backgroundColor: '#08305C'}}>
-                        <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold mb-2 leading-tight" style={{color: '#FFB445'}}>
-                          Startup Valuations
-                        </h3>
-                        <p className="font-garamond text-lg md:text-xl leading-tight" style={{color: '#FFB445'}}>
-                          Models for early-stage business valuation and investment decisions
-                        </p>
-                      </div>
+                      <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col h-full cursor-pointer" style={{backgroundColor: '#08305C'}}>
+                        <CardHeader className="flex-grow">
+                          <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFB445'}}>
+                            <span>Startup Valuations</span>
+                          </CardTitle>
+                          <CardDescription className="text-base md:text-lg" style={{color: '#FFB445'}}>
+                            Models for early-stage business valuation and investment decisions
+                          </CardDescription>
+                        </CardHeader>
+                      </Card>
                     </Link>
                     
                     <Link to="/toolbox/business-strategy" className="block">
-                      <div className="text-center px-6 py-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-40 flex flex-col justify-center" style={{backgroundColor: '#08305C'}}>
-                        <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold mb-2 leading-tight" style={{color: '#FFB445'}}>
-                          Business Strategy
-                        </h3>
-                        <p className="font-garamond text-lg md:text-xl leading-tight" style={{color: '#FFB445'}}>
-                          Models for strategic planning, decision-making and scenario analysis
-                        </p>
-                      </div>
+                      <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col h-full cursor-pointer" style={{backgroundColor: '#08305C'}}>
+                        <CardHeader className="flex-grow">
+                          <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFB445'}}>
+                            <span>Business Strategy</span>
+                          </CardTitle>
+                          <CardDescription className="text-base md:text-lg" style={{color: '#FFB445'}}>
+                            Models for strategic planning, decision-making and scenario analysis
+                          </CardDescription>
+                        </CardHeader>
+                      </Card>
                     </Link>
                     
                     <Link to="/toolbox/investment-analysis" className="block">
-                      <div className="text-center px-6 py-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-40 flex flex-col justify-center" style={{backgroundColor: '#08305C'}}>
-                        <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold mb-2 leading-tight" style={{color: '#FFB445'}}>
-                          Investment Analysis
-                        </h3>
-                        <p className="font-garamond text-lg md:text-xl leading-tight" style={{color: '#FFB445'}}>
-                          DCF Models for investment analysis and decisions
-                        </p>
-                      </div>
+                      <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col h-full cursor-pointer" style={{backgroundColor: '#08305C'}}>
+                        <CardHeader className="flex-grow">
+                          <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFB445'}}>
+                            <span>Investment Analysis</span>
+                          </CardTitle>
+                          <CardDescription className="text-base md:text-lg" style={{color: '#FFB445'}}>
+                            DCF Models for investment analysis and decisions
+                          </CardDescription>
+                        </CardHeader>
+                      </Card>
                     </Link>
                     
                     <Link to="/toolbox/financial-fundamentals" className="block">
-                      <div className="text-center px-6 py-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer h-40 flex flex-col justify-center" style={{backgroundColor: '#08305C'}}>
-                        <h3 className="font-garamond text-xl sm:text-2xl md:text-3xl font-semibold mb-2 leading-tight" style={{color: '#FFB445'}}>
-                          Fundamentals
-                        </h3>
-                        <p className="font-garamond text-lg md:text-xl leading-tight" style={{color: '#FFB445'}}>
-                          Models for mainly educational and inspirational purposes
-                        </p>
-                      </div>
+                      <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col h-full cursor-pointer" style={{backgroundColor: '#08305C'}}>
+                        <CardHeader className="flex-grow">
+                          <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFB445'}}>
+                            <span>Fundamentals</span>
+                          </CardTitle>
+                          <CardDescription className="text-base md:text-lg" style={{color: '#FFB445'}}>
+                            Models for mainly educational and inspirational purposes
+                          </CardDescription>
+                        </CardHeader>
+                      </Card>
                     </Link>
                   </div>
                 </div>
