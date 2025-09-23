@@ -49,7 +49,7 @@ const ToolboxSection = () => {
                   <span>Business Strategy</span>
                 </CardTitle>
                 <CardDescription className="text-base md:text-lg" style={{color: '#FFB445'}}>
-                  Models for strategic planning, decision-making and scenario analysis
+                  Models for strategic planning, decisions and scenario analysis
                 </CardDescription>
               </CardHeader>
             </Card>
