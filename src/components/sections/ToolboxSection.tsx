@@ -38,8 +38,8 @@ const ToolboxSection = () => {
 
           <Link to="/toolbox/business-strategy" className="block">
             <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative cursor-pointer w-80 h-40" style={{backgroundColor: '#08305C'}}>
-              <div className="absolute -top-3 -right-3 z-10">
-                <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
+              <div className="absolute -top-3 -right-3 z-20">
+                <Badge className="bg-orange-500 text-white border-orange-400 shadow-lg">
                   <Clock className="w-3 h-3 mr-1" />
                   Coming Soon
                 </Badge>
