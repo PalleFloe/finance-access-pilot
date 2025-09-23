@@ -7,7 +7,7 @@ const MainSections = () => {
   return (
     <div className="space-y-0">
       {/* Section 1: Model Categories */}
-      <section className="py-4">
+      <section className="pt-2 pb-4">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <Card className="shadow-lg border border-slate-200 bg-white" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
