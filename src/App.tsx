@@ -34,7 +34,7 @@ import ProjectScenarioModel from "./pages/models/ProjectScenarioModel";
 import FlexibleYearByYearDcf from "./pages/models/FlexibleYearByYearDcf";
 import StableGrowthFiniteLifeDcf from "./pages/models/StableGrowthFiniteLifeDcf";
 import StableGrowthTerminalValueDcf from "./pages/models/StableGrowthTerminalValueDcf";
-import TwoThreeStagesDcf from "./pages/models/TwoThreeStagesDcf";
+import ThreeStageDcf from "./pages/models/ThreeStageDcf";
 import CostReductionDcf from "./pages/models/CostReductionDcf";
 import BreakEvenAnalysis from "./pages/models/BreakEvenAnalysis";
 import AdminAnalytics from "./pages/admin/Analytics";
@@ -76,7 +76,7 @@ const App = () => (
           <Route path="/toolbox/investment-analysis/flexible-year-by-year-dcf-model" element={<FlexibleYearByYearDcf />} />
           <Route path="/toolbox/investment-analysis/stable-growth-finite-life-dcf-model" element={<StableGrowthFiniteLifeDcf />} />
           <Route path="/toolbox/investment-analysis/stable-growth-terminal-value-dcf-model" element={<StableGrowthTerminalValueDcf />} />
-          <Route path="/toolbox/investment-analysis/two-and-three-stages-dcf-models" element={<TwoThreeStagesDcf />} />
+          <Route path="/toolbox/investment-analysis/three-stage-dcf-model" element={<ThreeStageDcf />} />
           <Route path="/toolbox/investment-analysis/cost-reduction-dcf-model" element={<CostReductionDcf />} />
           <Route path="/toolbox/investment-analysis/break-even-analysis-model" element={<BreakEvenAnalysis />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
