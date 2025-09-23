@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ArrowLeft, ArrowRight, Check } from "lucide-react";
+import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
 import { useEffect } from "react";
 import { useAnalytics, usePageVisitTracking } from '@/hooks/useAnalytics';
@@ -48,86 +48,75 @@ const ThreeStageDcf = () => {
           </h2>
 
           {/* Model Card */}
-          <div className="flex justify-center mb-16">
-            <Card className="w-full max-w-2xl shadow-lg border-slate-200" style={{ backgroundColor: '#326496' }}>
-              <CardHeader className="text-center p-8">
-                <CardTitle className="text-3xl font-semibold mb-4" style={{ color: '#FFB445' }}>
-                  Three Stage DCF Model
-                </CardTitle>
-                <CardDescription className="text-xl leading-relaxed mb-8" style={{ color: '#FFB445' }}>
-                  Multi-stage Analysis: DCF Valuation with Distinct Performance Stage Characteristics
-                </CardDescription>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button 
-                    onClick={openModel}
-                    variant="model-blue"
-                    size="lg"
-                    className="text-lg px-8 py-3"
-                  >
-                    <ArrowRight className="w-5 h-5 mr-2" />
-                    Online & Free
-                  </Button>
-                  <Button 
-                    asChild
-                    variant="outline" 
-                    size="lg"
-                    className="text-lg px-8 py-3 border-2 text-white border-white hover:bg-white hover:text-[#326496]"
-                  >
-                    <Link to="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EedTxCmGO_hGgXYs7olCtgMBDuEqwmUNSMaiNpp013Y5mQ?e=QJUPNh" target="_blank">
-                      <ArrowRight className="w-5 h-5 mr-2" />
-                      Download & Free
-                    </Link>
-                  </Button>
-                </div>
-              </CardHeader>
-            </Card>
-          </div>
-
-          {/* Quick Access Guide */}
-          <div className="grid md:grid-cols-2 gap-6 mb-16">
-            <div className="flex items-start space-x-3 p-6 bg-white rounded-lg shadow-sm border border-slate-200">
-              <Check className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="font-semibold text-lg text-slate-800 mb-2">Online & Free</h3>
-                <p className="text-slate-600">Instant online preview (without registration)</p>
+          <Card className="max-w-md mx-auto shadow-lg border-slate-200 mb-8">
+            <CardHeader className="text-center">
+              <CardTitle className="text-2xl font-semibold text-brand-blue mb-2">
+                Three Stage DCF Model
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <Button 
+                onClick={openModel}
+                variant="brand-green"
+                size="lg"
+                className="w-full text-lg"
+              >
+                <ArrowRight className="w-4 h-4 mr-2" />
+                Online & View
+              </Button>
+              <Button 
+                asChild
+                variant="deep-blue" 
+                size="lg"
+                className="w-full text-lg"
+              >
+                <Link to="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EedTxCmGO_hGgXYs7olCtgMBDuEqwmUNSMaiNpp013Y5mQ?e=QJUPNh" target="_blank">
+                  <ArrowRight className="w-4 h-4 mr-2" />
+                  Download & Use
+                </Link>
+              </Button>
+              <div className="mt-1 pt-1 text-xs text-muted-foreground">
+                <strong className="text-primary">Quick Access Guide:</strong><br />
+                <span>Online & View - Instant online preview (without registration)</span>
+                <br /><span>Download & Use - Browser embedded Excel with download capability (required registration)</span>
               </div>
-            </div>
-            <div className="flex items-start space-x-3 p-6 bg-white rounded-lg shadow-sm border border-slate-200">
-              <Check className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="font-semibold text-lg text-slate-800 mb-2">Download & Free</h3>
-                <p className="text-slate-600">Browser embedded Excel with download capability (requires registration)</p>
-              </div>
-            </div>
-          </div>
+            </CardContent>
+          </Card>
 
-          {/* Introduction Section */}
-          <div className="max-w-4xl space-y-8">
+          {/* Introduction Headline */}
+          <h3 className="mb-6">Three Stage DCF Model Introduction</h3>
+
+          {/* Introduction Content */}
+          <div className="prose prose-slate max-w-none mb-8">
             <div>
-              <h3 className="text-3xl font-semibold text-brand-blue mb-4">Three Stage DCF Model Introduction</h3>
-              <p className="text-lg text-slate-600 leading-relaxed mb-4">
+              <p className="text-xl text-slate-600 leading-relaxed mb-4">
                 The Three Stage DCF Model values internal investments experiencing distinct phases of development with different operational characteristics in each stage. By explicitly modelling transition periods from initial implementation through maturation, this framework captures the realistic evolution of investment performance whilst maintaining analytical rigour.
               </p>
-              <p className="text-lg text-slate-600 leading-relaxed mb-4">
-                <strong>Multi-Phase Framework:</strong> Unlike single-growth models that assume constant performance, this approach recognises that investments typically experience distinct phases - initial ramp-up with lower efficiency, operational scaling with improving performance, and mature operations with stable characteristics. Each stage can have different growth rates, margin profiles, and capital requirements.
+              
+              <p className="text-xl text-slate-600 leading-relaxed mb-4">
+                <strong>Multi-Phase Framework</strong>: Unlike single-growth models that assume constant performance, this approach recognises that investments typically experience distinct phases - initial ramp-up with lower efficiency, operational scaling with improving performance, and mature operations with stable characteristics. Each stage can have different growth rates, margin profiles, and capital requirements.
               </p>
-              <p className="text-lg text-slate-600 leading-relaxed mb-4">
-                <strong>Dynamic Evolution:</strong> Users define the duration and operational parameters for each of three stages, enabling detailed modelling of how investments develop over time. Revenue growth rates, cost structures, and capital requirements can evolve independently across stages, reflecting real-world investment dynamics.
+              
+              <p className="text-xl text-slate-600 leading-relaxed mb-4">
+                <strong>Dynamic Evolution</strong>: Users define the duration and operational parameters for each of three stages, enabling detailed modelling of how investments develop over time. Revenue growth rates, cost structures, and capital requirements can evolve independently across stages, reflecting real-world investment dynamics.
               </p>
-              <p className="text-lg text-slate-600 leading-relaxed mb-4">
-                <strong>Strategic Purpose:</strong> Model investments with predictable development phases, analyse projects transitioning from start-up through maturity, and evaluate long-term initiatives with varying performance characteristics across their lifecycle.
+              
+              <p className="text-xl text-slate-600 leading-relaxed mb-4">
+                <strong>Strategic Purpose</strong>: Model investments with predictable development phases, analyse projects transitioning from start-up through maturity, and evaluate long-term initiatives with varying performance characteristics across their lifecycle.
               </p>
-              <p className="text-lg text-slate-600 leading-relaxed">
-                <strong>Target Users:</strong> Business leaders evaluating complex multi-phase investments, project managers overseeing staged implementations, and finance teams analysing investments with evolving operational profiles.
+              
+              <p className="text-xl text-slate-600 leading-relaxed mb-4">
+                <strong>Target Users</strong>: Business leaders evaluating complex multi-phase investments, project managers overseeing staged implementations, and finance teams analysing investments with evolving operational profiles.
               </p>
             </div>
+          </div>
 
-            {/* Collapsible Guide */}
-            <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="complete-guide">
-                <AccordionTrigger className="text-2xl font-semibold text-brand-blue hover:text-brand-blue/80">
-                  Complete Three Stage DCF Model Guide
-                </AccordionTrigger>
+          {/* Collapsible Guide */}
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="complete-guide">
+              <AccordionTrigger className="text-2xl font-semibold text-brand-blue hover:text-brand-blue/80">
+                Complete Three Stage DCF Model Guide
+              </AccordionTrigger>
                 <AccordionContent className="space-y-6 text-base leading-relaxed">
                   <div>
                     <h4 className="text-xl font-semibold text-brand-blue mb-3">Overview and Strategic Framework</h4>
@@ -300,10 +289,9 @@ const ThreeStageDcf = () => {
                       <strong>Cross-Model Comparison:</strong> Validate assumptions and results against other investment analysis models in the toolkit to ensure consistency and identify potential analytical gaps.
                     </p>
                   </div>
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
-          </div>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </div>
     </div>
