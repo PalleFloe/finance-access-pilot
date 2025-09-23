@@ -35,10 +35,10 @@ const InvestmentAnalysis = () => {
       status: "available",
     },
     {
-      name: "Two and Three Stages DCF Models",
-      description: "",
+      name: "Three Stages DCF Model",
+      description: "Multi-stage Analysis: DCF Valuation with Distinct Performance Stage Characteristics",
       href: "/toolbox/investment-analysis/two-and-three-stages-dcf-models",
-      status: "coming soon",
+      status: "available",
     },
     {
       name: "Cost Reduction DCF Model",
