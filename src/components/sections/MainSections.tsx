@@ -85,7 +85,7 @@ const MainSections = () => {
                 {/* Checkmarks credibility statement */}
                 <div className="text-center py-6">
                   <div className="font-garamond text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-rich-emerald">
-                    ✓ Professional & Proven ✓ Wide Range ✓ Models are free-to-use
+                    ✓ Professional & Proven ✓ Wide Range ✓ Models are Free-to-Use
                   </div>
                 </div>
               </CardContent>
