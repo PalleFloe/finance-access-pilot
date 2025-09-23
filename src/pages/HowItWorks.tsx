@@ -114,60 +114,64 @@ const HowItWorks = () => {
     isModelTier?: boolean;
   };
 
-  const TierBox = ({ tier }: { tier: TierType }) => (
-    <div className="bg-white border border-slate-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-5 flex flex-col relative w-full max-w-full overflow-hidden" style={{ boxShadow: '0 10px 25px rgba(0,0,0,0.12)' }}>
-      {tier.badge && (
-        <div className="absolute -top-3 -right-3 z-10">
-          <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
-            <Clock className="w-3 h-3 mr-1" />
-            {tier.badge.text}
-          </Badge>
-        </div>
-      )}
-      
-      <h3 
-        className={`${tier.isModelTier ? 'text-xl sm:text-2xl md:text-3xl font-bold' : 'text-xl sm:text-2xl md:text-3xl font-bold'} leading-tight break-words mb-3`}
-        style={{ fontFamily: 'Garamond, serif', color: '#326496' }}
+  const TierBox = ({ tier }: { tier: TierType }) => {
+    const getLink = () => {
+      if (tier.isModelTier) {
+        return "/toolbox";
+      } else {
+        return "/contact";
+      }
+    };
+
+    const handleClick = (e: React.MouseEvent) => {
+      if (tier.isConsultation && !tier.disabled) {
+        e.preventDefault();
+        setIsConsultationOpen(true);
+      }
+    };
+
+    return (
+      <Link 
+        to={tier.disabled ? "#" : getLink()} 
+        onClick={handleClick}
+        className={`group block ${tier.disabled ? 'cursor-not-allowed' : 'cursor-pointer'}`}
       >
-        {tier.isModelTier ? `${tier.label}: ${tier.title}` : tier.title}
-      </h3>
-      
-      <ul className="flex-grow mb-4 space-y-1">
-        {tier.bullets.map((bullet, index) => (
-          <li 
-            key={index} 
-            className={`${tier.isModelTier ? 'text-xl' : 'text-lg'} leading-relaxed flex items-start`}
-            style={{ fontFamily: 'Garamond, serif', color: '#666666' }}
+        <div 
+          className="border border-slate-200 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col relative w-full max-w-full overflow-hidden h-full" 
+          style={{ backgroundColor: '#08305C' }}
+        >
+          {tier.badge && (
+            <div className="absolute -top-3 -right-3 z-10">
+              <Badge className="bg-orange-500 text-white border-orange-400 shadow-sm">
+                <Clock className="w-3 h-3 mr-1" />
+                {tier.badge.text}
+              </Badge>
+            </div>
+          )}
+          
+          <h3 
+            className={`${tier.isModelTier ? 'text-xl sm:text-2xl md:text-3xl font-bold' : 'text-xl sm:text-2xl md:text-3xl font-bold'} leading-tight break-words mb-4`}
+            style={{ fontFamily: 'Garamond, serif', color: '#FFB445' }}
           >
-            <span className="text-slate-400 mr-2 mt-1 flex-none">•</span>
-            <span className="flex-1 min-w-0 break-words">{bullet}</span>
-          </li>
-        ))}
-      </ul>
-      
-      <Button
-        onClick={tier.isConsultation ? () => setIsConsultationOpen(true) : undefined}
-        asChild={!tier.disabled && !tier.isConsultation}
-        disabled={tier.disabled}
-        variant={tier.disabled ? undefined : "rich-emerald"}
-        size="lg"
-        className={`w-full ${tier.isModelTier ? 'text-3xl font-semibold' : 'text-2xl font-semibold'} ${
-          tier.disabled 
-            ? 'cursor-not-allowed hover:bg-[#808080]' 
-            : ''
-        }`}
-        style={tier.disabled ? { backgroundColor: '#808080', color: 'white' } : {}}
-      >
-        {tier.disabled ? (
-          <span>{tier.buttonText}</span>
-        ) : tier.isConsultation ? (
-          <span>{tier.buttonText}</span>
-        ) : (
-          <Link to={tier.buttonLink}>{tier.buttonText}</Link>
-        )}
-      </Button>
-    </div>
-  );
+            {tier.isModelTier ? `${tier.label}: ${tier.title}` : `${tier.label}: ${tier.title}`}
+          </h3>
+          
+          <ul className="flex-grow space-y-2">
+            {tier.bullets.map((bullet, index) => (
+              <li 
+                key={index} 
+                className={`${tier.isModelTier ? 'text-xl' : 'text-lg'} leading-relaxed flex items-start`}
+                style={{ fontFamily: 'Garamond, serif', color: '#FFB445' }}
+              >
+                <span className="mr-2 mt-1 flex-none" style={{ color: '#FFB445' }}>•</span>
+                <span className="flex-1 min-w-0 break-words">{bullet}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Link>
+    );
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 overflow-x-hidden">
