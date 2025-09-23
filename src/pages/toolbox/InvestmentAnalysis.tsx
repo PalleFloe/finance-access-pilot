@@ -84,32 +84,32 @@ const InvestmentAnalysis = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {models.map((model) => (
-              <Card key={model.name} className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full min-h-[320px]">
-                {model.status === "coming soon" && (
-                  <div className="absolute -top-3 -right-3 z-10">
-                    <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
-                      <Clock className="w-3 h-3 mr-1" />
-                      Coming Soon
-                    </Badge>
-                  </div>
-                )}
-                <CardHeader className="flex-1 flex flex-col p-6">
-                  <CardTitle className="text-2xl font-semibold mb-3">
-                    {model.name}
-                  </CardTitle>
-                  <CardDescription className="text-lg flex-1 min-h-[72px] flex items-start">
-                    {model.description || " "}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="p-6 pt-4 mt-auto">
-                  <Link to={model.href}>
+              <Link key={model.name} to={model.href} className="group">
+                <Card className="shadow-lg border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col h-full min-h-[320px] cursor-pointer" style={{ backgroundColor: '#08305C' }}>
+                  {model.status === "coming soon" && (
+                    <div className="absolute -top-3 -right-3 z-10">
+                      <Badge className="bg-orange-500 text-white border-orange-400 shadow-sm">
+                        <Clock className="w-3 h-3 mr-1" />
+                        Coming Soon
+                      </Badge>
+                    </div>
+                  )}
+                  <CardHeader className="flex-1 flex flex-col p-6">
+                    <CardTitle className="text-2xl font-semibold mb-3" style={{ color: '#FFB445' }}>
+                      {model.name}
+                    </CardTitle>
+                    <CardDescription className="text-lg flex-1 min-h-[72px] flex items-start" style={{ color: '#FFB445' }}>
+                      {model.description || " "}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="p-6 pt-4 mt-auto">
                     <Button variant="rich-emerald" size="lg" className="w-full text-lg">
                       {model.status === "coming soon" ? "Learn More" : "Go to Model"}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
-                  </Link>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
 
