@@ -23,87 +23,63 @@ const ToolboxSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Business Type Categories */}
-          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full">
-            <CardHeader className="flex-grow">
-              <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold">
-                <span>Startup Valuations</span>
-              </CardTitle>
-              <CardDescription className="text-base md:text-lg">
-                Models for early-stage business valuation and investment decisions
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="mt-auto">
-              <Link to="/toolbox/startup-valuations">
-                <Button variant="rich-emerald" size="lg" className="w-full text-base md:text-lg">
-                  Explore Models
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-              </Link>
-            </CardContent>
-          </Card>
+          <Link to="/toolbox/startup-valuations" className="block">
+            <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col h-full cursor-pointer" style={{backgroundColor: '#08305C'}}>
+              <CardHeader className="flex-grow">
+                <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFB445'}}>
+                  <span>Startup Valuations</span>
+                </CardTitle>
+                <CardDescription className="text-base md:text-lg" style={{color: '#FFB445'}}>
+                  Models for early-stage business valuation and investment decisions
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </Link>
 
-          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full">
-            <div className="absolute -top-3 -right-3 z-10">
-              <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
-                <Clock className="w-3 h-3 mr-1" />
-                Coming Soon
-              </Badge>
-            </div>
-            <CardHeader className="flex-grow">
-              <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold">
-                <span>Business Strategy</span>
-              </CardTitle>
-              <CardDescription className="text-base md:text-lg">
-                Models for strategic planning, decision-making and scenario analysis
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="mt-auto">
-              <Link to="/toolbox/business-strategy">
-                <Button variant="rich-emerald" size="lg" className="w-full text-base md:text-lg">
-                  Explore Models
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-              </Link>
-            </CardContent>
-          </Card>
+          <Link to="/toolbox/business-strategy" className="block">
+            <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col h-full cursor-pointer" style={{backgroundColor: '#08305C'}}>
+              <div className="absolute -top-3 -right-3 z-10">
+                <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm">
+                  <Clock className="w-3 h-3 mr-1" />
+                  Coming Soon
+                </Badge>
+              </div>
+              <CardHeader className="flex-grow">
+                <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFB445'}}>
+                  <span>Business Strategy</span>
+                </CardTitle>
+                <CardDescription className="text-base md:text-lg" style={{color: '#FFB445'}}>
+                  Models for strategic planning, decision-making and scenario analysis
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </Link>
 
-          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full">
-            <CardHeader className="flex-grow">
-              <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold">
-                <span>Investment Analysis</span>
-              </CardTitle>
-              <CardDescription className="text-base md:text-lg">
-                DCF Models for investment analysis and decisions
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="mt-auto">
-              <Link to="/toolbox/investment-analysis">
-                <Button variant="rich-emerald" size="lg" className="w-full text-base md:text-lg">
-                  Explore Models
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-              </Link>
-            </CardContent>
-          </Card>
+          <Link to="/toolbox/investment-analysis" className="block">
+            <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col h-full cursor-pointer" style={{backgroundColor: '#08305C'}}>
+              <CardHeader className="flex-grow">
+                <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFB445'}}>
+                  <span>Investment Analysis</span>
+                </CardTitle>
+                <CardDescription className="text-base md:text-lg" style={{color: '#FFB445'}}>
+                  DCF Models for investment analysis and decisions
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </Link>
 
-          <Card className="shadow-lg border-slate-200 hover:shadow-xl transition-shadow relative flex flex-col h-full">
-            <CardHeader className="flex-grow">
-              <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold">
-                <span>Fundamentals</span>
-              </CardTitle>
-              <CardDescription className="text-base md:text-lg">
-                Models for mainly educational and inspirational purposes  
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="mt-auto">
-              <Link to="/toolbox/financial-fundamentals">
-                <Button variant="rich-emerald" size="lg" className="w-full text-base md:text-lg">
-                  Explore Models
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-              </Link>
-            </CardContent>
-          </Card>
+          <Link to="/toolbox/financial-fundamentals" className="block">
+            <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col h-full cursor-pointer" style={{backgroundColor: '#08305C'}}>
+              <CardHeader className="flex-grow">
+                <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFB445'}}>
+                  <span>Fundamentals</span>
+                </CardTitle>
+                <CardDescription className="text-base md:text-lg" style={{color: '#FFB445'}}>
+                  Models for mainly educational and inspirational purposes  
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </Link>
         </div>
 
         {/* Information Boxes */}
