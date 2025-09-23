@@ -48,7 +48,7 @@ const ThreeStageDcf = () => {
           </h2>
 
           {/* Model Card */}
-          <Card className="max-w-md mx-auto shadow-lg border-slate-200 mb-8">
+          <Card className="max-w-md shadow-lg border-slate-200 mb-8">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl font-semibold text-brand-blue mb-2">
                 Three Stage DCF Model
