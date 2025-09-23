@@ -61,7 +61,7 @@ const EarningGrowthEstimator = () => {
             <CardContent className="space-y-3">
               <Button 
                 onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ebc312DVugxGoVALT0bkzGABlI7_-V4eCC9hGSIQDeWQMw?e=WNQRZd&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-                variant="brand-green"
+                variant="model-blue"
                 className="w-full text-lg"
               >
                 <ExternalLink className="w-4 h-4 mr-2" />

@@ -61,7 +61,7 @@ const StableGrowthTerminalValueDcf = () => {
             <CardContent className="space-y-3">
               <Button 
                 onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EQheIJ2rfolBolvkGbfyaroBPUl7UNNc5VeEgga4eevhWQ?e=tTNQwY&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-                variant="brand-green"
+                variant="model-blue"
                 size="lg"
                 className="w-full text-lg"
               >

@@ -61,7 +61,7 @@ const ProjectScenarioModel = () => {
             <CardContent className="space-y-3">
               <Button 
                 onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EbH9QALmQZlNu8rW8zRc8m8BE6qEoC40c7ajqL0M9L8cbg?e=zGj8NG&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-                variant="brand-green"
+                variant="model-blue"
                 className="w-full text-lg"
               >
                 <ExternalLink className="w-4 h-4 mr-2" />

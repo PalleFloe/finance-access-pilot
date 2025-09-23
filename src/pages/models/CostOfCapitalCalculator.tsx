@@ -61,7 +61,7 @@ const CostOfCapitalCalculator = () => {
             <CardContent className="space-y-3">
               <Button 
                 onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EVkvhpPhgkxJuF1w-9PLuz8Bo1zDaE_ru45Eo2jn4TaGxg?e=yKJKzJ&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-                variant="brand-green"
+                variant="model-blue"
                 className="w-full text-lg"
               >
                 <ExternalLink className="w-4 h-4 mr-2" />

@@ -62,7 +62,7 @@ const DecisionAnalysis = () => {
             <Button 
               onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ec0xs4OOqUxMg0hLspLD-2IBuoWf79XYTff0ensV5KfEpA?e=WCqUCw&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
               className="w-full text-lg"
-              variant="brand-green"
+              variant="model-blue"
               size="lg"
             >
               <ExternalLink className="mr-2 h-4 w-4" />

@@ -61,7 +61,7 @@ const BerkusValuation = () => {
             <CardContent className="space-y-3">
               <Button 
                 onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ER7BObBFTKtJhglZtgmnA-QBRnr-Jd_A9JTdudvqlvczMQ?e=xs1NMY&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-                variant="brand-green"
+                variant="model-blue"
                 size="lg"
                 className="w-full text-lg"
               >

@@ -61,7 +61,7 @@ const PresentValueCalculator = () => {
             <CardContent className="space-y-3">
               <Button 
                 onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaPDetoIDkpAgcPK3Gx7PXwBJKT5-_sW3v17_uDrr5GeZw?e=cEd2nb&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-                variant="brand-green"
+                variant="model-blue"
                 className="w-full text-lg"
               >
                 <ExternalLink className="w-4 h-4 mr-2" />

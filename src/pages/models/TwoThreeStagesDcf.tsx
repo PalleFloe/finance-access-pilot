@@ -45,7 +45,7 @@ const TwoThreeStagesDcf = () => {
             We're working hard to bring you this model. Stay tuned!
           </p>
           
-          <Button variant="outline" asChild>
+          <Button variant="model-blue" asChild>
             <Link to="/toolbox/investment-analysis">Learn More</Link>
           </Button>
         </div>

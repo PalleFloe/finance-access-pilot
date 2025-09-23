@@ -62,7 +62,7 @@ const SaasUnitEconomics = () => {
             <Button 
               onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EZHz3u_o0lJEv4VCopSNy0oB5biHkbiEULKqCb8phQxgEw?e=kHu9Yr&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
               className="w-full text-lg"
-              variant="brand-green"
+              variant="model-blue"
               size="lg"
             >
               <ExternalLink className="mr-2 h-4 w-4" />
