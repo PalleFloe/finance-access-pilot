@@ -60,7 +60,7 @@ const StableGrowthFiniteLifeDcf = () => {
             </CardHeader>
             <CardContent className="space-y-3">
               <Button 
-                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EVurkzee9XVBiGroqpadhMoBdbKpS-uhn_cOVI6KOcIJcw?e=uRB4bq&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ef06hfBMNWhDqdojPqaY5GIBOfLdFI-2ckzJeUrCxBU4Ug?e=mBuxKR&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                 variant="model-blue"
                 size="lg"
                 className="w-full text-lg"
@@ -69,7 +69,7 @@ const StableGrowthFiniteLifeDcf = () => {
                 Online & View
               </Button>
               <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETmwWbg3hvJIlWk00vJKV-YB9RBNKET_cCh2ym6o0Hq2jw?e=XoBEf9"
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYMfvk70fDxJu3IKJUMYzfABM9Qx9qoTynBrMBvcOZleAw?e=Zugont"
                 modelName="Stable Growth - Finite-Life DCF Model"
                 className="w-full"
               />

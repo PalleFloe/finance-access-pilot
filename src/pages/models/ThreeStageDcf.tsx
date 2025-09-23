@@ -14,7 +14,7 @@ const ThreeStageDcf = () => {
 
   const openModel = () => {
     trackOnlineOpen('Three Stage DCF Model');
-    const url = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ec04wrAndQtCriekJrQ5dtwBA_SkoypTrAh8de8yI5Iv9Q?e=3v5qmu&action=embedview';
+    const url = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ec04wrAndQtCriekJrQ5dtwBA_SkoypTrAh8de8yI5Iv9Q?e=3v5qmu&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False';
     window.open(url, '_blank');
   };
 
