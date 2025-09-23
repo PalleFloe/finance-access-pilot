@@ -138,7 +138,7 @@ const HowItWorks = () => {
       >
         <div 
           className="border border-slate-200 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col relative w-full max-w-full h-full" 
-          style={{ backgroundColor: '#08305C' }}
+          style={{ backgroundColor: '#326496' }}
         >
           {tier.badge && (
             <div className="absolute -top-3 -right-3 z-20">

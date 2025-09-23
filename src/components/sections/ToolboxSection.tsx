@@ -24,7 +24,7 @@ const ToolboxSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Business Type Categories */}
           <Link to="/toolbox/startup-valuations" className="block">
-            <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative cursor-pointer w-80 h-40" style={{backgroundColor: '#08305C'}}>
+            <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative cursor-pointer w-80 h-40" style={{backgroundColor: '#326496'}}>
               <CardHeader className="h-full flex flex-col justify-center">
                 <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFB445'}}>
                   <span>Startup Valuations</span>
@@ -37,7 +37,7 @@ const ToolboxSection = () => {
           </Link>
 
           <Link to="/toolbox/business-strategy" className="block">
-            <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative cursor-pointer w-80 h-40" style={{backgroundColor: '#08305C'}}>
+            <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative cursor-pointer w-80 h-40" style={{backgroundColor: '#326496'}}>
               <div className="absolute -top-3 -right-3 z-20">
                 <Badge className="bg-orange-500 text-white border-orange-400 shadow-lg">
                   <Clock className="w-3 h-3 mr-1" />
@@ -56,7 +56,7 @@ const ToolboxSection = () => {
           </Link>
 
           <Link to="/toolbox/investment-analysis" className="block">
-            <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative cursor-pointer w-80 h-40" style={{backgroundColor: '#08305C'}}>
+            <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative cursor-pointer w-80 h-40" style={{backgroundColor: '#326496'}}>
               <CardHeader className="h-full flex flex-col justify-center">
                 <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFB445'}}>
                   <span>Investment Analysis</span>
@@ -69,7 +69,7 @@ const ToolboxSection = () => {
           </Link>
 
           <Link to="/toolbox/financial-fundamentals" className="block">
-            <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative cursor-pointer w-80 h-40" style={{backgroundColor: '#08305C'}}>
+            <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative cursor-pointer w-80 h-40" style={{backgroundColor: '#326496'}}>
               <CardHeader className="h-full flex flex-col justify-center">
                 <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFB445'}}>
                   <span>Fundamentals</span>
