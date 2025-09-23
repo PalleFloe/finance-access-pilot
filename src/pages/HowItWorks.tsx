@@ -137,12 +137,12 @@ const HowItWorks = () => {
         className={`group block ${tier.disabled ? 'cursor-not-allowed' : 'cursor-pointer'}`}
       >
         <div 
-          className="border border-slate-200 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col relative w-full max-w-full overflow-hidden h-full" 
+          className="border border-slate-200 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col relative w-full max-w-full h-full" 
           style={{ backgroundColor: '#08305C' }}
         >
           {tier.badge && (
-            <div className="absolute -top-3 -right-3 z-10">
-              <Badge className="bg-orange-500 text-white border-orange-400 shadow-sm">
+            <div className="absolute -top-3 -right-3 z-20">
+              <Badge className="bg-orange-500 text-white border-orange-400 shadow-lg">
                 <Clock className="w-3 h-3 mr-1" />
                 {tier.badge.text}
               </Badge>
