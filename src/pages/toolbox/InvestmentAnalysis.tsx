@@ -35,7 +35,7 @@ const InvestmentAnalysis = () => {
       status: "available",
     },
     {
-      name: "Three Stages DCF Model",
+      name: "Three Stage DCF Model",
       description: "Multi-stage Analysis: DCF Valuation with Distinct Performance Stage Characteristics",
       href: "/toolbox/investment-analysis/three-stage-dcf-model",
       status: "available",
@@ -76,7 +76,7 @@ const InvestmentAnalysis = () => {
             Professional Investment Analysis Models
           </h1>
             <h2 className="text-2xl md:text-3xl text-brand-blue mb-6">
-            Comprehensive Investment Analysis Toolbox: Proven DCF Methods for Capital Allocation and Project Evaluation
+            Proven and Structured DCF Models for Investment Evaluation and Decision-Making with Scenario and Sensitivity Analysis
           </h2>
           <p className="text-lg text-slate-600 mb-8 leading-relaxed">
             Explore our investment analysis models to make informed capital allocation decisions.
