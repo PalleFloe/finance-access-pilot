@@ -30,7 +30,7 @@ const MainSections = () => {
                   <div className="flex justify-between items-center gap-4">
                     <Link to="/toolbox/startup-valuations" className="block">
                       <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative cursor-pointer w-72 h-40" style={{backgroundColor: '#08305C'}}>
-                        <CardHeader className="h-full flex flex-col justify-center">
+                        <CardHeader className="h-full flex flex-col justify-center p-3">
                           <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFB445'}}>
                             <span>Startup Valuations</span>
                           </CardTitle>
@@ -43,7 +43,7 @@ const MainSections = () => {
 
                     <Link to="/toolbox/business-strategy" className="block">
                       <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative cursor-pointer w-72 h-40" style={{backgroundColor: '#08305C'}}>
-                        <CardHeader className="h-full flex flex-col justify-center">
+                        <CardHeader className="h-full flex flex-col justify-center p-3">
                           <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFB445'}}>
                             <span>Business Strategy</span>
                           </CardTitle>
@@ -56,7 +56,7 @@ const MainSections = () => {
 
                     <Link to="/toolbox/investment-analysis" className="block">
                       <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative cursor-pointer w-72 h-40" style={{backgroundColor: '#08305C'}}>
-                        <CardHeader className="h-full flex flex-col justify-center">
+                        <CardHeader className="h-full flex flex-col justify-center p-3">
                           <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFB445'}}>
                             <span>Investment Analysis</span>
                           </CardTitle>
@@ -69,7 +69,7 @@ const MainSections = () => {
 
                     <Link to="/toolbox/financial-fundamentals" className="block">
                       <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative cursor-pointer w-72 h-40" style={{backgroundColor: '#08305C'}}>
-                        <CardHeader className="h-full flex flex-col justify-center">
+                        <CardHeader className="h-full flex flex-col justify-center p-3">
                           <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFB445'}}>
                             <span>Fundamentals</span>
                           </CardTitle>
