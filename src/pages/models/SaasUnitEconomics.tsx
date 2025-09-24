@@ -60,7 +60,7 @@ const SaasUnitEconomics = () => {
           
           <div className="space-y-3">
             <Button 
-              onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EZHz3u_o0lJEv4VCopSNy0oB5biHkbiEULKqCb8phQxgEw?e=kHu9Yr&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+              onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ealn2asfI9lNvDNJxDjMnMUBO_1sOcyJbjeWIXbAn8pZ0Q?e=Hrjiaw&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
               className="w-full text-lg"
               variant="model-blue"
               size="lg"
@@ -70,7 +70,7 @@ const SaasUnitEconomics = () => {
             </Button>
             
               <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EZmf8mnA49VLhzesnhZSKP4BiKu67xYw_KelxQ8dPeRW8w?e=lQE2Lj"
+                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EdeifZ8XjVdOmKEVJ2zhc2oBZMOGOmY_E0jpQMTk6goMuQ?e=tmmnAB"
                 modelName="SaaS Unit Economics Model"
               className="w-full"
             />
