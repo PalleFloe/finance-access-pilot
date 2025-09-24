@@ -48,7 +48,7 @@ const FirstChicagoValuation = () => {
         </h1>
 
         <p className="text-lg text-slate-600 leading-relaxed mb-8">
-          Simple Scenario Based DCF Model for Startup Valuation with Exit Value based on both EBITDA and Revenue
+          Scenario Based DCF Model for Startup Valuation: Specifically focusing on Exit Value based on both Profit and Revenue
         </p>
       </div>
 

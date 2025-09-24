@@ -35,7 +35,7 @@ const StartupValuations = () => {
     },
     {
       name: "First Chicago Valuation Model",
-      description: "Simple Scenario Based DCF Model for Startup Valuation with Exit Value based on both EBITDA and Revenue",
+      description: "Scenario Based DCF Model for Startup Valuation: Specifically focusing on Exit Value based on both Profit and Revenue",
       href: "/toolbox/startup-valuations/first-chicago-method",
       status: "available",
     },
