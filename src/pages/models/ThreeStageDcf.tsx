@@ -70,7 +70,7 @@ const ThreeStageDcf = () => {
                 size="lg"
                 className="w-full text-lg"
               >
-                <Link to="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaEwRe6b9sFMtFbFnCcX3bsBpONF4e76IIGoo5TACP1d6g?e=X0fV7H" target="_blank">
+                <Link to="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ea241lXv391GqP_l0MybwvABAscjLi_idFozsNy2A9JrCA?e=kQ0oho" target="_blank">
                   <ArrowRight className="w-4 h-4 mr-2" />
                   Download & Use
                 </Link>
