@@ -40,7 +40,7 @@ const AboutSection = () => {
                     chance to shine rather than hide them in my shadow.
                   </p>
                   <h2 className="text-lg font-bold text-primary mb-4 font-garamond">
-                    Why I founded Financial Decision Models
+                    So why I founded Financial Decision Models
                   </h2>
                   <p className="font-garamond">
                     After two decades of wrestling with complex, unintuitive models that often gave precisely the wrong results, I knew there had to be a better way.
@@ -49,13 +49,19 @@ const AboutSection = () => {
                     <strong>The problem was clear:</strong> Most financial models are either oversimplified templates or overly complex black boxes that obscure rather than enable decision-making. Business leaders need tools that are sophisticated enough to be credible, yet intuitive enough to actually use.
                   </p>
                   <p className="font-garamond">
-                    <strong>My solution:</strong> Create a best-in-class, business-minded Financial Decision Model toolbox that turns complex financial choices into structured insights and better business decisions.
+                    <strong>My solution:</strong> Create a best-in-class, business-minded models that turns complex financial choices into structured insights and better business decisions
                   </p>
                   <p className="font-garamond">
-                    <strong>But it's not just about the tools.</strong> I also want to inspire and help you make better financial models yourself. That's why I've made the models widely available - some freely viewable in your browser, others available as downloads.
+                    <strong>But it's not just about the tools.</strong> I also want to inspire and help you make better financial models yourself. That's why I've made all models freely available – both as viewable in your browser and as ready-to-use downloads. Free models are Excel protected.
                   </p>
                   <p className="font-garamond">
-                    <strong>The balance of access and protection</strong> is something I continue to refine. For now, check out the <Link to="/how-it-works" className="text-primary hover:underline font-medium">"How It Works"</Link> page to see the current approach.
+                    <strong>The balance of access and protection</strong> is something I continue to consider. For now, check out the <Link to="/how-it-works" className="text-primary hover:underline font-medium">"How It Works"</Link> page to see the current approach.
+                  </p>
+                  <p className="font-garamond">
+                    You can buy any of the models for you to fully customize to your own preferences. A setup is planned check out the <Link to="/how-it-works" className="text-primary hover:underline font-medium">"How It Works"</Link>. Until then, please reach out to me if you're interested.
+                  </p>
+                  <p className="font-garamond">
+                    Your input and perspectives would be incredibly helpful to me. Whether is on the website, the models or any others related topics.
                   </p>
                 </div>
               </div>
