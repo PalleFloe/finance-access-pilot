@@ -18,7 +18,7 @@ const AboutSection = () => {
               </div>
               <div className="flex-1">
                 <h4 className="text-2xl md:text-3xl font-semibold mb-6 text-brand-blue">
-                  About Profile
+                  About Me
                 </h4>
                 <div className="space-y-4 text-xl text-slate-700 leading-relaxed text-left">
                   <p>
@@ -39,7 +39,7 @@ const AboutSection = () => {
                     <strong>I'm direct and open-minded, not afraid to challenge status quo constructively.</strong> I give people the 
                     chance to shine rather than hide them in my shadow.
                   </p>
-                  <h2 className="text-lg font-bold text-primary mb-4 font-garamond">
+                  <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-brand-blue">
                     So why I founded Financial Decision Models
                   </h2>
                   <p className="font-garamond">
