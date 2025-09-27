@@ -36,7 +36,7 @@ const Contact = () => {
                 <h2 className="text-lg font-semibold text-brand-blue mb-2">E-mail:</h2>
                 <a 
                   href="mailto:Palle@financialdecisionmodels.com" 
-                  className="text-lg text-primary hover:underline"
+                  className="text-lg text-slate-700 hover:underline"
                 >
                   Palle@financialdecisionmodels.com
                 </a>
@@ -48,7 +48,7 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/palle-fl%C3%B8e-nielsen-97ab7211/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-lg text-primary hover:underline"
+                  className="text-lg text-slate-700 hover:underline"
                 >
                   LinkedIn Profile
                 </a>
