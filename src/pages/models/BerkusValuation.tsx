@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
+import Footer from "@/components/sections/Footer";
 import DownloadButton from "@/components/DownloadButton";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
@@ -321,6 +322,7 @@ const BerkusValuation = () => {
           </Accordion>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
