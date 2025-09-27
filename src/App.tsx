@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -42,6 +43,30 @@ import DesignSuggestions from "./pages/DesignSuggestions";
 
 const App = () => (
   <TooltipProvider>
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Palle Fløe Nielsen",
+          "jobTitle": "Former Divisional CFO",
+          "alumniOf": {
+            "@type": "Organization",
+            "name": "Novonesis"
+          },
+          "knowsAbout": [
+            "DCF Analysis",
+            "Financial Modeling",
+            "Investment Evaluation", 
+            "Business Case Development",
+            "Startup Valuation",
+            "SaaS Metrics",
+            "Strategic Financial Decisions",
+            "Excel Financial Models"
+          ]
+        })}
+      </script>
+    </Helmet>
     <Toaster />
     <Sonner />
     <BrowserRouter>
