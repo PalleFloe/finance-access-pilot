@@ -44,6 +44,10 @@ import DesignSuggestions from "./pages/DesignSuggestions";
 const App = () => (
   <TooltipProvider>
     <Helmet>
+      <meta name="author" content="Palle Fløe Nielsen, Former Divisional CFO" />
+      <meta name="description" content="Professional Excel financial models for DCF valuation, startup analysis, and investment decisions. Created by former Divisional CFO with 20+ years experience." />
+      <meta property="article:author" content="Palle Fløe Nielsen" />
+      <meta name="keywords" content="Excel financial models, DCF valuation, startup valuation, investment analysis" />
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
