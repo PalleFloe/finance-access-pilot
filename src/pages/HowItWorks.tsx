@@ -189,15 +189,7 @@ const HowItWorks = () => {
           </h1>
           
           <p className="text-[28px] text-slate-600 mb-8">
-            Choose your path to better financial decisions
-          </p>
-          
-          <p className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-6">
-            We offer multiple ways to access and use our financial models, from free online viewing to full ownership. 
-            Start with our free tiers to explore, learn and get inspired.
-          </p>
-          
-          <p className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-10">
+            Choose your path to better financial decisions. Start with our free tiers to explore, learn and get inspired. <br />
             If that is not enough for you, then you can always upgrade.
           </p>
         </div>
