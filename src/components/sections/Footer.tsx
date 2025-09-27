@@ -1,9 +1,31 @@
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { Helmet } from "react-helmet-async";
 
 const Footer = () => {
   return (
-    <footer className="border-t bg-background">
+    <>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Palle Fløe Nielsen",
+            "jobTitle": "Former Divisional CFO",
+            "alumniOf": "Novonesis",
+            "knowsAbout": [
+              "Financial Modeling",
+              "Investment Analysis", 
+              "Business Finance",
+              "Corporate Finance",
+              "Valuation"
+            ],
+            "description": "Financial modeling expert with 20+ years in business finance",
+            "url": "https://www.financialdecisionmodels.com/about"
+          })}
+        </script>
+      </Helmet>
+      <footer className="border-t bg-background">
       <div className="container mx-auto px-6 py-8">
         <div className="flex flex-col items-center space-y-4">
           
@@ -19,6 +41,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };
 
