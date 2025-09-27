@@ -192,9 +192,13 @@ const HowItWorks = () => {
             Choose your path to better financial decisions
           </p>
           
-          <p className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-10">
+          <p className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-6">
             We offer multiple ways to access and use our financial models, from free online viewing to full ownership. 
-            Start with our free tiers to explore, learn and get inspired. If that is not enough for you, then you can always upgrade.
+            Start with our free tiers to explore, learn and get inspired.
+          </p>
+          
+          <p className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-10">
+            If that is not enough for you, then you can always upgrade.
           </p>
         </div>
 
