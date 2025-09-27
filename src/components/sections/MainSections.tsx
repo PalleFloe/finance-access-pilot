@@ -82,10 +82,10 @@ const MainSections = () => {
                   </div>
                 </div>
 
-                {/* Checkmarks credibility statement */}
+                {/* Credibility statement */}
                 <div className="text-center py-6">
-                  <div className="font-garamond text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-normal text-rich-emerald">
-                    ✓ Professional & Proven ✓ Wide Range ✓ Models are Free-to-Use
+                  <div className="font-garamond text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-normal" style={{color: '#326496'}}>
+                    Professional & Proven | Wide Range of Models | Free-to-Use
                   </div>
                 </div>
               </CardContent>
