@@ -52,6 +52,37 @@ const EarningGrowthEstimator = () => {
             }]
           })}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.financialdecisionmodels.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Toolbox",
+                "item": "https://www.financialdecisionmodels.com/toolbox"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Financial Fundamentals",
+                "item": "https://www.financialdecisionmodels.com/toolbox/financial-fundamentals"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Earning Growth Estimator"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <Header />
       

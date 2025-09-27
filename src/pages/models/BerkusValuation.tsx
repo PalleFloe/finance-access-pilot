@@ -51,6 +51,37 @@ const BerkusValuation = () => {
             }]
           })}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.financialdecisionmodels.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Toolbox",
+                "item": "https://www.financialdecisionmodels.com/toolbox"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Startup Valuations",
+                "item": "https://www.financialdecisionmodels.com/toolbox/startup-valuations"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Berkus Valuation Model"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <Header />
       

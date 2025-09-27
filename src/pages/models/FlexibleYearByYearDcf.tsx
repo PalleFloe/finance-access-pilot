@@ -51,6 +51,37 @@ const FlexibleYearByYearDcf = () => {
             }]
           })}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.financialdecisionmodels.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Toolbox",
+                "item": "https://www.financialdecisionmodels.com/toolbox"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Investment Analysis",
+                "item": "https://www.financialdecisionmodels.com/toolbox/investment-analysis"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Flexible Year by Year DCF Model"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <Header />
       
