@@ -22,46 +22,46 @@ const AboutSection = () => {
                 </h4>
                 <div className="space-y-4 text-xl text-slate-700 leading-relaxed text-left">
                   <p>
-                    My name is <strong>Palle Fløe Nielsen</strong> and I'm based in Copenhagen, Denmark.
+                    I'm <strong>Palle Fløe Nielsen</strong>, based in Copenhagen, Denmark. I left Novonesis (formerly Novozymes) in May 2024 after 20+ years in Business Finance leadership, including divisional CFO roles.
                   </p>
                   <p>
-                    <strong>I'm a finance leader, still curious and focused after all those years;</strong> Whether the challenges have 
-                    been creating performance management capabilities, business improvements and turnarounds, M&A 
-                    integrations and strategic initiatives - always with strong focus on what and how we can make a real 
-                    difference.
+                    Still curious and focused after all these years. I have a strong focus on what and how we can create real value. I'm direct, open-minded, and not afraid to challenge the status quo constructively.
+                  </p>
+                  
+                  <h3 className="text-xl md:text-2xl font-semibold mb-4 text-brand-blue mt-6">
+                    Background
+                  </h3>
+                  <ul className="list-disc list-inside space-y-2 ml-4">
+                    <li>Divisional CFO in global biosolutions and medtech companies</li>
+                    <li>Led Finance integration for €10B+ merger</li>
+                    <li>Developed business cases for €100M+ projects and investments</li>
+                    <li>Specialized in strategic financial decision-making</li>
+                  </ul>
+
+                  <h3 className="text-xl md:text-2xl font-semibold mb-4 text-brand-blue mt-8">
+                    Why I Founded Financial Decision Models
+                  </h3>
+                  <p>
+                    After decades of wrestling with complex, unintuitive models that often gave precisely the wrong results, I knew there had to be a better way.
                   </p>
                   <p>
-                    <strong>With a strong financial toolbox and business acumen,</strong> I connect and de-risk value 
-                    drivers, identify opportunities, find solutions with a <strong>laser focus on value creation</strong>, and consistently 
-                    champion a profitable growth mindset across organizations.
+                    <strong>The problem was clear:</strong> Business leaders need tools that are sophisticated enough to be credible, yet intuitive enough to actually use.
                   </p>
                   <p>
-                    <strong>I'm direct and open-minded, not afraid to challenge status quo constructively.</strong> I give people the 
-                    chance to shine rather than hide them in my shadow.
+                    <strong>My solution:</strong> Professional models that turn complex financial choices into structured insights and better business decisions.
                   </p>
-                  <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-brand-blue">
-                    So why I founded Financial Decision Models
-                  </h2>
-                  <p className="font-garamond">
-                    After two decades of wrestling with complex, unintuitive models that often gave precisely the wrong results, I knew there had to be a better way.
+
+                  <h3 className="text-xl md:text-2xl font-semibold mb-4 text-brand-blue mt-8">
+                    What Makes These Models Different
+                  </h3>
+                  <p>
+                    These aren't just Excel templates. Each model reflects methods I've refined over two decades, inspired by world-class academics and practitioners - simplified for clarity while maintaining analytical rigor.
                   </p>
-                  <p className="font-garamond">
-                    <strong>The problem was clear:</strong> Most financial models are either oversimplified templates or overly complex black boxes that obscure rather than enable decision-making. Business leaders need tools that are sophisticated enough to be credible, yet intuitive enough to actually use.
+                  <p>
+                    All models are free to view online. Free to download and use after registration. Free models are Excel-protected. Full ownership versions can be purchased.
                   </p>
-                  <p className="font-garamond">
-                    <strong>My solution:</strong> Create a best-in-class, business-minded models that turns complex financial choices into structured insights and better business decisions
-                  </p>
-                  <p className="font-garamond">
-                    <strong>But it's not just about the tools.</strong> I also want to inspire and help you make better financial models yourself. That's why I've made all models freely available – both as viewable in your browser and as ready-to-use downloads. Free models are Excel protected.
-                  </p>
-                  <p className="font-garamond">
-                    <strong>The balance of access and protection</strong> is something I continue to consider. For now, check out the <Link to="/how-it-works" className="text-primary hover:underline font-medium">"How It Works"</Link> page to see the current approach.
-                  </p>
-                  <p className="font-garamond">
-                    You can buy any of the models for you to fully customize to your own preferences. A setup is planned check out the <Link to="/how-it-works" className="text-primary hover:underline font-medium">"How It Works"</Link>. Until then, please reach out to me if you're interested.
-                  </p>
-                  <p className="font-garamond">
-                    Your input and perspectives would be incredibly helpful to me. Whether is on the website, the models or any others related topics.
+                  <p>
+                    Your input and perspectives would be incredibly helpful to me. Whether it's on the website, the models, or any related topics.
                   </p>
                 </div>
               </div>
