@@ -13,8 +13,8 @@ const Index = () => {
       <Helmet>
         <title>Financial Decision Models - Professional Financial Tools</title>
         <meta name="description" content="Professional financial decision models and startup valuation tools. Free Excel models in browser plus premium downloads. DCF, venture capital method, and business valuation models for entrepreneurs and investors." />
-        <meta property="og:url" content="https://finance-access-pilot.lovable.app/" />
-        <link rel="canonical" href="https://finance-access-pilot.lovable.app/" />
+        <meta property="og:url" content="https://www.financialdecisionmodels.com/" />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/" />
         <meta property="og:description" content="Professional financial decision models and startup valuation tools. Free Excel models in browser plus premium downloads for entrepreneurs and investors." />
         <meta name="twitter:description" content="Professional financial decision models and startup valuation tools. Free Excel models in browser plus premium downloads for entrepreneurs and investors." />
       </Helmet>
