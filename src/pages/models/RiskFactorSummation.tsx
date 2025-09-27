@@ -17,6 +17,27 @@ const RiskFactorSummation = () => {
       <Helmet>
         <title>Risk Factor Summation - Startup Risk Assessment | Financial Decision Models</title>
         <meta name="description" content="Risk factor summation model for comprehensive startup risk assessment. Excel tool evaluates multiple risk factors with weighted scoring methodology. Professional risk analysis for investment decisions." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What Is the Risk Factor Summation Model?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Risk Factor Summation method adjusts a base valuation by considering various risk factors associated with the startup."
+              }
+            },{
+              "@type": "Question",
+              "name": "Why Use the Risk Factor Summation Model?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This methodology provides a systematic approach to evaluate and quantify the impact of multiple risk factors on startup valuation."
+              }
+            }]
+          })}
+        </script>
       </Helmet>
       <Header />
       

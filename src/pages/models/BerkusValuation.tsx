@@ -30,6 +30,27 @@ const BerkusValuation = () => {
       <Helmet>
         <title>Berkus Valuation Method - Pre-Revenue Startup Model | Financial Decision Models</title>
         <meta name="description" content="Berkus Method startup valuation model for pre-revenue companies. Risk-based Excel tool evaluates idea, prototype, team, relationships, and rollout. Try free online, download interactive version." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage", 
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What Is the Berkus Valuation Model?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Berkus Valuation Model suggests that startup value creation occurs through systematic evaluation of five risk mitigation factors rather than financial performance optimisation."
+              }
+            },{
+              "@type": "Question",
+              "name": "Why Was the Berkus Method Developed?",
+              "acceptedAnswer": {
+                "@type": "Answer", 
+                "text": "Academic research demonstrates that startup financial projections show poor predictive accuracy, with most companies missing initial revenue estimates by huge margins."
+              }
+            }]
+          })}
+        </script>
       </Helmet>
       <Header />
       

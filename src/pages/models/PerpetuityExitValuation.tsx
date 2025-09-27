@@ -30,6 +30,27 @@ const PerpetuityExitValuation = () => {
       <Helmet>
         <title>Perpetuity & Exit Valuation Models - Quick Startup Analysis | Financial Decision Models</title>
         <meta name="description" content="Perpetuity and exit valuation models for quick startup analysis. Four Excel approaches: simple perpetuity, growing perpetuity, two-phase growth, and exit value. Try free online or download." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What Are the Perpetuity & Exit Valuation Models?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Perpetuity & Exit Valuation Models are designed for simple valuation analysis with immediate value driver insights."
+              }
+            },{
+              "@type": "Question",
+              "name": "Why Were These Models Developed?",
+              "acceptedAnswer": {
+                "@type": "Answer", 
+                "text": "Traditional complex valuation analysis often obscures the relationship between key assumptions and outcomes."
+              }
+            }]
+          })}
+        </script>
       </Helmet>
       <Header />
       

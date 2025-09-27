@@ -30,6 +30,27 @@ const StableGrowthTerminalValueDcf = () => {
       <Helmet>
         <title>Stable Growth - Terminal Value DCF Model - Investment Analysis | Financial Decision Models</title>
         <meta name="description" content="Stable Growth DCF analysis with terminal value focus for perpetual asset evaluation. Growth rate sensitivity and comprehensive valuation analysis. Excel tool for long-term investments." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What Is the Stable Growth - Terminal Value DCF Model?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This model values investments that will continue operating beyond any reasonable forecast horizon, requiring perpetual reinvestment to maintain operations."
+              }
+            },{
+              "@type": "Question",
+              "name": "Why Was the Terminal Value DCF Model Developed?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Standard DCF models often overstate terminal values by ignoring ongoing capital requirements."
+              }
+            }]
+          })}
+        </script>
       </Helmet>
       <Header />
       

@@ -30,6 +30,27 @@ const FirstChicagoValuation = () => {
       <Helmet>
         <title>First Chicago Method - Scenario-Based Startup Valuation | Financial Decision Models</title>
         <meta name="description" content="First Chicago startup valuation model with scenario-based DCF analysis. Excel tool models downside, base, and upside cases with probability weighting. Try free online, download full version." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What Is the First Chicago Valuation Model?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The First Chicago Valuation Model is a scenario-based valuation framework originally developed by the venture capital division of First Chicago Bank in 1970."
+              }
+            },{
+              "@type": "Question", 
+              "name": "Why Was the First Chicago Method Developed?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Traditional venture capital methods suffer from optimism bias by projecting only positive outcomes and relying on discount rates to account for risk uncertainty."
+              }
+            }]
+          })}
+        </script>
       </Helmet>
       <Header />
       

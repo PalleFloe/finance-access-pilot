@@ -30,6 +30,27 @@ const FlexibleYearByYearDcf = () => {
       <Helmet>
         <title>Flexible Year by Year DCF Model - Investment Analysis | Financial Decision Models</title>
         <meta name="description" content="Dynamic DCF analysis with year-by-year projections and terminal value options. Flexible growth rates and comprehensive sensitivity analysis. Try free online, download full version." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What Is the Flexible Year by Year DCF Model?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Flexible Year by Year DCF Model enables detailed cash flow projections with complete control over annual assumptions."
+              }
+            },{
+              "@type": "Question",
+              "name": "Why Was the Flexible DCF Model Developed?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Traditional DCF models often oversimplify by assuming constant growth rates and margins, while real businesses experience fluctuating performance."
+              }
+            }]
+          })}
+        </script>
       </Helmet>
       <Header />
       

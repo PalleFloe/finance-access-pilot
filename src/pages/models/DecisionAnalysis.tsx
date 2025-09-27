@@ -30,6 +30,27 @@ const DecisionAnalysis = () => {
       <Helmet>
         <title>Decision Analysis for Venture Capital - Systematic Investment Framework | Financial Decision Models</title>
         <meta name="description" content="Venture capital decision analysis model with systematic risk assessment and probability-weighted returns. Excel tool for VC investment evaluation. Try free online, download full version." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What Is Decision Analysis for Venture Capital?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Decision Analysis for Venture Capital is a systematic framework developed by Clint Korver for investment evaluation under extreme uncertainty."
+              }
+            },{
+              "@type": "Question",
+              "name": "Why Was Decision Analysis Developed?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Traditional venture capital methods inadequately address the extreme uncertainty inherent in startup investing."
+              }
+            }]
+          })}
+        </script>
       </Helmet>
       <Header />
       

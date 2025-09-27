@@ -31,6 +31,27 @@ const EarningGrowthEstimator = () => {
       <Helmet>
         <title>Earning Growth Estimator - ROC-Based Growth Analysis | Financial Decision Models</title>
         <meta name="description" content="Earning growth estimator based on return on capital and reinvestment analysis. Excel model calculates sustainable growth rates for existing and new investments. Try free online or download." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What Is the Simple Earning Growth Estimator?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Simple Earning Growth Estimator is a systematic analytical tool that projects future earnings growth based on Return on Capital (ROC) and reinvestment patterns."
+              }
+            },{
+              "@type": "Question",
+              "name": "Why Use the Simple Earning Growth Estimator?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Understanding the sources and sustainability of earnings growth is crucial for growth sustainability analysis and investment quality assessment."
+              }
+            }]
+          })}
+        </script>
       </Helmet>
       <Header />
       

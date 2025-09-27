@@ -27,6 +27,27 @@ const ThreeStageDcf = () => {
       <Helmet>
         <title>Three Stage DCF Model - Multi-stage Analysis | Financial Decision Models</title>
         <meta name="description" content="Three Stage DCF Model for multi-stage analysis: DCF valuation with distinct performance stage characteristics. Professional investment analysis tool with dynamic evolution modeling." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What Is the Three Stage DCF Model?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Three Stage DCF Model addresses investments that don't maintain constant operational characteristics throughout their lifetime."
+              }
+            },{
+              "@type": "Question",
+              "name": "Why Was the Three Stage DCF Model Developed?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Many internal investments follow predictable development patterns that single-growth DCF models cannot capture accurately."
+              }
+            }]
+          })}
+        </script>
       </Helmet>
       <Header />
       

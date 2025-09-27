@@ -31,6 +31,27 @@ const PresentValueCalculator = () => {
       <Helmet>
         <title>Present Value Calculator - Time Value of Money Analysis | Financial Decision Models</title>
         <meta name="description" content="Simple present value calculator for time value of money analysis. Excel model covers one-time payments, annuities, growing annuities, and perpetuities. Educational tool, try free online or download." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What Is the Simple Present Value Calculator?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Simple Present Value Calculator is a comprehensive financial tool designed to calculate the present value of various types of cash flows."
+              }
+            },{
+              "@type": "Question",
+              "name": "Why Use the Simple Present Value Calculator?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Present value calculations are fundamental to finance, allowing investors and analysts to compare different investment opportunities on an equal footing."
+              }
+            }]
+          })}
+        </script>
       </Helmet>
       <Header />
       

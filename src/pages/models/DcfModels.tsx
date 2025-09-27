@@ -34,6 +34,27 @@ const DcfModels = () => {
       <Helmet>
         <title>DCF Models - Professional Discounted Cash Flow Analysis | Financial Decision Models</title>
         <meta name="description" content="Three professional DCF valuation models: Flexible, Three-Stage, and Stable Growth approaches. Excel-based discounted cash flow analysis for business valuation. Try free online, download full versions." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What Are the Standard Types of DCF Models?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Standard Types of DCF Models represent three fundamental approaches to business valuation that accommodate different company life cycles and growth patterns."
+              }
+            },{
+              "@type": "Question",
+              "name": "Why Use the Standard Types of DCF Models?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Different companies require different valuation approaches depending on their growth stage, operational complexity, and business model characteristics."
+              }
+            }]
+          })}
+        </script>
       </Helmet>
       <Header />
       

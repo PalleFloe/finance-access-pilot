@@ -30,6 +30,27 @@ const FinancialRatioCalculator = () => {
       <Helmet>
         <title>Financial Ratio Calculator - Comprehensive Financial Analysis | Financial Decision Models</title>
         <meta name="description" content="Comprehensive financial ratio calculator with 30+ ratios across profitability, efficiency, leverage, and market valuation. Excel model for financial statement analysis. Try free online or download." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What Is the Financial Ratio Calculator?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Financial Ratio Calculator is a comprehensive analytical tool that computes key financial ratios across four critical categories: Investment Returns, Profitability, Efficiency, and Market Valuation."
+              }
+            },{
+              "@type": "Question",
+              "name": "Why Use the Financial Ratio Calculator?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Financial ratio analysis is fundamental to understanding business performance, enabling assessment across multiple dimensions and comparative analysis between companies."
+              }
+            }]
+          })}
+        </script>
       </Helmet>
       <Header />
       

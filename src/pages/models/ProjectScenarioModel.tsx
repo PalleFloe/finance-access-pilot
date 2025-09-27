@@ -31,6 +31,27 @@ const ProjectScenarioModel = () => {
       <Helmet>
         <title>Project Scenario Model - Multi-Scenario Capital Budgeting | Financial Decision Models</title>
         <meta name="description" content="Multi-scenario capital budgeting model with NPV and IRR analysis. Excel tool evaluates investment projects across downside, base case, and upside scenarios. Try free online or download." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What Is the Simple Project Scenario Model?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Simple Project Scenario Model is a comprehensive capital budgeting tool that evaluates investment projects under multiple scenarios."
+              }
+            },{
+              "@type": "Question",
+              "name": "Why Use the Simple Project Scenario Model?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Scenario-based project analysis is essential for robust capital allocation decisions, enabling risk assessment and understanding the range of potential outcomes."
+              }
+            }]
+          })}
+        </script>
       </Helmet>
       <Header />
       

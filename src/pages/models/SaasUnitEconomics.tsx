@@ -30,6 +30,27 @@ const SaasUnitEconomics = () => {
       <Helmet>
         <title>SaaS Unit Economics Model - Professional Valuation Tool | Financial Decision Models</title>
         <meta name="description" content="Professional SaaS unit economics model analyzing customer lifetime value, acquisition costs, and churn. Excel tool for subscription business valuation. Try free online, download interactive version." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question", 
+              "name": "What Is the SaaS Unit Economics Model?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The SaaS Unit Economics Model values SaaS companies by analysing individual customer profitability and lifetime contribution to overall business value."
+              }
+            },{
+              "@type": "Question",
+              "name": "Why Was the SaaS Unit Economics Model Developed?", 
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Traditional aggregate financial models obscure the fundamental economics driving SaaS business success."
+              }
+            }]
+          })}
+        </script>
       </Helmet>
       <Header />
       

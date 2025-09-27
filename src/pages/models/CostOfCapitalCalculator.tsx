@@ -31,6 +31,27 @@ const CostOfCapitalCalculator = () => {
       <Helmet>
         <title>Cost of Capital Calculator - WACC & CAPM Analysis | Financial Decision Models</title>
         <meta name="description" content="WACC and cost of capital calculator using CAPM methodology. Excel model calculates cost of equity, debt, and weighted average cost of capital. Academic tool, try free online or download." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "What Is the Simple Cost of Capital Calculator?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Simple Cost of Capital Calculator is a fundamental financial tool that determines a company's Weighted Average Cost of Capital (WACC)."
+              }
+            },{
+              "@type": "Question",
+              "name": "Why Use the Simple Cost of Capital Calculator?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The cost of capital serves as a critical benchmark for financial decision-making, providing the hurdle rate for evaluating new projects and investments."
+              }
+            }]
+          })}
+        </script>
       </Helmet>
       <Header />
       
