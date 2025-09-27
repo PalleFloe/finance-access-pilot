@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, BarChart3, Clock } from "lucide-react";
 import Header from "@/components/Header";
+import Footer from "@/components/sections/Footer";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
 
 const MatureBusiness = () => {
@@ -103,6 +104,7 @@ const MatureBusiness = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

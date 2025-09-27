@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
+import Footer from "@/components/sections/Footer";
 import DownloadButton from "@/components/DownloadButton";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
@@ -303,6 +304,7 @@ const DcfModels = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

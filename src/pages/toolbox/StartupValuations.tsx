@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, ArrowRight, Check, Clock } from "lucide-react";
 import Header from "@/components/Header";
+import Footer from "@/components/sections/Footer";
 import { useEffect } from "react";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
 
@@ -204,6 +205,7 @@ const StartupValuations = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
