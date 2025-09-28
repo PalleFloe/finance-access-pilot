@@ -61,7 +61,7 @@ const FinancialFundamentals = () => {
       bulletPoints: [
         "Estimate earning growth (ROC × Reinvestment)",
         "Phased development in Return On Capital",
-        "Distinguish growth from existing vs new investments"
+        "Separate growth from existing vs new investments"
       ],
       href: "/toolbox/financial-fundamentals/earning-growth-estimator",
       status: "available",
