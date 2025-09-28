@@ -28,7 +28,7 @@ const InvestmentAnalysis = () => {
       status: "available",
     },
     {
-      name: "Stable Growth: Finite-Life DCF Model",
+      name: "Stable Growth - Finite-Life DCF Model",
       bulletPoints: [
         "Model NPV/IRR for investments with finite lifetime",
         "Value fixed-term contracts and endpoint projects",
@@ -38,7 +38,7 @@ const InvestmentAnalysis = () => {
       status: "available",
     },
     {
-      name: "Stable Growth: Terminal Value DCF Model",
+      name: "Stable Growth - Terminal DCF Model",
       bulletPoints: [
         "Model NPV/IRR for perpetual",
         "Value factories & infrastructure",

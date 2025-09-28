@@ -96,7 +96,7 @@ const StableGrowthFiniteLifeDcf = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Stable Growth: Finite-Life DCF Model
+            Stable Growth - Finite-Life DCF Model
           </h1>
 
           <h2 className="text-lg text-slate-600 leading-relaxed mb-8">
@@ -107,7 +107,7 @@ const StableGrowthFiniteLifeDcf = () => {
           <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
             <CardHeader>
               <CardTitle>
-                Stable Growth: Finite-Life DCF Model
+                Stable Growth - Finite-Life DCF Model
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">

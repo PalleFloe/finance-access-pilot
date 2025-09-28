@@ -96,7 +96,7 @@ const StableGrowthTerminalValueDcf = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Stable Growth: Terminal Value DCF Model
+            Stable Growth - Terminal Value DCF Model
           </h1>
 
           <h2 className="text-lg text-slate-600 leading-relaxed mb-8">
@@ -107,7 +107,7 @@ const StableGrowthTerminalValueDcf = () => {
           <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
             <CardHeader>
               <CardTitle>
-                Stable Growth: Terminal Value DCF Model
+                Stable Growth - Terminal Value DCF Model
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
