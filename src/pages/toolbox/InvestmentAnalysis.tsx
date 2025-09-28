@@ -20,10 +20,9 @@ const InvestmentAnalysis = () => {
     {
       name: "Flexible Year by Year DCF Model",
       bulletPoints: [
-        "Model NPV and IRR% for investments with different assumptions each year",
-        "Handle complex business cycles and varying operational performance",
-        "Control revenue growth, variable costs & OPEX independently by year",
-        "Make structure and scenarios for insights into value drivers and to make better decisions"
+        "Model NPV/IRR with different assumptions each year",
+        "Full flexibility across value drivers",
+        "Value investments with varying performance over time"
       ],
       href: "/toolbox/investment-analysis/flexible-year-by-year-dcf-model",
       status: "available",
@@ -31,10 +30,9 @@ const InvestmentAnalysis = () => {
     {
       name: "Stable Growth - Finite-Life DCF Model",
       bulletPoints: [
-        "Model NPV and IRR% for investments with limited lifetime",
-        "Examples: Fixed-term contracts and projects with natural endpoints",
-        "Stable growth assumptions for each scenario of downside, base case and upside",
-        "Make structure and scenarios for insights into value drivers and to make better decisions"
+        "Model NPV/IRR for investments with limited lifetime",
+        "Example: fixed-term contracts and endpoint projects",
+        "Value investments including scenario modelling"
       ],
       href: "/toolbox/investment-analysis/stable-growth-finite-life-dcf-model",
       status: "available",
@@ -42,10 +40,9 @@ const InvestmentAnalysis = () => {
     {
       name: "Stable Growth - Terminal Value DCF Model",
       bulletPoints: [
-        "Model NPV and IRR% for investments with perpetual type of lifetime",
-        "Examples: Factories, facilities, infrastructure projects",
-        "Stable growth assumptions for each of the scenarios plus terminal value",
-        "Make structure and scenarios for insights into value drivers and to make better decisions"
+        "Model NPV/IRR for perpetual operations",
+        "Examples: factories, facilities, infrastructure projects",
+        "Value investments including scenario modelling"
       ],
       href: "/toolbox/investment-analysis/stable-growth-terminal-value-dcf-model",
       status: "available",
@@ -53,10 +50,9 @@ const InvestmentAnalysis = () => {
     {
       name: "Two and Three Stages DCF Models",
       bulletPoints: [
-        "Model NPV and IRR% for investments with distinct development phases",
-        "Handle investments transitioning through two-four phases (incl. terminal period)",
-        "Assign different growth rates etc. to each phase. Examples: ramp-up, scaling & mature",
-        "Make structure and scenarios for insights into value drivers and to make better decisions"
+        "Model NPV/IRR for distinct performance phases",
+        "Example: ramp-up, scaling & mature stage transitions",
+        "Value investments including scenario modelling"
       ],
       href: "/toolbox/investment-analysis/two-three-stages-dcf-model",
       status: "coming soon",

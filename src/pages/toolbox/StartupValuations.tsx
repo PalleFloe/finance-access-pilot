@@ -20,9 +20,8 @@ const StartupValuations = () => {
       name: "SaaS Unit Economics Model",
       bulletPoints: [
         "Validate if your SaaS business model is profitable",
-        "Optimize CLV vs. CAC via price and customer acquisition strategies", 
-        "Demonstrate unit economics to investors",
-        "Estimate profit, exit value and net present value"
+        "Optimize CLV vs. CAC strategies",
+        "Demonstrate unit economics to investors"
       ],
       href: "/toolbox/startup-valuations/saas-unit-economics",
       status: "available",
@@ -30,10 +29,9 @@ const StartupValuations = () => {
     {
       name: "Venture Capital Valuation Model",
       bulletPoints: [
-        "Understand investments & ownership% vs. valuation & IRR%",
-        "Model ownership dilution across multiple investment rounds",
-        "Make exit value scenarios' impact on shareholders' IRR% & value",
-        "Negotiate funding / investment terms with analytical backing"
+        "Model investment, ownership%, IRR and valuation relationship",
+        "Assess dilution across investment rounds",
+        "Negotiate funding terms with analytical backing"
       ],
       href: "/toolbox/startup-valuations/venture-capital-method",
       status: "available",
@@ -42,9 +40,8 @@ const StartupValuations = () => {
       name: "Berkus Valuation Model",
       bulletPoints: [
         "Value pre-revenue startups with no financial history",
-        "Systematically assess early-stage investment risk factors",
-        "Sensitivity analysis of the inherent valuation uncertainty",
-        "Negotiate valuations for founders and angel investors / VCs"
+        "Systematically assess early-stage investment risks",
+        "Negotiate valuations for founders and VCs"
       ],
       href: "/toolbox/startup-valuations/berkus-valuation",
       status: "available",
@@ -52,10 +49,9 @@ const StartupValuations = () => {
     {
       name: "First Chicago Valuation Model",
       bulletPoints: [
-        "Account for uncertainty through multiple scenario analysis",
-        "Compare exit valuation via revenue or profit, and their multiplier",
-        "Account for and analyse uncertainty through scenario outcomes",
-        "Present probability-adjusted valuations to investors"
+        "Value startups via scenario based DCF Model",
+        "Compare exit valuation via revenue & profit multiples",
+        "Present probability-adjusted valuations to VCs"
       ],
       href: "/toolbox/startup-valuations/first-chicago-method",
       status: "available",
@@ -63,10 +59,9 @@ const StartupValuations = () => {
     {
       name: "Perpetuity & Exit Valuation Models",
       bulletPoints: [
-        "Test of cash-flow and growth rate assumptions on valuation",
-        "Compare perpetuity vs exit-based valuation approaches",
-        "Understand how timing and exit multiples affect returns",
-        "Common sense check of valuations in more complex models"
+        "Test cash-flow and growth rate assumptions on valuation",
+        "Compare perpetuity vs exit-based approaches",
+        "Common sense check of valuations in complex models"
       ],
       href: "/toolbox/startup-valuations/perpetuity-exit-models",
       status: "available",
@@ -74,10 +69,9 @@ const StartupValuations = () => {
     {
       name: "Decision Analysis for Venture Capital Investments",
       bulletPoints: [
-        "Assessment of development stages' risks and competitive success",
-        "Structure investment thinking through disciplined analysis",
-        "Sensitivity analysis of risk assessment and competitive success",
-        "Reduce cognitive biases in early-stage investment evaluation"
+        "Structure valuation through non- and financial analysis",
+        "Assess development stages' risks and competitive success",
+        "Reduce cognitive biases in VCs investment decisions"
       ],
       href: "/toolbox/startup-valuations/decision-analysis",
       status: "available",

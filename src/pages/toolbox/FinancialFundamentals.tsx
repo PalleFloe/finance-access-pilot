@@ -19,10 +19,9 @@ const FinancialFundamentals = () => {
     {
       name: "Simple Present Value Calculator",
       bulletPoints: [
-        "Calc. NPV for one-time, annuity, growing annuity, perpetuity, growing perpetuity",
-        "Compare and better understand different cash-flow types",
-        "Understand NPV impact of compounding (monthly, quarterly, annual)",
-        "Understand NPV impact of exit timing and terminal growth"
+        "Calculate NPV across five types of cash flow patterns",
+        "Compare payment structures",
+        "Understand compounding and exit timing's impact on valuations"
       ],
       href: "/toolbox/financial-fundamentals/present-value-calculator",
       status: "available",
@@ -30,21 +29,19 @@ const FinancialFundamentals = () => {
     {
       name: "Simple Cost of Capital Calculator",
       bulletPoints: [
-        "Calculate WACC using CAPM cost of equity + after-tax cost of debt",
-        "Determine discount rates for DCF valuations and investment hurdle rates",
-        "Understand how beta, risk premiums & capital structure affect financing costs",
-        "Compare financing options and optimize capital structure decisions"
+        "Calculate WACC using CAPM + after-tax debt costs",
+        "Determine discount rates for DCF valuations",
+        "Compare financing options and optimize structure"
       ],
       href: "/toolbox/financial-fundamentals/cost-of-capital-calculator",
       status: "available",
     },
     {
-      name: "Key Types of DCF Models",
+      name: "Standard Types of DCF Models",
       bulletPoints: [
-        "Estimate NPV and IRR% of an investment / company by forecasting its future cash flows",
-        "Choose between Flexible, Three Stages, or Stable Growth forecasting approaches",
-        "Compare results across different DCF methodologies for validation",
-        "Make structure and scenarios for insights into value drivers and to make better decisions"
+        "Choose between Flexible, Three Stages, or Stable Growth",
+        "Compare results across different DCF methodologies",
+        "Create scenarios for insights into value drivers"
       ],
       href: "/toolbox/financial-fundamentals/dcf-models",
       status: "available",
@@ -52,10 +49,9 @@ const FinancialFundamentals = () => {
     {
       name: "Financial Ratio Calculator",
       bulletPoints: [
-        "Calculate of all key ratios used in financial reporting",
-        "Track three-year trend analysis for business performance evaluation",
-        "Prepare comprehensive ratio reporting and analysis",
-        "Figures here are based on Novo Nordisk annual financial statement"
+        "Calculate most important key financial ratios",
+        "Track three-year performance trends",
+        "Make comprehensive analysis for companies reporting"
       ],
       href: "/toolbox/financial-fundamentals/financial-ratio-calculator",
       status: "available",
@@ -63,10 +59,9 @@ const FinancialFundamentals = () => {
     {
       name: "Simple Earning Growth Estimator",
       bulletPoints: [
-        "Estimate growth rates using ROC × Reinvestment Rate methodology",
-        "Separate growth drivers from existing operations vs new investments",
-        "Validate growth assumptions in business plans with economic fundamentals",
-        "Model transition periods for realistic operational improvements"
+        "Estimate growth using ROC × Reinvestment methodology",
+        "Separate existing vs new investment growth drivers",
+        "Validate business plan growth assumptions"
       ],
       href: "/toolbox/financial-fundamentals/earning-growth-estimator",
       status: "available",
@@ -74,10 +69,9 @@ const FinancialFundamentals = () => {
     {
       name: "Simple Project Scenario Model",
       bulletPoints: [
-        "Evaluate capital projects across Downside/Base Case/Upside scenarios",
-        "Calculate NPV and IRR% with comprehensive sensitivity analysis",
-        "Test impact of key variables on project attractiveness",
-        "Make capital allocation and investment decisions"
+        "Evaluate projects across Downside/Base/Upside scenarios",
+        "Calculate NPV and IRR with sensitivity analysis",
+        "Make informed capital allocation decisions"
       ],
       href: "/toolbox/financial-fundamentals/project-scenario-model",
       status: "available",
