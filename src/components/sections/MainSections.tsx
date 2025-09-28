@@ -31,10 +31,10 @@ const MainSections = () => {
                     <Link to="/toolbox/startup-valuations" className="block">
                       <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative cursor-pointer w-full h-40" style={{backgroundColor: '#326496'}}>
                         <CardHeader className="h-full flex flex-col justify-center p-3">
-                          <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFB445'}}>
+                          <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFFFFF'}}>
                             <span>Startup Valuations</span>
                           </CardTitle>
-                          <CardDescription className="text-base md:text-lg" style={{color: '#FFB445'}}>
+                          <CardDescription className="text-base md:text-lg" style={{color: 'rgba(255, 255, 255, 0.75)'}}>
                             Models for early-stage business valuation and investment decisions
                           </CardDescription>
                         </CardHeader>
@@ -44,10 +44,10 @@ const MainSections = () => {
                     <Link to="/toolbox/business-strategy" className="block">
                       <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative cursor-pointer w-full h-40" style={{backgroundColor: '#326496'}}>
                         <CardHeader className="h-full flex flex-col justify-center p-3">
-                          <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFB445'}}>
+                          <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFFFFF'}}>
                             <span>Business Strategy</span>
                           </CardTitle>
-                          <CardDescription className="text-base md:text-lg" style={{color: '#FFB445'}}>
+                          <CardDescription className="text-base md:text-lg" style={{color: 'rgba(255, 255, 255, 0.75)'}}>
                             Models for strategic planning, decisions and scenario analysis
                           </CardDescription>
                         </CardHeader>
@@ -57,10 +57,10 @@ const MainSections = () => {
                     <Link to="/toolbox/investment-analysis" className="block">
                       <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative cursor-pointer w-full h-40" style={{backgroundColor: '#326496'}}>
                         <CardHeader className="h-full flex flex-col justify-center p-3">
-                          <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFB445'}}>
+                          <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFFFFF'}}>
                             <span>Investment Analysis</span>
                           </CardTitle>
-                          <CardDescription className="text-base md:text-lg" style={{color: '#FFB445'}}>
+                          <CardDescription className="text-base md:text-lg" style={{color: 'rgba(255, 255, 255, 0.75)'}}>
                             DCF Models for investment analysis and decisions
                           </CardDescription>
                         </CardHeader>
@@ -70,10 +70,10 @@ const MainSections = () => {
                     <Link to="/toolbox/financial-fundamentals" className="block">
                       <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative cursor-pointer w-full h-40" style={{backgroundColor: '#326496'}}>
                         <CardHeader className="h-full flex flex-col justify-center p-3">
-                          <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFB445'}}>
+                          <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFFFFF'}}>
                             <span>Fundamentals</span>
                           </CardTitle>
-                          <CardDescription className="text-base md:text-lg" style={{color: '#FFB445'}}>
+                          <CardDescription className="text-base md:text-lg" style={{color: 'rgba(255, 255, 255, 0.75)'}}>
                             Models for mainly educational and inspirational purposes
                           </CardDescription>
                         </CardHeader>
