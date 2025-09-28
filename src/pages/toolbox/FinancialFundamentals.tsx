@@ -127,10 +127,10 @@ const FinancialFundamentals = () => {
                     </div>
                   )}
                   <CardHeader className="flex-grow p-6">
-                    <CardTitle className="text-2xl font-semibold mb-3" style={{ color: '#FFB445' }}>
+                    <CardTitle className="text-2xl font-semibold mb-3" style={{ color: '#FFFFFF' }}>
                       <span>{model.name}</span>
                     </CardTitle>
-                    <div className="flex-grow text-lg leading-[1.4] font-normal" style={{ color: 'rgba(255, 180, 69, 0.8)' }}>
+                    <div className="flex-grow text-lg leading-[1.4] font-normal" style={{ color: 'rgba(255, 255, 255, 0.75)' }}>
                       {model.bulletPoints.map((point, index) => (
                         <div key={index} className="my-1">• {point}</div>
                       ))}

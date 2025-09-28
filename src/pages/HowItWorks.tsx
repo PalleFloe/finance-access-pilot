@@ -151,7 +151,7 @@ const HowItWorks = () => {
           
           <h3 
             className={`${tier.isModelTier ? 'text-xl sm:text-2xl md:text-3xl font-bold' : 'text-xl sm:text-2xl md:text-3xl font-bold'} leading-tight break-words mb-4`}
-            style={{ fontFamily: 'Garamond, serif', color: '#FFB445' }}
+            style={{ fontFamily: 'Garamond, serif', color: '#FFFFFF' }}
           >
             {tier.isModelTier ? `${tier.label}: ${tier.title}` : `${tier.label}: ${tier.title}`}
           </h3>
@@ -161,9 +161,9 @@ const HowItWorks = () => {
               <li 
                 key={index} 
                 className={`${tier.isModelTier ? 'text-xl' : 'text-lg'} leading-relaxed flex items-start`}
-                style={{ fontFamily: 'Garamond, serif', color: '#FFB445' }}
+                style={{ fontFamily: 'Garamond, serif', color: 'rgba(255, 255, 255, 0.75)' }}
               >
-                <span className="mr-2 mt-1 flex-none" style={{ color: '#FFB445' }}>•</span>
+                <span className="mr-2 mt-1 flex-none" style={{ color: 'rgba(255, 255, 255, 0.75)' }}>•</span>
                 <span className="flex-1 min-w-0 break-words">{bullet}</span>
               </li>
             ))}
