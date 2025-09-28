@@ -22,7 +22,7 @@ const InvestmentAnalysis = () => {
       bulletPoints: [
         "Model NPV/IRR with yearly flexibility",
         "Handle complex business cycles",
-        "Control all value drivers by year"
+        "Value investments with full performance flexibility"
       ],
       href: "/toolbox/investment-analysis/flexible-year-by-year-dcf-model",
       status: "available",
@@ -30,9 +30,9 @@ const InvestmentAnalysis = () => {
     {
       name: "Stable Growth - Finite-Life DCF Model",
       bulletPoints: [
-        "Model limited lifetime investments",
-        "Value fixed-term contracts",
-        "Include scenario modeling"
+        "Model NPV/IRR for investments with finite lifetime",
+        "Value fixed-term contracts and endpoint projects",
+        "Value investments including scenario modelling"
       ],
       href: "/toolbox/investment-analysis/stable-growth-finite-life-dcf-model",
       status: "available",
@@ -40,9 +40,9 @@ const InvestmentAnalysis = () => {
     {
       name: "Stable Growth - Terminal Value DCF Model",
       bulletPoints: [
-        "Model perpetual operations",
-        "Value facilities & infrastructure",
-        "Include scenario modeling"
+        "Model NPV/IRR for perpetual",
+        "Value factories & infrastructure",
+        "Value investments including scenario modelling"
       ],
       href: "/toolbox/investment-analysis/stable-growth-terminal-value-dcf-model",
       status: "available",
@@ -51,8 +51,8 @@ const InvestmentAnalysis = () => {
       name: "Two and Three Stages DCF Models",
       bulletPoints: [
         "Model distinct performance phases",
-        "Handle ramp-up/scaling/mature stages",
-        "Include scenario modeling"
+        "Handle ramp-up / scaling / mature stages",
+        "Value investments including scenario modelling"
       ],
       href: "/toolbox/investment-analysis/two-three-stages-dcf-model",
       status: "coming soon",
