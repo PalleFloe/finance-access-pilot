@@ -18,37 +18,67 @@ const StartupValuations = () => {
   const models = [
     {
       name: "SaaS Unit Economics Model",
-      description: "From Customer Acquisition & Revenue to Business Model Validation & Valuation",
+      bulletPoints: [
+        "Validate if your SaaS business model is profitable",
+        "Optimize CLV vs. CAC via price and customer acquisition strategies", 
+        "Demonstrate unit economics to investors",
+        "Estimate profit, exit value and net present value"
+      ],
       href: "/toolbox/startup-valuations/saas-unit-economics",
       status: "available",
     },
     {
       name: "Venture Capital Valuation Model",
-      description: "Bridging Multi-Round Financing, Exit Value, Founder's Ownership Share and Investor's Need for a Profitable Return",
+      bulletPoints: [
+        "Understand investments & ownership% vs. valuation & IRR%",
+        "Model ownership dilution across multiple investment rounds",
+        "Make exit value scenarios' impact on shareholders' IRR% & value",
+        "Negotiate funding / investment terms with analytical backing"
+      ],
       href: "/toolbox/startup-valuations/venture-capital-method",
       status: "available",
     },
     {
       name: "Berkus Valuation Model",
-      description: "Pre-Revenue Valuation based on Assessment of Five Key Factors and Scenario Modelling",
+      bulletPoints: [
+        "Value pre-revenue startups with no financial history",
+        "Systematically assess early-stage investment risk factors",
+        "Sensitivity analysis of the inherent valuation uncertainty",
+        "Negotiate valuations for founders and angel investors / VCs"
+      ],
       href: "/toolbox/startup-valuations/berkus-valuation",
       status: "available",
     },
     {
       name: "First Chicago Valuation Model",
-      description: "Scenario Based DCF Model for Startup Valuation: Specifically focusing on Exit Value based on both Profit and Revenue",
+      bulletPoints: [
+        "Account for uncertainty through multiple scenario analysis",
+        "Compare exit valuation via revenue or profit, and their multiplier",
+        "Account for and analyse uncertainty through scenario outcomes",
+        "Present probability-adjusted valuations to investors"
+      ],
       href: "/toolbox/startup-valuations/first-chicago-method",
       status: "available",
     },
     {
       name: "Perpetuity & Exit Valuation Models",
-      description: "Quick & Flexible Approaches to Valuation with Scenario-Based Sensitivity and Value Driver Analysis",
+      bulletPoints: [
+        "Test of cash-flow and growth rate assumptions on valuation",
+        "Compare perpetuity vs exit-based valuation approaches",
+        "Understand how timing and exit multiples affect returns",
+        "Common sense check of valuations in more complex models"
+      ],
       href: "/toolbox/startup-valuations/perpetuity-exit-models",
       status: "available",
     },
     {
       name: "Decision Analysis for Venture Capital Investments",
-      description: "Systematic Decision Assessment of Startup Life Stages for Investment Decisions via Probability-Weighted Multiple on Investment (PWMOI)",
+      bulletPoints: [
+        "Assessment of development stages' risks and competitive success",
+        "Structure investment thinking through disciplined analysis",
+        "Sensitivity analysis of risk assessment and competitive success",
+        "Reduce cognitive biases in early-stage investment evaluation"
+      ],
       href: "/toolbox/startup-valuations/decision-analysis",
       status: "available",
     },
@@ -106,7 +136,11 @@ const StartupValuations = () => {
                     <CardTitle className="text-2xl font-semibold mb-3" style={{ color: '#FFB445' }}>
                       <span>{model.name}</span>
                     </CardTitle>
-                    <CardDescription className="flex-grow text-lg leading-relaxed" style={{ color: '#FFB445' }}>{model.description}</CardDescription>
+                    <div className="flex-grow text-lg leading-relaxed" style={{ color: '#FFB445' }}>
+                      {model.bulletPoints.map((point, index) => (
+                        <div key={index} className="mb-2">• {point}</div>
+                      ))}
+                    </div>
                   </CardHeader>
                 </Card>
               </Link>

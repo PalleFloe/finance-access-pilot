@@ -19,37 +19,61 @@ const InvestmentAnalysis = () => {
   const models = [
     {
       name: "Flexible Year by Year DCF Model",
-      description: "Flexible DCF Analysis: Dynamic Year-by-Year Projections with Variable Growth Rates and Terminal Value Options",
+      bulletPoints: [
+        "Model NPV and IRR% for investments with different assumptions each year",
+        "Handle complex business cycles and varying operational performance",
+        "Control revenue growth, variable costs & OPEX independently by year",
+        "Make structure and scenarios for insights into value drivers and to make better decisions"
+      ],
       href: "/toolbox/investment-analysis/flexible-year-by-year-dcf-model",
       status: "available",
     },
     {
       name: "Stable Growth - Finite-Life DCF Model",
-      description: "Stable Growth DCF Analysis: Finite-Life Asset Valuation with Predictable Revenue and Terminal Value Calculation",
+      bulletPoints: [
+        "Model NPV and IRR% for investments with limited lifetime",
+        "Examples: Fixed-term contracts and projects with natural endpoints",
+        "Stable growth assumptions for each scenario of downside, base case and upside",
+        "Make structure and scenarios for insights into value drivers and to make better decisions"
+      ],
       href: "/toolbox/investment-analysis/stable-growth-finite-life-dcf-model",
       status: "available",
     },
     {
       name: "Stable Growth - Terminal Value DCF Model",
-      description: "Stable Growth DCF Analysis: Perpetual Value Asset Evaluation with Terminal Value Focus and Growth Rate Sensitivity",
+      bulletPoints: [
+        "Model NPV and IRR% for investments with perpetual type of lifetime",
+        "Examples: Factories, facilities, infrastructure projects",
+        "Stable growth assumptions for each of the scenarios plus terminal value",
+        "Make structure and scenarios for insights into value drivers and to make better decisions"
+      ],
       href: "/toolbox/investment-analysis/stable-growth-terminal-value-dcf-model",
       status: "available",
     },
     {
-      name: "Three Stage DCF Model",
-      description: "Multi-stage Analysis: DCF Valuation with Distinct Performance Stage Characteristics",
-      href: "/toolbox/investment-analysis/three-stage-dcf-model",
-      status: "available",
+      name: "Two and Three Stages DCF Models",
+      bulletPoints: [
+        "Model NPV and IRR% for investments with distinct development phases",
+        "Handle investments transitioning through two-four phases (incl. terminal period)",
+        "Assign different growth rates etc. to each phase. Examples: ramp-up, scaling & mature",
+        "Make structure and scenarios for insights into value drivers and to make better decisions"
+      ],
+      href: "/toolbox/investment-analysis/two-three-stages-dcf-model",
+      status: "coming soon",
     },
     {
       name: "Cost Reduction DCF Model",
-      description: "",
+      bulletPoints: [
+        "To be defined"
+      ],
       href: "/toolbox/investment-analysis/cost-reduction-dcf-model",
       status: "coming soon",
     },
     {
       name: "Break-Even Analysis Model",
-      description: "",
+      bulletPoints: [
+        "To be defined"
+      ],
       href: "/toolbox/investment-analysis/break-even-analysis-model",
       status: "coming soon",
     },
@@ -107,7 +131,11 @@ const InvestmentAnalysis = () => {
                     <CardTitle className="text-2xl font-semibold mb-3" style={{ color: '#FFB445' }}>
                       <span>{model.name}</span>
                     </CardTitle>
-                    <CardDescription className="flex-grow text-lg leading-relaxed" style={{ color: '#FFB445' }}>{model.description}</CardDescription>
+                    <div className="flex-grow text-lg leading-relaxed" style={{ color: '#FFB445' }}>
+                      {model.bulletPoints.map((point, index) => (
+                        <div key={index} className="mb-2">• {point}</div>
+                      ))}
+                    </div>
                   </CardHeader>
                 </Card>
               </Link>

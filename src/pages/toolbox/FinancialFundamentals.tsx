@@ -18,37 +18,67 @@ const FinancialFundamentals = () => {
   const models = [
     {
       name: "Simple Present Value Calculator",
-      description: "Present Value Analysis: One-time, Annuity, Growing Annuity, Perpetuity, and Growing Perpetuity Calculations",
+      bulletPoints: [
+        "Calc. NPV for one-time, annuity, growing annuity, perpetuity, growing perpetuity",
+        "Compare and better understand different cash-flow types",
+        "Understand NPV impact of compounding (monthly, quarterly, annual)",
+        "Understand NPV impact of exit timing and terminal growth"
+      ],
       href: "/toolbox/financial-fundamentals/present-value-calculator",
       status: "available",
     },
     {
       name: "Simple Cost of Capital Calculator",
-      description: "WACC Analysis: Cost of Equity, Cost of Debt, and Weighted Average Cost of Capital Calculation",
+      bulletPoints: [
+        "Calculate WACC using CAPM cost of equity + after-tax cost of debt",
+        "Determine discount rates for DCF valuations and investment hurdle rates",
+        "Understand how beta, risk premiums & capital structure affect financing costs",
+        "Compare financing options and optimize capital structure decisions"
+      ],
       href: "/toolbox/financial-fundamentals/cost-of-capital-calculator",
       status: "available",
     },
     {
       name: "Key Types of DCF Models",
-      description: "Three Approaches: Fully Flexible, Staged or Stable Assumptions. Designed to value a firm",
+      bulletPoints: [
+        "Estimate NPV and IRR% of an investment / company by forecasting its future cash flows",
+        "Choose between Flexible, Three Stages, or Stable Growth forecasting approaches",
+        "Compare results across different DCF methodologies for validation",
+        "Make structure and scenarios for insights into value drivers and to make better decisions"
+      ],
       href: "/toolbox/financial-fundamentals/dcf-models",
       status: "available",
     },
     {
       name: "Financial Ratio Calculator",
-      description: "Comprehensive Financial Analysis: Investment Returns, Profitability, Efficiency, and Market Valuation Ratios",
+      bulletPoints: [
+        "Calculate of all key ratios used in financial reporting",
+        "Track three-year trend analysis for business performance evaluation",
+        "Prepare comprehensive ratio reporting and analysis",
+        "Figures here are based on Novo Nordisk annual financial statement"
+      ],
       href: "/toolbox/financial-fundamentals/financial-ratio-calculator",
       status: "available",
     },
     {
       name: "Simple Earning Growth Estimator",
-      description: "Systematic Growth Analysis: ROC-Based Earning Growth Estimation for Existing and New Investments",
+      bulletPoints: [
+        "Estimate growth rates using ROC × Reinvestment Rate methodology",
+        "Separate growth drivers from existing operations vs new investments",
+        "Validate growth assumptions in business plans with economic fundamentals",
+        "Model transition periods for realistic operational improvements"
+      ],
       href: "/toolbox/financial-fundamentals/earning-growth-estimator",
       status: "available",
     },
     {
       name: "Simple Project Scenario Model",
-      description: "Comprehensive Project Analysis: Multi-Scenario Capital Budgeting with NPV and IRR Sensitivity Analysis",
+      bulletPoints: [
+        "Evaluate capital projects across Downside/Base Case/Upside scenarios",
+        "Calculate NPV and IRR% with comprehensive sensitivity analysis",
+        "Test impact of key variables on project attractiveness",
+        "Make capital allocation and investment decisions"
+      ],
       href: "/toolbox/financial-fundamentals/project-scenario-model",
       status: "available",
     },
@@ -106,7 +136,11 @@ const FinancialFundamentals = () => {
                     <CardTitle className="text-2xl font-semibold mb-3" style={{ color: '#FFB445' }}>
                       <span>{model.name}</span>
                     </CardTitle>
-                    <CardDescription className="flex-grow text-lg leading-relaxed" style={{ color: '#FFB445' }}>{model.description}</CardDescription>
+                    <div className="flex-grow text-lg leading-relaxed" style={{ color: '#FFB445' }}>
+                      {model.bulletPoints.map((point, index) => (
+                        <div key={index} className="mb-2">• {point}</div>
+                      ))}
+                    </div>
                   </CardHeader>
                 </Card>
               </Link>
