@@ -107,7 +107,7 @@ const StableGrowthTerminalValueDcf = () => {
           <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
             <CardHeader>
               <CardTitle>
-                Stable Growth - Terminal Value DCF Model
+                Stable Growth - Terminal DCF Model
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
