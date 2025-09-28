@@ -96,7 +96,7 @@ const DecisionAnalysis = () => {
         </div>
 
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
-          Decision Analysis Model for VC Investments
+          Decision Model for VC Investments
         </h1>
 
         <p className="text-lg text-slate-600 leading-relaxed mb-8">
@@ -107,7 +107,7 @@ const DecisionAnalysis = () => {
       <div className="container mx-auto mb-12">
         <div className="max-w-md bg-white rounded-lg border shadow-lg p-6">
           <h3 className="text-xl font-semibold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-            Decision Analysis Model for VC Investments
+            Decision Model for VC Investments
           </h3>
           
           <div className="space-y-3">
@@ -123,7 +123,7 @@ const DecisionAnalysis = () => {
             
               <DownloadButton 
                 sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EXocIkZrChpKrbEuRIRzN4ABBy9eqNxPQYdvl4f7yuiHDA?e=3ZGPZm"
-                modelName="Decision Analysis Model for VC Investments"
+                modelName="Decision Model for VC Investments"
               className="w-full text-lg"
             />
           </div>
@@ -140,7 +140,7 @@ const DecisionAnalysis = () => {
 
       <div className="container mx-auto">
         {/* Introduction Headline */}
-        <h3 className="mb-6">Decision Analysis Model for VC Investments Introduction</h3>
+        <h3 className="mb-6">Decision Model for VC Investments Introduction</h3>
 
         {/* Short Description */}
         <div className="prose prose-slate max-w-none mb-8">
