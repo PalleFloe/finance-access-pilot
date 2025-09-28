@@ -19,9 +19,9 @@ const StartupValuations = () => {
     {
       name: "SaaS Unit Economics Model",
       bulletPoints: [
-        "Validate SaaS profitability",
-        "Optimize CLV vs CAC",
-        "Present to investors"
+        "Assess SaaS business model profitability",
+        "Optimize CLV vs CAC strategies",
+        "Present unit economics to investors"
       ],
       href: "/toolbox/startup-valuations/saas-unit-economics",
       status: "available",
