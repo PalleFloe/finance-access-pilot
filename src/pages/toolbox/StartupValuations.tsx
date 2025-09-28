@@ -130,7 +130,7 @@ const StartupValuations = () => {
                     <CardTitle className="text-2xl font-semibold mb-3" style={{ color: '#FFB445' }}>
                       <span>{model.name}</span>
                     </CardTitle>
-                    <div className="flex-grow text-base leading-[1.4] font-normal" style={{ color: 'rgba(255, 180, 69, 0.7)' }}>
+                    <div className="flex-grow text-lg leading-[1.4] font-normal" style={{ color: 'rgba(255, 180, 69, 0.8)' }}>
                       {model.bulletPoints.map((point, index) => (
                         <div key={index} className="my-1">• {point}</div>
                       ))}
