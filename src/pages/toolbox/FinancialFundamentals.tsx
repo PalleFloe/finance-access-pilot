@@ -20,8 +20,8 @@ const FinancialFundamentals = () => {
       name: "Simple Present Value Calculator",
       bulletPoints: [
         "Calculate NPV for 5 cash flow types",
-        "Compare payment structures",
-        "Understand compounding impact"
+        "Payment and compounding impact",
+        "Perpetuity and exit timing impact on valuation"
       ],
       href: "/toolbox/financial-fundamentals/present-value-calculator",
       status: "available",
@@ -29,8 +29,8 @@ const FinancialFundamentals = () => {
     {
       name: "Simple Cost of Capital Calculator",
       bulletPoints: [
-        "Calculate WACC (CAPM + debt)",
-        "Determine DCF discount rates",
+        "Calculate WACC via Capital Asset Pricing Model",
+        "Determine discount rates for DCF valuations",
         "Optimize financing structure"
       ],
       href: "/toolbox/financial-fundamentals/cost-of-capital-calculator",
@@ -41,7 +41,7 @@ const FinancialFundamentals = () => {
       bulletPoints: [
         "Choose Flexible/Three Stage/Stable Growth",
         "Compare DCF methodologies",
-        "Create value driver scenarios"
+        "Valuation including scenario modelling"
       ],
       href: "/toolbox/financial-fundamentals/dcf-models",
       status: "available",
@@ -49,9 +49,9 @@ const FinancialFundamentals = () => {
     {
       name: "Financial Ratio Calculator",
       bulletPoints: [
-        "Calculate key financial ratios",
-        "Track 3-year performance trends",
-        "Prepare company analysis"
+        "Calculate financial ratios & performance trends",
+        "For profitability & return, efficiency and valuation",
+        "Make analysis for company reporting"
       ],
       href: "/toolbox/financial-fundamentals/financial-ratio-calculator",
       status: "available",
@@ -59,9 +59,9 @@ const FinancialFundamentals = () => {
     {
       name: "Simple Earning Growth Estimator",
       bulletPoints: [
-        "Estimate growth (ROC × Reinvestment)",
-        "Separate existing vs new growth",
-        "Validate business plan assumptions"
+        "Estimate earning growth (ROC × Reinvestment)",
+        "Phased development in Return On Capital",
+        "Distinguish growth from existing vs new investments"
       ],
       href: "/toolbox/financial-fundamentals/earning-growth-estimator",
       status: "available",
@@ -70,8 +70,8 @@ const FinancialFundamentals = () => {
       name: "Simple Project Scenario Model",
       bulletPoints: [
         "Evaluate Downside/Base/Upside scenarios",
-        "Calculate NPV/IRR with sensitivity",
-        "Make capital allocation decisions"
+        "Calculate NPV/IRR with sensitivity analysis",
+        "Make capital allocation and investment decisions"
       ],
       href: "/toolbox/financial-fundamentals/project-scenario-model",
       status: "available",
