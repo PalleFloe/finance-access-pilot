@@ -67,7 +67,7 @@ const StartupValuations = () => {
       status: "available",
     },
     {
-      name: "Decision Analysis for Venture Capital Investments",
+      name: "Decision Analysis Model for VC Investments",
       bulletPoints: [
         "Structure financial & non-financial analysis",
         "Assess development risks",
