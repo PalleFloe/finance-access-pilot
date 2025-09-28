@@ -30,8 +30,8 @@ const StartupValuations = () => {
       name: "Venture Capital Valuation Model",
       bulletPoints: [
         "Model investment vs ownership & IRR",
-        "Assess dilution across rounds",
-        "Negotiate with analytical backing"
+        "Assess dilution across investment rounds",
+        "Negotiate valuation with analytical backing"
       ],
       href: "/toolbox/startup-valuations/venture-capital-method",
       status: "available",
@@ -40,8 +40,8 @@ const StartupValuations = () => {
       name: "Berkus Valuation Model",
       bulletPoints: [
         "Value pre-revenue startups",
-        "Assess early-stage risks",
-        "Negotiate with founders & VCs"
+        "Assess of five key factors incl. scenarios",
+        "Negotiate tool for founders & VCs"
       ],
       href: "/toolbox/startup-valuations/berkus-valuation",
       status: "available",
@@ -50,8 +50,8 @@ const StartupValuations = () => {
       name: "First Chicago Valuation Model",
       bulletPoints: [
         "Scenario-based DCF valuation",
-        "Compare revenue & profit multiples",
-        "Present probability-adjusted values"
+        "Exit values - revenue & profit multiples",
+        "Present probability-adjusted valuation"
       ],
       href: "/toolbox/startup-valuations/first-chicago-method",
       status: "available",
@@ -59,19 +59,19 @@ const StartupValuations = () => {
     {
       name: "Perpetuity & Exit Valuation Models",
       bulletPoints: [
-        "Test growth assumptions",
+        "Test cash-flow and growth assumptions",
         "Compare valuation approaches",
-        "Validate complex models"
+        "Sense check of more complex models"
       ],
       href: "/toolbox/startup-valuations/perpetuity-exit-models",
       status: "available",
     },
     {
-      name: "Decision Model for VC Investments",
+      name: "Decision Analysis for VC Investments",
       bulletPoints: [
         "Structure financial & non-financial analysis",
-        "Assess development risks",
-        "Reduce investment biases"
+        "Assess stages' risks and competitive success",
+        "Reduce biases in VCs investment decisions"
       ],
       href: "/toolbox/startup-valuations/decision-analysis",
       status: "available",
