@@ -21,7 +21,7 @@ const buttonVariants = cva(
         "brand-green": "bg-rich-emerald text-rich-emerald-foreground hover:bg-deep-blue",
         "rich-emerald": "bg-rich-emerald text-rich-emerald-foreground hover:bg-deep-blue",
         "deep-blue": "bg-deep-blue text-deep-blue-foreground hover:bg-deep-blue/90",
-        "model-blue": "text-[#FFB445] hover:opacity-90 transition-opacity" + " " + "bg-[#326496]",
+        "model-blue": "text-white hover:opacity-90 transition-opacity" + " " + "bg-[#326496]",
       },
       size: {
         default: "h-10 px-4 py-2",
