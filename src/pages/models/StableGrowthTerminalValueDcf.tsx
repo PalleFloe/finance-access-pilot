@@ -13,14 +13,14 @@ const StableGrowthTerminalValueDcf = () => {
   const { trackOnlineOpen } = useAnalytics();
   
   // Track page visit automatically
-  usePageVisitTracking('Stable Growth - Terminal Value DCF Model');
+  usePageVisitTracking('Stable Growth: Terminal Value DCF Model');
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const openModel = (sharePointUrl: string) => {
-    trackOnlineOpen('Stable Growth - Terminal Value DCF Model');
+    trackOnlineOpen('Stable Growth: Terminal Value DCF Model');
     window.open(sharePointUrl, '_blank', 'width=1200,height=800');
   };
 
@@ -28,7 +28,7 @@ const StableGrowthTerminalValueDcf = () => {
   return (
     <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
-        <title>Stable Growth - Terminal Value DCF Model - Investment Analysis | Financial Decision Models</title>
+        <title>Stable Growth: Terminal Value DCF Model - Investment Analysis | Financial Decision Models</title>
         <meta name="description" content="Stable Growth DCF analysis with terminal value focus for perpetual asset evaluation. Growth rate sensitivity and comprehensive valuation analysis. Excel tool for long-term investments." />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -36,7 +36,7 @@ const StableGrowthTerminalValueDcf = () => {
             "@type": "FAQPage",
             "mainEntity": [{
               "@type": "Question",
-              "name": "What Is the Stable Growth - Terminal Value DCF Model?",
+              "name": "What Is the Stable Growth: Terminal Value DCF Model?",
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "This model values investments that will continue operating beyond any reasonable forecast horizon, requiring perpetual reinvestment to maintain operations."
@@ -77,7 +77,7 @@ const StableGrowthTerminalValueDcf = () => {
               {
                 "@type": "ListItem",
                 "position": 4,
-                "name": "Stable Growth - Terminal Value DCF Model"
+                "name": "Stable Growth: Terminal Value DCF Model"
               }
             ]
           })}
@@ -96,7 +96,7 @@ const StableGrowthTerminalValueDcf = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Stable Growth - Terminal Value DCF Model
+            Stable Growth: Terminal Value DCF Model
           </h1>
 
           <h2 className="text-lg text-slate-600 leading-relaxed mb-8">
@@ -107,7 +107,7 @@ const StableGrowthTerminalValueDcf = () => {
           <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
             <CardHeader>
               <CardTitle>
-                Stable Growth - Terminal Value DCF Model
+                Stable Growth: Terminal Value DCF Model
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
@@ -122,7 +122,7 @@ const StableGrowthTerminalValueDcf = () => {
               </Button>
               <DownloadButton 
                 sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EfA8V3EKkddAnVMlp8CBNt4B2FG8IRt85ZHD4OaQQEXrUw?e=i02xoL"
-                modelName="Stable Growth - Terminal Value DCF Model"
+                modelName="Stable Growth: Terminal Value DCF Model"
                 className="w-full"
               />
               <div className="mt-1 pt-1 text-xs text-muted-foreground">
@@ -134,7 +134,7 @@ const StableGrowthTerminalValueDcf = () => {
           </Card>
 
           {/* Introduction Headline */}
-          <h3 className="mb-6">Stable Growth - Terminal Value DCF Model Introduction</h3>
+          <h3 className="mb-6">Stable Growth: Terminal Value DCF Model Introduction</h3>
         
         <div className="prose prose-slate max-w-none mb-8">
           <p className="text-xl text-slate-600 leading-relaxed mb-4">
@@ -162,12 +162,12 @@ const StableGrowthTerminalValueDcf = () => {
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="complete-guide">
             <AccordionTrigger className="text-xl font-bold text-heading">
-              Complete Stable Growth - Terminal Value DCF Model Guide
+              Complete Stable Growth: Terminal Value DCF Model Guide
             </AccordionTrigger>
             <AccordionContent className="prose prose-slate max-w-none">
               <div className="space-y-6 text-slate-600">
                 <div>
-                  <h3 className="text-xl font-bold text-heading mb-3">What Is the Stable Growth - Terminal Value DCF Model?</h3>
+                  <h3 className="text-xl font-bold text-heading mb-3">What Is the Stable Growth: Terminal Value DCF Model?</h3>
                   <p className="leading-relaxed mb-4">
                     This model values investments that will continue operating beyond any reasonable forecast horizon. Unlike finite-life investments, these require perpetual reinvestment to maintain operations, making proper terminal value calculation critical.
                   </p>

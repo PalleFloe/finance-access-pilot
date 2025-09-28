@@ -13,14 +13,14 @@ const StableGrowthFiniteLifeDcf = () => {
   const { trackOnlineOpen } = useAnalytics();
   
   // Track page visit automatically
-  usePageVisitTracking('Stable Growth - Finite-Life DCF Model');
+  usePageVisitTracking('Stable Growth: Finite-Life DCF Model');
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const openModel = (sharePointUrl: string) => {
-    trackOnlineOpen('Stable Growth - Finite-Life DCF Model');
+    trackOnlineOpen('Stable Growth: Finite-Life DCF Model');
     window.open(sharePointUrl, '_blank', 'width=1200,height=800');
   };
 
@@ -28,7 +28,7 @@ const StableGrowthFiniteLifeDcf = () => {
   return (
     <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
-        <title>Stable Growth - Finite-Life DCF Model - Investment Analysis | Financial Decision Models</title>
+        <title>Stable Growth: Finite-Life DCF Model - Investment Analysis | Financial Decision Models</title>
         <meta name="description" content="Stable Growth DCF analysis for finite-life assets with predictable revenue and terminal value calculation. Excel tool for project valuation and investment analysis." />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -36,7 +36,7 @@ const StableGrowthFiniteLifeDcf = () => {
             "@type": "FAQPage",
             "mainEntity": [{
               "@type": "Question",
-              "name": "What Is the Stable Growth - Finite-Life DCF Model?",
+              "name": "What Is the Stable Growth: Finite-Life DCF Model?",
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "The model addresses investments that generate cash flows for specific periods before terminating, including equipment that requires replacement."
@@ -77,7 +77,7 @@ const StableGrowthFiniteLifeDcf = () => {
               {
                 "@type": "ListItem",
                 "position": 4,
-                "name": "Stable Growth - Finite-Life DCF Model"
+                "name": "Stable Growth: Finite-Life DCF Model"
               }
             ]
           })}
@@ -96,7 +96,7 @@ const StableGrowthFiniteLifeDcf = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Stable Growth - Finite-Life DCF Model
+            Stable Growth: Finite-Life DCF Model
           </h1>
 
           <h2 className="text-lg text-slate-600 leading-relaxed mb-8">
@@ -107,7 +107,7 @@ const StableGrowthFiniteLifeDcf = () => {
           <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
             <CardHeader>
               <CardTitle>
-                Stable Growth - Finite-Life DCF Model
+                Stable Growth: Finite-Life DCF Model
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
@@ -122,7 +122,7 @@ const StableGrowthFiniteLifeDcf = () => {
               </Button>
               <DownloadButton 
                 sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYMfvk70fDxJu3IKJUMYzfABM9Qx9qoTynBrMBvcOZleAw?e=Zugont"
-                modelName="Stable Growth - Finite-Life DCF Model"
+                modelName="Stable Growth: Finite-Life DCF Model"
                 className="w-full"
               />
               <div className="mt-1 pt-1 text-xs text-muted-foreground">
@@ -134,7 +134,7 @@ const StableGrowthFiniteLifeDcf = () => {
           </Card>
 
           {/* Introduction Headline */}
-          <h3 className="mb-6">Stable Growth - Finite-Life DCF Model Introduction</h3>
+          <h3 className="mb-6">Stable Growth: Finite-Life DCF Model Introduction</h3>
         
         <div className="prose prose-slate max-w-none mb-8">
           <p className="text-xl text-slate-600 leading-relaxed mb-4">
@@ -162,12 +162,12 @@ const StableGrowthFiniteLifeDcf = () => {
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="complete-guide">
             <AccordionTrigger className="text-xl font-bold text-heading">
-              Complete Stable Growth - Finite-Life DCF Model Guide
+              Complete Stable Growth: Finite-Life DCF Model Guide
             </AccordionTrigger>
             <AccordionContent className="prose prose-slate max-w-none">
               <div className="space-y-6 text-slate-600">
                 <div>
-                  <h3 className="text-xl font-bold text-heading mb-3">What Is the Stable Growth - Finite-Life DCF Model?</h3>
+                  <h3 className="text-xl font-bold text-heading mb-3">What Is the Stable Growth: Finite-Life DCF Model?</h3>
                   <p className="leading-relaxed mb-4">
                     The model addresses investments that generate cash flows for specific periods before terminating. This includes equipment that requires replacement, contractual arrangements with defined terms, or operational projects with clear endpoints.
                   </p>
