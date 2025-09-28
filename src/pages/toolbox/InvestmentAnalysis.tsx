@@ -20,9 +20,9 @@ const InvestmentAnalysis = () => {
     {
       name: "Flexible Year by Year DCF Model",
       bulletPoints: [
-        "Model NPV/IRR with different assumptions each year",
-        "Full flexibility across value drivers",
-        "Value investments with varying performance over time"
+        "Model NPV/IRR with yearly flexibility",
+        "Handle complex business cycles",
+        "Control all value drivers by year"
       ],
       href: "/toolbox/investment-analysis/flexible-year-by-year-dcf-model",
       status: "available",
@@ -30,9 +30,9 @@ const InvestmentAnalysis = () => {
     {
       name: "Stable Growth - Finite-Life DCF Model",
       bulletPoints: [
-        "Model NPV/IRR for investments with limited lifetime",
-        "Example: fixed-term contracts and endpoint projects",
-        "Value investments including scenario modelling"
+        "Model limited lifetime investments",
+        "Value fixed-term contracts",
+        "Include scenario modeling"
       ],
       href: "/toolbox/investment-analysis/stable-growth-finite-life-dcf-model",
       status: "available",
@@ -40,9 +40,9 @@ const InvestmentAnalysis = () => {
     {
       name: "Stable Growth - Terminal Value DCF Model",
       bulletPoints: [
-        "Model NPV/IRR for perpetual operations",
-        "Examples: factories, facilities, infrastructure projects",
-        "Value investments including scenario modelling"
+        "Model perpetual operations",
+        "Value facilities & infrastructure",
+        "Include scenario modeling"
       ],
       href: "/toolbox/investment-analysis/stable-growth-terminal-value-dcf-model",
       status: "available",
@@ -50,9 +50,9 @@ const InvestmentAnalysis = () => {
     {
       name: "Two and Three Stages DCF Models",
       bulletPoints: [
-        "Model NPV/IRR for distinct performance phases",
-        "Example: ramp-up, scaling & mature stage transitions",
-        "Value investments including scenario modelling"
+        "Model distinct performance phases",
+        "Handle ramp-up/scaling/mature stages",
+        "Include scenario modeling"
       ],
       href: "/toolbox/investment-analysis/two-three-stages-dcf-model",
       status: "coming soon",
@@ -127,9 +127,9 @@ const InvestmentAnalysis = () => {
                     <CardTitle className="text-2xl font-semibold mb-3" style={{ color: '#FFB445' }}>
                       <span>{model.name}</span>
                     </CardTitle>
-                    <div className="flex-grow text-lg leading-relaxed" style={{ color: '#FFB445' }}>
+                    <div className="flex-grow text-base leading-[1.4] font-normal" style={{ color: 'rgba(255, 180, 69, 0.7)' }}>
                       {model.bulletPoints.map((point, index) => (
-                        <div key={index} className="mb-2">• {point}</div>
+                        <div key={index} className="my-1">• {point}</div>
                       ))}
                     </div>
                   </CardHeader>

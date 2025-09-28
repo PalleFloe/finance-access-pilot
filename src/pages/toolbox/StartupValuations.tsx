@@ -19,9 +19,9 @@ const StartupValuations = () => {
     {
       name: "SaaS Unit Economics Model",
       bulletPoints: [
-        "Validate if your SaaS business model is profitable",
-        "Optimize CLV vs. CAC strategies",
-        "Demonstrate unit economics to investors"
+        "Validate SaaS profitability",
+        "Optimize CLV vs CAC",
+        "Present to investors"
       ],
       href: "/toolbox/startup-valuations/saas-unit-economics",
       status: "available",
@@ -29,9 +29,9 @@ const StartupValuations = () => {
     {
       name: "Venture Capital Valuation Model",
       bulletPoints: [
-        "Model investment, ownership%, IRR and valuation relationship",
-        "Assess dilution across investment rounds",
-        "Negotiate funding terms with analytical backing"
+        "Model investment vs ownership & IRR",
+        "Assess dilution across rounds",
+        "Negotiate with analytical backing"
       ],
       href: "/toolbox/startup-valuations/venture-capital-method",
       status: "available",
@@ -39,9 +39,9 @@ const StartupValuations = () => {
     {
       name: "Berkus Valuation Model",
       bulletPoints: [
-        "Value pre-revenue startups with no financial history",
-        "Systematically assess early-stage investment risks",
-        "Negotiate valuations for founders and VCs"
+        "Value pre-revenue startups",
+        "Assess early-stage risks",
+        "Negotiate with founders & VCs"
       ],
       href: "/toolbox/startup-valuations/berkus-valuation",
       status: "available",
@@ -49,9 +49,9 @@ const StartupValuations = () => {
     {
       name: "First Chicago Valuation Model",
       bulletPoints: [
-        "Value startups via scenario based DCF Model",
-        "Compare exit valuation via revenue & profit multiples",
-        "Present probability-adjusted valuations to VCs"
+        "Scenario-based DCF valuation",
+        "Compare revenue & profit multiples",
+        "Present probability-adjusted values"
       ],
       href: "/toolbox/startup-valuations/first-chicago-method",
       status: "available",
@@ -59,9 +59,9 @@ const StartupValuations = () => {
     {
       name: "Perpetuity & Exit Valuation Models",
       bulletPoints: [
-        "Test cash-flow and growth rate assumptions on valuation",
-        "Compare perpetuity vs exit-based approaches",
-        "Common sense check of valuations in complex models"
+        "Test growth assumptions",
+        "Compare valuation approaches",
+        "Validate complex models"
       ],
       href: "/toolbox/startup-valuations/perpetuity-exit-models",
       status: "available",
@@ -69,9 +69,9 @@ const StartupValuations = () => {
     {
       name: "Decision Analysis for Venture Capital Investments",
       bulletPoints: [
-        "Structure valuation through non- and financial analysis",
-        "Assess development stages' risks and competitive success",
-        "Reduce cognitive biases in VCs investment decisions"
+        "Structure financial & non-financial analysis",
+        "Assess development risks",
+        "Reduce investment biases"
       ],
       href: "/toolbox/startup-valuations/decision-analysis",
       status: "available",
@@ -130,9 +130,9 @@ const StartupValuations = () => {
                     <CardTitle className="text-2xl font-semibold mb-3" style={{ color: '#FFB445' }}>
                       <span>{model.name}</span>
                     </CardTitle>
-                    <div className="flex-grow text-lg leading-relaxed" style={{ color: '#FFB445' }}>
+                    <div className="flex-grow text-base leading-[1.4] font-normal" style={{ color: 'rgba(255, 180, 69, 0.7)' }}>
                       {model.bulletPoints.map((point, index) => (
-                        <div key={index} className="mb-2">• {point}</div>
+                        <div key={index} className="my-1">• {point}</div>
                       ))}
                     </div>
                   </CardHeader>

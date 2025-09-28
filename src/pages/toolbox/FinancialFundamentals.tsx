@@ -19,9 +19,9 @@ const FinancialFundamentals = () => {
     {
       name: "Simple Present Value Calculator",
       bulletPoints: [
-        "Calculate NPV across five types of cash flow patterns",
+        "Calculate NPV for 5 cash flow types",
         "Compare payment structures",
-        "Understand compounding and exit timing's impact on valuations"
+        "Understand compounding impact"
       ],
       href: "/toolbox/financial-fundamentals/present-value-calculator",
       status: "available",
@@ -29,9 +29,9 @@ const FinancialFundamentals = () => {
     {
       name: "Simple Cost of Capital Calculator",
       bulletPoints: [
-        "Calculate WACC using CAPM + after-tax debt costs",
-        "Determine discount rates for DCF valuations",
-        "Compare financing options and optimize structure"
+        "Calculate WACC (CAPM + debt)",
+        "Determine DCF discount rates",
+        "Optimize financing structure"
       ],
       href: "/toolbox/financial-fundamentals/cost-of-capital-calculator",
       status: "available",
@@ -39,9 +39,9 @@ const FinancialFundamentals = () => {
     {
       name: "Standard Types of DCF Models",
       bulletPoints: [
-        "Choose between Flexible, Three Stages, or Stable Growth",
-        "Compare results across different DCF methodologies",
-        "Create scenarios for insights into value drivers"
+        "Choose Flexible/Three Stage/Stable Growth",
+        "Compare DCF methodologies",
+        "Create value driver scenarios"
       ],
       href: "/toolbox/financial-fundamentals/dcf-models",
       status: "available",
@@ -49,9 +49,9 @@ const FinancialFundamentals = () => {
     {
       name: "Financial Ratio Calculator",
       bulletPoints: [
-        "Calculate most important key financial ratios",
-        "Track three-year performance trends",
-        "Make comprehensive analysis for companies reporting"
+        "Calculate key financial ratios",
+        "Track 3-year performance trends",
+        "Prepare company analysis"
       ],
       href: "/toolbox/financial-fundamentals/financial-ratio-calculator",
       status: "available",
@@ -59,9 +59,9 @@ const FinancialFundamentals = () => {
     {
       name: "Simple Earning Growth Estimator",
       bulletPoints: [
-        "Estimate growth using ROC × Reinvestment methodology",
-        "Separate existing vs new investment growth drivers",
-        "Validate business plan growth assumptions"
+        "Estimate growth (ROC × Reinvestment)",
+        "Separate existing vs new growth",
+        "Validate business plan assumptions"
       ],
       href: "/toolbox/financial-fundamentals/earning-growth-estimator",
       status: "available",
@@ -69,9 +69,9 @@ const FinancialFundamentals = () => {
     {
       name: "Simple Project Scenario Model",
       bulletPoints: [
-        "Evaluate projects across Downside/Base/Upside scenarios",
-        "Calculate NPV and IRR with sensitivity analysis",
-        "Make informed capital allocation decisions"
+        "Evaluate Downside/Base/Upside scenarios",
+        "Calculate NPV/IRR with sensitivity",
+        "Make capital allocation decisions"
       ],
       href: "/toolbox/financial-fundamentals/project-scenario-model",
       status: "available",
@@ -130,9 +130,9 @@ const FinancialFundamentals = () => {
                     <CardTitle className="text-2xl font-semibold mb-3" style={{ color: '#FFB445' }}>
                       <span>{model.name}</span>
                     </CardTitle>
-                    <div className="flex-grow text-lg leading-relaxed" style={{ color: '#FFB445' }}>
+                    <div className="flex-grow text-base leading-[1.4] font-normal" style={{ color: 'rgba(255, 180, 69, 0.7)' }}>
                       {model.bulletPoints.map((point, index) => (
-                        <div key={index} className="mb-2">• {point}</div>
+                        <div key={index} className="my-1">• {point}</div>
                       ))}
                     </div>
                   </CardHeader>
