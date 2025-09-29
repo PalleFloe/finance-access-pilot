@@ -112,7 +112,7 @@ const VentureCapitalMethod = () => {
               <CardHeader>
                 <CardTitle>Venture Capital Valuation Model</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-3">
+              <CardContent className="space-y-5">
                 <Button 
                   onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYYO2e6eVcRJrUq7utm970cBafMKUt7r8oVfdVFGYwqzhQ?e=iWF4sf&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                   className="w-full text-lg"

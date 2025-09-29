@@ -111,7 +111,7 @@ const ThreeStageDcf = () => {
                     Three Stage DCF Model
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-3">
+                <CardContent className="space-y-5">
                   <Button 
                     onClick={openModel}
                     variant="brand-green"
