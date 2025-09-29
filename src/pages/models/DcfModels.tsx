@@ -2,10 +2,12 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import Footer from "@/components/sections/Footer";
 import DownloadButton from "@/components/DownloadButton";
+import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 
@@ -108,33 +110,51 @@ const DcfModels = () => {
             Three Approaches: Fully Flexible, Staged or Stable Assumptions. Designed to value a firm
           </h2>
 
-          <Card className="shadow-lg border-slate-200 mb-8 max-w-md lg:h-[400px]">
-            <CardHeader>
-              <CardTitle>
-                Key Types of DCF Models
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-2">
-              <Button 
-                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EUslqKL1b2dEgvuCcENmgZcBtHb0hMfERIei28UtD76zaQ?e=ytNsEZ&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-                variant="model-blue"
-                className="w-full text-lg"
-              >
-                <ExternalLink className="w-4 h-4 mr-2" />
-                Online & View
-              </Button>
-              <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EbgFlAQTAcNAhgx4brwfYKoBqugQS3wFXW5T79_oo0vtbQ?e=j8kInz"
-                modelName="Standard Types of DCF Models"
-                className="w-full"
-              />
-              <div className="mt-1 pt-1 text-xs text-muted-foreground">
-                <strong className="text-primary">Quick Access Guide:</strong><br />
-                <span>Online & View - Instant online preview (without registration)</span>
-                <br /><span>Download & Use - Browser embedded Excel with download capability (required registration)</span>
-              </div>
-            </CardContent>
-          </Card>
+          <div className="flex flex-col lg:flex-row gap-8 mb-8">
+            <div className="flex-shrink-0 max-w-md">
+              <Card className="shadow-lg border-slate-200 lg:h-[275px]">
+                <CardHeader>
+                  <CardTitle>
+                    Key Types of DCF Models
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-5">
+                  <Button 
+                    onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EUslqKL1b2dEgvuCcENmgZcBtHb0hMfERIei28UtD76zaQ?e=ytNsEZ&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                    variant="model-blue"
+                    className="w-full text-lg"
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Online & View
+                  </Button>
+                  <DownloadButton 
+                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EbgFlAQTAcNAhgx4brwfYKoBqugQS3wFXW5T79_oo0vtbQ?e=j8kInz"
+                    modelName="Standard Types of DCF Models"
+                    className="w-full"
+                  />
+
+                  <div className="relative">
+                    <Button 
+                      disabled 
+                      className="w-full text-lg bg-gray-100 text-gray-500 cursor-not-allowed"
+                    >
+                      Download & Own
+                    </Button>
+                    <div className="absolute -top-3 -right-3 z-20">
+                      <Badge className="bg-orange-500 text-white border-orange-400 shadow-lg transition-colors hover:bg-[hsl(var(--brand-green))] hover:border-[hsl(var(--brand-green))]">
+                        <Clock className="w-3 h-3 mr-1" />
+                        Coming Soon
+                      </Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <div className="max-w-md">
+              <ModelInfoPanel />
+            </div>
+          </div>
 
           <div className="max-w-none">
             <h3 className="text-xl font-semibold mb-4">What Are the Standard Types of DCF Models?</h3>
