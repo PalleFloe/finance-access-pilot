@@ -1,13 +1,16 @@
 import React from 'react';
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const ModelInfoPanel = () => {
   return (
-    <div className="bg-slate-50 border border-slate-200 shadow-sm rounded-lg p-6 h-full flex flex-col">
-      <h3 className="text-[16px] font-bold text-[#326496] mb-3" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
-        How to View & Download This Model
-      </h3>
+    <Card className="shadow-lg border-slate-200 h-full">
+      <CardHeader>
+        <CardTitle className="text-[16px] font-bold text-[#326496]" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
+          How to View & Download This Model
+        </CardTitle>
+      </CardHeader>
       
-      <div className="flex-1 flex flex-col justify-between space-y-2 text-[12px] leading-relaxed" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
+      <CardContent className="space-y-2 text-[12px] leading-relaxed" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
         <p>
           <span className="font-semibold">Online & View:</span> Instant browser preview - no registration needed.
         </p>
@@ -27,8 +30,8 @@ const ModelInfoPanel = () => {
           <p>In toolbar select File → Create a Copy → Download a Copy</p>
           <p>Open in Excel for your own use. All models are free.</p>
         </div>
-      </div>
-    </div>
+      </CardContent>
+    </Card>
   );
 };
 
