@@ -106,35 +106,50 @@ const FirstChicagoValuation = () => {
       </div>
 
       <div className="container mx-auto mb-12">
-        <div className="max-w-md bg-white rounded-lg border shadow-lg p-6">
-          <h3 className="text-xl font-semibold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-            First Chicago Valuation Model
-          </h3>
-          
-          <div className="space-y-3">
-            <Button 
-              onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYD8J82OTqNErjVgb7FLT7wBUKdxcqGV5CGWfXMeuzXa1Q?e=nglIBE&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-              className="w-full text-lg"
-              variant="model-blue"
-              size="lg"
-            >
-              <ExternalLink className="mr-2 h-4 w-4" />
-              Online & View
-            </Button>
-            
-              <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYlsAZtZS69LoWk_ONge0A4BV2efHA30RY3YINOML4cdKA?e=XU6enn"
-                modelName="First Chicago Method Model"
-              className="w-full text-lg"
-            />
+        <div className="flex flex-col lg:flex-row gap-8">
+          <div className="flex-shrink-0 max-w-md">
+            <Card className="shadow-lg border-slate-200 lg:h-[275px]">
+              <CardHeader>
+                <CardTitle>
+                  First Chicago Valuation Model
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-5">
+                <Button 
+                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYD8J82OTqNErjVgb7FLT7wBUKdxcqGV5CGWfXMeuzXa1Q?e=nglIBE&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                  className="w-full text-lg"
+                  variant="model-blue"
+                >
+                  <ExternalLink className="mr-2 h-4 w-4" />
+                  Online & View
+                </Button>
+                
+                <DownloadButton 
+                  sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYlsAZtZS69LoWk_ONge0A4BV2efHA30RY3YINOML4cdKA?e=XU6enn"
+                  modelName="First Chicago Method Model"
+                  className="w-full"
+                />
+
+                <div className="relative">
+                  <Button 
+                    disabled 
+                    className="w-full text-lg bg-gray-100 text-gray-500 cursor-not-allowed"
+                  >
+                    Download & Own
+                  </Button>
+                  <div className="absolute -top-3 -right-3 z-20">
+                    <Badge className="bg-orange-500 text-white border-orange-400 shadow-lg transition-colors hover:bg-[hsl(var(--brand-green))] hover:border-[hsl(var(--brand-green))]">
+                      <Clock className="w-3 h-3 mr-1" />
+                      Coming Soon
+                    </Badge>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
           
-          <div className="mt-6 text-sm text-gray-600">
-            <h4 className="font-semibold mb-2">Quick Access Guide</h4>
-            <ul className="space-y-1 text-xs">
-              <li><strong>Online & View:</strong> Instant online preview (without registration)</li>
-              <li><strong>Register to Download:</strong> Free registration gives you download access to all models</li>
-            </ul>
+          <div className="max-w-md">
+            <ModelInfoPanel />
           </div>
         </div>
       </div>

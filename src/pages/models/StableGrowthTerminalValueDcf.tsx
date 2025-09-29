@@ -3,7 +3,8 @@ import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
@@ -104,35 +105,51 @@ const StableGrowthTerminalValueDcf = () => {
             Stable Growth DCF Analysis: Perpetual Value Asset Evaluation with Terminal Value Focus and Growth Rate Sensitivity
           </h2>
 
-          {/* Model Card */}
-          <Card className="shadow-lg border-slate-200 mb-8 max-w-md lg:h-[400px]">
-            <CardHeader>
-              <CardTitle>
-                Stable Growth - Terminal DCF Model
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-3">
-              <Button 
-                onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EVlraDwwVANEgrCeb0E6GIIBECFk2Bolsc1RlTG1qzC62A?e=CIPY7h&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-                variant="model-blue"
-                size="lg"
-                className="w-full text-lg"
-              >
-                <ExternalLink className="w-4 h-4 mr-2" />
-                Online & View
-              </Button>
-              <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EfA8V3EKkddAnVMlp8CBNt4B2FG8IRt85ZHD4OaQQEXrUw?e=i02xoL"
-                modelName="Stable Growth: Terminal Value DCF Model"
-                className="w-full"
-              />
-              <div className="mt-1 pt-1 text-xs text-muted-foreground">
-                <strong className="text-primary">Quick Access Guide:</strong><br />
-                <span>Online & View - Instant online preview (without registration)</span>
-                <br /><span>Download & Use - Browser embedded Excel with download capability (required registration)</span>
-              </div>
-            </CardContent>
-          </Card>
+          <div className="flex flex-col lg:flex-row gap-8 mb-8">
+            <div className="flex-shrink-0 max-w-md">
+              <Card className="shadow-lg border-slate-200 lg:h-[275px]">
+                <CardHeader>
+                  <CardTitle>
+                    Stable Growth - Terminal DCF Model
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-5">
+                  <Button 
+                    onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EVlraDwwVANEgrCeb0E6GIIBECFk2Bolsc1RlTG1qzC62A?e=CIPY7h&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                    variant="model-blue"
+                    className="w-full text-lg"
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Online & View
+                  </Button>
+                  <DownloadButton 
+                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EfA8V3EKkddAnVMlp8CBNt4B2FG8IRt85ZHD4OaQQEXrUw?e=i02xoL"
+                    modelName="Stable Growth: Terminal Value DCF Model"
+                    className="w-full"
+                  />
+
+                  <div className="relative">
+                    <Button 
+                      disabled 
+                      className="w-full text-lg bg-gray-100 text-gray-500 cursor-not-allowed"
+                    >
+                      Download & Own
+                    </Button>
+                    <div className="absolute -top-3 -right-3 z-20">
+                      <Badge className="bg-orange-500 text-white border-orange-400 shadow-lg transition-colors hover:bg-[hsl(var(--brand-green))] hover:border-[hsl(var(--brand-green))]">
+                        <Clock className="w-3 h-3 mr-1" />
+                        Coming Soon
+                      </Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <div className="max-w-md">
+              <ModelInfoPanel />
+            </div>
+          </div>
 
           {/* Introduction Headline */}
           <h3 className="mb-6">Stable Growth: Terminal Value DCF Model Introduction</h3>

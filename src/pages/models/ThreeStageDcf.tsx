@@ -105,16 +105,16 @@ const ThreeStageDcf = () => {
           {/* Model Card */}
           <div className="flex flex-col lg:flex-row gap-8 max-w-7xl mx-auto mb-8">
             <div className="flex-shrink-0 max-w-md">
-              <Card className="shadow-lg border-slate-200">
-                <CardHeader className="text-center">
-                  <CardTitle className="text-2xl font-semibold text-brand-blue mb-2">
+              <Card className="shadow-lg border-slate-200 lg:h-[275px]">
+                <CardHeader>
+                  <CardTitle>
                     Three Stage DCF Model
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-5">
                   <Button 
                     onClick={openModel}
-                    variant="brand-green"
+                    variant="model-blue"
                     className="w-full text-lg"
                   >
                     <ExternalLink className="w-5 h-5 mr-2" />
@@ -127,25 +127,25 @@ const ThreeStageDcf = () => {
                     className="w-full"
                   />
 
-                <div className="relative">
-                  <Button 
-                    disabled 
-                    className="w-full text-lg bg-gray-100 text-gray-500 cursor-not-allowed"
-                  >
-                    Download & Own
-                  </Button>
-                  <div className="absolute -top-3 -right-3 z-20">
-                    <Badge className="bg-orange-500 text-white border-orange-400 shadow-lg transition-colors hover:bg-[hsl(var(--brand-green))] hover:border-[hsl(var(--brand-green))]">
-                      <Clock className="w-3 h-3 mr-1" />
-                      Coming Soon
-                    </Badge>
+                  <div className="relative">
+                    <Button 
+                      disabled 
+                      className="w-full text-lg bg-gray-100 text-gray-500 cursor-not-allowed"
+                    >
+                      Download & Own
+                    </Button>
+                    <div className="absolute -top-3 -right-3 z-20">
+                      <Badge className="bg-orange-500 text-white border-orange-400 shadow-lg transition-colors hover:bg-[hsl(var(--brand-green))] hover:border-[hsl(var(--brand-green))]">
+                        <Clock className="w-3 h-3 mr-1" />
+                        Coming Soon
+                      </Badge>
+                    </div>
                   </div>
-                </div>
                 </CardContent>
               </Card>
             </div>
             
-            <div className="flex-1">
+            <div className="max-w-md">
               <ModelInfoPanel />
             </div>
           </div>
