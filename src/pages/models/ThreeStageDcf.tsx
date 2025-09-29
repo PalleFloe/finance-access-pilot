@@ -127,16 +127,20 @@ const ThreeStageDcf = () => {
                     className="w-full"
                   />
 
-                <Button 
-                  disabled 
-                  className="w-full text-lg bg-gray-100 text-gray-500 cursor-not-allowed flex items-center justify-center"
-                >
-                  Download & Own
-                  <Badge className="ml-2 bg-orange-500 text-white border-orange-400 shadow-lg">
-                    <Clock className="w-3 h-3 mr-1" />
-                    Coming Soon
-                  </Badge>
-                </Button>
+                <div className="relative">
+                  <Button 
+                    disabled 
+                    className="w-full text-lg bg-gray-100 text-gray-500 cursor-not-allowed"
+                  >
+                    Download & Own
+                  </Button>
+                  <div className="absolute -top-3 -right-3 z-20">
+                    <Badge className="bg-orange-500 text-white border-orange-400 shadow-lg transition-colors hover:bg-[hsl(var(--brand-green))] hover:border-[hsl(var(--brand-green))]">
+                      <Clock className="w-3 h-3 mr-1" />
+                      Coming Soon
+                    </Badge>
+                  </div>
+                </div>
                 </CardContent>
               </Card>
             </div>
