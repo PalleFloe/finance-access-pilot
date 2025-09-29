@@ -146,7 +146,7 @@ const SaasUnitEconomics = () => {
             </Card>
           </div>
           
-          <div className="flex-1">
+          <div className="max-w-md">
             <ModelInfoPanel />
           </div>
         </div>
