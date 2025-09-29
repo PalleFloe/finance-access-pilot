@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -126,15 +127,15 @@ const ThreeStageDcf = () => {
                     className="w-full"
                   />
 
-                  <Button 
-                    disabled 
-                    className="w-full text-lg bg-gray-100 text-gray-500 cursor-not-allowed flex items-center justify-center"
-                  >
-                    Download & Own
-                    <span className="ml-2 bg-orange-100 text-orange-800 border border-orange-200 text-xs px-2 py-1 rounded">
-                      Coming Soon
-                    </span>
-                  </Button>
+                <Button 
+                  disabled 
+                  className="w-full text-lg bg-gray-100 text-gray-500 cursor-not-allowed flex items-center justify-center"
+                >
+                  Download & Own
+                  <Badge className="ml-2 bg-orange-500 text-white border-orange-400 shadow-sm">
+                    Coming Soon
+                  </Badge>
+                </Button>
                 </CardContent>
               </Card>
             </div>

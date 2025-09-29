@@ -133,9 +133,9 @@ const VentureCapitalMethod = () => {
                   className="w-full text-lg bg-gray-100 text-gray-500 cursor-not-allowed flex items-center justify-center"
                 >
                   Download & Own
-                  <span className="ml-2 bg-orange-100 text-orange-800 border border-orange-200 text-xs px-2 py-1 rounded">
+                  <Badge className="ml-2 bg-orange-500 text-white border-orange-400 shadow-sm">
                     Coming Soon
-                  </span>
+                  </Badge>
                 </Button>
               </CardContent>
             </Card>
