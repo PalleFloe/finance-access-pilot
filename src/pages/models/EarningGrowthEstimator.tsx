@@ -105,7 +105,7 @@ const EarningGrowthEstimator = () => {
             Systematic Growth Analysis: ROC-Based Earning Growth Estimation for Existing and New Investments
           </h2>
 
-          <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
+          <Card className="shadow-lg border-slate-200 mb-8 max-w-md lg:h-[400px]">
             <CardHeader>
               <CardTitle>
                 Simple Earning Growth Estimator

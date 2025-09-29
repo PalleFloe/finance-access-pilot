@@ -105,7 +105,7 @@ const ProjectScenarioModel = () => {
             Comprehensive Project Analysis: Multi-Scenario Capital Budgeting with NPV and IRR Sensitivity Analysis
           </h2>
 
-          <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
+          <Card className="shadow-lg border-slate-200 mb-8 max-w-md lg:h-[400px]">
             <CardHeader>
               <CardTitle>
                 Simple Project Scenario Model

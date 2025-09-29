@@ -105,7 +105,7 @@ const PresentValueCalculator = () => {
             Present Value Analysis: One-time, Annuity, Growing Annuity, Perpetuity, and Growing Perpetuity Calculations
           </h2>
 
-          <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
+          <Card className="shadow-lg border-slate-200 mb-8 max-w-md lg:h-[400px]">
             <CardHeader>
               <CardTitle>
                 Simple Present Value Calculator

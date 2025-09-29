@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const ModelInfoPanel = () => {
   return (
-    <Card className="shadow-lg border-slate-200">
+    <Card className="shadow-lg border-slate-200 lg:h-[400px]">
       <CardHeader>
         <CardTitle className="text-[16px] font-bold text-[#326496]" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
           How to View & Download This Model

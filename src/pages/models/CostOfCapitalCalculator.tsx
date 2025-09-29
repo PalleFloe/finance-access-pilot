@@ -105,7 +105,7 @@ const CostOfCapitalCalculator = () => {
             WACC Analysis: Cost of Equity, Cost of Debt, and Weighted Average Cost of Capital Calculation
           </h2>
 
-          <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
+          <Card className="shadow-lg border-slate-200 mb-8 max-w-md lg:h-[400px]">
             <CardHeader>
               <CardTitle>
                 Simple Cost of Capital Calculator

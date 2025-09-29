@@ -108,7 +108,7 @@ const DcfModels = () => {
             Three Approaches: Fully Flexible, Staged or Stable Assumptions. Designed to value a firm
           </h2>
 
-          <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
+          <Card className="shadow-lg border-slate-200 mb-8 max-w-md lg:h-[400px]">
             <CardHeader>
               <CardTitle>
                 Key Types of DCF Models

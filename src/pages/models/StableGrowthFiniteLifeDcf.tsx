@@ -105,7 +105,7 @@ const StableGrowthFiniteLifeDcf = () => {
           </h2>
 
           {/* Model Card */}
-          <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
+          <Card className="shadow-lg border-slate-200 mb-8 max-w-md lg:h-[400px]">
             <CardHeader>
               <CardTitle>
                 Stable Growth - Finite-Life DCF Model

@@ -104,7 +104,7 @@ const FinancialRatioCalculator = () => {
             Comprehensive Financial Analysis: Investment Returns, Profitability, Efficiency, and Market Valuation Ratios
           </h2>
 
-          <Card className="shadow-lg border-slate-200 mb-8 max-w-md">
+          <Card className="shadow-lg border-slate-200 mb-8 max-w-md lg:h-[400px]">
             <CardHeader>
               <CardTitle>
                 Financial Ratio Calculator
