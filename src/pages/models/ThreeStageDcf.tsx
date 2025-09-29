@@ -5,6 +5,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
+import DownloadButton from "@/components/DownloadButton";
+import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { useAnalytics, usePageVisitTracking } from '@/hooks/useAnalytics';
 
@@ -100,40 +102,47 @@ const ThreeStageDcf = () => {
           </h2>
 
           {/* Model Card */}
-          <Card className="max-w-md shadow-lg border-slate-200 mb-8">
-            <CardHeader className="text-center">
-              <CardTitle className="text-2xl font-semibold text-brand-blue mb-2">
-                Three Stage DCF Model
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <Button 
-                onClick={openModel}
-                variant="brand-green"
-                size="lg"
-                className="w-full text-lg"
-              >
-                <ArrowRight className="w-4 h-4 mr-2" />
-                Online & View
-              </Button>
-              <Button 
-                asChild
-                variant="deep-blue" 
-                size="lg"
-                className="w-full text-lg"
-              >
-                <Link to="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ea241lXv391GqP_l0MybwvABAscjLi_idFozsNy2A9JrCA?e=kQ0oho" target="_blank">
-                  <ArrowRight className="w-4 h-4 mr-2" />
-                  Download & Use
-                </Link>
-              </Button>
-              <div className="mt-1 pt-1 text-xs text-muted-foreground">
-                <strong className="text-primary">Quick Access Guide:</strong><br />
-                <span>Online & View - Instant online preview (without registration)</span>
-                <br /><span>Download & Use - Browser embedded Excel with download capability (required registration)</span>
-              </div>
-            </CardContent>
-          </Card>
+          <div className="flex flex-col lg:flex-row gap-8 max-w-7xl mx-auto mb-8">
+            <div className="flex-shrink-0 max-w-md">
+              <Card className="shadow-lg border-slate-200">
+                <CardHeader className="text-center">
+                  <CardTitle className="text-2xl font-semibold text-brand-blue mb-2">
+                    Three Stage DCF Model
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <Button 
+                    onClick={openModel}
+                    variant="brand-green"
+                    className="w-full text-lg"
+                  >
+                    <ExternalLink className="w-5 h-5 mr-2" />
+                    Online & View
+                  </Button>
+                  
+                  <DownloadButton 
+                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ea241lXv391GqP_l0MybwvABAscjLi_idFozsNy2A9JrCA?e=kQ0oho"
+                    modelName="Three Stage DCF Model"
+                    className="w-full"
+                  />
+
+                  <Button 
+                    disabled 
+                    className="w-full text-lg bg-gray-100 text-gray-500 cursor-not-allowed flex items-center justify-center"
+                  >
+                    Download & Own
+                    <span className="ml-2 bg-orange-100 text-orange-800 border border-orange-200 text-xs px-2 py-1 rounded">
+                      Coming Soon
+                    </span>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <div className="flex-1">
+              <ModelInfoPanel />
+            </div>
+          </div>
 
           {/* Introduction Headline */}
           <h3 className="mb-6">Three Stage DCF Model Introduction</h3>

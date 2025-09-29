@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
+import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 
@@ -105,35 +106,43 @@ const SaasUnitEconomics = () => {
       </div>
 
       <div className="container mx-auto mb-12">
-        <div className="max-w-md bg-white rounded-lg border shadow-lg p-6">
-          <h3 className="text-xl font-semibold mb-4" style={{color: 'hsl(209, 49%, 39%)'}}>
-            SaaS Unit Economics Model
-          </h3>
-          
-          <div className="space-y-3">
-            <Button 
-              onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ealn2asfI9lNvDNJxDjMnMUBO_1sOcyJbjeWIXbAn8pZ0Q?e=Hrjiaw&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-              className="w-full text-lg"
-              variant="model-blue"
-              size="lg"
-            >
-              <ExternalLink className="mr-2 h-4 w-4" />
-              Online & View
-            </Button>
-            
-              <DownloadButton 
-                sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EdeifZ8XjVdOmKEVJ2zhc2oBZMOGOmY_E0jpQMTk6goMuQ?e=tmmnAB"
-                modelName="SaaS Unit Economics Model"
-              className="w-full"
-            />
+        <div className="flex flex-col lg:flex-row gap-8 max-w-7xl mx-auto">
+          <div className="flex-shrink-0 max-w-md">
+            <Card className="shadow-lg border-slate-200">
+              <CardHeader>
+                <CardTitle>SaaS Unit Economics Model</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <Button 
+                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ealn2asfI9lNvDNJxDjMnMUBO_1sOcyJbjeWIXbAn8pZ0Q?e=Hrjiaw&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                  className="w-full text-lg"
+                  variant="model-blue"
+                >
+                  <ExternalLink className="mr-2 h-5 w-5" />
+                  Online & View
+                </Button>
+                
+                <DownloadButton 
+                  sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EdeifZ8XjVdOmKEVJ2zhc2oBZMOGOmY_E0jpQMTk6goMuQ?e=tmmnAB"
+                  modelName="SaaS Unit Economics Model"
+                  className="w-full"
+                />
+
+                <Button 
+                  disabled 
+                  className="w-full text-lg bg-gray-100 text-gray-500 cursor-not-allowed flex items-center justify-center"
+                >
+                  Download & Own
+                  <span className="ml-2 bg-orange-100 text-orange-800 border border-orange-200 text-xs px-2 py-1 rounded">
+                    Coming Soon
+                  </span>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
           
-          <div className="mt-6 text-sm text-gray-600">
-            <h4 className="font-semibold mb-2">Quick Access Guide</h4>
-            <ul className="space-y-1 text-xs">
-              <li><strong>Online & View:</strong> Instant online preview (without registration)</li>
-              <li><strong>Register to Download:</strong> Free registration gives you download access to all models</li>
-            </ul>
+          <div className="flex-1">
+            <ModelInfoPanel />
           </div>
         </div>
       </div>

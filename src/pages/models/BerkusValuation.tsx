@@ -7,6 +7,7 @@ import { ArrowLeft, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/sections/Footer";
 import DownloadButton from "@/components/DownloadButton";
+import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 
