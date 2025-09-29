@@ -22,8 +22,8 @@ const ModelInfoPanel = () => {
           <span className="font-semibold">Download & Own:</span> Coming soon - full ownership rights for purchased models.
         </p>
         
-        <div className="pt-1">
-          <p className="font-semibold mb-1">To download:</p>
+        <div>
+          <p className="font-semibold mb-0">To download:</p>
           <p>In toolbar select File → Create a Copy → Download a Copy</p>
           <p>Open in Excel for your own use. All models are free.</p>
         </div>
