@@ -10,7 +10,7 @@ const ModelInfoPanel = () => {
         </CardTitle>
       </CardHeader>
       
-      <CardContent className="space-y-2 text-[12px] leading-relaxed" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
+      <CardContent className="space-y-2 text-[12px] leading-relaxed text-slate-600" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
         <p>
           <span className="font-semibold">Online & View:</span> Instant browser preview - no registration needed.
         </p>
