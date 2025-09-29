@@ -48,14 +48,14 @@ const InvestmentAnalysis = () => {
       status: "available",
     },
     {
-      name: "Two and Three Stages DCF Models",
+      name: "Three Stage DCF Model",
       bulletPoints: [
         "Model distinct performance phases",
         "Handle ramp-up / scaling / mature stages",
         "Value investments including scenario modelling"
       ],
-      href: "/toolbox/investment-analysis/two-three-stages-dcf-model",
-      status: "coming soon",
+      href: "/toolbox/investment-analysis/three-stage-dcf-model",
+      status: "available",
     },
     {
       name: "Cost Reduction DCF Model",
