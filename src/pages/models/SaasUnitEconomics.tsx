@@ -106,7 +106,7 @@ const SaasUnitEconomics = () => {
       </div>
 
       <div className="container mx-auto mb-12">
-        <div className="flex flex-col lg:flex-row gap-8 max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row gap-8">
           <div className="flex-shrink-0 max-w-md">
             <Card className="shadow-lg border-slate-200 lg:h-[275px]">
               <CardHeader>
