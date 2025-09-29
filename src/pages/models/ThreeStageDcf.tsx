@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
+import { ArrowLeft, ArrowRight, ExternalLink, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
@@ -132,7 +132,8 @@ const ThreeStageDcf = () => {
                   className="w-full text-lg bg-gray-100 text-gray-500 cursor-not-allowed flex items-center justify-center"
                 >
                   Download & Own
-                  <Badge className="ml-2 bg-orange-500 text-white border-orange-400 shadow-sm">
+                  <Badge className="ml-2 bg-orange-500 text-white border-orange-400 shadow-lg">
+                    <Clock className="w-3 h-3 mr-1" />
                     Coming Soon
                   </Badge>
                 </Button>

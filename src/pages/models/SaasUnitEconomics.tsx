@@ -133,7 +133,8 @@ const SaasUnitEconomics = () => {
                   className="w-full text-lg bg-gray-100 text-gray-500 cursor-not-allowed flex items-center justify-center"
                 >
                   Download & Own
-                  <Badge className="ml-2 bg-orange-500 text-white border-orange-400 shadow-sm">
+                  <Badge className="ml-2 bg-orange-500 text-white border-orange-400 shadow-lg">
+                    <Clock className="w-3 h-3 mr-1" />
                     Coming Soon
                   </Badge>
                 </Button>
