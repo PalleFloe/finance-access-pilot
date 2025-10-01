@@ -21,7 +21,7 @@ const MainSections = () => {
                 
                 <div>
                   <p className="font-garamond text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-600 mb-8">
-                    Professional Excel models with intuitive and structured design, and with clear guidance on What, Why, Who and How to use
+                    Structured and intuitive Excel models with clear guidance on What, Why, Who and How to use
                   </p>
                 </div>
                 
