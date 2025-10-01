@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { ArrowRight } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { ArrowRight, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const MainSections = () => {
@@ -43,6 +44,12 @@ const MainSections = () => {
 
                     <Link to="/toolbox/business-strategy" className="block">
                       <Card className="shadow-lg border-slate-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative cursor-pointer w-full h-40" style={{backgroundColor: '#326496'}}>
+                        <div className="absolute -top-3 -right-3 z-20">
+                          <Badge className="bg-orange-500 text-white border-orange-400 shadow-lg">
+                            <Clock className="w-3 h-3 mr-1" />
+                            Coming Soon
+                          </Badge>
+                        </div>
                         <CardHeader className="h-full flex flex-col justify-center p-3">
                           <CardTitle className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{color: '#FFFFFF'}}>
                             <span>Business Strategy</span>
