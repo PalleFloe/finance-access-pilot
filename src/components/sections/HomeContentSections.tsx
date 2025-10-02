@@ -12,7 +12,7 @@ const HomeContentSections = () => {
             Models by Palle Fløe Nielsen
           </h2>
           
-          <div className="space-y-4 text-[12px]" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
+          <div className="space-y-4 text-lg" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
             <p>
               Former Divisional CFO at Novozymes, with 20+ years leading business finance in global life sciences and technology companies.
             </p>
@@ -24,14 +24,6 @@ const HomeContentSections = () => {
             <p>
               These models bridge that gap.
             </p>
-            
-            <a 
-              href="/about" 
-              className="inline-block mt-4 text-[#326496] hover:underline"
-              style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}
-            >
-              Read the full story →
-            </a>
           </div>
         </div>
 
@@ -44,7 +36,7 @@ const HomeContentSections = () => {
             Why These Models Work
           </h2>
           
-          <div className="space-y-6 text-[12px]" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
+          <div className="space-y-6 text-lg" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
             <p>
               Most financial models fail at the moment of decision. They're either too complex for decision-makers to trust, or too simplified to be credible.
             </p>
@@ -55,13 +47,13 @@ const HomeContentSections = () => {
             
             <ul className="space-y-3 ml-6">
               <li>
-                <span className="font-semibold">Structured clarity:</span> Clear links between assumptions, calculations, and results—so decision-makers can follow the logic
+                <span className="font-bold">Structured clarity:</span> Clear links between assumptions, calculations, and results—so decision-makers can follow the logic
               </li>
               <li>
-                <span className="font-semibold">Built for decisions:</span> Designed to inform choices and support decision-making, not just crunch numbers
+                <span className="font-bold">Built for decisions:</span> Designed to inform choices and support decision-making, not just crunch numbers
               </li>
               <li>
-                <span className="font-semibold">Academically grounded:</span> Methods inspired by leading academics like Professor Aswath Damodoran
+                <span className="font-bold">Academically grounded:</span> Methods inspired by leading academics like Professor Aswath Damodaran
               </li>
             </ul>
             
@@ -80,7 +72,7 @@ const HomeContentSections = () => {
             Choose Your Path
           </h2>
           
-          <div className="space-y-4 text-[12px] mb-6" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
+          <div className="space-y-4 text-lg mb-6" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
             <p>
               All models are available to view online for free. Download and use them after simple registration—or purchase full ownership rights for customisation.
             </p>
