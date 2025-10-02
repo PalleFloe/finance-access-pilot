@@ -72,7 +72,7 @@ const HomeContentSections = () => {
             Choose Your Path
           </h2>
           
-          <div className="space-y-4 text-lg mb-6" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
+          <div className="space-y-4 text-lg" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
             <p>
               All models are available to view online for free. Download and use them after simple registration—or purchase full ownership rights for customisation.
             </p>
@@ -81,17 +81,6 @@ const HomeContentSections = () => {
               Need something specific? Custom model development and consulting services available for complex requirements.
             </p>
           </div>
-          
-          <a 
-            href="/how-it-works"
-            className="inline-block text-white px-8 py-3 rounded-md hover:opacity-90 transition-opacity text-[14px] font-semibold"
-            style={{ 
-              fontFamily: "'Garamond', 'Times New Roman', serif",
-              backgroundColor: '#326496'
-            }}
-          >
-            See All Options →
-          </a>
         </div>
 
       </div>
