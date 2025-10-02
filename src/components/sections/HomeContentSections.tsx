@@ -6,7 +6,7 @@ const HomeContentSections = () => {
         {/* Section 1: Founder & Credibility */}
         <div className="mb-16">
           <h2 
-            className="text-[18px] font-bold text-[#326496] mb-6" 
+            className="text-4xl md:text-5xl font-bold text-[#326496] mb-6" 
             style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}
           >
             Models by Palle Fløe Nielsen
@@ -30,7 +30,7 @@ const HomeContentSections = () => {
         {/* Section 2: Why These Models Work */}
         <div className="mb-16">
           <h2 
-            className="text-[18px] font-bold text-[#326496] mb-6" 
+            className="text-4xl md:text-5xl font-bold text-[#326496] mb-6" 
             style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}
           >
             Why These Models Work
@@ -66,7 +66,7 @@ const HomeContentSections = () => {
         {/* Section 3: Call to Action */}
         <div>
           <h2 
-            className="text-[18px] font-bold text-[#326496] mb-6" 
+            className="text-4xl md:text-5xl font-bold text-[#326496] mb-6" 
             style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}
           >
             Choose Your Path
