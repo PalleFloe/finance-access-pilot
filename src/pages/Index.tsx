@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import HeroSection from "@/components/sections/HeroSection";
 import MainSections from "@/components/sections/MainSections";
+import HomeContentSections from "@/components/sections/HomeContentSections";
 import Footer from "@/components/sections/Footer";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
 
@@ -21,6 +22,7 @@ const Index = () => {
       <Header />
       <HeroSection />
       <MainSections />
+      <HomeContentSections />
       <Footer />
     </div>
   );
