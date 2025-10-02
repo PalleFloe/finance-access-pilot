@@ -1,7 +1,8 @@
 const HomeContentSections = () => {
   return (
     <div className="bg-gray-50">
-      <div className="container mx-auto px-6 py-20 max-w-6xl">
+      <div className="container mx-auto px-6 py-20">
+        <div className="max-w-7xl mx-auto">
         
         {/* Section 1: Founder & Credibility */}
         <div className="mb-16">
@@ -12,7 +13,7 @@ const HomeContentSections = () => {
             Models by Palle Fløe Nielsen
           </h2>
           
-          <div className="space-y-4 text-lg" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
+          <div className="space-y-4 text-lg sm:text-xl md:text-2xl lg:text-3xl" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
             <p>
               Former Divisional CFO at Novozymes, with 20+ years leading business finance in global life sciences and technology companies.
             </p>
@@ -36,7 +37,7 @@ const HomeContentSections = () => {
             Why These Models Work
           </h2>
           
-          <div className="space-y-6 text-lg" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
+          <div className="space-y-6 text-lg sm:text-xl md:text-2xl lg:text-3xl" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
             <p>
               Most financial models fail at the moment of decision. They're either too complex for decision-makers to trust, or too simplified to be credible.
             </p>
@@ -72,7 +73,7 @@ const HomeContentSections = () => {
             Choose Your Path
           </h2>
           
-          <div className="space-y-4 text-lg" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
+          <div className="space-y-4 text-lg sm:text-xl md:text-2xl lg:text-3xl" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
             <p>
               All models are available to view online for free. Download and use them after simple registration—or purchase full ownership rights for customisation.
             </p>
@@ -83,6 +84,7 @@ const HomeContentSections = () => {
           </div>
         </div>
 
+        </div>
       </div>
     </div>
   );
