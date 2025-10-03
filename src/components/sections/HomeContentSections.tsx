@@ -39,7 +39,7 @@ const HomeContentSections = () => {
           
           <div className="space-y-6 text-base sm:text-lg md:text-xl lg:text-2xl" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
             <p>
-              Most financial models fail at the moment of decision. They're either too complex for decision-makers to trust, or too simplified to be credible.
+              Many financial models fail to fully help making the best decision. They're either too complex for decision-makers to really understand and trust, or too simplified to be credible.
             </p>
             
             <p>
