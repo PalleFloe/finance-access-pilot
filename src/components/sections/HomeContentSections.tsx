@@ -59,7 +59,7 @@ const HomeContentSections = () => {
             </ul>
             
             <p>
-              The result: Less time explaining your model, more time discussing the decision.
+              The result: Less time explaining your model and less time making better decisions.
             </p>
           </div>
         </div>
