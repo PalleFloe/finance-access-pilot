@@ -23,7 +23,7 @@ const HomeContentSections = () => {
             </p>
             
             <p>
-              These models helps bridge that gap.
+              These models help bridge that gap.
             </p>
           </div>
         </div>
