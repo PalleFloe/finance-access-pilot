@@ -79,7 +79,7 @@ const HomeContentSections = () => {
             </p>
             
             <p>
-              Need something specific? Contact us today to discuss custom model development and consulting services tailored to your needs.
+              Need something specific? Custom model development and consulting services available. Contact us to discuss your requirements.
             </p>
           </div>
         </div>
