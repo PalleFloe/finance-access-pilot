@@ -75,11 +75,14 @@ const HomeContentSections = () => {
           
           <div className="space-y-4 text-base sm:text-lg md:text-xl lg:text-2xl" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
             <p>
-              All models are available to view online for free. Download and use them after simple registration—or purchase full ownership rights for customisation.
+              All models are available to view online for free. Download and use them after simple registration—completely free and safe.
             </p>
             
             <p>
-              Need something specific? Custom model development and consulting services available. Contact us to discuss your requirements.
+              Need customized solutions or strategic support for complex financial decisions? Our consulting services provide expert guidance tailored to your specific needs. Contact us to discuss your requirements.{' '}
+              <a href="/contact" className="text-[#326496] underline hover:text-[#264d75] transition-colors">
+                Request Consultation
+              </a>
             </p>
           </div>
         </div>
