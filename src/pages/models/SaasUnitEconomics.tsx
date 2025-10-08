@@ -112,7 +112,7 @@ const SaasUnitEconomics = () => {
               <CardHeader className="pb-2">
                 <CardTitle>SaaS Unit Economics Model</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-5 pb-4">
+              <CardContent className="space-y-6 pb-4 pt-6">
                 <Button 
                   onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ealn2asfI9lNvDNJxDjMnMUBO_1sOcyJbjeWIXbAn8pZ0Q?e=Hrjiaw&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                   className="w-full text-lg"

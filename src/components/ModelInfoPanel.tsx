@@ -10,14 +10,15 @@ const ModelInfoPanel = () => {
         </CardTitle>
       </CardHeader>
       
-      <CardContent className="space-y-2 text-[12px] leading-relaxed text-slate-600 pb-4" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
+      <CardContent className="space-y-3 text-[12px] leading-relaxed text-slate-600 pb-4 pt-6" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
         <p>
           <span className="font-semibold">"Online & View"</span> for instant browser preview.
         </p>
         
         <div>
-          <p className="font-semibold">"Register to Download"</p>
-          <p>If already registered? Click "Download & Use" to open in browser.</p>
+          <p>
+            <span className="font-semibold">"Register to Download"</span> models. If already registered? Click <span className="font-semibold">"Download & Use"</span> to open in browser.
+          </p>
           <p className="mb-0">To download and use: File → Create a Copy → Download a Copy.</p>
         </div>
         
