@@ -107,13 +107,13 @@ const PerpetuityExitValuation = () => {
 
           <div className="flex flex-col lg:flex-row gap-8 mb-8">
             <div className="flex-shrink-0 max-w-md">
-              <Card className="shadow-lg border-slate-200 lg:h-[275px]">
-                <CardHeader>
+              <Card className="shadow-lg border-slate-200 lg:h-[240px]">
+                <CardHeader className="pb-2">
                   <CardTitle>
                     Perpetuity & Exit Valuation Models
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-5">
+                <CardContent className="space-y-6 pb-4 pt-6">
                   <Button 
                     onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaMtk3zo6hVAqea-OC4rf08B52Or6Xp7pIDf5mxKhItf9g?e=Dqmkcp&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                     variant="model-blue"
