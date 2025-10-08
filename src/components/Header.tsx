@@ -68,7 +68,7 @@ const Header = () => {
               Toolbox
             </Link>
             <Link to="/how-it-works" className="text-slate-700 hover:text-primary px-3 py-2 text-xl font-normal hover:font-medium font-garamond transition-all">
-              How It Works
+              Offerings
             </Link>
             <Link to="/blog" className="text-slate-700 hover:text-primary px-3 py-2 text-xl font-normal hover:font-medium font-garamond transition-all">
               Blog
@@ -121,7 +121,7 @@ const Header = () => {
                 className="text-slate-700 hover:text-primary px-4 py-3 text-lg font-garamond transition-all hover:bg-gray-50 rounded-md"
                 onClick={closeMobileMenu}
               >
-                How It Works
+                Offerings
               </Link>
               <Link 
                 to="/blog" 

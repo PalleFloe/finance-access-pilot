@@ -22,13 +22,12 @@ const HowItWorks = () => {
   const tiers = {
     row1: [
       {
-        label: "TIER 1",
         title: "Online & View",
         bullets: [
-          "View models in browser",
-          "All standard models available",
+          "View Excel models directly in your browser",
+          "All models available",
           "No registration required",
-          "Unlimited time, free access"
+          "Free and unlimited access"
         ],
         buttonText: "Go to Toolbox",
         buttonLink: "/toolbox",
@@ -37,46 +36,28 @@ const HowItWorks = () => {
         isModelTier: true
       },
       {
-        label: "TIER 2", 
         title: "Download & Use",
         bullets: [
-          "Download protected Excel models",
-          "All standard models available",
+          "Download and use. Formulas protected, input cells are not",
+          "All models available",
           "Email registration required",
-          "Unlimited time, free access"
+          "Free and unlimited access"
         ],
         buttonText: "Go to Toolbox",
         buttonLink: "/toolbox",
         disabled: false,
-        isConsultation: false,
-        isModelTier: true
-      },
-      {
-        label: "TIER 3",
-        badge: { text: "Coming Soon", status: "coming-soon" },
-        title: "Download & Own",
-        bullets: [
-          "Download unprotected Excel models",
-          "All models available",
-          "Email registration required",
-          "Unlimited time, purchase"
-        ],
-        buttonText: "Coming Soon",
-        buttonLink: "#",
-        disabled: true,
         isConsultation: false,
         isModelTier: true
       }
     ],
     row2: [
       {
-        label: "TIER 4",
         title: "Customized Models",
         bullets: [
-          "Models on website, your existing ones or from scratch",
-          "Development, supporting or challenger role",
-          "Based on your requirements, dialogue and feedback loops",
-          "Hourly consulting rate"
+          "Adapt existing models or build from scratch for your specific needs",
+          "Customize for your business model, structure, and unique drivers",
+          "Full documentation and hands-on training for your team",
+          "Iterative development with your input and feedback loops"
         ],
         buttonText: "Schedule Consultation",
         buttonLink: "/contact",
@@ -85,13 +66,12 @@ const HowItWorks = () => {
         isModelTier: false
       },
       {
-        label: "TIER 5",
         title: "Consulting Services",
         bullets: [
-          "Lead or support your project or initiative",
-          "'Connecting the dots', expert, inspirator or challenger role",
-          "Fulltime / fractional for a period, or agreed sessions / tasks",
-          "After agreement"
+          "Lead or support critical financial decisions and initiatives",
+          "M&A valuation, investment analysis, strategic planning",
+          "Challenge assumptions, evaluate options, structure thinking",
+          "From single sessions to longer engagement"
         ],
         buttonText: "Schedule Consultation",
         buttonLink: "/contact",
@@ -103,8 +83,6 @@ const HowItWorks = () => {
   };
 
   type TierType = {
-    label: string;
-    badge?: { text: string; status: string; };
     title: string;
     bullets: string[];
     buttonText: string;
@@ -140,20 +118,11 @@ const HowItWorks = () => {
           className="border border-slate-200 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col relative w-full max-w-full h-full" 
           style={{ backgroundColor: '#326496' }}
         >
-          {tier.badge && (
-            <div className="absolute -top-3 -right-3 z-20">
-              <Badge className="bg-orange-500 text-white border-orange-400 shadow-lg">
-                <Clock className="w-3 h-3 mr-1" />
-                {tier.badge.text}
-              </Badge>
-            </div>
-          )}
-          
           <h3 
-            className={`${tier.isModelTier ? 'text-xl sm:text-2xl md:text-3xl font-bold' : 'text-xl sm:text-2xl md:text-3xl font-bold'} leading-tight break-words mb-4`}
+            className="text-xl sm:text-2xl md:text-3xl font-bold leading-tight break-words mb-4"
             style={{ fontFamily: 'Garamond, serif', color: '#FFFFFF' }}
           >
-            {tier.isModelTier ? `${tier.label}: ${tier.title}` : `${tier.label}: ${tier.title}`}
+            {tier.title}
           </h3>
           
           <ul className="flex-grow space-y-2">
@@ -176,8 +145,8 @@ const HowItWorks = () => {
   return (
     <div className="min-h-screen bg-gray-50 overflow-x-hidden">
       <Helmet>
-        <title>How It Works - Access Financial Models | Financial Decision Models</title>
-        <meta name="description" content="Access financial models through 4 tiers: Free online preview, free downloads with registration, premium subscriptions, and full ownership. Excel models designed for entrepreneurs, investors, and advisors." />
+        <title>Offerings - Financial Decision Models & Consulting Services</title>
+        <meta name="description" content="Professional financial decision models available online and for download, plus customized model development and expert consulting services for strategic financial decisions." />
       </Helmet>
       <Header />
       
@@ -185,7 +154,7 @@ const HowItWorks = () => {
         {/* Page Header Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
-            Financial Decision Models offerings
+            Financial Decision Models Offerings
           </h1>
           
           <p className="text-[28px] text-slate-600 mb-8">
@@ -194,18 +163,18 @@ const HowItWorks = () => {
           </p>
         </div>
 
-        {/* Row 1: Self-Service Tiers (3 cards) */}
+        {/* Section 1: Professional Financial Decision Models */}
         <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
           <div className="mb-5">
             <h2 className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200 text-brand-blue">
-              Online available Financial Decision Models
+              Professional Financial Decision Models
             </h2>
             <p className="text-lg text-slate-600 mb-5">
-              Best-in-class models for using or finding inspiration to build or improve your own models
+              Best-in-class models for using as designed or finding inspiration to build or improve your own models
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {tiers.row1.map((tier, index) => (
               <TierBox key={index} tier={tier} />
             ))}
@@ -213,7 +182,7 @@ const HowItWorks = () => {
         </div>
 
 
-        {/* Row 2: Consulting Tiers (2 cards) */}
+        {/* Section 2: Customization & Consulting Services */}
         <div className="bg-white rounded-lg shadow-sm p-6 mb-16 overflow-hidden">
           <div className="mb-5">
             <h2 className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200 text-brand-blue">
