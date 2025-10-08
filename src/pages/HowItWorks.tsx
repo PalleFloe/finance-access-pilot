@@ -183,7 +183,7 @@ const HowItWorks = () => {
             ))}
           </div>
           
-          <p className="text-sm text-slate-500 text-center mt-8 max-w-4xl mx-auto">
+          <p className="text-lg text-slate-600 mt-8">
             All models are standard safe Excel files - no macros, no code. Hosted on Microsoft SharePoint. Formulas are protected to prevent unintended changes - input cells are fully editable for your use.
           </p>
         </div>
