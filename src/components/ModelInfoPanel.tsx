@@ -3,14 +3,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const ModelInfoPanel = () => {
   return (
-    <Card className="shadow-lg border-slate-200 lg:h-[275px]">
-      <CardHeader>
+    <Card className="shadow-lg border-slate-200 lg:h-[240px]">
+      <CardHeader className="pb-2">
         <CardTitle className="text-[16px] font-bold text-[#326496]" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
           How to View & Download This Model
         </CardTitle>
       </CardHeader>
       
-      <CardContent className="space-y-2 text-[12px] leading-relaxed text-slate-600" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
+      <CardContent className="space-y-2 text-[12px] leading-relaxed text-slate-600 pb-4" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
         <p>
           <span className="font-semibold">"Online & View"</span> for instant browser preview.
         </p>
