@@ -154,12 +154,15 @@ const HowItWorks = () => {
         {/* Page Header Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
-            Financial Decision Models Offerings
+            Financial Decision Modelling & Consulting Offerings
           </h1>
           
-          <p className="text-[28px] text-slate-600 mb-8">
-            Choose your path to better financial decisions. Start with our free tiers to explore, learn and get inspired. <br />
-            If that is not enough for you, then you can always upgrade.
+          <p className="text-2xl italic text-slate-700 mb-4">
+            Expert guidance backed by proven professional frameworks.
+          </p>
+          
+          <p className="text-lg text-slate-600 max-w-4xl mx-auto">
+            Explore our free professional models to use, learn and get inspired. If you need customized solutions or strategic support for complex decisions, our consulting services are here to help.
           </p>
         </div>
 
