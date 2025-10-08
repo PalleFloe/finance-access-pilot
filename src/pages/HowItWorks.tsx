@@ -184,7 +184,7 @@ const HowItWorks = () => {
           </div>
           
           <p className="text-lg text-slate-600 mt-8">
-            All models are standard safe Excel files - no macros, no code. Hosted on Microsoft SharePoint. Formulas are protected to prevent unintended changes - input cells are fully editable for your use.
+            All models are standard safe Excel files with no macros. Hosted on Microsoft SharePoint. Formulas are protected to prevent unintended changes, while input cells are fully editable.
           </p>
         </div>
 
