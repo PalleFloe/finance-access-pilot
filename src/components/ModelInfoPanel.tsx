@@ -12,23 +12,18 @@ const ModelInfoPanel = () => {
       
       <CardContent className="space-y-2 text-[12px] leading-relaxed text-slate-600" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
         <p>
-          <span className="font-semibold">Online & View:</span> Instant browser preview - no registration needed.
+          <span className="font-semibold">"Online & View"</span> for instant browser preview.
         </p>
         
         <div>
-          <p className="font-semibold">Register to Download:</p>
-          <p>Click for free access to all models.</p>
-          <p>Already registered? Click "Download & Use" to view in browser.</p>
+          <p className="font-semibold">"Register to Download"</p>
+          <p>If already registered? Click "Download & Use" to open in browser.</p>
+          <p className="mb-0">To download and use: File → Create a Copy → Download a Copy.</p>
         </div>
         
-        <p>
-          <span className="font-semibold">Download & Own:</span> Coming soon - full ownership rights for purchased models.
-        </p>
-        
-        <div>
-          <p className="font-semibold mb-0">To download:</p>
-          <p>In toolbar select File → Create a Copy → Download a Copy</p>
-          <p>Open in Excel for your own use. All models are free.</p>
+        <div className="mt-4 pt-3 border-t border-slate-200 text-[11px] text-slate-500">
+          <p>Safe Excel files with no macros. Formulas protected, input cells editable.</p>
+          <p>Free registration with no spam or promotional emails.</p>
         </div>
       </CardContent>
     </Card>
