@@ -155,7 +155,7 @@ const ConsultationForm = () => {
 
   return (
     <Card className="bg-white border border-slate-200 shadow-sm rounded-lg mb-12">
-      <CardContent className="p-8">
+      <CardContent className="p-8 md:p-10">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="space-y-2">
             <Label htmlFor="name">Name *</Label>

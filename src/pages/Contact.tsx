@@ -31,19 +31,21 @@ const Contact = () => {
       <Header />
       
       <main className="py-12">
-        <div className="container mx-auto max-w-4xl px-6">
-          <div className="mb-8">
-            <h1 className="text-[20px] font-bold text-[#326496] mb-4">
+        <div className="container mx-auto max-w-6xl px-6">
+          <div className="mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#326496] mb-6">
               Contact: How Can I Help?
             </h1>
-            <p className="text-lg leading-relaxed">
+            <p className="text-xl leading-relaxed">
               Facing a complex financial decision? Need models adapted to your business? Let's have a conversation about how I can help.
             </p>
           </div>
 
-          <ConsultationForm />
+          <div className="max-w-3xl mx-auto">
+            <ConsultationForm />
+          </div>
 
-          <div className="mb-12">
+          <div className="max-w-3xl mx-auto mb-12">
             <h3 className="text-[16px] font-bold text-[#326496] mb-4">
               What Happens Next
             </h3>
@@ -62,7 +64,8 @@ const Contact = () => {
 
           <hr className="my-12 border-slate-200" />
 
-          <div className="bg-slate-50 border border-slate-200 rounded-lg p-6">
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-slate-50 border border-slate-200 rounded-lg p-6">
             <h3 className="text-[16px] font-bold text-[#326496] mb-3">
               Got Feedback on Our Models?
             </h3>
@@ -75,6 +78,7 @@ const Contact = () => {
             <p className="text-base font-semibold">
               Email: <a href="mailto:feedback@financialdecisionmodels.com" className="text-[#326496] hover:underline">feedback@financialdecisionmodels.com</a>
             </p>
+            </div>
           </div>
         </div>
       </main>
