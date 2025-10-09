@@ -4,15 +4,16 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
+import { ArrowLeft, Clock, ExternalLink, ChevronDown } from "lucide-react";
 import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 
 const SaasUnitEconomics = () => {
   const { trackOnlineOpen } = useAnalytics();
+  const [isOpen, setIsOpen] = useState(false);
   
   // Track page visit automatically
   usePageVisitTracking('SaaS Unit Economics Model');
@@ -162,15 +163,26 @@ const SaasUnitEconomics = () => {
 
         {/* Expandable Section */}
         <Accordion type="single" collapsible className="w-full">
-          <AccordionItem value="complete-guide">
-            <AccordionTrigger className="mb-3">
-              Complete SaaS Unit Economics Model Guide
+          <AccordionItem value="complete-guide" className="border-none">
+            <AccordionTrigger className="w-full bg-gradient-to-r from-[#326496] to-[#4a7bb7] text-white rounded-lg p-6 hover:shadow-lg transition-all duration-200 hover:no-underline data-[state=open]:rounded-b-none">
+              <div className="text-left w-full">
+                <div className="text-sm font-semibold uppercase tracking-wide mb-1 opacity-90">
+                  Full Detailed Guide
+                </div>
+                <div className="text-xl font-bold">
+                  Complete SaaS Unit Economics Model Guide
+                </div>
+                <div className="text-sm mt-2 opacity-90">
+                  Click to expand comprehensive documentation →
+                </div>
+              </div>
             </AccordionTrigger>
-            <AccordionContent className="prose prose-slate max-w-none">
-              <div className="space-y-6 text-slate-600">
-                <div>
-                  <h3 className="text-xl font-bold text-heading mb-3">Overview and Strategic Framework</h3>
-                  <p className="leading-relaxed mb-4">
+            <AccordionContent className="p-6 bg-white border border-slate-200 rounded-b-lg border-t-0">
+              <div className="prose prose-slate max-w-none">
+                <div className="space-y-6 text-slate-600">
+                  <div>
+                    <h3 className="text-xl font-bold text-heading mb-3">Overview and Strategic Framework</h3>
+                    <p className="leading-relaxed mb-4">
                     The SaaS Unit Economics Model values SaaS companies by analysing individual customer profitability and lifetime contribution to overall business value. By examining the fundamental relationship between customer acquisition, retention, and lifetime value, the model provides startups and growth companies with analytical frameworks for understanding and optimising core business model economics.
                   </p>
                   <p className="leading-relaxed mb-4">
@@ -179,10 +191,10 @@ const SaasUnitEconomics = () => {
                   <p className="leading-relaxed mb-4">
                     <strong>Strategic Purpose</strong>: Validate business model viability, optimise customer acquisition strategies, and demonstrate scalability potential to investors through unit economics analysis. The model identifies key drivers of profitability and growth, enabling entrepreneurs to make informed decisions about pricing, marketing spend, and operational scaling.
                   </p>
-                  <p className="leading-relaxed mb-4">
-                    <strong>Target Users</strong>: SaaS companies, e-commerce businesses, subscription services, marketplaces, and any recurring revenue model requiring detailed customer economics analysis. Particularly valuable for startups seeking investment, growth companies optimising operations, and investors conducting due diligence on recurring revenue businesses.
-                  </p>
-                </div>
+                    <p className="leading-relaxed mb-4">
+                      <strong>Target Users</strong>: SaaS companies, e-commerce businesses, subscription services, marketplaces, and any recurring revenue model requiring detailed customer economics analysis. Particularly valuable for startups seeking investment, growth companies optimising operations, and investors conducting due diligence on recurring revenue businesses.
+                    </p>
+                  </div>
 
                 <div>
                   <h3 className="text-xl font-bold text-heading mb-3">What Is the SaaS Unit Economics Model?</h3>
@@ -386,7 +398,6 @@ const SaasUnitEconomics = () => {
                     <p>³ Christensen, Clayton M., "The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail," Harvard Business Review Press (1997)</p>
                     <p>⁴ Blank, Steve, and Bob Dorf, "The Startup Owner's Manual: The Step-by-Step Guide for Building a Great Company," K&S Ranch (2012)</p>
                     <p>⁵ National Venture Capital Association, "NVCA 2024 Yearbook" (2024)</p>
-                    <p>⁶ Cambridge Associates, "US Private Equity Index and Selected Benchmark Statistics" (2024)</p>
                   </div>
                 </div>
               </div>
