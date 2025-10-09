@@ -148,11 +148,11 @@ const HowItWorks = () => {
             Financial Decision Modelling & Consulting Offerings
           </h1>
           
-          <p className="text-2xl italic text-slate-700 mb-4">
+          <p className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-4">
             Expert guidance backed by proven professional frameworks.
           </p>
           
-          <p className="text-lg text-slate-600 max-w-4xl mx-auto">
+          <p className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed">
             Explore our free professional models to use, learn and get inspired. If you need customized solutions or strategic support for complex decisions, our consulting services are here to help.
           </p>
         </div>

@@ -99,7 +99,7 @@ const StartupValuations = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
             Professional Startup Financial Decision & Valuation Models
           </h1>
-            <h2 className="text-2xl md:text-3xl text-brand-blue mb-6">
+            <h2 className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-6">
             Comprehensive Startup Valuation toolbox: Proven Methods to Estimate, Understand and Explain the Value of Startups
           </h2>
           <p className="text-lg text-slate-600 mb-8 leading-relaxed">

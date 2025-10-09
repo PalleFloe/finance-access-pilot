@@ -102,7 +102,7 @@ const EarningGrowthEstimator = () => {
             Simple Earning Growth Estimator
           </h1>
 
-          <h2 className="text-lg text-slate-600 leading-relaxed mb-8">
+          <h2 className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-8">
             Systematic Growth Analysis: ROC-Based Earning Growth Estimation for Existing and New Investments
           </h2>
 

@@ -36,7 +36,7 @@ const Contact = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-[#326496] mb-6">
               Contact: How Can I Help?
             </h1>
-            <p className="text-xl leading-relaxed">
+            <p className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed">
               Facing a complex financial decision? Need models adapted to your business? Let's have a conversation about how I can help.
             </p>
           </div>

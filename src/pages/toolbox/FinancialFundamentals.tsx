@@ -99,7 +99,7 @@ const FinancialFundamentals = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
             Financial Fundamental Models
           </h1>
-            <h2 className="text-2xl md:text-3xl text-brand-blue mb-6">
+            <h2 className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-6">
             Simple Academic Financial Analysis Tools: Essential Models for Learning Core Valuation and Decision-Making Principles
           </h2>
           <p className="text-lg text-slate-600 mb-8 leading-relaxed">

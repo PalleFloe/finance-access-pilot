@@ -8,7 +8,7 @@ const HeroSection = () => {
         <h1 className="font-garamond text-2xl md:text-4xl lg:text-5xl font-bold text-brand-blue mb-8">
           Turn Complex Choices into Better Business Decisions
         </h1>
-        <h2 className="font-garamond text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-slate-600 mb-10 mx-auto leading-[1.3] max-w-5xl">
+        <h2 className="font-garamond text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-10">
           Tired of poorly designed and overly complex financial models?
         </h2>
       </div>

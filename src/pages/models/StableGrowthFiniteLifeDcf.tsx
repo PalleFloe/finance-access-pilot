@@ -101,7 +101,7 @@ const StableGrowthFiniteLifeDcf = () => {
             Stable Growth - Finite-Life DCF Model
           </h1>
 
-          <h2 className="text-lg text-slate-600 leading-relaxed mb-8">
+          <h2 className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-8">
             Stable Growth DCF Analysis: Finite-Life Asset Evaluation with Proper End-Period Treatment and Comprehensive Sensitivity Analysis
           </h2>
 
