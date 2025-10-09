@@ -16,30 +16,51 @@ export type Database = {
     Tables: {
       consultation_requests: {
         Row: {
+          additional_info: string | null
+          challenge: string
           company: string | null
           created_at: string | null
           email: string
           id: string
           message: string
           name: string
+          notes: string | null
+          role: string
+          service_interests: string
+          status: string | null
+          timeline: string | null
           user_id: string
         }
         Insert: {
+          additional_info?: string | null
+          challenge: string
           company?: string | null
           created_at?: string | null
           email: string
           id?: string
           message: string
           name: string
+          notes?: string | null
+          role: string
+          service_interests: string
+          status?: string | null
+          timeline?: string | null
           user_id: string
         }
         Update: {
+          additional_info?: string | null
+          challenge?: string
           company?: string | null
           created_at?: string | null
           email?: string
           id?: string
           message?: string
           name?: string
+          notes?: string | null
+          role?: string
+          service_interests?: string
+          status?: string | null
+          timeline?: string | null
           user_id?: string
         }
         Relationships: []
