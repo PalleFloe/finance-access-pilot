@@ -32,7 +32,7 @@ const Contact = () => {
       
       <main className="py-12">
         <div className="container mx-auto max-w-6xl px-6">
-          <div className="mb-12">
+          <div className="mb-12 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-[#326496] mb-6">
               Contact: How Can I Help?
             </h1>
