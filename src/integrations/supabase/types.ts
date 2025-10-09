@@ -29,7 +29,7 @@ export type Database = {
           service_interests: string
           status: string | null
           timeline: string | null
-          user_id: string
+          user_id: string | null
         }
         Insert: {
           additional_info?: string | null
@@ -45,7 +45,7 @@ export type Database = {
           service_interests: string
           status?: string | null
           timeline?: string | null
-          user_id: string
+          user_id?: string | null
         }
         Update: {
           additional_info?: string | null
@@ -61,7 +61,7 @@ export type Database = {
           service_interests?: string
           status?: string | null
           timeline?: string | null
-          user_id?: string
+          user_id?: string | null
         }
         Relationships: []
       }
