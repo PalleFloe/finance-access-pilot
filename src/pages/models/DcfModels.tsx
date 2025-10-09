@@ -106,7 +106,7 @@ const DcfModels = () => {
             Key Types of DCF Models
           </h1>
 
-          <h2 className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-8">
+          <h2 className="text-[28px] text-slate-600 max-w-6xl leading-relaxed mb-8">
             Three Approaches: Fully Flexible, Staged or Stable Assumptions. Designed to value a firm
           </h2>
 

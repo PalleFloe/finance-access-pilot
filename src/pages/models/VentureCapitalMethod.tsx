@@ -100,7 +100,7 @@ const VentureCapitalMethod = () => {
           Venture Capital Valuation Model
         </h1>
 
-        <p className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-8">
+        <p className="text-[28px] text-slate-600 max-w-6xl leading-relaxed mb-8">
           Multi-Round Funding Analysis for Startup Valuation with Exit Scenarios and Ownership Dilution
         </p>
       </div>

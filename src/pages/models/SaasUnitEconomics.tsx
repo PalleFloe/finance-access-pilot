@@ -100,7 +100,7 @@ const SaasUnitEconomics = () => {
           SaaS Unit Economics Model
         </h1>
 
-        <p className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-8">
+        <p className="text-[28px] text-slate-600 max-w-6xl leading-relaxed mb-8">
           Cohort-Based Customer Analysis and Annual Financial Projections for SaaS Valuation with Long Term Value and Customer Payback Period
         </p>
       </div>

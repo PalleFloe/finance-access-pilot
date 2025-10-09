@@ -98,7 +98,7 @@ const ThreeStageDcf = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
             Three Stage DCF Model
           </h1>
-          <h2 className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-12">
+          <h2 className="text-[28px] text-slate-600 max-w-6xl leading-relaxed mb-12">
             Multi-stage Analysis: DCF Valuation with Distinct Performance Stage Characteristics
           </h2>
 

@@ -102,7 +102,7 @@ const CostOfCapitalCalculator = () => {
             Simple Cost of Capital Calculator
           </h1>
 
-          <h2 className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-8">
+          <h2 className="text-[28px] text-slate-600 max-w-6xl leading-relaxed mb-8">
             WACC Analysis: Cost of Equity, Cost of Debt, and Weighted Average Cost of Capital Calculation
           </h2>
 
