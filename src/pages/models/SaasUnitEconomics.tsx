@@ -401,6 +401,7 @@ const SaasUnitEconomics = () => {
                   </div>
                 </div>
               </div>
+            </div>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
