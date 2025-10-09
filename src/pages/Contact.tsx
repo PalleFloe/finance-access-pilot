@@ -46,7 +46,7 @@ const Contact = () => {
           </div>
 
           <div className="max-w-3xl mx-auto mb-12">
-            <h3 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
+            <h3 className="text-3xl font-semibold text-brand-blue mb-4">
               What Happens Next
             </h3>
             <ol className="text-lg leading-relaxed space-y-3 list-decimal list-inside">
@@ -65,8 +65,7 @@ const Contact = () => {
           <hr className="my-12 border-slate-200" />
 
           <div className="max-w-3xl mx-auto">
-            <div className="bg-slate-50 border border-slate-200 rounded-lg p-6">
-            <h3 className="text-4xl md:text-5xl font-bold text-brand-blue mb-3">
+            <h3 className="text-3xl font-semibold text-brand-blue mb-4">
               Got Feedback on Our Models?
             </h3>
             <p className="text-lg leading-relaxed mb-3">
@@ -78,7 +77,6 @@ const Contact = () => {
             <p className="text-lg font-semibold">
               Email: <a href="mailto:feedback@financialdecisionmodels.com" className="text-[#326496] hover:underline">feedback@financialdecisionmodels.com</a>
             </p>
-            </div>
           </div>
         </div>
       </main>
