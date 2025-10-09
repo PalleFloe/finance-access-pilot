@@ -9,7 +9,7 @@ import Index from "./pages/Index";
 import Auth from "./pages/Auth";
 import Toolbox from "./pages/Toolbox";
 import About from "./pages/About";
-import HowItWorks from "./pages/HowItWorks";
+import Offerings from "./pages/Offerings";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -58,7 +58,7 @@ const App = () => (
             <Route path="/auth" element={<Auth />} />
             <Route path="/toolbox" element={<Toolbox />} />
           <Route path="/about" element={<About />} />
-          <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/offerings" element={<Offerings />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/thank-you" element={<ThankYou />} />

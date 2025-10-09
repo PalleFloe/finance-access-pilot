@@ -9,8 +9,8 @@ import { Clock, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
 
-const HowItWorks = () => {
-  usePageVisitTracking('page:/how-it-works');
+const Offerings = () => {
+  usePageVisitTracking('page:/offerings');
 
   // Scroll to top when component mounts
   useEffect(() => {
@@ -204,4 +204,4 @@ const HowItWorks = () => {
   );
 };
 
-export default HowItWorks;
+export default Offerings;
