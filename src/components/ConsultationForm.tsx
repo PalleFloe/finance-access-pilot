@@ -158,7 +158,7 @@ const ConsultationForm = () => {
       <CardContent className="p-8 md:p-10">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="space-y-2">
-            <Label htmlFor="name">Name *</Label>
+            <Label htmlFor="name" className="text-lg">Name *</Label>
             <Input
               id="name"
               name="name"
@@ -171,7 +171,7 @@ const ConsultationForm = () => {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="email">Email *</Label>
+            <Label htmlFor="email" className="text-lg">Email *</Label>
             <Input
               id="email"
               name="email"
@@ -185,7 +185,7 @@ const ConsultationForm = () => {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="company">Company *</Label>
+            <Label htmlFor="company" className="text-lg">Company *</Label>
             <Input
               id="company"
               name="company"
@@ -198,7 +198,7 @@ const ConsultationForm = () => {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="role">Your Role *</Label>
+            <Label htmlFor="role" className="text-lg">Your Role *</Label>
             <Input
               id="role"
               name="role"
@@ -211,7 +211,7 @@ const ConsultationForm = () => {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="challenge">What financial decision or challenge do you need help with? *</Label>
+            <Label htmlFor="challenge" className="text-lg">What financial decision or challenge do you need help with? *</Label>
             <Textarea
               id="challenge"
               name="challenge"
@@ -225,7 +225,7 @@ const ConsultationForm = () => {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="service_interests">What type of service are you looking for? *</Label>
+            <Label htmlFor="service_interests" className="text-lg">What type of service are you looking for? *</Label>
             <Textarea
               id="service_interests"
               name="service_interests"
@@ -239,7 +239,7 @@ const ConsultationForm = () => {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="timeline">Timeline?</Label>
+            <Label htmlFor="timeline" className="text-lg">Timeline?</Label>
             <Select value={formData.timeline} onValueChange={handleSelectChange}>
               <SelectTrigger>
                 <SelectValue placeholder="Select a timeline" />
@@ -254,7 +254,7 @@ const ConsultationForm = () => {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="additional_info">Any other relevant informations?</Label>
+            <Label htmlFor="additional_info" className="text-lg">Any other relevant informations?</Label>
             <Textarea
               id="additional_info"
               name="additional_info"

@@ -34,7 +34,7 @@ const Contact = () => {
         <div className="container mx-auto max-w-6xl px-6">
           <div className="mb-12 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-[#326496] mb-6">
-              Contact: How Can I Help?
+              How Can I Help?
             </h1>
             <p className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed">
               Facing a complex financial decision? Need models adapted to your business? Let's have a conversation about how I can help.
@@ -46,10 +46,10 @@ const Contact = () => {
           </div>
 
           <div className="max-w-3xl mx-auto mb-12">
-            <h3 className="text-[16px] font-bold text-[#326496] mb-4">
+            <h3 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
               What Happens Next
             </h3>
-            <ol className="text-base leading-relaxed space-y-3 list-decimal list-inside">
+            <ol className="text-lg leading-relaxed space-y-3 list-decimal list-inside">
               <li className="text-foreground">
                 <span className="text-[#326496] font-semibold">I review within 1 business day</span> and respond with next steps
               </li>
@@ -66,16 +66,16 @@ const Contact = () => {
 
           <div className="max-w-3xl mx-auto">
             <div className="bg-slate-50 border border-slate-200 rounded-lg p-6">
-            <h3 className="text-[16px] font-bold text-[#326496] mb-3">
+            <h3 className="text-4xl md:text-5xl font-bold text-brand-blue mb-3">
               Got Feedback on Our Models?
             </h3>
-            <p className="text-base leading-relaxed mb-3">
+            <p className="text-lg leading-relaxed mb-3">
               Spotted an error? Have a suggestion for improvement? Additional models that can have general interest?
             </p>
-            <p className="text-base leading-relaxed mb-3">
+            <p className="text-lg leading-relaxed mb-3">
               I welcome input that helps make these free models better.
             </p>
-            <p className="text-base font-semibold">
+            <p className="text-lg font-semibold">
               Email: <a href="mailto:feedback@financialdecisionmodels.com" className="text-[#326496] hover:underline">feedback@financialdecisionmodels.com</a>
             </p>
             </div>
