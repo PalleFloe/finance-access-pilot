@@ -164,15 +164,15 @@ const SaasUnitEconomics = () => {
         {/* Expandable Section */}
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="complete-guide" className="border-none">
-            <AccordionTrigger className="w-full bg-gradient-to-r from-[#326496] to-[#4a7bb7] text-white rounded-lg p-6 hover:shadow-lg transition-all duration-200 hover:no-underline data-[state=open]:rounded-b-none">
+            <AccordionTrigger className="w-full bg-white border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-all duration-200 hover:no-underline data-[state=open]:rounded-b-none data-[state=open]:border-b-0">
               <div className="text-left w-full">
-                <div className="text-sm font-semibold uppercase tracking-wide mb-1 opacity-90">
+                <div className="text-sm font-semibold uppercase tracking-wide mb-1 text-slate-600">
                   Full Detailed Guide
                 </div>
-                <div className="text-xl font-bold">
+                <div className="text-xl font-bold text-[#326496]">
                   Complete SaaS Unit Economics Model Guide
                 </div>
-                <div className="text-sm mt-2 opacity-90">
+                <div className="text-sm mt-2 text-slate-600">
                   Click to expand comprehensive documentation →
                 </div>
               </div>
