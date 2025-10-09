@@ -225,7 +225,7 @@ const ConsultationForm = () => {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="service_interests">What type of service interests you? *</Label>
+            <Label htmlFor="service_interests">What type of service are you looking for? *</Label>
             <Textarea
               id="service_interests"
               name="service_interests"
@@ -254,7 +254,7 @@ const ConsultationForm = () => {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="additional_info">Anything else I should know?</Label>
+            <Label htmlFor="additional_info">Any other relevant informations?</Label>
             <Textarea
               id="additional_info"
               name="additional_info"
@@ -263,10 +263,6 @@ const ConsultationForm = () => {
               placeholder="Any additional context..."
               rows={3}
             />
-          </div>
-
-          <div className="text-sm text-muted-foreground">
-            <strong>Note:</strong> Typical engagements start from €5,000, depending on scope.
           </div>
 
           <Button
