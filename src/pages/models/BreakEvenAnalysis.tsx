@@ -25,7 +25,7 @@ const BreakEvenAnalysis = () => {
       <Header />
       
       <div className="py-12">
-        <div className="container py-16 text-center">
+        <div className="container py-16">
           <Link 
             to="/toolbox/investment-analysis"
             className="inline-flex items-center text-slate-600 hover:text-primary mb-8"

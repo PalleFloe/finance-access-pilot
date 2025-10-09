@@ -93,7 +93,7 @@ const DcfModels = () => {
       <Header />
       
       <div className="py-12">
-        <div className="container mx-auto text-center">
+        <div className="container mx-auto">
           <Link 
             to="/toolbox/financial-fundamentals"
             className="inline-flex items-center text-slate-600 hover:text-primary mb-8"

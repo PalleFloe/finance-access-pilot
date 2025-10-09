@@ -88,7 +88,7 @@ const FlexibleYearByYearDcf = () => {
       <Header />
       
       <div className="py-12">
-        <div className="container text-center">
+        <div className="container">
           <Link 
             to="/toolbox/investment-analysis"
             className="inline-flex items-center text-slate-600 hover:text-primary mb-8"
