@@ -107,6 +107,7 @@ const ConsultationForm = () => {
             company: formData.company,
             role: formData.role,
             challenge: formData.challenge,
+            message: formData.challenge, // Required by database schema
             service_interests: formData.service_interests,
             timeline: formData.timeline || null,
             additional_info: formData.additional_info || null,

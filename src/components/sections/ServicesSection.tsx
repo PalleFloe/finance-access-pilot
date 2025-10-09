@@ -1,20 +1,12 @@
-import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Users, Calculator, Check, Mail, ArrowRight, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
-import ConsultationForm from "@/components/ConsultationForm";
 
 const ServicesSection = () => {
-  const [isConsultationFormOpen, setIsConsultationFormOpen] = useState(false);
-
   return (
     <>
-      <ConsultationForm 
-        isOpen={isConsultationFormOpen} 
-        onClose={() => setIsConsultationFormOpen(false)} 
-      />
     <section id="consulting" className="pt-3 pb-20 bg-gradient-to-b from-slate-50/50 to-white border-t border-slate-100">
       <div className="container mx-auto">
         <div className="space-y-4">
@@ -151,13 +143,15 @@ const ServicesSection = () => {
               </div>
               <div className="pt-3 border-t border-slate-100 mt-4">
                 <Button 
+                  asChild
                   variant="rich-emerald" 
                   size="lg"
                   className="justify-center px-12 w-full sm:w-auto text-2xl font-semibold"
-                  onClick={() => setIsConsultationFormOpen(true)}
                 >
-                  Schedule Consultation
-                  <ArrowRight className="w-4 h-4 ml-2" />
+                  <Link to="/contact">
+                    Schedule Consultation
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Link>
                 </Button>
               </div>
             </CardContent>

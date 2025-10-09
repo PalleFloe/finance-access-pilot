@@ -1,8 +1,7 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/sections/Footer";
-import ConsultationForm from "@/components/ConsultationForm";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -11,7 +10,6 @@ import { Link } from "react-router-dom";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
 
 const HowItWorks = () => {
-  const [isConsultationOpen, setIsConsultationOpen] = useState(false);
   usePageVisitTracking('page:/how-it-works');
 
   // Scroll to top when component mounts
@@ -101,17 +99,10 @@ const HowItWorks = () => {
       }
     };
 
-    const handleClick = (e: React.MouseEvent) => {
-      if (tier.isConsultation && !tier.disabled) {
-        e.preventDefault();
-        setIsConsultationOpen(true);
-      }
-    };
 
     return (
       <Link 
         to={tier.disabled ? "#" : getLink()} 
-        onClick={handleClick}
         className={`group block ${tier.disabled ? 'cursor-not-allowed' : 'cursor-pointer'}`}
       >
         <div 
@@ -208,10 +199,6 @@ const HowItWorks = () => {
         </div>
       </main>
 
-      <ConsultationForm 
-        isOpen={isConsultationOpen} 
-        onClose={() => setIsConsultationOpen(false)} 
-      />
       <Footer />
     </div>
   );
