@@ -88,7 +88,7 @@ const PerpetuityExitValuation = () => {
       <Header />
       
       <div className="py-12">
-        <div className="container mx-auto">
+        <div className="container mx-auto text-center">
           <Link 
             to="/toolbox/startup-valuations"
             className="inline-flex items-center text-slate-600 hover:text-primary mb-8"

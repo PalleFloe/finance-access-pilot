@@ -88,7 +88,7 @@ const StableGrowthTerminalValueDcf = () => {
       <Header />
       
       <div className="py-12">
-        <div className="container mx-auto">
+        <div className="container mx-auto text-center">
           <Link 
             to="/toolbox/investment-analysis"
             className="inline-flex items-center text-slate-600 hover:text-primary mb-8"

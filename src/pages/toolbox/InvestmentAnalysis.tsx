@@ -93,12 +93,14 @@ const InvestmentAnalysis = () => {
             Back to Toolbox
           </Link>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
-            Professional Investment Analysis Models
-          </h1>
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
+              Professional Investment Analysis Models
+            </h1>
             <h2 className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-6">
-            Proven and Structured DCF Models for Investment Evaluation and Decision-Making with Scenario and Sensitivity Analysis
-          </h2>
+              Proven and Structured DCF Models for Investment Evaluation and Decision-Making with Scenario and Sensitivity Analysis
+            </h2>
+          </div>
           <p className="text-lg text-slate-600 mb-8 leading-relaxed">
             Explore our investment analysis models to make informed capital allocation decisions.
           </p>

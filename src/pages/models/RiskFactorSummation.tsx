@@ -75,7 +75,7 @@ const RiskFactorSummation = () => {
       <Header />
       
       <section className="py-12">
-        <div className="container">
+        <div className="container text-center">
           <div className="mb-8">
             <Link to="/toolbox/startup-valuations" className="inline-flex items-center text-slate-600 hover:text-primary">
               <ArrowLeft className="w-4 h-4 mr-2" />

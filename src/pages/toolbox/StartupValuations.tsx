@@ -96,12 +96,14 @@ const StartupValuations = () => {
             Back to Toolbox
           </Link>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
-            Professional Startup Financial Decision & Valuation Models
-          </h1>
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
+              Professional Startup Financial Decision & Valuation Models
+            </h1>
             <h2 className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-6">
-            Comprehensive Startup Valuation toolbox: Proven Methods to Estimate, Understand and Explain the Value of Startups
-          </h2>
+              Comprehensive Startup Valuation toolbox: Proven Methods to Estimate, Understand and Explain the Value of Startups
+            </h2>
+          </div>
           <p className="text-lg text-slate-600 mb-8 leading-relaxed">
             Explore our start-up valuation models to make informed investment decisions.
           </p>

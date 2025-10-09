@@ -88,7 +88,7 @@ const FinancialRatioCalculator = () => {
       <Header />
       
       <div className="py-12">
-        <div className="container mx-auto">
+        <div className="container mx-auto text-center">
           <Link 
             to="/toolbox/financial-fundamentals"
             className="inline-flex items-center text-slate-600 hover:text-primary mb-8"

@@ -86,7 +86,7 @@ const ThreeStageDcf = () => {
       <Header />
       
       <div className="py-12">
-        <div className="container mx-auto">
+        <div className="container mx-auto text-center">
           <Link 
             to="/toolbox/investment-analysis"
             className="inline-flex items-center text-slate-600 hover:text-brand-blue mb-6"
@@ -98,7 +98,7 @@ const ThreeStageDcf = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
             Three Stage DCF Model
           </h1>
-          <h2 className="text-2xl md:text-3xl text-brand-blue mb-12">
+          <h2 className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-12">
             Multi-stage Analysis: DCF Valuation with Distinct Performance Stage Characteristics
           </h2>
 

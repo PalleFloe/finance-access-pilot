@@ -86,7 +86,7 @@ const FirstChicagoValuation = () => {
       </Helmet>
       <Header />
       
-      <div className="container mx-auto py-16">
+      <div className="container mx-auto py-16 text-center">
         <div className="mb-4">
           <Link 
             to="/toolbox/startup-valuations"

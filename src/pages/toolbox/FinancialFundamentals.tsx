@@ -96,12 +96,14 @@ const FinancialFundamentals = () => {
             Back to Toolbox
           </Link>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
-            Financial Fundamental Models
-          </h1>
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
+              Financial Fundamental Models
+            </h1>
             <h2 className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-6">
-            Simple Academic Financial Analysis Tools: Essential Models for Learning Core Valuation and Decision-Making Principles
-          </h2>
+              Simple Academic Financial Analysis Tools: Essential Models for Learning Core Valuation and Decision-Making Principles
+            </h2>
+          </div>
           <p className="text-lg text-slate-600 mb-8 leading-relaxed">
             These simple academic financial models, inspired by the foundational work of Professor Aswath Damodaran, provide students, professionals, and curious learners with essential financial analysis tools that demonstrate core valuation and decision-making principles taught in leading business schools worldwide.
           </p>
