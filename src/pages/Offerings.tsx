@@ -148,10 +148,6 @@ const Offerings = () => {
             Financial Decision Modelling & Consulting Offerings
           </h1>
           
-          <p className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-4">
-            Expert guidance backed by proven professional frameworks.
-          </p>
-          
           <p className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed">
             Explore our free professional models to use, learn and get inspired. Need customized solutions or strategic support for complex decisions? Request a consultation.
           </p>
