@@ -165,12 +165,24 @@ const ThreeStageDcf = () => {
 
           {/* Collapsible Guide */}
           <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="complete-guide">
-              <AccordionTrigger className="text-2xl font-semibold text-brand-blue hover:text-brand-blue/80">
-                Complete Three Stage DCF Model Guide
+            <AccordionItem value="complete-guide" className="border-none">
+              <AccordionTrigger className="w-full bg-white border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-all duration-200 hover:no-underline data-[state=open]:rounded-b-none data-[state=open]:border-b-0">
+                <div className="text-left w-full">
+                  <div className="text-sm font-semibold uppercase tracking-wide mb-1 text-slate-600">
+                    Full Detailed Guide
+                  </div>
+                  <div className="text-2xl font-bold text-[#326496]">
+                    Complete Three Stage DCF Model Guide
+                  </div>
+                  <div className="text-sm mt-2 text-slate-600">
+                    Click to expand comprehensive documentation →
+                  </div>
+                </div>
               </AccordionTrigger>
-                <AccordionContent className="space-y-6 text-base leading-relaxed">
-                  <div>
+              <AccordionContent className="p-6 bg-white border border-slate-200 rounded-b-lg border-t-0">
+                <div className="prose prose-slate max-w-none">
+                  <div className="space-y-6 text-slate-600">
+                    <div>
                     <h4 className="text-xl font-semibold text-brand-blue mb-3">Overview and Strategic Framework</h4>
                     <p className="text-slate-600 mb-4">
                       The Three Stage DCF Model values internal investments experiencing distinct phases of development with different operational characteristics in each stage. This framework is designed for evaluating capital projects, operational improvements, and strategic initiatives that exhibit predictable evolution patterns within existing business structures.
@@ -341,6 +353,8 @@ const ThreeStageDcf = () => {
                       <strong>Cross-Model Comparison:</strong> Validate assumptions and results against other investment analysis models in the toolkit to ensure consistency and identify potential analytical gaps.
                     </p>
                   </div>
+                </div>
+              </div>
               </AccordionContent>
             </AccordionItem>
           </Accordion>

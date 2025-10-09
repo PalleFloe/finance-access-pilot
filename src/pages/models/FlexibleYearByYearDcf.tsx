@@ -163,13 +163,24 @@ const FlexibleYearByYearDcf = () => {
 
         {/* Collapsible Section */}
         <Accordion type="single" collapsible className="w-full">
-          <AccordionItem value="complete-guide">
-            <AccordionTrigger className="text-xl font-bold text-heading">
-              Complete Flexible Year by Year DCF Model Guide
+          <AccordionItem value="complete-guide" className="border-none">
+            <AccordionTrigger className="w-full bg-white border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-all duration-200 hover:no-underline data-[state=open]:rounded-b-none data-[state=open]:border-b-0">
+              <div className="text-left w-full">
+                <div className="text-sm font-semibold uppercase tracking-wide mb-1 text-slate-600">
+                  Full Detailed Guide
+                </div>
+                <div className="text-2xl font-bold text-[#326496]">
+                  Complete Flexible Year by Year DCF Model Guide
+                </div>
+                <div className="text-sm mt-2 text-slate-600">
+                  Click to expand comprehensive documentation →
+                </div>
+              </div>
             </AccordionTrigger>
-            <AccordionContent className="prose prose-slate max-w-none">
-              <div className="space-y-6 text-slate-600">
-                <div>
+            <AccordionContent className="p-6 bg-white border border-slate-200 rounded-b-lg border-t-0">
+              <div className="prose prose-slate max-w-none">
+                <div className="space-y-6 text-slate-600">
+                  <div>
                   <h3 className="text-xl font-bold text-heading mb-3">What Is the Flexible Year by Year DCF Model?</h3>
                   <p className="leading-relaxed mb-4">
                     The Flexible Year by Year DCF Model enables detailed cash flow projections with complete control over annual assumptions. This approach recognises that businesses rarely maintain constant growth rates or margins, instead experiencing varying performance across different periods.
@@ -232,6 +243,7 @@ const FlexibleYearByYearDcf = () => {
                         <li>Validate against comparable internal projects</li>
                       </ul>
                     </div>
+                  </div>
                   </div>
                 </div>
               </div>

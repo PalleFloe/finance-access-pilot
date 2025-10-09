@@ -162,13 +162,24 @@ const VentureCapitalMethod = () => {
 
         {/* Expandable Section */}
         <Accordion type="single" collapsible className="w-full">
-          <AccordionItem value="complete-guide">
-            <AccordionTrigger className="mb-3">
-              Complete Venture Capital Valuation Method Guide
+          <AccordionItem value="complete-guide" className="border-none">
+            <AccordionTrigger className="w-full bg-white border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-all duration-200 hover:no-underline data-[state=open]:rounded-b-none data-[state=open]:border-b-0">
+              <div className="text-left w-full">
+                <div className="text-sm font-semibold uppercase tracking-wide mb-1 text-slate-600">
+                  Full Detailed Guide
+                </div>
+                <div className="text-2xl font-bold text-[#326496]">
+                  Complete Venture Capital Valuation Method Guide
+                </div>
+                <div className="text-sm mt-2 text-slate-600">
+                  Click to expand comprehensive documentation →
+                </div>
+              </div>
             </AccordionTrigger>
-            <AccordionContent className="prose prose-slate max-w-none">
-              <div className="space-y-6 text-slate-600">
-                <div>
+            <AccordionContent className="p-6 bg-white border border-slate-200 rounded-b-lg border-t-0">
+              <div className="prose prose-slate max-w-none">
+                <div className="space-y-6 text-slate-600">
+                  <div>
                   <h3 className="text-xl font-bold text-heading mb-3">Overview and Strategic Framework</h3>
                   <p className="leading-relaxed mb-4">
                     The Venture Capital Valuation Model provides startup founders, investors, and advisors with analytical framework for informed valuation decisions for startups with typically more than one investment round. By understanding both the investor return perspective and entrepreneur ownership implications, users can make better investment decisions, navigate negotiations successfully, and plan multi-round financing strategies with scenario analysis capabilities.
@@ -322,6 +333,7 @@ const VentureCapitalMethod = () => {
                   </div>
                 </div>
               </div>
+            </div>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
