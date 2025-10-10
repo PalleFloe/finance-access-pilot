@@ -16,11 +16,9 @@ import NotFound from "./pages/NotFound";
 import ThankYou from "./pages/ThankYou";
 import StartupValuations from "./pages/toolbox/StartupValuations";
 import FinancialFundamentals from "./pages/toolbox/FinancialFundamentals";
-import MatureBusiness from "./pages/toolbox/MatureBusiness";
 import InvestmentAnalysis from "./pages/toolbox/InvestmentAnalysis";
 import BusinessStrategy from "./pages/toolbox/BusinessStrategy";
 import VentureCapitalMethod from "./pages/models/VentureCapitalMethod";
-import RiskFactorSummation from "./pages/models/RiskFactorSummation";
 import SaasUnitEconomics from "./pages/models/SaasUnitEconomics";
 import BerkusValuation from "./pages/models/BerkusValuation";
 import FirstChicagoValuation from "./pages/models/FirstChicagoValuation";
@@ -64,11 +62,9 @@ const App = () => (
           <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/toolbox/startup-valuations" element={<StartupValuations />} />
           <Route path="/toolbox/financial-fundamentals" element={<FinancialFundamentals />} />
-          <Route path="/toolbox/mature-business" element={<MatureBusiness />} />
           <Route path="/toolbox/investment-analysis" element={<InvestmentAnalysis />} />
           <Route path="/toolbox/business-strategy" element={<BusinessStrategy />} />
           <Route path="/toolbox/startup-valuations/venture-capital-method" element={<VentureCapitalMethod />} />
-          <Route path="/toolbox/startup-valuations/risk-factor-summation" element={<RiskFactorSummation />} />
           <Route path="/toolbox/startup-valuations/saas-unit-economics" element={<SaasUnitEconomics />} />
           <Route path="/toolbox/startup-valuations/berkus-valuation" element={<BerkusValuation />} />
           <Route path="/toolbox/startup-valuations/first-chicago-method" element={<FirstChicagoValuation />} />
