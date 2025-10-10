@@ -10,6 +10,31 @@ import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect, useState } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { FINANCIAL_GLOSSARY, type GlossaryTerm } from "@/lib/glossary";
+
+const FinancialTerm = ({ term, children }: { term: GlossaryTerm; children: React.ReactNode }) => {
+  return (
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <span 
+          className="font-bold underline decoration-dotted cursor-help"
+          style={{ textDecorationColor: 'currentColor' }}
+        >
+          {children}
+        </span>
+      </TooltipTrigger>
+      <TooltipContent className="max-w-[300px]">
+        <p className="text-sm">{FINANCIAL_GLOSSARY[term]}</p>
+      </TooltipContent>
+    </Tooltip>
+  );
+};
 
 const SaasUnitEconomics = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -28,6 +53,7 @@ const SaasUnitEconomics = () => {
   };
 
   return (
+    <TooltipProvider delayDuration={200}>
     <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
         <title>SaaS Unit Economics Model - Professional Valuation Tool | Financial Decision Models</title>
@@ -218,7 +244,7 @@ const SaasUnitEconomics = () => {
                     <div>
                       <h4 className="font-semibold text-heading">Cost Structure:</h4>
                       <ul className="list-disc pl-6 mt-2 space-y-1">
-                        <li>Customer Acquisition Cost (CAC): Marketing and sales investment efficiency</li>
+                        <li>Customer Acquisition Cost (<FinancialTerm term="CAC">CAC</FinancialTerm>): Marketing and sales investment efficiency</li>
                         <li>Fixed Operating Costs: Administrative, infrastructure, and overhead analysis</li>
                       </ul>
                     </div>
@@ -227,8 +253,8 @@ const SaasUnitEconomics = () => {
                       <ul className="list-disc pl-6 mt-2 space-y-1">
                         <li>Discount Rate: Required investor return rate for present value calculations</li>
                         <li>Revenue and Profit Multiple Valuation: Business valuation using profit-based multiples</li>
-                        <li>Investment (CAPEX): Capital expenditures for acquiring or improving long-term assets, treated separately from normal operating expenses (OPEX)</li>
-                        <li>Net Present Value (NPV): Assesses profitability and potential by considering time value of money via discount rate</li>
+                        <li>Investment (<FinancialTerm term="CAPEX">CAPEX</FinancialTerm>): Capital expenditures for acquiring or improving long-term assets, treated separately from normal operating expenses (<FinancialTerm term="OPEX">OPEX</FinancialTerm>)</li>
+                        <li>Net Present Value (<FinancialTerm term="NPV">NPV</FinancialTerm>): Assesses profitability and potential by considering time value of money via discount rate</li>
                       </ul>
                     </div>
                   </div>
@@ -265,7 +291,7 @@ const SaasUnitEconomics = () => {
                       <ul className="list-disc pl-6 mt-2 space-y-1">
                         <li>Client advisory services: Unit economics analysis for startup clients</li>
                         <li>Investment recommendations: Strategic consulting through unit economics insights</li>
-                        <li>Transaction support: Analysis for fundraising and M&A processes</li>
+                        <li>Transaction support: Analysis for fundraising and <FinancialTerm term="M&A">M&A</FinancialTerm> processes</li>
                       </ul>
                     </div>
                   </div>
@@ -319,10 +345,10 @@ const SaasUnitEconomics = () => {
                       </p>
                       <ul className="list-disc pl-6 mt-2 space-y-1">
                         <li>Customer Lifetime = 1 ÷ Churn Rate</li>
-                        <li>Customer Lifetime Value (CLV) = Customer Lifetime × (Revenue Per Customer - Cost Per Customer)</li>
-                        <li>CLV:CAC Ratio = Customer Lifetime Value ÷ Customer Acquisition Cost</li>
+                        <li>Customer Lifetime Value (<FinancialTerm term="CLV">CLV</FinancialTerm>) = Customer Lifetime × (Revenue Per Customer - Cost Per Customer)</li>
+                        <li><FinancialTerm term="CLV">CLV</FinancialTerm>:<FinancialTerm term="CAC">CAC</FinancialTerm> Ratio = Customer Lifetime Value ÷ Customer Acquisition Cost</li>
                         <li>Customer Acquisition Payback Period = Customer Acquisition Cost ÷ (Revenue Per Customer - Cost Per Customer)</li>
-                        <li>Net Present Value (NPV): Present value of future cash flows discounted at required rate of return</li>
+                        <li>Net Present Value (<FinancialTerm term="NPV">NPV</FinancialTerm>): Present value of future cash flows discounted at required rate of return</li>
                       </ul>
                     </div>
 
@@ -337,7 +363,7 @@ const SaasUnitEconomics = () => {
                               <ul className="list-disc pl-6 mt-1 space-y-1">
                                 <li>Uses constant assumptions across all periods</li>
                                 <li>Applies perpetuity logic for ongoing business value</li>
-                                <li>NPV Valuation Sensitivity Chart: Shows how NPV changes with each key driver, holding everything else equal—enables users to identify which variables most impact valuation</li>
+                                <li><FinancialTerm term="NPV">NPV</FinancialTerm> Valuation Sensitivity Chart: Shows how <FinancialTerm term="NPV">NPV</FinancialTerm> changes with each key driver, holding everything else equal—enables users to identify which variables most impact valuation</li>
                               </ul>
                             </div>
                             <div>
@@ -407,6 +433,7 @@ const SaasUnitEconomics = () => {
         </Accordion>
       </div>
     </div>
+    </TooltipProvider>
   );
 };
 
