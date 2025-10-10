@@ -10,31 +10,8 @@ import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect, useState } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { FINANCIAL_GLOSSARY, type GlossaryTerm } from "@/lib/glossary";
-
-const FinancialTerm = ({ term, children }: { term: GlossaryTerm; children: React.ReactNode }) => {
-  return (
-    <Tooltip>
-      <TooltipTrigger asChild>
-        <span 
-          className="font-bold underline decoration-dotted cursor-help"
-          style={{ textDecorationColor: 'currentColor' }}
-        >
-          {children}
-        </span>
-      </TooltipTrigger>
-      <TooltipContent className="max-w-[300px]">
-        <p className="text-sm">{FINANCIAL_GLOSSARY[term]}</p>
-      </TooltipContent>
-    </Tooltip>
-  );
-};
+import { TooltipProvider } from "@/components/ui/tooltip";
+import FinancialTerm from "@/components/FinancialTerm";
 
 const SaasUnitEconomics = () => {
   const { trackOnlineOpen } = useAnalytics();

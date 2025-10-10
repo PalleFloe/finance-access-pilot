@@ -8,6 +8,7 @@ import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
+import FinancialTerm from "@/components/FinancialTerm";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 
@@ -144,11 +145,11 @@ const VentureCapitalMethod = () => {
         {/* Short Description */}
         <div className="prose prose-slate max-w-none mb-8">
           <p className="text-lg text-slate-600 leading-relaxed mb-4">
-            The Venture Capital Valuation Model provides startup founders, investors, and advisors with analytical framework for informed valuation decisions for startups with typically more than one investment round.¹ ² By understanding both the investor return perspective and entrepreneur ownership implications, users can make better investment decisions, navigate negotiations successfully, and plan multi-round financing strategies with scenario analysis capabilities.
+            The Venture Capital Valuation Model provides startup founders, investors, and advisors with analytical framework for informed valuation decisions for startups with typically more than one investment round.¹ ² By understanding both the investor return perspective and entrepreneur ownership implications, users can make better investment decisions, navigate negotiations successfully, and plan multi-round financing strategies with <FinancialTerm term="Scenario Analysis">scenario analysis</FinancialTerm> capabilities.
           </p>
           
           <p className="text-lg text-slate-600 leading-relaxed mb-4">
-            <strong>Scenario Framework</strong>: The model builds on a base case with scenario modelling from very low through very high exit valuations, enabling stakeholders to understand return and ownership sensitivities. Users can combine exit scenarios with timing assumptions and investor requirements to conduct robust quantifiable sensitivity analysis, given the inherent high uncertainty in venture capital investing.
+            <strong>Scenario Framework</strong>: The model builds on a base case with scenario modelling from very low through very high exit valuations, enabling stakeholders to understand return and ownership sensitivities. Users can combine <FinancialTerm term="Exit Multiple">exit scenarios</FinancialTerm> with timing assumptions and investor requirements to conduct robust quantifiable <FinancialTerm term="Sensitivity Analysis">sensitivity analysis</FinancialTerm>, given the inherent high uncertainty in venture capital investing.
           </p>
           
           <p className="text-lg text-slate-600 leading-relaxed mb-4">
@@ -202,21 +203,21 @@ const VentureCapitalMethod = () => {
                     <div>
                       <h4 className="font-semibold text-heading">Working Backwards from Exit</h4>
                       <p className="leading-relaxed mb-3">
-                        The method starts with estimated exit valuation and timing, then works backward to determine current pre-money and post-money valuations that meet investor return requirements.
+                        The method starts with estimated <FinancialTerm term="Exit Multiple">exit valuation</FinancialTerm> and timing, then works backward to determine current <FinancialTerm term="Pre-Money Valuation">pre-money</FinancialTerm> and <FinancialTerm term="Post-Money Valuation">post-money valuations</FinancialTerm> that meet investor return requirements.
                       </p>
                     </div>
                     
                     <div>
                       <h4 className="font-semibold text-heading">Required Return Integration</h4>
                       <p className="leading-relaxed mb-3">
-                        Incorporates explicit investor return requirements (typically 25-50% IRR for venture capital) to calculate ownership percentages needed to achieve target returns.
+                        Incorporates explicit investor return requirements (typically 25-50% <FinancialTerm term="IRR">IRR</FinancialTerm> for venture capital) to calculate ownership percentages needed to achieve target returns.
                       </p>
                     </div>
 
                     <div>
                       <h4 className="font-semibold text-heading">Multi-Round Analysis</h4>
                       <p className="leading-relaxed mb-3">
-                        Models dilution effects across multiple financing rounds, enabling entrepreneurs and investors to understand long-term ownership implications.
+                        Models <FinancialTerm term="Dilution">dilution</FinancialTerm> effects across multiple financing rounds, enabling entrepreneurs and investors to understand long-term ownership implications.
                       </p>
                     </div>
                   </div>

@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, ArrowRight, Check, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/sections/Footer";
+import FinancialTerm from "@/components/FinancialTerm";
 import { useEffect } from "react";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
 
@@ -148,7 +149,7 @@ const StartupValuations = () => {
             <div>
               <h3 className="text-3xl font-semibold text-brand-blue mb-4">Professional Startup Financial Decision & Valuation Models</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                The Comprehensive Startup Valuation toolbox provides entrepreneurs, investors, and financial advisors with proven methodologies to better understand, negotiate and make informed startup valuation decisions. This collection of professional models transforms valuation theory into a practical and accessible toolbox for real-world application.
+                The Comprehensive Startup Valuation toolbox provides entrepreneurs, investors, and financial advisors with proven methodologies to better understand, negotiate and make informed startup valuation decisions. This collection of professional models transforms valuation theory into a practical and accessible toolbox for real-world application. Each model employs <FinancialTerm term="DCF">discounted cash flow</FinancialTerm> analysis, <FinancialTerm term="Scenario Analysis">scenario planning</FinancialTerm>, and comprehensive <FinancialTerm term="Sensitivity Analysis">sensitivity testing</FinancialTerm> to address the inherent uncertainty in startup valuations.
               </p>
             </div>
 
@@ -165,7 +166,7 @@ const StartupValuations = () => {
             <div>
               <h3 className="text-3xl font-semibold text-brand-blue mb-4">Comprehensive Coverage of Startup Valuation Methods</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                The six-model toolbox covers the complete valuation spectrum: understanding business model through SaaS Unit Economics analysis, establishing pre-revenue valuations via risk-based Berkus methodology, modelling investor ownership and returns through Venture Capital Valuation method, estimating probability-weighted valuation through First Chicago scenario estimates, providing insight into long-term value through Perpetuity & Exit Value models, and structuring probability-weighted returns on investment through the systematic Decision Analysis for Venture Capital method. Each model comes with comprehensive guidance explaining what it does, why it matters, when to use it, and how to implement it effectively. The potential use of various valuation models gives distinct, complementary and even synergistic methods across different insights, business- and valuation decision-making contexts.
+                The six-model toolbox covers the complete valuation spectrum: understanding business model through <FinancialTerm term="Unit Economics">SaaS Unit Economics</FinancialTerm> analysis, establishing pre-revenue valuations via risk-based Berkus methodology, modelling investor ownership and returns through <FinancialTerm term="Venture Capital">Venture Capital</FinancialTerm> Valuation method, estimating probability-weighted valuation through First Chicago <FinancialTerm term="Scenario Analysis">scenario estimates</FinancialTerm>, providing insight into long-term value through <FinancialTerm term="Terminal Value">Perpetuity & Exit Value</FinancialTerm> models, and structuring probability-weighted returns on investment through the systematic Decision Analysis for Venture Capital method. Each model comes with comprehensive guidance explaining what it does, why it matters, when to use it, and how to implement it effectively. The potential use of various valuation models gives distinct, complementary and even synergistic methods across different insights, business- and valuation decision-making contexts.
               </p>
             </div>
 
