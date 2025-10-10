@@ -19,7 +19,7 @@ const InvestmentAnalysis = () => {
 
   const models = [
     {
-      name: <>Flexible Year by Year <FinancialTerm term="DCF">DCF</FinancialTerm> Model</>,
+      name: "Flexible Year by Year DCF Model",
       bulletPoints: [
         <>Model <FinancialTerm term="NPV">NPV</FinancialTerm>/<FinancialTerm term="IRR">IRR</FinancialTerm> with yearly flexibility</>,
         "Handle complex business cycles",
@@ -29,7 +29,7 @@ const InvestmentAnalysis = () => {
       status: "available",
     },
     {
-      name: <>Stable Growth - Finite-Life <FinancialTerm term="DCF">DCF</FinancialTerm> Model</>,
+      name: "Stable Growth - Finite-Life DCF Model",
       bulletPoints: [
         <>Model <FinancialTerm term="NPV">NPV</FinancialTerm>/<FinancialTerm term="IRR">IRR</FinancialTerm> for investments with finite lifetime</>,
         "Value fixed-term contracts and endpoint projects",
@@ -39,7 +39,7 @@ const InvestmentAnalysis = () => {
       status: "available",
     },
     {
-      name: <>Stable Growth - Terminal <FinancialTerm term="DCF">DCF</FinancialTerm> Model</>,
+      name: "Stable Growth - Terminal DCF Model",
       bulletPoints: [
         <>Model <FinancialTerm term="NPV">NPV</FinancialTerm>/<FinancialTerm term="IRR">IRR</FinancialTerm> for perpetual</>,
         "Value factories & infrastructure",
@@ -49,7 +49,7 @@ const InvestmentAnalysis = () => {
       status: "available",
     },
     {
-      name: <>Three Stage <FinancialTerm term="DCF">DCF</FinancialTerm> Model</>,
+      name: "Three Stage DCF Model",
       bulletPoints: [
         "Model distinct performance phases",
         "Handle ramp-up / scaling / mature stages",
@@ -59,7 +59,7 @@ const InvestmentAnalysis = () => {
       status: "available",
     },
     {
-      name: <>Cost Reduction <FinancialTerm term="DCF">DCF</FinancialTerm> Model</>,
+      name: "Cost Reduction DCF Model",
       bulletPoints: [
         "To be defined"
       ],
@@ -128,7 +128,7 @@ const InvestmentAnalysis = () => {
                   )}
                   <CardHeader className="flex-grow p-6">
                     <CardTitle className="text-2xl font-semibold mb-3" style={{ color: '#FFFFFF' }}>
-                      <span>{model.name}</span>
+                      {model.name}
                     </CardTitle>
                     <div className="flex-grow text-lg leading-[1.4] font-normal" style={{ color: 'rgba(255, 255, 255, 0.75)' }}>
                       {model.bulletPoints.map((point, index) => (

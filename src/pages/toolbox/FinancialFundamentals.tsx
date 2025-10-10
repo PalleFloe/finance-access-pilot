@@ -38,7 +38,7 @@ const FinancialFundamentals = () => {
       status: "available",
     },
     {
-      name: <>Standard Types of <FinancialTerm term="DCF">DCF</FinancialTerm> Models</>,
+      name: "Standard Types of DCF Models",
       bulletPoints: [
         "Choose Flexible/Three Stage/Stable Growth",
         <>Compare <FinancialTerm term="DCF">DCF</FinancialTerm> methodologies</>,
@@ -131,7 +131,7 @@ const FinancialFundamentals = () => {
                   )}
                   <CardHeader className="flex-grow p-6">
                     <CardTitle className="text-2xl font-semibold mb-3" style={{ color: '#FFFFFF' }}>
-                      <span>{model.name}</span>
+                      {model.name}
                     </CardTitle>
                     <div className="flex-grow text-lg leading-[1.4] font-normal" style={{ color: 'rgba(255, 255, 255, 0.75)' }}>
                       {model.bulletPoints.map((point, index) => (

@@ -21,7 +21,7 @@ const StartupValuations = () => {
       name: "SaaS Unit Economics Model",
       bulletPoints: [
         "Assess SaaS business model profitability",
-        `Optimize ${<FinancialTerm term="CLV">CLV</FinancialTerm>} vs ${<FinancialTerm term="CAC">CAC</FinancialTerm>} strategies`,
+        <>Optimize <FinancialTerm term="CLV">CLV</FinancialTerm> vs <FinancialTerm term="CAC">CAC</FinancialTerm> strategies</>,
         "Present unit economics to investors"
       ],
       href: "/toolbox/startup-valuations/saas-unit-economics",
@@ -30,7 +30,7 @@ const StartupValuations = () => {
     {
       name: "Venture Capital Valuation Model",
       bulletPoints: [
-        `Model investment vs ownership & ${<FinancialTerm term="IRR">IRR</FinancialTerm>}`,
+        <>Model investment vs ownership & <FinancialTerm term="IRR">IRR</FinancialTerm></>,
         "Assess dilution across investment rounds",
         "Negotiate valuation with analytical backing"
       ],
@@ -50,7 +50,7 @@ const StartupValuations = () => {
     {
       name: "First Chicago Valuation Model",
       bulletPoints: [
-        `Scenario-based ${<FinancialTerm term="DCF">DCF</FinancialTerm>} valuation`,
+        <>Scenario-based <FinancialTerm term="DCF">DCF</FinancialTerm> valuation</>,
         "Exit values - revenue & profit multiples",
         "Present probability-adjusted valuation"
       ],
@@ -131,7 +131,7 @@ const StartupValuations = () => {
                   )}
                   <CardHeader className="flex-grow p-6">
                     <CardTitle className="text-2xl font-semibold mb-3" style={{ color: '#FFFFFF' }}>
-                      <span>{model.name}</span>
+                      {model.name}
                     </CardTitle>
                     <div className="flex-grow text-lg leading-[1.4] font-normal" style={{ color: 'rgba(255, 255, 255, 0.75)' }}>
                       {model.bulletPoints.map((point, index) => (
