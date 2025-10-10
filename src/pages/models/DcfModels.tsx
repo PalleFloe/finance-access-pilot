@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/sections/Footer";
 import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
+import FinancialTerm from "@/components/FinancialTerm";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 
@@ -103,7 +104,7 @@ const DcfModels = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Key Types of DCF Models
+            Key Types of <FinancialTerm term="DCF">DCF</FinancialTerm> Models
           </h1>
 
           <h2 className="text-[28px] text-slate-600 max-w-6xl leading-relaxed mb-8">
@@ -142,68 +143,68 @@ const DcfModels = () => {
           </div>
 
           <div className="max-w-none">
-            <h3 className="text-xl font-semibold mb-4">What Are the Standard Types of DCF Models?</h3>
+            <h3 className="text-xl font-semibold mb-4">What Are the Standard Types of <FinancialTerm term="DCF">DCF</FinancialTerm> Models?</h3>
             <p className="text-lg leading-relaxed mb-4">
-              The Standard Types of DCF Models represent three fundamental approaches to business valuation that accommodate different company life cycles and growth patterns. Each model uses discounted cash flow mathematics.
+              The Standard Types of <FinancialTerm term="DCF">DCF</FinancialTerm> Models represent three fundamental approaches to business valuation that accommodate different company life cycles and growth patterns. Each model uses discounted cash flow mathematics.
             </p>
             
             <p className="text-lg leading-relaxed mb-4">
-              <strong>Flexible DCF Models:</strong> Accommodates changing revenue growth rates, margin evolution, and operational assumptions across user-defined forecast periods. This approach enables detailed operational modelling while maintaining simplicity for educational understanding. Available in two variants - percentage-based (Growth and Ratio input) and absolute value-based inputs.
+              <strong>Flexible <FinancialTerm term="DCF">DCF</FinancialTerm> Models:</strong> Accommodates changing revenue growth rates, margin evolution, and operational assumptions across user-defined forecast periods. This approach enables detailed operational modelling while maintaining simplicity for educational understanding. Available in two variants - percentage-based (Growth and Ratio input) and absolute value-based inputs.
             </p>
             
             <p className="text-lg leading-relaxed mb-4">
-              <strong>Three Stages DCF Model:</strong> Models companies experiencing distinct multiple growth phases with different operational characteristics in each stage. This approach reflects real business development patterns while providing mathematical frameworks for valuing companies transitioning from high growth through maturation.
+              <strong>Three Stages <FinancialTerm term="DCF">DCF</FinancialTerm> Model:</strong> Models companies experiencing distinct multiple growth phases with different operational characteristics in each stage. This approach reflects real business development patterns while providing mathematical frameworks for valuing companies transitioning from high growth through maturation.
             </p>
             
             <p className="text-lg leading-relaxed mb-4">
-              <strong>Stable Growth Model:</strong> Simplified DCF approach assuming constant growth and operational characteristics, ideal for mature companies or quick valuation analysis. This model demonstrates Gordon Growth mathematics in practical business valuation contexts.
+              <strong>Stable <FinancialTerm term="Growth Rate">Growth</FinancialTerm> Model:</strong> Simplified <FinancialTerm term="DCF">DCF</FinancialTerm> approach assuming constant growth and operational characteristics, ideal for mature companies or quick valuation analysis. This model demonstrates Gordon Growth mathematics in practical business valuation contexts.
             </p>
             
             <p className="text-lg leading-relaxed mb-4">
-              <strong>The Framework:</strong> These models demonstrate three distinct DCF approaches used in valuation, from simple stable growth models through multiple stage growth to fully flexible frameworks, implementing Professor Damodaran's approach to DCF analysis¹ ².
+              <strong>The Framework:</strong> These models demonstrate three distinct <FinancialTerm term="DCF">DCF</FinancialTerm> approaches used in valuation, from simple stable growth models through multiple stage growth to fully flexible frameworks, implementing Professor Damodaran's approach to <FinancialTerm term="DCF">DCF</FinancialTerm> analysis¹ ².
             </p>
 
-            <h3 className="text-xl font-semibold mb-4">Why Use the Standard Types of DCF Models?</h3>
+            <h3 className="text-xl font-semibold mb-4">Why Use the Standard Types of <FinancialTerm term="DCF">DCF</FinancialTerm> Models?</h3>
             <p className="text-lg leading-relaxed mb-4">
-              Different companies require different valuation approaches depending on their growth stage, operational complexity, and business model characteristics. This framework enables users to understand when and how to apply different DCF methodologies while learning the logic and mathematical relationships that drive each approach.
+              Different companies require different valuation approaches depending on their growth stage, operational complexity, and business model characteristics. This framework enables users to understand when and how to apply different <FinancialTerm term="DCF">DCF</FinancialTerm> methodologies while learning the logic and mathematical relationships that drive each approach.
             </p>
 
-            <h3 className="text-xl font-semibold mb-4">How Do the Standard Types of DCF Models Work?</h3>
+            <h3 className="text-xl font-semibold mb-4">How Do the Standard Types of <FinancialTerm term="DCF">DCF</FinancialTerm> Models Work?</h3>
             <p className="text-lg leading-relaxed mb-4">
-              <strong>Integrated Worksheet Architecture:</strong> The distinct DCF approaches in each model while sharing common assumptions about currency and denominational settings. This design enables direct comparison across methodologies.
+              <strong>Integrated Worksheet Architecture:</strong> The distinct <FinancialTerm term="DCF">DCF</FinancialTerm> approaches in each model while sharing common assumptions about currency and denominational settings. This design enables direct comparison across methodologies.
             </p>
             
             <p className="text-lg leading-relaxed mb-4">
-              <strong>Mathematical Foundation:</strong> All models employ consistent DCF mathematics while accommodating different assumption structures. Terminal value calculations, discount rate applications, and free cash flow to firm (FCFF) definitions maintain academic standards across all three approaches.
+              <strong>Mathematical Foundation:</strong> All models employ consistent <FinancialTerm term="DCF">DCF</FinancialTerm> mathematics while accommodating different assumption structures. <FinancialTerm term="Terminal Value">Terminal value</FinancialTerm> calculations, <FinancialTerm term="Discount Rate">discount rate</FinancialTerm> applications, and <FinancialTerm term="FCFF">free cash flow to firm (FCFF)</FinancialTerm> definitions maintain academic standards across all three approaches.
             </p>
 
-            <h4 className="text-lg font-semibold mb-3">Flexible DCF Models (Two Variants)</h4>
+            <h4 className="text-lg font-semibold mb-3">Flexible <FinancialTerm term="DCF">DCF</FinancialTerm> Models (Two Variants)</h4>
             
             <p className="text-lg leading-relaxed mb-4">
-              <strong>Flexible DCF - Growth and Ratio Input:</strong>
+              <strong>Flexible <FinancialTerm term="DCF">DCF</FinancialTerm> - Growth and Ratio Input:</strong>
             </p>
             <ul className="list-disc pl-6 mb-4 space-y-1 text-lg">
-              <li>Year 1 input for Revenue, Variable costs and Operating expenses (OPEX)</li>
+              <li>Year 1 input for Revenue, Variable costs and <FinancialTerm term="OPEX">Operating expenses (OPEX)</FinancialTerm></li>
               <li>Year-by-year revenue growth percentages (flexible for each year)</li>
-              <li>Variable costs and Operating expenses (OPEX) with independent growth rates</li>
-              <li>Depreciation, investments (CapEx), and Net working capital as ratio of Revenue</li>
+              <li>Variable costs and <FinancialTerm term="OPEX">Operating expenses (OPEX)</FinancialTerm> with independent growth rates</li>
+              <li>Depreciation, <FinancialTerm term="CAPEX">investments (CapEx)</FinancialTerm>, and <FinancialTerm term="NWC">Net working capital</FinancialTerm> as ratio of Revenue</li>
             </ul>
             
             <p className="text-lg leading-relaxed mb-4">
-              <strong>Flexible DCF - Absolute Value Input:</strong>
+              <strong>Flexible <FinancialTerm term="DCF">DCF</FinancialTerm> - Absolute Value Input:</strong>
             </p>
             <ul className="list-disc pl-6 mb-4 space-y-1 text-lg">
-              <li>Absolut value input for each year for Revenue, Variable costs and Operating expenses (OPEX)</li>
-              <li>Absolut value input for each year for Depreciation, investments (CapEx), and Net working capital as ratio of Revenue</li>
+              <li>Absolut value input for each year for Revenue, Variable costs and <FinancialTerm term="OPEX">Operating expenses (OPEX)</FinancialTerm></li>
+              <li>Absolut value input for each year for Depreciation, <FinancialTerm term="CAPEX">investments (CapEx)</FinancialTerm>, and <FinancialTerm term="NWC">Net working capital</FinancialTerm> as ratio of Revenue</li>
             </ul>
             
             <p className="text-lg leading-relaxed mb-4">
               <strong>Same type Input for both:</strong>
             </p>
             <ul className="list-disc pl-6 mb-4 space-y-1 text-lg">
-              <li>Flexible 1-10 years forecast period with terminal value</li>
-              <li>Input for Discount Rate (WACC) and Free Cash-Flow to Firm (FCFF) Growth in Terminal Period</li>
-              <li>Tax rate applied to EBIT with NOL carryforward capability</li>
+              <li>Flexible 1-10 years forecast period with <FinancialTerm term="Terminal Value">terminal value</FinancialTerm></li>
+              <li>Input for <FinancialTerm term="Discount Rate">Discount Rate</FinancialTerm> (<FinancialTerm term="WACC">WACC</FinancialTerm>) and <FinancialTerm term="FCFF">Free Cash-Flow to Firm (FCFF)</FinancialTerm> Growth in Terminal Period</li>
+              <li>Tax rate applied to <FinancialTerm term="EBITDA">EBIT</FinancialTerm> with NOL carryforward capability</li>
               <li>Initial year input for Cash & Marketable Investments and Debt</li>
               <li>Clean presentation of value bridge from firm value to equity value</li>
             </ul>

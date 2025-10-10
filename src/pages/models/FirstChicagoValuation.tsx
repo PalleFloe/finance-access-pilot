@@ -8,6 +8,7 @@ import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
+import FinancialTerm from "@/components/FinancialTerm";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 
@@ -101,7 +102,7 @@ const FirstChicagoValuation = () => {
         </h1>
 
         <p className="text-[28px] text-slate-600 max-w-6xl leading-relaxed mb-8">
-          Scenario Based DCF Model for Startup Valuation: Specifically focusing on Exit Value based on both Profit and Revenue
+          Scenario Based <FinancialTerm term="DCF">DCF</FinancialTerm> Model for Startup Valuation: Specifically focusing on Exit Value based on both Profit and Revenue
         </p>
       </div>
 

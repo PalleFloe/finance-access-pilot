@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
+import FinancialTerm from "@/components/FinancialTerm";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 
@@ -103,7 +104,7 @@ const CostOfCapitalCalculator = () => {
           </h1>
 
           <h2 className="text-[28px] text-slate-600 max-w-6xl leading-relaxed mb-8">
-            WACC Analysis: Cost of Equity, Cost of Debt, and Weighted Average Cost of Capital Calculation
+            <FinancialTerm term="WACC">WACC</FinancialTerm> Analysis: Cost of Equity, Cost of Debt, and Weighted Average Cost of Capital Calculation
           </h2>
 
           <div className="flex flex-col lg:flex-row gap-8 mb-8">
@@ -140,7 +141,7 @@ const CostOfCapitalCalculator = () => {
           <div className="max-w-none">
             <h3 className="text-xl font-semibold mb-4">What Is the Simple Cost of Capital Calculator?</h3>
             <p className="text-lg leading-relaxed mb-4">
-              The Simple Cost of Capital Calculator is a fundamental financial tool that determines a company's Weighted Average Cost of Capital (WACC). This model calculates the cost of equity, cost of debt, and combines them based on the company's capital structure to provide the overall cost of capital, which is essential for investment evaluation and corporate valuation.
+              The Simple Cost of Capital Calculator is a fundamental financial tool that determines a company's <FinancialTerm term="WACC">Weighted Average Cost of Capital (WACC)</FinancialTerm>. This model calculates the cost of equity, cost of debt, and combines them based on the company's capital structure to provide the overall cost of capital, which is essential for investment evaluation and corporate valuation.
             </p>
 
             <h3 className="text-xl font-semibold mb-4">Why Use the Simple Cost of Capital Calculator?</h3>
@@ -149,7 +150,7 @@ const CostOfCapitalCalculator = () => {
             </p>
             <ul className="list-disc pl-6 mb-4 space-y-2 text-lg">
               <li><strong>Investment evaluation:</strong> Provides the hurdle rate for evaluating new projects and investments</li>
-              <li><strong>Company valuation:</strong> Serves as the discount rate in DCF models for enterprise valuation</li>
+              <li><strong>Company valuation:</strong> Serves as the discount rate in <FinancialTerm term="DCF">DCF</FinancialTerm> models for enterprise valuation</li>
               <li><strong>Capital structure optimization:</strong> Helps determine the optimal mix of debt and equity financing</li>
               <li><strong>Performance measurement:</strong> Establishes minimum acceptable returns for value creation</li>
               <li><strong>Strategic planning:</strong> Supports long-term financial planning and capital allocation decisions</li>
@@ -157,10 +158,10 @@ const CostOfCapitalCalculator = () => {
 
             <h3 className="text-xl font-semibold mb-4">How Does the Simple Cost of Capital Calculator Work?</h3>
             <p className="text-lg leading-relaxed mb-4">
-              The calculator employs the standard WACC formula, incorporating three key components:
+              The calculator employs the standard <FinancialTerm term="WACC">WACC</FinancialTerm> formula, incorporating three key components:
             </p>
             <ul className="list-disc pl-6 mb-4 space-y-2 text-lg">
-              <li><strong>Cost of Equity:</strong> Calculated using the Capital Asset Pricing Model (CAPM) or other appropriate methods</li>
+              <li><strong>Cost of Equity:</strong> Calculated using the <FinancialTerm term="CAPM">Capital Asset Pricing Model (CAPM)</FinancialTerm> or other appropriate methods</li>
               <li><strong>Cost of Debt:</strong> Determined from current borrowing rates adjusted for tax benefits</li>
               <li><strong>Capital Structure Weights:</strong> Based on market values of debt and equity</li>
             </ul>
@@ -170,7 +171,7 @@ const CostOfCapitalCalculator = () => {
 
             <h3 className="text-xl font-semibold mb-4">Key Applications and Limitations</h3>
             <p className="text-lg leading-relaxed mb-4">
-              This tool is essential for corporate finance professionals, investment analysts, and business valuators. However, users should recognize that WACC calculations require several assumptions about market conditions, beta estimates, and risk premiums that may vary over time. The model is most effective when used with current market data and regularly updated inputs.
+              This tool is essential for corporate finance professionals, investment analysts, and business valuators. However, users should recognize that <FinancialTerm term="WACC">WACC</FinancialTerm> calculations require several assumptions about market conditions, <FinancialTerm term="Beta">beta</FinancialTerm> estimates, and <FinancialTerm term="Risk Premium">risk premiums</FinancialTerm> that may vary over time. The model is most effective when used with current market data and regularly updated inputs.
             </p>
 
             <p className="text-sm text-slate-500 mt-8">
