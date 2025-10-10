@@ -171,7 +171,7 @@ const VentureCapitalMethod = () => {
                 <div className="text-2xl font-bold text-[#326496]">
                   Complete Venture Capital Valuation Method Guide
                 </div>
-                <div className="text-base mt-2 text-slate-600">
+                <div className="text-base font-semibold mt-2 text-slate-600">
                   Click to expand comprehensive documentation →
                 </div>
               </div>
