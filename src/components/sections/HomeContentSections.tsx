@@ -59,7 +59,7 @@ const HomeContentSections = () => {
             </ul>
             
             <p>
-              The result: Less time explaining, better decisions.
+              The result: Turn complexity into structured insights and better decisions.
             </p>
           </div>
         </div>
