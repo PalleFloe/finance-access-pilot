@@ -10,6 +10,7 @@ import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { useAnalytics, usePageVisitTracking } from '@/hooks/useAnalytics';
+import FinancialTerm from "@/components/FinancialTerm";
 
 const ThreeStageDcf = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -96,10 +97,10 @@ const ThreeStageDcf = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
-            Three Stage DCF Model
+            Three Stage <FinancialTerm term="DCF">DCF</FinancialTerm> Model
           </h1>
           <h2 className="text-[28px] text-slate-600 max-w-6xl leading-relaxed mb-12">
-            Multi-stage Analysis: DCF Valuation with Distinct Performance Stage Characteristics
+            Multi-stage Analysis: <FinancialTerm term="DCF">DCF</FinancialTerm> Valuation with Distinct Performance Stage Characteristics
           </h2>
 
           {/* Model Card */}
@@ -136,13 +137,13 @@ const ThreeStageDcf = () => {
           </div>
 
           {/* Introduction Headline */}
-          <h3 className="mb-6">Three Stage DCF Model Introduction</h3>
+          <h3 className="mb-6">Three Stage <FinancialTerm term="DCF">DCF</FinancialTerm> Model Introduction</h3>
 
           {/* Introduction Content */}
           <div className="prose prose-slate max-w-none mb-8">
             <div>
               <p className="text-xl text-slate-600 leading-relaxed mb-4">
-                The Three Stage DCF Model values internal investments experiencing distinct phases of development with different operational characteristics in each stage. By explicitly modelling transition periods from initial implementation through maturation, this framework captures the realistic evolution of investment performance whilst maintaining analytical rigour.
+                The Three Stage <FinancialTerm term="DCF">DCF</FinancialTerm> Model values internal investments experiencing distinct phases of development with different operational characteristics in each stage. By explicitly modelling transition periods from initial implementation through maturation, this framework captures the realistic evolution of investment performance whilst maintaining analytical rigour.
               </p>
               
               <p className="text-xl text-slate-600 leading-relaxed mb-4">
@@ -172,7 +173,7 @@ const ThreeStageDcf = () => {
                     Full Detailed Guide
                   </div>
                   <div className="text-2xl font-bold text-[#326496]">
-                    Complete Three Stage DCF Model Guide
+                    Complete Three Stage <FinancialTerm term="DCF">DCF</FinancialTerm> Model Guide
                   </div>
                 <div className="text-base font-semibold mt-2 text-slate-600">
                   Click to expand comprehensive documentation →
@@ -185,14 +186,14 @@ const ThreeStageDcf = () => {
                     <div>
                     <h4 className="text-xl font-semibold text-brand-blue mb-3">Overview and Strategic Framework</h4>
                     <p className="text-slate-600 mb-4">
-                      The Three Stage DCF Model values internal investments experiencing distinct phases of development with different operational characteristics in each stage. This framework is designed for evaluating capital projects, operational improvements, and strategic initiatives that exhibit predictable evolution patterns within existing business structures.
+                      The Three Stage <FinancialTerm term="DCF">DCF</FinancialTerm> Model values internal investments experiencing distinct phases of development with different operational characteristics in each stage. This framework is designed for evaluating capital projects, operational improvements, and strategic initiatives that exhibit predictable evolution patterns within existing business structures.
                     </p>
                   </div>
 
                   <div>
-                    <h4 className="text-xl font-semibold text-brand-blue mb-3">What Is the Three Stage DCF Model?</h4>
+                    <h4 className="text-xl font-semibold text-brand-blue mb-3">What Is the Three Stage <FinancialTerm term="DCF">DCF</FinancialTerm> Model?</h4>
                     <p className="text-slate-600 mb-4">
-                      The Three Stage DCF Model addresses investments that don't maintain constant operational characteristics throughout their lifetime. Many internal projects experience distinct development phases with different growth rates, efficiency levels, and capital requirements as they mature from initial implementation to steady-state operations.
+                      The Three Stage <FinancialTerm term="DCF">DCF</FinancialTerm> Model addresses investments that don't maintain constant operational characteristics throughout their lifetime. Many internal projects experience distinct development phases with different growth rates, efficiency levels, and capital requirements as they mature from initial implementation to steady-state operations.
                     </p>
                     <p className="text-slate-600 mb-4">
                       <strong>Core Analytical Framework:</strong>
@@ -204,7 +205,7 @@ const ThreeStageDcf = () => {
                       <li>• <strong>Terminal Value:</strong> Perpetual operations using Gordon Growth methodology</li>
                     </ul>
                     <p className="text-slate-600 mb-4">
-                      <strong>Lifecycle CAPEX Integration:</strong> The model calculates ongoing capital requirements as a percentage of lifetime revenue, ensuring terminal value calculations reflect realistic maintenance investment needs rather than assuming no future capital requirements.
+                      <strong>Lifecycle <FinancialTerm term="CAPEX">CAPEX</FinancialTerm> Integration:</strong> The model calculates ongoing capital requirements as a percentage of lifetime revenue, ensuring terminal value calculations reflect realistic maintenance investment needs rather than assuming no future capital requirements.
                     </p>
                     <p className="text-slate-600 mb-4">
                       <strong>Flexible Stage Definition:</strong> Unlike rigid growth models, users define both the duration (years) and operational characteristics (growth rates, margins, capital intensity) for each stage based on specific investment dynamics.
@@ -214,7 +215,7 @@ const ThreeStageDcf = () => {
                   <div>
                     <h4 className="text-xl font-semibold text-brand-blue mb-3">Why Was It Developed?</h4>
                     <p className="text-slate-600 mb-4">
-                      Many internal investments follow predictable development patterns that single-growth DCF models cannot capture accurately. New facilities require ramp-up periods, system implementations experience learning curves, and operational improvements show gradual efficiency gains. This model provides analytical framework for these realistic investment patterns.
+                      Many internal investments follow predictable development patterns that single-growth <FinancialTerm term="DCF">DCF</FinancialTerm> models cannot capture accurately. New facilities require ramp-up periods, system implementations experience learning curves, and operational improvements show gradual efficiency gains. This model provides analytical framework for these realistic investment patterns.
                     </p>
                     <p className="text-slate-600 mb-4">
                       <strong>Investment Evolution Recognition:</strong> The model acknowledges that investments typically don't achieve full operational efficiency immediately. Stage 1 might represent implementation and early operations, Stage 2 could model scaling and optimisation, whilst Stage 3 reflects mature, steady-state performance.
@@ -244,7 +245,7 @@ const ThreeStageDcf = () => {
                   </div>
 
                   <div>
-                    <h4 className="text-xl font-semibold text-brand-blue mb-3">How Does the Three Stage DCF Model Work?</h4>
+                    <h4 className="text-xl font-semibold text-brand-blue mb-3">How Does the Three Stage <FinancialTerm term="DCF">DCF</FinancialTerm> Model Work?</h4>
                     
                     <p className="text-slate-600 mb-2"><strong>Stage Configuration Framework</strong></p>
                     <p className="text-slate-600 mb-2"><strong>Stage Parameters for Each Phase:</strong></p>
@@ -252,8 +253,8 @@ const ThreeStageDcf = () => {
                       <li>• <strong>Duration:</strong> Number of years for each stage (user-defined)</li>
                       <li>• <strong>Revenue Growth Rate:</strong> Annual revenue growth specific to each stage</li>
                       <li>• <strong>Variable Costs Growth Rate:</strong> Independent growth for variable expenses</li>
-                      <li>• <strong>OPEX Growth Rate:</strong> Operational expense evolution by stage</li>
-                      <li>• <strong>NWC Ratio:</strong> Working capital as percentage of revenue for each stage</li>
+                      <li>• <strong><FinancialTerm term="OPEX">OPEX</FinancialTerm> Growth Rate:</strong> Operational expense evolution by stage</li>
+                      <li>• <strong><FinancialTerm term="NWC">NWC</FinancialTerm> Ratio:</strong> Working capital as percentage of revenue for each stage</li>
                     </ul>
 
                     <p className="text-slate-600 mb-4">
@@ -271,8 +272,8 @@ const ThreeStageDcf = () => {
                     <p className="text-slate-600 mb-2"><strong>Terminal Value Integration:</strong></p>
                     <ul className="text-slate-600 mb-4 ml-4 space-y-1">
                       <li>• Uses final stage performance as basis for perpetual growth</li>
-                      <li>• Incorporates calculated maintenance capex from lifecycle analysis</li>
-                      <li>• Applies Gordon Growth methodology: TV = FCF × (1+g) / (r-g)</li>
+                      <li>• Incorporates calculated maintenance <FinancialTerm term="CAPEX">capex</FinancialTerm> from lifecycle analysis</li>
+                      <li>• Applies Gordon Growth methodology: TV = <FinancialTerm term="FCFF">FCF</FinancialTerm> × (1+g) / (r-g)</li>
                     </ul>
 
                     <p className="text-slate-600 mb-2"><strong>Excel Implementation</strong></p>

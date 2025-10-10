@@ -10,6 +10,7 @@ import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
+import FinancialTerm from "@/components/FinancialTerm";
 
 const FlexibleYearByYearDcf = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -98,11 +99,11 @@ const FlexibleYearByYearDcf = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Flexible Year by Year DCF Model
+            Flexible Year by Year <FinancialTerm term="DCF">DCF</FinancialTerm> Model
           </h1>
 
           <h2 className="text-[28px] text-slate-600 max-w-6xl leading-relaxed mb-8">
-            Flexible DCF Analysis: Dynamic Year-by-Year Projections with Variable Growth Rates and Terminal Value Options
+            Flexible <FinancialTerm term="DCF">DCF</FinancialTerm> Analysis: Dynamic Year-by-Year Projections with Variable Growth Rates and Terminal Value Options
           </h2>
 
           <div className="flex flex-col lg:flex-row gap-8 mb-8">
@@ -137,11 +138,11 @@ const FlexibleYearByYearDcf = () => {
           </div>
 
           {/* Introduction Headline */}
-          <h3 className="mb-6">Flexible Year by Year DCF Model Introduction</h3>
+          <h3 className="mb-6">Flexible Year by Year <FinancialTerm term="DCF">DCF</FinancialTerm> Model Introduction</h3>
         
         <div className="prose prose-slate max-w-none mb-8">
           <p className="text-xl text-slate-600 leading-relaxed mb-4">
-            The Flexible Year by Year DCF Model provides comprehensive investment analysis through customisable annual projections. Unlike simplified constant-growth models, this framework allows different growth rates, margins, and cost structures for each year of the forecast period, reflecting real-world business dynamics.
+            The Flexible Year by Year <FinancialTerm term="DCF">DCF</FinancialTerm> Model provides comprehensive investment analysis through customisable annual projections. Unlike simplified constant-growth models, this framework allows different growth rates, margins, and cost structures for each year of the forecast period, reflecting real-world business dynamics.
           </p>
           
           <p className="text-xl text-slate-600 leading-relaxed mb-4">
@@ -170,7 +171,7 @@ const FlexibleYearByYearDcf = () => {
                   Full Detailed Guide
                 </div>
                 <div className="text-2xl font-bold text-[#326496]">
-                  Complete Flexible Year by Year DCF Model Guide
+                  Complete Flexible Year by Year <FinancialTerm term="DCF">DCF</FinancialTerm> Model Guide
                 </div>
                 <div className="text-base font-semibold mt-2 text-slate-600">
                   Click to expand comprehensive documentation →
@@ -181,9 +182,9 @@ const FlexibleYearByYearDcf = () => {
               <div className="prose prose-slate max-w-none">
                 <div className="space-y-6 text-slate-600">
                   <div>
-                  <h3 className="text-xl font-bold text-heading mb-3">What Is the Flexible Year by Year DCF Model?</h3>
+                  <h3 className="text-xl font-bold text-heading mb-3">What Is the Flexible Year by Year <FinancialTerm term="DCF">DCF</FinancialTerm> Model?</h3>
                   <p className="leading-relaxed mb-4">
-                    The Flexible Year by Year DCF Model enables detailed cash flow projections with complete control over annual assumptions. This approach recognises that businesses rarely maintain constant growth rates or margins, instead experiencing varying performance across different periods.
+                    The Flexible Year by Year <FinancialTerm term="DCF">DCF</FinancialTerm> Model enables detailed cash flow projections with complete control over annual assumptions. This approach recognises that businesses rarely maintain constant growth rates or margins, instead experiencing varying performance across different periods.
                   </p>
                   <div>
                     <h4 className="font-semibold text-heading mb-2">Core Analytical Framework:</h4>
@@ -200,7 +201,7 @@ const FlexibleYearByYearDcf = () => {
                 <div>
                   <h3 className="text-xl font-bold text-heading mb-3">Why Was It Developed?</h3>
                   <p className="leading-relaxed mb-4">
-                    Traditional DCF models often oversimplify by assuming constant growth rates and margins. Real businesses experience fluctuating performance - rapid early growth followed by maturation, margin improvements from scale efficiencies, or temporary setbacks requiring recovery periods.
+                    Traditional <FinancialTerm term="DCF">DCF</FinancialTerm> models often oversimplify by assuming constant growth rates and margins. Real businesses experience fluctuating performance - rapid early growth followed by maturation, margin improvements from scale efficiencies, or temporary setbacks requiring recovery periods.
                   </p>
                 </div>
 

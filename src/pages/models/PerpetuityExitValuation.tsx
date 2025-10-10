@@ -10,6 +10,7 @@ import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
+import FinancialTerm from "@/components/FinancialTerm";
 
 const PerpetuityExitValuation = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -217,10 +218,10 @@ const PerpetuityExitValuation = () => {
                       <div>
                         <h4 className="font-semibold text-heading">Specific Features for Each Model:</h4>
                         <div className="space-y-3 ml-4">
-                          <p><strong>NPV of Perpetuity</strong>: Simple perpetuity model with no growth assumption.</p>
-                          <p><strong>NPV of Growing Perpetuity</strong>: Gordon Growth perpetuity model with single growth rate assumption, demonstrates impact of consistent growth on perpetual value.</p>
-                          <p><strong>NPV of Two-Phase Growing Perpetuity</strong>: Perpetuity model with distinct growth phases, models transition from high growth to lower mature growth rate.</p>
-                          <p><strong>NPV of Exit Value</strong>: Simple exit-based valuation calculation, direct comparison alternative to perpetuity approaches.</p>
+                          <p><strong><FinancialTerm term="NPV">NPV</FinancialTerm> of Perpetuity</strong>: Simple perpetuity model with no growth assumption.</p>
+                          <p><strong><FinancialTerm term="NPV">NPV</FinancialTerm> of Growing Perpetuity</strong>: Gordon Growth perpetuity model with single growth rate assumption, demonstrates impact of consistent growth on perpetual value.</p>
+                          <p><strong><FinancialTerm term="NPV">NPV</FinancialTerm> of Two-Phase Growing Perpetuity</strong>: Perpetuity model with distinct growth phases, models transition from high growth to lower mature growth rate.</p>
+                          <p><strong><FinancialTerm term="NPV">NPV</FinancialTerm> of Exit Value</strong>: Simple exit-based valuation calculation, direct comparison alternative to perpetuity approaches.</p>
                         </div>
                       </div>
                     </div>
@@ -256,7 +257,7 @@ const PerpetuityExitValuation = () => {
                           <strong>Worksheet Protection</strong>: All cells are protected except yellow input cells and Your Notes worksheet, ensuring model integrity whilst allowing full customisation of assumptions and documentation.
                         </p>
                         <p className="leading-relaxed mb-3">
-                          <strong>Integrated Analysis</strong>: Consistent three-scenario framework across all models with investment timing and NPV impact calculations for analysis.
+                          <strong>Integrated Analysis</strong>: Consistent three-scenario framework across all models with investment timing and <FinancialTerm term="NPV">NPV</FinancialTerm> impact calculations for analysis.
                         </p>
                         <p className="leading-relaxed">
                           <strong>Real-Time Calculations</strong>: Dynamic updates as users modify assumptions, enabling immediate understanding of value driver sensitivity and scenario impact.
@@ -266,10 +267,10 @@ const PerpetuityExitValuation = () => {
                       <div>
                         <h4 className="font-semibold text-heading">Core Calculation Methods</h4>
                         <div className="bg-slate-100 p-4 rounded-lg space-y-2">
-                          <p><strong>NPV of Perpetuity Model</strong>: Simple Perpetuity Foundation using Value = Cash Flow ÷ Discount Rate with scenario-based sensitivity analysis.</p>
-                          <p><strong>NPV of Growing Perpetuity Model</strong>: Gordon Growth Foundation applying Value = Cash Flow ÷ (Discount Rate - Growth Rate) with growth rate sensitivity testing.</p>
-                          <p><strong>NPV of Two-Phase Growing Perpetuity Model</strong>: Growth modelling with initial high-growth phase transitioning to mature growth rates for realistic valuation analysis.</p>
-                          <p><strong>NPV of Exit Value Model</strong>: Direct exit approach using simple NPV calculation based on exit value assumptions with timing flexibility and Discount Rate.</p>
+                          <p><strong><FinancialTerm term="NPV">NPV</FinancialTerm> of Perpetuity Model</strong>: Simple Perpetuity Foundation using Value = Cash Flow ÷ Discount Rate with scenario-based sensitivity analysis.</p>
+                          <p><strong><FinancialTerm term="NPV">NPV</FinancialTerm> of Growing Perpetuity Model</strong>: Gordon Growth Foundation applying Value = Cash Flow ÷ (Discount Rate - Growth Rate) with growth rate sensitivity testing.</p>
+                          <p><strong><FinancialTerm term="NPV">NPV</FinancialTerm> of Two-Phase Growing Perpetuity Model</strong>: Growth modelling with initial high-growth phase transitioning to mature growth rates for realistic valuation analysis.</p>
+                          <p><strong><FinancialTerm term="NPV">NPV</FinancialTerm> of Exit Value Model</strong>: Direct exit approach using simple <FinancialTerm term="NPV">NPV</FinancialTerm> calculation based on exit value assumptions with timing flexibility and Discount Rate.</p>
                         </div>
                       </div>
 
@@ -279,7 +280,7 @@ const PerpetuityExitValuation = () => {
                           <strong>Perpetuity Calculations</strong>: Perpetuity valuations incorporating Gordon Growth methodology¹ ² with appropriate mathematical foundations for reliable analysis.
                         </p>
                         <p className="leading-relaxed mb-3">
-                          <strong>NPV Integration</strong>: Net present value calculations that account for investment timing, cash flow patterns, and discount rate applications across different scenarios.
+                          <strong><FinancialTerm term="NPV">NPV</FinancialTerm> Integration</strong>: Net present value calculations that account for investment timing, cash flow patterns, and discount rate applications across different scenarios.
                         </p>
                         <p className="leading-relaxed">
                           <strong>Sensitivity Analysis</strong>: Built-in sensitivity testing that shows immediate impact of assumption changes on valuation results across all four approaches.

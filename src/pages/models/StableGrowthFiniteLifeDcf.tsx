@@ -10,6 +10,7 @@ import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
+import FinancialTerm from "@/components/FinancialTerm";
 
 const StableGrowthFiniteLifeDcf = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -98,11 +99,11 @@ const StableGrowthFiniteLifeDcf = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Stable Growth - Finite-Life DCF Model
+            Stable Growth - Finite-Life <FinancialTerm term="DCF">DCF</FinancialTerm> Model
           </h1>
 
           <h2 className="text-[28px] text-slate-600 max-w-6xl leading-relaxed mb-8">
-            Stable Growth DCF Analysis: Finite-Life Asset Evaluation with Proper End-Period Treatment and Comprehensive Sensitivity Analysis
+            Stable Growth <FinancialTerm term="DCF">DCF</FinancialTerm> Analysis: Finite-Life Asset Evaluation with Proper End-Period Treatment and Comprehensive Sensitivity Analysis
           </h2>
 
           <div className="flex flex-col lg:flex-row gap-8 mb-8">
@@ -137,11 +138,11 @@ const StableGrowthFiniteLifeDcf = () => {
           </div>
 
           {/* Introduction Headline */}
-          <h3 className="mb-6">Stable Growth: Finite-Life DCF Model Introduction</h3>
+          <h3 className="mb-6">Stable Growth: Finite-Life <FinancialTerm term="DCF">DCF</FinancialTerm> Model Introduction</h3>
         
         <div className="prose prose-slate max-w-none mb-8">
           <p className="text-xl text-slate-600 leading-relaxed mb-4">
-            The Stable Growth Finite-Life DCF Model values investments with defined operational periods, such as equipment purchases, fixed-term contracts, or projects with natural endpoints. By explicitly modelling project termination with salvage value recovery and working capital release, this framework provides accurate valuation for finite-duration investments.
+            The Stable Growth Finite-Life <FinancialTerm term="DCF">DCF</FinancialTerm> Model values investments with defined operational periods, such as equipment purchases, fixed-term contracts, or projects with natural endpoints. By explicitly modelling project termination with salvage value recovery and working capital release, this framework provides accurate valuation for finite-duration investments.
           </p>
           
           <p className="text-xl text-slate-600 leading-relaxed mb-4">
@@ -149,7 +150,7 @@ const StableGrowthFiniteLifeDcf = () => {
           </p>
           
           <p className="text-xl text-slate-600 leading-relaxed mb-4">
-            <strong>Comprehensive Sensitivity Analysis</strong>: Visual sensitivity charts show how each assumption impacts NPV and IRR, enabling users to identify critical value drivers and risk factors. The three-scenario framework tests investment viability across different market conditions.
+            <strong>Comprehensive Sensitivity Analysis</strong>: Visual sensitivity charts show how each assumption impacts <FinancialTerm term="NPV">NPV</FinancialTerm> and <FinancialTerm term="IRR">IRR</FinancialTerm>, enabling users to identify critical value drivers and risk factors. The three-scenario framework tests investment viability across different market conditions.
           </p>
           
           <p className="text-xl text-slate-600 leading-relaxed mb-4">
@@ -170,7 +171,7 @@ const StableGrowthFiniteLifeDcf = () => {
                   Full Detailed Guide
                 </div>
                 <div className="text-2xl font-bold text-[#326496]">
-                  Complete Stable Growth: Finite-Life DCF Model Guide
+                  Complete Stable Growth: Finite-Life <FinancialTerm term="DCF">DCF</FinancialTerm> Model Guide
                 </div>
                 <div className="text-base font-semibold mt-2 text-slate-600">
                   Click to expand comprehensive documentation →
@@ -181,7 +182,7 @@ const StableGrowthFiniteLifeDcf = () => {
               <div className="prose prose-slate max-w-none">
                 <div className="space-y-6 text-slate-600">
                   <div>
-                  <h3 className="text-xl font-bold text-heading mb-3">What Is the Stable Growth: Finite-Life DCF Model?</h3>
+                  <h3 className="text-xl font-bold text-heading mb-3">What Is the Stable Growth: Finite-Life <FinancialTerm term="DCF">DCF</FinancialTerm> Model?</h3>
                   <p className="leading-relaxed mb-4">
                     The model addresses investments that generate cash flows for specific periods before terminating. This includes equipment that requires replacement, contractual arrangements with defined terms, or operational projects with clear endpoints.
                   </p>
@@ -201,7 +202,7 @@ const StableGrowthFiniteLifeDcf = () => {
                 <div>
                   <h3 className="text-xl font-bold text-heading mb-3">Why Was It Developed?</h3>
                   <p className="leading-relaxed mb-4">
-                    Many internal investments don't continue indefinitely. Equipment becomes obsolete, contracts expire, and improvement projects reach completion. Standard perpetuity-based DCF models overvalue these investments by assuming infinite cash flows. This model provides accurate valuation by properly handling project termination.
+                    Many internal investments don't continue indefinitely. Equipment becomes obsolete, contracts expire, and improvement projects reach completion. Standard perpetuity-based <FinancialTerm term="DCF">DCF</FinancialTerm> models overvalue these investments by assuming infinite cash flows. This model provides accurate valuation by properly handling project termination.
                   </p>
                 </div>
 
@@ -232,7 +233,7 @@ const StableGrowthFiniteLifeDcf = () => {
                         <li>Internal focus: Designed for projects within existing operations</li>
                         <li>Assumes stable operations: May not capture operational volatility</li>
                         <li>Fixed lifetime: Doesn't model lifetime uncertainty or extension options</li>
-                        <li>Simplified structure: Single tax rate, no changes to WACC</li>
+                        <li>Simplified structure: Single tax rate, no changes to <FinancialTerm term="WACC">WACC</FinancialTerm></li>
                       </ul>
                     </div>
                     <div>

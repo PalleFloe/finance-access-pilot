@@ -10,6 +10,7 @@ import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
+import FinancialTerm from "@/components/FinancialTerm";
 
 const StableGrowthTerminalValueDcf = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -98,11 +99,11 @@ const StableGrowthTerminalValueDcf = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Stable Growth - Terminal Value DCF Model
+            Stable Growth - Terminal Value <FinancialTerm term="DCF">DCF</FinancialTerm> Model
           </h1>
 
           <h2 className="text-[28px] text-slate-600 max-w-6xl leading-relaxed mb-8">
-            Stable Growth DCF Analysis: Perpetual Value Asset Evaluation with Terminal Value Focus and Growth Rate Sensitivity
+            Stable Growth <FinancialTerm term="DCF">DCF</FinancialTerm> Analysis: Perpetual Value Asset Evaluation with Terminal Value Focus and Growth Rate Sensitivity
           </h2>
 
           <div className="flex flex-col lg:flex-row gap-8 mb-8">
@@ -137,11 +138,11 @@ const StableGrowthTerminalValueDcf = () => {
           </div>
 
           {/* Introduction Headline */}
-          <h3 className="mb-6">Stable Growth: Terminal Value DCF Model Introduction</h3>
+          <h3 className="mb-6">Stable Growth: Terminal Value <FinancialTerm term="DCF">DCF</FinancialTerm> Model Introduction</h3>
         
         <div className="prose prose-slate max-w-none mb-8">
           <p className="text-xl text-slate-600 leading-relaxed mb-4">
-            The Stable Growth Terminal Value DCF Model values ongoing business investments expected to operate indefinitely. By combining explicit forecast periods with Gordon Growth terminal values, this framework captures both near-term visibility and long-term value creation for established operations with predictable growth patterns.
+            The Stable Growth Terminal Value <FinancialTerm term="DCF">DCF</FinancialTerm> Model values ongoing business investments expected to operate indefinitely. By combining explicit forecast periods with Gordon Growth terminal values, this framework captures both near-term visibility and long-term value creation for established operations with predictable growth patterns.
           </p>
           
           <p className="text-xl text-slate-600 leading-relaxed mb-4">
@@ -149,7 +150,7 @@ const StableGrowthTerminalValueDcf = () => {
           </p>
           
           <p className="text-xl text-slate-600 leading-relaxed mb-4">
-            <strong>Terminal Value Sophistication</strong>: Includes calculated maintenance capex that reduces terminal cash flows, addressing the frequent oversight of ongoing capital needs in perpetuity calculations. The "Lifecycle CAPEX %" automatically calibrates based on initial investment and forecast period requirements.
+            <strong>Terminal Value Sophistication</strong>: Includes calculated maintenance <FinancialTerm term="CAPEX">capex</FinancialTerm> that reduces terminal cash flows, addressing the frequent oversight of ongoing capital needs in perpetuity calculations. The "Lifecycle <FinancialTerm term="CAPEX">CAPEX</FinancialTerm> %" automatically calibrates based on initial investment and forecast period requirements.
           </p>
           
           <p className="text-xl text-slate-600 leading-relaxed mb-4">
@@ -170,7 +171,7 @@ const StableGrowthTerminalValueDcf = () => {
                   Full Detailed Guide
                 </div>
                 <div className="text-2xl font-bold text-[#326496]">
-                  Complete Stable Growth: Terminal Value DCF Model Guide
+                  Complete Stable Growth: Terminal Value <FinancialTerm term="DCF">DCF</FinancialTerm> Model Guide
                 </div>
                 <div className="text-base font-semibold mt-2 text-slate-600">
                   Click to expand comprehensive documentation →
@@ -181,7 +182,7 @@ const StableGrowthTerminalValueDcf = () => {
               <div className="prose prose-slate max-w-none">
                 <div className="space-y-6 text-slate-600">
                   <div>
-                  <h3 className="text-xl font-bold text-heading mb-3">What Is the Stable Growth: Terminal Value DCF Model?</h3>
+                  <h3 className="text-xl font-bold text-heading mb-3">What Is the Stable Growth: Terminal Value <FinancialTerm term="DCF">DCF</FinancialTerm> Model?</h3>
                   <p className="leading-relaxed mb-4">
                     This model values investments that will continue operating beyond any reasonable forecast horizon. Unlike finite-life investments, these require perpetual reinvestment to maintain operations, making proper terminal value calculation critical.
                   </p>
@@ -189,7 +190,7 @@ const StableGrowthTerminalValueDcf = () => {
                     <h4 className="font-semibold text-heading mb-2">Distinguishing Features:</h4>
                     <ul className="list-disc list-inside space-y-1 ml-4">
                       <li>No working capital recovery (operations continue indefinitely)</li>
-                      <li>Calculated maintenance capex for realistic terminal values</li>
+                      <li>Calculated maintenance <FinancialTerm term="CAPEX">capex</FinancialTerm> for realistic terminal values</li>
                       <li>Salvage value represents equipment replacement, not termination</li>
                       <li>Terminal value often represents 60-80% of total value</li>
                     </ul>
@@ -199,7 +200,7 @@ const StableGrowthTerminalValueDcf = () => {
                 <div>
                   <h3 className="text-xl font-bold text-heading mb-3">Why Was It Developed?</h3>
                   <p className="leading-relaxed mb-4">
-                    Standard DCF models often overstate terminal values by ignoring ongoing capital requirements. This model addresses this by explicitly calculating maintenance capex needs based on the business's demonstrated capital intensity during the initial investment period.
+                    Standard <FinancialTerm term="DCF">DCF</FinancialTerm> models often overstate terminal values by ignoring ongoing capital requirements. This model addresses this by explicitly calculating maintenance <FinancialTerm term="CAPEX">capex</FinancialTerm> needs based on the business's demonstrated capital intensity during the initial investment period.
                   </p>
                 </div>
 
@@ -227,7 +228,7 @@ const StableGrowthTerminalValueDcf = () => {
                     <div>
                       <h4 className="font-semibold text-heading">Key Limitations:</h4>
                       <ul className="list-disc list-inside space-y-1 ml-4">
-                        <li>Internal investments only: Not for M&A or structure-changing transactions</li>
+                        <li>Internal investments only: Not for <FinancialTerm term="M&A">M&A</FinancialTerm> or structure-changing transactions</li>
                         <li>Terminal value dominance: Small changes in assumptions create large value swings</li>
                         <li>Perpetuity assumption: May not suit all businesses (disruption risk)</li>
                         <li>Single growth rate: Oversimplifies long-term dynamics</li>
@@ -236,7 +237,7 @@ const StableGrowthTerminalValueDcf = () => {
                     <div>
                       <h4 className="font-semibold text-heading">Best Practices:</h4>
                       <ul className="list-disc list-inside space-y-1 ml-4">
-                        <li>Benchmark maintenance capex against internal standards</li>
+                        <li>Benchmark maintenance <FinancialTerm term="CAPEX">capex</FinancialTerm> against internal standards</li>
                         <li>Use conservative terminal growth rates</li>
                         <li>Test break-even terminal growth rate</li>
                         <li>Compare results with similar internal investments</li>
