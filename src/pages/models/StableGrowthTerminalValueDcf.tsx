@@ -172,7 +172,7 @@ const StableGrowthTerminalValueDcf = () => {
                 <div className="text-2xl font-bold text-[#326496]">
                   Complete Stable Growth: Terminal Value DCF Model Guide
                 </div>
-                <div className="text-sm mt-2 text-slate-600">
+                <div className="text-base mt-2 text-slate-600">
                   Click to expand comprehensive documentation →
                 </div>
               </div>

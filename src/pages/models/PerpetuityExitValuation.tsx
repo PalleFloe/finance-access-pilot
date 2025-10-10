@@ -173,9 +173,9 @@ const PerpetuityExitValuation = () => {
                   <div className="text-2xl font-bold text-[#326496]">
                     Complete Perpetuity & Exit Valuation Models Guide
                   </div>
-                  <div className="text-sm mt-2 text-slate-600">
-                    Click to expand comprehensive documentation →
-                  </div>
+                <div className="text-base mt-2 text-slate-600">
+                  Click to expand comprehensive documentation →
+                </div>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="p-6 bg-white border border-slate-200 rounded-b-lg border-t-0">
