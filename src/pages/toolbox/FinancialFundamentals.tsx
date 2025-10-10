@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, ArrowRight, Check, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/sections/Footer";
+import FinancialTerm from "@/components/FinancialTerm";
 import { useEffect } from "react";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
 
@@ -19,7 +20,7 @@ const FinancialFundamentals = () => {
     {
       name: "Simple Present Value Calculator",
       bulletPoints: [
-        "Calculate NPV for 5 cash flow types",
+        <>Calculate <FinancialTerm term="NPV">NPV</FinancialTerm> for 5 cash flow types</>,
         "Payment and compounding impact",
         "Perpetuity and exit timing impact on valuation"
       ],
@@ -29,18 +30,18 @@ const FinancialFundamentals = () => {
     {
       name: "Simple Cost of Capital Calculator",
       bulletPoints: [
-        "Calculate WACC via Capital Asset Pricing Model",
-        "Determine discount rates for DCF valuations",
+        <>Calculate <FinancialTerm term="WACC">WACC</FinancialTerm> via <FinancialTerm term="CAPM">Capital Asset Pricing Model</FinancialTerm></>,
+        <>Determine discount rates for <FinancialTerm term="DCF">DCF</FinancialTerm> valuations</>,
         "Optimize financing structure"
       ],
       href: "/toolbox/financial-fundamentals/cost-of-capital-calculator",
       status: "available",
     },
     {
-      name: "Standard Types of DCF Models",
+      name: <>Standard Types of <FinancialTerm term="DCF">DCF</FinancialTerm> Models</>,
       bulletPoints: [
         "Choose Flexible/Three Stage/Stable Growth",
-        "Compare DCF methodologies",
+        <>Compare <FinancialTerm term="DCF">DCF</FinancialTerm> methodologies</>,
         "Valuation including scenario modelling"
       ],
       href: "/toolbox/financial-fundamentals/dcf-models",
@@ -59,7 +60,7 @@ const FinancialFundamentals = () => {
     {
       name: "Simple Earning Growth Estimator",
       bulletPoints: [
-        "Estimate earning growth (ROC × Reinvestment)",
+        <>Estimate earning growth (<FinancialTerm term="ROC">ROC</FinancialTerm> × Reinvestment)</>,
         "Phased development in Return On Capital",
         "Separate growth from existing vs new investments"
       ],
@@ -70,7 +71,7 @@ const FinancialFundamentals = () => {
       name: "Simple Project Scenario Model",
       bulletPoints: [
         "Evaluate Downside/Base/Upside scenarios",
-        "Calculate NPV/IRR with sensitivity analysis",
+        <>Calculate <FinancialTerm term="NPV">NPV</FinancialTerm>/<FinancialTerm term="IRR">IRR</FinancialTerm> with sensitivity analysis</>,
         "Make capital allocation and investment decisions"
       ],
       href: "/toolbox/financial-fundamentals/project-scenario-model",
@@ -110,7 +111,7 @@ const FinancialFundamentals = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {models.map((model) => (
-              <Link key={model.name} to={model.href} className="group">
+              <Link key={model.href} to={model.href} className="group">
                 <Card className="shadow-lg border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col h-full min-h-[240px] cursor-pointer" style={{ backgroundColor: '#326496' }}>
                   {model.status === "coming soon" && (
                     <div className="absolute -top-3 -right-3 z-10">

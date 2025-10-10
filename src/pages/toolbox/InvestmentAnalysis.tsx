@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, ArrowRight, Check, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/sections/Footer";
+import FinancialTerm from "@/components/FinancialTerm";
 import { useEffect } from "react";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
 
@@ -18,9 +19,9 @@ const InvestmentAnalysis = () => {
 
   const models = [
     {
-      name: "Flexible Year by Year DCF Model",
+      name: <>Flexible Year by Year <FinancialTerm term="DCF">DCF</FinancialTerm> Model</>,
       bulletPoints: [
-        "Model NPV/IRR with yearly flexibility",
+        <>Model <FinancialTerm term="NPV">NPV</FinancialTerm>/<FinancialTerm term="IRR">IRR</FinancialTerm> with yearly flexibility</>,
         "Handle complex business cycles",
         "Value investments with full performance flexibility"
       ],
@@ -28,9 +29,9 @@ const InvestmentAnalysis = () => {
       status: "available",
     },
     {
-      name: "Stable Growth - Finite-Life DCF Model",
+      name: <>Stable Growth - Finite-Life <FinancialTerm term="DCF">DCF</FinancialTerm> Model</>,
       bulletPoints: [
-        "Model NPV/IRR for investments with finite lifetime",
+        <>Model <FinancialTerm term="NPV">NPV</FinancialTerm>/<FinancialTerm term="IRR">IRR</FinancialTerm> for investments with finite lifetime</>,
         "Value fixed-term contracts and endpoint projects",
         "Value investments including scenario modelling"
       ],
@@ -38,9 +39,9 @@ const InvestmentAnalysis = () => {
       status: "available",
     },
     {
-      name: "Stable Growth - Terminal DCF Model",
+      name: <>Stable Growth - Terminal <FinancialTerm term="DCF">DCF</FinancialTerm> Model</>,
       bulletPoints: [
-        "Model NPV/IRR for perpetual",
+        <>Model <FinancialTerm term="NPV">NPV</FinancialTerm>/<FinancialTerm term="IRR">IRR</FinancialTerm> for perpetual</>,
         "Value factories & infrastructure",
         "Value investments including scenario modelling"
       ],
@@ -48,7 +49,7 @@ const InvestmentAnalysis = () => {
       status: "available",
     },
     {
-      name: "Three Stage DCF Model",
+      name: <>Three Stage <FinancialTerm term="DCF">DCF</FinancialTerm> Model</>,
       bulletPoints: [
         "Model distinct performance phases",
         "Handle ramp-up / scaling / mature stages",
@@ -58,7 +59,7 @@ const InvestmentAnalysis = () => {
       status: "available",
     },
     {
-      name: "Cost Reduction DCF Model",
+      name: <>Cost Reduction <FinancialTerm term="DCF">DCF</FinancialTerm> Model</>,
       bulletPoints: [
         "To be defined"
       ],
@@ -98,7 +99,7 @@ const InvestmentAnalysis = () => {
               Professional Investment Analysis Models
             </h1>
             <h2 className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-6">
-              Proven and Structured DCF Models for Investment Evaluation and Decision-Making with Scenario and Sensitivity Analysis
+              Proven and Structured <FinancialTerm term="DCF">DCF</FinancialTerm> Models for Investment Evaluation and Decision-Making with Scenario and Sensitivity Analysis
             </h2>
           </div>
           <p className="text-lg text-slate-600 mb-8 leading-relaxed">
@@ -107,7 +108,7 @@ const InvestmentAnalysis = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {models.map((model) => (
-              <Link key={model.name} to={model.href} className="group">
+              <Link key={model.href} to={model.href} className="group">
                 <Card className="shadow-lg border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col h-full min-h-[240px] cursor-pointer" style={{ backgroundColor: '#326496' }}>
                   {model.status === "coming soon" && (
                     <div className="absolute -top-3 -right-3 z-10">
@@ -152,7 +153,7 @@ const InvestmentAnalysis = () => {
             <div>
               <h3 className="text-3xl font-semibold text-brand-blue mb-4">Core Challenge Addressed: Investment Decision Uncertainty</h3>
               <p className="text-lg text-slate-600 leading-relaxed mb-4">
-                Investment analysis often suffers from inconsistent methodologies, hidden assumptions, and inadequate risk assessment. These models solve this by providing multiple proven DCF frameworks that help users not only calculate credible valuations but also articulate the logic behind their investment decisions to stakeholders and committees.
+                Investment analysis often suffers from inconsistent methodologies, hidden assumptions, and inadequate risk assessment. These models solve this by providing multiple proven <FinancialTerm term="DCF">DCF</FinancialTerm> frameworks that help users not only calculate credible valuations but also articulate the logic behind their investment decisions to stakeholders and committees.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed">
                 As Warren Buffett emphasizes: <em>"Risk comes from not knowing what you're doing."</em> This collection provides the analytical foundation necessary for informed capital allocation and strategic decision-making.
@@ -160,9 +161,9 @@ const InvestmentAnalysis = () => {
             </div>
 
             <div>
-              <h3 className="text-3xl font-semibold text-brand-blue mb-4">Comprehensive DCF Analysis Coverage</h3>
+              <h3 className="text-3xl font-semibold text-brand-blue mb-4">Comprehensive <FinancialTerm term="DCF">DCF</FinancialTerm> Analysis Coverage</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                The six-model toolbox covers the complete DCF analysis spectrum: flexible year-by-year projections for dynamic businesses, stable growth models for mature assets, finite-life analysis for projects with defined endpoints, multi-stage growth modeling for businesses with distinct phases, cost reduction analysis for efficiency initiatives, and break-even calculations for threshold decision-making. Each model includes comprehensive sensitivity analysis and scenario testing capabilities.
+                The six-model toolbox covers the complete <FinancialTerm term="DCF">DCF</FinancialTerm> analysis spectrum: flexible year-by-year projections for dynamic businesses, stable growth models for mature assets, finite-life analysis for projects with defined endpoints, multi-stage growth modeling for businesses with distinct phases, cost reduction analysis for efficiency initiatives, and break-even calculations for threshold decision-making. Each model includes comprehensive sensitivity analysis and scenario testing capabilities.
               </p>
             </div>
 
@@ -176,7 +177,7 @@ const InvestmentAnalysis = () => {
             <div>
               <h3 className="text-3xl font-semibold text-brand-blue mb-4">Key Limitations & Best Practices</h3>
               <p className="text-lg text-slate-600 leading-relaxed mb-4">
-                <em>All models are simplifications of reality</em> - DCF analysis depends heavily on projection accuracy and assumption validity. Market conditions change, and cognitive biases affect forecasts. Use these tools to structure analysis and facilitate discussions, not to predict precise outcomes.
+                <em>All models are simplifications of reality</em> - <FinancialTerm term="DCF">DCF</FinancialTerm> analysis depends heavily on projection accuracy and assumption validity. Market conditions change, and cognitive biases affect forecasts. Use these tools to structure analysis and facilitate discussions, not to predict precise outcomes.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed">
                 Always validate results through multiple approaches and comprehensive sensitivity testing across key variables.
