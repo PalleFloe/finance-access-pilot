@@ -33,7 +33,7 @@ const Contact = () => {
       <main className="py-12">
         <div className="container mx-auto max-w-6xl px-6">
           <div className="mb-12 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-[#326496] mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-6">
               How Can I Help?
             </h1>
             <p className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed">
@@ -51,13 +51,13 @@ const Contact = () => {
             </h3>
             <ol className="text-lg leading-relaxed space-y-3 list-decimal list-inside">
               <li className="text-foreground">
-                <span className="text-[#326496] font-semibold">I review within 1 business day</span> and respond with next steps
+                <span className="text-brand-blue font-semibold">I review within 1 business day</span> and respond with next steps
               </li>
               <li className="text-foreground">
-                <span className="text-[#326496] font-semibold">If there's potential fit</span>, we'll schedule a brief clarity call (15 minutes) to discuss your needs
+                <span className="text-brand-blue font-semibold">If there's potential fit</span>, we'll schedule a brief clarity call (15 minutes) to discuss your needs
               </li>
               <li className="text-foreground">
-                <span className="text-[#326496] font-semibold">If we proceed together</span>, I'll prepare a proposal outlining scope, approach, and terms
+                <span className="text-brand-blue font-semibold">If we proceed together</span>, I'll prepare a proposal outlining scope, approach, and terms
               </li>
             </ol>
           </div>
@@ -75,7 +75,7 @@ const Contact = () => {
               I welcome input that helps make these free models better.
             </p>
             <p className="text-lg font-semibold">
-              Email: <a href="mailto:feedback@financialdecisionmodels.com" className="text-[#326496] hover:underline">feedback@financialdecisionmodels.com</a>
+              Email: <a href="mailto:feedback@financialdecisionmodels.com" className="text-brand-blue hover:underline">feedback@financialdecisionmodels.com</a>
             </p>
           </div>
         </div>

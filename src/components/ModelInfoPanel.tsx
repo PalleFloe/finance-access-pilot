@@ -5,7 +5,7 @@ const ModelInfoPanel = () => {
   return (
     <Card className="shadow-lg border-slate-200 lg:h-[240px]">
       <CardHeader className="pb-2">
-        <CardTitle className="text-[16px] font-bold text-[#326496]" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
+        <CardTitle className="text-[16px] font-bold text-brand-blue" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
           How to View & Download This Model
         </CardTitle>
       </CardHeader>

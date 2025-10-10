@@ -7,7 +7,7 @@ const HomeContentSections = () => {
         {/* Section 1: Founder & Credibility */}
         <div className="mb-16">
           <h2 
-            className="text-[28px] md:text-4xl font-bold text-[#326496] mb-6" 
+            className="text-[28px] md:text-4xl font-bold text-brand-blue mb-6" 
             style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}
           >
             Models by Palle Fløe Nielsen
@@ -31,7 +31,7 @@ const HomeContentSections = () => {
         {/* Section 2: Why These Models Work */}
         <div className="mb-16">
           <h2 
-            className="text-[28px] md:text-4xl font-bold text-[#326496] mb-6" 
+            className="text-[28px] md:text-4xl font-bold text-brand-blue mb-6" 
             style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}
           >
             Why These Models Work
@@ -67,7 +67,7 @@ const HomeContentSections = () => {
         {/* Section 3: Call to Action */}
         <div>
           <h2 
-            className="text-[28px] md:text-4xl font-bold text-[#326496] mb-6" 
+            className="text-[28px] md:text-4xl font-bold text-brand-blue mb-6" 
             style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}
           >
             Choose Your Path
@@ -80,7 +80,7 @@ const HomeContentSections = () => {
             
             <p>
               Need customized solutions or strategic support for complex financial decisions? Our consulting services provide expert guidance tailored to your specific needs. Contact us to discuss your requirements.{' '}
-              <a href="/contact" className="text-[#326496] underline hover:text-[#264d75] transition-colors">
+              <a href="/contact" className="text-brand-blue underline hover:text-[#264d75] transition-colors">
                 Request Consultation
               </a>
             </p>

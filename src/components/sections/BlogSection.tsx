@@ -103,7 +103,7 @@ const BlogSection = () => {
       if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
         // Handle bold headers
         return (
-          <h3 key={index} className="text-xl font-bold text-[#326496] mb-4 mt-6">
+          <h3 key={index} className="text-xl font-bold text-brand-blue mb-4 mt-6">
             {paragraph.slice(2, -2)}
           </h3>
         );
@@ -173,7 +173,7 @@ const BlogSection = () => {
                       Featured
                     </Badge>
                   )}
-                  <CardTitle className="text-2xl font-bold text-[#326496] leading-tight group-hover:text-brand-green transition-colors">
+                  <CardTitle className="text-2xl font-bold text-brand-blue leading-tight group-hover:text-brand-green transition-colors">
                     {post.title}
                   </CardTitle>
                 </CardHeader>

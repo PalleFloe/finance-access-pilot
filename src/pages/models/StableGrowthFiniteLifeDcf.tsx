@@ -170,7 +170,7 @@ const StableGrowthFiniteLifeDcf = () => {
                 <div className="text-sm font-semibold uppercase tracking-wide mb-1 text-slate-600">
                   Full Detailed Guide
                 </div>
-                <div className="text-2xl font-bold text-[#326496]">
+                <div className="text-2xl font-bold text-brand-blue">
                   Complete Stable Growth: Finite-Life <FinancialTerm term="DCF">DCF</FinancialTerm> Model Guide
                 </div>
                 <div className="text-base font-semibold mt-2 text-slate-600">

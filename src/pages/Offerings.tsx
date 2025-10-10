@@ -106,12 +106,11 @@ const Offerings = () => {
         className={`group block ${tier.disabled ? 'cursor-not-allowed' : 'cursor-pointer'}`}
       >
         <div 
-          className="border border-slate-200 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col relative w-full max-w-full h-full" 
-          style={{ backgroundColor: '#326496' }}
+          className="border border-slate-200 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col relative w-full max-w-full h-full bg-brand-blue" 
         >
           <h3 
-            className="text-xl sm:text-2xl md:text-3xl font-bold leading-tight break-words mb-4"
-            style={{ fontFamily: 'Garamond, serif', color: '#FFFFFF' }}
+            className="text-xl sm:text-2xl md:text-3xl font-bold leading-tight break-words mb-4 text-white"
+            style={{ fontFamily: 'Garamond, serif' }}
           >
             {tier.title}
           </h3>
@@ -120,10 +119,10 @@ const Offerings = () => {
             {tier.bullets.map((bullet, index) => (
               <li 
                 key={index} 
-                className={`${tier.isModelTier ? 'text-xl' : 'text-lg'} leading-relaxed flex items-start`}
-                style={{ fontFamily: 'Garamond, serif', color: 'rgba(255, 255, 255, 0.75)' }}
+                className={`${tier.isModelTier ? 'text-xl' : 'text-lg'} leading-relaxed flex items-start text-white/75`}
+                style={{ fontFamily: 'Garamond, serif' }}
               >
-                <span className="mr-2 mt-1 flex-none" style={{ color: 'rgba(255, 255, 255, 0.75)' }}>•</span>
+                <span className="mr-2 mt-1 flex-none">•</span>
                 <span className="flex-1 min-w-0 break-words">{bullet}</span>
               </li>
             ))}

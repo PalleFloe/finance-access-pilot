@@ -268,7 +268,7 @@ const ConsultationForm = () => {
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full sm:w-auto bg-[#326496] hover:bg-[#326496]/90 text-white"
+            className="w-full sm:w-auto bg-brand-blue hover:bg-brand-blue/90 text-white"
             size="lg"
           >
             {isSubmitting ? (

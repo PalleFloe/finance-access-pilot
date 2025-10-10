@@ -112,7 +112,7 @@ const FinancialFundamentals = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {models.map((model) => (
               <Link key={model.href} to={model.href} className="group">
-                <Card className="shadow-lg border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col h-full min-h-[240px] cursor-pointer" style={{ backgroundColor: '#326496' }}>
+                <Card className="shadow-lg border-slate-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative flex flex-col h-full min-h-[240px] cursor-pointer bg-brand-blue">
                   {model.status === "coming soon" && (
                     <div className="absolute -top-3 -right-3 z-10">
                       <Badge className="bg-orange-500 text-white border-orange-400 shadow-sm">
@@ -130,10 +130,10 @@ const FinancialFundamentals = () => {
                     </div>
                   )}
                   <CardHeader className="flex-grow p-6">
-                    <CardTitle className="text-2xl font-semibold mb-3" style={{ color: '#FFFFFF' }}>
+                    <CardTitle className="text-2xl font-semibold mb-3 text-white">
                       {model.name}
                     </CardTitle>
-                    <div className="flex-grow text-lg leading-[1.4] font-normal" style={{ color: 'rgba(255, 255, 255, 0.75)' }}>
+                    <div className="flex-grow text-lg leading-[1.4] font-normal text-white/75">
                       {model.bulletPoints.map((point, index) => (
                         <div key={index} className="my-1">• {point}</div>
                       ))}
