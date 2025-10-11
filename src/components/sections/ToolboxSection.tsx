@@ -13,7 +13,7 @@ const ToolboxSection = () => {
             Toolbox of Financial Decision Models
           </h3>
           <p className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed">
-            The toolbox provides professionals and students with proven methodologies designed to help structure and make complex financial decisions. If you want to make better financial models on your own, hopefully the toolbox can also inspire and help you.
+            The toolbox provides proven methodologies to help structure and make complex business decisions. It also inspires and assists users in developing better financial models independently.
           </p>
           
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-600 max-w-6xl mx-auto italic mt-4 leading-relaxed px-4">
@@ -88,28 +88,28 @@ const ToolboxSection = () => {
             <div>
               <h4 className="text-base md:text-lg font-semibold text-brand-blue mb-3">What We Provide</h4>
               <p className="text-sm md:text-base lg:text-lg text-slate-600 leading-relaxed">
-                Professional-grade Excel models covering the complete spectrum of complex business financial decisions—from startup valuations and unit economics through mature business investment analysis and strategic planning. Each model includes comprehensive guidance, standardized structure with clear value driver logic, and built-in scenario and sensitivity analysis capabilities.
+                Professional-grade Excel models cover a wide range of business decisions, including startup valuations, investment decisions, and business strategy. Each model includes a standardized and intuitive structure, featuring built-in scenario and sensitivity analysis capabilities where relevant, along with comprehensive guidance.
               </p>
             </div>
 
             <div>
               <h4 className="text-base md:text-lg font-semibold text-brand-blue mb-3">Why It Matters</h4>
               <p className="text-sm md:text-base lg:text-lg text-slate-600 leading-relaxed">
-                Financial decision-making often suffers from inconsistent methodologies, hidden assumptions, and inadequate risk assessment. Our models solve this by providing multiple proven frameworks that help users not only calculate credible results and test scenarios but also articulate the logic behind their conclusions to stakeholders, investors, and partners.
+                Financial decision-making often suffers from inconsistent methodologies, hidden assumptions, and inadequate risk assessment. Our models solve this by providing proven frameworks that help users calculate credible results, test scenarios, and articulate the logic behind their conclusions to stakeholders, investors, and partners.
               </p>
             </div>
 
             <div>
               <h4 className="text-base md:text-lg font-semibold text-brand-blue mb-3">Who Benefits</h4>
               <p className="text-sm md:text-base lg:text-lg text-slate-600 leading-relaxed">
-                <span className="font-medium">Entrepreneurs and Investors</span> validating business models, making investments and funding decisions. <span className="font-medium">Business Leaders</span> optimizing business performance, complex internal & external decisions and strategic initiatives. <span className="font-medium">Financial Advisors</span> providing professional analysis and decision support and services. <span className="font-medium">Students</span> for finance coursework and analysis.
+                <span className="font-medium">Entrepreneurs and investors</span> can validate business models, make investments, and fund decisions. <span className="font-medium">Business leaders</span> can optimize performance and make complex decisions. <span className="font-medium">Financial advisors</span> can provide analysis and decision support. <span className="font-medium">Students</span> can use the models in finance coursework and analysis.
               </p>
             </div>
 
             <div>
               <h4 className="text-base md:text-lg font-semibold text-brand-blue mb-3">How Models works</h4>
               <p className="text-sm md:text-base lg:text-lg text-slate-600 leading-relaxed">
-                Each model uses clear Excel structure with color-coded inputs for easy use. Built-in scenario testing helps address uncertainty, and the models provide the analytical depth needed for both analytical insight, decision making and professional presentations to stakeholders. The models can be used 100% free, but are protected for design changes.
+                Each Excel model uses a clear structure with color-coded inputs and calculated outputs, incorporating scenario functionality to effectively address assumption sensitivities. While the models can be used free of charge, their design is protected against unauthorized modifications, ensuring integrity and reliability.
               </p>
             </div>
           </div>
