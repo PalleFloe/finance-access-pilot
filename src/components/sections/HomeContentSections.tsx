@@ -25,11 +25,19 @@ const HomeContentSections = () => {
             <p>
               Many financial models fail to fully support making the best decision because they are either too complex for decision-makers to understand and trust, or too simplified to be credible.
             </p>
-            
-            <p>
-              To address this issue, I founded Financial Decision Models
-            </p>
-            
+          </div>
+        </div>
+
+        {/* Section 2: Foundation */}
+        <div className="mb-16">
+          <h2 
+            className="text-[28px] md:text-4xl font-bold text-brand-blue mb-6" 
+            style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}
+          >
+            To address this issue, I founded Financial Decision Models
+          </h2>
+          
+          <div className="space-y-4 text-base sm:text-lg md:text-xl lg:text-2xl" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
             <p>
               The models I have developed at Financial Decision Models solve these problems:
             </p>
