@@ -15,35 +15,23 @@ const HomeContentSections = () => {
           
           <div className="space-y-4 text-base sm:text-lg md:text-xl lg:text-2xl" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
             <p>
-              Former Divisional CFO at Novozymes, with 20+ years leading business finance in global life sciences and technology companies.
+              Former Divisional CFO at Novozymes, with over 20 years of experience leading business finance in global life sciences and medtech companies.
             </p>
             
             <p>
-              After decades building financial models for complex decisions—from €100M+ investments to business strategies—I founded Financial Decision Models to solve a persistent problem: finance teams spend too much time building models that decision-makers struggle to use.
+              After decades of building financial models for complex decisions—from €100M+ investments to business strategies—I recognized a persistent problem: finance teams often spend too much time on models that decision-makers struggle to use effectively.
             </p>
             
             <p>
-              These models help bridge that gap.
-            </p>
-          </div>
-        </div>
-
-        {/* Section 2: Why These Models Work */}
-        <div className="mb-16">
-          <h2 
-            className="text-[28px] md:text-4xl font-bold text-brand-blue mb-6" 
-            style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}
-          >
-            Why These Models Work
-          </h2>
-          
-          <div className="space-y-6 text-base sm:text-lg md:text-xl lg:text-2xl" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
-            <p>
-              Many financial models fail to fully support making the best decision. They're either too complex for decision-makers to really understand and trust, or too simplified to be credible.
+              Many financial models fail to fully support making the best decision because they are either too complex for decision-makers to understand and trust, or too simplified to be credible.
             </p>
             
             <p>
-              These models solve both problems:
+              To address this issue, I founded Financial Decision Models
+            </p>
+            
+            <p>
+              The models I have developed at Financial Decision Models solve these problems:
             </p>
             
             <ul className="space-y-3 ml-6">
@@ -54,32 +42,32 @@ const HomeContentSections = () => {
                 <span className="font-bold">Built for decisions:</span> Designed to inform choices and support decision-making, not just crunch numbers
               </li>
               <li>
-                <span className="font-bold">Academically grounded:</span> Methods inspired by leading academics like Professor Aswath Damodaran
+                <span className="font-bold">Academically based and inspired by leading academics, such as Professor Aswath Damodaran</span>
               </li>
             </ul>
             
             <p>
-              The result: Turn complexity into structured insights and better decisions.
+              My mission is to help turn complex choices into structured insights and better business decisions.
             </p>
           </div>
         </div>
 
-        {/* Section 3: Call to Action */}
+        {/* Section 2: Offerings */}
         <div>
           <h2 
             className="text-[28px] md:text-4xl font-bold text-brand-blue mb-6" 
             style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}
           >
-            Choose Your Path
+            Offerings
           </h2>
           
           <div className="space-y-4 text-base sm:text-lg md:text-xl lg:text-2xl" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
             <p>
-              All models are available to view online for free. Download and use them after simple registration—completely free and safe.
+              You can view online or download all models for 100% free and safe use, with no credit card required or future promotional emails.
             </p>
             
             <p>
-              Need customized solutions or strategic support for complex financial decisions? Our consulting services provide expert guidance tailored to your specific needs. Contact us to discuss your requirements.{' '}
+              If you need customized models, solutions or strategic support for complex financial decisions, our consulting services offer expert guidance designed to your specific needs. Contact me to discuss further.{' '}
               <a href="/contact" className="text-brand-blue underline hover:text-[#264d75] transition-colors">
                 Request Consultation
               </a>
