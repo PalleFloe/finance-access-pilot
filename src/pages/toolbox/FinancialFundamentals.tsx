@@ -142,7 +142,7 @@ const FinancialFundamentals = () => {
           </div>
 
           {/* Comprehensive Content Section */}
-          <div className="max-w-4xl space-y-8">
+          <div className="max-w-none space-y-8">
             <div>
               <h3 className="text-3xl font-semibold text-brand-blue mb-4">Simple and Foundational Financial Models</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
