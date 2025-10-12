@@ -105,9 +105,6 @@ const FinancialFundamentals = () => {
               Simple Academic Financial Analysis Tools: Essential Models for Learning Core Valuation and Decision-Making Principles
             </h2>
           </div>
-          <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-            These simple academic financial models, inspired by the foundational work of Professor Aswath Damodaran, provide students, professionals, and curious learners with essential financial analysis tools that demonstrate core valuation and decision-making principles taught in leading business schools worldwide.
-          </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {models.map((model) => (
