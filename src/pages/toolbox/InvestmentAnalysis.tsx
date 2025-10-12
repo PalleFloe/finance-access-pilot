@@ -146,38 +146,38 @@ const InvestmentAnalysis = () => {
             <div>
               <h3 className="text-3xl font-semibold text-brand-blue mb-4">Professional Investment Analysis Models</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                The Investment Analysis toolbox provides finance professionals, investors, and business leaders with proven methodologies for evaluating capital allocation decisions, project investments, and strategic initiatives. This collection transforms complex valuation theory into practical, accessible tools for real-world application.
+                The Investment Analysis toolbox offers finance professionals, investors, and business leaders a suite of methodologies specifically designed for evaluating capital allocation decisions, project investments, and strategic initiatives, including detailed DCF models and sensitivity analysis tools. This collection transforms complex valuation theory into practical, accessible tools for real-world application.
               </p>
             </div>
 
             <div>
-              <h3 className="text-3xl font-semibold text-brand-blue mb-4">Core Challenge Addressed: Investment Decision Uncertainty</h3>
+              <h3 className="text-3xl font-semibold text-brand-blue mb-4">Core Challenge Addressed: The startup valuation black-box</h3>
               <p className="text-lg text-slate-600 leading-relaxed mb-4">
-                Investment analysis often suffers from inconsistent methodologies, hidden assumptions, and inadequate risk assessment. These models solve this by providing multiple proven <FinancialTerm term="DCF">DCF</FinancialTerm> frameworks that help users not only calculate credible valuations but also articulate the logic behind their investment decisions to stakeholders and committees.
+                Investment analysis often suffers from inconsistent methodologies, hidden assumptions, and inadequate risk assessment. These models solve this by providing multiple proven DCF frameworks that help users not only calculate credible valuations but also articulate the logic behind their investment decisions to stakeholders and committees.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed">
-                As Warren Buffett emphasizes: <em>"Risk comes from not knowing what you're doing."</em> This collection provides the analytical foundation necessary for informed capital allocation and strategic decision-making.
+                As Warren Buffett emphasizes, "Risk comes from not knowing what you're doing." This collection provides the analytical foundation necessary for informed capital allocation and strategic decision-making.
               </p>
             </div>
 
             <div>
-              <h3 className="text-3xl font-semibold text-brand-blue mb-4">Comprehensive <FinancialTerm term="DCF">DCF</FinancialTerm> Analysis Coverage</h3>
+              <h3 className="text-3xl font-semibold text-brand-blue mb-4">Comprehensive DCF Analysis Coverage</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                The six-model toolbox covers the complete <FinancialTerm term="DCF">DCF</FinancialTerm> analysis spectrum: flexible year-by-year projections for dynamic businesses, stable growth models for mature assets, finite-life analysis for projects with defined endpoints, multi-stage growth modeling for businesses with distinct phases, cost reduction analysis for efficiency initiatives, and break-even calculations for threshold decision-making. Each model includes comprehensive sensitivity analysis and scenario testing capabilities.
+                The six-model toolbox covers the complete DCF analysis spectrum: flexible year-by-year projections for dynamic businesses, stable growth models for mature assets, finite-life analysis for projects with defined endpoints, multi-stage growth modeling for businesses with distinct phases, cost reduction analysis for efficiency initiatives, and break-even calculations for threshold decision-making. Each model includes comprehensive sensitivity analysis and scenario testing capabilities.
               </p>
             </div>
 
             <div>
               <h3 className="text-3xl font-semibold text-brand-blue mb-4">Professional Excellence Standards</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                Each model maintains institutional-quality analytical standards whilst preserving accessibility for practical application. The emphasis on multiple valuation approaches and comprehensive sensitivity testing ensures robust decision-making support that satisfies both internal analysis needs and external stakeholder requirements.
+                Each model adheres to rigorous analytical standards typically found in institutional settings, ensuring both precision and practical applicability. The emphasis on multiple valuation approaches and sensitivity testing ensures robust decision-making support that meets both internal analysis needs and external stakeholder requirements.
               </p>
             </div>
 
             <div>
               <h3 className="text-3xl font-semibold text-brand-blue mb-4">Key Limitations & Best Practices</h3>
               <p className="text-lg text-slate-600 leading-relaxed mb-4">
-                <em>All models are simplifications of reality</em> - <FinancialTerm term="DCF">DCF</FinancialTerm> analysis depends heavily on projection accuracy and assumption validity. Market conditions change, and cognitive biases affect forecasts. Use these tools to structure analysis and facilitate discussions, not to predict precise outcomes.
+                All models are simplifications of reality - DCF analysis depends heavily on projection accuracy and assumption validity. Market conditions change, and cognitive biases affect forecasts. Use these tools to structure analysis and facilitate discussions, not to predict precise outcomes.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed">
                 Always validate results through multiple approaches and comprehensive sensitivity testing across key variables.
@@ -188,7 +188,7 @@ const InvestmentAnalysis = () => {
               <h3 className="text-3xl font-semibold text-brand-blue mb-4">Always Required</h3>
               <ul className="text-base text-slate-600 leading-relaxed space-y-2">
                 <li>• Multiple scenario analysis: Never rely on single-point estimates</li>
-                <li>• Sensitivity testing: Understand impact of key assumption changes</li>
+                <li>• Sensitivity testing: Understand the impact of key assumption changes</li>
                 <li>• Assumption documentation: Evidence for all critical inputs</li>
                 <li>• Cross-validation: Compare results across different approaches</li>
                 <li>• Regular updates: Revise analysis as conditions evolve</li>
@@ -198,7 +198,7 @@ const InvestmentAnalysis = () => {
             <div>
               <h3 className="text-3xl font-semibold text-brand-blue mb-4">The Investment Analysis Advantage</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                Whether evaluating major capital projects, assessing acquisition opportunities, analyzing strategic initiatives, or optimizing resource allocation - this comprehensive toolbox delivers the analytical rigor necessary for confident investment decisions.
+                Evaluating capital projects, assessing acquisition opportunities, analysing strategic initiatives, or optimizing resource allocation, this comprehensive toolbox delivers the analytical rigor necessary for confident investment decisions.
               </p>
             </div>
           </div>
