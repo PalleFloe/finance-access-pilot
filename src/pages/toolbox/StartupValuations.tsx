@@ -99,7 +99,7 @@ const StartupValuations = () => {
 
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
-              Professional Startup Financial Decision & Valuation Models
+              Professional Startup Valuation Models
             </h1>
             <h2 className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-6">
               Comprehensive Startup Valuation toolbox: Proven Methods to Estimate, Understand and Explain the Value of Startups
@@ -147,60 +147,60 @@ const StartupValuations = () => {
           {/* Comprehensive Content Section */}
           <div className="max-w-4xl space-y-8">
             <div>
-              <h3 className="text-3xl font-semibold text-brand-blue mb-4">Professional Startup Financial Decision & Valuation Models</h3>
+              <h3 className="text-3xl font-semibold text-brand-blue mb-4">Professional Startup Financial Decision and Valuation Models</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                The Comprehensive Startup Valuation toolbox provides entrepreneurs, investors, and financial advisors with proven methodologies to better understand, negotiate and make informed startup valuation decisions. This collection of professional models transforms valuation theory into a practical and accessible toolbox for real-world application. Each model employs <FinancialTerm term="DCF">discounted cash flow</FinancialTerm> analysis, <FinancialTerm term="Scenario Analysis">scenario planning</FinancialTerm>, and comprehensive <FinancialTerm term="Sensitivity Analysis">sensitivity testing</FinancialTerm> to address the inherent uncertainty in startup valuations.
+                The Comprehensive Startup Valuation toolbox offers proven methodologies for entrepreneurs, investors, and financial advisors. These methodologies help them better understand startup valuations, negotiate effectively, and make informed decisions. This toolbox transforms valuation theory into a practical application. Each model allows users to test different business scenarios and perform sensitivity testing to evaluate how changes in assumptions affect valuation outcomes, addressing the inherent uncertainty in startup valuations.
               </p>
             </div>
 
             <div>
               <h3 className="text-3xl font-semibold text-brand-blue mb-4">Core Challenge Addressed: The startup valuation black-box</h3>
               <p className="text-lg text-slate-600 leading-relaxed mb-4">
-                Startup valuation is notoriously difficult to understand and even harder to explain convincingly. The models here help solve this fundamental problem by providing multiple proven methodologies that help users not only calculate credible valuations but also articulate the logic behind their conclusions to investors, partners, and stakeholders.
+                Startup valuation is notoriously difficult to understand and even harder to explain convincingly. The models address this challenge by providing structured methodologies that enable users to calculate credible valuations and effectively communicate their rationale to investors, partners, and stakeholders including scenario analysis and sensitivity testing.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed">
-                As Marc Andreessen, co-founder of Andreessen Horowitz, emphasises: <em>"The best way to think about investments is in terms of a portfolio of calculated risks. You need sophisticated models to understand both the upside potential and downside risks."</em>¹ This range and design of models here provides exactly this analytical foundation.
+                As Marc Andreessen, co-founder of Andreessen Horowitz, emphasises: <em>"The best way to think about investments is in terms of a portfolio of calculated risks. You need sophisticated models to understand both the upside potential and downside risks."</em>¹ This range of models and their design here provide exactly this analytical foundation.
               </p>
             </div>
 
             <div>
               <h3 className="text-3xl font-semibold text-brand-blue mb-4">Comprehensive Coverage of Startup Valuation Methods</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                The six-model toolbox covers the complete valuation spectrum: understanding business model through <FinancialTerm term="Unit Economics">SaaS Unit Economics</FinancialTerm> analysis, establishing pre-revenue valuations via risk-based Berkus methodology, modelling investor ownership and returns through <FinancialTerm term="Venture Capital">Venture Capital</FinancialTerm> Valuation method, estimating probability-weighted valuation through First Chicago <FinancialTerm term="Scenario Analysis">scenario estimates</FinancialTerm>, providing insight into long-term value through <FinancialTerm term="Terminal Value">Perpetuity & Exit Value</FinancialTerm> models, and structuring probability-weighted returns on investment through the systematic Decision Analysis for Venture Capital method. Each model comes with comprehensive guidance explaining what it does, why it matters, when to use it, and how to implement it effectively. The potential use of various valuation models gives distinct, complementary and even synergistic methods across different insights, business- and valuation decision-making contexts.
+                The six-model toolbox encompasses the entire valuation spectrum, including: SaaS Unit Economics analysis for business model understanding; Berkus methodology for pre-revenue valuations; Venture Capital Valuation method for investor ownership and returns; First Chicago scenario estimates for probability-weighted valuation; Perpetuity & Exit Value models for long-term value insight; and Decision Analysis for Venture Capital method for structuring probability-weighted returns. Each model comes with comprehensive guidance explaining what it does, why it matters, when to use it, and how to implement it effectively. Various valuation models provide distinct, complementary and synergistic methods for gaining different insights in business and valuation decision-making.
               </p>
             </div>
 
             <div>
               <h3 className="text-3xl font-semibold text-brand-blue mb-4">Professional Credibility Through Rigorous Analysis</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                Each model represents established methodologies used by acclaimed academia, professional investors and advisors. The models maintain mathematical rigour whilst featuring user-friendly logic and design to make them accessible to users at all experience levels. The emphasis on both cross-model valuation methods, and on models with scenario-based analysis and sensitivity testing addresses startups' inherent valuation uncertainty.
+                Each model is based on established methodologies recognized by academia, professional investors, and financial advisors. The models maintain mathematical rigour while featuring user-friendly logic and design to make them accessible to users at all experience levels. Both cross-model valuation methods and models that incorporate scenario-based analysis and sensitivity testing emphasize the inherent valuation uncertainty of startups.
               </p>
             </div>
 
             <div>
               <h3 className="text-3xl font-semibold text-brand-blue mb-4">Professional Excellence Standards</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                Each model maintains institutional-quality analytical standards whilst preserving the accessibility necessary for entrepreneurial application. The emphasis on cross-model validation and scenario-based analysis with comprehensive sensitivity testing ensures robust decision-making support that satisfies both founder strategic needs and investor due diligence requirements.
+                Each model maintains institutional-quality analytical standards while preserving the accessibility necessary for entrepreneurial application. Cross-model validation and scenario-based analysis provide robust decision-making support that meets both founder needs and investor due diligence.
               </p>
             </div>
 
             <div>
               <h3 className="text-3xl font-semibold text-brand-blue mb-4">Key Limitations & Best Practices</h3>
               <p className="text-lg text-slate-600 leading-relaxed mb-4">
-                <em>Valuation is part art, part science</em> - All models have inherent limitations. Startup projections are notoriously unreliable, and cognitive biases systematically affect valuations. Use these tools to structure thinking and facilitate discussions, not to predict precise outcomes.
+                Valuation involves both qualitative and quantitative elements. All models have inherent limitations, such as the unpredictability of startup projections and potential cognitive biases, which can lead to inaccurate or overly optimistic valuations. Startup projections are notoriously unreliable, and cognitive biases systematically affect valuations. Use these tools to structure thinking and facilitate discussions, not to predict precise outcomes.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed mb-4">
-                Valuation choice significantly impacts results - Quantitative methods produce higher and more dispersed valuations than qualitative methods.
+                Valuation choice significantly impacts results; quantitative methods produce higher and more dispersed valuations than qualitative methods.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed">
-                Human judgement dominates early-stage valuation decisions - despite availability of analytical methods so be aware of systematic biases affecting outcomes
+                Human judgment dominates early-stage valuation decisions, despite the availability of analytical methods; therefore, be aware of systematic biases affecting outcomes.
               </p>
             </div>
 
             <div>
               <h3 className="text-3xl font-semibold text-brand-blue mb-4">Always Required</h3>
               <ul className="text-base text-slate-600 leading-relaxed space-y-2">
-                <li>• Multi-method validation: Never rely on single approach</li>
+                <li>• Multi-method validation: Never rely on a single approach.</li>
                 <li>• Range presentation: Results as ranges, never point estimates</li>
                 <li>• Assumption documentation: Evidence for all key inputs</li>
                 <li>• Bias awareness: Independent review to counter optimism</li>
@@ -211,27 +211,17 @@ const StartupValuations = () => {
             <div>
               <h3 className="text-3xl font-semibold text-brand-blue mb-4">Seek Professional Advice When</h3>
               <ul className="text-base text-slate-600 leading-relaxed space-y-2">
-                <li>• Complex capital or legal structures or arrangements</li>
+                <li>• Complex capital or legal structures or arrangements are involved.</li>
                 <li>• Institutional investment or acquisition processes</li>
                 <li>• Cross-border transactions with regulatory implications</li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-3xl font-semibold text-brand-blue mb-4">The startup valuation toolbox</h3>
+              <h3 className="text-3xl font-semibold text-brand-blue mb-4">The Startup Valuation Toolbox</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                Whether preparing for initial fundraising, structuring growth investments, planning strategic exits, or seeking insights to improve business performance and valuation - this comprehensive toolbox delivers the analytical excellence necessary for startup success.
+                This comprehensive toolbox delivers the analytical excellence necessary for startup success, whether preparing for initial fundraising, structuring growth investments, planning exits, or seeking insights to improve business performance and valuation.
               </p>
-            </div>
-
-            <div>
-              <h3 className="text-3xl font-semibold text-brand-blue mb-4">References</h3>
-              <div className="text-sm text-slate-500 space-y-1">
-                <p>¹ Andreessen, Marc, "The Only Thing That Matters," Andreessen Horowitz Blog (2007)</p>
-                <p>² Gurley, Bill, "All Revenue is Not Created Equal: The Keys to the 10X Revenue Club," Above the Crowd (2011)</p>
-                <p>³ Ries, Eric, "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses," Crown Business (2011)</p>
-                <p>⁴ Blank, Steve, and Bob Dorf, "The Startup Owner's Manual: The Step-By-Step Guide for Building a Great Company," K&S Ranch (2012)</p>
-              </div>
             </div>
           </div>
         </div>
