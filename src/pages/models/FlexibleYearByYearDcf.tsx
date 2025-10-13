@@ -124,7 +124,7 @@ const FlexibleYearByYearDcf = () => {
                     Online & View
                   </Button>
                   <DownloadButton 
-                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaEwRe6b9sFMtFbFnCcX3bsBpONF4e76IIGoo5TACP1d6g?e=K1oXA8"
+                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaEwRe6b9sFMtFbFnCcX3bsBpONF4e76IIGoo5TACP1d6g?e=K1oXA8&download=1"
                     modelName="Flexible Year by Year DCF Model"
                     className="w-full"
                   />

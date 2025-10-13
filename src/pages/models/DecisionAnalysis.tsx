@@ -125,7 +125,7 @@ const DecisionAnalysis = () => {
                 </Button>
                 
                 <DownloadButton 
-                  sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EXocIkZrChpKrbEuRIRzN4ABBy9eqNxPQYdvl4f7yuiHDA?e=3ZGPZm"
+                  sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EXocIkZrChpKrbEuRIRzN4ABBy9eqNxPQYdvl4f7yuiHDA?e=3ZGPZm&download=1"
                   modelName="Decision Model for VC Investments"
                   className="w-full"
                 />

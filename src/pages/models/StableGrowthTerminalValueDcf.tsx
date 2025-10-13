@@ -124,7 +124,7 @@ const StableGrowthTerminalValueDcf = () => {
                     Online & View
                   </Button>
                   <DownloadButton 
-                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EfA8V3EKkddAnVMlp8CBNt4B2FG8IRt85ZHD4OaQQEXrUw?e=i02xoL"
+                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EfA8V3EKkddAnVMlp8CBNt4B2FG8IRt85ZHD4OaQQEXrUw?e=i02xoL&download=1"
                     modelName="Stable Growth: Terminal Value DCF Model"
                     className="w-full"
                   />

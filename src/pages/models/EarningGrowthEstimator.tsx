@@ -124,7 +124,7 @@ const EarningGrowthEstimator = () => {
                     Online & View
                   </Button>
                   <DownloadButton 
-                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETWdlbxuHsJBgkCKEc7eEWIB_OGNhlT1LP-zssKoa47bxA?e=SYhAKZ"
+                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ETWdlbxuHsJBgkCKEc7eEWIB_OGNhlT1LP-zssKoa47bxA?e=SYhAKZ&download=1"
                     modelName="Simple Earning Growth Estimator"
                     className="w-full"
                   />

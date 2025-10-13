@@ -123,7 +123,7 @@ const ThreeStageDcf = () => {
                   </Button>
                   
                   <DownloadButton 
-                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ea241lXv391GqP_l0MybwvABAscjLi_idFozsNy2A9JrCA?e=kQ0oho"
+                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ea241lXv391GqP_l0MybwvABAscjLi_idFozsNy2A9JrCA?e=kQ0oho&download=1"
                     modelName="Three Stage DCF Model"
                     className="w-full"
                   />

@@ -123,7 +123,7 @@ const FinancialRatioCalculator = () => {
                     Online & View
                   </Button>
                   <DownloadButton 
-                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EUBPRXBMc5pNl5X1Xc_OFpgBIsKNhg5G6HhKGhPk_i4fLw?e=hXLTCz"
+                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EUBPRXBMc5pNl5X1Xc_OFpgBIsKNhg5G6HhKGhPk_i4fLw?e=hXLTCz&download=1"
                     modelName="Financial Ratio Calculator"
                     className="w-full"
                   />

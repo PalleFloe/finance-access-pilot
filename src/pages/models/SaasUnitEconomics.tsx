@@ -127,7 +127,7 @@ const SaasUnitEconomics = () => {
                 </Button>
                 
                 <DownloadButton 
-                  sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EdeifZ8XjVdOmKEVJ2zhc2oBZMOGOmY_E0jpQMTk6goMuQ?e=tmmnAB"
+                  sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EdeifZ8XjVdOmKEVJ2zhc2oBZMOGOmY_E0jpQMTk6goMuQ?e=tmmnAB&download=1"
                   modelName="SaaS Unit Economics Model"
                   className="w-full"
                 />
