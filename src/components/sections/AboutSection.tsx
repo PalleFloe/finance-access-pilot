@@ -32,7 +32,7 @@ const AboutSection = () => {
                     The Problem I'm Trying to Help Solve
                   </h3>
                   <p>
-                    After decades of wrestling with complex, unintuitive, resource-intensive and long decision processes, and models that often gave precisely the wrong results, I realized the need for better solutions.
+                    I have participated in many important business decisions over the years. These often became very long processes, with wasteful use of resources, and overly complex models that often gave 'precisely the wrong results'. I realized the need for better solutions.
                   </p>
                   <p>
                     Business leaders need decision tools that are sophisticated enough to be credible, yet intuitive enough to actually use.
