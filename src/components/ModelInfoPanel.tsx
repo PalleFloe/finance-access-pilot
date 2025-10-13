@@ -15,12 +15,13 @@ const ModelInfoPanel = () => {
           <span className="font-semibold">"Online & View"</span> for instant browser preview.
         </p>
         
-        <div>
-          <p>
-            <span className="font-semibold">"Register to Download"</span> models. If already registered? Click <span className="font-semibold">"Download & Use"</span> to open in browser.
-          </p>
-          <p className="mb-0">To download and use: File → Create a Copy → Download a Copy.</p>
-        </div>
+        <p>
+          <span className="font-semibold">"Register to Download"</span> models.
+        </p>
+        
+        <p>
+          Registered? <span className="font-semibold">"Download & Use"</span> to download Excel model
+        </p>
         
         <div className="mt-4 pt-3 border-t border-slate-200 text-[11px] text-slate-500">
           <p>Safe Excel files with no macros. Formulas protected, input cells editable.</p>
