@@ -26,8 +26,8 @@ const DownloadButton = ({ sharePointUrl, modelName, className }: DownloadButtonP
     await trackDownload(modelName);
     await trackAnalyticsDownload(modelName);
     
-    // Open SharePoint file in new window
-    window.open(sharePointUrl, '_blank', 'width=1200,height=800,scrollbars=yes,resizable=yes');
+    // Trigger download in current window
+    window.location.href = sharePointUrl;
   };
 
   return (
