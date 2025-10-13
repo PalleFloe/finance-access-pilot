@@ -22,46 +22,86 @@ const AboutSection = () => {
                 </h4>
                 <div className="space-y-4 text-xl text-slate-700 leading-relaxed text-left">
                   <p>
-                    I'm <strong>Palle Fløe Nielsen</strong>, based in Copenhagen, Denmark. I left Novonesis (formerly Novozymes) in May 2024 after 20+ years in Business Finance leadership, including divisional CFO roles.
+                    My name is Palle Fløe Nielsen, based in Copenhagen, Denmark. I left Novonesis (formerly Novozymes) in May 2024 after more than 20 years in Business Finance leadership, including divisional CFO roles.
                   </p>
                   <p>
-                    Still curious and focused after all these years. I have a strong focus on what and how we can create real value. I'm direct, open-minded, and not afraid to challenge the status quo constructively.
+                    I'm still curious and focused after all these years. I have a strong focus on what and how we can create real value. I'm direct, open-minded, and not afraid to challenge the status quo constructively.
                   </p>
                   
                   <h3 className="text-xl md:text-2xl font-semibold mb-4 text-brand-blue mt-6">
-                    Background
+                    The Problem I'm Trying to Help Solve
                   </h3>
+                  <p>
+                    After decades of wrestling with complex, unintuitive, resource-intensive and long decision processes, and models that often gave precisely the wrong results, I realized the need for better solutions.
+                  </p>
+                  <p>
+                    Business leaders need decision tools that are sophisticated enough to be credible, yet intuitive enough to actually use.
+                  </p>
+                  
+                  <p className="font-semibold mt-4">My background is:</p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
                     <li>Divisional CFO in global biosolutions and medtech companies</li>
-                    <li>Led Finance integration for €10B+ merger</li>
-                    <li>Developed business cases for €100M+ projects and investments</li>
+                    <li>Led finance integration for a €10 billion+ merger</li>
+                    <li>Developed business cases for €100 million+ projects and investments</li>
+                    <li>Built and refined financial decision models for two decades</li>
                     <li>Specialized in strategic financial decision-making</li>
                   </ul>
 
                   <h3 className="text-xl md:text-2xl font-semibold mb-4 text-brand-blue mt-8">
-                    Why I Founded Financial Decision Models
+                    How I Help Businesses
                   </h3>
                   <p>
-                    After decades of wrestling with complex, unintuitive models that often gave precisely the wrong results, I knew there had to be a better way.
+                    I help businesses navigate their most complex financial choices through expert consulting and custom financial modelling.
                   </p>
                   <p>
-                    <strong>The problem was clear:</strong> Business leaders need tools that are sophisticated enough to be credible, yet intuitive enough to actually use.
+                    My solution: Professional decision frameworks combined with business judgment. I challenge assumptions, structure thinking, and cut through complexity to focus on what actually drives value.
                   </p>
                   <p>
-                    <strong>My solution:</strong> Professional models that turn complex financial choices into structured insights and better business decisions.
+                    My mission is to help turn complex financial choices into structured insights and better business decisions.
+                  </p>
+                  <p className="font-semibold mt-4">
+                    I provide tailored solutions and expert guidance for your specific needs such as:
+                  </p>
+                  <p>
+                    <strong>Customized Models</strong><br />
+                    Adapt existing frameworks or build from scratch for your specific business model, structure, and unique drivers. Full documentation and training is included.
+                  </p>
+                  <p>
+                    <strong>Consulting Services</strong><br />
+                    Lead or support critical financial decisions - M&A valuation, investment analysis, strategic planning. Challenge assumptions, evaluate options, structure thinking. From single sessions to longer engagements.
+                  </p>
+                  <p>
+                    Learn more about both services on the <Link to="/offerings" className="text-primary hover:underline">Offerings page</Link>.
                   </p>
 
                   <h3 className="text-xl md:text-2xl font-semibold mb-4 text-brand-blue mt-8">
-                    What Makes These Models Different
+                    About the Free Models
                   </h3>
                   <p>
-                    These aren't just Excel templates. Each model reflects methods I've refined over two decades, inspired by world-class academics and practitioners - simplified for clarity while maintaining analytical rigor.
+                    To demonstrate my methodology, I offer a range of professional financial decision models completely free:
+                  </p>
+                  <ul className="list-disc list-inside space-y-2 ml-4">
+                    <li>Free to view online - no registration required.</li>
+                    <li>Download and use after simple registration. Use them as designed for your analysis.</li>
+                  </ul>
+                  <p>
+                    All models are standard safe Excel files without macros, hosted on Microsoft SharePoint. Formulas are protected to prevent accidental changes, but all input cells are fully editable.
                   </p>
                   <p>
-                    All models are free to view online. Free to download and use after registration. Free models are Excel-protected. Full ownership versions can be purchased.
+                    If you need implementation for your specific situation - whether that's adapting these models or building something custom - that's where consulting comes in.
                   </p>
                   <p>
-                    Your input and perspectives would be incredibly helpful to me. Whether it's on the website, the models, or any related topics.
+                    Your input and perspectives on the website, the models, or any related topics would be incredibly helpful. Please email me at <a href="mailto:palle@financialdecisionmodels.com" className="text-primary hover:underline">palle@financialdecisionmodels.com</a>.
+                  </p>
+
+                  <h3 className="text-xl md:text-2xl font-semibold mb-4 text-brand-blue mt-8">
+                    Ready to Discuss Your Situation?
+                  </h3>
+                  <p>
+                    Whether you need help with a specific decision, want a model tailored to your business, or are looking for ongoing advisory support - let's talk.
+                  </p>
+                  <p>
+                    Please use the <Link to="/contact" className="text-primary hover:underline">Contact page</Link> to describe your challenge. I will review your submission within 1 business day and, if there is a potential fit, suggest a 15-minute clarity call to discuss further.
                   </p>
                 </div>
               </div>
