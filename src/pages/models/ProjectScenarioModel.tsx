@@ -116,7 +116,7 @@ const ProjectScenarioModel = () => {
                 </CardHeader>
                 <CardContent className="space-y-6 pb-4 pt-6">
                   <Button 
-                    onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EbH9QALmQZlNu8rW8zRc8m8BE6qEoC40c7ajqL0M9L8cbg?e=zGj8NG&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                    onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EXh7vv2SI0tKiQPbe0c9TUYBXRBXXB2RKpkgUXwaOXj9Fw?e=j8ss8Z&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                     variant="model-blue"
                     className="w-full text-lg"
                   >
@@ -124,7 +124,7 @@ const ProjectScenarioModel = () => {
                     Online & View
                   </Button>
                   <DownloadButton 
-                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EfXdy3PrPmVOrTUUyyTwpr8BuJPzq2rGBzGIlUVTnvWIDA?e=Jzgfny&download=1"
+                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EXh7vv2SI0tKiQPbe0c9TUYBXRBXXB2RKpkgUXwaOXj9Fw?e=j8ss8Z&download=1"
                     modelName="Simple Project Scenario Model"
                     className="w-full"
                   />

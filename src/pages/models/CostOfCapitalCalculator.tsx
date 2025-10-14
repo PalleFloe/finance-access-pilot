@@ -117,7 +117,7 @@ const CostOfCapitalCalculator = () => {
                 </CardHeader>
                 <CardContent className="space-y-6 pb-4 pt-6">
                   <Button 
-                    onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EVkvhpPhgkxJuF1w-9PLuz8Bo1zDaE_ru45Eo2jn4TaGxg?e=yKJKzJ&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                    onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ES8CsFO8b8ZAnLGVZDXxGRwBLRztELwhbnq9kpJvUX0YQA?e=c5P1l1&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                     variant="model-blue"
                     className="w-full text-lg"
                   >
@@ -125,7 +125,7 @@ const CostOfCapitalCalculator = () => {
                     Online & View
                   </Button>
                   <DownloadButton 
-                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EX8xVEetU75Fmh51x2rlCTAB-wmJESX29zKj56VL1rx9tg?e=octH6u&download=1"
+                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ES8CsFO8b8ZAnLGVZDXxGRwBLRztELwhbnq9kpJvUX0YQA?e=c5P1l1&download=1"
                     modelName="Simple Cost of Capital Calculator"
                     className="w-full"
                   />

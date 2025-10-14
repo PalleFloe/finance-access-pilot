@@ -115,7 +115,7 @@ const FinancialRatioCalculator = () => {
                 </CardHeader>
                 <CardContent className="space-y-6 pb-4 pt-6">
                   <Button 
-                    onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EUw9xKsMBY9MqMBDh2hNOVIBOMzvaucjfYkBi-FhKU8n_g?e=PVwJO5&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                    onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ER7RkBdB_1lPoeUV2EJUCAQBbHGABly0QNq3UKTaT12mug?e=EZcabR&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                     variant="model-blue"
                     className="w-full text-lg"
                   >
@@ -123,7 +123,7 @@ const FinancialRatioCalculator = () => {
                     Online & View
                   </Button>
                   <DownloadButton 
-                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EUBPRXBMc5pNl5X1Xc_OFpgBIsKNhg5G6HhKGhPk_i4fLw?e=hXLTCz&download=1"
+                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ER7RkBdB_1lPoeUV2EJUCAQBbHGABly0QNq3UKTaT12mug?e=EZcabR&download=1"
                     modelName="Financial Ratio Calculator"
                     className="w-full"
                   />

@@ -121,7 +121,7 @@ const DcfModels = () => {
                 </CardHeader>
                 <CardContent className="space-y-6 pb-4 pt-6">
                   <Button 
-                    onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EUslqKL1b2dEgvuCcENmgZcBtHb0hMfERIei28UtD76zaQ?e=ytNsEZ&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                    onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EfbivEnMRs1Ih3sc0Z0iDVIB3G_qvlliBmt1udukzFKIXw?e=pNGlcw&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                     variant="model-blue"
                     className="w-full text-lg"
                   >
@@ -129,7 +129,7 @@ const DcfModels = () => {
                     Online & View
                   </Button>
                   <DownloadButton 
-                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EbgFlAQTAcNAhgx4brwfYKoBqugQS3wFXW5T79_oo0vtbQ?e=j8kInz&download=1"
+                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EfbivEnMRs1Ih3sc0Z0iDVIB3G_qvlliBmt1udukzFKIXw?e=pNGlcw&download=1"
                     modelName="Standard Types of DCF Models"
                     className="w-full"
                   />
