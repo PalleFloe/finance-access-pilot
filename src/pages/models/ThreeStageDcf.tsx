@@ -18,7 +18,7 @@ const ThreeStageDcf = () => {
 
   const openModel = () => {
     trackOnlineOpen('Three Stage DCF Model');
-    const url = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ec04wrAndQtCriekJrQ5dtwBA_SkoypTrAh8de8yI5Iv9Q?e=3v5qmu&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False';
+    const url = 'https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EQ1r9yG73MlIjTX-_nFBwJMBIUOY1TvGxRDKCTPQO_HBQQ?e=Li16nX&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False';
     window.open(url, '_blank');
   };
 
@@ -123,7 +123,7 @@ const ThreeStageDcf = () => {
                   </Button>
                   
                   <DownloadButton 
-                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ea241lXv391GqP_l0MybwvABAscjLi_idFozsNy2A9JrCA?e=kQ0oho&download=1"
+                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EQ1r9yG73MlIjTX-_nFBwJMBIUOY1TvGxRDKCTPQO_HBQQ?e=Li16nX&download=1"
                     modelName="Three Stage DCF Model"
                     className="w-full"
                   />
