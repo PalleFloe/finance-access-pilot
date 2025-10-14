@@ -116,7 +116,7 @@ const FlexibleYearByYearDcf = () => {
                 </CardHeader>
                 <CardContent className="space-y-6 pb-4 pt-6">
                   <Button 
-                    onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EXtBN8KIE8VJr2ll-SMCY54B-AdfeL7M-xwvlLx9RMYMkg?e=Bt0M2y&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                    onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EV2Ak5kqbLtItjX3p4JwY2kBRhpHq5DvE7ZFnVpjGu1OjQ?e=GUUX7j&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                     variant="model-blue"
                     className="w-full text-lg"
                   >
@@ -124,7 +124,7 @@ const FlexibleYearByYearDcf = () => {
                     Online & View
                   </Button>
                   <DownloadButton 
-                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EXtBN8KIE8VJr2ll-SMCY54B-AdfeL7M-xwvlLx9RMYMkg?e=Bt0M2y&download=1"
+                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EV2Ak5kqbLtItjX3p4JwY2kBRhpHq5DvE7ZFnVpjGu1OjQ?e=GUUX7j&download=1"
                     modelName="Flexible Year by Year DCF Model"
                     className="w-full"
                   />
