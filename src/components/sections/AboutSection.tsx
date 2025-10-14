@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import logoLarge from '@/assets/logo-large.webp';
+import profileImage from '@/assets/profile-palle.jpg';
 
 const AboutSection = () => {
   return (
@@ -11,7 +12,7 @@ const AboutSection = () => {
             <div className="flex flex-col md:flex-row gap-8 items-start text-left">
               <div className="flex-shrink-0">
                 <img 
-                  src="/lovable-uploads/98787598-c310-4cf2-bca4-9f265a379e60.png" 
+                  src={profileImage} 
                   alt="Palle Floe Nielsen" 
                   className="w-32 h-48 rounded-lg object-cover"
                 />
