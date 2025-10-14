@@ -115,19 +115,19 @@ const BerkusValuation = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6 pb-4 pt-6">
-                  <Button 
-                    onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ER7BObBFTKtJhglZtgmnA-QBRnr-Jd_A9JTdudvqlvczMQ?e=xs1NMY&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-                    variant="model-blue"
-                    className="w-full text-lg"
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Online & View
-                  </Button>
-                  <DownloadButton 
-                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaG59B1j_dZCrXVdXTuyvQcBsxxCsvi1cTVJvbQzj7IJ7g?e=NkZLDr&download=1"
-                    modelName="Berkus Valuation Model"
-                    className="w-full"
-                  />
+                <Button 
+                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ERXbAVNuO05GhFKeSxNns9MBKWQ5H2pOXdhE6XR6qz4DvA?e=3DJFl3&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                  variant="model-blue"
+                  className="w-full text-lg"
+                >
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  Online & View
+                </Button>
+                <DownloadButton 
+                  sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/ERXbAVNuO05GhFKeSxNns9MBKWQ5H2pOXdhE6XR6qz4DvA?e=3DJFl3&download=1"
+                  modelName="Berkus Valuation Model"
+                  className="w-full"
+                />
                 </CardContent>
               </Card>
             </div>

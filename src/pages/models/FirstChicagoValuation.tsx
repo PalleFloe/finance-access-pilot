@@ -117,7 +117,7 @@ const FirstChicagoValuation = () => {
               </CardHeader>
               <CardContent className="space-y-6 pb-4 pt-6">
                 <Button 
-                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYD8J82OTqNErjVgb7FLT7wBUKdxcqGV5CGWfXMeuzXa1Q?e=nglIBE&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EQ09yTKjA-5Kh6OOUpdngwEB6QrrxHpPLRzOwccqkn8rkQ?e=BBessI&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                   className="w-full text-lg"
                   variant="model-blue"
                 >
@@ -126,7 +126,7 @@ const FirstChicagoValuation = () => {
                 </Button>
                 
                 <DownloadButton 
-                  sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EYlsAZtZS69LoWk_ONge0A4BV2efHA30RY3YINOML4cdKA?e=XU6enn&download=1"
+                  sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EQ09yTKjA-5Kh6OOUpdngwEB6QrrxHpPLRzOwccqkn8rkQ?e=BBessI&download=1"
                   modelName="First Chicago Method Model"
                   className="w-full"
                 />

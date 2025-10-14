@@ -115,19 +115,19 @@ const PerpetuityExitValuation = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6 pb-4 pt-6">
-                  <Button 
-                    onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EaMtk3zo6hVAqea-OC4rf08B52Or6Xp7pIDf5mxKhItf9g?e=Dqmkcp&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
-                    variant="model-blue"
-                    className="w-full text-lg"
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Online & View
-                  </Button>
-                  <DownloadButton 
-                    sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EbXsTOAT9XRCtVNs_ZZVHIUBP5avPj6TvfPFwXMVwQFXYw?e=h0HIgq&download=1"
-                    modelName="Perpetuity & Exit Valuation Models"
-                    className="w-full"
-                  />
+                <Button 
+                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EUzTQlqL07xEpyztUGqkXbcB6yuZjafRcMbnRel2PyBtDg?e=1rB65D&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                  variant="model-blue"
+                  className="w-full text-lg"
+                >
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  Online & View
+                </Button>
+                <DownloadButton 
+                  sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EUzTQlqL07xEpyztUGqkXbcB6yuZjafRcMbnRel2PyBtDg?e=1rB65D&download=1"
+                  modelName="Perpetuity & Exit Valuation Models"
+                  className="w-full"
+                />
                 </CardContent>
               </Card>
             </div>

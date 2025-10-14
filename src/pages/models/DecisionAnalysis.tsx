@@ -116,7 +116,7 @@ const DecisionAnalysis = () => {
               </CardHeader>
               <CardContent className="space-y-6 pb-4 pt-6">
                 <Button 
-                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/Ec0xs4OOqUxMg0hLspLD-2IBuoWf79XYTff0ensV5KfEpA?e=WCqUCw&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
+                  onClick={() => openModel('https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EfhwyF4o0F9CmD2zmniWnokBFPH3hp8hkeSOYLKM_8iDZA?e=Et4nBE&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False')}
                   className="w-full text-lg"
                   variant="model-blue"
                 >
@@ -125,7 +125,7 @@ const DecisionAnalysis = () => {
                 </Button>
                 
                 <DownloadButton 
-                  sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EXocIkZrChpKrbEuRIRzN4ABBy9eqNxPQYdvl4f7yuiHDA?e=3ZGPZm&download=1"
+                  sharePointUrl="https://financialdecisionmodels.sharepoint.com/:x:/s/FinancialDecisionModelsSite/EfhwyF4o0F9CmD2zmniWnokBFPH3hp8hkeSOYLKM_8iDZA?e=Et4nBE&download=1"
                   modelName="Decision Model for VC Investments"
                   className="w-full"
                 />
