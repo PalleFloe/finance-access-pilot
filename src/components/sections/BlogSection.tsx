@@ -17,8 +17,8 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: "1",
-    title: "Why I'm building Financial Decision Models",
-    excerpt: "Stop Trying to Predict the Future. Structure Your Decisions Instead",
+    title: "Stop Trying to Predict the Future. Structure Your Decisions Instead",
+    excerpt: "My goal is to help transform complex financial choices into structured insights and better business decisions.",
     content: `**Stop Trying to Predict the Future. Structure Your Decisions Instead**
 
 My goal is to help transform complex financial choices into structured insights and better business decisions.
