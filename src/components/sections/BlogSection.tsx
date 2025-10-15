@@ -78,7 +78,7 @@ The website offers multiple ways to access the models – from free browser-base
 Questions about implementing these approaches in your specific situation? Ideas for models that would help your decisions?
 
 Drop me a line: palle@financialdecisionmodels.com`,
-    date: "2025-09-13",
+    date: "2025-10-13",
     readTime: "5 min read",
     featured: true
   },
