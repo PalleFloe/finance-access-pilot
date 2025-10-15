@@ -18,12 +18,23 @@ const Contact = () => {
             "@context": "https://schema.org",
             "@type": "ContactPage",
             "name": "Contact & Consultation",
-            "description": "Financial consulting and custom model development services",
-            "provider": {
-              "@type": "Person",
-              "name": "Palle Fløe Nielsen",
-              "jobTitle": "Former Divisional CFO",
-              "email": "palle@financialdecisionmodels.com"
+            "description": "Schedule consultation for financial modeling and advisory services",
+            "url": "https://www.financialdecisionmodels.com/contact",
+            "mainEntity": {
+              "@type": "Organization",
+              "name": "Financial Decision Models",
+              "url": "https://www.financialdecisionmodels.com",
+              "founder": {
+                "@type": "Person",
+                "name": "Palle Fløe Nielsen",
+                "jobTitle": "Former Divisional CFO"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "Business Consultation",
+                "email": "palle@financialdecisionmodels.com",
+                "availableLanguage": ["English", "Danish"]
+              }
             }
           })}
         </script>
