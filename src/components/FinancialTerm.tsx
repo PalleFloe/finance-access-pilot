@@ -27,7 +27,7 @@ const FinancialTerm = ({ term, children, showIcon = false }: FinancialTermProps)
     <TooltipProvider>
       <Tooltip delayDuration={200}>
         <TooltipTrigger asChild>
-          <span className="inline-flex items-center gap-1 cursor-help border-b border-dashed border-primary/50 hover:border-primary transition-colors">
+          <span className="inline-flex items-center gap-1 cursor-help border-b border-dashed border-current/50 hover:border-current transition-colors">
             {children || term}
             {showIcon && <HelpCircle className="w-3.5 h-3.5 text-primary/70" />}
           </span>
