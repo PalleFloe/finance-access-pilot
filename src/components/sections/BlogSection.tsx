@@ -18,43 +18,67 @@ const blogPosts: BlogPost[] = [
   {
     id: "1",
     title: "Why I'm building Financial Decision Models",
-    excerpt: "I want to help turn complex financial choices into structured insights and better decisions.",
-    content: `A bit about myself: I'm a finance leader, who is still curious and focused after all those years. Whether the challenges have been creating performance management capabilities, business improvements and turnarounds, M&A integrations and strategic initiatives - always with strong focus on what and how we can make a real difference. With a strong financial toolbox and business acumen, I connect and de-risk value drivers, identify opportunities, find solutions with a laser focus on value creation, and consistently champion a profitable growth mindset across organizations. I'm direct and open-minded, not afraid to challenge status quo constructively. I give people the chance to shine rather than hide them in my shadow.
+    excerpt: "Stop Trying to Predict the Future. Structure Your Decisions Instead",
+    content: `**Stop Trying to Predict the Future. Structure Your Decisions Instead**
 
-In the year up until I stopped at Novonesis before the summer this year, I was considering how to challenge myself outside a large corporate organization. I wanted to build something for two motives; To create valuable for others and to prove to myself that I can.
+My goal is to help transform complex financial choices into structured insights and better business decisions.
 
-I have had so many brilliant and amazing ideas in my dreams, but I often didn't have a clue or experience with the business area or technology domain. So instead, I choose to start with something I'm very good at, have a lot of experience in doing and that I also think is a lot of fun. Lastly, it is also important to help turn complex financial choices into structured insights and better decisions.
+After two decades of wrestling with complex, unintuitive models that often gave precisely the wrong results, I know there's a better way.
 
-Therefore, I'm building Financial Decision Models after two decades of wrestling with complex, unintuitive models that often gave precisely the wrong results, I know there's a better way.
+**So, Why Are We Still Struggling?**
 
-**So why are we struggling with financial decision models that often not even help making decisions?**
+Financial decision models should help us make decisions. But too often, they don't. It shouldn't be rocket science, but there are real challenges:
 
-It shouldn't be rocket science, but there are quite a few challenges.
+Models lack user-friendly and consistent design
 
-The models often lack user-friendly and consistent design, no intuitive logic, have high complexity and are time consuming to use or even understand.
+Intuitive logic is missing
 
-We keep trying to forecast the future with precision based on a set of defined assumptions. Such financial models don't exist. The complexity and lack of logic, then make scenario and sensitivity analysis cumbersome to do and neither really give the insights to make better decisions.
+Complexity makes them time-consuming to use or even understand
 
-We can't only blame the models. Forecast bias and systematic optimism affect most business projections, whether we're being overly optimistic, too risk-averse, or unconsciously aligning with management expectations.
+Scenario and sensitivity analysis becomes cumbersome rather than insightful
 
-**Part of the Solution is: Well structured, intuitive and user-friendly models**
+We keep trying to forecast the future with precision based on defined assumptions. But we can't predict the future – we can only structure our thinking about it.
 
-Financial Decision Models provides a comprehensive toolbox with the same design DNA across. Clear separation between assumptions and results, clear and logical flows that you can follow, built-in sensitivity analysis, and with a 'enough is better than too many data points' mindset.
+**It's Not Just the Models**
 
-Decision takers need credible quality tools, which are intuitive enough to actually be used and understood.
+Forecast bias and systematic optimism affect most business projections. We're overly optimistic, too risk-averse, or unconsciously aligning with management expectations.
 
-**The toolbox is expanding...**
+While models cannot change inherent human biases, they can highlight these biases and provide a more structured approach to decision-making.
 
-Currently, there are six Startup Valuations models, which are mainly for early-stage business valuation and investment decisions. There are also six Financial Fundamentals models, which are academic and general models mostly for educational and inspirational purposes.
+**The Solution: Well-Structured, Intuitive Tools**
 
-**How does it work?**
+Financial Decision Models provides a comprehensive toolbox with consistent design DNA:
 
-Via the website, you are offered multiple ways to access the financial decision models. That is from self-service and free access for all models in browser embedded Excel to paid access and download of models
+Clear separation between assumptions and results
 
-Explore more at www.financialdecisionmodels.com
+Logical flows you can follow
 
-Questions about implementing these approaches in your specific situation? Ideas for models that would help your decisions? Drop me a line at palle@financialdecisionmodels.com`,
-    date: "2025-08-31",
+Built-in sensitivity analysis
+
+"Enough is better than too many data points" mindset
+
+Decision makers need credible tools that are intuitive, facilitating understanding, discussion, and agreement on assumptions and estimates to make good decisions.
+
+**The Toolbox is Expanding**
+
+Currently available:
+
+Six Startup Valuation models for early-stage business valuation and investment decisions
+
+Six Financial Fundamentals models for education and inspiration
+
+Four Investment Analysis models for Investment Evaluation and Decision-Making
+
+More models are coming based on what users need most.
+
+**How It Works**
+
+The website offers multiple ways to access the models – from free browser-based viewing to downloadable versions of the models.
+
+Questions about implementing these approaches in your specific situation? Ideas for models that would help your decisions?
+
+Drop me a line: palle@financialdecisionmodels.com`,
+    date: "2025-09-13",
     readTime: "5 min read",
     featured: true
   },
