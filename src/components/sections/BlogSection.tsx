@@ -19,9 +19,7 @@ const blogPosts: BlogPost[] = [
     id: "1",
     title: "Stop Trying to Predict the Future. Structure Your Decisions Instead",
     excerpt: "My goal is to help transform complex financial choices into structured insights and better business decisions.",
-    content: `**Stop Trying to Predict the Future. Structure Your Decisions Instead**
-
-My goal is to help transform complex financial choices into structured insights and better business decisions.
+    content: `My goal is to help transform complex financial choices into structured insights and better business decisions.
 
 After two decades of wrestling with complex, unintuitive models that often gave precisely the wrong results, I know there's a better way.
 
