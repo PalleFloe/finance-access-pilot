@@ -19,9 +19,7 @@ const blogPosts: BlogPost[] = [
     id: "1",
     title: "Stop Trying to Predict the Future. Structure Your Decisions Instead",
     excerpt: "My goal is to help transform complex financial choices into structured insights and better business decisions.",
-    content: `My goal is to help transform complex financial choices into structured insights and better business decisions.
-
-After two decades of wrestling with complex, unintuitive models that often gave precisely the wrong results, I know there's a better way.
+    content: `After two decades of wrestling with complex, unintuitive models that often gave precisely the wrong results, I know there's a better way.
 
 **So, Why Are We Still Struggling?**
 
@@ -82,6 +80,58 @@ Drop me a line: palle@financialdecisionmodels.com`,
   },
   {
     id: "2",
+    title: "I left Novonesis 169 days ago. Since then, I founded Financial Decision Models",
+    excerpt: "After a super fun goodbye party at Absalon and an emotional farewell reception, I knew exactly what I wanted to do.",
+    content: `After a super fun goodbye party at Absalon and an emotional farewell reception, I knew exactly what I wanted to do.
+
+I really loved working at Novozymes and also enjoyed my time at Novonesis. In a good corporate life, you get structure, responsibilities, support, challenges, development, intellectual stimulation, amazing colleagues, social life, safety, and a monthly salary.
+
+I miss some of that. But I dreamed about something else.
+
+I sometimes defined myself as a "creative finance guy" - it almost sounds criminal. Over the years, I've had (according to myself😄) so many amazing business ideas. Some of them were actually used and created value in my corporate roles.
+
+For the first time ever, I wanted to explore opportunities outside the corporate environment - a place where I could apply my own ideas and competencies.
+
+The 'better' my ideas were, the further away they got from my fields of expertise. So instead, I decided to focus on an area I know well - one where I understand the needs and can apply my (hopefully) valuable competencies.
+
+For most of my work life, I've worked in Business Finance, where a core mission is to drive value creation by supporting, enabling, and partnering with decision-makers.
+
+Over 20+ years, I've noticed that decisions mainly get made in four ways:
+
+- Most day-to-day decisions are based on gut feeling and experience
+- Many are almost obvious from factual reporting, BI, or data
+- Some are just given by external factors
+- And then there are the infrequent strategic decisions or major investments, where gut feelings fall short, facts can't predict the future, and structured analysis and decision-making become critical
+
+That fourth category. That's where I saw a real need and where I believe I can add value. That is why I founded Financial Decision Models with a mission to "Help businesses transform complex financial choices into structured insights and better decisions."
+
+**So what have I done these last 169 days?**
+
+- Day 1, I started with my laptop, Claude Anthropic, and a mission
+- Worked more than ever and I love it
+- Found an amazing workplace in wonderful Copenhagen at BloxHub
+- Got nerdy, focused, and learned new skills
+- Created, changed, trashed ideas, and still stayed on course
+- Had a stroke and got knocked out. Came back 110%
+- Became more healthy and fitter than ever😊
+- Received great feedback - listened, adjusted, parked or ignored it
+
+Now I'm getting ready to launch Financial Decision Models.
+
+It's not perfect. It's not finished. And hopefully - it never will be.
+
+👉 If you're curious, take a look: https://www.financialdecisionmodels.com
+
+💬 I'd love your input at feedback@financialdecisionmodels.com
+
+This post is intended as a personal reflection on the past 169 days rather than a formal launch announcement. There will be more posts about Financial Decision Models specifically, so stay tuned.`,
+    date: "2025-03-25",
+    readTime: "3 min read",
+    image: "/lovable-uploads/169_days_post.jpeg",
+    featured: false
+  },
+  {
+    id: "3",
     title: "Moved to BloxHub",
     excerpt: "A cool place! And always close to a swim in the harbour.",
     content: `From 1st of September, I'm moving in at BloxHub down by the harbour in Copenhagen. Unofficially, I'm already moved in. Awesome atmosphere, free ice-cold bubble water and a splendid view from my corner seat.
