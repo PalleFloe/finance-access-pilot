@@ -195,7 +195,7 @@ const BlogSection = () => {
                       Featured
                     </Badge>
                   )}
-                  <CardTitle className="text-2xl font-bold text-brand-blue leading-tight group-hover:text-brand-green transition-colors">
+                  <CardTitle className="text-2xl font-bold text-brand-blue leading-tight">
                     {post.title}
                   </CardTitle>
                 </CardHeader>
