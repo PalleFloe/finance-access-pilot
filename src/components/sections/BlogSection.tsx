@@ -125,7 +125,7 @@ It's not perfect. It's not finished. And hopefully - it never will be.
 💬 I'd love your input at feedback@financialdecisionmodels.com
 
 This post is intended as a personal reflection on the past 169 days rather than a formal launch announcement. There will be more posts about Financial Decision Models specifically, so stay tuned.`,
-    date: "2025-03-25",
+    date: "2025-10-16",
     readTime: "3 min read",
     image: "/lovable-uploads/169_days_post.jpeg",
     featured: false
