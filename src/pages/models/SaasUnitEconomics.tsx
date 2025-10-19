@@ -113,7 +113,7 @@ const SaasUnitEconomics = () => {
 
       <div className="container mx-auto mb-12">
         <div className="flex flex-col lg:flex-row gap-8">
-          <div className="flex-shrink-0 max-w-md">
+          <div className="w-full max-w-md">
             <Card className="shadow-lg border-slate-200 lg:h-[240px]">
               <CardHeader className="pb-2">
                 <CardTitle>SaaS Unit Economics Model</CardTitle>
@@ -137,11 +137,11 @@ const SaasUnitEconomics = () => {
             </Card>
           </div>
           
-          <div className="max-w-md">
+          <div className="w-full max-w-md">
             <ModelInfoPanel />
           </div>
 
-          <div className="flex-shrink-0 max-w-md">
+          <div className="w-full max-w-md">
             <Card className="shadow-lg border-slate-200 lg:h-[240px]">
               <CardHeader className="pb-2">
                 <CardTitle className="text-[16px] font-bold text-brand-blue" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
