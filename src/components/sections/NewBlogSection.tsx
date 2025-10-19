@@ -27,7 +27,7 @@ const blogPosts = [
 
 const NewBlogSection = () => {
   return (
-    <section className="py-12 md:py-16">
+    <section className="pt-6 md:pt-8 pb-12 md:pb-16">
       <div className="container mx-auto px-6">
         <div className="bg-white p-6 rounded-lg border border-slate-100 shadow-sm">
           <div className="max-w-7xl mx-auto">
