@@ -135,6 +135,10 @@ const DecisionAnalysis = () => {
           </div>
           
           <div className="max-w-md">
+            <ModelInfoPanel />
+          </div>
+          
+          <div className="max-w-md">
             <Card className="shadow-lg border-slate-200 lg:h-[240px]">
               <CardHeader className="pb-0">
                 <CardTitle className="text-[16px] font-bold text-brand-blue" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
@@ -151,10 +155,6 @@ const DecisionAnalysis = () => {
                 </div>
               </CardContent>
             </Card>
-          </div>
-          
-          <div className="max-w-md">
-            <ModelInfoPanel />
           </div>
         </div>
       </div>
