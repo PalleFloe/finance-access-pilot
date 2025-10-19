@@ -146,7 +146,7 @@ const DecisionAnalysis = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="pt-1">
-                <div className="w-[360px] h-[180px] overflow-hidden rounded-md">
+                <div className="w-full max-w-[360px] h-[180px] overflow-hidden rounded-md">
                   <img 
                     src={decisionVcPreview} 
                     alt="Decision Model for VC Investments Preview" 
