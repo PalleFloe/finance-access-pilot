@@ -145,7 +145,7 @@ const StableGrowthFiniteLifeDcf = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="pb-2 pt-1">
-                  <div className="w-[370px] h-[185px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
+                  <div className="w-[360px] h-[180px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
                     <img 
                       src={stableGrowthFinitePreview} 
                       alt="Stable Growth Finite-Life DCF Model Preview" 
