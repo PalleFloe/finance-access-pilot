@@ -1,34 +1,54 @@
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  
   return (
-    <footer className="border-t bg-background">
-      <div className="container mx-auto px-6 py-8">
-        <div className="flex flex-col items-center space-y-3">
-          
-          {/* Cookie notice */}
-          <p className="text-xs text-muted-foreground text-center">
-            We use one functional cookie to remember your sidebar preference. No analytics, no ads.{" "}
-            <Link to="/cookies" className="underline hover:text-foreground">Cookie Policy</Link>
+    <footer className="border-t bg-background" role="contentinfo">
+      <div className="container mx-auto px-3 py-3">
+        <div className="flex flex-col items-center gap-1">
+          {/* Line 1 - Identity, Contact, LinkedIn */}
+          <p className="text-sm text-muted-foreground text-center leading-relaxed">
+            © {currentYear} Financial Decision Modelling &amp; Consulting — CVR 34912017 — Copenhagen, Denmark ·{" "}
+            <a 
+              href="mailto:palle@financialdecisionmodels.com" 
+              className="underline hover:text-foreground focus:outline-2 focus:outline-offset-2 focus:outline-current"
+            >
+              palle@financialdecisionmodels.com
+            </a> ·{" "}
+            <a 
+              href="https://www.linkedin.com/in/palle-fløe-nielsen/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="underline hover:text-foreground focus:outline-2 focus:outline-offset-2 focus:outline-current"
+            >
+              LinkedIn: Palle Fløe Nielsen
+            </a>
           </p>
           
-          {/* Line 1 - Identity */}
-          <p className="text-xs text-muted-foreground text-center">
-            © 2025 Financial Decision Modelling & Consulting — CVR 34912017 — Copenhagen, Denmark
-          </p>
-          
-          {/* Line 2 - Contact & social */}
-          <p className="text-xs text-muted-foreground text-center">
-            Contact: <a href="mailto:palle@financialdecisionmodels.com" className="underline hover:text-foreground">palle@financialdecisionmodels.com</a> — LinkedIn: <a href="https://www.linkedin.com/in/palle-fløe-nielsen/" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">Palle Fløe Nielsen</a>
-          </p>
-          
-          {/* Line 3 - Policies */}
-          <p className="text-xs text-muted-foreground/70 text-center">
-            <Link to="/privacy" className="hover:text-foreground">Privacy Policy</Link>
+          {/* Line 2 - Policies */}
+          <p className="text-sm text-muted-foreground text-center">
+            <Link 
+              to="/privacy" 
+              className="underline hover:text-foreground focus:outline-2 focus:outline-offset-2 focus:outline-current"
+            >
+              Privacy Policy
+            </Link>
             {" · "}
-            <Link to="/terms" className="hover:text-foreground">Terms of Service</Link>
+            <Link 
+              to="/terms" 
+              className="underline hover:text-foreground focus:outline-2 focus:outline-offset-2 focus:outline-current"
+            >
+              Terms of Service
+            </Link>
             {" · "}
-            <Link to="/cookies" className="hover:text-foreground">Cookie Policy</Link>
+            <Link 
+              to="/cookies" 
+              className="underline hover:text-foreground focus:outline-2 focus:outline-offset-2 focus:outline-current"
+              title="We use one functional cookie only"
+            >
+              Cookie Policy
+            </Link>
           </p>
         </div>
       </div>
