@@ -141,19 +141,19 @@ const SaasUnitEconomics = () => {
             <ModelInfoPanel />
           </div>
 
-          <div className="w-full max-w-md">
-            <Card className="shadow-lg border-slate-200 lg:h-[240px]">
+          <div className="w-full max-w-md">
+            <Card className="shadow-lg border-slate-200 lg:h-[240px] overflow-hidden">
               <CardHeader className="pb-2">
                 <CardTitle className="text-[16px] font-bold text-brand-blue" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
                   Preview of Model
                 </CardTitle>
               </CardHeader>
               <CardContent className="pb-4 pt-0">
-                <div className="w-full">
+                <div className="w-full h-[180px] lg:h-[168px] overflow-hidden rounded-md flex items-center justify-center">
                   <img 
                     src={saasPreview} 
                     alt="SaaS Unit Economics Model Preview" 
-                    className="rounded-md object-contain w-full h-auto"
+                    className="max-w-full max-h-full object-contain"
                   />
                 </div>
               </CardContent>
