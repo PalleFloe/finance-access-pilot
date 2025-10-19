@@ -149,7 +149,7 @@ const EarningGrowthEstimator = () => {
                     <img 
                       src={earningGrowthPreview} 
                       alt="Simple Earning Growth Estimator Preview" 
-                      className="max-w-full max-h-full object-contain"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 </CardContent>

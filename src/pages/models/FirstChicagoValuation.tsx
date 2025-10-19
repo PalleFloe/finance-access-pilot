@@ -151,7 +151,7 @@ const FirstChicagoValuation = () => {
                   <img 
                     src={firstChicagoPreview} 
                     alt="First Chicago Valuation Model Preview" 
-                    className="max-w-full max-h-full object-contain"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </CardContent>

@@ -149,7 +149,7 @@ const PerpetuityExitValuation = () => {
                     <img 
                       src={perpetuityExitPreview} 
                       alt="Perpetuity & Exit Valuation Models Preview" 
-                      className="max-w-full max-h-full object-contain"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 </CardContent>

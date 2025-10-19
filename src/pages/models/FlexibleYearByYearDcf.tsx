@@ -149,7 +149,7 @@ const FlexibleYearByYearDcf = () => {
                     <img 
                       src={flexibleDcfPreview} 
                       alt="Flexible Year by Year DCF Model Preview" 
-                      className="max-w-full max-h-full object-contain"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 </CardContent>

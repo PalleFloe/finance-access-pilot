@@ -150,7 +150,7 @@ const CostOfCapitalCalculator = () => {
                     <img 
                       src={costOfCapitalPreview} 
                       alt="Simple Cost of Capital Calculator Preview" 
-                      className="max-w-full max-h-full object-contain"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 </CardContent>

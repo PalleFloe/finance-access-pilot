@@ -148,7 +148,7 @@ const ThreeStageDcf = () => {
                     <img 
                       src={threeStageDcfPreview} 
                       alt="Three Stage DCF Model Preview" 
-                      className="max-w-full max-h-full object-contain"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 </CardContent>

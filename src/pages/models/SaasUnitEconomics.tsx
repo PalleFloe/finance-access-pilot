@@ -153,7 +153,7 @@ const SaasUnitEconomics = () => {
                   <img 
                     src={saasPreview} 
                     alt="SaaS Unit Economics Model Preview" 
-                    className="max-w-full max-h-full object-contain"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </CardContent>

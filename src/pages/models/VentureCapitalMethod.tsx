@@ -149,7 +149,7 @@ const VentureCapitalMethod = () => {
                   <img 
                     src={ventureCapitalPreview} 
                     alt="Venture Capital Valuation Model Preview" 
-                    className="max-w-full max-h-full object-contain"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </CardContent>
