@@ -1,6 +1,6 @@
 const NewAboutSection = () => {
   return (
-    <section className="py-12 md:py-16 bg-gray-50">
+    <section className="pt-6 md:pt-8 pb-12 md:pb-16 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto space-y-6">
           <h2 className="font-garamond text-2xl md:text-3xl font-bold text-brand-blue mb-6">
