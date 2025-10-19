@@ -1,8 +1,9 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
-import HeroSection from "@/components/sections/HeroSection";
-import MainSections from "@/components/sections/MainSections";
-import HomeContentSections from "@/components/sections/HomeContentSections";
+import NewHeroSection from "@/components/sections/NewHeroSection";
+import NewOfferingsSection from "@/components/sections/NewOfferingsSection";
+import NewAboutSection from "@/components/sections/NewAboutSection";
+import NewBlogSection from "@/components/sections/NewBlogSection";
 import Footer from "@/components/sections/Footer";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
 
@@ -21,9 +22,10 @@ const IndexNew = () => {
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       <Header />
-      <HeroSection />
-      <MainSections />
-      <HomeContentSections />
+      <NewHeroSection />
+      <NewOfferingsSection />
+      <NewAboutSection />
+      <NewBlogSection />
       <Footer />
     </div>
   );
