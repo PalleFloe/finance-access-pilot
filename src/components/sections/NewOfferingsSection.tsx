@@ -27,7 +27,7 @@ const NewOfferingsSection = () => {
             <div className="space-y-4">
               <div>
                 <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-700 leading-relaxed">
-                  A free and comprehensive toolbox of structured and intuitive Excel models with clear guidance on hat, <span className="underline">Why</span>, Who and How to use
+                  A free and comprehensive toolbox of structured and intuitive Excel models with clear guidance on hat, Why, Who and How to use
                 </p>
               </div>
               <div>
