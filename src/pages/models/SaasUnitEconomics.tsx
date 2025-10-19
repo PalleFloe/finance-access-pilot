@@ -143,12 +143,12 @@ const SaasUnitEconomics = () => {
 
           <div className="flex-shrink-0 w-full max-w-md">
             <Card className="shadow-lg border-slate-200 lg:h-[240px]">
-              <CardHeader className="pb-2">
+              <CardHeader className="pb-1">
                 <CardTitle className="text-[16px] font-bold text-brand-blue" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
                   Preview of Model
                 </CardTitle>
               </CardHeader>
-              <CardContent className="pb-4 pt-0">
+              <CardContent className="pb-2 pt-0">
                 <div className="w-[380px] h-[190px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
                   <img 
                     src={saasPreview} 
