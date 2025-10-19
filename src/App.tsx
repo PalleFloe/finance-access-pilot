@@ -15,6 +15,9 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import ThankYou from "./pages/ThankYou";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+import Cookies from "./pages/Cookies";
 import StartupValuations from "./pages/toolbox/StartupValuations";
 import FinancialFundamentals from "./pages/toolbox/FinancialFundamentals";
 import InvestmentAnalysis from "./pages/toolbox/InvestmentAnalysis";
@@ -62,6 +65,9 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/cookies" element={<Cookies />} />
           <Route path="/toolbox/startup-valuations" element={<StartupValuations />} />
           <Route path="/toolbox/financial-fundamentals" element={<FinancialFundamentals />} />
           <Route path="/toolbox/investment-analysis" element={<InvestmentAnalysis />} />
