@@ -8,10 +8,12 @@ import { ArrowLeft, Clock, ExternalLink, ChevronDown } from "lucide-react";
 import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { useEffect, useState } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import { TooltipProvider } from "@/components/ui/tooltip";
 import FinancialTerm from "@/components/FinancialTerm";
+import saasPreview from "@/assets/saas-preview.png";
 
 const SaasUnitEconomics = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -137,6 +139,25 @@ const SaasUnitEconomics = () => {
           
           <div className="max-w-md">
             <ModelInfoPanel />
+          </div>
+
+          <div className="max-w-md">
+            <Card className="shadow-lg border-slate-200 lg:h-[240px]">
+              <CardHeader className="pb-2">
+                <CardTitle className="text-[16px] font-bold text-brand-blue" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
+                  Preview of Model
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="pb-4">
+                <AspectRatio ratio={16 / 9}>
+                  <img 
+                    src={saasPreview} 
+                    alt="SaaS Unit Economics Model Preview" 
+                    className="rounded-md object-cover w-full h-full"
+                  />
+                </AspectRatio>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
