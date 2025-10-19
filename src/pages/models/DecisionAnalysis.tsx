@@ -10,6 +10,7 @@ import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
+import decisionVcPreview from "@/assets/decision-vc-preview.png";
 
 const DecisionAnalysis = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -129,6 +130,25 @@ const DecisionAnalysis = () => {
                   modelName="Decision Model for VC Investments"
                   className="w-full"
                 />
+              </CardContent>
+            </Card>
+          </div>
+          
+          <div className="max-w-md">
+            <Card className="shadow-lg border-slate-200 lg:h-[240px]">
+              <CardHeader className="pb-0">
+                <CardTitle className="text-[16px] font-bold text-brand-blue" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
+                  Preview of Model
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="pt-1">
+                <div className="w-[370px] h-[185px] overflow-hidden rounded-md">
+                  <img 
+                    src={decisionVcPreview} 
+                    alt="Decision Model for VC Investments Preview" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </CardContent>
             </Card>
           </div>
