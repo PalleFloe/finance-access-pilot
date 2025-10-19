@@ -11,6 +11,7 @@ import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { useAnalytics, usePageVisitTracking } from '@/hooks/useAnalytics';
 import FinancialTerm from "@/components/FinancialTerm";
+import threeStageDcfPreview from "@/assets/three-stage-dcf-preview.png";
 
 const ThreeStageDcf = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -133,6 +134,23 @@ const ThreeStageDcf = () => {
             
             <div className="max-w-md">
               <ModelInfoPanel />
+            </div>
+
+            <div className="max-w-md">
+              <Card className="shadow-lg border-slate-200">
+                <CardHeader className="pb-0">
+                  <CardTitle>Preview of Model</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-1">
+                  <div className="w-[370px] h-[185px] overflow-hidden">
+                    <img 
+                      src={threeStageDcfPreview} 
+                      alt="Three Stage DCF Model Preview" 
+                      className="w-full h-full object-cover rounded-lg border border-slate-200"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
 

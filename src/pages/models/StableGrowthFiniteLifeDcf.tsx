@@ -11,6 +11,7 @@ import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import FinancialTerm from "@/components/FinancialTerm";
+import stableGrowthFinitePreview from "@/assets/stable-growth-finite-preview.png";
 
 const StableGrowthFiniteLifeDcf = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -134,6 +135,23 @@ const StableGrowthFiniteLifeDcf = () => {
             
             <div className="max-w-md">
               <ModelInfoPanel />
+            </div>
+
+            <div className="max-w-md">
+              <Card className="shadow-lg border-slate-200">
+                <CardHeader className="pb-0">
+                  <CardTitle>Preview of Model</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-1">
+                  <div className="w-[370px] h-[185px] overflow-hidden">
+                    <img 
+                      src={stableGrowthFinitePreview} 
+                      alt="Stable Growth Finite-Life DCF Model Preview" 
+                      className="w-full h-full object-cover rounded-lg border border-slate-200"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
 
