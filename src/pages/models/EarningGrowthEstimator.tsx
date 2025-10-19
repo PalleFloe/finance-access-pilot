@@ -9,6 +9,7 @@ import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
+import earningGrowthPreview from "@/assets/earning-growth-preview.png";
 
 const EarningGrowthEstimator = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -107,7 +108,7 @@ const EarningGrowthEstimator = () => {
           </h2>
 
           <div className="flex flex-col lg:flex-row gap-8 mb-8">
-            <div className="flex-shrink-0 max-w-md">
+            <div className="flex-shrink-0 w-full max-w-md">
               <Card className="shadow-lg border-slate-200 lg:h-[240px]">
                 <CardHeader className="pb-2">
                   <CardTitle>
@@ -132,8 +133,27 @@ const EarningGrowthEstimator = () => {
               </Card>
             </div>
             
-            <div className="max-w-md">
+            <div className="flex-shrink-0 w-full max-w-md">
               <ModelInfoPanel />
+            </div>
+
+            <div className="flex-shrink-0 w-full max-w-md">
+              <Card className="shadow-lg border-slate-200 lg:h-[240px]">
+                <CardHeader className="pb-0">
+                  <CardTitle className="text-[16px] font-bold text-brand-blue" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
+                    Preview of Model
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="pb-2 pt-1">
+                  <div className="w-[370px] h-[185px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
+                    <img 
+                      src={earningGrowthPreview} 
+                      alt="Simple Earning Growth Estimator Preview" 
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
 
