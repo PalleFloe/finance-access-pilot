@@ -17,8 +17,8 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: "2",
-    title: "I left Novonesis 169 days ago. Since then, I founded Financial Decision Models",
-    excerpt: "After a super fun goodbye party at Absalon and an emotional farewell reception, I knew exactly what I wanted to do.",
+    title: "I left Novonesis 169 days ago.",
+    excerpt: "Since then, I founded Financial Decision Modelling & Consulting",
     content: `After a super fun goodbye party at Absalon and an emotional farewell reception, I knew exactly what I wanted to do.
 
 I really loved working at Novozymes and also enjoyed my time at Novonesis. In a good corporate life, you get structure, responsibilities, support, challenges, development, intellectual stimulation, amazing colleagues, social life, safety, and a monthly salary.

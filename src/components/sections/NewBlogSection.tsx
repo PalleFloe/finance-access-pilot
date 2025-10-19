@@ -4,9 +4,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const blogPosts = [
   {
     id: 1,
-    title: "I left Novonesis 169 days ago - Here's what I learned",
+    title: "I left Novonesis 169 days ago.",
     date: "October 16, 2025",
-    excerpt: "Reflections on starting Financial Decision Models after two decades in corporate finance.",
+    excerpt: "Since then, I founded Financial Decision Modelling & Consulting",
     slug: "/blog"
   },
   {
