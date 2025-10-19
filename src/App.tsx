@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/hooks/useAuth";
 import Index from "./pages/Index";
+import IndexNew from "./pages/IndexNew";
 import Auth from "./pages/Auth";
 import Toolbox from "./pages/Toolbox";
 import About from "./pages/About";
@@ -53,6 +54,7 @@ const App = () => (
       <AuthProvider>
         <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/home-new" element={<IndexNew />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/toolbox" element={<Toolbox />} />
           <Route path="/about" element={<About />} />
