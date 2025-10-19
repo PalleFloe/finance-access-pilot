@@ -149,11 +149,11 @@ const SaasUnitEconomics = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="pb-4 pt-0">
-                <div className="w-full overflow-hidden rounded-md">
+                <div className="w-full h-[168px] overflow-hidden rounded-md flex items-center justify-center">
                   <img 
                     src={saasPreview} 
                     alt="SaaS Unit Economics Model Preview" 
-                    className="w-full h-auto object-contain"
+                    className="max-w-full max-h-full object-contain"
                   />
                 </div>
               </CardContent>
