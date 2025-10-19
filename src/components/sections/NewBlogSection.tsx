@@ -27,9 +27,10 @@ const blogPosts = [
 
 const NewBlogSection = () => {
   return (
-    <section className="py-12 md:py-16 bg-white">
+    <section className="py-12 md:py-16">
       <div className="container mx-auto px-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="bg-white p-6 rounded-lg border border-slate-100 shadow-sm">
+          <div className="max-w-7xl mx-auto">
           <h2 className="font-garamond text-2xl md:text-3xl font-bold text-brand-blue mb-8">
             Latest Blogs:
           </h2>
@@ -54,6 +55,7 @@ const NewBlogSection = () => {
                 </Card>
               </Link>
             ))}
+          </div>
           </div>
         </div>
       </div>

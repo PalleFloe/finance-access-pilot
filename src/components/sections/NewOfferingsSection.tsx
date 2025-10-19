@@ -4,9 +4,10 @@ import profileImage from "@/assets/profile-main.jpeg";
 
 const NewOfferingsSection = () => {
   return (
-    <section className="py-8 md:py-12 bg-white">
+    <section className="py-8 md:py-12">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-1 items-start max-w-7xl mx-auto">
+        <div className="bg-white p-6 rounded-lg border border-slate-100 shadow-sm">
+          <div className="grid md:grid-cols-2 gap-1 items-start max-w-7xl mx-auto">
           {/* Left Column - Profile Photo */}
           <div className="flex justify-start">
             <img 
@@ -52,6 +53,7 @@ const NewOfferingsSection = () => {
                   </Button>
                 </Link>
               </div>
+            </div>
             </div>
           </div>
         </div>
