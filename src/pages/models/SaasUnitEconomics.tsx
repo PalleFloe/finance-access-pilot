@@ -148,14 +148,14 @@ const SaasUnitEconomics = () => {
                   Preview of Model
                 </CardTitle>
               </CardHeader>
-              <CardContent className="pb-4">
-                <AspectRatio ratio={16 / 9}>
+              <CardContent className="pb-4 pt-0">
+                <div className="w-full">
                   <img 
                     src={saasPreview} 
                     alt="SaaS Unit Economics Model Preview" 
-                    className="rounded-md object-cover w-full h-full"
+                    className="rounded-md object-contain w-full h-auto"
                   />
-                </AspectRatio>
+                </div>
               </CardContent>
             </Card>
           </div>
