@@ -41,7 +41,7 @@ const NewOfferingsSection = () => {
             </div>
 
             {/* Consulting Offering */}
-            <div className="space-y-4 mt-12">
+            <div className="space-y-4 mt-16">
               <div className="flex items-start gap-3">
                 <Check className="w-6 h-6 text-brand-blue flex-shrink-0 mt-1" />
                 <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-700 leading-relaxed">
