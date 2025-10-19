@@ -41,7 +41,7 @@ const NewOfferingsSection = () => {
             </div>
 
             {/* Consulting Offering */}
-            <div className="space-y-4 mt-24">
+            <div className="space-y-4 mt-32">
               <div>
                 <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-700 leading-relaxed">
                   Customization & Consulting Services for tailored solutions and expert guidance for your specific needs
