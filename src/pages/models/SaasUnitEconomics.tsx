@@ -137,7 +137,7 @@ const SaasUnitEconomics = () => {
             </Card>
           </div>
           
-          <div className="w-full max-w-md lg:-ml-12">
+          <div className="w-full max-w-md">
             <ModelInfoPanel />
           </div>
 
