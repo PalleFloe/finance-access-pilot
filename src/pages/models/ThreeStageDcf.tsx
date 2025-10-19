@@ -106,7 +106,7 @@ const ThreeStageDcf = () => {
 
           {/* Model Card */}
           <div className="flex flex-col lg:flex-row gap-8 max-w-7xl mx-auto mb-8">
-            <div className="flex-shrink-0 max-w-md">
+            <div className="flex-shrink-0 w-full max-w-md">
               <Card className="shadow-lg border-slate-200 lg:h-[240px]">
                 <CardHeader className="pb-2">
                   <CardTitle>
@@ -132,21 +132,23 @@ const ThreeStageDcf = () => {
               </Card>
             </div>
             
-            <div className="max-w-md">
+            <div className="flex-shrink-0 w-full max-w-md">
               <ModelInfoPanel />
             </div>
 
-            <div className="max-w-md">
-              <Card className="shadow-lg border-slate-200">
+            <div className="flex-shrink-0 w-full max-w-md">
+              <Card className="shadow-lg border-slate-200 lg:h-[240px]">
                 <CardHeader className="pb-0">
-                  <CardTitle>Preview of Model</CardTitle>
+                  <CardTitle className="text-[16px] font-bold text-brand-blue" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
+                    Preview of Model
+                  </CardTitle>
                 </CardHeader>
-                <CardContent className="pt-1">
-                  <div className="w-[370px] h-[185px] overflow-hidden">
+                <CardContent className="pb-2 pt-1">
+                  <div className="w-[370px] h-[185px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
                     <img 
                       src={threeStageDcfPreview} 
                       alt="Three Stage DCF Model Preview" 
-                      className="w-full h-full object-cover rounded-lg border border-slate-200"
+                      className="max-w-full max-h-full object-contain"
                     />
                   </div>
                 </CardContent>
