@@ -7,7 +7,7 @@ const NewOfferingsSection = () => {
   return (
     <section className="py-8 md:py-12 bg-white">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-4 items-start max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-1 items-start max-w-7xl mx-auto">
           {/* Left Column - Profile Photo */}
           <div className="flex justify-start">
             <img 
