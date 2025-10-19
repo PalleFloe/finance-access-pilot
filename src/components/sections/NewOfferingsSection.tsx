@@ -31,10 +31,11 @@ const NewOfferingsSection = () => {
                 </p>
               </div>
               <div>
-                <Link to="/toolbox">
-                  <Button className="w-full md:w-auto px-8 py-6 text-lg bg-brand-blue hover:bg-brand-blue/90">
-                    Explore Free Models
-                  </Button>
+                <Link 
+                  to="/toolbox" 
+                  className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-brand-blue hover:underline inline-flex items-center gap-2"
+                >
+                  Explore Free Models ►
                 </Link>
               </div>
             </div>
@@ -47,10 +48,11 @@ const NewOfferingsSection = () => {
                 </p>
               </div>
               <div>
-                <Link to="/contact">
-                  <Button className="w-full md:w-auto px-8 py-6 text-lg bg-brand-blue hover:bg-brand-blue/90">
-                    Request Consultation
-                  </Button>
+                <Link 
+                  to="/contact" 
+                  className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-brand-blue hover:underline inline-flex items-center gap-2"
+                >
+                  Request Consultation ►
                 </Link>
               </div>
             </div>
