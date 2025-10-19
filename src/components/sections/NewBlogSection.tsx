@@ -29,7 +29,7 @@ const NewBlogSection = () => {
   return (
     <section className="py-12 md:py-16 bg-white">
       <div className="container mx-auto px-6">
-        <div className="max-w-7xl mx-auto md:pl-[calc(50%-8rem)] lg:pl-[calc(50%-16rem)]">
+        <div className="max-w-7xl mx-auto">
           <h2 className="font-garamond text-2xl md:text-3xl font-bold text-brand-blue mb-8">
             Latest Blogs:
           </h2>
