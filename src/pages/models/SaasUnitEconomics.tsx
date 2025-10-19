@@ -141,7 +141,7 @@ const SaasUnitEconomics = () => {
             <ModelInfoPanel />
           </div>
 
-          <div className="flex-shrink-0 w-full max-w-md">
+          <div className="flex-shrink-0 w-full max-w-md">
             <Card className="shadow-lg border-slate-200 lg:h-[240px]">
               <CardHeader className="pb-2">
                 <CardTitle className="text-[16px] font-bold text-brand-blue" style={{ fontFamily: "'Garamond', 'Times New Roman', serif" }}>
