@@ -27,7 +27,7 @@ const NewOfferingsSection = () => {
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <Check className="w-6 h-6 text-brand-blue flex-shrink-0 mt-1" />
-                <p className="text-lg text-slate-700 leading-relaxed">
+                <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-700 leading-relaxed">
                   A Free and Comprehensive Toolbox of Structured and intuitive Excel models with clear guidance on What, <span className="underline">Why</span>, Who and How to use
                 </p>
               </div>
@@ -42,7 +42,7 @@ const NewOfferingsSection = () => {
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <Check className="w-6 h-6 text-brand-blue flex-shrink-0 mt-1" />
-                <p className="text-lg text-slate-700 leading-relaxed">
+                <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-700 leading-relaxed">
                   Customization & Consulting Services for tailored solutions and expert guidance for your specific needs
                 </p>
               </div>

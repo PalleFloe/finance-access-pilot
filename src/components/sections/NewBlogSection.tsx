@@ -19,7 +19,7 @@ const blogPosts = [
   {
     id: 3,
     title: "Moved to BloxHub",
-    date: "July 1, 2024",
+    date: "September 1, 2025",
     excerpt: "Joining Copenhagen's innovation hub for sustainable urban development and circular economy.",
     slug: "/blog"
   }
