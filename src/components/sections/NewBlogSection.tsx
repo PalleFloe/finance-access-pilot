@@ -3,6 +3,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const blogPosts = [
   {
+    id: 4,
+    title: "If play is intelligence, then Excel might be the 2nd best toy ever made",
+    date: "October 20, 2025",
+    excerpt: "Rumours of Excel's death have been greatly exaggerated for many years. Recently, it turned 40.",
+    slug: "/blog"
+  },
+  {
     id: 1,
     title: "I left Novonesis 169 days ago.",
     date: "October 16, 2025",
