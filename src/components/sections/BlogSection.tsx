@@ -305,12 +305,19 @@ const BlogSection = () => {
                 } ${isExpanded ? 'md:col-span-2' : ''}`}
               >
                 {post.image && (
-                  <div className="aspect-video overflow-hidden rounded-t-lg">
-                    <img 
-                      src={post.image} 
-                      alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
+                  <div>
+                    <div className="aspect-video overflow-hidden rounded-t-lg">
+                      <img 
+                        src={post.image} 
+                        alt={post.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    {post.id === "4" && (
+                      <p className="text-xs text-slate-500 mt-2 px-6">
+                        Photos used with permission. ©2025 The LEGO Group.
+                      </p>
+                    )}
                   </div>
                 )}
                 <CardHeader className={post.image ? "pb-3" : "pb-3 pt-8"}>
