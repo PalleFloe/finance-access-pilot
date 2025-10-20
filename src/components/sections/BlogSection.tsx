@@ -19,73 +19,51 @@ const blogPosts: BlogPost[] = [
     id: "4",
     title: "If play is intelligence, then Excel might be the 2nd best toy ever made",
     excerpt: "Rumours of Excel's death have been greatly exaggerated for many years. Recently, it turned 40.",
-    content: `When our gut senses, the calculations on the back of an envelope, or co-creation at the whiteboard fall short — Excel can do that.
+    content: `When our gut senses, the calculations on the back of an envelope, or co-creation at the whiteboard fall short — that's where Excel is amazing.
 
-Excel helps us give structure to ideas, understand our choices, and make better decisions.
+It helps us structure ideas, understand our choices, and make better decisions.
 
-Beneath its endless grid of blank cells, rules, connections, and formulas lies something much more intriguing:
+**To me, Excel is like LEGO for adults.**
 
-Every blank spreadsheet is a playground to create.
+Both are modular systems built on simple, repeatable rules and connections — bricks or cells. You can build something from nothing. Both invite creativity, curiosity, thoughtfulness, persistence, and purpose. Both reward imagination. Both are infinite.
 
-**To me, Excel is like LEGO for adults**
-
-Both are modular systems built on simple, repeatable rules — bricks or cells.
-
-You can build something from nothing.
-
-Both invite creativity, curiosity, thoughtfulness, persistence, and purpose.
-
-Both reward imagination.
-
-Both are infinite.
-
-That's why both require play — and both develop it.
-
-**Play is intelligence**
-
-It's how we learn, explore, build, test, and adapt.
-
-It's what our minds do when they're fully engaged in creating something new.
-
-In both, the act of playing — or building — is the act of thinking.
+That's why both require play — and develop it. Play is intelligence — the act of thinking and creating.
 
 **…And what about AI?**
 
-Play is intelligence — the act of exploring, testing, and creating new meaning.
-
-AI often produces finished answers.
-
-It can imitate the outcomes of play, but not the process.
+AI often produces finished answers. It can imitate the outcomes of play, but not the process.
 
 Excel is a playing and thinking environment — one that AI can support and accelerate, but never truly replace.
+
+...And yes, LEGO is the best toy ever made.
 
 **Exploring creativity, play, and open-ended building in Excel vs LEGO**
 
 **My Top 10:**
 
-1️⃣ **Both Are Modular Worlds** – Simple units combine into limitless creations.
+1. Both Are Modular Worlds – Simple units combine into limitless creations.
 
-2️⃣ **Both Reward Curiosity** – The more you explore, the more possibilities appear.
+2. Both Reward Curiosity – The more you explore, the more possibilities appear.
 
-3️⃣ **Both Thrive on Constraints** – Rules don't restrict creativity — they enable it.
+3. Both Thrive on Constraints – Rules don't restrict creativity — they enable it.
 
-4️⃣ **Both Turn Logic into Art** – Patterns, symmetry, and design meet purpose.
+4. Both Turn Logic into Art – Patterns, symmetry, and design meet purpose.
 
-5️⃣ **Both Encourage Iteration** – Build, test, fail, and rebuild — endlessly.
+5. Both Encourage Iteration – Build, test, fail, and rebuild — endlessly.
 
-6️⃣ **Both Bridge Play and Productivity** – Tinkering often turns into real-world value.
+6. Both Bridge Play and Productivity – Tinkering often turns into real-world value.
 
-7️⃣ **Both Transform Work Into Play** – Solving problems feels as joyful as playtime.
+7. Both Transform Work Into Play – Solving problems feels as joyful as playtime.
 
-8️⃣ **Both Build Thinking Skills** – Each creation strengthens logic and imagination.
+8. Both Build Thinking Skills – Each creation strengthens logic and imagination.
 
-9️⃣ **Both Create Shared Languages** – Bricks or cells, both connect creative communities.
+9. Both Create Shared Languages – Bricks or cells, both connect creative communities.
 
-🔟 **Both Mirror Human Intelligence** – They reflect how our minds build, test, and imagine.
+🔟 Both Mirror Human Intelligence – They reflect how our minds build, test, and imagine.
 
 Dear intelligent person — what do you think?`,
     date: "2025-10-20",
-    readTime: "4 min read",
+    readTime: "3 min read",
     image: "/lovable-uploads/lego-post.jpg",
     featured: true
   },
