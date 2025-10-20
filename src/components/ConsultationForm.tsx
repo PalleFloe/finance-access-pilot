@@ -239,7 +239,7 @@ const ConsultationForm = () => {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="timeline" className="text-lg">Timeline?</Label>
+            <Label htmlFor="timeline" className="text-lg">Timeline for service?</Label>
             <Select value={formData.timeline} onValueChange={handleSelectChange}>
               <SelectTrigger>
                 <SelectValue placeholder="Select a timeline" />
