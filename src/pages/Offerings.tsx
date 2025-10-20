@@ -143,11 +143,11 @@ const Offerings = () => {
       <main className="container mx-auto py-12">
         {/* Page Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-blue">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-brand-blue">
             Financial Decision Modelling & Consulting Offerings
           </h1>
           
-          <p className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed">
+          <p className="text-2xl md:text-3xl text-slate-600 max-w-6xl mx-auto leading-relaxed">
             Explore our free professional models to use, learn and get inspired. Need customized solutions or strategic support for complex decisions? Request a consultation.
           </p>
         </div>
