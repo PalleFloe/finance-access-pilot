@@ -86,6 +86,7 @@ Excel is a playing and thinking environment — one that AI can support and acce
 Dear intelligent person — what do you think?`,
     date: "2025-10-20",
     readTime: "4 min read",
+    image: "/lovable-uploads/lego-post.jpg",
     featured: true
   },
   {
