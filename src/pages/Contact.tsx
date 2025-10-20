@@ -45,10 +45,10 @@ const Contact = () => {
         <div className="container mx-auto max-w-6xl px-6">
           <div className="mb-12 text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-blue mb-6">
-              How Can I Help?
+              Let's have a conversation
             </h1>
             <p className="text-2xl md:text-3xl text-slate-600 max-w-6xl mx-auto leading-relaxed">
-              Facing a complex financial decision? Need models adapted to your business? Let's have a conversation about how I can help.
+              Need tailored solutions and expert guidance for your specific needs?
             </p>
           </div>
 
