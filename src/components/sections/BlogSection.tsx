@@ -41,23 +41,23 @@ Excel is a playing and thinking environment — one that AI can support and acce
 
 **My Top 10:**
 
-1. Both Are Modular Worlds – Simple units combine into limitless creations.
+1️⃣ Both Are Modular Worlds – Simple units combine into limitless creations.
 
-2. Both Reward Curiosity – The more you explore, the more possibilities appear.
+2️⃣ Both Reward Curiosity – The more you explore, the more possibilities appear.
 
-3. Both Thrive on Constraints – Rules don't restrict creativity — they enable it.
+3️⃣ Both Thrive on Constraints – Rules don't restrict creativity — they enable it.
 
-4. Both Turn Logic into Art – Patterns, symmetry, and design meet purpose.
+4️⃣ Both Turn Logic into Art – Patterns, symmetry, and design meet purpose.
 
-5. Both Encourage Iteration – Build, test, fail, and rebuild — endlessly.
+5️⃣ Both Encourage Iteration – Build, test, fail, and rebuild — endlessly.
 
-6. Both Bridge Play and Productivity – Tinkering often turns into real-world value.
+6️⃣ Both Bridge Play and Productivity – Tinkering often turns into real-world value.
 
-7. Both Transform Work Into Play – Solving problems feels as joyful as playtime.
+7️⃣ Both Transform Work Into Play – Solving problems feels as joyful as playtime.
 
-8. Both Build Thinking Skills – Each creation strengthens logic and imagination.
+8️⃣ Both Build Thinking Skills – Each creation strengthens logic and imagination.
 
-9. Both Create Shared Languages – Bricks or cells, both connect creative communities.
+9️⃣ Both Create Shared Languages – Bricks or cells, both connect creative communities.
 
 🔟 Both Mirror Human Intelligence – They reflect how our minds build, test, and imagine.
 
