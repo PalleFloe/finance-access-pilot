@@ -43,7 +43,7 @@ const NewBlogSection = () => {
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {blogPosts.map((post) => (
+            {blogPosts.slice(0, 3).map((post) => (
               <Link key={post.id} to={post.slug} className="group">
                 <Card className="h-full hover:shadow-lg transition-shadow duration-200">
                   <CardHeader>
