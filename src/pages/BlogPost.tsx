@@ -232,11 +232,11 @@ const BlogPost = () => {
           </div>
 
           {/* Back to Blog */}
-          <div className="mt-12 text-center">
+          <div className="mt-12">
             <Link to="/blog">
-              <Button>
+              <Button variant="ghost" className="-ml-4">
                 <ArrowLeft className="w-4 h-4 mr-2" />
-                Back to All Posts
+                Back to Blog
               </Button>
             </Link>
           </div>
