@@ -13,6 +13,16 @@ const Contact = () => {
         <title>Contact & Consultation - Financial Decision Models</title>
         <meta name="description" content="Get expert financial consulting and custom model development. Former Divisional CFO with 20+ years experience. Free clarity call to discuss your needs." />
         <meta name="keywords" content="financial consulting, custom financial models, CFO advisory, business decision support" />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/contact" />
+        
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.financialdecisionmodels.com/contact" />
+        <meta property="og:title" content="Contact & Consultation - Financial Decision Models" />
+        <meta property="og:description" content="Get expert financial consulting and custom model development. Former Divisional CFO with 20+ years experience. Free clarity call to discuss your needs." />
+        <meta property="og:image" content="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

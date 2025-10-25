@@ -15,11 +15,17 @@ const IndexNew = () => {
     <div className="min-h-screen bg-gray-50">
       <Helmet>
         <title>Financial Decision Models - Professional Financial Tools</title>
-        <meta name="description" content="Professional financial decision models and startup valuation tools. Free Excel models in browser plus premium downloads. DCF, venture capital method, and business valuation models for entrepreneurs and investors." />
-        <meta property="og:url" content={`${BASE_URL}/`} />
+        <meta name="description" content="Professional financial decision models & expert consulting. 15+ free Excel models for startup valuation, DCF analysis & investment decisions. Created by former Divisional CFO with 20+ years experience." />
         <link rel="canonical" href={`${BASE_URL}/`} />
-        <meta property="og:description" content="Professional financial decision models and startup valuation tools. Free Excel models in browser plus premium downloads for entrepreneurs and investors." />
-        <meta name="twitter:description" content="Professional financial decision models and startup valuation tools. Free Excel models in browser plus premium downloads for entrepreneurs and investors." />
+        
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${BASE_URL}/`} />
+        <meta property="og:title" content="Financial Decision Models | Professional Excel Models & Consulting" />
+        <meta property="og:description" content="Professional financial decision models & expert consulting. 15+ free Excel models for startup valuation, DCF analysis & investment decisions. Created by former Divisional CFO with 20+ years experience." />
+        <meta property="og:image" content={`${BASE_URL}/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         
         {/* Structured Data - Organization Schema */}
         <script type="application/ld+json">
@@ -43,7 +49,7 @@ const IndexNew = () => {
               "availableLanguage": ["English", "Danish"]
             },
             "sameAs": [
-              "https://www.linkedin.com/in/pallefn/"
+              "https://www.linkedin.com/in/palle-fløe-nielsen/"
             ]
           })}
         </script>

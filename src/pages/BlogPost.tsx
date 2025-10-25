@@ -75,21 +75,16 @@ const BlogPost = () => {
         <meta name="author" content={post.author} />
         <link rel="canonical" href={fullUrl} />
         
-        {/* Open Graph / Facebook */}
+        {/* Open Graph */}
         <meta property="og:type" content="article" />
         <meta property="og:url" content={fullUrl} />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt} />
         <meta property="og:image" content={imageUrl} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="article:published_time" content={post.date} />
         <meta property="article:author" content={post.author} />
-        
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content={fullUrl} />
-        <meta name="twitter:title" content={post.title} />
-        <meta name="twitter:description" content={post.excerpt} />
-        <meta name="twitter:image" content={imageUrl} />
         
         {/* Structured Data - Article Schema */}
         <script type="application/ld+json">

@@ -137,6 +137,16 @@ const Offerings = () => {
       <Helmet>
         <title>Offerings - Financial Decision Models & Consulting Services</title>
         <meta name="description" content="Professional financial decision models available online and for download, plus customized model development and expert consulting services for strategic financial decisions." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/offerings" />
+        
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.financialdecisionmodels.com/offerings" />
+        <meta property="og:title" content="Offerings - Financial Decision Models & Consulting Services" />
+        <meta property="og:description" content="Professional financial decision models available online and for download, plus customized model development and expert consulting services for strategic financial decisions." />
+        <meta property="og:image" content="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
       </Helmet>
       <Header />
       
