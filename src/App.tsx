@@ -12,6 +12,7 @@ import Toolbox from "./pages/Toolbox";
 import About from "./pages/About";
 import Offerings from "./pages/Offerings";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import ThankYou from "./pages/ThankYou";
@@ -63,6 +64,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/offerings" element={<Offerings />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/privacy" element={<Privacy />} />

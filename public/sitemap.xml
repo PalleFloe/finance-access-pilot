@@ -25,8 +25,37 @@
   
   <url>
     <loc>https://www.financialdecisionmodels.com/blog</loc>
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>2025-10-20</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://www.financialdecisionmodels.com/blog/excel-lego-intelligence-play</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.financialdecisionmodels.com/blog/169-days-journey</loc>
+    <lastmod>2025-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.financialdecisionmodels.com/blog/stop-predicting-structure-decisions</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.financialdecisionmodels.com/blog/moved-to-bloxhub</loc>
+    <lastmod>2025-09-01</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
