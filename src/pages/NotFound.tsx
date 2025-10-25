@@ -20,12 +20,12 @@ const NotFound = () => {
       <Helmet>
         <title>404 - Page Not Found | Financial Decision Models</title>
         <meta name="description" content="The page you're looking for doesn't exist. Return to Financial Decision Models homepage for professional financial modelling tools and consulting services." />
-        <link rel="canonical" href={`${BASE_URL}/404`} />
+        <link rel="canonical" href={`${BASE_URL}/`} />
         
         {/* Open Graph */}
         <meta property="og:title" content="404 - Page Not Found | Financial Decision Models" />
         <meta property="og:description" content="The page you're looking for doesn't exist. Return to Financial Decision Models homepage for professional financial modelling tools and consulting services." />
-        <meta property="og:url" content={`${BASE_URL}/404`} />
+        <meta property="og:url" content={`${BASE_URL}/`} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={DEFAULT_OG_IMAGE} />
         <meta property="og:image:alt" content="Financial Decision Models — by Floe Consulting" />

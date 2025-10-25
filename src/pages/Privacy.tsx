@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/sections/Footer";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
+import { BASE_URL, DEFAULT_OG_IMAGE, OG_SITE_NAME, OG_LOCALE } from "@/lib/constants";
 
 const Privacy = () => {
   usePageVisitTracking('page:/privacy');
@@ -11,8 +12,20 @@ const Privacy = () => {
       <Helmet>
         <title>Privacy Policy | Financial Decision Models</title>
         <meta name="description" content="Privacy Policy for Financial Decision Models. How we collect and use personal data when you browse the site or contact us." />
-        <link rel="canonical" href="https://www.financialdecisionmodels.com/privacy" />
+        <link rel="canonical" href={`${BASE_URL}/privacy`} />
         <meta name="robots" content="index,follow" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Privacy Policy | Financial Decision Models" />
+        <meta property="og:description" content="Privacy Policy for Financial Decision Models. How we collect and use personal data when you browse the site or contact us." />
+        <meta property="og:url" content={`${BASE_URL}/privacy`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={DEFAULT_OG_IMAGE} />
+        <meta property="og:image:alt" content="Financial Decision Models — by Floe Consulting" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content={OG_SITE_NAME} />
+        <meta property="og:locale" content={OG_LOCALE} />
       </Helmet>
       <Header />
       <main className="container mx-auto px-6 py-12 max-w-4xl">

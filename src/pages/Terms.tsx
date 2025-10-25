@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/sections/Footer";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
+import { BASE_URL, DEFAULT_OG_IMAGE, OG_SITE_NAME, OG_LOCALE } from "@/lib/constants";
 
 const Terms = () => {
   usePageVisitTracking('page:/terms');
@@ -11,8 +12,20 @@ const Terms = () => {
       <Helmet>
         <title>Terms of Service | Financial Decision Models</title>
         <meta name="description" content="Terms of Service for Financial Decision Models website and free model library." />
-        <link rel="canonical" href="https://www.financialdecisionmodels.com/terms" />
+        <link rel="canonical" href={`${BASE_URL}/terms`} />
         <meta name="robots" content="index,follow" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Terms of Service | Financial Decision Models" />
+        <meta property="og:description" content="Terms of Service for Financial Decision Models website and free model library." />
+        <meta property="og:url" content={`${BASE_URL}/terms`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={DEFAULT_OG_IMAGE} />
+        <meta property="og:image:alt" content="Financial Decision Models — by Floe Consulting" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content={OG_SITE_NAME} />
+        <meta property="og:locale" content={OG_LOCALE} />
       </Helmet>
       <Header />
       <main className="container mx-auto px-6 py-12 max-w-4xl">
