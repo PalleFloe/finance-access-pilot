@@ -23,7 +23,7 @@ const AboutSection = () => {
                 </h4>
                 <div className="space-y-4 text-xl text-slate-700 leading-relaxed text-left">
                   <p>
-                    My name is Palle Fløe Nielsen, based in Copenhagen, Denmark. I left Novonesis (formerly Novozymes) in May 2024 after more than 20 years in Business Finance leadership, including divisional CFO roles.
+                    My name is Palle Fløe Nielsen, founder of Fløe Consulting and based in Copenhagen, Denmark.
                   </p>
                   <p>
                     I'm still curious and focused after all these years. I have a strong focus on what and how we can create real value. I'm direct, open-minded, and not afraid to challenge the status quo constructively.
