@@ -6,6 +6,11 @@ import { usePageVisitTracking } from '@/hooks/useAnalytics';
 import { getBlogPostBySlug } from "@/data/blogPosts";
 import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { marked } from 'marked';
+import DOMPurify from 'dompurify';
+import { BASE_URL } from "@/lib/constants";
+
+marked.setOptions({ breaks: true });
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -19,47 +24,24 @@ const BlogPost = () => {
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', { 
-      year: 'numeric', 
+    return date.toLocaleDateString('en-GB', { 
+      day: 'numeric',
       month: 'long', 
-      day: 'numeric' 
+      year: 'numeric' 
     });
   };
 
-  const formatContent = (content: string) => {
-    return content.split('\n\n').map((paragraph, index) => {
-      if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
-        return (
-          <h2 key={index} className="text-2xl font-bold text-brand-blue mb-4 mt-8">
-            {paragraph.slice(2, -2)}
-          </h2>
-        );
-      }
-      if (paragraph.startsWith('![') && paragraph.includes('](')) {
-        const match = paragraph.match(/!\[(.*?)\]\((.*?)\)/);
-        if (match) {
-          const [, altText, src] = match;
-          return (
-            <div key={index} className="my-6">
-              <img 
-                src={src} 
-                alt={altText}
-                className="w-full h-auto rounded-lg shadow-md"
-              />
-            </div>
-          );
-        }
-      }
-      return (
-        <p key={index} className="text-lg text-slate-600 mb-4 leading-relaxed">
-          {paragraph}
-        </p>
-      );
-    });
+  const renderMarkdown = (md: string) => {
+    const html = marked.parse(md) as string;
+    return { __html: DOMPurify.sanitize(html) };
   };
 
-  const fullUrl = `https://www.financialdecisionmodels.com/blog/${post.slug}`;
-  const imageUrl = post.image ? `https://www.financialdecisionmodels.com${post.image}` : 'https://www.financialdecisionmodels.com/lovable-uploads/logo-large.webp';
+  const fullUrl = `${BASE_URL}/blog/${post.slug}`;
+  const imageUrl = post.ogImage 
+    ? `${BASE_URL}${post.ogImage}` 
+    : post.image 
+    ? `${BASE_URL}${post.image}` 
+    : `${BASE_URL}/lovable-uploads/logo-large.webp`;
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -99,14 +81,14 @@ const BlogPost = () => {
               "@type": "Person",
               "name": post.author,
               "jobTitle": post.authorTitle,
-              "url": "https://www.financialdecisionmodels.com/about"
+              "url": `${BASE_URL}/about`
             },
             "publisher": {
               "@type": "Organization",
               "name": "Financial Decision Models",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.financialdecisionmodels.com/lovable-uploads/logo-large.webp"
+                "url": `${BASE_URL}/lovable-uploads/logo-large.webp`
               }
             },
             "mainEntityOfPage": {
@@ -126,13 +108,13 @@ const BlogPost = () => {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://www.financialdecisionmodels.com"
+                "item": BASE_URL
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Blog",
-                "item": "https://www.financialdecisionmodels.com/blog"
+                "item": `${BASE_URL}/blog`
               },
               {
                 "@type": "ListItem",
@@ -162,7 +144,8 @@ const BlogPost = () => {
             <div className="mb-8">
               <img 
                 src={post.image} 
-                alt={post.title}
+                alt={`${post.title} — Financial Decision Models`}
+                loading="lazy"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
               {post.id === "4" && (
@@ -198,9 +181,7 @@ const BlogPost = () => {
           </header>
 
           {/* Article Content */}
-          <div className="prose prose-lg max-w-none font-garamond">
-            {formatContent(post.content)}
-          </div>
+          <div className="prose prose-lg max-w-none font-garamond" dangerouslySetInnerHTML={renderMarkdown(post.content)} />
 
           {/* Author Info */}
           <div className="mt-12 pt-8 border-t border-slate-200">

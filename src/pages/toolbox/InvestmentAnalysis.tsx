@@ -163,7 +163,7 @@ const InvestmentAnalysis = () => {
             <div>
               <h3 className="text-3xl font-semibold text-brand-blue mb-4">Comprehensive DCF Analysis Coverage</h3>
               <p className="text-lg text-slate-600 leading-relaxed">
-                The six-model toolbox covers the complete DCF analysis spectrum: flexible year-by-year projections for dynamic businesses, stable growth models for mature assets, finite-life analysis for projects with defined endpoints, multi-stage growth modeling for businesses with distinct phases, cost reduction analysis for efficiency initiatives, and break-even calculations for threshold decision-making. Each model includes comprehensive sensitivity analysis and scenario testing capabilities.
+                The six-model toolbox covers the complete DCF analysis spectrum: flexible year-by-year projections for dynamic businesses, stable growth models for mature assets, finite-life analysis for projects with defined endpoints, multi-stage growth modelling for businesses with distinct phases, cost reduction analysis for efficiency initiatives, and break-even calculations for threshold decision-making. Each model includes comprehensive sensitivity analysis and scenario testing capabilities.
               </p>
             </div>
 

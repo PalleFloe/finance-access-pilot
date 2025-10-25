@@ -18,7 +18,7 @@ const Contact = () => {
             "@context": "https://schema.org",
             "@type": "ContactPage",
             "name": "Contact & Consultation",
-            "description": "Schedule consultation for financial modeling and advisory services",
+            "description": "Schedule consultation for financial modelling and advisory services",
             "url": "https://www.financialdecisionmodels.com/contact",
             "mainEntity": {
               "@type": "Organization",

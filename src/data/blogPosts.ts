@@ -7,6 +7,7 @@ export interface BlogPost {
   date: string;
   readTime: string;
   image?: string;
+  ogImage?: string;
   featured?: boolean;
   author: string;
   authorTitle: string;

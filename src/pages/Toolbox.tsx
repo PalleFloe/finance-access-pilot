@@ -10,8 +10,8 @@ const Toolbox = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Helmet>
-        <title>Financial Modeling Toolbox | Financial Decision Models</title>
-        <meta name="description" content="Complete financial modeling toolbox with 12+ Excel models. Startup valuations, DCF analysis, and financial fundamentals. Try free online or download interactive versions. Professional quality, user-friendly design." />
+        <title>Financial Modelling Toolbox | Financial Decision Models</title>
+        <meta name="description" content="Complete financial modelling toolbox with 12+ Excel models. Startup valuations, DCF analysis, and financial fundamentals. Try free online or download interactive versions. Professional quality, user-friendly design." />
       </Helmet>
       <Header />
       <ToolboxSection />

@@ -171,7 +171,7 @@ const EarningGrowthEstimator = () => {
               <li><strong>Growth sustainability analysis:</strong> Determine whether current growth rates can be maintained</li>
               <li><strong>Investment quality assessment:</strong> Evaluate the return on incremental investments</li>
               <li><strong>Strategic planning:</strong> Guide capital allocation decisions and growth strategies</li>
-              <li><strong>Valuation modeling:</strong> Provide realistic growth assumptions for DCF models</li>
+              <li><strong>Valuation modelling:</strong> Provide realistic growth assumptions for DCF models</li>
               <li><strong>Performance forecasting:</strong> Project future earnings based on fundamental drivers</li>
               <li><strong>Competitive advantage analysis:</strong> Assess the durability of superior returns</li>
             </ul>

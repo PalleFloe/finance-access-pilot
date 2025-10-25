@@ -6,6 +6,7 @@ import NewAboutSection from "@/components/sections/NewAboutSection";
 import NewBlogSection from "@/components/sections/NewBlogSection";
 import Footer from "@/components/sections/Footer";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
+import { BASE_URL } from "@/lib/constants";
 
 const IndexNew = () => {
   usePageVisitTracking('page:Homepage');
@@ -15,8 +16,8 @@ const IndexNew = () => {
       <Helmet>
         <title>Financial Decision Models - Professional Financial Tools</title>
         <meta name="description" content="Professional financial decision models and startup valuation tools. Free Excel models in browser plus premium downloads. DCF, venture capital method, and business valuation models for entrepreneurs and investors." />
-        <meta property="og:url" content="https://www.financialdecisionmodels.com/" />
-        <link rel="canonical" href="https://www.financialdecisionmodels.com/" />
+        <meta property="og:url" content={`${BASE_URL}/`} />
+        <link rel="canonical" href={`${BASE_URL}/`} />
         <meta property="og:description" content="Professional financial decision models and startup valuation tools. Free Excel models in browser plus premium downloads for entrepreneurs and investors." />
         <meta name="twitter:description" content="Professional financial decision models and startup valuation tools. Free Excel models in browser plus premium downloads for entrepreneurs and investors." />
         
@@ -26,14 +27,14 @@ const IndexNew = () => {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Financial Decision Models",
-            "url": "https://www.financialdecisionmodels.com",
-            "logo": "https://www.financialdecisionmodels.com/lovable-uploads/logo-large.webp",
+            "url": BASE_URL,
+            "logo": `${BASE_URL}/lovable-uploads/logo-large.webp`,
             "description": "Professional financial decision models and startup valuation tools for entrepreneurs and investors",
             "founder": {
               "@type": "Person",
               "name": "Palle Fløe Nielsen",
               "jobTitle": "Former Divisional CFO",
-              "url": "https://www.financialdecisionmodels.com/about"
+              "url": `${BASE_URL}/about`
             },
             "contactPoint": {
               "@type": "ContactPoint",
