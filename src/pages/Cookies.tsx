@@ -18,7 +18,7 @@ const Cookies = () => {
       <main className="container mx-auto px-6 py-12 max-w-4xl">
         <article className="prose prose-lg max-w-none">
           <h1>Cookie Policy</h1>
-          <p className="text-muted-foreground">Last updated: 19 Oct 2025</p>
+          <p className="text-muted-foreground">Last updated: 25 Oct 2025</p>
           
           <p>We use one functional cookie to remember your layout preference.</p>
           
@@ -34,7 +34,7 @@ const Cookies = () => {
           
           <p>You can block or delete cookies in your browser settings; the site will still work.</p>
           
-          <p><strong>Contact:</strong> <a href="mailto:palle@financialdecisionmodels.com">palle@financialdecisionmodels.com</a></p>
+          <p><strong>Contact:</strong> <a href="mailto:palle@floeconsulting.com">palle@floeconsulting.com</a></p>
         </article>
       </main>
       <Footer />
