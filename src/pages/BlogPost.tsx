@@ -6,11 +6,7 @@ import { usePageVisitTracking } from '@/hooks/useAnalytics';
 import { getBlogPostBySlug } from "@/data/blogPosts";
 import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { marked } from 'marked';
-import DOMPurify from 'dompurify';
 import { BASE_URL } from "@/lib/constants";
-
-marked.setOptions({ breaks: true });
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -31,9 +27,37 @@ const BlogPost = () => {
     });
   };
 
-  const renderMarkdown = (md: string) => {
-    const html = marked.parse(md) as string;
-    return { __html: DOMPurify.sanitize(html) };
+  const formatContent = (content: string) => {
+    return content.split('\n\n').map((paragraph, index) => {
+      if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
+        return (
+          <h2 key={index} className="text-2xl font-bold text-brand-blue mb-4 mt-8">
+            {paragraph.slice(2, -2)}
+          </h2>
+        );
+      }
+      if (paragraph.startsWith('![') && paragraph.includes('](')) {
+        const match = paragraph.match(/!\[(.*?)\]\((.*?)\)/);
+        if (match) {
+          const [, altText, src] = match;
+          return (
+            <div key={index} className="my-6">
+              <img 
+                src={src} 
+                alt={altText}
+                loading="lazy"
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
+          );
+        }
+      }
+      return (
+        <p key={index} className="text-lg text-slate-600 mb-4 leading-relaxed">
+          {paragraph}
+        </p>
+      );
+    });
   };
 
   const fullUrl = `${BASE_URL}/blog/${post.slug}`;
@@ -181,7 +205,9 @@ const BlogPost = () => {
           </header>
 
           {/* Article Content */}
-          <div className="prose prose-lg max-w-none font-garamond" dangerouslySetInnerHTML={renderMarkdown(post.content)} />
+          <div className="prose prose-lg max-w-none font-garamond">
+            {formatContent(post.content)}
+          </div>
 
           {/* Author Info */}
           <div className="mt-12 pt-8 border-t border-slate-200">
