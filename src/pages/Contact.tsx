@@ -32,7 +32,7 @@ const Contact = () => {
               "contactPoint": {
                 "@type": "ContactPoint",
                 "contactType": "Business Consultation",
-                "email": "palle@financialdecisionmodels.com",
+                "email": "palle@floeconsulting.com",
                 "availableLanguage": ["English", "Danish"]
               }
             }

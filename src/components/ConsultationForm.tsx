@@ -145,7 +145,7 @@ const ConsultationForm = () => {
       console.error('Error submitting consultation request:', error);
       toast({
         title: "Something went wrong",
-        description: "Please try again or email me directly at palle@financialdecisionmodels.com",
+        description: "Please try again or email me directly at palle@floeconsulting.com",
         variant: "destructive",
       });
     } finally {
