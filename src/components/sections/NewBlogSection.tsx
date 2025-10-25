@@ -4,10 +4,10 @@ import { blogPosts } from "@/data/blogPosts";
 
 const formatDate = (dateString: string) => {
   const date = new Date(dateString);
-  return date.toLocaleDateString('en-US', { 
-    year: 'numeric', 
+  return date.toLocaleDateString('en-GB', { 
+    day: 'numeric',
     month: 'long', 
-    day: 'numeric' 
+    year: 'numeric' 
   });
 };
 

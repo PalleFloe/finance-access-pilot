@@ -44,7 +44,8 @@ const BlogSection = () => {
                     <div className="aspect-video overflow-hidden rounded-t-lg">
                       <img 
                         src={post.image} 
-                        alt={post.title}
+                        alt={`${post.title} — Financial Decision Models`}
+                        loading="lazy"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
