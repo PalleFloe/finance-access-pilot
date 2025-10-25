@@ -73,7 +73,7 @@ Dear intelligent person — what do you think?`,
     id: "2",
     slug: "169-days-journey",
     title: "I left Novonesis 169 days ago.",
-    excerpt: "Since then, I founded Financial Decision Modelling & Consulting",
+    excerpt: "Since then, I founded Fløe Consulting and build www.financialdecisionmodels.com",
     content: `After a super fun goodbye party at Absalon and an emotional farewell reception, I knew exactly what I wanted to do.
 
 I really loved working at Novozymes and also enjoyed my time at Novonesis. In a good corporate life, you get structure, responsibilities, support, challenges, development, intellectual stimulation, amazing colleagues, social life, safety, and a monthly salary.
