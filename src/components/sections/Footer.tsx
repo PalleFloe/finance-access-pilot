@@ -9,12 +9,12 @@ const Footer = () => {
         <div className="flex flex-col items-center gap-1">
           {/* Line 1 - Identity, Contact, LinkedIn */}
           <p className="text-sm text-muted-foreground text-center leading-relaxed">
-            © {currentYear} Financial Decision Modelling &amp; Consulting — CVR 34912017 — Copenhagen, Denmark ·{" "}
+            © {currentYear} Fløe Consulting — CVR 34912017 — Copenhagen, Denmark ·{" "}
             <a 
-              href="mailto:palle@financialdecisionmodels.com" 
+              href="mailto:palle@floeconsulting.com"
               className="underline hover:text-foreground focus:outline-2 focus:outline-offset-2 focus:outline-current"
             >
-              palle@financialdecisionmodels.com
+              palle@floeconsulting.com
             </a> ·{" "}
             <a 
               href="https://www.linkedin.com/in/palle-fløe-nielsen/" 
