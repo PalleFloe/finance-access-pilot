@@ -6,7 +6,7 @@ import { usePageVisitTracking } from '@/hooks/useAnalytics';
 import { getBlogPostBySlug } from "@/data/blogPosts";
 import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { BASE_URL } from "@/lib/constants";
+import { BASE_URL, DEFAULT_OG_IMAGE, OG_SITE_NAME, OG_LOCALE } from "@/lib/constants";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -61,11 +61,11 @@ const BlogPost = () => {
   };
 
   const fullUrl = `${BASE_URL}/blog/${post.slug}`;
-  const imageUrl = post.ogImage 
+  const ogImage = post.ogImage 
     ? `${BASE_URL}${post.ogImage}` 
     : post.image 
     ? `${BASE_URL}${post.image}` 
-    : `${BASE_URL}/lovable-uploads/logo-large.webp`;
+    : DEFAULT_OG_IMAGE;
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -76,13 +76,16 @@ const BlogPost = () => {
         <link rel="canonical" href={fullUrl} />
         
         {/* Open Graph */}
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content={fullUrl} />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt} />
-        <meta property="og:image" content={imageUrl} />
+        <meta property="og:url" content={fullUrl} />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:alt" content={`${post.title} — Financial Decision Models`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content={OG_SITE_NAME} />
+        <meta property="og:locale" content={OG_LOCALE} />
         <meta property="article:published_time" content={post.date} />
         <meta property="article:author" content={post.author} />
         
@@ -93,7 +96,7 @@ const BlogPost = () => {
             "@type": "BlogPosting",
             "headline": post.title,
             "description": post.excerpt,
-            "image": imageUrl,
+            "image": ogImage,
             "datePublished": post.date,
             "dateModified": post.date,
             "author": {

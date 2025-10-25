@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Clock, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
+import { BASE_URL, DEFAULT_OG_IMAGE, OG_SITE_NAME, OG_LOCALE } from "@/lib/constants";
 
 const Offerings = () => {
   usePageVisitTracking('page:/offerings');
@@ -137,16 +138,19 @@ const Offerings = () => {
       <Helmet>
         <title>Offerings - Financial Decision Models & Consulting Services</title>
         <meta name="description" content="Professional financial decision models available online and for download, plus customized model development and expert consulting services for strategic financial decisions." />
-        <link rel="canonical" href="https://www.financialdecisionmodels.com/offerings" />
+        <link rel="canonical" href={`${BASE_URL}/offerings`} />
         
         {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.financialdecisionmodels.com/offerings" />
         <meta property="og:title" content="Offerings - Financial Decision Models & Consulting Services" />
         <meta property="og:description" content="Professional financial decision models available online and for download, plus customized model development and expert consulting services for strategic financial decisions." />
-        <meta property="og:image" content="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" />
+        <meta property="og:url" content={`${BASE_URL}/offerings`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={DEFAULT_OG_IMAGE} />
+        <meta property="og:image:alt" content="Financial Decision Models — by Floe Consulting" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content={OG_SITE_NAME} />
+        <meta property="og:locale" content={OG_LOCALE} />
       </Helmet>
       <Header />
       

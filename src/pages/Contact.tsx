@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/sections/Footer";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
 import ConsultationForm from "@/components/ConsultationForm";
+import { BASE_URL, DEFAULT_OG_IMAGE, OG_SITE_NAME, OG_LOCALE } from "@/lib/constants";
 
 const Contact = () => {
   usePageVisitTracking('page:/contact');
@@ -13,16 +14,19 @@ const Contact = () => {
         <title>Contact & Consultation - Financial Decision Models</title>
         <meta name="description" content="Get expert financial consulting and custom model development. Former Divisional CFO with 20+ years experience. Free clarity call to discuss your needs." />
         <meta name="keywords" content="financial consulting, custom financial models, CFO advisory, business decision support" />
-        <link rel="canonical" href="https://www.financialdecisionmodels.com/contact" />
+        <link rel="canonical" href={`${BASE_URL}/contact`} />
         
         {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.financialdecisionmodels.com/contact" />
         <meta property="og:title" content="Contact & Consultation - Financial Decision Models" />
         <meta property="og:description" content="Get expert financial consulting and custom model development. Former Divisional CFO with 20+ years experience. Free clarity call to discuss your needs." />
-        <meta property="og:image" content="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" />
+        <meta property="og:url" content={`${BASE_URL}/contact`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={DEFAULT_OG_IMAGE} />
+        <meta property="og:image:alt" content="Financial Decision Models — by Floe Consulting" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content={OG_SITE_NAME} />
+        <meta property="og:locale" content={OG_LOCALE} />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
