@@ -7,14 +7,6 @@ import { getBlogPostBySlug } from "@/data/blogPosts";
 import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BASE_URL, DEFAULT_OG_IMAGE, OG_SITE_NAME, OG_LOCALE, LINKEDIN_URL } from "@/lib/constants";
-import { marked } from 'marked';
-import DOMPurify from 'dompurify';
-
-// Configure marked
-marked.setOptions({ 
-  breaks: true,
-  gfm: true
-});
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -35,9 +27,43 @@ const BlogPost = () => {
     });
   };
 
+  // Restore previous hand-rolled formatting/typography renderer
   const formatContent = (content: string) => {
-    const html = marked.parse(content) as string;
-    return { __html: DOMPurify.sanitize(html) };
+    return content.split('\n\n').map((paragraph, index) => {
+      // Bold line used as section heading: **Heading**
+      if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
+        return (
+          <h2 key={index} className="text-2xl font-bold text-brand-blue mb-4 mt-8">
+            {paragraph.slice(2, -2)}
+          </h2>
+        );
+      }
+
+      // Simple Markdown image ![alt](src)
+      if (paragraph.startsWith('![') && paragraph.includes('](')) {
+        const match = paragraph.match(/!\[(.*?)\]\((.*?)\)/);
+        if (match) {
+          const [, altText, src] = match;
+          return (
+            <div key={index} className="my-6">
+              <img 
+                src={src} 
+                alt={altText || `${post.title} — Financial Decision Models`}
+                loading="lazy"
+                className="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
+          );
+        }
+      }
+
+      // Default paragraph
+      return (
+        <p key={index} className="text-lg text-slate-600 mb-4 leading-relaxed">
+          {paragraph}
+        </p>
+      );
+    });
   };
 
   const fullUrl = `${BASE_URL}/blog/${post.slug}`;
@@ -184,10 +210,9 @@ const BlogPost = () => {
           </header>
 
           {/* Article Content */}
-          <div 
-            className="prose prose-lg max-w-none font-garamond prose-headings:text-brand-blue prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-4 prose-p:text-lg prose-p:text-slate-600 prose-p:mb-4 prose-p:leading-relaxed prose-img:rounded-lg prose-img:shadow-md prose-img:my-6 prose-a:text-brand-green prose-a:underline hover:prose-a:text-brand-green/80"
-            dangerouslySetInnerHTML={formatContent(post.content)}
-          />
+          <div className="prose prose-lg max-w-none font-garamond">
+            {formatContent(post.content)}
+          </div>
 
           {/* Author Info */}
           <div className="mt-12 pt-8 border-t border-slate-200">
