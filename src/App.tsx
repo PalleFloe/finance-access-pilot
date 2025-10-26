@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider } from "@/hooks/useAuth";
 import Index from "./pages/Index";
 import IndexNew from "./pages/IndexNew";
@@ -65,6 +65,7 @@ const App = () => (
             <Route path="/toolbox" element={<Toolbox />} />
           <Route path="/about" element={<About />} />
           <Route path="/offerings" element={<Offerings />} />
+          <Route path="/how-it-works/*" element={<Navigate to="/offerings" replace />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
