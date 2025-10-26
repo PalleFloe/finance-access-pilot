@@ -1,0 +1,6 @@
+# Force HTTP to HTTPS redirect
+http://financialdecisionmodels.com/* https://financialdecisionmodels.com/:splat 301!
+http://www.financialdecisionmodels.com/* https://www.financialdecisionmodels.com/:splat 301!
+
+# Force www to non-www (optional, but good for consistency)
+https://www.financialdecisionmodels.com/* https://financialdecisionmodels.com/:splat 301!
