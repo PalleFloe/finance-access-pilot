@@ -45,7 +45,7 @@ const Header = () => {
               </picture>
             </div>
             <div>
-              <h1 className="text-lg md:text-2xl font-bold text-brand-blue">FinancialDecisionModels.com</h1>
+              <span className="text-lg md:text-2xl font-bold text-brand-blue">FinancialDecisionModels.com</span>
             </div>
           </Link>
           
