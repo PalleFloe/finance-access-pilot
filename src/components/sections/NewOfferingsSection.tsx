@@ -19,7 +19,7 @@ const NewOfferingsSection = () => {
 
           {/* Right Column - Offerings */}
           <div className="space-y-8 md:-ml-32">
-            <h2 className="font-garamond text-3xl md:text-4xl font-bold text-brand-blue mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-blue mb-8">
               Two ways I can help:
             </h2>
 

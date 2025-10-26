@@ -3,7 +3,7 @@ const NewAboutSection = () => {
     <section className="pt-6 md:pt-8 pb-6 md:pb-8 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto space-y-6">
-          <h2 className="font-garamond text-3xl md:text-4xl font-bold text-brand-blue mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-blue mb-6">
             Me and How I Can Help You
           </h2>
           

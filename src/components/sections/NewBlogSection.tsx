@@ -17,7 +17,7 @@ const NewBlogSection = () => {
       <div className="container mx-auto px-6">
         <div className="bg-white p-6 rounded-lg border border-slate-100 shadow-sm">
           <div className="max-w-7xl mx-auto">
-          <h2 className="font-garamond text-2xl md:text-3xl font-bold text-brand-blue mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-brand-blue mb-8">
             Latest Blogs:
           </h2>
 
@@ -26,7 +26,7 @@ const NewBlogSection = () => {
               <Link key={post.id} to={`/blog/${post.slug}`} className="group">
                 <Card className="h-full hover:shadow-lg transition-shadow duration-200">
                   <CardHeader>
-                    <CardTitle className="font-garamond text-xl text-brand-blue group-hover:text-brand-blue/80 transition-colors">
+                    <CardTitle className="text-xl text-brand-blue group-hover:text-brand-blue/80 transition-colors">
                       {post.title}
                     </CardTitle>
                   </CardHeader>
