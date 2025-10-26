@@ -7,6 +7,7 @@ import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import Footer from "@/components/sections/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
@@ -91,6 +92,15 @@ const BerkusValuation = () => {
       
       <div className="py-12">
         <div className="container mx-auto">
+          <Breadcrumbs 
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Toolbox", href: "/toolbox" },
+              { label: "Startup Valuations", href: "/toolbox/startup-valuations" },
+              { label: "Berkus Valuation Model" }
+            ]}
+          />
+          
           <Link 
             to="/toolbox/startup-valuations"
             className="inline-flex items-center text-slate-600 hover:text-primary mb-8"

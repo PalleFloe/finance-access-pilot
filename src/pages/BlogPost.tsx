@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { useParams, Link, Navigate } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/sections/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
 import { getBlogPostBySlug } from "@/data/blogPosts";
 import { Calendar, Clock, ArrowLeft } from "lucide-react";
@@ -77,7 +78,7 @@ const BlogPost = () => {
     <div className="min-h-screen bg-gray-50">
       <Helmet>
         <title>{post.title} | Financial Decision Models Blog</title>
-        <meta name="description" content={post.excerpt} />
+        <meta name="description" content={post.metaDescription || post.excerpt} />
         <meta name="author" content={post.author} />
         <link rel="canonical" href={fullUrl} />
         
@@ -160,6 +161,15 @@ const BlogPost = () => {
 
       <main className="py-12">
         <article className="container mx-auto max-w-4xl px-6">
+          {/* Breadcrumbs */}
+          <Breadcrumbs 
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Blog", href: "/blog" },
+              { label: post.title }
+            ]}
+          />
+          
           {/* Back to Blog Button */}
           <Link to="/blog">
             <Button variant="ghost" className="mb-8 -ml-4">

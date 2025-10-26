@@ -3,6 +3,7 @@ export interface BlogPost {
   slug: string;
   title: string;
   excerpt: string;
+  metaDescription?: string;
   content: string;
   date: string;
   readTime: string;
@@ -19,6 +20,7 @@ export const blogPosts: BlogPost[] = [
     slug: "excel-lego-intelligence-play",
     title: "If play is intelligence, then Excel might be the 2nd best toy ever made",
     excerpt: "Rumours of Excel's death have been greatly exaggerated for many years. Recently, it turned 40.",
+    metaDescription: "Excel at 40: Why this modular thinking tool remains irreplaceable for business decisions. Like LEGO for adults, Excel transforms work into creative play that AI cannot replicate.",
     content: `When our gut senses, the calculations on the back of an envelope, or co-creation at the whiteboard fall short — that's where Excel is amazing.
 
 It helps us structure ideas, understand our choices, and make better decisions.
@@ -74,6 +76,7 @@ Dear intelligent person — what do you think?`,
     slug: "169-days-journey",
     title: "I left Novonesis 169 days ago.",
     excerpt: "Since then, I founded Fløe Consulting and build www.financialdecisionmodels.com",
+    metaDescription: "From Divisional CFO at Novonesis to launching Financial Decision Models in 169 days. The journey of building a mission-driven business focused on better financial decisions.",
     content: `After a super fun goodbye party at Absalon and an emotional farewell reception, I knew exactly what I wanted to do.
 
 I really loved working at Novozymes and also enjoyed my time at Novonesis. In a good corporate life, you get structure, responsibilities, support, challenges, development, intellectual stimulation, amazing colleagues, social life, safety, and a monthly salary.
@@ -129,6 +132,7 @@ This post is intended as a personal reflection on the past 169 days rather than 
     slug: "stop-predicting-structure-decisions",
     title: "Stop Trying to Predict the Future. Structure Your Decisions Instead",
     excerpt: "My goal is to help transform complex financial choices into structured insights and better business decisions.",
+    metaDescription: "Why financial models fail: forecast bias meets poor design. Learn how structured decision frameworks with built-in sensitivity analysis lead to better business outcomes than predictions.",
     content: `After two decades of wrestling with complex, unintuitive models that often gave precisely the wrong results, I know there's a better way.
 
 **So, Why Are We Still Struggling?**
@@ -195,6 +199,7 @@ Drop me a line: palle@floeconsulting.com`,
     slug: "moved-to-bloxhub",
     title: "Moved to BloxHub",
     excerpt: "A cool place! And always close to a swim in the harbour.",
+    metaDescription: "Setting up Fløe Consulting at BloxHub Copenhagen - a harbor-side innovation hub with amazing atmosphere and the first beta of financialdecisionmodels.com ready to share.",
     content: `From 1st of September, I'm moving in at BloxHub down by the harbour in Copenhagen. Unofficially, I'm already moved in. Awesome atmosphere, free ice-cold bubble water and a splendid view from my corner seat.
 
 I've also done the 1st or 7th beta version of financialdecisionmodels.com. At least enough 'beta' that it is not completely embarrassing (I hope) to share it with others.
