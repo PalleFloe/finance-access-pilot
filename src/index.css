@@ -139,27 +139,27 @@
   /* Heading Hierarchy */
   h1 {
     @apply text-[20px] font-bold text-brand-blue;
-    font-family: 'Garamond', 'Times New Roman', serif;
+    font-family: 'Oswald', sans-serif;
   }
 
   h2 {
     @apply text-[18px] font-bold text-brand-blue;
-    font-family: 'Garamond', 'Times New Roman', serif;
+    font-family: 'Oswald', sans-serif;
   }
 
   h3 {
     @apply text-[16px] font-bold text-brand-blue;
-    font-family: 'Garamond', 'Times New Roman', serif;
+    font-family: 'Oswald', sans-serif;
   }
 
   h4 {
     @apply text-[14px] font-bold text-brand-blue;
-    font-family: 'Garamond', 'Times New Roman', serif;
+    font-family: 'Oswald', sans-serif;
   }
 
   h5 {
     @apply text-[12px] font-bold text-brand-blue;
-    font-family: 'Garamond', 'Times New Roman', serif;
+    font-family: 'Oswald', sans-serif;
   }
 
   /* Body text */
@@ -243,14 +243,4 @@
     margin-left: 8px;
   }
 
-  /* Oswald font for blue headings */
-  .font-oswald-headings h1,
-  .font-oswald-headings h2,
-  .font-oswald-headings h3,
-  .font-oswald-headings h4,
-  .font-oswald-headings h5,
-  .font-oswald-headings h6,
-  .font-oswald-headings .text-brand-blue {
-    font-family: 'Oswald', sans-serif !important;
-  }
 }
