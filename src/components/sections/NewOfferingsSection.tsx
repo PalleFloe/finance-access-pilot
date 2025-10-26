@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { Sparkles, MessageSquare } from "lucide-react";
 import profileImage from "@/assets/profile-main.jpeg";
 
 const NewOfferingsSection = () => {
@@ -31,11 +32,11 @@ const NewOfferingsSection = () => {
                 </p>
               </div>
               <div>
-                <Link 
-                  to="/toolbox" 
-                  className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-brand-blue hover:underline inline-flex items-center gap-2"
-                >
-                  Explore Free Models ►
+                <Link to="/toolbox">
+                  <button className="tier-1-btn flex items-center justify-center gap-2">
+                    <Sparkles className="w-5 h-5" />
+                    Explore Free Models
+                  </button>
                 </Link>
               </div>
             </div>
@@ -49,11 +50,11 @@ const NewOfferingsSection = () => {
                 </p>
               </div>
               <div>
-                <Link 
-                  to="/contact" 
-                  className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-brand-blue hover:underline inline-flex items-center gap-2"
-                >
-                  Request Consultation ►
+                <Link to="/contact">
+                  <button className="tier-2-btn flex items-center justify-center gap-2">
+                    <MessageSquare className="w-5 h-5" />
+                    Request Consultation
+                  </button>
                 </Link>
               </div>
             </div>
