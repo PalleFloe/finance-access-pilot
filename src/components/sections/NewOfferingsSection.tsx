@@ -25,24 +25,27 @@ const NewOfferingsSection = () => {
             </h2>
 
             {/* Toolbox Offering */}
-            <div className="space-y-4">
+            <div className="space-y-6">
               <div>
                 <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-700 leading-relaxed">
                   A free and comprehensive toolbox of structured and intuitive Excel models with clear guidance on What, Why, Who and How to use
                 </p>
               </div>
               <div>
-                <Link to="/toolbox">
-                  <button className="tier-1-btn flex items-center justify-center gap-2">
+                <Link to="/toolbox" className="block">
+                  <Button 
+                    className="w-full h-14 text-lg font-garamond"
+                    variant="rich-emerald"
+                  >
                     <Sparkles className="w-5 h-5" />
                     Explore Free Models
-                  </button>
+                  </Button>
                 </Link>
               </div>
             </div>
 
             {/* Consulting Offering */}
-            <div className="space-y-4 mt-64">
+            <div className="space-y-6 mt-64">
               <div className="h-8"></div>
               <div>
                 <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-700 leading-relaxed">
@@ -50,11 +53,14 @@ const NewOfferingsSection = () => {
                 </p>
               </div>
               <div>
-                <Link to="/contact">
-                  <button className="tier-2-btn flex items-center justify-center gap-2">
+                <Link to="/contact" className="block">
+                  <Button 
+                    className="w-full h-14 text-lg font-garamond"
+                    variant="outline"
+                  >
                     <MessageSquare className="w-5 h-5" />
                     Request Consultation
-                  </button>
+                  </Button>
                 </Link>
               </div>
             </div>
