@@ -56,7 +56,7 @@ const NewOfferingsSection = () => {
                 <Link to="/contact" className="block">
                   <Button 
                     className="w-full h-14 text-lg font-garamond"
-                    variant="outline"
+                    variant="rich-emerald"
                   >
                     <MessageSquare className="w-5 h-5" />
                     Request Consultation
