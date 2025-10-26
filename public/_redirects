@@ -1,5 +1,5 @@
 # Redirect old page to offerings
-/how-it-works /offerings 301
+/how-it-works /offerings 301!
 
 # Force HTTP to HTTPS redirect
 http://financialdecisionmodels.com/* https://financialdecisionmodels.com/:splat 301!
