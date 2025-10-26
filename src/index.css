@@ -242,4 +242,15 @@
     font-size: 11px;
     margin-left: 8px;
   }
+
+  /* Oswald font for blue headings */
+  .font-oswald-headings h1,
+  .font-oswald-headings h2,
+  .font-oswald-headings h3,
+  .font-oswald-headings h4,
+  .font-oswald-headings h5,
+  .font-oswald-headings h6,
+  .font-oswald-headings .text-brand-blue {
+    font-family: 'Oswald', sans-serif !important;
+  }
 }

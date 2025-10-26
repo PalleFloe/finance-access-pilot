@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/hooks/useAuth";
 import Index from "./pages/Index";
 import IndexNew from "./pages/IndexNew";
+import IndexTest from "./pages/IndexTest";
 import Auth from "./pages/Auth";
 import Toolbox from "./pages/Toolbox";
 import About from "./pages/About";
@@ -59,6 +60,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<IndexNew />} />
           <Route path="/home-old" element={<Index />} />
+          <Route path="/home-test" element={<IndexTest />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/toolbox" element={<Toolbox />} />
           <Route path="/about" element={<About />} />

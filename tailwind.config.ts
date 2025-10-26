@@ -22,6 +22,7 @@ export default {
 			fontFamily: {
 				'sans': ['Garamond', 'Times New Roman', 'serif'],
 				'garamond': ['Garamond', 'Times New Roman', 'serif'],
+				'oswald': ['Oswald', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
