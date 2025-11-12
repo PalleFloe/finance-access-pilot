@@ -20,6 +20,7 @@ const BusinessStrategy = () => {
       <Helmet>
         <title>Business Strategy Models - Coming Soon | Financial Decision Models</title>
         <meta name="description" content="Business Strategy financial models for long-term planning, decision-making and scenario analysis. Coming soon to the Financial Decision Models toolkit." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/business-strategy" />
       </Helmet>
       <Header />
       

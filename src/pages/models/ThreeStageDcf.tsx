@@ -32,6 +32,7 @@ const ThreeStageDcf = () => {
       <Helmet>
         <title>Three Stage DCF Model - Multi-stage Analysis | Financial Decision Models</title>
         <meta name="description" content="Three Stage DCF Model for multi-stage analysis: DCF valuation with distinct performance stage characteristics. Professional investment analysis tool with dynamic evolution modelling." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/investment-analysis/three-stage-dcf-model" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

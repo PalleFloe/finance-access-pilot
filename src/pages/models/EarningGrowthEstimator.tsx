@@ -34,6 +34,7 @@ const EarningGrowthEstimator = () => {
       <Helmet>
         <title>Earning Growth Estimator - ROC-Based Growth Analysis | Financial Decision Models</title>
         <meta name="description" content="Earning growth estimator based on return on capital and reinvestment analysis. Excel model calculates sustainable growth rates for existing and new investments. Try free online or download." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/financial-fundamentals/earning-growth-estimator" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

@@ -33,6 +33,7 @@ const FirstChicagoValuation = () => {
       <Helmet>
         <title>First Chicago Method - Scenario-Based Startup Valuation | Financial Decision Models</title>
         <meta name="description" content="First Chicago startup valuation model with scenario-based DCF analysis. Excel tool models downside, base, and upside cases with probability weighting. Try free online, download full version." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/startup-valuations/first-chicago-method" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

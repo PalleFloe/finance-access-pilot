@@ -34,6 +34,7 @@ const PerpetuityExitValuation = () => {
       <Helmet>
         <title>Perpetuity & Exit Valuation Models - Quick Startup Analysis | Financial Decision Models</title>
         <meta name="description" content="Perpetuity and exit valuation models for quick startup analysis. Four Excel approaches: simple perpetuity, growing perpetuity, two-phase growth, and exit value. Try free online or download." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/startup-valuations/perpetuity-exit-models" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

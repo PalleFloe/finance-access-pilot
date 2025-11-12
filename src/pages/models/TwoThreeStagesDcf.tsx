@@ -21,6 +21,7 @@ const TwoThreeStagesDcf = () => {
       <Helmet>
         <title>Two and Three Stages DCF Models - Coming Soon | Financial Decision Models</title>
         <meta name="description" content="Two and Three Stages DCF Models for multi-phase business analysis. Coming soon to the Investment Analysis toolkit." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/investment-analysis/two-three-stages-dcf" />
       </Helmet>
       <Header />
       

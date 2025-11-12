@@ -21,6 +21,7 @@ const CostReductionDcf = () => {
       <Helmet>
         <title>Cost Reduction DCF Model - Coming Soon | Financial Decision Models</title>
         <meta name="description" content="Cost Reduction DCF Model for efficiency analysis and savings evaluation. Coming soon to the Investment Analysis toolkit." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/investment-analysis/cost-reduction-dcf-model" />
       </Helmet>
       <Header />
       

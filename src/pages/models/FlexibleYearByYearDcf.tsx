@@ -34,6 +34,7 @@ const FlexibleYearByYearDcf = () => {
       <Helmet>
         <title>Flexible Year by Year DCF Model - Investment Analysis | Financial Decision Models</title>
         <meta name="description" content="Dynamic DCF analysis with year-by-year projections and terminal value options. Flexible growth rates and comprehensive sensitivity analysis. Try free online, download full version." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/investment-analysis/flexible-year-by-year-dcf-model" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

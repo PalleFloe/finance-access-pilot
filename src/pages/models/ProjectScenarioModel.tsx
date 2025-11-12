@@ -34,6 +34,7 @@ const ProjectScenarioModel = () => {
       <Helmet>
         <title>Project Scenario Model - Multi-Scenario Capital Budgeting | Financial Decision Models</title>
         <meta name="description" content="Multi-scenario capital budgeting model with NPV and IRR analysis. Excel tool evaluates investment projects across downside, base case, and upside scenarios. Try free online or download." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/financial-fundamentals/project-scenario-model" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

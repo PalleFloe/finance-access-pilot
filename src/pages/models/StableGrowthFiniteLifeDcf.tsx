@@ -34,6 +34,7 @@ const StableGrowthFiniteLifeDcf = () => {
       <Helmet>
         <title>Stable Growth: Finite-Life DCF Model - Investment Analysis | Financial Decision Models</title>
         <meta name="description" content="Stable Growth DCF analysis for finite-life assets with predictable revenue and terminal value calculation. Excel tool for project valuation and investment analysis." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/investment-analysis/stable-growth-finite-life-dcf-model" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

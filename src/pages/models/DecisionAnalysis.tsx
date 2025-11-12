@@ -32,6 +32,7 @@ const DecisionAnalysis = () => {
       <Helmet>
         <title>Decision Analysis for Venture Capital - Systematic Investment Framework | Financial Decision Models</title>
         <meta name="description" content="Venture capital decision analysis model with systematic risk assessment and probability-weighted returns. Excel tool for VC investment evaluation. Try free online, download full version." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/startup-valuations/decision-analysis" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

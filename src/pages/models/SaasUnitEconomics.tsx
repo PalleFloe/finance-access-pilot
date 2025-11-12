@@ -37,6 +37,7 @@ const SaasUnitEconomics = () => {
       <Helmet>
         <title>SaaS Unit Economics Model - Professional Valuation Tool | Financial Decision Models</title>
         <meta name="description" content="Professional SaaS unit economics model analyzing customer lifetime value, acquisition costs, and churn. Excel tool for subscription business valuation. Try free online, download interactive version." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/startup-valuations/saas-unit-economics" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

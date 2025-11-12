@@ -34,6 +34,7 @@ const StableGrowthTerminalValueDcf = () => {
       <Helmet>
         <title>Stable Growth: Terminal Value DCF Model - Investment Analysis | Financial Decision Models</title>
         <meta name="description" content="Stable Growth DCF analysis with terminal value focus for perpetual asset evaluation. Growth rate sensitivity and comprehensive valuation analysis. Excel tool for long-term investments." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/investment-analysis/stable-growth-terminal-value-dcf-model" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

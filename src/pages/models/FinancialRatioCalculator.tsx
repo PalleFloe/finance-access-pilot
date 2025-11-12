@@ -33,6 +33,7 @@ const FinancialRatioCalculator = () => {
       <Helmet>
         <title>Financial Ratio Calculator - Comprehensive Financial Analysis | Financial Decision Models</title>
         <meta name="description" content="Comprehensive financial ratio calculator with 30+ ratios across profitability, efficiency, leverage, and market valuation. Excel model for financial statement analysis. Try free online or download." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/financial-fundamentals/financial-ratio-calculator" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

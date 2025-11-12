@@ -35,6 +35,7 @@ const BerkusValuation = () => {
       <Helmet>
         <title>Berkus Valuation Method - Pre-Revenue Startup Model | Financial Decision Models</title>
         <meta name="description" content="Berkus Method startup valuation model for pre-revenue companies. Risk-based Excel tool evaluates idea, prototype, team, relationships, and rollout. Try free online, download interactive version." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/startup-valuations/berkus-valuation" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

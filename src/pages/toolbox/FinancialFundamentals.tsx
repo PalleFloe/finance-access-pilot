@@ -84,6 +84,7 @@ const FinancialFundamentals = () => {
       <Helmet>
         <title>Financial Fundamentals - Academic Models | Financial Decision Models</title>
         <meta name="description" content="Essential financial modelling tools: DCF models, cost of capital calculator, financial ratios, scenario analysis. Academic-quality Excel models for learning and business analysis. Free online access available." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/financial-fundamentals" />
       </Helmet>
       <Header />
       

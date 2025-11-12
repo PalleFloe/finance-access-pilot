@@ -21,6 +21,7 @@ const BreakEvenAnalysis = () => {
       <Helmet>
         <title>Break-Even Analysis Model - Coming Soon | Financial Decision Models</title>
         <meta name="description" content="Break-Even Analysis Model for threshold decision-making and profitability analysis. Coming soon to the Investment Analysis toolkit." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/investment-analysis/break-even-analysis-model" />
       </Helmet>
       <Header />
       

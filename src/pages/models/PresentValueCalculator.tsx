@@ -34,6 +34,7 @@ const PresentValueCalculator = () => {
       <Helmet>
         <title>Present Value Calculator - Time Value of Money Analysis | Financial Decision Models</title>
         <meta name="description" content="Simple present value calculator for time value of money analysis. Excel model covers one-time payments, annuities, growing annuities, and perpetuities. Educational tool, try free online or download." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/financial-fundamentals/present-value-calculator" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

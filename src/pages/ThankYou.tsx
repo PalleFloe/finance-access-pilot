@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, ArrowLeft } from "lucide-react";
@@ -7,6 +8,10 @@ import Header from "@/components/Header";
 const ThankYou = () => {
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Thank You | Financial Decision Models</title>
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/thank-you" />
+      </Helmet>
       <Header />
       
       <section className="py-20">

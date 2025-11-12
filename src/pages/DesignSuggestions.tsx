@@ -15,6 +15,8 @@ const DesignSuggestions = () => {
     <div className="min-h-screen bg-gray-50">
       <Helmet>
         <title>Design Suggestions | Financial Decision Models</title>
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/design-suggestions" />
+        <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       <Header />
       

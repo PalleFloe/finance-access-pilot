@@ -39,6 +39,7 @@ const DcfModels = () => {
       <Helmet>
         <title>DCF Models - Professional Discounted Cash Flow Analysis | Financial Decision Models</title>
         <meta name="description" content="Three professional DCF valuation models: Flexible, Three-Stage, and Stable Growth approaches. Excel-based discounted cash flow analysis for business valuation. Try free online, download full versions." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/financial-fundamentals/dcf-models" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

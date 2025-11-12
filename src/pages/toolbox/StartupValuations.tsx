@@ -84,6 +84,7 @@ const StartupValuations = () => {
       <Helmet>
         <title>Startup Valuations - Professional Models | Financial Decision Models</title>
         <meta name="description" content="Professional startup valuation models: Venture Capital Method, First Chicago, SaaS Unit Economics, Berkus Method. Excel-based tools for entrepreneurs and investors. Try free online, download interactive versions." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/startup-valuations" />
       </Helmet>
       <Header />
       

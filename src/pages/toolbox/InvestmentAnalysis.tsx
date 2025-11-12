@@ -81,6 +81,7 @@ const InvestmentAnalysis = () => {
       <Helmet>
         <title>Investment Analysis - Professional Models | Financial Decision Models</title>
         <meta name="description" content="Professional investment analysis tools for capital allocation and project evaluation. DCF models, growth analysis, and break-even calculations. Try free online, download interactive versions." />
+        <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/investment-analysis" />
       </Helmet>
       <Header />
       
