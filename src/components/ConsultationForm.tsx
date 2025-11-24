@@ -4,7 +4,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { Loader2 } from "lucide-react";
@@ -19,7 +18,6 @@ const ConsultationForm = () => {
     role: '',
     challenge: '',
     service_interests: '',
-    timeline: '',
     additional_info: ''
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -40,12 +38,6 @@ const ConsultationForm = () => {
     }
   };
 
-  const handleSelectChange = (value: string) => {
-    setFormData(prev => ({
-      ...prev,
-      timeline: value
-    }));
-  };
 
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
@@ -74,7 +66,7 @@ const ConsultationForm = () => {
     }
 
     if (!formData.service_interests.trim()) {
-      newErrors.service_interests = "Please describe what service interests you";
+      newErrors.service_interests = "Please describe what model interests you";
     }
 
     setErrors(newErrors);
@@ -109,7 +101,7 @@ const ConsultationForm = () => {
             challenge: formData.challenge,
             message: formData.challenge, // Required by database schema
             service_interests: formData.service_interests,
-            timeline: formData.timeline || null,
+            timeline: null,
             additional_info: formData.additional_info || null,
             user_id: user?.id || null
           }
@@ -137,7 +129,6 @@ const ConsultationForm = () => {
         role: '',
         challenge: '',
         service_interests: '',
-        timeline: '',
         additional_info: ''
       });
       setErrors({});
@@ -225,32 +216,17 @@ const ConsultationForm = () => {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="service_interests" className="text-lg">What type of service are you looking for? *</Label>
+            <Label htmlFor="service_interests" className="text-lg">What type of model are you looking for? *</Label>
             <Textarea
               id="service_interests"
               name="service_interests"
               value={formData.service_interests}
               onChange={handleInputChange}
-              placeholder="e.g., Custom model for M&A analysis, strategic consulting for investment decisions, etc."
+              placeholder="e.g, Customized model for valuation…, investment decisions…, etc."
               rows={4}
               className={errors.service_interests ? "border-red-500" : ""}
             />
             {errors.service_interests && <p className="text-sm text-red-500">{errors.service_interests}</p>}
-          </div>
-
-          <div className="space-y-2">
-            <Label htmlFor="timeline" className="text-lg">Timeline for service?</Label>
-            <Select value={formData.timeline} onValueChange={handleSelectChange}>
-              <SelectTrigger>
-                <SelectValue placeholder="Select a timeline" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="urgent">Urgent (within 2 weeks)</SelectItem>
-                <SelectItem value="near-term">Near-term (1-2 months)</SelectItem>
-                <SelectItem value="exploratory">Exploratory (3+ months)</SelectItem>
-                <SelectItem value="gathering">Just gathering information</SelectItem>
-              </SelectContent>
-            </Select>
           </div>
 
           <div className="space-y-2">
@@ -277,7 +253,7 @@ const ConsultationForm = () => {
                 Sending...
               </>
             ) : (
-              "Request Consultation"
+              "Request or Suggestion"
             )}
           </Button>
         </form>

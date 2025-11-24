@@ -70,23 +70,6 @@ const Contact = () => {
             <ConsultationForm />
           </div>
 
-          <div className="max-w-3xl mx-auto mb-12">
-            <h3 className="text-3xl font-semibold text-brand-blue mb-4">
-              What Happens Next
-            </h3>
-            <ol className="text-lg leading-relaxed space-y-3 list-decimal list-inside">
-              <li className="text-foreground">
-                <span className="text-brand-blue font-semibold">I review within 1 business day</span> and respond with next steps
-              </li>
-              <li className="text-foreground">
-                <span className="text-brand-blue font-semibold">If there's potential fit</span>, we'll schedule a brief clarity call (15 minutes) to discuss your needs
-              </li>
-              <li className="text-foreground">
-                <span className="text-brand-blue font-semibold">If we proceed together</span>, I'll prepare a proposal outlining scope, approach, and terms
-              </li>
-            </ol>
-          </div>
-
           <hr className="my-12 border-slate-200" />
 
           <div className="max-w-3xl mx-auto">
