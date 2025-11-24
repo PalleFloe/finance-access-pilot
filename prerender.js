@@ -1,4 +1,4 @@
-const { run } = require("react-snap");
+import { run } from "react-snap";
 
 // Configure react-snap to work with Vite's output directory
 const options = {
@@ -22,6 +22,7 @@ const options = {
     "/toolbox/startup-valuations/first-chicago-valuation",
     "/toolbox/startup-valuations/perpetuity-exit-valuation",
     "/toolbox/startup-valuations/venture-capital-method",
+
     "/toolbox/investment-analysis",
     "/toolbox/investment-analysis/decision-analysis",
     "/toolbox/investment-analysis/saas-unit-economics",
@@ -33,12 +34,14 @@ const options = {
     "/toolbox/investment-analysis/cost-reduction-dcf",
     "/toolbox/investment-analysis/two-three-stages-dcf",
     "/toolbox/investment-analysis/break-even-analysis",
+
     "/toolbox/financial-fundamentals",
     "/toolbox/financial-fundamentals/present-value-calculator",
     "/toolbox/financial-fundamentals/cost-of-capital-calculator",
     "/toolbox/financial-fundamentals/earning-growth-estimator",
     "/toolbox/financial-fundamentals/project-scenario-model",
     "/toolbox/financial-fundamentals/financial-ratio-calculator",
+
     "/toolbox/business-strategy",
     "/offerings",
     "/blog",
