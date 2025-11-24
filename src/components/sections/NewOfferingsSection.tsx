@@ -59,7 +59,7 @@ const NewOfferingsSection = () => {
                     variant="rich-emerald"
                   >
                     <MessageSquare className="w-5 h-5" />
-                    Request Consultation
+                    Request or Suggestion
                   </Button>
                 </Link>
               </div>
