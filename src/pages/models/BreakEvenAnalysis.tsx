@@ -22,6 +22,18 @@ const BreakEvenAnalysis = () => {
         <title>Break-Even Analysis Model - Coming Soon | Financial Decision Models</title>
         <meta name="description" content="Break-Even Analysis Model for threshold decision-making and profitability analysis. Coming soon to the Investment Analysis toolkit." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/investment-analysis/break-even-analysis-model" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Break-Even Analysis Model - Coming Soon | Financial Decision Models" />
+        <meta property="og:description" content="Break-Even Analysis Model for threshold decision-making and profitability analysis. Coming soon to the Investment Analysis toolkit." />
+        <meta property="og:url" content="https://www.financialdecisionmodels.com/toolbox/investment-analysis/break-even-analysis-model" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" />
+        <meta property="og:image:alt" content="Financial Decision Models — by Floe Consulting" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Financial Decision Models" />
+        <meta property="og:locale" content="en_GB" />
       </Helmet>
       <Header />
       

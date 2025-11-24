@@ -11,6 +11,7 @@ const ThankYou = () => {
       <Helmet>
         <title>Thank You | Financial Decision Models</title>
         <link rel="canonical" href="https://www.financialdecisionmodels.com/thank-you" />
+        <meta name="robots" content="noindex,nofollow" />
       </Helmet>
       <Header />
       

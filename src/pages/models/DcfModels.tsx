@@ -40,6 +40,19 @@ const DcfModels = () => {
         <title>DCF Models - Professional Discounted Cash Flow Analysis | Financial Decision Models</title>
         <meta name="description" content="Three professional DCF valuation models: Flexible, Three-Stage, and Stable Growth approaches. Excel-based discounted cash flow analysis for business valuation. Try free online, download full versions." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/financial-fundamentals/dcf-models" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="DCF Models - Professional Discounted Cash Flow Analysis | Financial Decision Models" />
+        <meta property="og:description" content="Three professional DCF valuation models: Flexible, Three-Stage, and Stable Growth approaches. Excel-based discounted cash flow analysis for business valuation. Try free online, download full versions." />
+        <meta property="og:url" content="https://www.financialdecisionmodels.com/toolbox/financial-fundamentals/dcf-models" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" />
+        <meta property="og:image:alt" content="Financial Decision Models — by Floe Consulting" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Financial Decision Models" />
+        <meta property="og:locale" content="en_GB" />
+        
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

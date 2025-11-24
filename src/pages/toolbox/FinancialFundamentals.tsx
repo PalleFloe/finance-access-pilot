@@ -85,6 +85,18 @@ const FinancialFundamentals = () => {
         <title>Financial Fundamentals - Academic Models | Financial Decision Models</title>
         <meta name="description" content="Essential financial modelling tools: DCF models, cost of capital calculator, financial ratios, scenario analysis. Academic-quality Excel models for learning and business analysis. Free online access available." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/financial-fundamentals" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Financial Fundamentals - Academic Models | Financial Decision Models" />
+        <meta property="og:description" content="Essential financial modelling tools: DCF models, cost of capital calculator, financial ratios, scenario analysis. Academic-quality Excel models for learning and business analysis. Free online access available." />
+        <meta property="og:url" content="https://www.financialdecisionmodels.com/toolbox/financial-fundamentals" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" />
+        <meta property="og:image:alt" content="Financial Decision Models — by Floe Consulting" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Financial Decision Models" />
+        <meta property="og:locale" content="en_GB" />
       </Helmet>
       <Header />
       

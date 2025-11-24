@@ -21,6 +21,7 @@ const NotFound = () => {
         <title>404 - Page Not Found | Financial Decision Models</title>
         <meta name="description" content="The page you're looking for doesn't exist. Return to Financial Decision Models homepage for professional financial modelling tools and consulting services." />
         <link rel="canonical" href={`${BASE_URL}/`} />
+        <meta name="robots" content="noindex,nofollow" />
         
         {/* Open Graph */}
         <meta property="og:title" content="404 - Page Not Found | Financial Decision Models" />

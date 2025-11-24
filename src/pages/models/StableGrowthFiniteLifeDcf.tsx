@@ -35,6 +35,19 @@ const StableGrowthFiniteLifeDcf = () => {
         <title>Stable Growth: Finite-Life DCF Model - Investment Analysis | Financial Decision Models</title>
         <meta name="description" content="Stable Growth DCF analysis for finite-life assets with predictable revenue and terminal value calculation. Excel tool for project valuation and investment analysis." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/investment-analysis/stable-growth-finite-life-dcf-model" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Stable Growth: Finite-Life DCF Model - Investment Analysis | Financial Decision Models" />
+        <meta property="og:description" content="Stable Growth DCF analysis for finite-life assets with predictable revenue and terminal value calculation. Excel tool for project valuation and investment analysis." />
+        <meta property="og:url" content="https://www.financialdecisionmodels.com/toolbox/investment-analysis/stable-growth-finite-life-dcf-model" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" />
+        <meta property="og:image:alt" content="Financial Decision Models — by Floe Consulting" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Financial Decision Models" />
+        <meta property="og:locale" content="en_GB" />
+        
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
