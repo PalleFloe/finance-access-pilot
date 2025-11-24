@@ -27,6 +27,9 @@ export const useAnalytics = () => {
     }
     
     try {
+      // Strip query parameters from URL to avoid tokens and keep URLs clean
+      const cleanUrl = window.location.origin + window.location.pathname;
+      
       await supabase.functions.invoke('track-analytics', {
         body: {
           modelName,
@@ -34,7 +37,7 @@ export const useAnalytics = () => {
           eventSubtype,
           durationSeconds,
           sessionId: generateSessionId(),
-          pageUrl: window.location.href,
+          pageUrl: cleanUrl,
           userId: user?.id || null,
         },
       });
@@ -109,6 +112,9 @@ export const usePageVisitTracking = (modelName: string) => {
     const handleBeforeUnload = () => {
       if (isVisibleRef.current) {
         const timeSpent = Math.floor((Date.now() - startTimeRef.current) / 1000);
+        // Strip query parameters from URL
+        const cleanUrl = window.location.origin + window.location.pathname;
+        
         // Use sendBeacon for reliable tracking on page unload
         const data = JSON.stringify({
           modelName,
@@ -116,7 +122,7 @@ export const usePageVisitTracking = (modelName: string) => {
           eventSubtype: 'exit',
           durationSeconds: timeSpent,
           sessionId: generateSessionId(),
-          pageUrl: window.location.href,
+          pageUrl: cleanUrl,
           userId: null, // We can't reliably get user ID in beforeunload
         });
         
