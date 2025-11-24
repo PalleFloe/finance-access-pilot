@@ -34,6 +34,19 @@ const FinancialRatioCalculator = () => {
         <title>Financial Ratio Calculator - Comprehensive Financial Analysis | Financial Decision Models</title>
         <meta name="description" content="Comprehensive financial ratio calculator with 30+ ratios across profitability, efficiency, leverage, and market valuation. Excel model for financial statement analysis. Try free online or download." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/financial-fundamentals/financial-ratio-calculator" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Financial Ratio Calculator - Comprehensive Financial Analysis | Financial Decision Models" />
+        <meta property="og:description" content="Comprehensive financial ratio calculator with 30+ ratios across profitability, efficiency, leverage, and market valuation. Excel model for financial statement analysis. Try free online or download." />
+        <meta property="og:url" content="https://www.financialdecisionmodels.com/toolbox/financial-fundamentals/financial-ratio-calculator" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" />
+        <meta property="og:image:alt" content="Financial Decision Models — by Floe Consulting" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Financial Decision Models" />
+        <meta property="og:locale" content="en_GB" />
+        
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

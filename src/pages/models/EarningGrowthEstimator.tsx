@@ -35,6 +35,19 @@ const EarningGrowthEstimator = () => {
         <title>Earning Growth Estimator - ROC-Based Growth Analysis | Financial Decision Models</title>
         <meta name="description" content="Earning growth estimator based on return on capital and reinvestment analysis. Excel model calculates sustainable growth rates for existing and new investments. Try free online or download." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/financial-fundamentals/earning-growth-estimator" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Earning Growth Estimator - ROC-Based Growth Analysis | Financial Decision Models" />
+        <meta property="og:description" content="Earning growth estimator based on return on capital and reinvestment analysis. Excel model calculates sustainable growth rates for existing and new investments. Try free online or download." />
+        <meta property="og:url" content="https://www.financialdecisionmodels.com/toolbox/financial-fundamentals/earning-growth-estimator" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" />
+        <meta property="og:image:alt" content="Financial Decision Models — by Floe Consulting" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Financial Decision Models" />
+        <meta property="og:locale" content="en_GB" />
+        
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

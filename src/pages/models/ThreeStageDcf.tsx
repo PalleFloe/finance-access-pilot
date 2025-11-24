@@ -33,6 +33,19 @@ const ThreeStageDcf = () => {
         <title>Three Stage DCF Model - Multi-stage Analysis | Financial Decision Models</title>
         <meta name="description" content="Three Stage DCF Model for multi-stage analysis: DCF valuation with distinct performance stage characteristics. Professional investment analysis tool with dynamic evolution modelling." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/investment-analysis/three-stage-dcf-model" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Three Stage DCF Model - Multi-stage Analysis | Financial Decision Models" />
+        <meta property="og:description" content="Three Stage DCF Model for multi-stage analysis: DCF valuation with distinct performance stage characteristics. Professional investment analysis tool with dynamic evolution modelling." />
+        <meta property="og:url" content="https://www.financialdecisionmodels.com/toolbox/investment-analysis/three-stage-dcf-model" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" />
+        <meta property="og:image:alt" content="Financial Decision Models — by Floe Consulting" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Financial Decision Models" />
+        <meta property="og:locale" content="en_GB" />
+        
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
