@@ -52,7 +52,7 @@ const AboutSection = () => {
                     How I Help Businesses
                   </h3>
                   <p>
-                    I help businesses navigate their most complex financial choices through expert consulting and custom financial modelling.
+                    I help businesses navigate their most complex financial choices through financial decision models, Excel tools, and custom financial frameworks.
                   </p>
                   <p>
                     My solution: Professional decision frameworks combined with business judgment. I challenge assumptions, structure thinking, and cut through complexity to focus on what actually drives value.
