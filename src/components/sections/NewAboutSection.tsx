@@ -17,7 +17,7 @@ const NewAboutSection = () => {
 
           <div className="pt-4">
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-brand-blue leading-relaxed font-semibold mb-2">
-              To address this, I founded Fløe Consulting
+              To address this, I founded this website
             </p>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-slate-700 leading-relaxed">
               My mission is to help turn complex choices into structured insights and better business decisions.
