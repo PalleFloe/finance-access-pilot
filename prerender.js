@@ -4,6 +4,16 @@ const { run } = require("react-snap");
 const options = {
   source: "dist",
   skipThirdPartyRequests: true,
+  minifyHtml: { collapseBooleanAttributes: false },
+  // Disable inlining to prevent issues with dynamic content
+  inlineCss: false,
+  // Wait for content to load
+  waitFor: 1000,
+  // Handle navigation properly for SPA
+  crawl: true,
+  puppeteerArgs: ["--no-sandbox", "--disable-setuid-sandbox"],
+  // More verbose logging
+  verbose: true,
   include: [
     "/",
     "/toolbox",
