@@ -21,6 +21,11 @@ export const useAnalytics = () => {
     eventSubtype?: string,
     durationSeconds?: number
   ) => {
+    // Skip analytics during prerendering
+    if (navigator.userAgent.includes('ReactSnap') || navigator.userAgent.includes('Headless')) {
+      return;
+    }
+    
     try {
       await supabase.functions.invoke('track-analytics', {
         body: {
@@ -75,6 +80,10 @@ export const usePageVisitTracking = (modelName: string) => {
   const isVisibleRef = useRef<boolean>(!document.hidden);
 
   useEffect(() => {
+    // Skip tracking during prerendering
+    if (navigator.userAgent.includes('ReactSnap') || navigator.userAgent.includes('Headless')) {
+      return;
+    }
     // Track page enter
     startTimeRef.current = Date.now();
     trackPageEnter(modelName);
