@@ -48,7 +48,7 @@ const IndexNew = () => {
             "contactPoint": {
               "@type": "ContactPoint",
               "contactType": "Business Consultation",
-              "email": "palle@floeconsulting.com",
+              "email": "palle@financialdecisionmodels.com",
               "availableLanguage": ["English", "Danish"]
             },
             "sameAs": [

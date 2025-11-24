@@ -34,7 +34,7 @@ const Terms = () => {
           
           <h2>Who we are</h2>
           <p>Fløe Consulting (CVR 34912017), Copenhagen, Denmark.</p>
-          <p><strong>Contact:</strong> <a href="mailto:palle@floeconsulting.com">palle@floeconsulting.com</a></p>
+          <p><strong>Contact:</strong> <a href="mailto:palle@financialdecisionmodels.com">palle@financialdecisionmodels.com</a></p>
           
           <h2>Scope</h2>
           <p>These Terms cover your use of this website and the free model library. Consulting services are governed by a separate agreement.</p>

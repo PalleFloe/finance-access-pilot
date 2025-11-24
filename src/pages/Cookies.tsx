@@ -47,7 +47,7 @@ const Cookies = () => {
           
           <p>You can block or delete cookies in your browser settings; the site will still work.</p>
           
-          <p><strong>Contact:</strong> <a href="mailto:palle@floeconsulting.com">palle@floeconsulting.com</a></p>
+          <p><strong>Contact:</strong> <a href="mailto:palle@financialdecisionmodels.com">palle@financialdecisionmodels.com</a></p>
         </article>
       </main>
       <Footer />

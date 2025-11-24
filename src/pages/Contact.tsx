@@ -46,7 +46,7 @@ const Contact = () => {
               "contactPoint": {
                 "@type": "ContactPoint",
                 "contactType": "Business Consultation",
-                "email": "palle@floeconsulting.com",
+                "email": "palle@financialdecisionmodels.com",
                 "availableLanguage": ["English", "Danish"]
               }
             }
@@ -83,7 +83,7 @@ const Contact = () => {
               I welcome input that helps make these free models better.
             </p>
             <p className="text-lg font-semibold">
-              Email: <a href="mailto:feedback@financialdecisionmodels.com" className="text-brand-blue hover:underline">feedback@financialdecisionmodels.com</a>
+              Email: <a href="mailto:palle@financialdecisionmodels.com" className="text-brand-blue hover:underline">palle@financialdecisionmodels.com</a>
             </p>
           </div>
         </div>

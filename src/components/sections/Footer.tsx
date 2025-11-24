@@ -11,10 +11,10 @@ const Footer = () => {
           <p className="text-sm text-muted-foreground text-center leading-relaxed">
             © {currentYear} Fløe Consulting — CVR 34912017 — Copenhagen, Denmark ·{" "}
             <a 
-              href="mailto:palle@floeconsulting.com"
+              href="mailto:palle@financialdecisionmodels.com"
               className="underline hover:text-foreground focus:outline-2 focus:outline-offset-2 focus:outline-current"
             >
-              palle@floeconsulting.com
+              palle@financialdecisionmodels.com
             </a> ·{" "}
             <a 
               href="https://www.linkedin.com/in/palle-fløe-nielsen/" 
