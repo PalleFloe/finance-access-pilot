@@ -35,7 +35,7 @@ const Privacy = () => {
           
           <h2>Who we are</h2>
           <p>Fløe Consulting (CVR 34912017), Copenhagen, Denmark.</p>
-          <p><strong>Contact:</strong> <a href="mailto:palle@floeconsulting.com">palle@floeconsulting.com</a></p>
+          <p><strong>Contact:</strong> <a href="mailto:palle@financialdecisionmodels.com">palle@financialdecisionmodels.com</a></p>
           
           <h2>What this covers</h2>
           <p>How we collect and use personal data when you browse the site or contact us.</p>
@@ -59,7 +59,7 @@ const Privacy = () => {
           </ul>
           
           <h2>Your rights</h2>
-          <p>You may request access, correction, or deletion. Email us at <a href="mailto:palle@floeconsulting.com">palle@floeconsulting.com</a>.</p>
+          <p>You may request access, correction, or deletion. Email us at <a href="mailto:palle@financialdecisionmodels.com">palle@financialdecisionmodels.com</a>.</p>
           
           <h2>Complaints</h2>
           <p>You may contact your local supervisory authority (in Denmark: Datatilsynet).</p>

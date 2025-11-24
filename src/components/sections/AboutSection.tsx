@@ -92,7 +92,7 @@ const AboutSection = () => {
                     If you need implementation for your specific situation - whether that's adapting these models or building something custom - that's where consulting comes in.
                   </p>
                   <p>
-                    Your input and perspectives on the website, the models, or any related topics would be incredibly helpful. Please email me at <a href="mailto:feedback@financialdecisionmodels.com" className="text-primary hover:underline">feedback@financialdecisionmodels.com</a>.
+                    Your input and perspectives on the website, the models, or any related topics would be incredibly helpful. Please email me at <a href="mailto:palle@financialdecisionmodels.com" className="text-primary hover:underline">palle@financialdecisionmodels.com</a>.
                   </p>
 
                   <h3 className="text-xl md:text-2xl font-semibold mb-4 text-brand-blue mt-8">
