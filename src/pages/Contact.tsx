@@ -62,7 +62,7 @@ const Contact = () => {
               Let's have a conversation
             </h1>
             <p className="text-2xl md:text-3xl text-slate-600 max-w-6xl mx-auto leading-relaxed">
-              Need tailored solutions and expert guidance for your specific needs?
+              Looking for a customized model for your specific needs or ideas for new financial decision models to be added on this website?
             </p>
           </div>
 
