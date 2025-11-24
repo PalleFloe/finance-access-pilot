@@ -1,3 +1,7 @@
+[build]
+  command = "npm run build && npx react-snap"
+  publish = "build"
+
 [[redirects]]
   from = "http://financialdecisionmodels.com/*"
   to = "https://financialdecisionmodels.com/:splat"
