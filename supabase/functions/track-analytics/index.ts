@@ -66,7 +66,7 @@ Deno.serve(async (req) => {
     }
 
     // Additional security validations
-    if (modelName.length > 100 || (pageUrl && pageUrl.length > 500)) {
+    if (modelName.length > 200 || (pageUrl && pageUrl.length > 1000)) {
       console.log('Analytics validation failed: Input too long');
       return new Response(
         JSON.stringify({ error: 'Input validation failed' }),
