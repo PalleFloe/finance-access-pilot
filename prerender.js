@@ -1,4 +1,37 @@
 import { run } from "react-snap";
+import { readFileSync, writeFileSync, readdirSync, statSync } from "fs";
+import { join } from "path";
+
+// Post-process HTML files to fix canonical tags
+function fixCanonicalTags(distPath) {
+  const processDirectory = (dir) => {
+    const entries = readdirSync(dir);
+    
+    for (const entry of entries) {
+      const fullPath = join(dir, entry);
+      const stat = statSync(fullPath);
+      
+      if (stat.isDirectory()) {
+        processDirectory(fullPath);
+      } else if (entry === "index.html") {
+        let html = readFileSync(fullPath, "utf-8");
+        
+        // Check if there's a default canonical and a Helmet canonical
+        const hasDefaultCanonical = html.includes('data-default-canonical="true"');
+        const canonicalMatches = html.match(/<link rel="canonical"[^>]*>/g);
+        
+        if (hasDefaultCanonical && canonicalMatches && canonicalMatches.length > 1) {
+          // Remove the default canonical, keep the Helmet one
+          html = html.replace(/<link rel="canonical"[^>]*data-default-canonical="true"[^>]*>\s*/g, "");
+          writeFileSync(fullPath, html, "utf-8");
+          console.log(`✓ Fixed canonical in: ${fullPath}`);
+        }
+      }
+    }
+  };
+  
+  processDirectory(distPath);
+}
 
 // Configure react-snap to work with Vite's output directory
 const options = {
@@ -56,6 +89,9 @@ const options = {
 run(options)
   .then(() => {
     console.log("✅ Prerendering completed successfully!");
+    console.log("🔧 Post-processing: Fixing canonical tags...");
+    fixCanonicalTags("dist");
+    console.log("✅ Canonical tags fixed!");
   })
   .catch((error) => {
     console.error("❌ Prerendering failed:", error);
