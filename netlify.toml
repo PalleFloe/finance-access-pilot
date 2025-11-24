@@ -1,6 +1,6 @@
 [build]
-  command = "npm run build && npx react-snap"
-  publish = "build"
+  command = "npm run build && node prerender.js"
+  publish = "dist"
 
 [[redirects]]
   from = "http://financialdecisionmodels.com/*"
