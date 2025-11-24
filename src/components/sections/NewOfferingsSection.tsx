@@ -49,7 +49,7 @@ const NewOfferingsSection = () => {
               <div className="h-8"></div>
               <div>
                 <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-700 leading-relaxed">
-                  Customization & Consulting Services for tailored solutions and expert guidance for your specific needs
+                  Models customization for your specific needs or ideas for new financial decision models to be added on this website
                 </p>
               </div>
               <div>
