@@ -75,7 +75,7 @@ const HomeContentSections = () => {
             </p>
             
             <p>
-              If you need customized models, solutions or strategic support for complex financial decisions, our consulting services offer expert guidance designed to your specific needs. Contact me to discuss further.{' '}
+              If you need customized models, solutions or strategic support for complex financial decisions, I offer tailored financial decision models and Excel tools designed to your specific needs. Contact me to discuss further.{' '}
               <a href="/contact" className="text-brand-blue underline hover:text-[#264d75] transition-colors">
                 Request Consultation
               </a>

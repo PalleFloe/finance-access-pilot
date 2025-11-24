@@ -19,13 +19,13 @@ const NotFound = () => {
     <div className="min-h-screen bg-gray-50">
       <Helmet>
         <title>404 - Page Not Found | Financial Decision Models</title>
-        <meta name="description" content="The page you're looking for doesn't exist. Return to Financial Decision Models homepage for professional financial modelling tools and consulting services." />
+        <meta name="description" content="The page you're looking for doesn't exist. Return to Financial Decision Models homepage for professional Excel tools and online valuation models." />
         <link rel="canonical" href={`${BASE_URL}/`} />
         <meta name="robots" content="noindex,nofollow" />
         
         {/* Open Graph */}
         <meta property="og:title" content="404 - Page Not Found | Financial Decision Models" />
-        <meta property="og:description" content="The page you're looking for doesn't exist. Return to Financial Decision Models homepage for professional financial modelling tools and consulting services." />
+        <meta property="og:description" content="The page you're looking for doesn't exist. Return to Financial Decision Models homepage for professional Excel tools and online valuation models." />
         <meta property="og:url" content={`${BASE_URL}/`} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={DEFAULT_OG_IMAGE} />

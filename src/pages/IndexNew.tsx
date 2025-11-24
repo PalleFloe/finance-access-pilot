@@ -15,12 +15,12 @@ const IndexNew = () => {
     <div className="min-h-screen bg-gray-50">
       <Helmet>
         <title>Financial Decision Models - Professional Financial Tools</title>
-        <meta name="description" content="Professional financial decision models & expert consulting. 15+ free Excel models for startup valuation, DCF analysis & investment decisions. Created by former Divisional CFO with 20+ years experience." />
+        <meta name="description" content="Professional financial decision models & Excel tools. 15+ free online models for startup valuation, DCF analysis & investment decisions. Created by former Divisional CFO with 20+ years experience." />
         <link rel="canonical" href={`${BASE_URL}/`} />
         
         {/* Open Graph */}
         <meta property="og:title" content="Financial Decision Models | Professional Excel Models & Consulting" />
-        <meta property="og:description" content="Professional financial decision models & expert consulting. 15+ free Excel models for startup valuation, DCF analysis & investment decisions. Created by former Divisional CFO with 20+ years experience." />
+        <meta property="og:description" content="Professional financial decision models & Excel tools. 15+ free online models for startup valuation, DCF analysis & investment decisions. Created by former Divisional CFO with 20+ years experience." />
         <meta property="og:url" content={`${BASE_URL}/`} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={DEFAULT_OG_IMAGE} />
