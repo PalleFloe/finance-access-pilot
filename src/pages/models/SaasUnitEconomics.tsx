@@ -23,6 +23,7 @@ const SaasUnitEconomics = () => {
   usePageVisitTracking('SaaS Unit Economics Model');
 
   useEffect(() => {
+    console.log("Helmet is rendering on SaaS Unit Economics page");
     window.scrollTo(0, 0);
   }, []);
 
