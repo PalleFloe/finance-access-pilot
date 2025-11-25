@@ -94,9 +94,34 @@ const VentureCapitalMethod = () => {
               {
                 "@type": "ListItem",
                 "position": 4,
-                "name": "Venture Capital Method"
+                "name": "Venture Capital Method",
+                "item": "https://www.financialdecisionmodels.com/toolbox/startup-valuations/venture-capital-method"
               }
             ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Venture Capital Method Valuation Model",
+            "description": "Excel model for venture capital startup valuation with multi-round funding analysis, exit scenarios, and ownership dilution tracking.",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": ["Windows", "macOS"],
+            "softwareHelp": "https://www.financialdecisionmodels.com/toolbox/startup-valuations/venture-capital-method",
+            "image": "https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png",
+            "url": "https://www.financialdecisionmodels.com/toolbox/startup-valuations/venture-capital-method",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "description": "Free online preview and downloadable no-macro Excel model with step-by-step user guidance."
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Financial Decision Models",
+              "url": "https://www.financialdecisionmodels.com/"
+            }
           })}
         </script>
       </Helmet>
