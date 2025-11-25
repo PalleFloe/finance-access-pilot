@@ -1,12 +1,5 @@
 # Dynamic sitemap via Supabase Edge Function
-/sitemap.xml https://oqmorhcgnkuxwazyqrle.supabase.co/functions/v1/sitemap 200
+/sitemap.xml https://oqmorhcgnkuxwazyqrle.supabase.co/functions/v1/sitemap 302
 
 # Return 410 Gone for permanently removed page
-/how-it-works 410
-
-# Force HTTP to HTTPS redirect
-http://financialdecisionmodels.com/* https://financialdecisionmodels.com/:splat 301!
-http://www.financialdecisionmodels.com/* https://www.financialdecisionmodels.com/:splat 301!
-
-# Force www to non-www (optional, but good for consistency)
-https://www.financialdecisionmodels.com/* https://financialdecisionmodels.com/:splat 301!
+/how-it-works / 410
