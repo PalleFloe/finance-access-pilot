@@ -30,29 +30,45 @@ const IndexNew = () => {
         <meta property="og:site_name" content={OG_SITE_NAME} />
         <meta property="og:locale" content={OG_LOCALE} />
         
-        {/* Structured Data - Organization Schema */}
+        {/* Structured Data - Organization + WebSite Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Financial Decision Models",
-            "url": BASE_URL,
-            "logo": `${BASE_URL}/lovable-uploads/logo-large.webp`,
-            "description": "Professional financial decision models and startup valuation tools for entrepreneurs and investors",
-            "founder": {
-              "@type": "Person",
-              "name": "Palle Fløe Nielsen",
-              "jobTitle": "Former Divisional CFO",
-              "url": `${BASE_URL}/about`
-            },
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "contactType": "Business Consultation",
-              "email": "palle@financialdecisionmodels.com",
-              "availableLanguage": ["English", "Danish"]
-            },
-            "sameAs": [
-              "https://www.linkedin.com/in/palle-fløe-nielsen/"
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": `${BASE_URL}/#organization`,
+                "name": "Financial Decision Models",
+                "legalName": "Fløe Consulting",
+                "url": `${BASE_URL}/`,
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": `${BASE_URL}/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png`
+                },
+                "founder": {
+                  "@type": "Person",
+                  "name": "Palle Fløe Nielsen",
+                  "url": `${BASE_URL}/about`
+                },
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Copenhagen",
+                  "addressCountry": "DK"
+                },
+                "sameAs": [
+                  "https://www.linkedin.com/in/palle-fløe-nielsen/"
+                ]
+              },
+              {
+                "@type": "WebSite",
+                "@id": `${BASE_URL}/#website`,
+                "url": `${BASE_URL}/`,
+                "name": "Financial Decision Models",
+                "description": "Excel financial models and valuation tools with free online previews, downloadable no-macro templates, and step-by-step guidance.",
+                "publisher": {
+                  "@id": `${BASE_URL}/#organization`
+                }
+              }
             ]
           })}
         </script>
