@@ -4,12 +4,17 @@ import ToolboxSection from "@/components/sections/ToolboxSection";
 import Footer from "@/components/sections/Footer";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
 import { BASE_URL, DEFAULT_OG_IMAGE, OG_SITE_NAME, OG_LOCALE } from "@/lib/constants";
+import { BreadcrumbSchema } from "@/seo/BreadcrumbSchema";
 
 const Toolbox = () => {
   usePageVisitTracking('page:/toolbox');
   
   return (
     <div className="min-h-screen bg-gray-50">
+      <BreadcrumbSchema items={[
+        { name: "Home", path: "/" },
+        { name: "Toolbox", path: "/toolbox" }
+      ]} />
       <Helmet>
         <title>Financial Decision Models Toolbox – Free Online Tools &amp; Excel Templates</title>
         <meta name="description" content="Browse all financial decision models and Excel templates, including DCF valuation, startup valuation, SaaS unit economics, scenario analysis, cost of capital and more. Preview models online and download clean, no-macro Excel files with step-by-step guidance." />
