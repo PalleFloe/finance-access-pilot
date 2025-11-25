@@ -8,7 +8,6 @@ import { getBlogPostBySlug } from "@/data/blogPosts";
 import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BASE_URL, DEFAULT_OG_IMAGE, OG_SITE_NAME, OG_LOCALE, LINKEDIN_URL } from "@/lib/constants";
-import { BreadcrumbSchema } from "@/seo/BreadcrumbSchema";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -77,11 +76,6 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <BreadcrumbSchema items={[
-        { name: "Home", path: "/" },
-        { name: "Blog", path: "/blog" },
-        { name: post.title, path: `/blog/${post.slug}` }
-      ]} />
       <Helmet>
         <title>{post.title} | Financial Decision Models Blog</title>
         <meta name="description" content={post.metaDescription || post.excerpt} />
