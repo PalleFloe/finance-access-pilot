@@ -93,9 +93,34 @@ const DecisionAnalysis = () => {
               {
                 "@type": "ListItem",
                 "position": 4,
-                "name": "Decision Analysis"
+                "name": "Decision Analysis",
+                "item": "https://www.financialdecisionmodels.com/toolbox/startup-valuations/decision-analysis"
               }
             ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Decision Analysis for Venture Capital",
+            "description": "Systematic risk assessment and probability-weighted analysis for VC investment decisions with stage-based probability assignments.",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": ["Windows", "macOS"],
+            "softwareHelp": "https://www.financialdecisionmodels.com/toolbox/startup-valuations/decision-analysis",
+            "image": "https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png",
+            "url": "https://www.financialdecisionmodels.com/toolbox/startup-valuations/decision-analysis",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "description": "Free online preview and downloadable no-macro Excel model with step-by-step user guidance."
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Financial Decision Models",
+              "url": "https://www.financialdecisionmodels.com/"
+            }
           })}
         </script>
       </Helmet>

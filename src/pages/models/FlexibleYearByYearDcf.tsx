@@ -95,9 +95,34 @@ const FlexibleYearByYearDcf = () => {
               {
                 "@type": "ListItem",
                 "position": 4,
-                "name": "Flexible Year by Year DCF Model"
+                "name": "Flexible Year by Year DCF Model",
+                "item": "https://www.financialdecisionmodels.com/toolbox/investment-analysis/flexible-year-by-year-dcf-model"
               }
             ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Flexible Year by Year DCF Model",
+            "description": "Dynamic DCF analysis with year-by-year projections, flexible growth rates, and comprehensive sensitivity analysis with terminal value options.",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": ["Windows", "macOS"],
+            "softwareHelp": "https://www.financialdecisionmodels.com/toolbox/investment-analysis/flexible-year-by-year-dcf-model",
+            "image": "https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png",
+            "url": "https://www.financialdecisionmodels.com/toolbox/investment-analysis/flexible-year-by-year-dcf-model",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "description": "Free online preview and downloadable no-macro Excel model with step-by-step user guidance."
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Financial Decision Models",
+              "url": "https://www.financialdecisionmodels.com/"
+            }
           })}
         </script>
       </Helmet>
