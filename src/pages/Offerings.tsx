@@ -192,36 +192,38 @@ const Offerings = () => {
         </section>
 
         {/* Offerings Section */}
-        <section className="py-12 md:py-16">
-          <div className="container mx-auto px-6">
-            {/* Section Header */}
-            <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-brand-blue">
-                Offerings to You
-              </h2>
-              <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
-                Free models to view and use — or tailored solutions designed for your specific needs.
+        <section className="py-12">
+          <div className="container mx-auto max-w-6xl px-4">
+            <div className="bg-white border border-slate-200 rounded-xl shadow-sm px-6 py-10 md:px-10 md:py-12">
+              {/* Section Header */}
+              <header className="mb-8">
+                <h2 className="text-2xl md:text-3xl font-bold text-brand-blue mb-2 text-left">
+                  Offerings to You
+                </h2>
+                <p className="text-base md:text-lg text-slate-600 max-w-3xl text-left">
+                  Free models to view and use — or tailored solutions designed for your specific needs.
+                </p>
+              </header>
+              
+              {/* Cards Grid */}
+              <div className="grid gap-6 md:grid-cols-3">
+                {tiers.map((tier, index) => (
+                  <TierBox key={index} tier={tier} />
+                ))}
+              </div>
+              
+              {/* Safety Note */}
+              <p className="mt-6 text-sm text-slate-500 text-left">
+                All models are standard safe Excel files with no macros. Hosted on Microsoft SharePoint. Formulas are protected to prevent unintended changes, while input cells are fully editable.
               </p>
             </div>
-            
-            {/* Cards Grid */}
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {tiers.map((tier, index) => (
-                <TierBox key={index} tier={tier} />
-              ))}
-            </div>
-            
-            {/* Safety Note */}
-            <p className="text-lg text-slate-600 mt-8">
-              All models are standard safe Excel files with no macros. Hosted on Microsoft SharePoint. Formulas are protected to prevent unintended changes, while input cells are fully editable.
-            </p>
           </div>
         </section>
 
         {/* FAQ Section */}
-        <section className="py-12 md:py-16 border-t border-slate-200">
-          <div className="container mx-auto px-6">
-            <h2 className="text-2xl md:text-3xl font-bold text-brand-blue mb-8">
+        <section className="py-12">
+          <div className="container mx-auto max-w-6xl px-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-blue mb-6 text-left">
               Frequently Asked Questions
             </h2>
 
