@@ -1,16 +1,13 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
 User-agent: *
+# Allow normal crawling of the site
 Allow: /
+
+# Block internal / auth / admin routes
+Disallow: /auth
+Disallow: /admin
+
+# Explicitly allow toolbox and blog
+Allow: /toolbox
+Allow: /blog
 
 Sitemap: https://www.financialdecisionmodels.com/sitemap.xml

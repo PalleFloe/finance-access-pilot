@@ -79,13 +79,13 @@ const InvestmentAnalysis = () => {
   return (
     <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
-        <title>Investment Analysis - Professional Models | Financial Decision Models</title>
-        <meta name="description" content="Professional investment analysis tools for capital allocation and project evaluation. DCF models, growth analysis, and break-even calculations. Try free online, download interactive versions." />
+        <title>Investment Analysis Models – DCF, Scenario &amp; Project Valuation | Financial Decision Models</title>
+        <meta name="description" content="Excel models for investment analysis, including multi-stage DCF, decision analysis, project valuation, cost reduction, break-even analysis and scenario modelling. Online previews and downloadable no-macro Excel templates." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/investment-analysis" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Investment Analysis - Professional Models | Financial Decision Models" />
-        <meta property="og:description" content="Professional investment analysis tools for capital allocation and project evaluation. DCF models, growth analysis, and break-even calculations. Try free online, download interactive versions." />
+        <meta property="og:title" content="Investment Analysis Models – DCF, Scenario &amp; Project Valuation | Financial Decision Models" />
+        <meta property="og:description" content="Excel models for investment analysis, including multi-stage DCF, decision analysis, project valuation, cost reduction, break-even analysis and scenario modelling. Online previews and downloadable no-macro Excel templates." />
         <meta property="og:url" content="https://www.financialdecisionmodels.com/toolbox/investment-analysis" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" />

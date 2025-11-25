@@ -82,13 +82,13 @@ const FinancialFundamentals = () => {
   return (
     <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
-        <title>Financial Fundamentals - Academic Models | Financial Decision Models</title>
-        <meta name="description" content="Essential financial modelling tools: DCF models, cost of capital calculator, financial ratios, scenario analysis. Academic-quality Excel models for learning and business analysis. Free online access available." />
+        <title>Financial Fundamentals Models – Cost of Capital, Present Value &amp; Ratios | Financial Decision Models</title>
+        <meta name="description" content="Core financial fundamentals tools: present value calculators, cost of capital, earnings growth estimators, project scenarios and financial ratio analysis. Online tools plus downloadable Excel models with clear input guidance." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/financial-fundamentals" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Financial Fundamentals - Academic Models | Financial Decision Models" />
-        <meta property="og:description" content="Essential financial modelling tools: DCF models, cost of capital calculator, financial ratios, scenario analysis. Academic-quality Excel models for learning and business analysis. Free online access available." />
+        <meta property="og:title" content="Financial Fundamentals Models – Cost of Capital, Present Value &amp; Ratios | Financial Decision Models" />
+        <meta property="og:description" content="Core financial fundamentals tools: present value calculators, cost of capital, earnings growth estimators, project scenarios and financial ratio analysis. Online tools plus downloadable Excel models with clear input guidance." />
         <meta property="og:url" content="https://www.financialdecisionmodels.com/toolbox/financial-fundamentals" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" />

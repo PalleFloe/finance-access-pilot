@@ -11,13 +11,13 @@ const Toolbox = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Helmet>
-        <title>Financial Modelling Toolbox | Financial Decision Models</title>
-        <meta name="description" content="Complete financial modelling toolbox with 12+ Excel models. Startup valuations, DCF analysis, and financial fundamentals. Try free online or download interactive versions. Professional quality, user-friendly design." />
+        <title>Financial Decision Models Toolbox – Free Online Tools &amp; Excel Templates</title>
+        <meta name="description" content="Browse all financial decision models and Excel templates, including DCF valuation, startup valuation, SaaS unit economics, scenario analysis, cost of capital and more. Preview models online and download clean, no-macro Excel files with step-by-step guidance." />
         <link rel="canonical" href={`${BASE_URL}/toolbox`} />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Financial Modelling Toolbox | Financial Decision Models" />
-        <meta property="og:description" content="Complete financial modelling toolbox with 12+ Excel models. Startup valuations, DCF analysis, and financial fundamentals. Try free online or download interactive versions. Professional quality, user-friendly design." />
+        <meta property="og:title" content="Financial Decision Models Toolbox – Free Online Tools &amp; Excel Templates" />
+        <meta property="og:description" content="Browse all financial decision models and Excel templates, including DCF valuation, startup valuation, SaaS unit economics, scenario analysis, cost of capital and more. Preview models online and download clean, no-macro Excel files with step-by-step guidance." />
         <meta property="og:url" content={`${BASE_URL}/toolbox`} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={DEFAULT_OG_IMAGE} />
