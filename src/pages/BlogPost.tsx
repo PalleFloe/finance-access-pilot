@@ -102,35 +102,33 @@ const BlogPost = () => {
         <meta property="article:published_time" content={post.date} />
         <meta property="article:author" content={post.author} />
         
-        {/* Structured Data - Article Schema */}
+        {/* Structured Data - BlogPosting Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BlogPosting",
-            "headline": post.title,
-            "description": post.excerpt,
-            "image": ogImage,
-            "datePublished": post.date,
-            "dateModified": post.date,
-            "author": {
-              "@type": "Person",
-              "name": post.author,
-              "jobTitle": post.authorTitle,
-              "url": `${BASE_URL}/about`,
-              "sameAs": [LINKEDIN_URL]
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Financial Decision Models",
-              "logo": {
-                "@type": "ImageObject",
-                "url": `${BASE_URL}/lovable-uploads/logo-large.webp`
-              }
-            },
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id": fullUrl
-            }
+            },
+            "headline": post.title,
+            "description": post.metaDescription || post.excerpt,
+            "image": post.image 
+              ? [`${BASE_URL}${post.image}`]
+              : [`${BASE_URL}/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png`],
+            "author": {
+              "@type": "Person",
+              "name": post.author,
+              "url": `${BASE_URL}/about`
+            },
+            "publisher": {
+              "@type": "Organization",
+              "@id": `${BASE_URL}/#organization`
+            },
+            "datePublished": post.date,
+            "dateModified": post.date,
+            "articleSection": "Blog",
+            "url": fullUrl
           })}
         </script>
       </Helmet>
