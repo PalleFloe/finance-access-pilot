@@ -14,6 +14,7 @@ import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import { TooltipProvider } from "@/components/ui/tooltip";
 import FinancialTerm from "@/components/FinancialTerm";
 import saasPreview from "@/assets/saas-preview.png";
+import { ModelSoftwareSchema } from "@/seo/ModelSoftwareSchema";
 
 const SaasUnitEconomics = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -46,7 +47,7 @@ const SaasUnitEconomics = () => {
         <meta property="og:url" content="https://www.financialdecisionmodels.com/toolbox/startup-valuations/saas-unit-economics" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" />
-        <meta property="og:image:alt" content="Financial Decision Models — by Floe Consulting" />
+        <meta property="og:image:alt" content="SaaS Unit Economics Model – Financial Decision Models" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="Financial Decision Models" />
@@ -105,6 +106,14 @@ const SaasUnitEconomics = () => {
           })}
         </script>
       </Helmet>
+
+      <ModelSoftwareSchema
+        name="SaaS Unit Economics Model"
+        slug="/toolbox/startup-valuations/saas-unit-economics"
+        description="Excel model for SaaS unit economics, including customer lifetime value, churn, CAC and cohort-based analysis."
+        imageUrl="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png"
+      />
+
       <Header />
       
       <div className="container mx-auto py-16">

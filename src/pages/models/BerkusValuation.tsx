@@ -13,6 +13,7 @@ import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import berkusPreview from "@/assets/berkus-preview.png";
+import { ModelSoftwareSchema } from "@/seo/ModelSoftwareSchema";
 
 const BerkusValuation = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -43,7 +44,7 @@ const BerkusValuation = () => {
         <meta property="og:url" content="https://www.financialdecisionmodels.com/toolbox/startup-valuations/berkus-valuation" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" />
-        <meta property="og:image:alt" content="Financial Decision Models — by Floe Consulting" />
+        <meta property="og:image:alt" content="Berkus Valuation Model – Financial Decision Models" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="Financial Decision Models" />
@@ -102,6 +103,14 @@ const BerkusValuation = () => {
           })}
         </script>
       </Helmet>
+
+      <ModelSoftwareSchema
+        name="Berkus Valuation Model"
+        slug="/toolbox/startup-valuations/berkus-valuation"
+        description="Pre-revenue startup valuation model using the Berkus Method. Risk-based Excel tool evaluates five key factors: idea, prototype, team, relationships, and rollout."
+        imageUrl="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png"
+      />
+
       <Header />
       
       <div className="py-12">

@@ -82,13 +82,13 @@ const StartupValuations = () => {
   return (
     <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
-        <title>Startup Valuations - Professional Models | Financial Decision Models</title>
-        <meta name="description" content="Professional startup valuation models: Venture Capital Method, First Chicago, SaaS Unit Economics, Berkus Method. Excel-based tools for entrepreneurs and investors. Try free online, download interactive versions." />
+        <title>Startup Valuation Models – Excel Templates &amp; Online Tools | Financial Decision Models</title>
+        <meta name="description" content="Collection of startup valuation models including First Chicago, VC method, Berkus method, SaaS valuation and multi-stage DCF templates. Online previews and downloadable Excel files to support fundraising and investor conversations." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/startup-valuations" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Startup Valuations - Professional Models | Financial Decision Models" />
-        <meta property="og:description" content="Professional startup valuation models: Venture Capital Method, First Chicago, SaaS Unit Economics, Berkus Method. Excel-based tools for entrepreneurs and investors. Try free online, download interactive versions." />
+        <meta property="og:title" content="Startup Valuation Models – Excel Templates &amp; Online Tools | Financial Decision Models" />
+        <meta property="og:description" content="Collection of startup valuation models including First Chicago, VC method, Berkus method, SaaS valuation and multi-stage DCF templates. Online previews and downloadable Excel files to support fundraising and investor conversations." />
         <meta property="og:url" content="https://www.financialdecisionmodels.com/toolbox/startup-valuations" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" />

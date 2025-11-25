@@ -18,13 +18,13 @@ const BusinessStrategy = () => {
   return (
     <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
-        <title>Business Strategy Models - Coming Soon | Financial Decision Models</title>
-        <meta name="description" content="Business Strategy financial models for long-term planning, decision-making and scenario analysis. Coming soon to the Financial Decision Models toolkit." />
+        <title>Business Strategy Models – Scenarios, Profitability &amp; Decision Support | Financial Decision Models</title>
+        <meta name="description" content="Strategic decision support models for business planning, profitability analysis and scenario design. Excel tools and online previews to help structure strategic choices and quantify their impact." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/business-strategy" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Business Strategy Models - Coming Soon | Financial Decision Models" />
-        <meta property="og:description" content="Business Strategy financial models for long-term planning, decision-making and scenario analysis. Coming soon to the Financial Decision Models toolkit." />
+        <meta property="og:title" content="Business Strategy Models – Scenarios, Profitability &amp; Decision Support | Financial Decision Models" />
+        <meta property="og:description" content="Strategic decision support models for business planning, profitability analysis and scenario design. Excel tools and online previews to help structure strategic choices and quantify their impact." />
         <meta property="og:url" content="https://www.financialdecisionmodels.com/toolbox/business-strategy" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png" />
