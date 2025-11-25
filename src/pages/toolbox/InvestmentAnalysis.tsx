@@ -9,6 +9,7 @@ import Footer from "@/components/sections/Footer";
 import FinancialTerm from "@/components/FinancialTerm";
 import { useEffect } from "react";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
+import { BreadcrumbSchema } from "@/seo/BreadcrumbSchema";
 
 const InvestmentAnalysis = () => {
   usePageVisitTracking('page:/toolbox/investment-analysis');
@@ -78,6 +79,11 @@ const InvestmentAnalysis = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 font-garamond">
+      <BreadcrumbSchema items={[
+        { name: "Home", path: "/" },
+        { name: "Toolbox", path: "/toolbox" },
+        { name: "Investment Analysis", path: "/toolbox/investment-analysis" }
+      ]} />
       <Helmet>
         <title>Investment Analysis Models – DCF, Scenario &amp; Project Valuation | Financial Decision Models</title>
         <meta name="description" content="Excel models for investment analysis, including multi-stage DCF, decision analysis, project valuation, cost reduction, break-even analysis and scenario modelling. Online previews and downloadable no-macro Excel templates." />

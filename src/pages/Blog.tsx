@@ -4,12 +4,17 @@ import BlogSection from "@/components/sections/BlogSection";
 import Footer from "@/components/sections/Footer";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
 import { BASE_URL, DEFAULT_OG_IMAGE, OG_SITE_NAME, OG_LOCALE } from "@/lib/constants";
+import { BreadcrumbSchema } from "@/seo/BreadcrumbSchema";
 
 const Blog = () => {
   usePageVisitTracking('page:/blog');
   
   return (
     <div className="min-h-screen bg-gray-50">
+      <BreadcrumbSchema items={[
+        { name: "Home", path: "/" },
+        { name: "Blog", path: "/blog" }
+      ]} />
       <Helmet>
         <title>Blog - Financial Modelling Insights | Financial Decision Models</title>
         <meta name="description" content="Financial modelling insights and expertise from Palle Floe Nielsen. Learn about startup valuation, business modelling, and financial decision-making. Practical advice for entrepreneurs and investors." />

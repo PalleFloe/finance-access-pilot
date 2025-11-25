@@ -9,6 +9,7 @@ import Footer from "@/components/sections/Footer";
 import FinancialTerm from "@/components/FinancialTerm";
 import { useEffect } from "react";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
+import { BreadcrumbSchema } from "@/seo/BreadcrumbSchema";
 
 const FinancialFundamentals = () => {
   usePageVisitTracking('page:/toolbox/financial-fundamentals');
@@ -81,6 +82,11 @@ const FinancialFundamentals = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 font-garamond">
+      <BreadcrumbSchema items={[
+        { name: "Home", path: "/" },
+        { name: "Toolbox", path: "/toolbox" },
+        { name: "Financial Fundamentals", path: "/toolbox/financial-fundamentals" }
+      ]} />
       <Helmet>
         <title>Financial Fundamentals Models – Cost of Capital, Present Value &amp; Ratios | Financial Decision Models</title>
         <meta name="description" content="Core financial fundamentals tools: present value calculators, cost of capital, earnings growth estimators, project scenarios and financial ratio analysis. Online tools plus downloadable Excel models with clear input guidance." />
