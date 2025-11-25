@@ -97,7 +97,8 @@ const BerkusValuation = () => {
               {
                 "@type": "ListItem",
                 "position": 4,
-                "name": "Berkus Valuation Model"
+                "name": "Berkus Valuation Model",
+                "item": "https://www.financialdecisionmodels.com/toolbox/startup-valuations/berkus-valuation"
               }
             ]
           })}

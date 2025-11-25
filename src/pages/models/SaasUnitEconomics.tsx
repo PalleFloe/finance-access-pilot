@@ -100,7 +100,8 @@ const SaasUnitEconomics = () => {
               {
                 "@type": "ListItem",
                 "position": 4,
-                "name": "SaaS Unit Economics Model"
+                "name": "SaaS Unit Economics Model",
+                "item": "https://www.financialdecisionmodels.com/toolbox/startup-valuations/saas-unit-economics"
               }
             ]
           })}

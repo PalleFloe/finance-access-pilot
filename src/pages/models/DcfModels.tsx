@@ -100,9 +100,34 @@ const DcfModels = () => {
               {
                 "@type": "ListItem",
                 "position": 4,
-                "name": "DCF Models"
+                "name": "DCF Models",
+                "item": "https://www.financialdecisionmodels.com/toolbox/financial-fundamentals/dcf-models"
               }
             ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Key Types of DCF Models",
+            "description": "Three professional DCF approaches: Flexible, Three-Stage, and Stable Growth. Excel-based discounted cash flow analysis for business valuation.",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": ["Windows", "macOS"],
+            "softwareHelp": "https://www.financialdecisionmodels.com/toolbox/financial-fundamentals/dcf-models",
+            "image": "https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png",
+            "url": "https://www.financialdecisionmodels.com/toolbox/financial-fundamentals/dcf-models",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "description": "Free online preview and downloadable no-macro Excel model with step-by-step user guidance."
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Financial Decision Models",
+              "url": "https://www.financialdecisionmodels.com/"
+            }
           })}
         </script>
       </Helmet>

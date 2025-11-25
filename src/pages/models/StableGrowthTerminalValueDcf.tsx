@@ -95,9 +95,34 @@ const StableGrowthTerminalValueDcf = () => {
               {
                 "@type": "ListItem",
                 "position": 4,
-                "name": "Stable Growth: Terminal Value DCF Model"
+                "name": "Stable Growth: Terminal Value DCF Model",
+                "item": "https://www.financialdecisionmodels.com/toolbox/investment-analysis/stable-growth-terminal-value-dcf-model"
               }
             ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Stable Growth: Terminal Value DCF Model",
+            "description": "DCF analysis with terminal value focus for perpetual asset evaluation. Growth rate sensitivity and comprehensive valuation analysis.",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": ["Windows", "macOS"],
+            "softwareHelp": "https://www.financialdecisionmodels.com/toolbox/investment-analysis/stable-growth-terminal-value-dcf-model",
+            "image": "https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png",
+            "url": "https://www.financialdecisionmodels.com/toolbox/investment-analysis/stable-growth-terminal-value-dcf-model",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "description": "Free online preview and downloadable no-macro Excel model with step-by-step user guidance."
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Financial Decision Models",
+              "url": "https://www.financialdecisionmodels.com/"
+            }
           })}
         </script>
       </Helmet>
