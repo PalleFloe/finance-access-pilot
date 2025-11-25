@@ -178,37 +178,54 @@ const Offerings = () => {
       </Helmet>
       <Header />
       
-      <main className="container mx-auto py-12">
-        {/* Professional Financial Decision Models Section */}
-        <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-          <div className="mb-8">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4 text-brand-blue">
-              Professional Financial Decision Models
+      <main>
+        {/* Hero Section */}
+        <section className="py-12 md:py-16 bg-gradient-to-b from-slate-50 to-white">
+          <div className="container mx-auto px-6 text-center">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-brand-blue">
+              Professional Financial Decision Models — Offerings
             </h1>
-            <p className="text-xl text-slate-600">
-              Explore best-in-class financial decision models to learn, use, or adapt for your own business cases.
+            <p className="text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto">
+              Explore free professional models to use, learn, and get inspired. Need a customised solution? Request a consultation.
             </p>
           </div>
-          
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {tiers.map((tier, index) => (
-              <TierBox key={index} tier={tier} />
-            ))}
+        </section>
+
+        {/* Offerings Section */}
+        <section className="py-12 md:py-16">
+          <div className="container mx-auto px-6">
+            {/* Section Header */}
+            <div className="text-center mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-brand-blue">
+                Offerings to You
+              </h2>
+              <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
+                Free models to view and use — or tailored solutions designed for your specific needs.
+              </p>
+            </div>
+            
+            {/* Cards Grid */}
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+              {tiers.map((tier, index) => (
+                <TierBox key={index} tier={tier} />
+              ))}
+            </div>
+            
+            {/* Safety Note */}
+            <p className="text-lg text-slate-600 mt-8">
+              All models are standard safe Excel files with no macros. Hosted on Microsoft SharePoint. Formulas are protected to prevent unintended changes, while input cells are fully editable.
+            </p>
           </div>
-          
-          <p className="text-lg text-slate-600 mt-8">
-            All models are standard safe Excel files with no macros. Hosted on Microsoft SharePoint. Formulas are protected to prevent unintended changes, while input cells are fully editable.
-          </p>
-        </div>
+        </section>
 
         {/* FAQ Section */}
-        <section className="mt-16 border-t border-slate-200 pt-10">
-          <div className="container mx-auto max-w-4xl">
-            <h2 className="text-2xl md:text-3xl font-bold text-brand-blue mb-6">
+        <section className="py-12 md:py-16 border-t border-slate-200">
+          <div className="container mx-auto px-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-blue mb-8">
               Frequently Asked Questions
             </h2>
 
-            <div className="space-y-6 text-lg text-slate-700">
+            <div className="space-y-6 text-lg text-slate-700 max-w-4xl">
               <div>
                 <h3 className="font-semibold text-brand-blue">
                   Can the models be customised to my business?
