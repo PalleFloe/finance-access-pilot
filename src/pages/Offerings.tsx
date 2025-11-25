@@ -18,68 +18,50 @@ const Offerings = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const tiers = {
-    row1: [
-      {
-        title: "Online & View",
-        bullets: [
-          "View Excel models directly in your browser",
-          "All models available",
-          "No registration required",
-          "Free and unlimited access"
-        ],
-        buttonText: "Go to Toolbox",
-        buttonLink: "/toolbox",
-        disabled: false,
-        isConsultation: false,
-        isModelTier: true
-      },
-      {
-        title: "Download & Use",
-        bullets: [
-          "Download and use. Formulas protected, input cells are not",
-          "All models available",
-          "Email registration required",
-          "Free and unlimited access"
-        ],
-        buttonText: "Go to Toolbox",
-        buttonLink: "/toolbox",
-        disabled: false,
-        isConsultation: false,
-        isModelTier: true
-      }
-    ],
-    row2: [
-      {
-        title: "Customized Models",
-        bullets: [
-          "Adapt existing models or build from scratch for your specific needs",
-          "Customize for your business model, structure, and unique drivers",
-          "Full documentation and hands-on training for your team",
-          "Iterative development with your input and feedback loops"
-        ],
-        buttonText: "Schedule Consultation",
-        buttonLink: "/contact",
-        disabled: false,
-        isConsultation: true,
-        isModelTier: false
-      },
-      {
-        title: "Consulting Services",
-        bullets: [
-          "Lead or support critical financial decisions and initiatives",
-          "M&A valuation, investment analysis, strategic planning",
-          "Challenge assumptions, evaluate options, structure thinking",
-          "From single sessions to longer engagement"
-        ],
-        buttonText: "Schedule Consultation",
-        buttonLink: "/contact",
-        disabled: false,
-        isConsultation: true,
-        isModelTier: false
-      }
-    ]
-  };
+  const tiers = [
+    {
+      title: "Online & View",
+      bullets: [
+        "View Excel models directly in your browser",
+        "All models available",
+        "No registration required",
+        "Free and unlimited access"
+      ],
+      buttonText: "Go to Toolbox",
+      buttonLink: "/toolbox",
+      disabled: false,
+      isConsultation: false,
+      isModelTier: true
+    },
+    {
+      title: "Download & Use",
+      bullets: [
+        "Download and use. Formulas protected, input cells are not",
+        "All models available",
+        "Email registration required",
+        "Free and unlimited access"
+      ],
+      buttonText: "Go to Toolbox",
+      buttonLink: "/toolbox",
+      disabled: false,
+      isConsultation: false,
+      isModelTier: true
+    },
+    {
+      title: "Customized Models",
+      bullets: [
+        "Adapt existing models or build from scratch for your specific needs",
+        "Customize for your business model, structure, and unique drivers",
+        "Full documentation and hands-on training for your team",
+        "Iterative development with your input and feedback loops"
+      ],
+      buttonText: "Schedule Consultation",
+      buttonLink: "/contact",
+      disabled: false,
+      isConsultation: true,
+      isModelTier: false
+    }
+  ];
 
   type TierType = {
     title: string;
@@ -151,34 +133,65 @@ const Offerings = () => {
         <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content={OG_SITE_NAME} />
         <meta property="og:locale" content={OG_LOCALE} />
+        
+        {/* FAQ Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Can the models be customised to my business?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, models can be tailored to your specific business, industry, or decision – or built from scratch for a particular case. You can use the contact page to discuss a potential project to create a customised model that fits your needs."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need to register to use the models?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can view all models online in your browser without registration. A free email registration is only required if you want to download the full Excel versions."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are the Excel files safe to use?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. All models are standard Excel files with no macros. Formulas are protected to prevent unintended changes, while input cells are fully editable."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who are these models designed for?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The models are designed for founders, investors, finance leaders, and advisors who need clear, decision-focused analysis rather than black-box spreadsheets."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <Header />
       
       <main className="container mx-auto py-12">
-        {/* Page Header Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-brand-blue">
-            Financial Decision Modelling & Consulting Offerings
-          </h1>
-          
-          <p className="text-2xl md:text-3xl text-slate-600 max-w-6xl mx-auto leading-relaxed">
-            Explore our free professional models to use, learn and get inspired. Need customized solutions or strategic support for complex decisions? Request a consultation.
-          </p>
-        </div>
-
-        {/* Section 1: Professional Financial Decision Models */}
+        {/* Professional Financial Decision Models Section */}
         <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-          <div className="mb-5">
-            <h2 className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200 text-brand-blue">
+          <div className="mb-8">
+            <h1 className="text-3xl md:text-4xl font-bold mb-4 text-brand-blue">
               Professional Financial Decision Models
-            </h2>
-            <p className="text-lg text-slate-600 mb-5">
-              Best-in-class models for using as designed or finding inspiration to build or improve your own models
+            </h1>
+            <p className="text-xl text-slate-600">
+              Explore best-in-class financial decision models to learn, use, or adapt for your own business cases.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-6">
-            {tiers.row1.map((tier, index) => (
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {tiers.map((tier, index) => (
               <TierBox key={index} tier={tier} />
             ))}
           </div>
@@ -188,24 +201,52 @@ const Offerings = () => {
           </p>
         </div>
 
-
-        {/* Section 2: Customization & Consulting Services */}
-        <div className="bg-white rounded-lg shadow-sm p-6 mb-16 overflow-hidden">
-          <div className="mb-5">
-            <h2 className="text-3xl font-bold mb-4 pb-4 border-b-2 border-slate-200 text-brand-blue">
-              Customization & Consulting Services
+        {/* FAQ Section */}
+        <section className="mt-16 border-t border-slate-200 pt-10">
+          <div className="container mx-auto max-w-4xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-blue mb-6">
+              Frequently Asked Questions
             </h2>
-            <p className="text-lg text-slate-600 mb-5">
-              Tailored solutions and expert guidance for your specific needs
-            </p>
+
+            <div className="space-y-6 text-lg text-slate-700">
+              <div>
+                <h3 className="font-semibold text-brand-blue">
+                  Can the models be customised to my business?
+                </h3>
+                <p>
+                  Yes, models can be tailored to your specific business, industry, or decision – or built from scratch for a particular case. You can use the contact page to discuss a potential project to create a customised model that fits your needs.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold text-brand-blue">
+                  Do I need to register to use the models?
+                </h3>
+                <p>
+                  You can view all models online in your browser without registration. A free email registration is only required if you want to download the full Excel versions.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold text-brand-blue">
+                  Are the Excel files safe to use?
+                </h3>
+                <p>
+                  Yes. All models are standard Excel files with no macros. Formulas are protected to prevent unintended changes, while input cells are fully editable.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold text-brand-blue">
+                  Who are these models designed for?
+                </h3>
+                <p>
+                  The models are designed for founders, investors, finance leaders, and advisors who need clear, decision-focused analysis rather than black-box spreadsheets.
+                </p>
+              </div>
+            </div>
           </div>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            {tiers.row2.map((tier, index) => (
-              <TierBox key={index} tier={tier} />
-            ))}
-          </div>
-        </div>
+        </section>
       </main>
 
       <Footer />
