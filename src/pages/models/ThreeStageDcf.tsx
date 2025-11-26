@@ -172,7 +172,7 @@ const ThreeStageDcf = () => {
                   <div className="w-full max-w-[360px] h-[180px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
                     <img 
                       src={threeStageDcfPreviewPng}
-                      srcSet={`${threeStageDcfPreview400} 400w, ${threeStageDcfPreview400} 800w`}
+                      srcSet={`${threeStageDcfPreview400} 400w, ${threeStageDcfPreview800} 800w`}
                       sizes="(max-width: 768px) 400px, 800px"
                       alt="Three Stage DCF Model Preview" 
                       className="w-full h-full object-cover"
