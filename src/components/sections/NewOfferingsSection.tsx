@@ -21,7 +21,6 @@ const NewOfferingsSection = () => {
               alt="Palle Fløe Nielsen" 
               className="w-full max-w-md rounded-lg shadow-lg"
               loading="eager"
-              fetchPriority="high"
             />
           </div>
 
