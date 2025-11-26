@@ -35,8 +35,8 @@ const ProjectScenarioModel = () => {
   return (
     <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
-        <title>Project Scenario Model - Multi-Scenario Capital Budgeting | Financial Decision Models</title>
-        <meta name="description" content="Multi-scenario capital budgeting model with NPV and IRR analysis. Excel tool evaluates investment projects across downside, base case, and upside scenarios. Try free online or download." />
+        <title>Scenario & Sensitivity Model – Excel Analysis Tool (Free Download)</title>
+        <meta name="description" content="Excel model for scenario planning and sensitivity analysis. Free online preview and downloadable template with structured decision support." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/financial-fundamentals/project-scenario-model" />
         
         {/* Open Graph */}
@@ -124,7 +124,7 @@ const ProjectScenarioModel = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Simple Project Scenario Model
+            Scenario & Sensitivity Analysis Model – Excel Tool
           </h1>
 
           <h2 className="text-[28px] text-slate-600 max-w-6xl leading-relaxed mb-8">
