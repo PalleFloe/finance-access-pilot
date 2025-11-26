@@ -8,6 +8,7 @@ import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
+import ModelInternalLinks from "@/components/ModelInternalLinks";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import decisionVcPreview800 from "@/assets/decision-vc-preview-800.webp";
@@ -405,6 +406,16 @@ const DecisionAnalysis = () => {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
+
+        <ModelInternalLinks 
+          categoryName="Investment Analysis Models"
+          categoryUrl="/toolbox/investment-analysis"
+          relatedModels={[
+            { name: "Project Scenario Model", url: "/toolbox/investment-analysis/project-scenario-model" },
+            { name: "Perpetuity Exit Valuation Model", url: "/toolbox/investment-analysis/perpetuity-exit-valuation-model" },
+            { name: "Cost of Capital Calculator", url: "/toolbox/investment-analysis/cost-of-capital-calculator" }
+          ]}
+        />
       </div>
     </div>
   );

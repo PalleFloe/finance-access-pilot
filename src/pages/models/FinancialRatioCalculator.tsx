@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
+import ModelInternalLinks from "@/components/ModelInternalLinks";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import financialRatioPreview800 from "@/assets/financial-ratio-preview-800.webp";
@@ -249,6 +250,15 @@ const FinancialRatioCalculator = () => {
               <strong>References:</strong> Palepu, K. G., Healy, P. M., & Peek, E. (2019). Business Analysis and Valuation: Using Financial Statements. Cengage Learning. • White, G. I., Sondhi, A. C., & Fried, D. (2003). The Analysis and Use of Financial Statements. Wiley.
             </p>
           </div>
+
+          <ModelInternalLinks 
+            categoryName="Financial Fundamentals"
+            categoryUrl="/toolbox/financial-fundamentals"
+            relatedModels={[
+              { name: "Present Value Calculator", url: "/toolbox/financial-fundamentals/present-value-calculator" },
+              { name: "Break-Even Analysis Model", url: "/toolbox/investment-analysis/break-even-analysis-model" }
+            ]}
+          />
         </div>
       </div>
     </div>

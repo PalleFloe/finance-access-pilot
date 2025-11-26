@@ -12,6 +12,7 @@ import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
+import ModelInternalLinks from "@/components/ModelInternalLinks";
 import berkusPreview800 from "@/assets/berkus-preview-800.webp";
 import berkusPreview400 from "@/assets/berkus-preview-400.webp";
 import berkusPreviewPng from "@/assets/berkus-preview.png";
@@ -378,6 +379,16 @@ const BerkusValuation = () => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
+
+          <ModelInternalLinks 
+            categoryName="Startup & Valuation Models"
+            categoryUrl="/toolbox/startup-valuations"
+            relatedModels={[
+              { name: "SaaS Unit Economics Model", url: "/toolbox/startup-valuations/saas-unit-economics" },
+              { name: "First Chicago Valuation Model", url: "/toolbox/startup-valuations/first-chicago-valuation" },
+              { name: "Venture Capital Method", url: "/toolbox/startup-valuations/venture-capital-method" }
+            ]}
+          />
         </div>
       </div>
       <Footer />

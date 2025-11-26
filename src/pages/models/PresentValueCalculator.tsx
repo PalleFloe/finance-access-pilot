@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
+import ModelInternalLinks from "@/components/ModelInternalLinks";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import presentValuePreview800 from "@/assets/present-value-preview-800.webp";
@@ -225,6 +226,15 @@ const PresentValueCalculator = () => {
               <strong>References:</strong> Brealey, R. A., Myers, S. C., & Allen, F. (2020). Principles of Corporate Finance. McGraw-Hill Education. • Ross, S. A., Westerfield, R. W., & Jaffe, J. (2019). Corporate Finance. McGraw-Hill Education.
             </p>
           </div>
+
+          <ModelInternalLinks 
+            categoryName="Financial Fundamentals"
+            categoryUrl="/toolbox/financial-fundamentals"
+            relatedModels={[
+              { name: "Financial Ratio Calculator", url: "/toolbox/financial-fundamentals/financial-ratio-calculator" },
+              { name: "Break-Even Analysis Model", url: "/toolbox/investment-analysis/break-even-analysis-model" }
+            ]}
+          />
         </div>
       </div>
     </div>

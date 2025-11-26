@@ -11,6 +11,7 @@ import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { useAnalytics, usePageVisitTracking } from '@/hooks/useAnalytics';
 import FinancialTerm from "@/components/FinancialTerm";
+import ModelInternalLinks from "@/components/ModelInternalLinks";
 import threeStageDcfPreview800 from "@/assets/three-stage-dcf-preview-800.webp";
 import threeStageDcfPreview400 from "@/assets/three-stage-dcf-preview-400.webp";
 import threeStageDcfPreviewPng from "@/assets/three-stage-dcf-preview.png";
@@ -405,8 +406,18 @@ const ThreeStageDcf = () => {
                 </div>
               </div>
               </AccordionContent>
-            </AccordionItem>
-          </Accordion>
+          </AccordionItem>
+        </Accordion>
+
+        <ModelInternalLinks 
+          categoryName="Investment Analysis Models"
+          categoryUrl="/toolbox/investment-analysis"
+          relatedModels={[
+            { name: "Stable Growth Finite Life DCF Model", url: "/toolbox/investment-analysis/stable-growth-finite-life-dcf-model" },
+            { name: "Flexible Year by Year DCF Model", url: "/toolbox/investment-analysis/flexible-year-by-year-dcf-model" },
+            { name: "Cost of Capital Calculator", url: "/toolbox/investment-analysis/cost-of-capital-calculator" }
+          ]}
+        />
         </div>
       </div>
     </div>

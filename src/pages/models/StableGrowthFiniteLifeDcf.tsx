@@ -11,6 +11,7 @@ import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import FinancialTerm from "@/components/FinancialTerm";
+import ModelInternalLinks from "@/components/ModelInternalLinks";
 import stableGrowthFinitePreview800 from "@/assets/stable-growth-finite-preview-800.webp";
 import stableGrowthFinitePreview400 from "@/assets/stable-growth-finite-preview-400.webp";
 import { getFaqJson } from "@/seo/faqs";
@@ -302,6 +303,16 @@ const StableGrowthFiniteLifeDcf = () => {
             </AccordionContent>
           </AccordionItem>
           </Accordion>
+
+          <ModelInternalLinks 
+            categoryName="Investment Analysis Models"
+            categoryUrl="/toolbox/investment-analysis"
+            relatedModels={[
+              { name: "Three Stage DCF Model", url: "/toolbox/investment-analysis/three-stage-dcf-model" },
+              { name: "Flexible Year by Year DCF Model", url: "/toolbox/investment-analysis/flexible-year-by-year-dcf-model" },
+              { name: "Project Scenario Model", url: "/toolbox/investment-analysis/project-scenario-model" }
+            ]}
+          />
         </div>
       </div>
     </div>

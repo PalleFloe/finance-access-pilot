@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import { TooltipProvider } from "@/components/ui/tooltip";
 import FinancialTerm from "@/components/FinancialTerm";
+import ModelInternalLinks from "@/components/ModelInternalLinks";
 import saasPreview800 from "@/assets/saas-preview-800.webp";
 import saasPreview400 from "@/assets/saas-preview-400.webp";
 import saasPreviewPng from "@/assets/saas-preview.png";
@@ -444,6 +445,16 @@ const SaasUnitEconomics = () => {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
+
+        <ModelInternalLinks 
+          categoryName="Startup & Valuation Models"
+          categoryUrl="/toolbox/startup-valuations"
+          relatedModels={[
+            { name: "Berkus Valuation Model", url: "/toolbox/startup-valuations/berkus-valuation" },
+            { name: "First Chicago Valuation Model", url: "/toolbox/startup-valuations/first-chicago-valuation" },
+            { name: "Venture Capital Method", url: "/toolbox/startup-valuations/venture-capital-method" }
+          ]}
+        />
       </div>
     </div>
     </TooltipProvider>

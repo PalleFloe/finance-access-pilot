@@ -11,6 +11,7 @@ import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import FinancialTerm from "@/components/FinancialTerm";
+import ModelInternalLinks from "@/components/ModelInternalLinks";
 import stableGrowthTerminalPreview from "@/assets/stable-growth-terminal-preview.png";
 import { getFaqJson } from "@/seo/faqs";
 
@@ -294,6 +295,16 @@ const StableGrowthTerminalValueDcf = () => {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
+
+        <ModelInternalLinks 
+          categoryName="Investment Analysis Models"
+          categoryUrl="/toolbox/investment-analysis"
+          relatedModels={[
+            { name: "Flexible Year by Year DCF Model", url: "/toolbox/investment-analysis/flexible-year-by-year-dcf-model" },
+            { name: "Stable Growth Finite Life DCF Model", url: "/toolbox/investment-analysis/stable-growth-finite-life-dcf-model" },
+            { name: "Three Stage DCF Model", url: "/toolbox/investment-analysis/three-stage-dcf-model" }
+          ]}
+        />
         </div>
       </div>
     </div>

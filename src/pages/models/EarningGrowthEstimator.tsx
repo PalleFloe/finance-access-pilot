@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
+import ModelInternalLinks from "@/components/ModelInternalLinks";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import earningGrowthPreview800 from "@/assets/earning-growth-preview-800.webp";
@@ -238,6 +239,16 @@ const EarningGrowthEstimator = () => {
               <strong>References:</strong> Mauboussin, M. J., & Johnson, D. (2016). Measuring the Moat: Assessing the Magnitude and Sustainability of Value Creation. Credit Suisse Global Financial Strategies. • Damodaran, A. (2021). The Little Book of Valuation: How to Value a Company, Pick a Stock and Profit. Wiley.
             </p>
           </div>
+
+          <ModelInternalLinks 
+            categoryName="Investment Analysis Models"
+            categoryUrl="/toolbox/investment-analysis"
+            relatedModels={[
+              { name: "Cost of Capital Calculator", url: "/toolbox/investment-analysis/cost-of-capital-calculator" },
+              { name: "Three Stage DCF Model", url: "/toolbox/investment-analysis/three-stage-dcf-model" },
+              { name: "Flexible Year by Year DCF Model", url: "/toolbox/investment-analysis/flexible-year-by-year-dcf-model" }
+            ]}
+          />
         </div>
       </div>
     </div>

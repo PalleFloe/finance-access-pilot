@@ -9,6 +9,7 @@ import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import FinancialTerm from "@/components/FinancialTerm";
+import ModelInternalLinks from "@/components/ModelInternalLinks";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import firstChicagoPreview800 from "@/assets/first-chicago-preview-800.webp";
@@ -393,6 +394,16 @@ const FirstChicagoValuation = () => {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
+
+        <ModelInternalLinks 
+          categoryName="Startup & Valuation Models"
+          categoryUrl="/toolbox/startup-valuations"
+          relatedModels={[
+            { name: "SaaS Unit Economics Model", url: "/toolbox/startup-valuations/saas-unit-economics" },
+            { name: "Berkus Valuation Model", url: "/toolbox/startup-valuations/berkus-valuation" },
+            { name: "Venture Capital Method", url: "/toolbox/startup-valuations/venture-capital-method" }
+          ]}
+        />
       </div>
     </div>
   );

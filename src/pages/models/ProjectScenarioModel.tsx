@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
+import ModelInternalLinks from "@/components/ModelInternalLinks";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import projectScenarioPreview800 from "@/assets/project-scenario-preview-800.webp";
@@ -247,6 +248,16 @@ const ProjectScenarioModel = () => {
               <strong>References:</strong> Brealey, R. A., Myers, S. C., & Allen, F. (2020). Principles of Corporate Finance. McGraw-Hill Education. • Copeland, T., Koller, T., & Murrin, J. (2000). Valuation: Measuring and Managing the Value of Companies. McKinsey & Company.
             </p>
           </div>
+
+          <ModelInternalLinks 
+            categoryName="Investment Analysis Models"
+            categoryUrl="/toolbox/investment-analysis"
+            relatedModels={[
+              { name: "Cost of Capital Calculator", url: "/toolbox/investment-analysis/cost-of-capital-calculator" },
+              { name: "Stable Growth Finite Life DCF Model", url: "/toolbox/investment-analysis/stable-growth-finite-life-dcf-model" },
+              { name: "Decision Analysis Model", url: "/toolbox/investment-analysis/decision-analysis-model" }
+            ]}
+          />
         </div>
       </div>
     </div>
