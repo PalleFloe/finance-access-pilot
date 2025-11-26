@@ -10,7 +10,9 @@ import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
-import decisionVcPreview from "@/assets/decision-vc-preview.png";
+import decisionVcPreview800 from "@/assets/decision-vc-preview-800.webp";
+import decisionVcPreview400 from "@/assets/decision-vc-preview-400.webp";
+import decisionVcPreviewPng from "@/assets/decision-vc-preview.png";
 import { getFaqJson } from "@/seo/faqs";
 
 const DecisionAnalysis = () => {
@@ -171,9 +173,12 @@ const DecisionAnalysis = () => {
               <CardContent className="pt-1">
                 <div className="w-full max-w-[360px] h-[180px] overflow-hidden rounded-md">
                   <img 
-                    src={decisionVcPreview} 
+                    src={decisionVcPreviewPng}
+                    srcSet={`${decisionVcPreview400} 400w, ${decisionVcPreview800} 800w`}
+                    sizes="(max-width: 768px) 400px, 800px"
                     alt="Decision Model for VC Investments Preview" 
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
               </CardContent>

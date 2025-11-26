@@ -11,7 +11,9 @@ import ModelInfoPanel from "@/components/ModelInfoPanel";
 import FinancialTerm from "@/components/FinancialTerm";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
-import firstChicagoPreview from "@/assets/first-chicago-preview.png";
+import firstChicagoPreview800 from "@/assets/first-chicago-preview-800.webp";
+import firstChicagoPreview400 from "@/assets/first-chicago-preview-400.webp";
+import firstChicagoPreviewPng from "@/assets/first-chicago-preview.png";
 import { getFaqJson } from "@/seo/faqs";
 
 const FirstChicagoValuation = () => {
@@ -172,9 +174,12 @@ const FirstChicagoValuation = () => {
               <CardContent className="pb-2 pt-1">
                 <div className="w-full max-w-[360px] h-[180px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
                   <img 
-                    src={firstChicagoPreview} 
+                    src={firstChicagoPreviewPng}
+                    srcSet={`${firstChicagoPreview400} 400w, ${firstChicagoPreview800} 800w`}
+                    sizes="(max-width: 768px) 400px, 800px"
                     alt="First Chicago Valuation Model Preview" 
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
               </CardContent>

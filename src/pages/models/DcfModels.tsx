@@ -12,7 +12,9 @@ import ModelInfoPanel from "@/components/ModelInfoPanel";
 import FinancialTerm from "@/components/FinancialTerm";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
-import dcfModelsPreview from "@/assets/dcf-models-preview.png";
+import dcfModelsPreview800 from "@/assets/dcf-models-preview-800.webp";
+import dcfModelsPreview400 from "@/assets/dcf-models-preview-400.webp";
+import dcfModelsPreviewPng from "@/assets/dcf-models-preview.png";
 
 const DcfModels = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -175,9 +177,12 @@ const DcfModels = () => {
                 <CardContent className="pb-2 pt-1">
                   <div className="w-full max-w-[360px] h-[180px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
                     <img 
-                      src={dcfModelsPreview} 
+                      src={dcfModelsPreviewPng}
+                      srcSet={`${dcfModelsPreview400} 400w, ${dcfModelsPreview800} 800w`}
+                      sizes="(max-width: 768px) 400px, 800px"
                       alt="Key Types of DCF Models Preview" 
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
                 </CardContent>

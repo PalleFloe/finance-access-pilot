@@ -11,7 +11,9 @@ import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import FinancialTerm from "@/components/FinancialTerm";
-import perpetuityExitPreview from "@/assets/perpetuity-exit-preview.png";
+import perpetuityExitPreview800 from "@/assets/perpetuity-exit-preview-800.webp";
+import perpetuityExitPreview400 from "@/assets/perpetuity-exit-preview-400.webp";
+import perpetuityExitPreviewPng from "@/assets/perpetuity-exit-preview.png";
 import { getFaqJson } from "@/seo/faqs";
 
 const PerpetuityExitValuation = () => {
@@ -170,9 +172,12 @@ const PerpetuityExitValuation = () => {
                 <CardContent className="pb-2 pt-1">
                   <div className="w-full max-w-[360px] h-[180px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
                     <img 
-                      src={perpetuityExitPreview} 
+                      src={perpetuityExitPreviewPng}
+                      srcSet={`${perpetuityExitPreview400} 400w, ${perpetuityExitPreview800} 800w`}
+                      sizes="(max-width: 768px) 400px, 800px"
                       alt="Perpetuity & Exit Valuation Models Preview" 
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
                 </CardContent>
