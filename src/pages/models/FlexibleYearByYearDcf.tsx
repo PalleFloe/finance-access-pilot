@@ -11,6 +11,7 @@ import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import FinancialTerm from "@/components/FinancialTerm";
+import ModelInternalLinks from "@/components/ModelInternalLinks";
 import flexibleDcfPreview800 from "@/assets/flexible-dcf-preview-800.webp";
 import flexibleDcfPreview400 from "@/assets/flexible-dcf-preview-400.webp";
 import { getFaqJson } from "@/seo/faqs";
@@ -300,6 +301,16 @@ const FlexibleYearByYearDcf = () => {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
+
+        <ModelInternalLinks 
+          categoryName="Investment Analysis Models"
+          categoryUrl="/toolbox/investment-analysis"
+          relatedModels={[
+            { name: "Three Stage DCF Model", url: "/toolbox/investment-analysis/three-stage-dcf-model" },
+            { name: "Stable Growth Finite Life DCF Model", url: "/toolbox/investment-analysis/stable-growth-finite-life-dcf-model" },
+            { name: "Project Scenario Model", url: "/toolbox/investment-analysis/project-scenario-model" }
+          ]}
+        />
         </div>
       </div>
     </div>

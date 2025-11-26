@@ -11,6 +11,7 @@ import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import FinancialTerm from "@/components/FinancialTerm";
+import ModelInternalLinks from "@/components/ModelInternalLinks";
 import perpetuityExitPreview800 from "@/assets/perpetuity-exit-preview-800.webp";
 import perpetuityExitPreview400 from "@/assets/perpetuity-exit-preview-400.webp";
 import perpetuityExitPreviewPng from "@/assets/perpetuity-exit-preview.png";
@@ -385,6 +386,16 @@ const PerpetuityExitValuation = () => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
+
+          <ModelInternalLinks 
+            categoryName="Investment Analysis Models"
+            categoryUrl="/toolbox/investment-analysis"
+            relatedModels={[
+              { name: "Three Stage DCF Model", url: "/toolbox/investment-analysis/three-stage-dcf-model" },
+              { name: "Decision Analysis Model", url: "/toolbox/investment-analysis/decision-analysis-model" },
+              { name: "Cost of Capital Calculator", url: "/toolbox/investment-analysis/cost-of-capital-calculator" }
+            ]}
+          />
         </div>
       </div>
     </div>

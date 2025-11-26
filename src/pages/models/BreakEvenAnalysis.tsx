@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft } from "lucide-react";
 import Header from "@/components/Header";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
+import ModelInternalLinks from "@/components/ModelInternalLinks";
 import { useEffect } from "react";
 import { usePageVisitTracking } from '@/hooks/useAnalytics';
 
@@ -95,6 +96,15 @@ const BreakEvenAnalysis = () => {
           <Button variant="model-blue" asChild>
             <Link to="/toolbox/investment-analysis">Learn More</Link>
           </Button>
+
+          <ModelInternalLinks 
+            categoryName="Financial Fundamentals"
+            categoryUrl="/toolbox/financial-fundamentals"
+            relatedModels={[
+              { name: "Present Value Calculator", url: "/toolbox/financial-fundamentals/present-value-calculator" },
+              { name: "Financial Ratio Calculator", url: "/toolbox/financial-fundamentals/financial-ratio-calculator" }
+            ]}
+          />
         </div>
       </div>
     </div>

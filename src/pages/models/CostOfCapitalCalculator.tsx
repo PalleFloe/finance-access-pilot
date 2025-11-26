@@ -9,6 +9,7 @@ import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import FinancialTerm from "@/components/FinancialTerm";
+import ModelInternalLinks from "@/components/ModelInternalLinks";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import costOfCapitalPreview800 from "@/assets/cost-of-capital-preview-800.webp";
@@ -227,6 +228,16 @@ const CostOfCapitalCalculator = () => {
               <strong>References:</strong> Damodaran, A. (2012). Investment Valuation: Tools and Techniques for Determining the Value of Any Asset. Wiley Finance. • Koller, T., Goedhart, M., & Wessels, D. (2020). Valuation: Measuring and Managing the Value of Companies. McKinsey & Company.
             </p>
           </div>
+
+          <ModelInternalLinks 
+            categoryName="Investment Analysis Models"
+            categoryUrl="/toolbox/investment-analysis"
+            relatedModels={[
+              { name: "Three Stage DCF Model", url: "/toolbox/investment-analysis/three-stage-dcf-model" },
+              { name: "Project Scenario Model", url: "/toolbox/investment-analysis/project-scenario-model" },
+              { name: "Earning Growth Estimator", url: "/toolbox/investment-analysis/earning-growth-estimator" }
+            ]}
+          />
         </div>
       </div>
     </div>

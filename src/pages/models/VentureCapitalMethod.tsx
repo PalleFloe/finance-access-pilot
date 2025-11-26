@@ -9,6 +9,7 @@ import Header from "@/components/Header";
 import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import FinancialTerm from "@/components/FinancialTerm";
+import ModelInternalLinks from "@/components/ModelInternalLinks";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import ventureCapitalPreview800 from "@/assets/venture-capital-preview-800.webp";
@@ -386,6 +387,16 @@ const VentureCapitalMethod = () => {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
+
+        <ModelInternalLinks 
+          categoryName="Startup & Valuation Models"
+          categoryUrl="/toolbox/startup-valuations"
+          relatedModels={[
+            { name: "SaaS Unit Economics Model", url: "/toolbox/startup-valuations/saas-unit-economics" },
+            { name: "Berkus Valuation Model", url: "/toolbox/startup-valuations/berkus-valuation" },
+            { name: "First Chicago Valuation Model", url: "/toolbox/startup-valuations/first-chicago-valuation" }
+          ]}
+        />
       </div>
     </div>
   );
