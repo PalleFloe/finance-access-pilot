@@ -12,9 +12,11 @@ import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import FinancialTerm from "@/components/FinancialTerm";
 import perpetuityExitPreview from "@/assets/perpetuity-exit-preview.png";
+import { getFaqJson } from "@/seo/faqs";
 
 const PerpetuityExitValuation = () => {
   const { trackOnlineOpen } = useAnalytics();
+  const faqJson = getFaqJson("model-perpetuity-exit");
   
   // Track page visit automatically
   usePageVisitTracking('Perpetuity & Exit Valuation Models');
@@ -49,25 +51,7 @@ const PerpetuityExitValuation = () => {
         <meta property="og:locale" content="en_GB" />
         
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [{
-              "@type": "Question",
-              "name": "What Are the Perpetuity & Exit Valuation Models?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The Perpetuity & Exit Valuation Models are designed for simple valuation analysis with immediate value driver insights."
-              }
-            },{
-              "@type": "Question",
-              "name": "Why Were These Models Developed?",
-              "acceptedAnswer": {
-                "@type": "Answer", 
-                "text": "Traditional complex valuation analysis often obscures the relationship between key assumptions and outcomes."
-              }
-            }]
-          })}
+          {JSON.stringify(faqJson)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({

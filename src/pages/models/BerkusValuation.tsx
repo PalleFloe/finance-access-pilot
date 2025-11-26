@@ -14,9 +14,11 @@ import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import berkusPreview from "@/assets/berkus-preview.png";
 import { ModelSoftwareSchema } from "@/seo/ModelSoftwareSchema";
+import { getFaqJson } from "@/seo/faqs";
 
 const BerkusValuation = () => {
   const { trackOnlineOpen } = useAnalytics();
+  const faqJson = getFaqJson("model-berkus-valuation");
   
   // Track page visit automatically
   usePageVisitTracking('Berkus Valuation Model');
@@ -51,25 +53,7 @@ const BerkusValuation = () => {
         <meta property="og:locale" content="en_GB" />
         
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage", 
-            "mainEntity": [{
-              "@type": "Question",
-              "name": "What Is the Berkus Valuation Model?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The Berkus Valuation Model suggests that startup value creation occurs through systematic evaluation of five risk mitigation factors rather than financial performance optimisation."
-              }
-            },{
-              "@type": "Question",
-              "name": "Why Was the Berkus Method Developed?",
-              "acceptedAnswer": {
-                "@type": "Answer", 
-                "text": "Academic research demonstrates that startup financial projections show poor predictive accuracy, with most companies missing initial revenue estimates by huge margins."
-              }
-            }]
-          })}
+          {JSON.stringify(faqJson)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({
