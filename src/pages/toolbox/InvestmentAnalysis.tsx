@@ -89,8 +89,8 @@ const InvestmentAnalysis = () => {
         <script type="application/ld+json">
           {JSON.stringify(faqJson)}
         </script>
-        <title>Investment Analysis Models – DCF, Scenario &amp; Project Valuation | Financial Decision Models</title>
-        <meta name="description" content="Excel models for investment analysis, including multi-stage DCF, decision analysis, project valuation, cost reduction, break-even analysis and scenario modelling. Online previews and downloadable no-macro Excel templates." />
+        <title>Investment Analysis Models – Excel Tools for DCF, IRR & Business Cases</title>
+        <meta name="description" content="Professional Excel investment analysis models for DCF, IRR, CAPEX, scenarios and valuations. Free online previews and downloadable templates with clear guidance." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/investment-analysis" />
         
         {/* Open Graph */}
@@ -119,7 +119,7 @@ const InvestmentAnalysis = () => {
 
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
-              Professional Investment Analysis Models
+              Investment Analysis Models – Professional Excel Tools
             </h1>
             <h2 className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-6">
               Proven and Structured <FinancialTerm term="DCF">DCF</FinancialTerm> Models for Investment Evaluation and Decision-Making with Scenario and Sensitivity Analysis

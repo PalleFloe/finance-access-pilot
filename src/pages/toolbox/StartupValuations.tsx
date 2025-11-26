@@ -92,8 +92,8 @@ const StartupValuations = () => {
         <script type="application/ld+json">
           {JSON.stringify(faqJson)}
         </script>
-        <title>Startup Valuation Models – Excel Templates &amp; Online Tools | Financial Decision Models</title>
-        <meta name="description" content="Collection of startup valuation models including First Chicago, VC method, Berkus method, SaaS valuation and multi-stage DCF templates. Online previews and downloadable Excel files to support fundraising and investor conversations." />
+        <title>Startup & Valuation Models – Excel Tools for Startup Valuation & Unit Economics</title>
+        <meta name="description" content="Excel models for startup valuation, SaaS economics, LTV, CAC and early-stage financial planning. Free online previews and downloadable templates with full guidance." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/startup-valuations" />
         
         {/* Open Graph */}
@@ -122,7 +122,7 @@ const StartupValuations = () => {
 
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
-              Professional Startup Valuation Models
+              Startup & Valuation Models – Excel Tools for Founders & Investors
             </h1>
             <h2 className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-6">
               Comprehensive Startup Valuation toolbox: Proven Methods to Estimate, Understand and Explain the Value of Startups

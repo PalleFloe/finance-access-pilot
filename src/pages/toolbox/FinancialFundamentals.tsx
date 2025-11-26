@@ -92,8 +92,8 @@ const FinancialFundamentals = () => {
         <script type="application/ld+json">
           {JSON.stringify(faqJson)}
         </script>
-        <title>Financial Fundamentals Models – Cost of Capital, Present Value &amp; Ratios | Financial Decision Models</title>
-        <meta name="description" content="Core financial fundamentals tools: present value calculators, cost of capital, earnings growth estimators, project scenarios and financial ratio analysis. Online tools plus downloadable Excel models with clear input guidance." />
+        <title>Financial Fundamentals – Excel Models for Profitability, Break-Even & Working Capital</title>
+        <meta name="description" content="Excel models for financial fundamentals including break-even, profitability, contribution margin, and working capital. Free online previews and downloadable templates." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/financial-fundamentals" />
         
         {/* Open Graph */}
@@ -122,7 +122,7 @@ const FinancialFundamentals = () => {
 
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
-              Financial Fundamental Models
+              Financial Fundamentals – Excel Models for Core Financial Decisions
             </h1>
             <h2 className="text-[28px] text-slate-600 max-w-6xl mx-auto leading-relaxed mb-6">
               Simple Academic Financial Analysis Tools: Essential Models for Learning Core Valuation and Decision-Making Principles
