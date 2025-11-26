@@ -11,7 +11,8 @@ import ModelInfoPanel from "@/components/ModelInfoPanel";
 import FinancialTerm from "@/components/FinancialTerm";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
-import costOfCapitalPreview from "@/assets/cost-of-capital-preview.png";
+import costOfCapitalPreview800 from "@/assets/cost-of-capital-preview-800.webp";
+import costOfCapitalPreview400 from "@/assets/cost-of-capital-preview-400.webp";
 
 const CostOfCapitalCalculator = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -171,9 +172,14 @@ const CostOfCapitalCalculator = () => {
                 <CardContent className="pb-2 pt-1">
                   <div className="w-full max-w-[360px] h-[180px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
                     <img 
-                      src={costOfCapitalPreview} 
+                      src={costOfCapitalPreview800}
+                      srcSet={`${costOfCapitalPreview400} 400w, ${costOfCapitalPreview800} 800w`}
+                      sizes="(max-width: 768px) 100vw, 360px"
+                      width="800"
+                      height="600"
                       alt="Simple Cost of Capital Calculator Preview" 
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
                 </CardContent>
