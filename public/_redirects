@@ -1,5 +1,1 @@
-# Dynamic sitemap via Supabase Edge Function
-/sitemap.xml https://oqmorhcgnkuxwazyqrle.supabase.co/functions/v1/sitemap 302
 
-# Return 410 Gone for permanently removed page
-/how-it-works / 410
