@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
+import { getFaqJson } from "@/seo/faqs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, ArrowRight, Check, Clock } from "lucide-react";
@@ -14,6 +15,7 @@ import { getBreadcrumbJson } from "@/seo/breadcrumbs";
 const StartupValuations = () => {
   usePageVisitTracking('page:/toolbox/startup-valuations');
   const breadcrumbJson = getBreadcrumbJson("toolbox-startup-valuations");
+  const faqJson = getFaqJson("category-startup-valuations");
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -86,6 +88,9 @@ const StartupValuations = () => {
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbJson)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(faqJson)}
         </script>
         <title>Startup Valuation Models – Excel Templates &amp; Online Tools | Financial Decision Models</title>
         <meta name="description" content="Collection of startup valuation models including First Chicago, VC method, Berkus method, SaaS valuation and multi-stage DCF templates. Online previews and downloadable Excel files to support fundraising and investor conversations." />

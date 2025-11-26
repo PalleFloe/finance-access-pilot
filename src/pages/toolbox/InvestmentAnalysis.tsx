@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
+import { getFaqJson } from "@/seo/faqs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, ArrowRight, Check, Clock } from "lucide-react";
@@ -14,6 +15,7 @@ import { getBreadcrumbJson } from "@/seo/breadcrumbs";
 const InvestmentAnalysis = () => {
   usePageVisitTracking('page:/toolbox/investment-analysis');
   const breadcrumbJson = getBreadcrumbJson("toolbox-investment-analysis");
+  const faqJson = getFaqJson("category-investment-analysis");
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -83,6 +85,9 @@ const InvestmentAnalysis = () => {
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbJson)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(faqJson)}
         </script>
         <title>Investment Analysis Models – DCF, Scenario &amp; Project Valuation | Financial Decision Models</title>
         <meta name="description" content="Excel models for investment analysis, including multi-stage DCF, decision analysis, project valuation, cost reduction, break-even analysis and scenario modelling. Online previews and downloadable no-macro Excel templates." />
