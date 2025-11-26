@@ -18,6 +18,16 @@ const IndexNew = () => {
         <meta name="description" content="Professional Excel financial models for startup valuation, DCF analysis and investment decisions, with free online previews and download of models." />
         <link rel="canonical" href={`${BASE_URL}/`} />
         
+        {/* Preload LCP image for performance */}
+        <link
+          rel="preload"
+          as="image"
+          href="/assets/profile-main-800.webp"
+          imageSrcSet="/assets/profile-main-400.webp 400w, /assets/profile-main-800.webp 800w"
+          imageSizes="(max-width: 768px) 100vw, 50vw"
+          type="image/webp"
+        />
+        
         {/* Open Graph */}
         <meta property="og:title" content="Financial Decision Models | Professional Excel Models & Consulting" />
         <meta property="og:description" content="Professional financial decision models & Excel tools. 15+ free online models for startup valuation, DCF analysis & investment decisions. Created by former Divisional CFO with 20+ years experience." />

@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Sparkles, MessageSquare } from "lucide-react";
-import profileImage from "@/assets/profile-main.jpeg";
+import profileImage800 from "@/assets/profile-main-800.webp";
+import profileImage400 from "@/assets/profile-main-400.webp";
 
 const NewOfferingsSection = () => {
   return (
@@ -12,9 +13,15 @@ const NewOfferingsSection = () => {
           {/* Left Column - Profile Photo */}
           <div className="flex justify-start">
             <img 
-              src={profileImage} 
+              src={profileImage800} 
+              srcSet={`${profileImage400} 400w, ${profileImage800} 800w`}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              width="800"
+              height="800"
               alt="Palle Fløe Nielsen" 
               className="w-full max-w-md rounded-lg shadow-lg"
+              loading="eager"
+              fetchPriority="high"
             />
           </div>
 
