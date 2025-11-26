@@ -16,6 +16,38 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "5",
+    slug: "finance-leader-consulting-interim",
+    title: "Need a finance leader to navigate a project, initiative or fill a critical gap?",
+    excerpt: "When Im not making financial decision models here.",
+    metaDescription: "Looking for consulting and interim finance leadership roles. 25+ years of Business Finance leadership experience including Divisional CFO roles and major integrations.",
+    content: `Need a finance leader to navigate a project, initiative or fill a critical gap?
+
+When Im not making financial decision models here.
+
+I'm looking for consulting and interim finance leadership roles to help businesses navigate:
+• Strategic decisions, major investments or important transitions
+• Complex projects or key initiatives that need financial leadership or support
+• Senior finance leadership gaps
+
+👉 I bring creativity, structure, clarity and positive engagement — connecting the dots and the people to create real value.
+
+I also bring a broad and deep finance toolbox, with 25+ years in Business Finance leadership including Divisional CFO roles and leading the Performance Management integration of Novozymes and Chr. Hansen.
+
+Is your organisation dealing with something important or complex? Let's discuss how I can help.
+Know someone who is? I'd really appreciate an introduction.
+
+Thanks!
+
+#consulting #interim #finance #leadership #smile`,
+    date: "2025-11-26",
+    readTime: "2 min read",
+    image: "/lovable-uploads/finance-leader-consulting.jpg",
+    featured: false,
+    author: "Palle Fløe Nielsen",
+    authorTitle: "Former Divisional CFO & Founder"
+  },
+  {
     id: "4",
     slug: "excel-lego-intelligence-play",
     title: "If play is intelligence, then Excel might be the 2nd best toy ever made",
