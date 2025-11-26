@@ -15,7 +15,7 @@ const IndexNew = () => {
     <div className="min-h-screen bg-gray-50">
       <Helmet>
         <title>Financial Decision Models - Professional Financial Tools</title>
-        <meta name="description" content="Professional financial decision models & Excel tools. 15+ free online models for startup valuation, DCF analysis & investment decisions. Created by former Divisional CFO with 20+ years experience." />
+        <meta name="description" content="Professional Excel financial models for startup valuation, DCF analysis and investment decisions, with free online previews and download of models." />
         <link rel="canonical" href={`${BASE_URL}/`} />
         
         {/* Open Graph */}
