@@ -12,9 +12,11 @@ import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import FinancialTerm from "@/components/FinancialTerm";
 import stableGrowthTerminalPreview from "@/assets/stable-growth-terminal-preview.png";
+import { getFaqJson } from "@/seo/faqs";
 
 const StableGrowthTerminalValueDcf = () => {
   const { trackOnlineOpen } = useAnalytics();
+  const faqJson = getFaqJson("model-dcf-terminal-value");
   
   // Track page visit automatically
   usePageVisitTracking('Stable Growth: Terminal Value DCF Model');
@@ -49,25 +51,7 @@ const StableGrowthTerminalValueDcf = () => {
         <meta property="og:locale" content="en_GB" />
         
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [{
-              "@type": "Question",
-              "name": "What Is the Stable Growth: Terminal Value DCF Model?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "This model values investments that will continue operating beyond any reasonable forecast horizon, requiring perpetual reinvestment to maintain operations."
-              }
-            },{
-              "@type": "Question",
-              "name": "Why Was the Terminal Value DCF Model Developed?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Standard DCF models often overstate terminal values by ignoring ongoing capital requirements."
-              }
-            }]
-          })}
+          {JSON.stringify(faqJson)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({

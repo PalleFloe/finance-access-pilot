@@ -12,9 +12,11 @@ import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import FinancialTerm from "@/components/FinancialTerm";
 import flexibleDcfPreview from "@/assets/flexible-dcf-preview.png";
+import { getFaqJson } from "@/seo/faqs";
 
 const FlexibleYearByYearDcf = () => {
   const { trackOnlineOpen } = useAnalytics();
+  const faqJson = getFaqJson("model-dcf-flexible");
   
   // Track page visit automatically
   usePageVisitTracking('Flexible Year by Year DCF Model');
@@ -49,25 +51,7 @@ const FlexibleYearByYearDcf = () => {
         <meta property="og:locale" content="en_GB" />
         
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [{
-              "@type": "Question",
-              "name": "What Is the Flexible Year by Year DCF Model?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The Flexible Year by Year DCF Model enables detailed cash flow projections with complete control over annual assumptions."
-              }
-            },{
-              "@type": "Question",
-              "name": "Why Was the Flexible DCF Model Developed?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Traditional DCF models often oversimplify by assuming constant growth rates and margins, while real businesses experience fluctuating performance."
-              }
-            }]
-          })}
+          {JSON.stringify(faqJson)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({

@@ -12,10 +12,12 @@ import { useEffect } from "react";
 import { useAnalytics, usePageVisitTracking } from '@/hooks/useAnalytics';
 import FinancialTerm from "@/components/FinancialTerm";
 import threeStageDcfPreview from "@/assets/three-stage-dcf-preview.png";
+import { getFaqJson } from "@/seo/faqs";
 
 const ThreeStageDcf = () => {
   const { trackOnlineOpen } = useAnalytics();
   usePageVisitTracking('Three Stage DCF Model');
+  const faqJson = getFaqJson("model-dcf-three-stage");
 
   const openModel = () => {
     trackOnlineOpen('Three Stage DCF Model');
@@ -47,25 +49,7 @@ const ThreeStageDcf = () => {
         <meta property="og:locale" content="en_GB" />
         
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [{
-              "@type": "Question",
-              "name": "What Is the Three Stage DCF Model?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The Three Stage DCF Model addresses investments that don't maintain constant operational characteristics throughout their lifetime."
-              }
-            },{
-              "@type": "Question",
-              "name": "Why Was the Three Stage DCF Model Developed?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Many internal investments follow predictable development patterns that single-growth DCF models cannot capture accurately."
-              }
-            }]
-          })}
+          {JSON.stringify(faqJson)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({
