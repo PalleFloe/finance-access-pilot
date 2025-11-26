@@ -1,5 +1,41 @@
 // src/seo/faqs.ts
 
+// Standard FAQ questions that apply to all Excel models
+const getStandardModelFaqs = () => [
+  {
+    "@type": "Question",
+    name: "What is this Excel financial model used for?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "This Excel financial model is designed as a structured decision tool for real business use. It helps you analyse scenarios, understand the key value drivers, and support better investment and valuation decisions with a clear, transparent calculation logic."
+    }
+  },
+  {
+    "@type": "Question",
+    name: "Can I customise this model for my own business?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Yes. The model is built in standard Excel with a clear input structure, so you can adapt assumptions, add lines, and extend the analysis for your own company and use cases. It is meant to be a practical starting point that you can tailor."
+    }
+  },
+  {
+    "@type": "Question",
+    name: "Is there a free online preview before I download the Excel file?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Yes. Each financial decision model has a free online preview where you can explore the structure, key sheets, and calculations before you download the Excel file. This lets you quickly see whether the model fits your needs."
+    }
+  },
+  {
+    "@type": "Question",
+    name: "Do I need macros or special add-ins to use this model?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "No. The Excel models on FinancialDecisionModels.com are built without macros or special add-ins. They are standard, no-macro Excel workbooks that can be opened and used in a normal Excel installation."
+    }
+  }
+];
+
 export type FaqPageId =
   | "model-saas-unit-economics"
   | "model-vc-method"
@@ -67,7 +103,8 @@ export function getFaqJson(page: FaqPageId) {
               "@type": "Answer",
               text: "Like any structured model, it relies on simplified assumptions and good input data. It may not capture all real-world complexity, especially for very early-stage companies with limited data or rapidly changing business models. Results should be tested with sensitivity analysis, updated regularly as new data becomes available, and used alongside other valuation methods and benchmarks."
             }
-          }
+          },
+          ...getStandardModelFaqs()
         ]
       };
 
@@ -115,7 +152,8 @@ export function getFaqJson(page: FaqPageId) {
               "@type": "Answer",
               text: "The method depends heavily on assumed exit valuations, timing, and required returns, which are uncertain and can vary with market conditions. It uses simplified dilution assumptions and does not capture all details of complex financing structures, so results should be tested with scenarios and used alongside other valuation methods and market benchmarks."
             }
-          }
+          },
+          ...getStandardModelFaqs()
         ]
       };
 
@@ -163,7 +201,8 @@ export function getFaqJson(page: FaqPageId) {
               "@type": "Answer",
               text: "The Berkus model depends on subjective scoring and maximum value assumptions, so results can be biased if not grounded in evidence and market reality. Best practice is to require clear justification for each score, use multiple independent assessments, present valuation as a range rather than a single number, and document all assumptions."
             }
-          }
+          },
+          ...getStandardModelFaqs()
         ]
       };
 
@@ -211,7 +250,8 @@ export function getFaqJson(page: FaqPageId) {
               "@type": "Answer",
               text: "The model still depends on financial projections and probability estimates that can be wrong, especially for early-stage startups. Best practice is to use conservative base cases, test sensitivity to exit multiples and discount rates, document all scenario assumptions, and present results as ranges rather than precise point estimates."
             }
-          }
+          },
+          ...getStandardModelFaqs()
         ]
       };
 
@@ -259,7 +299,8 @@ export function getFaqJson(page: FaqPageId) {
               "@type": "Answer",
               text: "The models are intentionally simplified and focus on valuation mechanics rather than detailed operating forecasts. Results depend heavily on the quality of input assumptions, so they should be used for sensitivity understanding, cross-checks, and education rather than as the only basis for major valuation decisions."
             }
-          }
+          },
+          ...getStandardModelFaqs()
         ]
       };
 
@@ -307,7 +348,8 @@ export function getFaqJson(page: FaqPageId) {
               "@type": "Answer",
               text: "The model relies on subjective probability estimates and external exit valuation inputs, which can be uncertain and biased. Best practice is to use conservative assumptions, run sensitivity analysis across key probabilities and exit multiples, document the reasoning behind inputs, and update the analysis as companies progress through business stages."
             }
-          }
+          },
+          ...getStandardModelFaqs()
         ]
       };
 
@@ -355,7 +397,8 @@ export function getFaqJson(page: FaqPageId) {
               "@type": "Answer",
               text: "Forecasts beyond 3–5 years become uncertain, and terminal value often drives a large part of valuation. Best practice is to use conservative assumptions, test sensitivity to key drivers, document rationale, and focus detail on near-term years where visibility is highest."
             }
-          }
+          },
+          ...getStandardModelFaqs()
         ]
       };
 
@@ -403,7 +446,8 @@ export function getFaqJson(page: FaqPageId) {
               "@type": "Answer",
               text: "Assumes stable operations and may not capture volatility or lifespan uncertainty. Best practice is to test sensitivity to lifetime assumptions, model conservative salvage values, and compare results to similar completed projects."
             }
-          }
+          },
+          ...getStandardModelFaqs()
         ]
       };
 
@@ -451,7 +495,8 @@ export function getFaqJson(page: FaqPageId) {
               "@type": "Answer",
               text: "Terminal value often accounts for 60–80% of total value, making assumptions highly sensitive. Best practice is to use conservative long-term growth rates, document assumption rationale, and test sensitivity to discount rates and maintenance capex levels."
             }
-          }
+          },
+          ...getStandardModelFaqs()
         ]
       };
 
@@ -499,7 +544,8 @@ export function getFaqJson(page: FaqPageId) {
               "@type": "Answer",
               text: "Results depend heavily on accurate stage definitions and realistic assumptions. Best practice is to benchmark assumptions against comparable projects, test sensitivity across stage durations and mature-phase assumptions, and document logic clearly."
             }
-          }
+          },
+          ...getStandardModelFaqs()
         ]
       };
 
@@ -547,7 +593,8 @@ export function getFaqJson(page: FaqPageId) {
               "@type": "Answer",
               text: "The model assumes constant discount rates and, where applicable, constant growth rates. Real-world conditions can change over time, so results should be interpreted as analytical scenarios rather than precise forecasts."
             }
-          }
+          },
+          ...getStandardModelFaqs()
         ]
       };
 
@@ -595,7 +642,8 @@ export function getFaqJson(page: FaqPageId) {
               "@type": "Answer",
               text: "WACC estimates depend on assumptions about market risk premiums, beta, borrowing costs, and capital structure. These inputs can vary over time, so results should be updated regularly and cross-checked against market evidence."
             }
-          }
+          },
+          ...getStandardModelFaqs()
         ]
       };
 
@@ -691,7 +739,8 @@ export function getFaqJson(page: FaqPageId) {
               "@type": "Answer",
               text: "Ratios are most meaningful when compared to industry peers and historical trends. Single-period ratios can be distorted by one-off events, accounting changes, or cyclical effects, so they should be interpreted in context."
             }
-          }
+          },
+          ...getStandardModelFaqs()
         ]
       };
 
@@ -739,7 +788,8 @@ export function getFaqJson(page: FaqPageId) {
               "@type": "Answer",
               text: "The model depends on assumptions about future returns on capital and reinvestment behaviour, which are influenced by competition, industry dynamics, and macro conditions. Results should be combined with qualitative analysis and industry knowledge."
             }
-          }
+          },
+          ...getStandardModelFaqs()
         ]
       };
 
@@ -787,7 +837,8 @@ export function getFaqJson(page: FaqPageId) {
               "@type": "Answer",
               text: "Scenario probabilities are subjective, and actual results can differ significantly from modelled outcomes. The model should be updated with actual performance data over time and used as a decision support tool, not a prediction engine."
             }
-          }
+          },
+          ...getStandardModelFaqs()
         ]
       };
 
