@@ -13,7 +13,9 @@ import { useEffect, useState } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import { TooltipProvider } from "@/components/ui/tooltip";
 import FinancialTerm from "@/components/FinancialTerm";
-import saasPreview from "@/assets/saas-preview.png";
+import saasPreview800 from "@/assets/saas-preview-800.webp";
+import saasPreview400 from "@/assets/saas-preview-400.webp";
+import saasPreviewPng from "@/assets/saas-preview.png";
 import { ModelSoftwareSchema } from "@/seo/ModelSoftwareSchema";
 import { getFaqJson } from "@/seo/faqs";
 
@@ -161,9 +163,12 @@ const SaasUnitEconomics = () => {
               <CardContent className="pb-2 pt-1">
                 <div className="w-full max-w-[360px] h-[180px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
                   <img 
-                    src={saasPreview} 
+                    src={saasPreviewPng}
+                    srcSet={`${saasPreview400} 400w, ${saasPreview800} 800w`}
+                    sizes="(max-width: 768px) 400px, 800px"
                     alt="SaaS Unit Economics Model Preview" 
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
               </CardContent>

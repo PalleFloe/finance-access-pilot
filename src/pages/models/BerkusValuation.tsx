@@ -12,7 +12,9 @@ import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
-import berkusPreview from "@/assets/berkus-preview.png";
+import berkusPreview800 from "@/assets/berkus-preview-800.webp";
+import berkusPreview400 from "@/assets/berkus-preview-400.webp";
+import berkusPreviewPng from "@/assets/berkus-preview.png";
 import { ModelSoftwareSchema } from "@/seo/ModelSoftwareSchema";
 import { getFaqJson } from "@/seo/faqs";
 
@@ -165,9 +167,12 @@ const BerkusValuation = () => {
                 <CardContent className="pb-2 pt-1">
                   <div className="w-full max-w-[360px] h-[180px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
                     <img 
-                      src={berkusPreview} 
+                      src={berkusPreviewPng}
+                      srcSet={`${berkusPreview400} 400w, ${berkusPreview800} 800w`}
+                      sizes="(max-width: 768px) 400px, 800px"
                       alt="Berkus Valuation Model Preview" 
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
                 </CardContent>

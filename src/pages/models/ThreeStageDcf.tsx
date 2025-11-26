@@ -11,7 +11,9 @@ import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { useAnalytics, usePageVisitTracking } from '@/hooks/useAnalytics';
 import FinancialTerm from "@/components/FinancialTerm";
-import threeStageDcfPreview from "@/assets/three-stage-dcf-preview.png";
+import threeStageDcfPreview800 from "@/assets/three-stage-dcf-preview-800.webp";
+import threeStageDcfPreview400 from "@/assets/three-stage-dcf-preview-400.webp";
+import threeStageDcfPreviewPng from "@/assets/three-stage-dcf-preview.png";
 import { getFaqJson } from "@/seo/faqs";
 
 const ThreeStageDcf = () => {
@@ -169,9 +171,12 @@ const ThreeStageDcf = () => {
                 <CardContent className="pb-2 pt-1">
                   <div className="w-full max-w-[360px] h-[180px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
                     <img 
-                      src={threeStageDcfPreview} 
+                      src={threeStageDcfPreviewPng}
+                      srcSet={`${threeStageDcfPreview400} 400w, ${threeStageDcfPreview400} 800w`}
+                      sizes="(max-width: 768px) 400px, 800px"
                       alt="Three Stage DCF Model Preview" 
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
                 </CardContent>

@@ -11,7 +11,9 @@ import ModelInfoPanel from "@/components/ModelInfoPanel";
 import FinancialTerm from "@/components/FinancialTerm";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
-import ventureCapitalPreview from "@/assets/venture-capital-preview.png";
+import ventureCapitalPreview800 from "@/assets/venture-capital-preview-800.webp";
+import ventureCapitalPreview400 from "@/assets/venture-capital-preview-400.webp";
+import ventureCapitalPreviewPng from "@/assets/venture-capital-preview.png";
 import { getFaqJson } from "@/seo/faqs";
 
 const VentureCapitalMethod = () => {
@@ -170,9 +172,12 @@ const VentureCapitalMethod = () => {
               <CardContent className="pb-2 pt-1">
                 <div className="w-full max-w-[360px] h-[180px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
                   <img 
-                    src={ventureCapitalPreview} 
+                    src={ventureCapitalPreviewPng}
+                    srcSet={`${ventureCapitalPreview400} 400w, ${ventureCapitalPreview800} 800w`}
+                    sizes="(max-width: 768px) 400px, 800px"
                     alt="Venture Capital Valuation Model Preview" 
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
               </CardContent>
