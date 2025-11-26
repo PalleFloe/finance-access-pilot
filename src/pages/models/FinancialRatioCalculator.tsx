@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { getFaqJson } from "@/seo/faqs";
+import { getModelSoftwareJson } from "@/seo/modelSoftwareSchema";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -17,6 +18,12 @@ import financialRatioPreview400 from "@/assets/financial-ratio-preview-400.webp"
 const FinancialRatioCalculator = () => {
   const { trackOnlineOpen } = useAnalytics();
   const faqJson = getFaqJson("model-financial-ratio-calculator");
+  const softwareJson = getModelSoftwareJson({
+    name: "Financial Ratio Calculator – Excel Tool",
+    description: "Excel financial ratio calculator for profitability, efficiency, and valuation analysis. Free online preview and downloadable template.",
+    url: "https://www.financialdecisionmodels.com/toolbox/financial-fundamentals/financial-ratio-calculator",
+    imageUrl: "https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png"
+  });
   
   // Track page visit automatically
   usePageVisitTracking('Financial Ratio Calculator');
@@ -51,6 +58,9 @@ const FinancialRatioCalculator = () => {
         <meta property="og:site_name" content="Financial Decision Models" />
         <meta property="og:locale" content="en_GB" />
         
+        <script type="application/ld+json">
+          {JSON.stringify(softwareJson)}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify(faqJson)}
         </script>

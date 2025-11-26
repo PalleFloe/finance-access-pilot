@@ -15,10 +15,17 @@ import ModelInternalLinks from "@/components/ModelInternalLinks";
 import flexibleDcfPreview800 from "@/assets/flexible-dcf-preview-800.webp";
 import flexibleDcfPreview400 from "@/assets/flexible-dcf-preview-400.webp";
 import { getFaqJson } from "@/seo/faqs";
+import { getModelSoftwareJson } from "@/seo/modelSoftwareSchema";
 
 const FlexibleYearByYearDcf = () => {
   const { trackOnlineOpen } = useAnalytics();
   const faqJson = getFaqJson("model-dcf-flexible");
+  const softwareJson = getModelSoftwareJson({
+    name: "Flexible Year by Year DCF Model",
+    description: "Professional DCF Excel model with year-by-year flexibility. Free online preview and downloadable template with full user guidance.",
+    url: "https://www.financialdecisionmodels.com/toolbox/investment-analysis/flexible-year-by-year-dcf-model",
+    imageUrl: "https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png"
+  });
   
   // Track page visit automatically
   usePageVisitTracking('Flexible Year by Year DCF Model');
@@ -52,6 +59,9 @@ const FlexibleYearByYearDcf = () => {
         <meta property="og:site_name" content="Financial Decision Models" />
         <meta property="og:locale" content="en_GB" />
         
+        <script type="application/ld+json">
+          {JSON.stringify(softwareJson)}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify(faqJson)}
         </script>

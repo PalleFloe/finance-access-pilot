@@ -16,11 +16,18 @@ import threeStageDcfPreview800 from "@/assets/three-stage-dcf-preview-800.webp";
 import threeStageDcfPreview400 from "@/assets/three-stage-dcf-preview-400.webp";
 import threeStageDcfPreviewPng from "@/assets/three-stage-dcf-preview.png";
 import { getFaqJson } from "@/seo/faqs";
+import { getModelSoftwareJson } from "@/seo/modelSoftwareSchema";
 
 const ThreeStageDcf = () => {
   const { trackOnlineOpen } = useAnalytics();
   usePageVisitTracking('Three Stage DCF Model');
   const faqJson = getFaqJson("model-dcf-three-stage");
+  const softwareJson = getModelSoftwareJson({
+    name: "Multi-Stage DCF – Advanced Excel Valuation Model",
+    description: "Advanced multi-stage DCF valuation Excel model with custom growth phases. Free online preview plus downloadable template and clear user instructions.",
+    url: "https://www.financialdecisionmodels.com/toolbox/investment-analysis/three-stage-dcf-model",
+    imageUrl: "https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png"
+  });
 
   const openModel = () => {
     trackOnlineOpen('Three Stage DCF Model');
@@ -51,6 +58,9 @@ const ThreeStageDcf = () => {
         <meta property="og:site_name" content="Financial Decision Models" />
         <meta property="og:locale" content="en_GB" />
         
+        <script type="application/ld+json">
+          {JSON.stringify(softwareJson)}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify(faqJson)}
         </script>

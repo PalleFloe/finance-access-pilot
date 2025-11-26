@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { getFaqJson } from "@/seo/faqs";
+import { getModelSoftwareJson } from "@/seo/modelSoftwareSchema";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -17,6 +18,12 @@ import presentValuePreview400 from "@/assets/present-value-preview-400.webp";
 const PresentValueCalculator = () => {
   const { trackOnlineOpen } = useAnalytics();
   const faqJson = getFaqJson("model-pv-calculator");
+  const softwareJson = getModelSoftwareJson({
+    name: "Present Value Calculator – Excel Tool",
+    description: "Excel tool for calculating present values of cash flows. Free online preview and downloadable template.",
+    url: "https://www.financialdecisionmodels.com/toolbox/financial-fundamentals/present-value-calculator",
+    imageUrl: "https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png"
+  });
   
   // Track page visit automatically
   usePageVisitTracking('Simple Present Value Calculator');
@@ -52,6 +59,9 @@ const PresentValueCalculator = () => {
         <meta property="og:site_name" content="Financial Decision Models" />
         <meta property="og:locale" content="en_GB" />
         
+        <script type="application/ld+json">
+          {JSON.stringify(softwareJson)}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify(faqJson)}
         </script>
