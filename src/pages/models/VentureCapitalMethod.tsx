@@ -12,9 +12,11 @@ import FinancialTerm from "@/components/FinancialTerm";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import ventureCapitalPreview from "@/assets/venture-capital-preview.png";
+import { getFaqJson } from "@/seo/faqs";
 
 const VentureCapitalMethod = () => {
   const { trackOnlineOpen } = useAnalytics();
+  const faqJson = getFaqJson("model-vc-method");
   
   // Track page visit automatically
   usePageVisitTracking('Venture Capital Method');
@@ -48,25 +50,7 @@ const VentureCapitalMethod = () => {
         <meta property="og:locale" content="en_GB" />
         
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [{
-              "@type": "Question",
-              "name": "What Is the Venture Capital Valuation Model?",
-              "acceptedAnswer": {
-                "@type": "Answer", 
-                "text": "The Venture Capital Valuation Model is a systematic framework for analysing multi-round startup financing with explicit consideration of investor return requirements and entrepreneur ownership implications."
-              }
-            },{
-              "@type": "Question",
-              "name": "Why Was the Venture Capital Method Developed?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Traditional valuation methods inadequately address the unique characteristics of venture capital investing: high failure rates, multiple financing rounds, and significant growth potential."
-              }
-            }]
-          })}
+          {JSON.stringify(faqJson)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({

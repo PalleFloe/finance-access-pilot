@@ -11,9 +11,11 @@ import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import decisionVcPreview from "@/assets/decision-vc-preview.png";
+import { getFaqJson } from "@/seo/faqs";
 
 const DecisionAnalysis = () => {
   const { trackOnlineOpen } = useAnalytics();
+  const faqJson = getFaqJson("model-decision-analysis-vc");
   
   // Track page visit automatically
   usePageVisitTracking('Decision Analysis Model');
@@ -47,25 +49,7 @@ const DecisionAnalysis = () => {
         <meta property="og:locale" content="en_GB" />
         
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [{
-              "@type": "Question",
-              "name": "What Is Decision Analysis for Venture Capital?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Decision Analysis for Venture Capital is a systematic framework developed by Clint Korver for investment evaluation under extreme uncertainty."
-              }
-            },{
-              "@type": "Question",
-              "name": "Why Was Decision Analysis Developed?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Traditional venture capital methods inadequately address the extreme uncertainty inherent in startup investing."
-              }
-            }]
-          })}
+          {JSON.stringify(faqJson)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({

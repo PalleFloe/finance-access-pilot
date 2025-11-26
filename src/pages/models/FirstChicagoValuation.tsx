@@ -12,9 +12,11 @@ import FinancialTerm from "@/components/FinancialTerm";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import firstChicagoPreview from "@/assets/first-chicago-preview.png";
+import { getFaqJson } from "@/seo/faqs";
 
 const FirstChicagoValuation = () => {
   const { trackOnlineOpen } = useAnalytics();
+  const faqJson = getFaqJson("model-first-chicago");
   
   // Track page visit automatically
   usePageVisitTracking('First Chicago Valuation Model');
@@ -48,25 +50,7 @@ const FirstChicagoValuation = () => {
         <meta property="og:locale" content="en_GB" />
         
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [{
-              "@type": "Question",
-              "name": "What Is the First Chicago Valuation Model?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The First Chicago Valuation Model is a scenario-based valuation framework originally developed by the venture capital division of First Chicago Bank in 1970."
-              }
-            },{
-              "@type": "Question", 
-              "name": "Why Was the First Chicago Method Developed?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Traditional venture capital methods suffer from optimism bias by projecting only positive outcomes and relying on discount rates to account for risk uncertainty."
-              }
-            }]
-          })}
+          {JSON.stringify(faqJson)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({
