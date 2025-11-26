@@ -47,6 +47,7 @@ export const modelRoutes = [
 ];
 
 export const blogPosts = [
+  "/blog/finance-leader-consulting-interim",
   "/blog/excel-lego-intelligence-play",
   "/blog/169-days-journey",
   "/blog/stop-predicting-structure-decisions",
