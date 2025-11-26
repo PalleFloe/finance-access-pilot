@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
+import { getFaqJson } from "@/seo/faqs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -13,6 +14,7 @@ import earningGrowthPreview from "@/assets/earning-growth-preview.png";
 
 const EarningGrowthEstimator = () => {
   const { trackOnlineOpen } = useAnalytics();
+  const faqJson = getFaqJson("model-earning-growth-estimator");
   
   // Track page visit automatically
   usePageVisitTracking('Earning Growth Estimator');
@@ -49,25 +51,7 @@ const EarningGrowthEstimator = () => {
         <meta property="og:locale" content="en_GB" />
         
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [{
-              "@type": "Question",
-              "name": "What Is the Simple Earning Growth Estimator?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The Simple Earning Growth Estimator is a systematic analytical tool that projects future earnings growth based on Return on Capital (ROC) and reinvestment patterns."
-              }
-            },{
-              "@type": "Question",
-              "name": "Why Use the Simple Earning Growth Estimator?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Understanding the sources and sustainability of earnings growth is crucial for growth sustainability analysis and investment quality assessment."
-              }
-            }]
-          })}
+          {JSON.stringify(faqJson)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({

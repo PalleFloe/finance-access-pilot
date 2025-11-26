@@ -10,7 +10,13 @@ export type FaqPageId =
   | "model-dcf-flexible"
   | "model-dcf-finite-life"
   | "model-dcf-terminal-value"
-  | "model-dcf-three-stage";
+  | "model-dcf-three-stage"
+  | "model-pv-calculator"
+  | "model-cost-of-capital"
+  | "model-dcf-standard-types"
+  | "model-financial-ratio-calculator"
+  | "model-earning-growth-estimator"
+  | "model-project-scenario-model";
 
 export function getFaqJson(page: FaqPageId) {
   switch (page) {
@@ -489,6 +495,294 @@ export function getFaqJson(page: FaqPageId) {
             acceptedAnswer: {
               "@type": "Answer",
               text: "Results depend heavily on accurate stage definitions and realistic assumptions. Best practice is to benchmark assumptions against comparable projects, test sensitivity across stage durations and mature-phase assumptions, and document logic clearly."
+            }
+          }
+        ]
+      };
+
+    case "model-pv-calculator":
+      return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is the Simple Present Value Calculator?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The Simple Present Value Calculator is a financial tool that computes the present value of different cash flow patterns, including one-time payments, annuities, growing annuities, perpetuities, and growing perpetuities. It helps translate future cash flows into today's money."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "When should I use the Present Value Calculator?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "You can use the calculator to compare investment opportunities, value bonds and annuities, analyse real estate cash flows, or estimate the value of perpetual income streams such as dividends or rental income."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "How does the model work?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The model applies standard time-value-of-money formulas to discount future cash flows back to their present value. Different calculation types are available for single cash flows, fixed payment streams, growing payment streams, and perpetuities."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Who should use this calculator?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Investors, analysts, students, and finance professionals who need to understand the value of future cash flows in today's terms can all benefit from using the calculator."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "What are the key limitations?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The model assumes constant discount rates and, where applicable, constant growth rates. Real-world conditions can change over time, so results should be interpreted as analytical scenarios rather than precise forecasts."
+            }
+          }
+        ]
+      };
+
+    case "model-cost-of-capital":
+      return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is the Simple Cost of Capital Calculator?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The Simple Cost of Capital Calculator estimates a company's weighted average cost of capital (WACC) by combining the cost of equity and the after-tax cost of debt based on the firm's capital structure."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Why is the cost of capital important?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The cost of capital is used as the hurdle rate for project evaluation, as the discount rate in DCF valuations, and as a benchmark for value creation. It supports capital allocation, strategic planning, and performance assessment."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "How does the calculator work?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The model applies the standard WACC formula, using inputs for the cost of equity (for example via CAPM), the cost of debt adjusted for tax, and the target or current capital structure weights based on market values."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Who should use the Cost of Capital Calculator?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Corporate finance professionals, business valuators, investment analysts, and decision-makers who need a consistent discount rate for valuation and project analysis."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "What are the main limitations?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "WACC estimates depend on assumptions about market risk premiums, beta, borrowing costs, and capital structure. These inputs can vary over time, so results should be updated regularly and cross-checked against market evidence."
+            }
+          }
+        ]
+      };
+
+    case "model-dcf-standard-types":
+      return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What are the Standard Types of DCF Models?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The Standard Types of DCF Models provide three core discounted cash flow approaches: flexible DCF models, a three-stage DCF model, and a stable growth DCF model. Together they cover a wide range of company life cycles and growth patterns."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "When should I use each DCF model type?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Stable growth models suit mature companies or quick valuations, three-stage models suit businesses transitioning from high growth to maturity, and flexible DCF models are best for detailed, year-by-year analysis of complex companies."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "What do these models have in common?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "All models use consistent DCF mathematics: free cash flow to firm, discounting by WACC, and terminal value calculations based on Gordon Growth logic. They share a unified structure so results can be compared across approaches."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Who should use the Standard Types of DCF Models?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Students, analysts, and finance professionals who want to learn or apply different DCF structures and understand when each framework is most appropriate."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "What are key limitations and best practices?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Forecasts and terminal values are sensitive to growth and discount rate assumptions. Best practice is to choose the simplest model that captures business reality, document assumptions, test sensitivity to key drivers, and compare results across different DCF structures."
+            }
+          }
+        ]
+      };
+
+    case "model-financial-ratio-calculator":
+      return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is the Financial Ratio Calculator?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The Financial Ratio Calculator computes a broad set of financial ratios across investment returns, profitability, efficiency, and market valuation categories. It provides a structured framework for analysing company performance."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Why should I use this ratio calculator?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "It helps assess performance, compare companies, monitor trends over time, support investment decisions, and evaluate creditworthiness by standardising key financial metrics in one place."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "How is the calculator organised?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Ratios are grouped into four categories: investment returns (like ROE and ROIC), profitability (margins), efficiency (turnover ratios), and market valuation (multiples and yield). Users input financial statement data and the model calculates the ratios automatically."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Who benefits from using the Financial Ratio Calculator?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Financial analysts, investors, lenders, and managers who want a quick and consistent view of company performance and valuation metrics."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "What are key limitations?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Ratios are most meaningful when compared to industry peers and historical trends. Single-period ratios can be distorted by one-off events, accounting changes, or cyclical effects, so they should be interpreted in context."
+            }
+          }
+        ]
+      };
+
+    case "model-earning-growth-estimator":
+      return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is the Simple Earning Growth Estimator?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The Simple Earning Growth Estimator projects earnings growth based on the fundamental relationship between return on capital and reinvestment rates. It separates growth from existing investments and growth from new investments."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Why is this model useful?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "It helps users understand whether current growth is sustainable, whether incremental investments are value-creating, and how capital allocation decisions drive long-term earnings expansion."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "How does the model calculate growth?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The model uses the core formula Growth = Return on Capital × Reinvestment Rate, applied to both existing and new investments, to provide a structured view of earnings growth drivers."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Who should use the Earning Growth Estimator?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Equity analysts, corporate strategists, and long-term investors who focus on sustainable value creation and want to link growth assumptions to economic fundamentals."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "What are key limitations?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The model depends on assumptions about future returns on capital and reinvestment behaviour, which are influenced by competition, industry dynamics, and macro conditions. Results should be combined with qualitative analysis and industry knowledge."
+            }
+          }
+        ]
+      };
+
+    case "model-project-scenario-model":
+      return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is the Simple Project Scenario Model?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The Simple Project Scenario Model is a capital budgeting tool that evaluates projects under multiple scenarios. It calculates NPV, IRR, payback period, and profitability index for optimistic, base case, and pessimistic scenarios."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Why should I use scenario-based project analysis?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Scenario analysis helps decision-makers understand the range of possible outcomes, key risks, and value drivers instead of relying on a single set of assumptions. It supports better investment decisions and risk management."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "How does the model work in practice?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Users define three sets of assumptions (optimistic, base, pessimistic), and the model calculates financial metrics for each scenario. It also supports sensitivity analysis and visual tools like tornado charts and break-even analysis."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Who should use the Simple Project Scenario Model?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Corporate finance teams, project managers, and investment professionals who need to evaluate capital projects and compare risk-return profiles across different opportunities."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "What are the main limitations?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Scenario probabilities are subjective, and actual results can differ significantly from modelled outcomes. The model should be updated with actual performance data over time and used as a decision support tool, not a prediction engine."
             }
           }
         ]

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
+import { getFaqJson } from "@/seo/faqs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -13,6 +14,7 @@ import financialRatioPreview from "@/assets/financial-ratio-preview.png";
 
 const FinancialRatioCalculator = () => {
   const { trackOnlineOpen } = useAnalytics();
+  const faqJson = getFaqJson("model-financial-ratio-calculator");
   
   // Track page visit automatically
   usePageVisitTracking('Financial Ratio Calculator');
@@ -48,25 +50,7 @@ const FinancialRatioCalculator = () => {
         <meta property="og:locale" content="en_GB" />
         
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [{
-              "@type": "Question",
-              "name": "What Is the Financial Ratio Calculator?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The Financial Ratio Calculator is a comprehensive analytical tool that computes key financial ratios across four critical categories: Investment Returns, Profitability, Efficiency, and Market Valuation."
-              }
-            },{
-              "@type": "Question",
-              "name": "Why Use the Financial Ratio Calculator?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Financial ratio analysis is fundamental to understanding business performance, enabling assessment across multiple dimensions and comparative analysis between companies."
-              }
-            }]
-          })}
+          {JSON.stringify(faqJson)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({

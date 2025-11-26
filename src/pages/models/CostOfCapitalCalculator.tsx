@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
+import { getFaqJson } from "@/seo/faqs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -14,6 +15,7 @@ import costOfCapitalPreview from "@/assets/cost-of-capital-preview.png";
 
 const CostOfCapitalCalculator = () => {
   const { trackOnlineOpen } = useAnalytics();
+  const faqJson = getFaqJson("model-cost-of-capital");
   
   // Track page visit automatically
   usePageVisitTracking('Simple Cost of Capital Calculator');
@@ -50,25 +52,7 @@ const CostOfCapitalCalculator = () => {
         <meta property="og:locale" content="en_GB" />
         
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [{
-              "@type": "Question",
-              "name": "What Is the Simple Cost of Capital Calculator?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The Simple Cost of Capital Calculator is a fundamental financial tool that determines a company's Weighted Average Cost of Capital (WACC)."
-              }
-            },{
-              "@type": "Question",
-              "name": "Why Use the Simple Cost of Capital Calculator?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The cost of capital serves as a critical benchmark for financial decision-making, providing the hurdle rate for evaluating new projects and investments."
-              }
-            }]
-          })}
+          {JSON.stringify(faqJson)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({
