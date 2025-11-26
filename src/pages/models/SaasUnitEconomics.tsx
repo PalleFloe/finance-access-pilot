@@ -15,6 +15,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import FinancialTerm from "@/components/FinancialTerm";
 import saasPreview from "@/assets/saas-preview.png";
 import { ModelSoftwareSchema } from "@/seo/ModelSoftwareSchema";
+import { getFaqJson } from "@/seo/faqs";
 
 const SaasUnitEconomics = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -22,6 +23,8 @@ const SaasUnitEconomics = () => {
   
   // Track page visit automatically
   usePageVisitTracking('SaaS Unit Economics Model');
+
+  const faqJson = getFaqJson("model-saas-unit-economics");
 
   useEffect(() => {
     console.log("Helmet is rendering on SaaS Unit Economics page");
@@ -54,25 +57,7 @@ const SaasUnitEconomics = () => {
         <meta property="og:locale" content="en_GB" />
         
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [{
-              "@type": "Question", 
-              "name": "What Is the SaaS Unit Economics Model?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The SaaS Unit Economics Model values SaaS companies by analysing individual customer profitability and lifetime contribution to overall business value."
-              }
-            },{
-              "@type": "Question",
-              "name": "Why Was the SaaS Unit Economics Model Developed?", 
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Traditional aggregate financial models obscure the fundamental economics driving SaaS business success."
-              }
-            }]
-          })}
+          {JSON.stringify(faqJson)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({
