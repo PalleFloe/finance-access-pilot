@@ -34,8 +34,8 @@ const ThreeStageDcf = () => {
   return (
     <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
-        <title>Three Stage DCF Model - Multi-stage Analysis | Financial Decision Models</title>
-        <meta name="description" content="Three Stage DCF Model for multi-stage analysis: DCF valuation with distinct performance stage characteristics. Professional investment analysis tool with dynamic evolution modelling." />
+        <title>Multi-Stage DCF – Advanced Excel Valuation Model (Free Download & Guide)</title>
+        <meta name="description" content="Advanced multi-stage DCF valuation Excel model with custom growth phases. Free online preview plus downloadable template and clear user instructions." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/investment-analysis/three-stage-dcf-model" />
         
         {/* Open Graph */}
@@ -123,7 +123,7 @@ const ThreeStageDcf = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold text-brand-blue mb-4">
-            Three Stage <FinancialTerm term="DCF">DCF</FinancialTerm> Model
+            Multi-Stage DCF – Advanced Excel Valuation Model
           </h1>
           <h2 className="text-[28px] text-slate-600 max-w-6xl leading-relaxed mb-12">
             Multi-stage Analysis: <FinancialTerm term="DCF">DCF</FinancialTerm> Valuation with Distinct Performance Stage Characteristics

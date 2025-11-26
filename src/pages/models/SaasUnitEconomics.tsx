@@ -42,8 +42,8 @@ const SaasUnitEconomics = () => {
     <TooltipProvider delayDuration={200}>
     <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
-        <title>SaaS Unit Economics Model - Professional Valuation Tool | Financial Decision Models</title>
-        <meta name="description" content="Professional SaaS unit economics model analyzing customer lifetime value, acquisition costs, and churn. Excel tool for subscription business valuation. Try free online, download interactive version." />
+        <title>SaaS Unit Economics – Excel Financial Model (Free Download)</title>
+        <meta name="description" content="Excel model for SaaS unit economics, LTV, CAC, retention and payback. Free online preview and downloadable template with clear guidance." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/startup-valuations/saas-unit-economics" />
         
         {/* Open Graph */}
@@ -114,9 +114,9 @@ const SaasUnitEconomics = () => {
           </Link>
         </div>
 
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">
-          SaaS Unit Economics Model
-        </h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            SaaS Unit Economics Model – Excel Financial Tool
+          </h1>
 
         <p className="text-[28px] text-slate-600 max-w-6xl leading-relaxed mb-8">
           Cohort-Based Customer Analysis and Annual Financial Projections for SaaS Valuation with Long Term Value and Customer Payback Period

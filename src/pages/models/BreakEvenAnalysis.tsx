@@ -19,8 +19,8 @@ const BreakEvenAnalysis = () => {
   return (
     <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
-        <title>Break-Even Analysis Model - Coming Soon | Financial Decision Models</title>
-        <meta name="description" content="Break-Even Analysis Model for threshold decision-making and profitability analysis. Coming soon to the Investment Analysis toolkit." />
+        <title>Break-Even Analysis – Excel Financial Model (Free Download)</title>
+        <meta name="description" content="Excel model for break-even and contribution margin analysis. Free online preview and downloadable template for business decisions." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/investment-analysis/break-even-analysis-model" />
         
         {/* Open Graph */}
@@ -81,7 +81,7 @@ const BreakEvenAnalysis = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Break-Even Analysis Model
+            Break-Even Analysis Model – Excel Financial Tool
           </h1>
           
           <Badge className="bg-orange-100 text-orange-800 border-orange-200 shadow-sm mb-8">

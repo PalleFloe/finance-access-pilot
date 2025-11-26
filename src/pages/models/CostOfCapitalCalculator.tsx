@@ -36,8 +36,8 @@ const CostOfCapitalCalculator = () => {
   return (
     <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
-        <title>Cost of Capital Calculator - WACC & CAPM Analysis | Financial Decision Models</title>
-        <meta name="description" content="WACC and cost of capital calculator using CAPM methodology. Excel model calculates cost of equity, debt, and weighted average cost of capital. Academic tool, try free online or download." />
+        <title>WACC Calculator – Excel Cost of Capital Model (Free Download)</title>
+        <meta name="description" content="Easy-to-use Excel WACC calculator for valuation and investment decisions. Free online preview and downloadable template with step-by-step guidance." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/financial-fundamentals/cost-of-capital-calculator" />
         
         {/* Open Graph */}
@@ -125,7 +125,7 @@ const CostOfCapitalCalculator = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Simple Cost of Capital Calculator
+            WACC Calculator – Professional Excel Model
           </h1>
 
           <h2 className="text-[28px] text-slate-600 max-w-6xl leading-relaxed mb-8">

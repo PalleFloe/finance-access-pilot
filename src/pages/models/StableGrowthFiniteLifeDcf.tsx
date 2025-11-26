@@ -35,8 +35,8 @@ const StableGrowthFiniteLifeDcf = () => {
   return (
     <div className="min-h-screen bg-gray-50 font-garamond">
       <Helmet>
-        <title>Stable Growth: Finite-Life DCF Model - Investment Analysis | Financial Decision Models</title>
-        <meta name="description" content="Stable Growth DCF analysis for finite-life assets with predictable revenue and terminal value calculation. Excel tool for project valuation and investment analysis." />
+        <title>Stable Growth Finite Life DCF – Excel Valuation Model (Free Download & Guide)</title>
+        <meta name="description" content="Professional DCF valuation Excel model with stable-growth and finite-life logic. Free online preview and downloadable template with full user guidance." />
         <link rel="canonical" href="https://www.financialdecisionmodels.com/toolbox/investment-analysis/stable-growth-finite-life-dcf-model" />
         
         {/* Open Graph */}
@@ -124,7 +124,7 @@ const StableGrowthFiniteLifeDcf = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Stable Growth - Finite-Life <FinancialTerm term="DCF">DCF</FinancialTerm> Model
+            Stable Growth Finite Life DCF – Professional Excel Valuation Model
           </h1>
 
           <h2 className="text-[28px] text-slate-600 max-w-6xl leading-relaxed mb-8">
