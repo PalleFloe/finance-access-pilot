@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
+import { getFaqJson } from "@/seo/faqs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, ArrowRight, Check, Clock } from "lucide-react";
@@ -14,6 +15,7 @@ import { getBreadcrumbJson } from "@/seo/breadcrumbs";
 const FinancialFundamentals = () => {
   usePageVisitTracking('page:/toolbox/financial-fundamentals');
   const breadcrumbJson = getBreadcrumbJson("toolbox-financial-fundamentals");
+  const faqJson = getFaqJson("category-financial-fundamentals");
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -86,6 +88,9 @@ const FinancialFundamentals = () => {
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbJson)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(faqJson)}
         </script>
         <title>Financial Fundamentals Models – Cost of Capital, Present Value &amp; Ratios | Financial Decision Models</title>
         <meta name="description" content="Core financial fundamentals tools: present value calculators, cost of capital, earnings growth estimators, project scenarios and financial ratio analysis. Online tools plus downloadable Excel models with clear input guidance." />

@@ -16,7 +16,10 @@ export type FaqPageId =
   | "model-dcf-standard-types"
   | "model-financial-ratio-calculator"
   | "model-earning-growth-estimator"
-  | "model-project-scenario-model";
+  | "model-project-scenario-model"
+  | "category-startup-valuations"
+  | "category-investment-analysis"
+  | "category-financial-fundamentals";
 
 export function getFaqJson(page: FaqPageId) {
   switch (page) {
@@ -783,6 +786,150 @@ export function getFaqJson(page: FaqPageId) {
             acceptedAnswer: {
               "@type": "Answer",
               text: "Scenario probabilities are subjective, and actual results can differ significantly from modelled outcomes. The model should be updated with actual performance data over time and used as a decision support tool, not a prediction engine."
+            }
+          }
+        ]
+      };
+
+    case "category-startup-valuations":
+      return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is the Startup Valuation Toolbox?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The Startup Valuation Toolbox is a collection of professional Excel models that implement established startup valuation methodologies. It helps entrepreneurs, investors, and advisors analyse startup value using multiple complementary approaches rather than relying on a single method."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Which valuation methods are included?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The toolbox includes SaaS unit economics analysis, the Berkus method for pre-revenue startups, the Venture Capital Valuation Method, the First Chicago scenario-based valuation approach, perpetuity and exit value models, and a decision analysis framework for probability-weighted venture returns."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Who should use these startup valuation models?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Founders preparing for fundraising, investors evaluating startup opportunities, and financial advisors supporting early-stage clients can all use the models to structure valuations, test assumptions, and communicate results more clearly to stakeholders."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "How should I use the toolbox in practice?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Best practice is to combine several methods, present results as valuation ranges, document key assumptions, and use scenario and sensitivity analysis to explore uncertainty. The models are intended to structure thinking and discussions, not to predict precise outcomes."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "What are the key limitations of startup valuation?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Startup projections are highly uncertain and subject to optimism bias. Different methods can produce different valuations, and human judgment still plays a dominant role. The toolbox helps make that judgment more transparent, but it cannot remove uncertainty."
+            }
+          }
+        ]
+      };
+
+    case "category-investment-analysis":
+      return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is the Investment Analysis Toolbox?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The Investment Analysis Toolbox is a set of Excel models designed to evaluate capital projects, strategic initiatives, and other investment decisions using discounted cash flow analysis, sensitivity testing, and scenario analysis."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Which types of models are included?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The toolbox includes flexible year-by-year DCF models, stable growth and finite-life DCF models, multi-stage growth frameworks, and tools for cost reduction and break-even analysis, all with built-in sensitivity and scenario capabilities."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Who should use these investment analysis models?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Finance teams, business leaders, project managers, and investors who need to evaluate capital allocation decisions, assess project economics, and present investment cases to committees or stakeholders can all benefit from the toolbox."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "How do these models support better decisions?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The models make assumptions explicit, quantify the impact of different scenarios, and show how key drivers affect NPV and IRR. This helps users compare projects, understand risk, and communicate the logic behind recommendations."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "What are important limitations and best practices?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "All DCF analysis depends on forecast quality and assumption realism. Best practice is to run multiple scenarios, test sensitivity to key inputs, document assumptions carefully, and update analyses as market conditions and project information change."
+            }
+          }
+        ]
+      };
+
+    case "category-financial-fundamentals":
+      return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is the Financial Fundamentals Toolbox?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The Financial Fundamentals Toolbox is a collection of simple, academically grounded financial models that illustrate core valuation and corporate finance concepts in a practical Excel format."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Which types of tools are included?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The collection includes present value calculators, cost of capital and WACC tools, standard DCF model frameworks, financial ratio analysis, earning growth estimators, and simple project scenario models."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Who is this toolbox designed for?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The models are designed for students, professionals, and curious learners who want to understand essential financial principles and test how changes in assumptions affect results, without the complexity of full-scale corporate models."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "How do these models differ from complex professional models?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "They prioritise clarity and learning over exhaustive detail. The focus is on transparent links between inputs, calculations, and results, so users can see how core formulas work and build intuition for financial decision-making."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "How should I use the Financial Fundamentals models in practice?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Use them to learn the mechanics of financial analysis, to test ideas, and to develop assumptions for more complex models. They are ideal as a teaching and exploration tool and as a stepping stone towards more advanced, company-specific models."
             }
           }
         ]
