@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { getFaqJson } from "@/seo/faqs";
+import { getModelSoftwareJson } from "@/seo/modelSoftwareSchema";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -18,6 +19,12 @@ import costOfCapitalPreview400 from "@/assets/cost-of-capital-preview-400.webp";
 const CostOfCapitalCalculator = () => {
   const { trackOnlineOpen } = useAnalytics();
   const faqJson = getFaqJson("model-cost-of-capital");
+  const softwareJson = getModelSoftwareJson({
+    name: "WACC Calculator – Professional Excel Model",
+    description: "Easy-to-use Excel WACC calculator for valuation and investment decisions. Free online preview and downloadable template with step-by-step guidance.",
+    url: "https://www.financialdecisionmodels.com/toolbox/investment-analysis/cost-of-capital-calculator",
+    imageUrl: "https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png"
+  });
   
   // Track page visit automatically
   usePageVisitTracking('Simple Cost of Capital Calculator');
@@ -53,6 +60,9 @@ const CostOfCapitalCalculator = () => {
         <meta property="og:site_name" content="Financial Decision Models" />
         <meta property="og:locale" content="en_GB" />
         
+        <script type="application/ld+json">
+          {JSON.stringify(softwareJson)}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify(faqJson)}
         </script>

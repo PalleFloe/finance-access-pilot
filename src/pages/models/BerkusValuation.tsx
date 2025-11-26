@@ -16,12 +16,18 @@ import ModelInternalLinks from "@/components/ModelInternalLinks";
 import berkusPreview800 from "@/assets/berkus-preview-800.webp";
 import berkusPreview400 from "@/assets/berkus-preview-400.webp";
 import berkusPreviewPng from "@/assets/berkus-preview.png";
-import { ModelSoftwareSchema } from "@/seo/ModelSoftwareSchema";
 import { getFaqJson } from "@/seo/faqs";
+import { getModelSoftwareJson } from "@/seo/modelSoftwareSchema";
 
 const BerkusValuation = () => {
   const { trackOnlineOpen } = useAnalytics();
   const faqJson = getFaqJson("model-berkus-valuation");
+  const softwareJson = getModelSoftwareJson({
+    name: "Startup Valuation Model – Excel Template",
+    description: "Excel startup valuation model using revenue, cost, and scenario drivers. Free online preview and downloadable template with full guidance.",
+    url: "https://www.financialdecisionmodels.com/toolbox/startup-valuations/berkus-valuation",
+    imageUrl: "https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png"
+  });
   
   // Track page visit automatically
   usePageVisitTracking('Berkus Valuation Model');
@@ -55,6 +61,9 @@ const BerkusValuation = () => {
         <meta property="og:site_name" content="Financial Decision Models" />
         <meta property="og:locale" content="en_GB" />
         
+        <script type="application/ld+json">
+          {JSON.stringify(softwareJson)}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify(faqJson)}
         </script>
@@ -91,13 +100,6 @@ const BerkusValuation = () => {
           })}
         </script>
       </Helmet>
-
-      <ModelSoftwareSchema
-        name="Berkus Valuation Model"
-        slug="/toolbox/startup-valuations/berkus-valuation"
-        description="Pre-revenue startup valuation model using the Berkus Method. Risk-based Excel tool evaluates five key factors: idea, prototype, team, relationships, and rollout."
-        imageUrl="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png"
-      />
 
       <Header />
       

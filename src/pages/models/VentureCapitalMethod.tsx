@@ -16,10 +16,17 @@ import ventureCapitalPreview800 from "@/assets/venture-capital-preview-800.webp"
 import ventureCapitalPreview400 from "@/assets/venture-capital-preview-400.webp";
 import ventureCapitalPreviewPng from "@/assets/venture-capital-preview.png";
 import { getFaqJson } from "@/seo/faqs";
+import { getModelSoftwareJson } from "@/seo/modelSoftwareSchema";
 
 const VentureCapitalMethod = () => {
   const { trackOnlineOpen } = useAnalytics();
   const faqJson = getFaqJson("model-vc-method");
+  const softwareJson = getModelSoftwareJson({
+    name: "Venture Capital Valuation Model",
+    description: "Excel model for VC valuation using expected returns and exit multiples. Free online preview and downloadable template with clear guidance.",
+    url: "https://www.financialdecisionmodels.com/toolbox/startup-valuations/venture-capital-method",
+    imageUrl: "https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png"
+  });
   
   // Track page visit automatically
   usePageVisitTracking('Venture Capital Method');
@@ -52,6 +59,9 @@ const VentureCapitalMethod = () => {
         <meta property="og:site_name" content="Financial Decision Models" />
         <meta property="og:locale" content="en_GB" />
         
+        <script type="application/ld+json">
+          {JSON.stringify(softwareJson)}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify(faqJson)}
         </script>

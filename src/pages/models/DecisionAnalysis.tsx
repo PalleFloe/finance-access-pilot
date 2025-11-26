@@ -15,10 +15,17 @@ import decisionVcPreview800 from "@/assets/decision-vc-preview-800.webp";
 import decisionVcPreview400 from "@/assets/decision-vc-preview-400.webp";
 import decisionVcPreviewPng from "@/assets/decision-vc-preview.png";
 import { getFaqJson } from "@/seo/faqs";
+import { getModelSoftwareJson } from "@/seo/modelSoftwareSchema";
 
 const DecisionAnalysis = () => {
   const { trackOnlineOpen } = useAnalytics();
   const faqJson = getFaqJson("model-decision-analysis-vc");
+  const softwareJson = getModelSoftwareJson({
+    name: "Decision Analysis Model – Excel Tool",
+    description: "Excel decision analysis model with scenario planning. Free online preview and downloadable template with structured guidance.",
+    url: "https://www.financialdecisionmodels.com/toolbox/investment-analysis/decision-analysis-model",
+    imageUrl: "https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png"
+  });
   
   // Track page visit automatically
   usePageVisitTracking('Decision Analysis Model');
@@ -51,6 +58,9 @@ const DecisionAnalysis = () => {
         <meta property="og:site_name" content="Financial Decision Models" />
         <meta property="og:locale" content="en_GB" />
         
+        <script type="application/ld+json">
+          {JSON.stringify(softwareJson)}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify(faqJson)}
         </script>

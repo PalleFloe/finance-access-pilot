@@ -14,10 +14,17 @@ import FinancialTerm from "@/components/FinancialTerm";
 import ModelInternalLinks from "@/components/ModelInternalLinks";
 import stableGrowthTerminalPreview from "@/assets/stable-growth-terminal-preview.png";
 import { getFaqJson } from "@/seo/faqs";
+import { getModelSoftwareJson } from "@/seo/modelSoftwareSchema";
 
 const StableGrowthTerminalValueDcf = () => {
   const { trackOnlineOpen } = useAnalytics();
   const faqJson = getFaqJson("model-dcf-terminal-value");
+  const softwareJson = getModelSoftwareJson({
+    name: "Stable Growth Terminal Value DCF Model",
+    description: "DCF valuation Excel model with terminal value calculation. Free online preview and downloadable template with full user guidance.",
+    url: "https://www.financialdecisionmodels.com/toolbox/investment-analysis/stable-growth-terminal-value-dcf-model",
+    imageUrl: "https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png"
+  });
   
   // Track page visit automatically
   usePageVisitTracking('Stable Growth: Terminal Value DCF Model');
@@ -51,6 +58,9 @@ const StableGrowthTerminalValueDcf = () => {
         <meta property="og:site_name" content="Financial Decision Models" />
         <meta property="og:locale" content="en_GB" />
         
+        <script type="application/ld+json">
+          {JSON.stringify(softwareJson)}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify(faqJson)}
         </script>

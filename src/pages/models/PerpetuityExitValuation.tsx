@@ -16,10 +16,17 @@ import perpetuityExitPreview800 from "@/assets/perpetuity-exit-preview-800.webp"
 import perpetuityExitPreview400 from "@/assets/perpetuity-exit-preview-400.webp";
 import perpetuityExitPreviewPng from "@/assets/perpetuity-exit-preview.png";
 import { getFaqJson } from "@/seo/faqs";
+import { getModelSoftwareJson } from "@/seo/modelSoftwareSchema";
 
 const PerpetuityExitValuation = () => {
   const { trackOnlineOpen } = useAnalytics();
   const faqJson = getFaqJson("model-perpetuity-exit");
+  const softwareJson = getModelSoftwareJson({
+    name: "Perpetuity Exit Valuation Model",
+    description: "Excel perpetuity exit valuation model. Free online preview and downloadable template with full guidance.",
+    url: "https://www.financialdecisionmodels.com/toolbox/investment-analysis/perpetuity-exit-valuation-model",
+    imageUrl: "https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png"
+  });
   
   // Track page visit automatically
   usePageVisitTracking('Perpetuity & Exit Valuation Models');
@@ -53,6 +60,9 @@ const PerpetuityExitValuation = () => {
         <meta property="og:site_name" content="Financial Decision Models" />
         <meta property="og:locale" content="en_GB" />
         
+        <script type="application/ld+json">
+          {JSON.stringify(softwareJson)}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify(faqJson)}
         </script>

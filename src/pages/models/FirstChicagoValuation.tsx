@@ -16,10 +16,17 @@ import firstChicagoPreview800 from "@/assets/first-chicago-preview-800.webp";
 import firstChicagoPreview400 from "@/assets/first-chicago-preview-400.webp";
 import firstChicagoPreviewPng from "@/assets/first-chicago-preview.png";
 import { getFaqJson } from "@/seo/faqs";
+import { getModelSoftwareJson } from "@/seo/modelSoftwareSchema";
 
 const FirstChicagoValuation = () => {
   const { trackOnlineOpen } = useAnalytics();
   const faqJson = getFaqJson("model-first-chicago");
+  const softwareJson = getModelSoftwareJson({
+    name: "First Chicago Valuation Model",
+    description: "Scenario-based startup valuation Excel model. Free online preview and downloadable template with clear user instructions.",
+    url: "https://www.financialdecisionmodels.com/toolbox/startup-valuations/first-chicago-valuation",
+    imageUrl: "https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png"
+  });
   
   // Track page visit automatically
   usePageVisitTracking('First Chicago Valuation Model');
@@ -52,6 +59,9 @@ const FirstChicagoValuation = () => {
         <meta property="og:site_name" content="Financial Decision Models" />
         <meta property="og:locale" content="en_GB" />
         
+        <script type="application/ld+json">
+          {JSON.stringify(softwareJson)}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify(faqJson)}
         </script>

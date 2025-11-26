@@ -17,8 +17,8 @@ import ModelInternalLinks from "@/components/ModelInternalLinks";
 import saasPreview800 from "@/assets/saas-preview-800.webp";
 import saasPreview400 from "@/assets/saas-preview-400.webp";
 import saasPreviewPng from "@/assets/saas-preview.png";
-import { ModelSoftwareSchema } from "@/seo/ModelSoftwareSchema";
 import { getFaqJson } from "@/seo/faqs";
+import { getModelSoftwareJson } from "@/seo/modelSoftwareSchema";
 
 const SaasUnitEconomics = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -28,6 +28,12 @@ const SaasUnitEconomics = () => {
   usePageVisitTracking('SaaS Unit Economics Model');
 
   const faqJson = getFaqJson("model-saas-unit-economics");
+  const softwareJson = getModelSoftwareJson({
+    name: "SaaS Unit Economics Model – Excel Financial Tool",
+    description: "Excel model for SaaS unit economics, LTV, CAC, retention and payback. Free online preview and downloadable template with clear guidance.",
+    url: "https://www.financialdecisionmodels.com/toolbox/startup-valuations/saas-unit-economics",
+    imageUrl: "https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png"
+  });
 
   useEffect(() => {
     console.log("Helmet is rendering on SaaS Unit Economics page");
@@ -59,6 +65,9 @@ const SaasUnitEconomics = () => {
         <meta property="og:site_name" content="Financial Decision Models" />
         <meta property="og:locale" content="en_GB" />
         
+        <script type="application/ld+json">
+          {JSON.stringify(softwareJson)}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify(faqJson)}
         </script>
@@ -95,13 +104,6 @@ const SaasUnitEconomics = () => {
           })}
         </script>
       </Helmet>
-
-      <ModelSoftwareSchema
-        name="SaaS Unit Economics Model"
-        slug="/toolbox/startup-valuations/saas-unit-economics"
-        description="Excel model for SaaS unit economics, including customer lifetime value, churn, CAC and cohort-based analysis."
-        imageUrl="https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png"
-      />
 
       <Header />
       

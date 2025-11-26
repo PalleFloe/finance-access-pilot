@@ -15,10 +15,17 @@ import ModelInternalLinks from "@/components/ModelInternalLinks";
 import stableGrowthFinitePreview800 from "@/assets/stable-growth-finite-preview-800.webp";
 import stableGrowthFinitePreview400 from "@/assets/stable-growth-finite-preview-400.webp";
 import { getFaqJson } from "@/seo/faqs";
+import { getModelSoftwareJson } from "@/seo/modelSoftwareSchema";
 
 const StableGrowthFiniteLifeDcf = () => {
   const { trackOnlineOpen } = useAnalytics();
   const faqJson = getFaqJson("model-dcf-finite-life");
+  const softwareJson = getModelSoftwareJson({
+    name: "Stable Growth Finite Life DCF – Professional Excel Valuation Model",
+    description: "Professional DCF valuation Excel model with stable-growth and finite-life logic. Free online preview and downloadable template with full user guidance.",
+    url: "https://www.financialdecisionmodels.com/toolbox/investment-analysis/stable-growth-finite-life-dcf-model",
+    imageUrl: "https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png"
+  });
   
   // Track page visit automatically
   usePageVisitTracking('Stable Growth: Finite-Life DCF Model');
@@ -53,6 +60,9 @@ const StableGrowthFiniteLifeDcf = () => {
         <meta property="og:locale" content="en_GB" />
         
         <script type="application/ld+json">
+          {JSON.stringify(softwareJson)}
+        </script>
+        <script type="application/ld+json">
           {JSON.stringify(faqJson)}
         </script>
         <script type="application/ld+json">
@@ -85,30 +95,6 @@ const StableGrowthFiniteLifeDcf = () => {
                 "item": "https://www.financialdecisionmodels.com/toolbox/investment-analysis/stable-growth-finite-life-dcf-model"
               }
             ]
-          })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            "name": "Stable Growth: Finite-Life DCF Model",
-            "description": "DCF analysis for finite-life assets with predictable revenue and terminal value calculation. Excel tool for project valuation.",
-            "applicationCategory": "BusinessApplication",
-            "operatingSystem": ["Windows", "macOS"],
-            "softwareHelp": "https://www.financialdecisionmodels.com/toolbox/investment-analysis/stable-growth-finite-life-dcf-model",
-            "image": "https://www.financialdecisionmodels.com/lovable-uploads/ec2b7a6c-5992-40d7-83ed-d52f2fc5d051.png",
-            "url": "https://www.financialdecisionmodels.com/toolbox/investment-analysis/stable-growth-finite-life-dcf-model",
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD",
-              "description": "Free online preview and downloadable no-macro Excel model with step-by-step user guidance."
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Financial Decision Models",
-              "url": "https://www.financialdecisionmodels.com/"
-            }
           })}
         </script>
       </Helmet>
