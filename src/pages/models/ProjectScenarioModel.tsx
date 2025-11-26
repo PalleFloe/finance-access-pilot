@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
+import { getFaqJson } from "@/seo/faqs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -13,6 +14,7 @@ import projectScenarioPreview from "@/assets/project-scenario-preview.png";
 
 const ProjectScenarioModel = () => {
   const { trackOnlineOpen } = useAnalytics();
+  const faqJson = getFaqJson("model-project-scenario-model");
   
   // Track page visit automatically
   usePageVisitTracking('Project Scenario Model');
@@ -49,25 +51,7 @@ const ProjectScenarioModel = () => {
         <meta property="og:locale" content="en_GB" />
         
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [{
-              "@type": "Question",
-              "name": "What Is the Simple Project Scenario Model?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The Simple Project Scenario Model is a comprehensive capital budgeting tool that evaluates investment projects under multiple scenarios."
-              }
-            },{
-              "@type": "Question",
-              "name": "Why Use the Simple Project Scenario Model?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Scenario-based project analysis is essential for robust capital allocation decisions, enabling risk assessment and understanding the range of potential outcomes."
-              }
-            }]
-          })}
+          {JSON.stringify(faqJson)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({

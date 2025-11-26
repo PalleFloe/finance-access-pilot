@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
+import { getFaqJson } from "@/seo/faqs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Clock, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -15,6 +16,7 @@ import dcfModelsPreview from "@/assets/dcf-models-preview.png";
 
 const DcfModels = () => {
   const { trackOnlineOpen } = useAnalytics();
+  const faqJson = getFaqJson("model-dcf-standard-types");
   
   // Track page visit automatically
   usePageVisitTracking('DCF Models');
@@ -54,25 +56,7 @@ const DcfModels = () => {
         <meta property="og:locale" content="en_GB" />
         
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [{
-              "@type": "Question",
-              "name": "What Are the Standard Types of DCF Models?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The Standard Types of DCF Models represent three fundamental approaches to business valuation that accommodate different company life cycles and growth patterns."
-              }
-            },{
-              "@type": "Question",
-              "name": "Why Use the Standard Types of DCF Models?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Different companies require different valuation approaches depending on their growth stage, operational complexity, and business model characteristics."
-              }
-            }]
-          })}
+          {JSON.stringify(faqJson)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({
