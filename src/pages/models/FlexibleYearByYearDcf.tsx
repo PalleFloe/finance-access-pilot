@@ -11,7 +11,8 @@ import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import FinancialTerm from "@/components/FinancialTerm";
-import flexibleDcfPreview from "@/assets/flexible-dcf-preview.png";
+import flexibleDcfPreview800 from "@/assets/flexible-dcf-preview-800.webp";
+import flexibleDcfPreview400 from "@/assets/flexible-dcf-preview-400.webp";
 import { getFaqJson } from "@/seo/faqs";
 
 const FlexibleYearByYearDcf = () => {
@@ -170,9 +171,14 @@ const FlexibleYearByYearDcf = () => {
                 <CardContent className="pb-2 pt-1">
                   <div className="w-full max-w-[360px] h-[180px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
                     <img 
-                      src={flexibleDcfPreview} 
+                      src={flexibleDcfPreview800}
+                      srcSet={`${flexibleDcfPreview400} 400w, ${flexibleDcfPreview800} 800w`}
+                      sizes="(max-width: 768px) 100vw, 360px"
+                      width="800"
+                      height="600"
                       alt="Flexible Year by Year DCF Model Preview" 
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
                 </CardContent>

@@ -11,7 +11,8 @@ import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import FinancialTerm from "@/components/FinancialTerm";
-import stableGrowthFinitePreview from "@/assets/stable-growth-finite-preview.png";
+import stableGrowthFinitePreview800 from "@/assets/stable-growth-finite-preview-800.webp";
+import stableGrowthFinitePreview400 from "@/assets/stable-growth-finite-preview-400.webp";
 import { getFaqJson } from "@/seo/faqs";
 
 const StableGrowthFiniteLifeDcf = () => {
@@ -170,9 +171,14 @@ const StableGrowthFiniteLifeDcf = () => {
                 <CardContent className="pb-2 pt-1">
                   <div className="w-full max-w-[360px] h-[180px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
                     <img 
-                      src={stableGrowthFinitePreview} 
+                      src={stableGrowthFinitePreview800}
+                      srcSet={`${stableGrowthFinitePreview400} 400w, ${stableGrowthFinitePreview800} 800w`}
+                      sizes="(max-width: 768px) 100vw, 360px"
+                      width="800"
+                      height="600"
                       alt="Stable Growth Finite-Life DCF Model Preview" 
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
                 </CardContent>

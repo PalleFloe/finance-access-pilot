@@ -10,7 +10,8 @@ import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
-import projectScenarioPreview from "@/assets/project-scenario-preview.png";
+import projectScenarioPreview800 from "@/assets/project-scenario-preview-800.webp";
+import projectScenarioPreview400 from "@/assets/project-scenario-preview-400.webp";
 
 const ProjectScenarioModel = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -170,9 +171,14 @@ const ProjectScenarioModel = () => {
                 <CardContent className="pb-2 pt-1">
                   <div className="w-full max-w-[360px] h-[180px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
                     <img 
-                      src={projectScenarioPreview} 
+                      src={projectScenarioPreview800}
+                      srcSet={`${projectScenarioPreview400} 400w, ${projectScenarioPreview800} 800w`}
+                      sizes="(max-width: 768px) 100vw, 360px"
+                      width="800"
+                      height="600"
                       alt="Simple Project Scenario Model Preview" 
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
                 </CardContent>

@@ -10,7 +10,8 @@ import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
-import financialRatioPreview from "@/assets/financial-ratio-preview.png";
+import financialRatioPreview800 from "@/assets/financial-ratio-preview-800.webp";
+import financialRatioPreview400 from "@/assets/financial-ratio-preview-400.webp";
 
 const FinancialRatioCalculator = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -169,9 +170,14 @@ const FinancialRatioCalculator = () => {
                 <CardContent className="pb-2 pt-1">
                   <div className="w-full max-w-[360px] h-[180px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
                     <img 
-                      src={financialRatioPreview} 
+                      src={financialRatioPreview800}
+                      srcSet={`${financialRatioPreview400} 400w, ${financialRatioPreview800} 800w`}
+                      sizes="(max-width: 768px) 100vw, 360px"
+                      width="800"
+                      height="600"
                       alt="Financial Ratio Calculator Preview" 
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
                 </CardContent>

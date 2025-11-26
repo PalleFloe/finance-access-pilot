@@ -10,7 +10,8 @@ import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
-import presentValuePreview from "@/assets/present-value-preview.png";
+import presentValuePreview800 from "@/assets/present-value-preview-800.webp";
+import presentValuePreview400 from "@/assets/present-value-preview-400.webp";
 
 const PresentValueCalculator = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -170,9 +171,14 @@ const PresentValueCalculator = () => {
                 <CardContent className="pb-2 pt-1">
                   <div className="w-full max-w-[360px] h-[180px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
                     <img 
-                      src={presentValuePreview} 
+                      src={presentValuePreview800}
+                      srcSet={`${presentValuePreview400} 400w, ${presentValuePreview800} 800w`}
+                      sizes="(max-width: 768px) 100vw, 360px"
+                      width="800"
+                      height="600"
                       alt="Simple Present Value Calculator Preview" 
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
                 </CardContent>

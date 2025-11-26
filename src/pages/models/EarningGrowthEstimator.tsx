@@ -10,7 +10,8 @@ import DownloadButton from "@/components/DownloadButton";
 import ModelInfoPanel from "@/components/ModelInfoPanel";
 import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
-import earningGrowthPreview from "@/assets/earning-growth-preview.png";
+import earningGrowthPreview800 from "@/assets/earning-growth-preview-800.webp";
+import earningGrowthPreview400 from "@/assets/earning-growth-preview-400.webp";
 
 const EarningGrowthEstimator = () => {
   const { trackOnlineOpen } = useAnalytics();
@@ -170,9 +171,14 @@ const EarningGrowthEstimator = () => {
                 <CardContent className="pb-2 pt-1">
                   <div className="w-full max-w-[360px] h-[180px] overflow-hidden rounded-md flex items-center justify-center mx-auto">
                     <img 
-                      src={earningGrowthPreview} 
+                      src={earningGrowthPreview800}
+                      srcSet={`${earningGrowthPreview400} 400w, ${earningGrowthPreview800} 800w`}
+                      sizes="(max-width: 768px) 100vw, 360px"
+                      width="800"
+                      height="600"
                       alt="Simple Earning Growth Estimator Preview" 
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
                 </CardContent>
