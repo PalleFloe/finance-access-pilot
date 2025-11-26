@@ -6,7 +6,11 @@ export type FaqPageId =
   | "model-berkus-valuation"
   | "model-first-chicago"
   | "model-perpetuity-exit"
-  | "model-decision-analysis-vc";
+  | "model-decision-analysis-vc"
+  | "model-dcf-flexible"
+  | "model-dcf-finite-life"
+  | "model-dcf-terminal-value"
+  | "model-dcf-three-stage";
 
 export function getFaqJson(page: FaqPageId) {
   switch (page) {
@@ -293,6 +297,198 @@ export function getFaqJson(page: FaqPageId) {
             acceptedAnswer: {
               "@type": "Answer",
               text: "The model relies on subjective probability estimates and external exit valuation inputs, which can be uncertain and biased. Best practice is to use conservative assumptions, run sensitivity analysis across key probabilities and exit multiples, document the reasoning behind inputs, and update the analysis as companies progress through business stages."
+            }
+          }
+        ]
+      };
+
+    case "model-dcf-flexible":
+      return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is the Flexible Year by Year DCF Model?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The Flexible Year by Year DCF Model is a detailed investment analysis tool that allows users to vary revenue growth, cost structure, operational expenses, and capital requirements independently for each forecast year. This approach reflects real-world business dynamics better than constant-growth models."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Why is this model useful?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "It is ideal when businesses experience different performance phases—early growth, stabilisation, strategic investments, or market changes. The model provides granular year-specific control, enabling realistic planning, sensitivity testing, and valuation analysis."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Who should use the Flexible DCF model?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Business leaders evaluating strategic investments, project managers planning multi-year initiatives, and finance teams requiring detailed projection capabilities can all benefit from the model."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "How does the Excel version work?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The Excel implementation provides independent year-by-year inputs for revenue, variable costs, operating expenses, capital expenditure, and working capital. It also includes a Gordon Growth terminal value calculation and colour-coded input structures with protected formulas."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "What are key limitations and best practices?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Forecasts beyond 3–5 years become uncertain, and terminal value often drives a large part of valuation. Best practice is to use conservative assumptions, test sensitivity to key drivers, document rationale, and focus detail on near-term years where visibility is highest."
+            }
+          }
+        ]
+      };
+
+    case "model-dcf-finite-life":
+      return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is the Stable Growth: Finite-Life DCF Model?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The Stable Growth Finite-Life DCF Model values investments that have a defined operational period, such as equipment purchases, contracts with fixed terms, or projects that naturally terminate. It models final-year cash flows including salvage value and working capital recovery."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Why is this model useful?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Many investments have defined endpoints, and perpetual models overvalue them. This model properly handles end-of-life cash flows and provides accurate NPV and IRR calculations for time-limited projects."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Who should use the Finite-Life DCF Model?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Business leaders assessing capital purchases, project managers planning finite-duration initiatives, and finance teams evaluating investment opportunities with fixed lifespans."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "How is the model structured in Excel?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The Excel model includes inputs for investment, revenue, variable and operational expenses, depreciation, working capital, salvage values, and project duration. It uses colour-coded inputs and protected logic with scenario analysis and sensitivity charts."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "What are key limitations and best practices?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Assumes stable operations and may not capture volatility or lifespan uncertainty. Best practice is to test sensitivity to lifetime assumptions, model conservative salvage values, and compare results to similar completed projects."
+            }
+          }
+        ]
+      };
+
+    case "model-dcf-terminal-value":
+      return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is the Stable Growth: Terminal Value DCF Model?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The Stable Growth Terminal Value DCF Model values ongoing business investments expected to operate indefinitely. It combines explicit multi-year forecasts with Gordon Growth terminal value and includes maintenance capex for realistic perpetual operations."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "What distinguishes this model from finite-life DCF?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Unlike finite-life models, this framework assumes ongoing operations, no working capital recovery, and recurring capital investment. It incorporates lifecycle-based maintenance capex to avoid overstating terminal value."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Who should use the Terminal Value DCF Model?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Business leaders planning long-term investments, project managers responsible for ongoing operations, and finance teams analysing perpetual business activities."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "How does the Excel implementation work?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The Excel version includes explicit forecast periods, terminal value calculation with Gordon Growth logic, maintenance capex derived from lifecycle capex percentage, and colour-coded structure with protected formulas."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "What are the main limitations and best practices?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Terminal value often accounts for 60–80% of total value, making assumptions highly sensitive. Best practice is to use conservative long-term growth rates, document assumption rationale, and test sensitivity to discount rates and maintenance capex levels."
+            }
+          }
+        ]
+      };
+
+    case "model-dcf-three-stage":
+      return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is the Three Stage DCF Model?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The Three Stage DCF Model values internal investments that progress through distinct operational phases—initial ramp-up, scaling, and mature steady-state. Each stage has its own growth rates, margins, and capital intensity assumptions."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Why does the model use multiple stages?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Most investments do not achieve stable performance immediately. The model recognises realistic development patterns and allows stage-specific assumptions for growth, cost structure, working capital, and capital requirements."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "Who should use the Three Stage DCF Model?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Business leaders evaluating multi-phase capital projects, project managers overseeing staged implementations, and finance teams requiring detailed lifecycle valuation analysis."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "How is the model structured in Excel?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The Excel implementation includes three configurable stages with independent assumptions, year-by-year cash flow calculations, lifecycle capex integration, terminal value calculations, and structured scenario analysis."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "What are key limitations and best practices?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Results depend heavily on accurate stage definitions and realistic assumptions. Best practice is to benchmark assumptions against comparable projects, test sensitivity across stage durations and mature-phase assumptions, and document logic clearly."
             }
           }
         ]

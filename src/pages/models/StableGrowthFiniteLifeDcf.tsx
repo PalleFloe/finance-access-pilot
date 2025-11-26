@@ -12,9 +12,11 @@ import { useEffect } from "react";
 import { usePageVisitTracking, useAnalytics } from '@/hooks/useAnalytics';
 import FinancialTerm from "@/components/FinancialTerm";
 import stableGrowthFinitePreview from "@/assets/stable-growth-finite-preview.png";
+import { getFaqJson } from "@/seo/faqs";
 
 const StableGrowthFiniteLifeDcf = () => {
   const { trackOnlineOpen } = useAnalytics();
+  const faqJson = getFaqJson("model-dcf-finite-life");
   
   // Track page visit automatically
   usePageVisitTracking('Stable Growth: Finite-Life DCF Model');
@@ -49,25 +51,7 @@ const StableGrowthFiniteLifeDcf = () => {
         <meta property="og:locale" content="en_GB" />
         
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [{
-              "@type": "Question",
-              "name": "What Is the Stable Growth: Finite-Life DCF Model?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The model addresses investments that generate cash flows for specific periods before terminating, including equipment that requires replacement."
-              }
-            },{
-              "@type": "Question",
-              "name": "Why Was the Finite-Life DCF Model Developed?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Many internal investments don't continue indefinitely. Standard perpetuity-based DCF models overvalue these investments by assuming infinite cash flows."
-              }
-            }]
-          })}
+          {JSON.stringify(faqJson)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({
