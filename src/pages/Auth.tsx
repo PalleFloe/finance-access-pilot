@@ -8,12 +8,14 @@ import { Label } from '@/components/ui/label';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useAuth } from '@/hooks/useAuth';
 import { Eye, EyeOff } from 'lucide-react';
+import HCaptcha from '@hcaptcha/react-hcaptcha';
 
 const Auth = () => {
   const { user, signUp, signIn, loading } = useAuth();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [showLoginPassword, setShowLoginPassword] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
 
   // Redirect if already logged in
   if (user && !loading) {
@@ -22,6 +24,13 @@ const Auth = () => {
 
   const handleSignUp = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    // Require CAPTCHA before allowing sign up
+    if (!captchaToken) {
+      alert('Please complete the CAPTCHA before creating your account.');
+      return;
+    }
+
     setIsSubmitting(true);
 
     const formData = new FormData(e.currentTarget);
@@ -31,7 +40,7 @@ const Auth = () => {
     const lastName = formData.get('lastName') as string;
     const company = formData.get('company') as string;
 
-    await signUp(email, password, firstName, lastName, company);
+    await signUp(email, password, firstName, lastName, company, captchaToken || '');
     setIsSubmitting(false);
   };
 
@@ -86,59 +95,59 @@ const Auth = () => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="firstName">First Name</Label>
-                      <Input 
-                        id="firstName" 
-                        name="firstName" 
+                      <Input
+                        id="firstName"
+                        name="firstName"
                         type="text"
                         inputMode="text"
-                        required 
+                        required
                         placeholder="John"
                       />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="lastName">Last Name</Label>
-                      <Input 
-                        id="lastName" 
-                        name="lastName" 
+                      <Input
+                        id="lastName"
+                        name="lastName"
                         type="text"
                         inputMode="text"
-                        required 
+                        required
                         placeholder="Doe"
                       />
                     </div>
                   </div>
-                  
+
                   <div className="space-y-2">
                     <Label htmlFor="email">Email</Label>
-                    <Input 
-                      id="email" 
-                      name="email" 
+                    <Input
+                      id="email"
+                      name="email"
                       type="email"
                       inputMode="email"
-                      required 
+                      required
                       placeholder="john@example.com"
                     />
                   </div>
-                  
+
                   <div className="space-y-2">
                     <Label htmlFor="company">Company (Optional)</Label>
-                    <Input 
-                      id="company" 
-                      name="company" 
+                    <Input
+                      id="company"
+                      name="company"
                       type="text"
                       inputMode="text"
                       placeholder="Your Company"
                     />
                   </div>
-                  
+
                   <div className="space-y-2">
                     <Label htmlFor="password">Password</Label>
                     <div className="relative">
-                      <Input 
-                        id="password" 
-                        name="password" 
-                        type={showPassword ? "text" : "password"}
-                        required 
+                      <Input
+                        id="password"
+                        name="password"
+                        type={showPassword ? 'text' : 'password'}
+                        required
                         minLength={6}
                         className="pr-10"
                       />
@@ -151,10 +160,19 @@ const Auth = () => {
                       </button>
                     </div>
                   </div>
-                  
-                  <Button 
-                    type="submit" 
-                    className="w-full h-12 sm:h-10 text-base sm:text-sm" 
+
+                  {/* hCaptcha widget */}
+                  <div className="space-y-2">
+                    <HCaptcha
+                      sitekey={import.meta.env.VITE_HCAPTCHA_SITE_KEY}
+                      onVerify={(token) => setCaptchaToken(token)}
+                      onExpire={() => setCaptchaToken(null)}
+                    />
+                  </div>
+
+                  <Button
+                    type="submit"
+                    className="w-full h-12 sm:h-10 text-base sm:text-sm"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? 'Creating Account...' : 'Create Account'}
@@ -176,24 +194,24 @@ const Auth = () => {
                 <form onSubmit={handleSignIn} className="space-y-5 sm:space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="loginEmail">Email</Label>
-                    <Input 
-                      id="loginEmail" 
-                      name="email" 
+                    <Input
+                      id="loginEmail"
+                      name="email"
                       type="email"
                       inputMode="email"
-                      required 
+                      required
                       placeholder="john@example.com"
                     />
                   </div>
-                  
+
                   <div className="space-y-2">
                     <Label htmlFor="loginPassword">Password</Label>
                     <div className="relative">
-                      <Input 
-                        id="loginPassword" 
-                        name="password" 
-                        type={showLoginPassword ? "text" : "password"}
-                        required 
+                      <Input
+                        id="loginPassword"
+                        name="password"
+                        type={showLoginPassword ? 'text' : 'password'}
+                        required
                         className="pr-12 sm:pr-10"
                       />
                       <button
@@ -205,10 +223,10 @@ const Auth = () => {
                       </button>
                     </div>
                   </div>
-                  
-                  <Button 
-                    type="submit" 
-                    className="w-full h-12 sm:h-10 text-base sm:text-sm" 
+
+                  <Button
+                    type="submit"
+                    className="w-full h-12 sm:h-10 text-base sm:text-sm"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? 'Signing In...' : 'Sign In'}
