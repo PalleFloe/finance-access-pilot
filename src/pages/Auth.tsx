@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -16,6 +16,7 @@ const Auth = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showLoginPassword, setShowLoginPassword] = useState(false);
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const captchaRef = useRef<HCaptcha>(null);
 
   // Redirect if already logged in
   if (user && !loading) {
@@ -40,20 +41,39 @@ const Auth = () => {
     const lastName = formData.get('lastName') as string;
     const company = formData.get('company') as string;
 
-    await signUp(email, password, firstName, lastName, company, captchaToken || '');
+    const result = await signUp(email, password, firstName, lastName, company, captchaToken || '');
     setIsSubmitting(false);
+    
+    // Reset captcha after attempt
+    if (!result.error) {
+      captchaRef.current?.resetCaptcha();
+      setCaptchaToken(null);
+    }
   };
 
   const handleSignIn = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    // Require CAPTCHA before allowing sign in
+    if (!captchaToken) {
+      alert('Please complete the CAPTCHA before signing in.');
+      return;
+    }
+
     setIsSubmitting(true);
 
     const formData = new FormData(e.currentTarget);
     const email = formData.get('email') as string;
     const password = formData.get('password') as string;
 
-    await signIn(email, password);
+    const result = await signIn(email, password, captchaToken);
     setIsSubmitting(false);
+    
+    // Reset captcha after attempt
+    if (!result.error) {
+      captchaRef.current?.resetCaptcha();
+      setCaptchaToken(null);
+    }
   };
 
   if (loading) {
@@ -164,6 +184,7 @@ const Auth = () => {
                   {/* hCaptcha widget */}
                   <div className="space-y-2">
                     <HCaptcha
+                      ref={captchaRef}
                       sitekey={import.meta.env.VITE_HCAPTCHA_SITE_KEY}
                       onVerify={(token) => setCaptchaToken(token)}
                       onExpire={() => setCaptchaToken(null)}
@@ -222,6 +243,16 @@ const Auth = () => {
                         {showLoginPassword ? <EyeOff className="h-5 w-5 sm:h-4 sm:w-4" /> : <Eye className="h-5 w-5 sm:h-4 sm:w-4" />}
                       </button>
                     </div>
+                  </div>
+
+                  {/* hCaptcha widget */}
+                  <div className="space-y-2">
+                    <HCaptcha
+                      ref={captchaRef}
+                      sitekey={import.meta.env.VITE_HCAPTCHA_SITE_KEY}
+                      onVerify={(token) => setCaptchaToken(token)}
+                      onExpire={() => setCaptchaToken(null)}
+                    />
                   </div>
 
                   <Button
