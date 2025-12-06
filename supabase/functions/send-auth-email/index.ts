@@ -1,7 +1,7 @@
 import React from 'npm:react@18.3.1'
 import { Webhook } from 'https://esm.sh/standardwebhooks@1.0.0'
 import { Resend } from 'npm:resend@4.0.0'
-import { renderAsync } from 'npm:@react-email/components@0.0.22'
+import { renderAsync } from 'npm:@react-email/components@0.0.31'
 import { ConfirmSignupEmail } from './_templates/confirm-signup.tsx'
 import { RecoveryEmail } from './_templates/recovery-email.tsx'
 
